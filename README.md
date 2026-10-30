@@ -1,126 +1,125 @@
 # Odd powers of pi: research notes and Lean formalization
 
-Private working archive, prepared on **30 October 2026**. It contains the
-current mathematical notes, manuscripts and PDFs, computational experiments,
-Lean sources, proof-development records and executed acceptance evidence.
+Private research archive, updated on **31 October 2026**. It contains Lean
+sources, manuscripts and PDFs, experiments, data, and executed verification
+records. Historical drafts retain their own proof and certification status.
 
-## Formally verified result
-
-The accepted P1–P6 development proves the unconditional statement
+## Latest accepted result: L=99
 
 $$
- \mu(\pi^3)\le \frac{42170551935}{35026168}
- =1203.9727535995\ldots<1203.973.
+\mu(\pi^3)\le\frac{12970477737}{11706979}
+=1107.9269670681\ldots<1107.93.
 $$
 
-The precise formal interface is `ExponentUpperBound`; it gives the rational
-approximation lower bound for every positive exponent slack and all
-sufficiently large positive denominators. The final theorem is:
+The unconditional Lean statement is:
 
 ```lean
-OddPiPowers.pi_cube_exponentUpperBound_42170551935_div_35026168 :
-  ExponentUpperBound (Real.pi ^ 3) (42170551935 / 35026168)
+OddPiPowers.L99.pi_cube_exponentUpperBound_l99_exact :
+  ExponentUpperBound (Real.pi ^ 3) (12970477737 / 11706979)
 ```
 
-- [Final theorem source](formalization/OddPiPowers/OddPiPowers/Transfer/TwelveLayerPiCube.lean)
-- [Current accepted checkpoint](formalization/P6_CURRENT_CHECKPOINT.md)
-- [Mathematical account and validation scope](formalization/P6_REVIEW_2026-10-30.md)
-- [Executed acceptance report](formalization/OddPiPowers/logs/p6-acceptance-2026-10-30.json)
+`ExponentUpperBound` quantifies over all integer numerators and sufficiently
+large positive denominators, with every positive exponent slack. A strict
+upper-bound witness and a standard not-LiouvilleWith corollary are included.
 
-The fixed theorem has no auxiliary-family, analytic, prime-rate or numerical
-hypothesis. Its proof uses the actual twelve-layer Gaussian coefficient
-family, the proved common divisor, analytic rates and kernel-checked rational
-numerical inequalities. The imported prime-distribution results are proved
-dependencies. The build and exact transitive axiom audits were executed
-before this archive was prepared: 264 project library modules, 424 new
-declarations audited in the final stage, and 602 prior declarations in the
-regression audit. The audited axioms are only `propext`, `Classical.choice`
-and `Quot.sound`; no `sorryAx`, project mathematical axiom or native-evaluation
-axiom occurs in the accepted result's audited closure.
+- [Final theorem source](formalization/OddPiPowers/OddPiPowers/L99/Transfer/PiCube.lean)
+- [Accepted checkpoint](formalization/L99_CURRENT_CHECKPOINT.md)
+- [Mathematical notes and exact constants](formalization/L99_MATHEMATICAL_NOTES.md)
+- [Executed acceptance report](formalization/OddPiPowers/logs/l99-acceptance-2026-10-31.json)
+- [Final signature and axiom audit](formalization/OddPiPowers/logs/l99-acceptance-axioms.log)
 
-This statement concerns the accepted dependency closure. Scratch files,
-historical experiments and unfinished proposals elsewhere in the archive
-are not thereby certified. The archived evidence records an executed local
-validation; this upload itself does not constitute a new build or an
-independent mathematical review. No claim of a best bound in the literature
-is made.
+This is a parameter optimization of the accepted nested construction and
+existing transfer theorem. Use28 layers, offsets0,...,27, multiplicities
+(64,4,...,4), degree171 and fixed height1801/20. The actual3004-cell
+arithmetic certificate, finite-window divisor rate and one-sided rational
+analytic estimates are proved. No cofactor-transfer improvement is used.
 
-## Improvements and higher odd powers
+All147 new dependency modules were compiled through the bounded runner.
+Four final signatures and15 exact transitive axiom reports passed. The
+audited closures, including the actual auxiliary family and final theorem,
+use only `propext`, `Classical.choice` and `Quot.sound`. No `sorryAx`, new
+mathematical axiom or native-evaluation axiom occurs in the accepted closure.
+All264 earlier P6 mathematical source files and the pinned dependencies were
+verified unchanged. Peak build job:4775.96 MiB; final audit:4757.47 MiB.
 
-The [review of the improvement plan](output/pdf/odd_pi_powers_notes/improvement_plan/review_against_accepted_P6_2026-10-30.md)
-separates three further targets from the accepted theorem:
+## Earlier accepted work and remaining proposals
 
-| Target | Status at this snapshot |
+P1–P6 remain accepted, including the earlier unconditional bound
+42170551935/35026168=1203.9727535995..., strictly below1203.973.
+Read the [P6 checkpoint](formalization/P6_CURRENT_CHECKPOINT.md),
+[review](formalization/P6_REVIEW_2026-10-30.md) and
+[executed acceptance report](formalization/OddPiPowers/logs/p6-acceptance-2026-10-30.json).
+The earlier root and mathematical sources are retained unchanged.
+
+| Target or application | Status at this snapshot |
 |---|---|
-| 1191.027 using the same P6 family | A cofactor elimination argument is written; its new transfer theorem is not yet Lean-formalized |
-| 1107.93 using the L=99 shape | An archived Arb certificate supports the manuscript application; a new Lean finite arithmetic certificate and specialization are needed |
-| 1094.97 combining both changes | Depends on both extensions above; not an accepted Lean theorem |
+| L99 exponent below1107.93 | **Accepted in Lean**, exact exponent12970477737/11706979 |
+| Cofactor transfer, potentially below1094.97 with L99 | Mathematical proposal; new transfer theorem not yet formalized |
+| Higher odd-power numerical applications | General machinery exists, but the manuscript's numerical cases are not all Lean-accepted |
+| L=129 or L=175 search candidates | Experimental values; not accepted fixed Lean applications |
 
-General transfer machinery and actual-family analysis are reusable for other
-odd powers. The numerical higher-power applications in the notes have not
-all been instantiated and accepted in Lean. In particular, this repository
-does not claim that every assertion in a manuscript or every experimental
-number is formally verified.
+See the [improvement-plan review](output/pdf/odd_pi_powers_notes/improvement_plan/review_against_accepted_P6_2026-10-30.md)
+for the pre-L99 analysis. Its dated statements that L99 still needs
+formalization are historical. This archive does not certify every assertion
+in a draft, every experiment, or every scratch file. The executed records
+describe local formal verification; no claim of independent mathematical
+review or a best bound in the current literature is made.
 
 ## Contents
 
-| Location | Contents |
+| Path | Contents |
 |---|---|
-| `formalization/OddPiPowers/` | Lean project, pinned dependency manifest, documentation, audit sources and execution logs |
-| `formalization/P*_REVIEW_*.md` | Stage reviews and their historical acceptance scope |
-| `output/pdf/odd_pi_powers_notes/` | English notes, TeX sources, computational certificates and improvement plan |
-| `output/pdf/odd_pi_powers_notes.pdf` | Compiled notes; consult the current checkpoint for formalization status |
-| `output/pdf/pi3_explicit_bound/` | Earlier manuscript and supporting files |
+| `formalization/OddPiPowers/` | Lean project, exact dependency manifest, provenance, documentation and verification logs |
+| `formalization/L99_*.md` | Current accepted application, mathematical explanation and development history |
+| `formalization/P*_REVIEW_*.md` | Earlier stage reviews and their accepted scope |
+| `output/pdf/odd_pi_powers_notes/` | English TeX notes, computational certificates and improvement plan |
+| `output/pdf/odd_pi_powers_notes.pdf` | Earlier compiled notes; current formalization status is given above |
+| `output/pdf/pi3_explicit_bound/` | Earlier manuscript and supporting material |
 | `research/` | Research computations and notes |
-| `scripts/` | Bounded compiler runners, audit utilities and numerical review tools |
-| `logs/`, project `logs/` | Execution records, including failed or historical trials |
+| `scripts/` | Bounded compiler runners, generators, verifiers and snapshot utilities |
+| `logs/` and project `logs/` | Execution evidence, including historical and failed trials |
 | `tmp/` | Retained exploratory material, literature and upstream PNT audit sources |
-
-Older documents are retained as historical records and may describe earlier
-unfinished states. The current P6 checkpoint and dated acceptance report
-govern the present claim. Stronger numerical statements in a draft should
-be read with their local proof and certification status.
 
 ## Toolchain and reproduction
 
-The Lean project is pinned to **Lean v4.35.0** and Mathlib v4.35.0; the exact
-transitive revisions are in
-[`lake-manifest.json`](formalization/OddPiPowers/lake-manifest.json).
-The required upstream PNT/Stirling proof subset and provenance are included
-in the project sources. Preserve the manifest and toolchain rather than
-updating dependencies to current versions.
+The project pins Lean and Mathlib **v4.35.0**. Preserve `lean-toolchain` and
+[`lake-manifest.json`](formalization/OddPiPowers/lake-manifest.json); the
+needed proved PNT/Stirling subset is vendored with provenance. Build products,
+dependency checkouts and toolchain binaries are excluded from this archive.
+A fresh checkout must first restore the exact dependencies and compile or
+restore the accepted base modules. The original base validation utility is
+`scripts/guarded_library_build.py`.
 
-Existing build products, downloaded dependencies and toolchain binaries are
-excluded from this source snapshot. A fresh checkout needs the pinned Lean
-installation and restoration of the exact manifest dependencies and suitable
-caches. Such setup is separate from the archived validation evidence.
-
-On Windows, all project proof trials use the bounded runner from the
-repository root, for example:
+From the workspace root on Windows, after restoring those prerequisites:
 
 ```powershell
-python scripts/bounded_lean.py OddPiPowers/Transfer/TwelveLayerPiCube.lean --timeout 300 --log logs/recheck-final.log
+python scripts/build_l99.py --emit
+python scripts/verify_l99_acceptance.py --prepare
+python scripts/bounded_lean.py L99AcceptanceAudit.lean --timeout 300 --log logs/l99-acceptance-axioms.log
+python scripts/verify_l99_acceptance.py
 ```
 
-This single-file command requires its dependencies to have been compiled.
-For serialized library validation inspect `scripts/guarded_library_build.py`
-and the accepted build records. Do not start with a broad rebuild as a
-recovery check. The resource contract is in [AGENTS.md](AGENTS.md): one
-process tree, one worker, a 6144 MiB aggregate job cap, a 2048 MiB Lean cap,
-at most 300 seconds per trial, and startup thresholds of 2560 MiB free
-physical RAM and 12288 MiB free system commit. Do not overlap compiler
-trials and generators or bypass these limits.
+The first command compiles the new closure serially. Cached records are
+reused only when the transitive project sources, pinned configuration and
+successful guarded evidence match and the artifacts exist. Its final entry
+is `OddPiPowers.L99.Transfer.PiCube`. Audit preparation and generators must
+not overlap a compiler process. Existing logs and acceptance records are
+preserved as evidence rather than treated as a replacement for missing
+compiled artifacts.
 
-## Snapshot boundaries
+Follow [AGENTS.md](AGENTS.md): one process tree and worker,6144 MiB aggregate
+job cap,2048 MiB Lean cap, at most300 seconds per trial, and startup gates
+of2560 MiB free physical RAM and12288 MiB free system commit. Never bypass
+the runner, run parallel proofs, raise limits, clear needed caches or change
+paging settings. Failed large reductions are split into small proved blocks.
 
-This is a working-tree snapshot, rather than a migration of the old nested
-Git histories. It retains project-authored working material, drafts, logs,
-manuscripts, data and literature files. Exclusions are recorded in the
-snapshot manifest: nested `.git` metadata, `.lake` and Python caches,
-downloaded Mathlib cache archives, compiled Lean artifacts and the temporary
-Lean toolchain installer archive. Those excluded local files are preserved
-on disk. `SNAPSHOT_MANIFEST.json` lists included paths, byte sizes and SHA-256
-hashes for checking the uploaded snapshot.
+## Snapshot boundaries and third-party material
 
-Third-party source and literature retain their original notices and
-attribution. No new blanket license is granted by this archive.
+This is a working-tree archive, not a migration of the old nested Git
+histories. It retains project sources, drafts, logs, manuscripts, data and
+literature. `SNAPSHOT_MANIFEST.json` records included paths, sizes and SHA-256
+hashes and identifies exclusions: nested Git metadata, `.lake` and Python
+caches, compiled Lean artifacts, downloaded Mathlib cache archives and the
+temporary Lean installer archive. Excluded local files remain on disk.
+Third-party sources and literature retain their original notices; no new
+blanket license is granted by this private archive.

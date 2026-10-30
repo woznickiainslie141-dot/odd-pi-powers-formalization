@@ -1,0 +1,18 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\PeriodWindowFamily.lean:31:0: warning: automatically included section variable(s) unused in theorem `OddPiPowers.L99.PrimeRates.periodWindowFamily_labels_inj`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\PeriodWindowFamily.lean:46:0: warning: automatically included section variable(s) unused in theorem `OddPiPowers.L99.PrimeRates.periodWindowFamily_cap`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\PeriodWindowFamily.lean:63:0: warning: automatically included section variable(s) unused in theorem `OddPiPowers.L99.PrimeRates.periodWindowFamily_rate`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

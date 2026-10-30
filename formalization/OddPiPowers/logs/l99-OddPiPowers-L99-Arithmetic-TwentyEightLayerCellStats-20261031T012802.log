@@ -1,0 +1,445 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:778:2: error: Type mismatch
+  cell_length_append twentyEightCellsChunk0_length
+    (cell_length_append twentyEightCellsChunk1_length
+      (cell_length_append twentyEightCellsChunk2_length
+        (cell_length_append twentyEightCellsChunk3_length
+          (cell_length_append twentyEightCellsChunk4_length
+            (cell_length_append twentyEightCellsChunk5_length
+              (cell_length_append twentyEightCellsChunk6_length
+                (cell_length_append twentyEightCellsChunk7_length
+                  (cell_length_append twentyEightCellsChunk8_length
+                    (cell_length_append twentyEightCellsChunk9_length
+                      (cell_length_append twentyEightCellsChunk10_length
+                        (cell_length_append twentyEightCellsChunk11_length
+                          (cell_length_append twentyEightCellsChunk12_length
+                            (cell_length_append twentyEightCellsChunk13_length
+                              (cell_length_append twentyEightCellsChunk14_length
+                                (cell_length_append twentyEightCellsChunk15_length
+                                  (cell_length_append twentyEightCellsChunk16_length
+                                    (cell_length_append twentyEightCellsChunk17_length
+                                      (cell_length_append twentyEightCellsChunk18_length
+                                        (cell_length_append twentyEightCellsChunk19_length
+                                          (cell_length_append twentyEightCellsChunk20_length
+                                            (cell_length_append twentyEightCellsChunk21_length
+                                              (cell_length_append twentyEightCellsChunk22_length
+                                                (cell_length_append twentyEightCellsChunk23_length
+                                                  (cell_length_append twentyEightCellsChunk24_length
+                                                    (cell_length_append twentyEightCellsChunk25_length
+                                                      (cell_length_append twentyEightCellsChunk26_length
+                                                        (cell_length_append twentyEightCellsChunk27_length
+                                                          (cell_length_append twentyEightCellsChunk28_length
+                                                            (cell_length_append twentyEightCellsChunk29_length
+                                                              (cell_length_append twentyEightCellsChunk30_length
+                                                                (cell_length_append twentyEightCellsChunk31_length
+                                                                  (cell_length_append twentyEightCellsChunk32_length
+                                                                    (cell_length_append twentyEightCellsChunk33_length
+                                                                      (cell_length_append twentyEightCellsChunk34_length
+                                                                        (cell_length_append
+                                                                          twentyEightCellsChunk35_length
+                                                                          (cell_length_append
+                                                                            twentyEightCellsChunk36_length
+                                                                            (cell_length_append
+                                                                              twentyEightCellsChunk37_length
+                                                                              (cell_length_append
+                                                                                twentyEightCellsChunk38_length
+                                                                                (cell_length_append
+                                                                                  twentyEightCellsChunk39_length
+                                                                                  (cell_length_append
+                                                                                    twentyEightCellsChunk40_length
+                                                                                    (cell_length_append
+                                                                                      twentyEightCellsChunk41_length
+                                                                                      (cell_length_append
+                                                                                        twentyEightCellsChunk42_length
+                                                                                        (cell_length_append
+                                                                                          twentyEightCellsChunk43_length
+                                                                                          (cell_length_append
+                                                                                            twentyEightCellsChunk44_length
+                                                                                            (cell_length_append
+                                                                                              twentyEightCellsChunk45_length
+                                                                                              (cell_length_append
+                                                                                                twentyEightCellsChunk46_length
+                                                                                                (cell_length_append
+                                                                                                  twentyEightCellsChunk47_length
+                                                                                                  (cell_length_append
+                                                                                                    twentyEightCellsChunk48_length
+                                                                                                    (cell_length_append
+                                                                                                      twentyEightCellsChunk49_length
+                                                                                                      (cell_length_append
+                                                                                                        twentyEightCellsChunk50_length
+                                                                                                        ⋯))))))))))))))))))))))))))))))))))))))))))))))))))
+has type
+  (twentyEightLayerCellChunk0 ++
+        (twentyEightLayerCellChunk1 ++
+          (twentyEightLayerCellChunk2 ++
+            (twentyEightLayerCellChunk3 ++
+              (twentyEightLayerCellChunk4 ++
+                (twentyEightLayerCellChunk5 ++
+                  (twentyEightLayerCellChunk6 ++
+                    (twentyEightLayerCellChunk7 ++
+                      (twentyEightLayerCellChunk8 ++
+                        (twentyEightLayerCellChunk9 ++
+                          (twentyEightLayerCellChunk10 ++
+                            (twentyEightLayerCellChunk11 ++
+                              (twentyEightLayerCellChunk12 ++
+                                (twentyEightLayerCellChunk13 ++
+                                  (twentyEightLayerCellChunk14 ++
+                                    (twentyEightLayerCellChunk15 ++
+                                      (twentyEightLayerCellChunk16 ++
+                                        (twentyEightLayerCellChunk17 ++
+                                          (twentyEightLayerCellChunk18 ++
+                                            (twentyEightLayerCellChunk19 ++
+                                              (twentyEightLayerCellChunk20 ++
+                                                (twentyEightLayerCellChunk21 ++
+                                                  (twentyEightLayerCellChunk22 ++
+                                                    (twentyEightLayerCellChunk23 ++
+                                                      (twentyEightLayerCellChunk24 ++
+                                                        (twentyEightLayerCellChunk25 ++
+                                                          (twentyEightLayerCellChunk26 ++
+                                                            (twentyEightLayerCellChunk27 ++
+                                                              (twentyEightLayerCellChunk28 ++
+                                                                (twentyEightLayerCellChunk29 ++
+                                                                  (twentyEightLayerCellChunk30 ++
+                                                                    (twentyEightLayerCellChunk31 ++
+                                                                      (twentyEightLayerCellChunk32 ++
+                                                                        (twentyEightLayerCellChunk33 ++
+                                                                          (twentyEightLayerCellChunk34 ++
+                                                                            (twentyEightLayerCellChunk35 ++
+                                                                              (twentyEightLayerCellChunk36 ++
+                                                                                (twentyEightLayerCellChunk37 ++
+                                                                                  (twentyEightLayerCellChunk38 ++
+                                                                                    (twentyEightLayerCellChunk39 ++
+                                                                                      (twentyEightLayerCellChunk40 ++
+                                                                                        (twentyEightLayerCellChunk41 ++
+                                                                                          (twentyEightLayerCellChunk42 ++
+                                                                                            (twentyEightLayerCellChunk43 ++
+                                                                                              (twentyEightLayerCellChunk44 ++
+                                                                                                (twentyEightLayerCellChunk45 ++
+                                                                                                  (twentyEightLayerCellChunk46 ++
+                                                                                                    (twentyEightLayerCellChunk47 ++
+                                                                                                      (twentyEightLayerCellChunk48 ++
+                                                                                                        ⋯))))))))))))))))))))))))))))))))))))))))))))))))).length =
+    20 +
+      (20 +
+        (20 +
+          (20 +
+            (20 +
+              (20 +
+                (20 +
+                  (20 +
+                    (20 +
+                      (20 +
+                        (20 +
+                          (20 +
+                            (20 +
+                              (20 +
+                                (20 +
+                                  (20 +
+                                    (20 +
+                                      (20 +
+                                        (20 +
+                                          (20 +
+                                            (20 +
+                                              (20 +
+                                                (20 +
+                                                  (20 +
+                                                    (20 +
+                                                      (20 +
+                                                        (20 +
+                                                          (20 +
+                                                            (20 +
+                                                              (20 +
+                                                                (20 +
+                                                                  (20 +
+                                                                    (20 +
+                                                                      (20 +
+                                                                        (20 +
+                                                                          (20 +
+                                                                            (20 +
+                                                                              (20 +
+                                                                                (20 +
+                                                                                  (20 +
+                                                                                    (20 +
+                                                                                      (20 +
+                                                                                        (20 +
+                                                                                          (20 +
+                                                                                            (20 +
+                                                                                              (20 +
+                                                                                                (20 +
+                                                                                                  (20 +
+                                                                                                    (20 +
+                                                                                                      (20 +
+                                                                                                        ⋯)))))))))))))))))))))))))))))))))))))))))))))))))
+but is expected to have type
+  (⋯ ++ twentyEightLayerCellChunk102 ++ twentyEightLayerCellChunk103 ++ twentyEightLayerCellChunk104 ++
+                                                                                                  twentyEightLayerCellChunk105 ++
+                                                                                                twentyEightLayerCellChunk106 ++
+                                                                                              twentyEightLayerCellChunk107 ++
+                                                                                            twentyEightLayerCellChunk108 ++
+                                                                                          twentyEightLayerCellChunk109 ++
+                                                                                        twentyEightLayerCellChunk110 ++
+                                                                                      twentyEightLayerCellChunk111 ++
+                                                                                    twentyEightLayerCellChunk112 ++
+                                                                                  twentyEightLayerCellChunk113 ++
+                                                                                twentyEightLayerCellChunk114 ++
+                                                                              twentyEightLayerCellChunk115 ++
+                                                                            twentyEightLayerCellChunk116 ++
+                                                                          twentyEightLayerCellChunk117 ++
+                                                                        twentyEightLayerCellChunk118 ++
+                                                                      twentyEightLayerCellChunk119 ++
+                                                                    twentyEightLayerCellChunk120 ++
+                                                                  twentyEightLayerCellChunk121 ++
+                                                                twentyEightLayerCellChunk122 ++
+                                                              twentyEightLayerCellChunk123 ++
+                                                            twentyEightLayerCellChunk124 ++
+                                                          twentyEightLayerCellChunk125 ++
+                                                        twentyEightLayerCellChunk126 ++
+                                                      twentyEightLayerCellChunk127 ++
+                                                    twentyEightLayerCellChunk128 ++
+                                                  twentyEightLayerCellChunk129 ++
+                                                twentyEightLayerCellChunk130 ++
+                                              twentyEightLayerCellChunk131 ++
+                                            twentyEightLayerCellChunk132 ++
+                                          twentyEightLayerCellChunk133 ++
+                                        twentyEightLayerCellChunk134 ++
+                                      twentyEightLayerCellChunk135 ++
+                                    twentyEightLayerCellChunk136 ++
+                                  twentyEightLayerCellChunk137 ++
+                                twentyEightLayerCellChunk138 ++
+                              twentyEightLayerCellChunk139 ++
+                            twentyEightLayerCellChunk140 ++
+                          twentyEightLayerCellChunk141 ++
+                        twentyEightLayerCellChunk142 ++
+                      twentyEightLayerCellChunk143 ++
+                    twentyEightLayerCellChunk144 ++
+                  twentyEightLayerCellChunk145 ++
+                twentyEightLayerCellChunk146 ++
+              twentyEightLayerCellChunk147 ++
+            twentyEightLayerCellChunk148 ++
+          twentyEightLayerCellChunk149 ++
+        twentyEightLayerCellChunk150).length =
+    3004
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:782:2: error: Type mismatch
+  cell_positive_append twentyEightCellsChunk0_positive_count
+    (cell_positive_append twentyEightCellsChunk1_positive_count
+      (cell_positive_append twentyEightCellsChunk2_positive_count
+        (cell_positive_append twentyEightCellsChunk3_positive_count
+          (cell_positive_append twentyEightCellsChunk4_positive_count
+            (cell_positive_append twentyEightCellsChunk5_positive_count
+              (cell_positive_append twentyEightCellsChunk6_positive_count
+                (cell_positive_append twentyEightCellsChunk7_positive_count
+                  (cell_positive_append twentyEightCellsChunk8_positive_count
+                    (cell_positive_append twentyEightCellsChunk9_positive_count
+                      (cell_positive_append twentyEightCellsChunk10_positive_count
+                        (cell_positive_append twentyEightCellsChunk11_positive_count
+                          (cell_positive_append twentyEightCellsChunk12_positive_count
+                            (cell_positive_append twentyEightCellsChunk13_positive_count
+                              (cell_positive_append twentyEightCellsChunk14_positive_count
+                                (cell_positive_append twentyEightCellsChunk15_positive_count
+                                  (cell_positive_append twentyEightCellsChunk16_positive_count
+                                    (cell_positive_append twentyEightCellsChunk17_positive_count
+                                      (cell_positive_append twentyEightCellsChunk18_positive_count
+                                        (cell_positive_append twentyEightCellsChunk19_positive_count
+                                          (cell_positive_append twentyEightCellsChunk20_positive_count
+                                            (cell_positive_append twentyEightCellsChunk21_positive_count
+                                              (cell_positive_append twentyEightCellsChunk22_positive_count
+                                                (cell_positive_append twentyEightCellsChunk23_positive_count
+                                                  (cell_positive_append twentyEightCellsChunk24_positive_count
+                                                    (cell_positive_append twentyEightCellsChunk25_positive_count
+                                                      (cell_positive_append twentyEightCellsChunk26_positive_count
+                                                        (cell_positive_append twentyEightCellsChunk27_positive_count
+                                                          (cell_positive_append twentyEightCellsChunk28_positive_count
+                                                            (cell_positive_append twentyEightCellsChunk29_positive_count
+                                                              (cell_positive_append
+                                                                twentyEightCellsChunk30_positive_count
+                                                                (cell_positive_append
+                                                                  twentyEightCellsChunk31_positive_count
+                                                                  (cell_positive_append
+                                                                    twentyEightCellsChunk32_positive_count
+                                                                    (cell_positive_append
+                                                                      twentyEightCellsChunk33_positive_count
+                                                                      (cell_positive_append
+                                                                        twentyEightCellsChunk34_positive_count
+                                                                        (cell_positive_append
+                                                                          twentyEightCellsChunk35_positive_count
+                                                                          (cell_positive_append
+                                                                            twentyEightCellsChunk36_positive_count
+                                                                            (cell_positive_append
+                                                                              twentyEightCellsChunk37_positive_count
+                                                                              (cell_positive_append
+                                                                                twentyEightCellsChunk38_positive_count
+                                                                                (cell_positive_append
+                                                                                  twentyEightCellsChunk39_positive_count
+                                                                                  (cell_positive_append
+                                                                                    twentyEightCellsChunk40_positive_count
+                                                                                    (cell_positive_append
+                                                                                      twentyEightCellsChunk41_positive_count
+                                                                                      (cell_positive_append
+                                                                                        twentyEightCellsChunk42_positive_count
+                                                                                        (cell_positive_append
+                                                                                          twentyEightCellsChunk43_positive_count
+                                                                                          (cell_positive_append
+                                                                                            twentyEightCellsChunk44_positive_count
+                                                                                            (cell_positive_append
+                                                                                              twentyEightCellsChunk45_positive_count
+                                                                                              (cell_positive_append
+                                                                                                twentyEightCellsChunk46_positive_count
+                                                                                                (cell_positive_append
+                                                                                                  twentyEightCellsChunk47_positive_count
+                                                                                                  (cell_positive_append
+                                                                                                    twentyEightCellsChunk48_positive_count
+                                                                                                    (cell_positive_append
+                                                                                                      twentyEightCellsChunk49_positive_count
+                                                                                                      (cell_positive_append
+                                                                                                        twentyEightCellsChunk50_positive_count
+                                                                                                        ⋯))))))))))))))))))))))))))))))))))))))))))))))))))
+has type
+  (List.filter (fun c => decide (0 < c.value))
+        (twentyEightLayerCellChunk0 ++
+          (twentyEightLayerCellChunk1 ++
+            (twentyEightLayerCellChunk2 ++
+              (twentyEightLayerCellChunk3 ++
+                (twentyEightLayerCellChunk4 ++
+                  (twentyEightLayerCellChunk5 ++
+                    (twentyEightLayerCellChunk6 ++
+                      (twentyEightLayerCellChunk7 ++
+                        (twentyEightLayerCellChunk8 ++
+                          (twentyEightLayerCellChunk9 ++
+                            (twentyEightLayerCellChunk10 ++
+                              (twentyEightLayerCellChunk11 ++
+                                (twentyEightLayerCellChunk12 ++
+                                  (twentyEightLayerCellChunk13 ++
+                                    (twentyEightLayerCellChunk14 ++
+                                      (twentyEightLayerCellChunk15 ++
+                                        (twentyEightLayerCellChunk16 ++
+                                          (twentyEightLayerCellChunk17 ++
+                                            (twentyEightLayerCellChunk18 ++
+                                              (twentyEightLayerCellChunk19 ++
+                                                (twentyEightLayerCellChunk20 ++
+                                                  (twentyEightLayerCellChunk21 ++
+                                                    (twentyEightLayerCellChunk22 ++
+                                                      (twentyEightLayerCellChunk23 ++
+                                                        (twentyEightLayerCellChunk24 ++
+                                                          (twentyEightLayerCellChunk25 ++
+                                                            (twentyEightLayerCellChunk26 ++
+                                                              (twentyEightLayerCellChunk27 ++
+                                                                (twentyEightLayerCellChunk28 ++
+                                                                  (twentyEightLayerCellChunk29 ++
+                                                                    (twentyEightLayerCellChunk30 ++
+                                                                      (twentyEightLayerCellChunk31 ++
+                                                                        (twentyEightLayerCellChunk32 ++
+                                                                          (twentyEightLayerCellChunk33 ++
+                                                                            (twentyEightLayerCellChunk34 ++
+                                                                              (twentyEightLayerCellChunk35 ++
+                                                                                (twentyEightLayerCellChunk36 ++
+                                                                                  (twentyEightLayerCellChunk37 ++
+                                                                                    (twentyEightLayerCellChunk38 ++
+                                                                                      (twentyEightLayerCellChunk39 ++
+                                                                                        (twentyEightLayerCellChunk40 ++
+                                                                                          (twentyEightLayerCellChunk41 ++
+                                                                                            (twentyEightLayerCellChunk42 ++
+                                                                                              (twentyEightLayerCellChunk43 ++
+                                                                                                (twentyEightLayerCellChunk44 ++
+                                                                                                  (twentyEightLayerCellChunk45 ++
+                                                                                                    (twentyEightLayerCellChunk46 ++
+                                                                                                      (twentyEightLayerCellChunk47 ++
+                                                                                                        ⋯))))))))))))))))))))))))))))))))))))))))))))))))).length =
+    19 +
+      (20 +
+        (20 +
+          (20 +
+            (20 +
+              (20 +
+                (20 +
+                  (20 +
+                    (20 +
+                      (20 +
+                        (20 +
+                          (20 +
+                            (20 +
+                              (20 +
+                                (20 +
+                                  (20 +
+                                    (20 +
+                                      (20 +
+                                        (20 +
+                                          (20 +
+                                            (20 +
+                                              (20 +
+                                                (20 +
+                                                  (20 +
+                                                    (20 +
+                                                      (20 +
+                                                        (20 +
+                                                          (20 +
+                                                            (20 +
+                                                              (20 +
+                                                                (20 +
+                                                                  (20 +
+                                                                    (20 +
+                                                                      (20 +
+                                                                        (20 +
+                                                                          (20 +
+                                                                            (20 +
+                                                                              (20 +
+                                                                                (20 +
+                                                                                  (20 +
+                                                                                    (20 +
+                                                                                      (20 +
+                                                                                        (20 +
+                                                                                          (20 +
+                                                                                            (20 +
+                                                                                              (20 +
+                                                                                                (20 +
+                                                                                                  (20 +
+                                                                                                    (20 +
+                                                                                                      (20 +
+                                                                                                        ⋯)))))))))))))))))))))))))))))))))))))))))))))))))
+but is expected to have type
+  (List.filter (fun c => decide (0 < c.value))
+        (⋯ ++ twentyEightLayerCellChunk103 ++ twentyEightLayerCellChunk104 ++ twentyEightLayerCellChunk105 ++
+                                                                                                  twentyEightLayerCellChunk106 ++
+                                                                                                twentyEightLayerCellChunk107 ++
+                                                                                              twentyEightLayerCellChunk108 ++
+                                                                                            twentyEightLayerCellChunk109 ++
+                                                                                          twentyEightLayerCellChunk110 ++
+                                                                                        twentyEightLayerCellChunk111 ++
+                                                                                      twentyEightLayerCellChunk112 ++
+                                                                                    twentyEightLayerCellChunk113 ++
+                                                                                  twentyEightLayerCellChunk114 ++
+                                                                                twentyEightLayerCellChunk115 ++
+                                                                              twentyEightLayerCellChunk116 ++
+                                                                            twentyEightLayerCellChunk117 ++
+                                                                          twentyEightLayerCellChunk118 ++
+                                                                        twentyEightLayerCellChunk119 ++
+                                                                      twentyEightLayerCellChunk120 ++
+                                                                    twentyEightLayerCellChunk121 ++
+                                                                  twentyEightLayerCellChunk122 ++
+                                                                twentyEightLayerCellChunk123 ++
+                                                              twentyEightLayerCellChunk124 ++
+                                                            twentyEightLayerCellChunk125 ++
+                                                          twentyEightLayerCellChunk126 ++
+                                                        twentyEightLayerCellChunk127 ++
+                                                      twentyEightLayerCellChunk128 ++
+                                                    twentyEightLayerCellChunk129 ++
+                                                  twentyEightLayerCellChunk130 ++
+                                                twentyEightLayerCellChunk131 ++
+                                              twentyEightLayerCellChunk132 ++
+                                            twentyEightLayerCellChunk133 ++
+                                          twentyEightLayerCellChunk134 ++
+                                        twentyEightLayerCellChunk135 ++
+                                      twentyEightLayerCellChunk136 ++
+                                    twentyEightLayerCellChunk137 ++
+                                  twentyEightLayerCellChunk138 ++
+                                twentyEightLayerCellChunk139 ++
+                              twentyEightLayerCellChunk140 ++
+                            twentyEightLayerCellChunk141 ++
+                          twentyEightLayerCellChunk142 ++
+                        twentyEightLayerCellChunk143 ++
+                      twentyEightLayerCellChunk144 ++
+                    twentyEightLayerCellChunk145 ++
+                  twentyEightLayerCellChunk146 ++
+                twentyEightLayerCellChunk147 ++
+              twentyEightLayerCellChunk148 ++
+            twentyEightLayerCellChunk149 ++
+          twentyEightLayerCellChunk150)).length =
+    3000

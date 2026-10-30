@@ -1,0 +1,19 @@
+'OddPiPowers.L99.twentyEightLayerCellTable_all_valid' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.L99.twentyEightLayerCellTable_pairwise_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.twentyEightLayerLowerBound_le_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.scaledTwentyEightLayerActualGrouping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.scaledTwentyEightLayer_shapeRelativeLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.l99_actualDecay_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.l99_actualGrowth_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.PrimeRates.l99_prefix_floor_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.PrimeRates.l99_tail_floor_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.PrimeRates.l99_finite_window_rate_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.PrimeRates.l99_actualDivisor_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.L99.l99_actualFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.pi_cube_exponentUpperBound_l99_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.L99.pi_cube_exponentUpperBound_lt_110793_div_100' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.L99.pi_cube_not_liouvilleWith_110793_div_100' depends on axioms: [propext, Classical.choice, Quot.sound]

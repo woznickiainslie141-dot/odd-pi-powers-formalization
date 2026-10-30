@@ -1,0 +1,8 @@
+info: mathlib: checking out revision '56a005855ea17e0b0958f73ec801ae140b0a1679'
+info: LeanSearchClient: checking out revision 'd6b4c7be5be75ec4917c873ac50c756dc1436372'
+warning: proofwidgets: repository has local changes:
+  D:\codex\pi-irrationality\formalization\OddPiPowers\.lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  D:\codex\pi-irrationality\formalization\OddPiPowers\.lake/packages\aesop
+warning: batteries: repository has local changes:
+  D:\codex\pi-irrationality\formalization\OddPiPowers\.lake/packages\batteries

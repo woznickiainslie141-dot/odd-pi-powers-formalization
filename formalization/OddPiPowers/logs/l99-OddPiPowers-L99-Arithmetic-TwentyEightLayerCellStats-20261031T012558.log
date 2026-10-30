@@ -1,0 +1,301 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:8:11: error: failed to set reducibility status, `twentyEightLayerCellTable` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk0` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk1` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk2` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk3` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk4` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk5` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk6` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk7` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk8` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk9` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk10` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk11` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk12` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk13` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk14` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk15` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk16` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk17` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk18` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk19` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk20` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk21` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk22` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk23` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk24` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk25` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk26` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk27` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk28` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk29` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk30` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk31` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk32` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk33` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk34` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk35` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk36` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk37` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk38` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk39` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk40` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk41` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk42` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk43` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk44` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk45` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk46` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk47` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk48` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk49` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk50` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk51` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk52` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk53` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk54` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk55` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk56` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk57` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk58` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk59` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk60` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk61` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk62` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk63` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk64` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk65` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk66` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk67` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk68` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk69` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk70` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk71` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk72` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk73` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk74` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk75` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk76` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk77` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk78` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk79` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk80` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk81` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk82` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk83` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk84` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk85` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk86` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk87` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk88` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk89` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk90` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk91` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk92` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk93` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk94` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk95` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk96` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk97` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: failed to set reducibility status, `twentyEightLayerCellChunk98` has not been defined in this file, consider using the `local` modifier
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellStats.lean:9:11: error: maximum number of errors (100; from option `maxErrors`) reached, exiting

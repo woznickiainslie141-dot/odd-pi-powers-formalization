@@ -1,0 +1,5 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCells.lean:39:8: error: (kernel) excessive memory consumption detected
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCells.lean:41:8: error: (kernel) excessive memory consumption detected
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCells.lean:46:73: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information

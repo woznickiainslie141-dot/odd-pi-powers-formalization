@@ -1,0 +1,3 @@
+info: stderr:
+error: remote origin already exists.
+error: external command 'git' exited with code 3

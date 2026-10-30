@@ -1,0 +1,1422 @@
+{
+  "status": "completed",
+  "target": "OddPiPowers.L99.Transfer.PiCube",
+  "mode": "emit",
+  "plan": [
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellChunks",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellDefs",
+    "OddPiPowers.L99.Construction.ScaledTwentyEightLayerFamily",
+    "OddPiPowers.L99.Analysis.TwentyEightLayerActualRates",
+    "OddPiPowers.L99.Analysis.CentralNumericBounds",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate00",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate01",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate02",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate03",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate04",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate05",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate06",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate07",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate08",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate09",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate10",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate11",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate12",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate13",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate14",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate15",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate16",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate17",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate18",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate19",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate20",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate21",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate22",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate23",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate24",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate25",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate26",
+    "OddPiPowers.L99.Analysis.L99CentralCertificate27",
+    "OddPiPowers.L99.Analysis.L99NumericalRates",
+    "OddPiPowers.L99.Arithmetic.PeriodFloorCertificate",
+    "OddPiPowers.L99.Arithmetic.PeriodFloorBlock",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellSoundness",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellStats",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle000",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle001",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle002",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle003",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle004",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle005",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle006",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle007",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle008",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle009",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle010",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle011",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle012",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle013",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle014",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle015",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle016",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle017",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle018",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle019",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle020",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle021",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle022",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle023",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle024",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle025",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle026",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle027",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle028",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle029",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle030",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCells",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellOrder",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCost",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerCertifiedBound",
+    "OddPiPowers.L99.Arithmetic.CellPrimeWindows",
+    "OddPiPowers.L99.Arithmetic.ScaledPrimeRates",
+    "OddPiPowers.L99.Arithmetic.PeriodWindowFamily",
+    "OddPiPowers.L99.Arithmetic.ShrunkenCellWindows",
+    "OddPiPowers.L99.Arithmetic.CellWindowAggregate",
+    "OddPiPowers.L99.Arithmetic.PeriodPrefixSum",
+    "OddPiPowers.L99.Arithmetic.PeriodTailFloor",
+    "OddPiPowers.L99.Arithmetic.PeriodTailAggregate",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle000",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle001",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle002",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle003",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle004",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle005",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle006",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle007",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle008",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle009",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle010",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle011",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle012",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle013",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle014",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle015",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle016",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle017",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle018",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle019",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle020",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle021",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle022",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle023",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle024",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle025",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle026",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle027",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle028",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle029",
+    "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle030",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle000",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle001",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle002",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle003",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle004",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle005",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle006",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle007",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle008",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle009",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle010",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle011",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle012",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle013",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle014",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle015",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle016",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle017",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle018",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle019",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle020",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle021",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle022",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle023",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle024",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle025",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle026",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle027",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle028",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle029",
+    "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle030",
+    "OddPiPowers.L99.Arithmetic.L99PeriodAggregate",
+    "OddPiPowers.L99.Arithmetic.TwentyEightLayerDivisorCertificate",
+    "OddPiPowers.L99.Arithmetic.L99SharpDivisorRate",
+    "OddPiPowers.L99.Transfer.PiCube"
+  ],
+  "completed": [
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellChunks",
+      "source_sha256": "e56bdcb35155359744fc82a9dd8c2fdf48f667a413c7a1bcf4a93644f5e24759",
+      "fingerprint": "87f65268946f66accf170d54fe2dea447b724cc5ce20ddd52334ba6fe3d8d951",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellChunks-20261031T003023.log",
+      "mode": "lake",
+      "seconds": 8.328
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellDefs",
+      "source_sha256": "91ba27e0fdae8f82af502a5ca5ef7cdf01dacdcb86b09f81bbeb1d6457fcf8c9",
+      "fingerprint": "d0bc75930bb791174773a1fb2e0ae3272bc2a6220f38c6520c8bc06196d345db",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellDefs-20261031T003032.log",
+      "mode": "lake",
+      "seconds": 45.453
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity000",
+      "source_sha256": "ae37bb53bc12d76ec4637f4d2c9068c7d504f9dfcde4de2507937396df5a386d",
+      "fingerprint": "f0473c3039129c6096aef4af143e63350a81664ba836b77686e14345dbdd3282",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity000-20261031T004037.log",
+      "mode": "emit",
+      "seconds": 21.141
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellSoundness",
+      "source_sha256": "9d0c8e4f0622e3db557d7c2e1f0cf4a52fbfc30b39c105bd45e31cc66e382489",
+      "fingerprint": "5eced2587079fb78a1fda038097f0e1c1a9591cc03426137a7382cfb60a1c5b1",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellSoundness-20261031T002755.log",
+      "mode": "emit",
+      "seconds": 10.032
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCost",
+      "source_sha256": "05ffae6df500d220d9401f550ac465874b407be1c7aa2fbb10f0bcd3c5f0e4c7",
+      "fingerprint": "d152473912c0ee2056a8460767b216c3b7bc1669adca9e7dd8009a11da1c0882",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCost-20261031T002805.log",
+      "mode": "emit",
+      "seconds": 9.469
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity001",
+      "source_sha256": "2d52024375afb0fb1e76d7797700466ebbd5e3f5e2961ec71b975da8ca857356",
+      "fingerprint": "cf46d23ef72d296b3eb8cfa35ad149e62377347e6c887fdfe6eb2ea8966cdd0d",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity001-20261031T002832.log",
+      "mode": "emit",
+      "seconds": 20.813
+    },
+    {
+      "module": "OddPiPowers.L99.Construction.ScaledTwentyEightLayerFamily",
+      "source_sha256": "dc768a3ad066d479c1016d7cdacd45773b7a168b392de4ca25f86bd34643593e",
+      "fingerprint": "ffacbce60d9e22a34491a558c15845210ca2ebaee38b38e9728c55604eec5bc1",
+      "log": "logs/l99-OddPiPowers-L99-Construction-ScaledTwentyEightLayerFamily-20261031T003117.log",
+      "mode": "lake",
+      "seconds": 56.594
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.TwentyEightLayerActualRates",
+      "source_sha256": "aca19995df3b7f5eaa52b39165489358f1e60706b7b6e0d3e9ab0f592579780c",
+      "fingerprint": "436a4a97a12bb21eaf02885292391a420784ed3512f028e54e5f0007b41d5493",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-TwentyEightLayerActualRates-20261031T003214.log",
+      "mode": "lake",
+      "seconds": 86.25
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.CentralNumericBounds",
+      "source_sha256": "40f67426dcc3d029f1577ea0f3c278c279f404c8b12986042c48f615fe3f3d5a",
+      "fingerprint": "0e60e6deb16aece45d6224443601a37073582e05c7b56ed7e0006194be6481af",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-CentralNumericBounds-20261031T003409.log",
+      "mode": "emit",
+      "seconds": 25.703
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate00",
+      "source_sha256": "033d2c4a75d2ae91ffed814b17e472a878232f274a55452b762d27d2f2da790e",
+      "fingerprint": "d4b0f5b6d5660f9d73b43270c5a50876eb1762f0e289bfcab499551307c52512",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate00-20261031T003435.log",
+      "mode": "emit",
+      "seconds": 11.578
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate01",
+      "source_sha256": "3828bd8eb966c817fd79141f116032d6087e539ad1d452bf2dfb6d83384b494b",
+      "fingerprint": "0f6d326cd24f56016ee8edfc5db16f91d5fdfcec75b911c0ce4cfd85d76e53e5",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate01-20261031T003446.log",
+      "mode": "emit",
+      "seconds": 11.797
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate02",
+      "source_sha256": "d549755715bdcd16b9d5edea93df0ed69e0128b49b8d12e4fe505809a15a3d11",
+      "fingerprint": "ada8630e60f3301fc66b0a8e9e8729e27da2b412aa0b46fe846e790adf8f5760",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate02-20261031T003458.log",
+      "mode": "emit",
+      "seconds": 11.641
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate03",
+      "source_sha256": "97f5beb66c6d6d5e07383712e90f78c41be7a9fdb3ef38235b93303eef3216d7",
+      "fingerprint": "1bae72f1ec382641a0d27f9bc8e05af5340619437b4a5072432b928beaeee78b",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate03-20261031T003510.log",
+      "mode": "emit",
+      "seconds": 11.687
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate04",
+      "source_sha256": "fb9428dfb29b8d52b5c85ac87aebd3a2020b9840ef1033a3a3d5886c924b39e5",
+      "fingerprint": "15aa613a1cc39d321135e0eeb6d9f68aa721d2fde67b4670a9718b76eb76421e",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate04-20261031T003521.log",
+      "mode": "emit",
+      "seconds": 11.672
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate05",
+      "source_sha256": "4f83d0a19cb6c660d36ada785683c2687ac0e3a4027b4b952b1471dc4f79f328",
+      "fingerprint": "67128753da5d492bb9e28350dd6f26686320343aeec327f68e9249af87ed8f61",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate05-20261031T003533.log",
+      "mode": "emit",
+      "seconds": 11.672
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate06",
+      "source_sha256": "98b21e0cc78479c6525a2f02285d9955ea6bc9dd373ad7d9fa84062e7b662020",
+      "fingerprint": "51b33f4066b4bb8b590e2776fe8c31eadb5bcdd4475d8e2141222126ca3492e5",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate06-20261031T003545.log",
+      "mode": "emit",
+      "seconds": 11.625
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate07",
+      "source_sha256": "c8b072dcbde98d0f3d90cde14e535196b752621777e9a674251f4d191b7307e7",
+      "fingerprint": "fe09d00028192e6e1ff1e979d8e53f39b35edcbb032572fbf51565460d2aad9f",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate07-20261031T003556.log",
+      "mode": "emit",
+      "seconds": 11.687
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate08",
+      "source_sha256": "61dc78b7cb4e9c8c001975e642ec3a710b157f9a13f05f08f39d5d6591d14001",
+      "fingerprint": "a7316f882d8cb9217bf23302e230bbf1520fd86c0d6d4fd748f3ef46707a7dc2",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate08-20261031T003608.log",
+      "mode": "emit",
+      "seconds": 11.657
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate09",
+      "source_sha256": "3d654a2199d7cad0f5dae226d9dd88bfedbfba65e8307db1b023a90a9a4703e4",
+      "fingerprint": "d8e35b9e18bd3ca906b068ef4ae0910a31e62a9be6ec11317c25edfab8ae149a",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate09-20261031T003620.log",
+      "mode": "emit",
+      "seconds": 11.5
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate10",
+      "source_sha256": "5a03925827c09153850fa207966225f100d16a67441c168ef74aca899ebfb616",
+      "fingerprint": "def8f54e13ccc4fbea212e4c26fafae1062b0ec90e01b7ec7b44080954decc78",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate10-20261031T003631.log",
+      "mode": "emit",
+      "seconds": 11.485
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate11",
+      "source_sha256": "8992556e8071ff53451899efb6e8bed20f6a0e00752d212a0edc0a07097ffe60",
+      "fingerprint": "120fe2edfdf54f60cbdf571d86b6cac98604d1c3a0c4f228b4cac8c090d2e9ad",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate11-20261031T003643.log",
+      "mode": "emit",
+      "seconds": 11.625
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate12",
+      "source_sha256": "04a6d3f899f57563915fc6634160dbc9ca6856883ddef2c39ab4e7d413e0eff7",
+      "fingerprint": "d4a87a3f2141a465af3dd1f9e2a61ba3d7506f6793247356b967742e29dd9fc1",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate12-20261031T003654.log",
+      "mode": "emit",
+      "seconds": 11.656
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate13",
+      "source_sha256": "c965e1ed87479bdeb09e2902eb6a8439267ce1c6f09d0e1ea78e56c5c212f6b5",
+      "fingerprint": "4b0190a97256e471532507bac8fe75ba13f1c3aa5d64c022206a595062c68e12",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate13-20261031T003706.log",
+      "mode": "emit",
+      "seconds": 11.75
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate14",
+      "source_sha256": "eff1eafcc3f84b97dc0cc10b726c6917d7fa461af9cd77efa568dd7185d41b59",
+      "fingerprint": "58d3ff97c890a58e053020539b89889ec8946d9b7aa4cff5916a1839bcccf194",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate14-20261031T003718.log",
+      "mode": "emit",
+      "seconds": 11.672
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate15",
+      "source_sha256": "2288ff715432dc7dd885e42cc11016b48cb5aa340ed2f0b7651fcb539eaedb63",
+      "fingerprint": "083db4c24ee12de93abd4ffecd764a3466dc92b79a8f71f5f4c566907fd42cda",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate15-20261031T003729.log",
+      "mode": "emit",
+      "seconds": 11.734
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate16",
+      "source_sha256": "9ab698fe361422bfcd925e18fa72b9cdac8c588cb5c04226eba89d440e19116e",
+      "fingerprint": "29ed2310d8913a97fd859d33382a1143de648788964ee322db20bfb9e568b2f2",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate16-20261031T003741.log",
+      "mode": "emit",
+      "seconds": 11.703
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate17",
+      "source_sha256": "559c1baefa6be2afa3d7eac0b635ce2db9eaa581398492c5d5dd4b157da38dc8",
+      "fingerprint": "8f054aa2d78863162dbdcfeb6858782d425b3669f86374e5487ebe4540c0847b",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate17-20261031T003753.log",
+      "mode": "emit",
+      "seconds": 11.656
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate18",
+      "source_sha256": "0525e2e42ae98c1e404e510790007dec29097913e82947e238cc8dd821e90755",
+      "fingerprint": "da1e29371cb6bee32184ce5f4a2d215ce921c6886f70484615d4e3f07dfdb93f",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate18-20261031T003805.log",
+      "mode": "emit",
+      "seconds": 11.578
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate19",
+      "source_sha256": "95b5bb39d65741437c397c09b21622586729774139242c995bd3149d2e55b07a",
+      "fingerprint": "27efc9152436a3ba9b2947d2b779ee1a3fc98606b6e4ea26a453038c1c85679a",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate19-20261031T003816.log",
+      "mode": "emit",
+      "seconds": 11.594
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate20",
+      "source_sha256": "5ba0201ca715790da70e8f5a36cc91b123201c8afe779790d54df40b3e2a8d48",
+      "fingerprint": "01f981c2ab3173766165f0c1414f7c4a21ff768ee8655e5125cd4b276007b87e",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate20-20261031T003828.log",
+      "mode": "emit",
+      "seconds": 11.688
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate21",
+      "source_sha256": "5d687342ee3ae2e078d835f46a4e57f841f67cb6798f38bbf2b400a3418026e2",
+      "fingerprint": "c9635cab671b70fe350110d687006c1150257d9d8e29de4192593cf55ce4257b",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate21-20261031T003839.log",
+      "mode": "emit",
+      "seconds": 11.671
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate22",
+      "source_sha256": "72214390b3c48219e0fef63046a565c740a19c79cc3c812897858c809390331c",
+      "fingerprint": "bd86d9fdf661082c6c83beb6ad641da8223d58dfea6c8387f909206419c56c0c",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate22-20261031T003851.log",
+      "mode": "emit",
+      "seconds": 11.813
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate23",
+      "source_sha256": "ac662a3fc347a530cfa6a82bc2cbf960ff1f25d4103b35e993a5e907b6cc8287",
+      "fingerprint": "bda41cb601132ff6803675167d2d081225b03897108649530a69200608602d02",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate23-20261031T003903.log",
+      "mode": "emit",
+      "seconds": 11.703
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate24",
+      "source_sha256": "5af25fbd3a0617d2ea666cf1efa9d0f3e7b0a49c8bd4389f0dcb624a7eca15d6",
+      "fingerprint": "7d83f98e65fa280c1143e4ac80f6823b282850b4e4c39eceb37ce01aa84ce255",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate24-20261031T003915.log",
+      "mode": "emit",
+      "seconds": 11.672
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate25",
+      "source_sha256": "6f03cf29c3cfd04bba8b6c89e692a4b050e0e8a3500f4b1c9f60912ad5ff63c3",
+      "fingerprint": "dda428d99135a452d4090d15c4bce8f96e160e8eed1f47b144ef6b5898eff647",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate25-20261031T003926.log",
+      "mode": "emit",
+      "seconds": 11.672
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate26",
+      "source_sha256": "fa07c885e7542a1450b5d72a7aa930a26d0fef63de9b676a5d90bea6dbc4f56b",
+      "fingerprint": "54f355ed3c6d759263d6b5e13741b95f364cde77fee94ae8fdf7ba9d4b172f22",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate26-20261031T003938.log",
+      "mode": "emit",
+      "seconds": 11.656
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99CentralCertificate27",
+      "source_sha256": "864d01cd9531f86b580e5ae1efc51c841998c0ae6c231a0d7d181c1aec3dd403",
+      "fingerprint": "c270b0b5d7a6c30fd6d597de1bbf03abe73732dc7c873d7212cb528fab8884ad",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate27-20261031T003950.log",
+      "mode": "emit",
+      "seconds": 11.688
+    },
+    {
+      "module": "OddPiPowers.L99.Analysis.L99NumericalRates",
+      "source_sha256": "c04501b6104b568589846e7ac08fe238dfc877aa02fe97a5daac68167b3acb88",
+      "fingerprint": "2a1c8e9333bfe67a8fce7f2052102af1f3e8c75b3d59485f7448436631ddeded",
+      "log": "logs/l99-OddPiPowers-L99-Analysis-L99NumericalRates-20261031T004001.log",
+      "mode": "emit",
+      "seconds": 17.296
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.PeriodFloorCertificate",
+      "source_sha256": "6f3cc9937c3983d4c5d089ffe91deab2768a7b6992d790f532956dac861c5a80",
+      "fingerprint": "5504c1ebe77132fab9b8ac88ccd51cee835ef337734d679b81dc6259e5221ccb",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-PeriodFloorCertificate-20261031T004019.log",
+      "mode": "emit",
+      "seconds": 9.297
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.PeriodFloorBlock",
+      "source_sha256": "a82f411a085391f08a3e692c5d138e5eb9663783aa9eb4e3a61dfdca8694e660",
+      "fingerprint": "f6b5272691c1a4fb3e346d672ad4224551af50f67fb832673efed26c09938a3b",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-PeriodFloorBlock-20261031T004028.log",
+      "mode": "emit",
+      "seconds": 8.641
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity002",
+      "source_sha256": "a539f594f7d37b43130c4d5987a95d8f1c0102f0ffec9a86bdb6524ccce56d1c",
+      "fingerprint": "b8d2c8b8ef3f062bd73412fa6784de24907062b98082f1d5646341fdcbaf70a7",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity002-20261031T004058.log",
+      "mode": "emit",
+      "seconds": 20.828
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity003",
+      "source_sha256": "018ed751d418099ea15069a39e9c0085b7ba10acb72c499938c48ec64d1d7896",
+      "fingerprint": "9b7914f8a5566e067444f32ac0ad3c97ac25cb25dfce302bea1ed537465b6edb",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity003-20261031T004119.log",
+      "mode": "emit",
+      "seconds": 20.797
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity004",
+      "source_sha256": "b9c964ebe4cbec840290624b12c31589ab5f78fa9197c15c522f7237597af126",
+      "fingerprint": "48993ab371d8ece28b25968f52d1311021c0d51c219cbbc2ec2a5502ecf26e34",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity004-20261031T004139.log",
+      "mode": "emit",
+      "seconds": 20.781
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity005",
+      "source_sha256": "7c524b72968bebea9fbdef1149e560b419da6c0f57651255a8aaf7772359993a",
+      "fingerprint": "0f7aa061a40a283c8a80368b4b54288f7dce2d47d57f99cecaa70802cc1cf586",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity005-20261031T004200.log",
+      "mode": "emit",
+      "seconds": 20.984
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity006",
+      "source_sha256": "d1197d351a51f2a2e8fbe1be135bbf0a29100dfacaf1320d3ba96e8965f522d7",
+      "fingerprint": "da1a60d6d16d4d4e2e4b86acb8f0542764e9671fed8fa081cb3fa43387f16fcc",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity006-20261031T004221.log",
+      "mode": "emit",
+      "seconds": 20.735
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity007",
+      "source_sha256": "aed1a2ee1058c3926aab5d43002430a6bacaad6afb4edf7b12dfbaffd2936d53",
+      "fingerprint": "0b1256f1d34c5e93756bf7410d0765684435ccb3944fae0a23f581f4f3abc1fd",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity007-20261031T004242.log",
+      "mode": "emit",
+      "seconds": 21.093
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity008",
+      "source_sha256": "1c124dd13096feed4916317aebc674eeda67fbd83e82e39378af330709629008",
+      "fingerprint": "7b1856ee49c1df8d249f90ae39dcc56f6d15cd614f042857e2e70d26fbd30091",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity008-20261031T004303.log",
+      "mode": "emit",
+      "seconds": 21.032
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity009",
+      "source_sha256": "248e48dc2bb2e5570dda87e62bd5fdd473c486ed12743f705aadf8414228ec60",
+      "fingerprint": "e331a5725733bc7f07cbd0442cb6a2e87dd3c716a445d14cd942ed394429071d",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity009-20261031T004324.log",
+      "mode": "emit",
+      "seconds": 20.765
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidity010",
+      "source_sha256": "550f9580ecf40746eaded8398ba280084b445f350b860aec5c1724d3c64e4756",
+      "fingerprint": "bd720ab2d3907bd4a66ed06d58c4c729e711fc27501a8081c9c91729190faccf",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity010-20261031T004345.log",
+      "mode": "emit",
+      "seconds": 21.063
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle000",
+      "source_sha256": "ba648998216413188c7b5089a19d8c8ec198bf35244c417e59e12161e2056384",
+      "fingerprint": "3c7dd7044ba627cc7a70d4dd74f453a90f85f0d688b58dca1f3a5751f08cfc8c",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle000-20261031T004501.log",
+      "mode": "emit",
+      "seconds": 69.906
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle001",
+      "source_sha256": "68cb5dd70fc11bddd5bab010ac57ea4c8296836e217a24264a4b41872f1e105d",
+      "fingerprint": "68db9cb02b48fb34932b1780358376dd928a6218ce1ef25f6fc29a90f1fa430c",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle001-20261031T004611.log",
+      "mode": "emit",
+      "seconds": 69.656
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle002",
+      "source_sha256": "edd6c3fa7e0ea4e1dd5853966783d89ec829ae218eb298437c0e28fdd13a2d4a",
+      "fingerprint": "50eb6f560dc2cc7529c34b3b5e5191f6656bdf070edf97f867dbb9809f29f4fd",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle002-20261031T004810.log",
+      "mode": "emit",
+      "seconds": 69.766
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle003",
+      "source_sha256": "9d93bc9e277def17037f90c4bc69226edafc124b01f8bfbf69d4e6d3aae62c6c",
+      "fingerprint": "68607acfe3979e6832a9dbc3e3c0633f340b5247f1e684644298e3e260c985ed",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle003-20261031T004919.log",
+      "mode": "emit",
+      "seconds": 69.859
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle004",
+      "source_sha256": "7bdc084fcd45d63e72ec4b57926d5d7f85138c37a1644f88bc4cda472b97b507",
+      "fingerprint": "e284e863378dc90c42c29c2f9e5e4e0e98b161c2d0896d93a20f39aaeb2fba08",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle004-20261031T005029.log",
+      "mode": "emit",
+      "seconds": 69.719
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle005",
+      "source_sha256": "86e80be1ad6a30154df74b4bb65d755ca48b96179b61945471bee6d061ed18f0",
+      "fingerprint": "f937266dfdb5066c82d0e160bc0e6031ce9c6f916dfe5416383e6011865eafc8",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle005-20261031T005139.log",
+      "mode": "emit",
+      "seconds": 69.156
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle006",
+      "source_sha256": "3754a0964f2541d917491d1907375e509fad734d8bea643032c6da1ae3f12861",
+      "fingerprint": "1f7452310a332f13a61c102b93d68fde2ffcfca4842e491596a49dc1900fb2d2",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle006-20261031T005248.log",
+      "mode": "emit",
+      "seconds": 69.422
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle007",
+      "source_sha256": "c66a75bf4e64abdefa306f45511b44034c189cddcea47ca831bac1035e0cbf58",
+      "fingerprint": "9e4748ab232ccd272f186d9254e8bdc731b9f36d8412b8673e5112bf74aae3b9",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle007-20261031T005357.log",
+      "mode": "emit",
+      "seconds": 69.281
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle008",
+      "source_sha256": "bad8f462db86f44ef3ffc9dd437a3eda5ed92f1256c297435d3369b1058f8ff3",
+      "fingerprint": "b53342512c968ab74dd6a8c166969e21723a746ac6fb49a94d35a03574a6d283",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle008-20261031T005507.log",
+      "mode": "emit",
+      "seconds": 69.375
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle009",
+      "source_sha256": "ed90a0c9bd600a8e5d8aca2c3df64947a2bd5211190902407bc7cdd7a51f5a49",
+      "fingerprint": "6742883489c5c9dc441b56fe8dda6ebfc4a3ad74ca8b8ae17ffe6f2511572e8a",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle009-20261031T005616.log",
+      "mode": "emit",
+      "seconds": 69.562
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle010",
+      "source_sha256": "384bbca303d3c57d8e31266c78657a408da6ae9d4674704128cb67485169cc3c",
+      "fingerprint": "b90aea9fd8e388c4e85e76cce6a4193bd2a82d76456e2167874375ee682dae59",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle010-20261031T005726.log",
+      "mode": "emit",
+      "seconds": 69.5
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle011",
+      "source_sha256": "e7e3dc4f99adeaa67457c1ca2960268f64f0a157cadc967c02458e1a8acac926",
+      "fingerprint": "21cfd6f498571e20ace1f584d9ed069164a373131c2dbe041bed3927ae6afbde",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle011-20261031T005835.log",
+      "mode": "emit",
+      "seconds": 69.313
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle012",
+      "source_sha256": "a9f6cc3c1cbcfc45c48b29a8823d26e6c34b43944ead2fdfce5d49d3b95c7d4f",
+      "fingerprint": "aa67e249d4906a3b59140e67a8bafce12c73ee2e05b3ed52dfbb78d875c7b8a6",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle012-20261031T005945.log",
+      "mode": "emit",
+      "seconds": 69.218
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle013",
+      "source_sha256": "800af009fcc920adf7059f7acdb56cb5471b2b4019a002c48e33cf153a588999",
+      "fingerprint": "9794baf340574c6cd314c7583a382df79ead7d4a33afa941907d7a414d7844b9",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle013-20261031T010054.log",
+      "mode": "emit",
+      "seconds": 69.5
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle014",
+      "source_sha256": "9d82bbfcad7bf038a908a54995268d79432c331d07eba89bb2d7bc085f9bea29",
+      "fingerprint": "1a1aeee063675540247a33317539771f74e2ae07ac92aaf91caa9ce215f75f1f",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle014-20261031T010203.log",
+      "mode": "emit",
+      "seconds": 69.704
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle015",
+      "source_sha256": "42f00a2c39b93c4cc539a994d0eb19423894c7e84a2648ba0936b56dd7efe5b1",
+      "fingerprint": "c70d689ba1d3ec0d5535c63c4c86145112a3f63478dff21cdbedb81278fcf1b9",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle015-20261031T010313.log",
+      "mode": "emit",
+      "seconds": 69.781
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle016",
+      "source_sha256": "787425be97d51ba7977cab114af98dbbc0cb5e11f6e94f71156f2d2b6a8b7f59",
+      "fingerprint": "520b2543c956e54f92afdf1874af9168021e6b1c618e8d9bb2122404f099cdd1",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle016-20261031T010423.log",
+      "mode": "emit",
+      "seconds": 73.156
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle017",
+      "source_sha256": "6b23f7123b07fd81f690852cf7153938e81552a2bb0288aac7e37d075132ccf0",
+      "fingerprint": "d0c5efc1a57119ac4a7e490772dda9b4d10f689d8cb18bb0665736f76cc7a32d",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle017-20261031T010536.log",
+      "mode": "emit",
+      "seconds": 69.188
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle018",
+      "source_sha256": "e97678baf221e92688883a4af6ed42dd5371473bc9993825d96d9e165a033b25",
+      "fingerprint": "920254fcd6acf95a4d23c68c1e30d0a64a8d77ff710f68dd47027e8a997ecceb",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle018-20261031T010645.log",
+      "mode": "emit",
+      "seconds": 69.296
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle019",
+      "source_sha256": "896432c7c4290e9324e4e0aacc6122aa2773fa1f2fa34ab2e384031de9440604",
+      "fingerprint": "0465e57cef9be4fbdc8ddc94cda2c440d574252c773d0d3704d6609f68a0744a",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle019-20261031T010754.log",
+      "mode": "emit",
+      "seconds": 69.219
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle020",
+      "source_sha256": "eef83de8534f394b900205d4a794239b9d6aab55d025234180da697e74e2e33f",
+      "fingerprint": "a8ba8d03d167227825badd50c71cec51a6149cf6921b9857428703354325f83b",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle020-20261031T010904.log",
+      "mode": "emit",
+      "seconds": 69.75
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle021",
+      "source_sha256": "eeb94d34b0790d36b7d86a15053ead612d3157a7a68a7cf7561fd2e421ace060",
+      "fingerprint": "d1cab1f2e918540a13cde6a61a7aae1893bf14233f3669c7d8d3977add7ceb20",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle021-20261031T011013.log",
+      "mode": "emit",
+      "seconds": 71.985
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle022",
+      "source_sha256": "e527d75d3e46d7987c962e0a04413099c624266d9275db37f0f7577f3f745b46",
+      "fingerprint": "71c481c50617e06a8ca94a688fbb031459dc6523e5c652fc4af40a8ca1a25380",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle022-20261031T011125.log",
+      "mode": "emit",
+      "seconds": 70.421
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle023",
+      "source_sha256": "6db58eae86b67e8a025a51285fe0fce620946c5343698bdb0edd0a7f71092f77",
+      "fingerprint": "90749c7e0a1f5b0a8f49b46eae58d75a72b43edf6d2058f0a2a1b5c4fc496bae",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle023-20261031T011236.log",
+      "mode": "emit",
+      "seconds": 122.5
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle024",
+      "source_sha256": "212558532ce6896356832ce3a87e928d940ed335568494733ea0ffe48fd7155c",
+      "fingerprint": "af3d9042c3803662d8c37346aad245340ec27d3dcb45c17908703bbddf4fb850",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle024-20261031T011438.log",
+      "mode": "emit",
+      "seconds": 69.735
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle025",
+      "source_sha256": "0961161dc289c2ab2a37b0f5338afb4108235d3fbad56d61e9a271d724b7f37b",
+      "fingerprint": "d9e76255db80b3269208bb0755c56e56b29fb63e85adb5897d7e8d73eb77e799",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle025-20261031T011548.log",
+      "mode": "emit",
+      "seconds": 69.703
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle026",
+      "source_sha256": "f394c3460cbf380277a0a53af33a2a845ca4864550322606084baf435cbb9e93",
+      "fingerprint": "d74cac14703a0667cc799790c791a7d634dac1861c68b6868e01526690c49a3e",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle026-20261031T011658.log",
+      "mode": "emit",
+      "seconds": 69.344
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle027",
+      "source_sha256": "cdc39ab41ddac2ebf7c1ea257fbaba07642d7f2c2463ddd40e09343e39b90c78",
+      "fingerprint": "1a532aa8e470cecc36cc5c9f1d6ed0ae889c892a9c9269a9c80b1a0b07e89fbf",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle027-20261031T011807.log",
+      "mode": "emit",
+      "seconds": 69.234
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle028",
+      "source_sha256": "41be467cc3e395d745a9af012b618e521a89fe944799debb742d72cc7c440067",
+      "fingerprint": "f8bd7cde2910a9a318919d9421583bf45afcfd7f54c46bbf974db503ee0a5c54",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle028-20261031T011916.log",
+      "mode": "emit",
+      "seconds": 69.094
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle029",
+      "source_sha256": "10ae5d1d8c493bc5170c5760769479753786f0896c50825a0e49148ecf711836",
+      "fingerprint": "b4739432ed00c0948897eb7a204f79d4f4b16b12a6a08469ead8b66fac1131c6",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle029-20261031T012025.log",
+      "mode": "emit",
+      "seconds": 69.531
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerValidityBundle030",
+      "source_sha256": "c9e21e89f6a38e9fdd2df111978be3f9694e42e3c399aa4b2d3d4a6fc9539550",
+      "fingerprint": "b3e8a1079c9799f0cf2755aecd5700ea8f35ec435fc36d41a2529f3c868e397a",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle030-20261031T012135.log",
+      "mode": "emit",
+      "seconds": 11.062
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellStats",
+      "source_sha256": "86361b05959a27c77fb6847516c11b39db29020f3ceb178146a38f83b2276565",
+      "fingerprint": "cd65ace5b3176b69b0d97725474aec0732ff6bdf36f531aacb2da49d1b589201",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T013029.log",
+      "mode": "emit",
+      "seconds": 12.984
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCells",
+      "source_sha256": "3e41870dccd75ec8acacf6d7cf726a9244d9d9b47b4c70bfadca3d9e3e75e232",
+      "fingerprint": "81b19edba19c8f2a2c7daafd4e89422058b700a1426aef14e94b83dd8ce721cb",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCells-20261031T013043.log",
+      "mode": "emit",
+      "seconds": 8.687
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCellOrder",
+      "source_sha256": "88611916b1a8556d42fe0569064d86d1e43ca9dd76d54e96fd49bb4dd264c0b9",
+      "fingerprint": "1e4ef6d6cfcc06f9353a0d085f13fc6648d69eae43516a2bc46258bedfa4f6ef",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellOrder-20261031T013425.log",
+      "mode": "emit",
+      "seconds": 10.062
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerCertifiedBound",
+      "source_sha256": "8de7f827bb9825d1af4df099ae9c73fd6cf2dcf2a21a0305162f628eb5a018e4",
+      "fingerprint": "4aae0eea8e33c14aaff8db72f6176ab62f6d6194292724c1ec8256401698f143",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCertifiedBound-20261031T013435.log",
+      "mode": "emit",
+      "seconds": 8.984
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.CellPrimeWindows",
+      "source_sha256": "f2b4288aa37221378b2dbf158d15364b921cf59f75b618c9feda85ce750e051b",
+      "fingerprint": "a311b67c8fc5ee190e968b10982309ff8265894f3f333b4e3c73e8af7bf2636f",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-CellPrimeWindows-20261031T013444.log",
+      "mode": "emit",
+      "seconds": 9.266
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.ScaledPrimeRates",
+      "source_sha256": "58d9519d312eb9bb3e407238698dd5f110f6599e7de3c8418f6c6e62dfd1f583",
+      "fingerprint": "36b3ffacc37d55d96fcf5431c74c4a9925becff1031bb643569f4da672e969ba",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-ScaledPrimeRates-20261031T013453.log",
+      "mode": "emit",
+      "seconds": 34.5
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.PeriodWindowFamily",
+      "source_sha256": "c46bf7767e85c313ddbae4e0049d574ff83e226935773692b46524ec76775c87",
+      "fingerprint": "55b050d47854e1304282f1316407dd08bba49ea8d3fe1bea0c0a9103bf76fbb8",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-PeriodWindowFamily-20261031T013528.log",
+      "mode": "emit",
+      "seconds": 11.844
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.ShrunkenCellWindows",
+      "source_sha256": "b5a98d2183567d3584fcec9769455158e7bcc70bf42ccbf16565e25e1653849e",
+      "fingerprint": "e0472efac22acd872f0350a58383c0a188d3d919fa1e266c7d14ebcd7130601c",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-ShrunkenCellWindows-20261031T013540.log",
+      "mode": "emit",
+      "seconds": 12.859
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.CellWindowAggregate",
+      "source_sha256": "66a7b0faa074d824f3e39e074e9f87bb495d37b2c9a9aa718ecc4ed4a7ddb98d",
+      "fingerprint": "473c9d1932c59d9f39986ab1921f8ec14e20a505a6e364e0b7fb07847c7e80c9",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-CellWindowAggregate-20261031T013552.log",
+      "mode": "emit",
+      "seconds": 12.515
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.PeriodPrefixSum",
+      "source_sha256": "1f89d78e9e22dae2dc105b78654e5fe0510ea1f577680de45a0142b84324a5dd",
+      "fingerprint": "9cc5afcdfddec412bf15e7e519afeb66aee0f339d53a6c17839342106fa6df85",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-PeriodPrefixSum-20261031T013605.log",
+      "mode": "emit",
+      "seconds": 11.672
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.PeriodTailFloor",
+      "source_sha256": "5f778451c881e5598911de982b9ad93c52738c2f54e8cda18f261d93c7d4c57c",
+      "fingerprint": "7b7b58b7ab59b18be54595e0fd45948b5caca16b23eee9ebe90c11e65ca69864",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-PeriodTailFloor-20261031T013617.log",
+      "mode": "emit",
+      "seconds": 9.922
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.PeriodTailAggregate",
+      "source_sha256": "a48e90e19e41990426abcab137ac6c77cf3b9e5309ae50c4a32ee58e0700a54e",
+      "fingerprint": "f6b8f31391ada21d71da4054af4cde2e5ff8de9eeff2fb55581aaaebc943d25f",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-PeriodTailAggregate-20261031T013627.log",
+      "mode": "emit",
+      "seconds": 12.547
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle000",
+      "source_sha256": "50442379d7d3c1cd4434164a5b3b8a917bb375c000c82a1ceadb228f4c8fd7a6",
+      "fingerprint": "c1e3adf42068c915e78c120a133b5343d1f22762b5113c5d55366bab4709d4d0",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle000-20261031T013639.log",
+      "mode": "emit",
+      "seconds": 13.563
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle001",
+      "source_sha256": "030fd1300459623799b24f05f576062b87adb7830f1a60058bea78324f4495b2",
+      "fingerprint": "34f61acd640e8bc78b01369c0b89681acd04af6b526732a35d50270cf66ddc8f",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle001-20261031T013653.log",
+      "mode": "emit",
+      "seconds": 13.203
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle002",
+      "source_sha256": "9f64d2378fde335a2fdce09903e67d8f046c989a109787f925991bc92327a236",
+      "fingerprint": "f6479ecc718ec953e47519e769c42bf01ea6c576c2c673bb4b26c92e6482a060",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle002-20261031T013706.log",
+      "mode": "emit",
+      "seconds": 13.281
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle003",
+      "source_sha256": "ab8f93794cbc6acc26f1a9ec80b39967de6a48cb1e6919b811ef9c316301f889",
+      "fingerprint": "ebb5627453c99b2203e32a3442c0dc180234f07243b09cd17f349813af0cd639",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle003-20261031T013719.log",
+      "mode": "emit",
+      "seconds": 13.235
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle004",
+      "source_sha256": "0a4c124962959a8c72d09b3b7eff3ef6a195d140af70776c8b6df44eeda896fa",
+      "fingerprint": "2fb5a174906090a0e99c3ff692c31b45d6972f218e6daab0f5fb2a3f0221cbd4",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle004-20261031T013732.log",
+      "mode": "emit",
+      "seconds": 13.171
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle005",
+      "source_sha256": "872ce5480d9cd5604bcb607fa23e76fa9738021aa42a06faac5902298f7a275c",
+      "fingerprint": "dac20da8f05b401bae7345a386fd6bfb4af8a4ea37c50ea9df8c7355b87419d1",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle005-20261031T013746.log",
+      "mode": "emit",
+      "seconds": 13.235
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle006",
+      "source_sha256": "ef7fb59308acc3689cebc7085572ef28cd54b4459e4d6cee5b4d2bfcf3db6c11",
+      "fingerprint": "b3581ece7593a999d17cc91d56aed9407fb75531c1f5bc1d4a8d2b6ac676d4bf",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle006-20261031T013759.log",
+      "mode": "emit",
+      "seconds": 13.516
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle007",
+      "source_sha256": "b0e94b9f42616fd833dba42cd0e9cc315c3c32ecfa6a55a1685b16afc4583b4c",
+      "fingerprint": "e97a7544d970184a44bcb787d9660686a9b673c9ff3cae1b9648e3c75e64ef73",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle007-20261031T013812.log",
+      "mode": "emit",
+      "seconds": 13.344
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle008",
+      "source_sha256": "a5dc5ac91c7800c56bc39194f26d231f05ecbe1f20780269f8d8588d7d65727f",
+      "fingerprint": "86df981898c2b335fbf613702d68f7fd5512539976172a7bdf09d105f55c8ce8",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle008-20261031T013826.log",
+      "mode": "emit",
+      "seconds": 13.156
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle009",
+      "source_sha256": "3c1bfdf9614990d109c0d73681b21dc0bdaa3e51703517ca4d4cb0cd1ace205c",
+      "fingerprint": "740828050487cb559730ab7227375839ab07415296dd4a798adf21e55f5227c7",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle009-20261031T013839.log",
+      "mode": "emit",
+      "seconds": 13.156
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle010",
+      "source_sha256": "0764b314b5278ace0a3f863e602ed8cf3b246a032118395b8734c86c796c6a40",
+      "fingerprint": "abe878c351239dd975b758fe491f474202ee296e5fa3cdb9da9c299fe45572db",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle010-20261031T013852.log",
+      "mode": "emit",
+      "seconds": 13.282
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle011",
+      "source_sha256": "56e8928d516f5b292716bf556a24f4807c0b10e1eb16b919f4fafddec20b02db",
+      "fingerprint": "69f2d5e7e28eb22f9f1f499d2ba7a4292e1c56fca788bfac6ede0d6c8aba3c32",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle011-20261031T013905.log",
+      "mode": "emit",
+      "seconds": 13.234
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle012",
+      "source_sha256": "a2e25afbfe70b3ddf580e77a744261842ca3d52d148fd934d6ddd5b1181cda7e",
+      "fingerprint": "0180a7b62ca1485c10fdac711e5d52aab1ad7044ccd225d5364afb66f6407dd7",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle012-20261031T013919.log",
+      "mode": "emit",
+      "seconds": 13.125
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle013",
+      "source_sha256": "e05d1954ade9ac2ca6dd2d2a602c7999444001054d262b905f6d4aa9d24db61a",
+      "fingerprint": "589bf42a274e014c773fe31bcc51232063dfb1f7a5573f7c01455e5e49be96b0",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle013-20261031T013932.log",
+      "mode": "emit",
+      "seconds": 13.203
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle014",
+      "source_sha256": "0128627c1b98a40466c67b0826d2217f7566f0e08d0dcfa09cc736a35eb161b9",
+      "fingerprint": "1572dbf30bc4377e29cfe158a4936fea0a5fc3facf5c96eb0a12216934bf0f59",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle014-20261031T013945.log",
+      "mode": "emit",
+      "seconds": 13.234
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle015",
+      "source_sha256": "42fe3ecf0b54b54d93a26e7ea8461f8ac9b47675aa664739e458274da09d8541",
+      "fingerprint": "ea9a991e151b611a91b1af20bd958091b5c3878735f174a63de88ceb9987322b",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle015-20261031T013958.log",
+      "mode": "emit",
+      "seconds": 13.313
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle016",
+      "source_sha256": "962cb6740700fabf04b7e33688e48a2a1cb243a42b13f749981c2bc625debe20",
+      "fingerprint": "4982fcf072f78e059b7d877a31f238e4ae474e5e164c9e0cb40359ff8c46fea2",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle016-20261031T014011.log",
+      "mode": "emit",
+      "seconds": 13.093
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle017",
+      "source_sha256": "8176acc8075973f20ab9c8ce4ebbdc9636a787d36c2051a4354774ca8838c8e9",
+      "fingerprint": "9654c677c64cb1b9fb50e33ae671f21824cc5d5d4ab6c1a8e80bba4b92577e2d",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle017-20261031T014025.log",
+      "mode": "emit",
+      "seconds": 12.969
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle018",
+      "source_sha256": "3e8f133f07b45ed951f8d03a238104b34b69029d089a574f4c6b8ea312f1256e",
+      "fingerprint": "e8b1d1f292fb2ac4b86f428b5682169f63e1a7c02ec0204909bf905b49da7604",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle018-20261031T014037.log",
+      "mode": "emit",
+      "seconds": 13.109
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle019",
+      "source_sha256": "34af340b01d078557c125aea849fe981844a5c9e566c0470a746abe3a35db492",
+      "fingerprint": "95b85d9f545bc160fc1d0eab8044607de52f9dd4776668124fea13e77e2fa643",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle019-20261031T014051.log",
+      "mode": "emit",
+      "seconds": 13.172
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle020",
+      "source_sha256": "77aa7a54dd80632ddf157d17d2dc064000d6b25616d3b36130c7233c0b16cf12",
+      "fingerprint": "eb76aed42ef078c67856abbbdcc1627151b3dc85e663c53c5fc90000f16c9d67",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle020-20261031T014104.log",
+      "mode": "emit",
+      "seconds": 13.094
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle021",
+      "source_sha256": "e3164c23daf38b150ac220c913f994a6c104d4dcf060045f1f8a59198b02c728",
+      "fingerprint": "759feff7e34c98e83b18a90b216c7441939dab72a4f2c67a3f491c3b7bb00438",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle021-20261031T014117.log",
+      "mode": "emit",
+      "seconds": 13.094
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle022",
+      "source_sha256": "4ba548ebbbac65bd1d938c4931e8372b9654ee1f73dba56249335081428bb9b6",
+      "fingerprint": "a0ecf4aabdba09e737a8cf01b1c9d5a8374fda5a5b5789d2a271cad144eadf30",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle022-20261031T014130.log",
+      "mode": "emit",
+      "seconds": 13.265
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle023",
+      "source_sha256": "abe17100efdbcbef4d3c0b0dcbaabfbff70c8b86f7798c6f2be869a7a357d5f0",
+      "fingerprint": "46a2be8ccc2d65cc713ccccb09454b5733ae510a1edfa32613a3c09966355200",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle023-20261031T014143.log",
+      "mode": "emit",
+      "seconds": 13.125
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle024",
+      "source_sha256": "29220a1b1061627707b1e9fbfcdb1cc3b7e293b9b8356c1fbaa8b1f647f72f95",
+      "fingerprint": "afec19b4ec0da1d783c7a0415ba75cf78e3c053dbc5acdbfb20b3246aee399cb",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle024-20261031T014156.log",
+      "mode": "emit",
+      "seconds": 13.157
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle025",
+      "source_sha256": "c51879ad6a2b29d8b93f13b07e34696f9f967e17df6d98e30ff9328b2d989e6e",
+      "fingerprint": "a45fc48ad75158ecf517f4cdba47743f765799f202ed93c898585be410609323",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle025-20261031T014210.log",
+      "mode": "emit",
+      "seconds": 13.062
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle026",
+      "source_sha256": "1460e5be95ee5f68d9882d100738b709632a9e5813c5794fffeb1b67cfd38eb5",
+      "fingerprint": "229c67b34219a16859ed04eb55d64c1edc9b21cb8027d82a004491680e70e505",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle026-20261031T014223.log",
+      "mode": "emit",
+      "seconds": 13.0
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle027",
+      "source_sha256": "506eaa0c439cab08d6df400dfd5a79b44c7b7fecc0ff04cd25e45eb99b632e37",
+      "fingerprint": "7cff852b07770c5de6eb4ceefb624e3dd915a1c6e809284037fddcc08f10af5e",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle027-20261031T014236.log",
+      "mode": "emit",
+      "seconds": 13.031
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle028",
+      "source_sha256": "378ab41364b3921b3cb21d28ccdd442d9745f7d6d76b92e0266b946d5d34ea90",
+      "fingerprint": "163164de4768a8beb3c0aefa9eba4ca369e363dc20284a0f0f9722280fc6857b",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle028-20261031T014249.log",
+      "mode": "emit",
+      "seconds": 13.407
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle029",
+      "source_sha256": "d7bbcd09d6eb3f052f119542e258ad62c2021b9740cf324b170e9bcf932ef55b",
+      "fingerprint": "f4e758161967c2d9c5271212c6fee9a8b774d8a1a75430127ba8240ca550fd35",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle029-20261031T014302.log",
+      "mode": "emit",
+      "seconds": 13.39
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodPrefixBundle030",
+      "source_sha256": "01f45f238acd3a282d6ac7033100d8689a1c8bb7439a92f03e3dcabf222235db",
+      "fingerprint": "7382111d026aac812c7cf75e1f07791fafbea38c4e503790bdbc5b6ebdb5cec3",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle030-20261031T014315.log",
+      "mode": "emit",
+      "seconds": 11.344
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle000",
+      "source_sha256": "fa794b8b2d2411dfdbb74dbdb0e94b535f5a372993d894b63fe247e698b8fde5",
+      "fingerprint": "11f6d5c5730c18751fecfcdc2e6c98a9a5c6f4f2d28c44c324a696dc7e29e395",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle000-20261031T014327.log",
+      "mode": "emit",
+      "seconds": 11.515
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle001",
+      "source_sha256": "cfcef1c44e9d66a2c04b028542f28c8da8cb362c993f1b2752bd4a3337f237b5",
+      "fingerprint": "92e6dca183c1c0d7b02019e70d828b1cc0bb1150af74612c78b019abd3b8a9b8",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle001-20261031T014338.log",
+      "mode": "emit",
+      "seconds": 11.578
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle002",
+      "source_sha256": "cc6c12db9e20a9f3985a9cbe4f2cbcf5f840f5a8cf573f23affd9fae7a18086d",
+      "fingerprint": "017c6560d103943f8926b93fa1e34ca1590b009684581643f8cb4bd6b27e1d76",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle002-20261031T014350.log",
+      "mode": "emit",
+      "seconds": 11.516
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle003",
+      "source_sha256": "a14132e0605f6bc4191759e483ee3bea623ece346cf61b127a5fe7fb87532cd0",
+      "fingerprint": "bc05e596beb4fa9c0a029a57d34902fc574a95806b97db85c265808b1dae4b5c",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle003-20261031T014401.log",
+      "mode": "emit",
+      "seconds": 11.563
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle004",
+      "source_sha256": "a2e75e6ed8ff2be4fb2ca66ee084dfc35b196edf4b7ebe8f54986f43148cfe8e",
+      "fingerprint": "dae859294dd34e0935b3a11040baaf749aa33b7b43d9df46ce41b29d280691c5",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle004-20261031T014413.log",
+      "mode": "emit",
+      "seconds": 11.453
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle005",
+      "source_sha256": "665507c0d6372cf555043d9b5a9be5a5ba899b11cd54405720890a72a3f6f261",
+      "fingerprint": "4da6021bc5675bcba094483e4d4e472e2b814d83cba1fdf1cc914c160432d877",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle005-20261031T014424.log",
+      "mode": "emit",
+      "seconds": 11.422
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle006",
+      "source_sha256": "9b2ea1beb76a31b35760efffc3dc08eeaed97e939e0d062aa7820c3bdaa05e7d",
+      "fingerprint": "c6df512f5e724e81c04ffa8faadfc07a1a2713c82d4c83e2af79eed6df5af5a1",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle006-20261031T014436.log",
+      "mode": "emit",
+      "seconds": 11.578
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle007",
+      "source_sha256": "6a508f1444371181f25b5544a9946444c11ebe03d38345e5bc122f0e6a6947a7",
+      "fingerprint": "12aa3d6c321cc9c8504f5587f948e0d4f2b1a8b8e2e8e8a276e4609f429c74c4",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle007-20261031T014447.log",
+      "mode": "emit",
+      "seconds": 11.5
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle008",
+      "source_sha256": "0aea134748dc2df9baaebedc2f3adfba3dcdafef26354baacb0d5aa0e1a9d780",
+      "fingerprint": "ec86ebae591cc1477733281a53a6222a4799c199ae35123081778805d169e9e4",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle008-20261031T014459.log",
+      "mode": "emit",
+      "seconds": 11.516
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle009",
+      "source_sha256": "8d50bb1d81873fbffe75a317d2effc6b68072860e40c22fb3cb3bcdcaa088621",
+      "fingerprint": "3ee336fa4400c8d6f25b88da38e3730d1bad9301799963a9353692dd99a839be",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle009-20261031T014510.log",
+      "mode": "emit",
+      "seconds": 11.547
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle010",
+      "source_sha256": "45b0d10b50ff99e8b856f41747cad1c9808253f69b555ce225b5282d3f8c1e74",
+      "fingerprint": "d4d617d03b53591fc5b95d1787cf44b130a5d2ae4818845ffb8120d77c099fa6",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle010-20261031T014522.log",
+      "mode": "emit",
+      "seconds": 11.547
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle011",
+      "source_sha256": "4ee8a8212564ef1130cb7771e15bde849da51ca031638d6d44ad9df9b1a94c8b",
+      "fingerprint": "95ba43f38af531d4303ae0b7e6f9418f6f232a0dfcce572778480e0aeee787fa",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle011-20261031T014534.log",
+      "mode": "emit",
+      "seconds": 11.468
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle012",
+      "source_sha256": "ec976e812af79693246d58752da5e0ff112a8666adc036344cf8a15eb182c762",
+      "fingerprint": "64daa35fa9c924d4458f99f76ed035bf695c6fbdea0286eaa48bba6b64764a01",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle012-20261031T014545.log",
+      "mode": "emit",
+      "seconds": 11.469
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle013",
+      "source_sha256": "af89e20cdd27411094465a8fe99d2a6ea85a1ed4c7e16d7684e20fc0b5949eb6",
+      "fingerprint": "f7c8765121973e16b31ad36d5d66e8f08b40ecbf4065a3c8322bba250db587a2",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle013-20261031T014556.log",
+      "mode": "emit",
+      "seconds": 11.485
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle014",
+      "source_sha256": "0f31b8d9eb1e5a0243947b7246bca05478c0256d7c69b02b0d7e41ac354590cd",
+      "fingerprint": "5bfe7eca1585b2da69a63b2184fc41bc40585c7f7492fec09a866abccd4c2f08",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle014-20261031T014608.log",
+      "mode": "emit",
+      "seconds": 11.906
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle015",
+      "source_sha256": "52b3bcc6d68efc52f17721899ab97c9a578201703131ac6765b6436654fd2c6e",
+      "fingerprint": "137863150d03c13998efb70ad75be94d843db7883186942158bce37b500707a7",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle015-20261031T014620.log",
+      "mode": "emit",
+      "seconds": 18.844
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle016",
+      "source_sha256": "01d1fb8ffee6e9909f98adbc02a7da50a8bc80f067bce54167bd3bb95bb90743",
+      "fingerprint": "829d6840708e0944c54a80cf5ab2c75c07abece9c4018b989572724e3a5f0bea",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle016-20261031T014639.log",
+      "mode": "emit",
+      "seconds": 21.281
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle017",
+      "source_sha256": "fb5af9988bcf9636f2d24bd40f4add56692085971a9e220ab3a2741a1d2c57c3",
+      "fingerprint": "b7f3fd0e3f5ae55f7ee459f5eb149d7009c07502d889e7e45b2576c76c5541e0",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle017-20261031T014700.log",
+      "mode": "emit",
+      "seconds": 25.579
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle018",
+      "source_sha256": "b3c762804be66e4cc10066c53e5571c248201fd2f36484117d7319fb60cab32c",
+      "fingerprint": "67c3345ff693d22d1cd890d84f7a2d3de30f52690794f6b340584cb7faacad67",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle018-20261031T014726.log",
+      "mode": "emit",
+      "seconds": 29.89
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle019",
+      "source_sha256": "d28f51636796fe9628ff04085ce08779235e43f859761fffb2e6d9cc6ea22962",
+      "fingerprint": "132f0957a4fd9ff8d255d12dd576a9cdbbefb9da3f29074d6ae8bd300a934134",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle019-20261031T014755.log",
+      "mode": "emit",
+      "seconds": 30.422
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle020",
+      "source_sha256": "78d010312cd772797a151f7039bd73ea42891bf14e39244f3ccfbe14d2fc0f57",
+      "fingerprint": "22288b50c3b08b7a46508f0a1bc1dc644fa85c3232c60b6c713fb22b5bc690df",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle020-20261031T014948.log",
+      "mode": "emit",
+      "seconds": 11.765
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle021",
+      "source_sha256": "25ed8a63176c4fe62578490be5e92afa5c3095f6792c7ec2acd2c1f29fd43802",
+      "fingerprint": "d6aa4ce617cf429695425739f5f29a43cb1e7c6982449d1ecf42a46eeff382c7",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle021-20261031T015000.log",
+      "mode": "emit",
+      "seconds": 11.735
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle022",
+      "source_sha256": "95b8e42407b9560cb7788b403135b9403c3936e6d6a289fd00894bc896dda049",
+      "fingerprint": "ffe99918f66b7ba2b35d5f7ad4568f93fa5545282aa4bd46855ad77a929999ad",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle022-20261031T015011.log",
+      "mode": "emit",
+      "seconds": 11.531
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle023",
+      "source_sha256": "880bd227427f13dff0912afd2d26d4c48bca316faaeedc4d3b6d045c1678ccd8",
+      "fingerprint": "d0d79a09b6766239eb0f99809de462452f13db1e6fe88eadb9434ca6940aec44",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle023-20261031T015023.log",
+      "mode": "emit",
+      "seconds": 11.547
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle024",
+      "source_sha256": "29c4304287ab87f5007ba239d983920bcd353a0cd95c91ffc0706324083f26d8",
+      "fingerprint": "ea05838e746cead2ee6bf7c4e1e50b786f2ed5670d5ebfc47acf92a84f172c39",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle024-20261031T015034.log",
+      "mode": "emit",
+      "seconds": 11.469
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle025",
+      "source_sha256": "74c028b89eccc69dffe42026137c096eae3f737c4a9d3929e71462061f0e6de0",
+      "fingerprint": "cef7ef2b91dfad9643fecec8118aa6412d382a1e22e5e239d5fdda097fd88b60",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle025-20261031T015046.log",
+      "mode": "emit",
+      "seconds": 11.578
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle026",
+      "source_sha256": "4a903febb164015663a121423cd97aa86783a4c1c23e881b26ba7cfbb04be42d",
+      "fingerprint": "2b18a362596a65dd648b34dd92942bbfaae89eeba62b78d7c78677d7a910d00e",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle026-20261031T015057.log",
+      "mode": "emit",
+      "seconds": 11.547
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle027",
+      "source_sha256": "d612e6e2a8bc091d16eacfcb162c7f081a96303d91ffaad16309e69f1c2652fd",
+      "fingerprint": "4df0ab88d5ad48fd2d5e15f3d9c70c10bc6fdc32f155238977c2c2acb71f3d44",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle027-20261031T015109.log",
+      "mode": "emit",
+      "seconds": 11.469
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle028",
+      "source_sha256": "09b6d1d9a596c475cde9534384a71e439203d6abd776cb84052c9a5391c2a5a0",
+      "fingerprint": "d18a5e6f5a5cad27988581dd29e6c0bb68905a451ad1dd16044a82c2fb018243",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle028-20261031T015120.log",
+      "mode": "emit",
+      "seconds": 11.719
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle029",
+      "source_sha256": "28170760fd9c42e64ce50bb1e39cfaebbcc8ffb0335d4c645d4afa9745347414",
+      "fingerprint": "905e31160dd4060bc295efce763407c0c07f2b1b44cddd1d26bc6a30d59917f0",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle029-20261031T015132.log",
+      "mode": "emit",
+      "seconds": 11.594
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodTailBundle030",
+      "source_sha256": "77cf6f14decb4335c8b0da4b575fb1eb655035dfa773a48bafcafb6e95c7b5ad",
+      "fingerprint": "22644947f81f70a9452e23780db369eee91d3e1c720f64580f3ed42a7978d875",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle030-20261031T015144.log",
+      "mode": "emit",
+      "seconds": 11.296
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99PeriodAggregate",
+      "source_sha256": "7403866b807f808cdc278d5228bb6b5733169416bd3e49a046b3196517ac455b",
+      "fingerprint": "d2c88845994a28c54004216c8f91edd9007120d3427deb6f12b9b5b6e3d85946",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodAggregate-20261031T015422.log",
+      "mode": "emit",
+      "seconds": 13.766
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.TwentyEightLayerDivisorCertificate",
+      "source_sha256": "f14227b8f34b1bd85c2504dc84000225ea41ba92f15e9562efcb1dc7fa7a0a2d",
+      "fingerprint": "79a93e43d55298b7eb37f83f75d02e47dbe0155e0bdc4c1603c5b9a0f3c45085",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerDivisorCertificate-20261031T015436.log",
+      "mode": "emit",
+      "seconds": 11.39
+    },
+    {
+      "module": "OddPiPowers.L99.Arithmetic.L99SharpDivisorRate",
+      "source_sha256": "9bb2e76b8b5fff7f398d1ee91e758c18e4fc75488c95112612259400e9136cd7",
+      "fingerprint": "dd7d749cf2b38a08d6a5cffea5700b66434942914cb32f24ae95d72902709b26",
+      "log": "logs/l99-OddPiPowers-L99-Arithmetic-L99SharpDivisorRate-20261031T015447.log",
+      "mode": "emit",
+      "seconds": 12.172
+    },
+    {
+      "module": "OddPiPowers.L99.Transfer.PiCube",
+      "source_sha256": "60b9cbecf93a1797a11af121afb51bfc2378303bc5d1d15098e6fc9fa9e4f228",
+      "fingerprint": "f31bf660c781635602f76dc3c92a2c8fe140964cdd61a1c9b34ec47fa3f3d2b9",
+      "log": "logs/l99-OddPiPowers-L99-Transfer-PiCube-20261031T015459.log",
+      "mode": "emit",
+      "seconds": 16.75
+    }
+  ],
+  "current": null,
+  "exit_code": 0
+}

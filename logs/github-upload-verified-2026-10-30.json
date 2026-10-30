@@ -1,0 +1,16 @@
+{
+  "status": "uploaded and remotely verified",
+  "repository": "https://github.com/woznickiainslie141-dot/odd-pi-powers-formalization",
+  "account": "woznickiainslie141-dot",
+  "private": true,
+  "visibility": "private",
+  "branch": "main",
+  "commit": "f1b055dfe33bdfbd14c99453b0cd5acf1e588569",
+  "uploaded_files": 2527,
+  "working_material_files": 2526,
+  "working_material_bytes": 61306292,
+  "remote_tree": "exact match with local committed tree",
+  "snapshot_manifest_sha256": "0e8b26cae928aa4d0a90e5ae90e98cbd8df4b2cefe18d12b73b77c1e5dea0cf8",
+  "accepted_result": "ExponentUpperBound (Real.pi ^ 3) (42170551935 / 35026168)",
+  "new_lean_build_performed": false
+}

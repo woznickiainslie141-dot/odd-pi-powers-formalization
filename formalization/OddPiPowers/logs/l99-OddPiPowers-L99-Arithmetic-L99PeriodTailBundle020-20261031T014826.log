@@ -1,0 +1,12 @@
+warning: mathlib: repository has local changes:
+  D:\codex\pi-irrationality\formalization\OddPiPowers\.lake/packages\mathlib
+info: proofwidgets: checking out revision 'df72b022e558978a1c50264cfc4d7fec86fa8e04'
+warning: proofwidgets: repository has local changes:
+  D:\codex\pi-irrationality\formalization\OddPiPowers\.lake/packages\proofwidgets
+info: Cli: fetching revision 'c24fe6078c630e89b489bffe59b3e20ac30d12c8' from https://github.com/leanprover/lean4-cli
+info: stderr:
+error: cannot spawn git: Function not implemented
+error: Cli: failed to fetch the package revision
+  c24fe6078c630e89b489bffe59b3e20ac30d12c8
+from the Git repository at
+  https://github.com/leanprover/lean4-cli

@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-30",
-  "scope": "Current working-tree research archive; accepted P6 and explicitly marked drafts",
+  "date": "2026-10-31",
+  "scope": "Current working-tree research archive; dated acceptance reports and README define the proved scope",
   "git_history": "New snapshot; nested Git metadata and histories excluded",
   "credential_pattern_scan": "No matches for the implemented high-confidence patterns",
-  "included_file_count": 2526,
-  "included_bytes": 61306292,
+  "included_file_count": 3045,
+  "included_bytes": 68105390,
   "excluded": [
     {
       "path": "formalization/.git",
@@ -67,13 +67,13 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1890,
-      "sha256": "08127b2f9dfa43393a3bab98fd799d0108aac81646fc33713dc3eb89699553cc"
+      "bytes": 2499,
+      "sha256": "d3ad8b4cb903f174b93361286ae7c653023ee1be9790199479e63fe86e83cb72"
     },
     {
       "path": "README.md",
-      "bytes": 6661,
-      "sha256": "9c49a6bb33642645246da8e7a5788b702869c137c2ea50e594692ea17fd6bca7"
+      "bytes": 6961,
+      "sha256": "a0126087dbf8730e5041a677c3f9f6966a9cf87257f3000b4413a46b24bb6ecb"
     },
     {
       "path": "formalization/D_DRIVE_MIGRATION_2026-10-28.md",
@@ -89,6 +89,21 @@
       "path": "formalization/HARD_CORE_GOAL.md",
       "bytes": 2532,
       "sha256": "b337321951461e0a3c9f2cb0c68d1ad4629d0036a6b745f6eb5e35b34b9820ed"
+    },
+    {
+      "path": "formalization/L99_CURRENT_CHECKPOINT.md",
+      "bytes": 2575,
+      "sha256": "c0e220c26bd6d0bbc9cf0b806e264a2fda2538037902f03fa6bd1ee599a7621b"
+    },
+    {
+      "path": "formalization/L99_MATHEMATICAL_NOTES.md",
+      "bytes": 4695,
+      "sha256": "64ea61d30c6499fd483f3a647ce48e3a69fc0bff6a06e42ead5d94011a7fc26f"
+    },
+    {
+      "path": "formalization/L99_PROGRESS_HISTORY_2026-10-31.md",
+      "bytes": 4049,
+      "sha256": "ecedac86e5642c0e37f7c0f085a4260a4b57fed8f46ad230967db3800a4ce14d"
     },
     {
       "path": "formalization/OddPiPowers/.github/workflows/lean_action_ci.yml",
@@ -109,6 +124,11 @@
       "path": "formalization/OddPiPowers/Basic.lean",
       "bytes": 21,
       "sha256": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4"
+    },
+    {
+      "path": "formalization/OddPiPowers/L99AcceptanceAudit.lean",
+      "bytes": 1634,
+      "sha256": "d707043757eae515ec65ec35c316739b870d1e7577ee19ab75fd7093e72deec3"
     },
     {
       "path": "formalization/OddPiPowers/Main.lean",
@@ -1246,6 +1266,746 @@
       "sha256": "64ff25032a18fd20ecb65bfa79343543e835180f043099fe8e4dd63b38587449"
     },
     {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/CentralNumericBounds.lean",
+      "bytes": 2146,
+      "sha256": "40f67426dcc3d029f1577ea0f3c278c279f404c8b12986042c48f615fe3f3d5a"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate00.lean",
+      "bytes": 1645,
+      "sha256": "033d2c4a75d2ae91ffed814b17e472a878232f274a55452b762d27d2f2da790e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate01.lean",
+      "bytes": 1783,
+      "sha256": "3828bd8eb966c817fd79141f116032d6087e539ad1d452bf2dfb6d83384b494b"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate02.lean",
+      "bytes": 1779,
+      "sha256": "d549755715bdcd16b9d5edea93df0ed69e0128b49b8d12e4fe505809a15a3d11"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate03.lean",
+      "bytes": 1783,
+      "sha256": "97f5beb66c6d6d5e07383712e90f78c41be7a9fdb3ef38235b93303eef3216d7"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate04.lean",
+      "bytes": 1784,
+      "sha256": "fb9428dfb29b8d52b5c85ac87aebd3a2020b9840ef1033a3a3d5886c924b39e5"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate05.lean",
+      "bytes": 1788,
+      "sha256": "4f83d0a19cb6c660d36ada785683c2687ac0e3a4027b4b952b1471dc4f79f328"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate06.lean",
+      "bytes": 1767,
+      "sha256": "98b21e0cc78479c6525a2f02285d9955ea6bc9dd373ad7d9fa84062e7b662020"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate07.lean",
+      "bytes": 1775,
+      "sha256": "c8b072dcbde98d0f3d90cde14e535196b752621777e9a674251f4d191b7307e7"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate08.lean",
+      "bytes": 1795,
+      "sha256": "61dc78b7cb4e9c8c001975e642ec3a710b157f9a13f05f08f39d5d6591d14001"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate09.lean",
+      "bytes": 1779,
+      "sha256": "3d654a2199d7cad0f5dae226d9dd88bfedbfba65e8307db1b023a90a9a4703e4"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate10.lean",
+      "bytes": 1798,
+      "sha256": "5a03925827c09153850fa207966225f100d16a67441c168ef74aca899ebfb616"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate11.lean",
+      "bytes": 1754,
+      "sha256": "8992556e8071ff53451899efb6e8bed20f6a0e00752d212a0edc0a07097ffe60"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate12.lean",
+      "bytes": 1783,
+      "sha256": "04a6d3f899f57563915fc6634160dbc9ca6856883ddef2c39ab4e7d413e0eff7"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate13.lean",
+      "bytes": 1787,
+      "sha256": "c965e1ed87479bdeb09e2902eb6a8439267ce1c6f09d0e1ea78e56c5c212f6b5"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate14.lean",
+      "bytes": 1788,
+      "sha256": "eff1eafcc3f84b97dc0cc10b726c6917d7fa461af9cd77efa568dd7185d41b59"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate15.lean",
+      "bytes": 1797,
+      "sha256": "2288ff715432dc7dd885e42cc11016b48cb5aa340ed2f0b7651fcb539eaedb63"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate16.lean",
+      "bytes": 1797,
+      "sha256": "9ab698fe361422bfcd925e18fa72b9cdac8c588cb5c04226eba89d440e19116e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate17.lean",
+      "bytes": 1790,
+      "sha256": "559c1baefa6be2afa3d7eac0b635ce2db9eaa581398492c5d5dd4b157da38dc8"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate18.lean",
+      "bytes": 1784,
+      "sha256": "0525e2e42ae98c1e404e510790007dec29097913e82947e238cc8dd821e90755"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate19.lean",
+      "bytes": 1793,
+      "sha256": "95b5bb39d65741437c397c09b21622586729774139242c995bd3149d2e55b07a"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate20.lean",
+      "bytes": 1789,
+      "sha256": "5ba0201ca715790da70e8f5a36cc91b123201c8afe779790d54df40b3e2a8d48"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate21.lean",
+      "bytes": 1784,
+      "sha256": "5d687342ee3ae2e078d835f46a4e57f841f67cb6798f38bbf2b400a3418026e2"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate22.lean",
+      "bytes": 1771,
+      "sha256": "72214390b3c48219e0fef63046a565c740a19c79cc3c812897858c809390331c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate23.lean",
+      "bytes": 1797,
+      "sha256": "ac662a3fc347a530cfa6a82bc2cbf960ff1f25d4103b35e993a5e907b6cc8287"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate24.lean",
+      "bytes": 1772,
+      "sha256": "5af25fbd3a0617d2ea666cf1efa9d0f3e7b0a49c8bd4389f0dcb624a7eca15d6"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate25.lean",
+      "bytes": 1787,
+      "sha256": "6f03cf29c3cfd04bba8b6c89e692a4b050e0e8a3500f4b1c9f60912ad5ff63c3"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate26.lean",
+      "bytes": 1795,
+      "sha256": "fa07c885e7542a1450b5d72a7aa930a26d0fef63de9b676a5d90bea6dbc4f56b"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99CentralCertificate27.lean",
+      "bytes": 1761,
+      "sha256": "864d01cd9531f86b580e5ae1efc51c841998c0ae6c231a0d7d181c1aec3dd403"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/L99NumericalRates.lean",
+      "bytes": 4345,
+      "sha256": "c04501b6104b568589846e7ac08fe238dfc877aa02fe97a5daac68167b3acb88"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Analysis/TwentyEightLayerActualRates.lean",
+      "bytes": 2269,
+      "sha256": "aca19995df3b7f5eaa52b39165489358f1e60706b7b6e0d3e9ab0f592579780c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/CellPrimeWindows.lean",
+      "bytes": 4830,
+      "sha256": "f2b4288aa37221378b2dbf158d15364b921cf59f75b618c9feda85ce750e051b"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/CellProbe.lean",
+      "bytes": 771,
+      "sha256": "aa053b405281f32410afdbd599340eaa70fc2b89644b1fc155c1e0417c894d98"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/CellWindowAggregate.lean",
+      "bytes": 7488,
+      "sha256": "66a7b0faa074d824f3e39e074e9f87bb495d37b2c9a9aa718ecc4ed4a7ddb98d"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodAggregate.lean",
+      "bytes": 82105,
+      "sha256": "7403866b807f808cdc278d5228bb6b5733169416bd3e49a046b3196517ac455b"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle000.lean",
+      "bytes": 36098,
+      "sha256": "50442379d7d3c1cd4434164a5b3b8a917bb375c000c82a1ceadb228f4c8fd7a6"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle001.lean",
+      "bytes": 36607,
+      "sha256": "030fd1300459623799b24f05f576062b87adb7830f1a60058bea78324f4495b2"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle002.lean",
+      "bytes": 36480,
+      "sha256": "9f64d2378fde335a2fdce09903e67d8f046c989a109787f925991bc92327a236"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle003.lean",
+      "bytes": 36444,
+      "sha256": "ab8f93794cbc6acc26f1a9ec80b39967de6a48cb1e6919b811ef9c316301f889"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle004.lean",
+      "bytes": 36365,
+      "sha256": "0a4c124962959a8c72d09b3b7eff3ef6a195d140af70776c8b6df44eeda896fa"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle005.lean",
+      "bytes": 36346,
+      "sha256": "872ce5480d9cd5604bcb607fa23e76fa9738021aa42a06faac5902298f7a275c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle006.lean",
+      "bytes": 36369,
+      "sha256": "ef7fb59308acc3689cebc7085572ef28cd54b4459e4d6cee5b4d2bfcf3db6c11"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle007.lean",
+      "bytes": 36233,
+      "sha256": "b0e94b9f42616fd833dba42cd0e9cc315c3c32ecfa6a55a1685b16afc4583b4c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle008.lean",
+      "bytes": 36286,
+      "sha256": "a5dc5ac91c7800c56bc39194f26d231f05ecbe1f20780269f8d8588d7d65727f"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle009.lean",
+      "bytes": 36205,
+      "sha256": "3c1bfdf9614990d109c0d73681b21dc0bdaa3e51703517ca4d4cb0cd1ace205c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle010.lean",
+      "bytes": 36200,
+      "sha256": "0764b314b5278ace0a3f863e602ed8cf3b246a032118395b8734c86c796c6a40"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle011.lean",
+      "bytes": 36213,
+      "sha256": "56e8928d516f5b292716bf556a24f4807c0b10e1eb16b919f4fafddec20b02db"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle012.lean",
+      "bytes": 36225,
+      "sha256": "a2e25afbfe70b3ddf580e77a744261842ca3d52d148fd934d6ddd5b1181cda7e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle013.lean",
+      "bytes": 36194,
+      "sha256": "e05d1954ade9ac2ca6dd2d2a602c7999444001054d262b905f6d4aa9d24db61a"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle014.lean",
+      "bytes": 35917,
+      "sha256": "0128627c1b98a40466c67b0826d2217f7566f0e08d0dcfa09cc736a35eb161b9"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle015.lean",
+      "bytes": 35748,
+      "sha256": "42fe3ecf0b54b54d93a26e7ea8461f8ac9b47675aa664739e458274da09d8541"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle016.lean",
+      "bytes": 36158,
+      "sha256": "962cb6740700fabf04b7e33688e48a2a1cb243a42b13f749981c2bc625debe20"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle017.lean",
+      "bytes": 36080,
+      "sha256": "8176acc8075973f20ab9c8ce4ebbdc9636a787d36c2051a4354774ca8838c8e9"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle018.lean",
+      "bytes": 36099,
+      "sha256": "3e8f133f07b45ed951f8d03a238104b34b69029d089a574f4c6b8ea312f1256e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle019.lean",
+      "bytes": 35999,
+      "sha256": "34af340b01d078557c125aea849fe981844a5c9e566c0470a746abe3a35db492"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle020.lean",
+      "bytes": 36028,
+      "sha256": "77aa7a54dd80632ddf157d17d2dc064000d6b25616d3b36130c7233c0b16cf12"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle021.lean",
+      "bytes": 36062,
+      "sha256": "e3164c23daf38b150ac220c913f994a6c104d4dcf060045f1f8a59198b02c728"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle022.lean",
+      "bytes": 35951,
+      "sha256": "4ba548ebbbac65bd1d938c4931e8372b9654ee1f73dba56249335081428bb9b6"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle023.lean",
+      "bytes": 36017,
+      "sha256": "abe17100efdbcbef4d3c0b0dcbaabfbff70c8b86f7798c6f2be869a7a357d5f0"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle024.lean",
+      "bytes": 35981,
+      "sha256": "29220a1b1061627707b1e9fbfcdb1cc3b7e293b9b8356c1fbaa8b1f647f72f95"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle025.lean",
+      "bytes": 35980,
+      "sha256": "c51879ad6a2b29d8b93f13b07e34696f9f967e17df6d98e30ff9328b2d989e6e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle026.lean",
+      "bytes": 35963,
+      "sha256": "1460e5be95ee5f68d9882d100738b709632a9e5813c5794fffeb1b67cfd38eb5"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle027.lean",
+      "bytes": 35960,
+      "sha256": "506eaa0c439cab08d6df400dfd5a79b44c7b7fecc0ff04cd25e45eb99b632e37"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle028.lean",
+      "bytes": 35915,
+      "sha256": "378ab41364b3921b3cb21d28ccdd442d9745f7d6d76b92e0266b946d5d34ea90"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle029.lean",
+      "bytes": 35124,
+      "sha256": "d7bbcd09d6eb3f052f119542e258ad62c2021b9740cf324b170e9bcf932ef55b"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodPrefixBundle030.lean",
+      "bytes": 1591,
+      "sha256": "01f45f238acd3a282d6ac7033100d8689a1c8bb7439a92f03e3dcabf222235db"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle000.lean",
+      "bytes": 4865,
+      "sha256": "fa794b8b2d2411dfdbb74dbdb0e94b535f5a372993d894b63fe247e698b8fde5"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle001.lean",
+      "bytes": 4898,
+      "sha256": "cfcef1c44e9d66a2c04b028542f28c8da8cb362c993f1b2752bd4a3337f237b5"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle002.lean",
+      "bytes": 4901,
+      "sha256": "cc6c12db9e20a9f3985a9cbe4f2cbcf5f840f5a8cf573f23affd9fae7a18086d"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle003.lean",
+      "bytes": 4902,
+      "sha256": "a14132e0605f6bc4191759e483ee3bea623ece346cf61b127a5fe7fb87532cd0"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle004.lean",
+      "bytes": 4901,
+      "sha256": "a2e75e6ed8ff2be4fb2ca66ee084dfc35b196edf4b7ebe8f54986f43148cfe8e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle005.lean",
+      "bytes": 4901,
+      "sha256": "665507c0d6372cf555043d9b5a9be5a5ba899b11cd54405720890a72a3f6f261"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle006.lean",
+      "bytes": 4901,
+      "sha256": "9b2ea1beb76a31b35760efffc3dc08eeaed97e939e0d062aa7820c3bdaa05e7d"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle007.lean",
+      "bytes": 4899,
+      "sha256": "6a508f1444371181f25b5544a9946444c11ebe03d38345e5bc122f0e6a6947a7"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle008.lean",
+      "bytes": 4896,
+      "sha256": "0aea134748dc2df9baaebedc2f3adfba3dcdafef26354baacb0d5aa0e1a9d780"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle009.lean",
+      "bytes": 4895,
+      "sha256": "8d50bb1d81873fbffe75a317d2effc6b68072860e40c22fb3cb3bcdcaa088621"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle010.lean",
+      "bytes": 4897,
+      "sha256": "45b0d10b50ff99e8b856f41747cad1c9808253f69b555ce225b5282d3f8c1e74"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle011.lean",
+      "bytes": 4899,
+      "sha256": "4ee8a8212564ef1130cb7771e15bde849da51ca031638d6d44ad9df9b1a94c8b"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle012.lean",
+      "bytes": 4902,
+      "sha256": "ec976e812af79693246d58752da5e0ff112a8666adc036344cf8a15eb182c762"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle013.lean",
+      "bytes": 4899,
+      "sha256": "af89e20cdd27411094465a8fe99d2a6ea85a1ed4c7e16d7684e20fc0b5949eb6"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle014.lean",
+      "bytes": 4886,
+      "sha256": "0f31b8d9eb1e5a0243947b7246bca05478c0256d7c69b02b0d7e41ac354590cd"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle015.lean",
+      "bytes": 4889,
+      "sha256": "52b3bcc6d68efc52f17721899ab97c9a578201703131ac6765b6436654fd2c6e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle016.lean",
+      "bytes": 4900,
+      "sha256": "01d1fb8ffee6e9909f98adbc02a7da50a8bc80f067bce54167bd3bb95bb90743"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle017.lean",
+      "bytes": 4899,
+      "sha256": "fb5af9988bcf9636f2d24bd40f4add56692085971a9e220ab3a2741a1d2c57c3"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle018.lean",
+      "bytes": 4899,
+      "sha256": "b3c762804be66e4cc10066c53e5571c248201fd2f36484117d7319fb60cab32c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle019.lean",
+      "bytes": 4897,
+      "sha256": "d28f51636796fe9628ff04085ce08779235e43f859761fffb2e6d9cc6ea22962"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle020.lean",
+      "bytes": 4904,
+      "sha256": "78d010312cd772797a151f7039bd73ea42891bf14e39244f3ccfbe14d2fc0f57"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle021.lean",
+      "bytes": 4910,
+      "sha256": "25ed8a63176c4fe62578490be5e92afa5c3095f6792c7ec2acd2c1f29fd43802"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle022.lean",
+      "bytes": 4903,
+      "sha256": "95b8e42407b9560cb7788b403135b9403c3936e6d6a289fd00894bc896dda049"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle023.lean",
+      "bytes": 4907,
+      "sha256": "880bd227427f13dff0912afd2d26d4c48bca316faaeedc4d3b6d045c1678ccd8"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle024.lean",
+      "bytes": 4905,
+      "sha256": "29c4304287ab87f5007ba239d983920bcd353a0cd95c91ffc0706324083f26d8"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle025.lean",
+      "bytes": 4909,
+      "sha256": "74c028b89eccc69dffe42026137c096eae3f737c4a9d3929e71462061f0e6de0"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle026.lean",
+      "bytes": 4907,
+      "sha256": "4a903febb164015663a121423cd97aa86783a4c1c23e881b26ba7cfbb04be42d"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle027.lean",
+      "bytes": 4903,
+      "sha256": "d612e6e2a8bc091d16eacfcb162c7f081a96303d91ffaad16309e69f1c2652fd"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle028.lean",
+      "bytes": 4909,
+      "sha256": "09b6d1d9a596c475cde9534384a71e439203d6abd776cb84052c9a5391c2a5a0"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle029.lean",
+      "bytes": 4871,
+      "sha256": "28170760fd9c42e64ce50bb1e39cfaebbcc8ffb0335d4c645d4afa9745347414"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99PeriodTailBundle030.lean",
+      "bytes": 1035,
+      "sha256": "77cf6f14decb4335c8b0da4b575fb1eb655035dfa773a48bafcafb6e95c7b5ad"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/L99SharpDivisorRate.lean",
+      "bytes": 1191,
+      "sha256": "9bb2e76b8b5fff7f398d1ee91e758c18e4fc75488c95112612259400e9136cd7"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/PeriodFloorBlock.lean",
+      "bytes": 1826,
+      "sha256": "a82f411a085391f08a3e692c5d138e5eb9663783aa9eb4e3a61dfdca8694e660"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/PeriodFloorCertificate.lean",
+      "bytes": 7551,
+      "sha256": "6f3cc9937c3983d4c5d089ffe91deab2768a7b6992d790f532956dac861c5a80"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/PeriodPrefixSum.lean",
+      "bytes": 3840,
+      "sha256": "1f89d78e9e22dae2dc105b78654e5fe0510ea1f577680de45a0142b84324a5dd"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/PeriodTailAggregate.lean",
+      "bytes": 3990,
+      "sha256": "a48e90e19e41990426abcab137ac6c77cf3b9e5309ae50c4a32ee58e0700a54e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/PeriodTailFloor.lean",
+      "bytes": 6272,
+      "sha256": "5f778451c881e5598911de982b9ad93c52738c2f54e8cda18f261d93c7d4c57c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/PeriodWindowFamily.lean",
+      "bytes": 4481,
+      "sha256": "c46bf7767e85c313ddbae4e0049d574ff83e226935773692b46524ec76775c87"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/ScaledPrimeRates.lean",
+      "bytes": 1607,
+      "sha256": "58d9519d312eb9bb3e407238698dd5f110f6599e7de3c8418f6c6e62dfd1f583"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/ShrunkenCellWindows.lean",
+      "bytes": 3034,
+      "sha256": "b5a98d2183567d3584fcec9769455158e7bcc70bf42ccbf16565e25e1653849e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCellChunks.lean",
+      "bytes": 1397210,
+      "sha256": "e56bdcb35155359744fc82a9dd8c2fdf48f667a413c7a1bcf4a93644f5e24759"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCellDefs.lean",
+      "bytes": 34254,
+      "sha256": "91ba27e0fdae8f82af502a5ca5ef7cdf01dacdcb86b09f81bbeb1d6457fcf8c9"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCellOrder.lean",
+      "bytes": 33073,
+      "sha256": "88611916b1a8556d42fe0569064d86d1e43ca9dd76d54e96fd49bb4dd264c0b9"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCellSoundness.lean",
+      "bytes": 14220,
+      "sha256": "9d0c8e4f0622e3db557d7c2e1f0cf4a52fbfc30b39c105bd45e31cc66e382489"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCellStats.lean",
+      "bytes": 61809,
+      "sha256": "86361b05959a27c77fb6847516c11b39db29020f3ceb178146a38f83b2276565"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCells.lean",
+      "bytes": 19613,
+      "sha256": "3e41870dccd75ec8acacf6d7cf726a9244d9d9b47b4c70bfadca3d9e3e75e232"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCertifiedBound.lean",
+      "bytes": 3825,
+      "sha256": "8de7f827bb9825d1af4df099ae9c73fd6cf2dcf2a21a0305162f628eb5a018e4"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerCost.lean",
+      "bytes": 11482,
+      "sha256": "05ffae6df500d220d9401f550ac465874b407be1c7aa2fbb10f0bcd3c5f0e4c7"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerDivisorCertificate.lean",
+      "bytes": 1233,
+      "sha256": "f14227b8f34b1bd85c2504dc84000225ea41ba92f15e9562efcb1dc7fa7a0a2d"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle000.lean",
+      "bytes": 112481,
+      "sha256": "ba648998216413188c7b5089a19d8c8ec198bf35244c417e59e12161e2056384"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle001.lean",
+      "bytes": 112943,
+      "sha256": "68cb5dd70fc11bddd5bab010ac57ea4c8296836e217a24264a4b41872f1e105d"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle002.lean",
+      "bytes": 112967,
+      "sha256": "edd6c3fa7e0ea4e1dd5853966783d89ec829ae218eb298437c0e28fdd13a2d4a"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle003.lean",
+      "bytes": 113267,
+      "sha256": "9d93bc9e277def17037f90c4bc69226edafc124b01f8bfbf69d4e6d3aae62c6c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle004.lean",
+      "bytes": 113389,
+      "sha256": "7bdc084fcd45d63e72ec4b57926d5d7f85138c37a1644f88bc4cda472b97b507"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle005.lean",
+      "bytes": 113439,
+      "sha256": "86e80be1ad6a30154df74b4bb65d755ca48b96179b61945471bee6d061ed18f0"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle006.lean",
+      "bytes": 113477,
+      "sha256": "3754a0964f2541d917491d1907375e509fad734d8bea643032c6da1ae3f12861"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle007.lean",
+      "bytes": 113483,
+      "sha256": "c66a75bf4e64abdefa306f45511b44034c189cddcea47ca831bac1035e0cbf58"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle008.lean",
+      "bytes": 113511,
+      "sha256": "bad8f462db86f44ef3ffc9dd437a3eda5ed92f1256c297435d3369b1058f8ff3"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle009.lean",
+      "bytes": 113501,
+      "sha256": "ed90a0c9bd600a8e5d8aca2c3df64947a2bd5211190902407bc7cdd7a51f5a49"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle010.lean",
+      "bytes": 113719,
+      "sha256": "384bbca303d3c57d8e31266c78657a408da6ae9d4674704128cb67485169cc3c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle011.lean",
+      "bytes": 113735,
+      "sha256": "e7e3dc4f99adeaa67457c1ca2960268f64f0a157cadc967c02458e1a8acac926"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle012.lean",
+      "bytes": 113727,
+      "sha256": "a9f6cc3c1cbcfc45c48b29a8823d26e6c34b43944ead2fdfce5d49d3b95c7d4f"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle013.lean",
+      "bytes": 113749,
+      "sha256": "800af009fcc920adf7059f7acdb56cb5471b2b4019a002c48e33cf153a588999"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle014.lean",
+      "bytes": 113693,
+      "sha256": "9d82bbfcad7bf038a908a54995268d79432c331d07eba89bb2d7bc085f9bea29"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle015.lean",
+      "bytes": 113741,
+      "sha256": "42f00a2c39b93c4cc539a994d0eb19423894c7e84a2648ba0936b56dd7efe5b1"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle016.lean",
+      "bytes": 113749,
+      "sha256": "787425be97d51ba7977cab114af98dbbc0cb5e11f6e94f71156f2d2b6a8b7f59"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle017.lean",
+      "bytes": 113729,
+      "sha256": "6b23f7123b07fd81f690852cf7153938e81552a2bb0288aac7e37d075132ccf0"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle018.lean",
+      "bytes": 113741,
+      "sha256": "e97678baf221e92688883a4af6ed42dd5371473bc9993825d96d9e165a033b25"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle019.lean",
+      "bytes": 113739,
+      "sha256": "896432c7c4290e9324e4e0aacc6122aa2773fa1f2fa34ab2e384031de9440604"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle020.lean",
+      "bytes": 113759,
+      "sha256": "eef83de8534f394b900205d4a794239b9d6aab55d025234180da697e74e2e33f"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle021.lean",
+      "bytes": 113763,
+      "sha256": "eeb94d34b0790d36b7d86a15053ead612d3157a7a68a7cf7561fd2e421ace060"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle022.lean",
+      "bytes": 113733,
+      "sha256": "e527d75d3e46d7987c962e0a04413099c624266d9275db37f0f7577f3f745b46"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle023.lean",
+      "bytes": 113757,
+      "sha256": "6db58eae86b67e8a025a51285fe0fce620946c5343698bdb0edd0a7f71092f77"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle024.lean",
+      "bytes": 113751,
+      "sha256": "212558532ce6896356832ce3a87e928d940ed335568494733ea0ffe48fd7155c"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle025.lean",
+      "bytes": 113753,
+      "sha256": "0961161dc289c2ab2a37b0f5338afb4108235d3fbad56d61e9a271d724b7f37b"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle026.lean",
+      "bytes": 113765,
+      "sha256": "f394c3460cbf380277a0a53af33a2a845ca4864550322606084baf435cbb9e93"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle027.lean",
+      "bytes": 113771,
+      "sha256": "cdc39ab41ddac2ebf7c1ea257fbaba07642d7f2c2463ddd40e09343e39b90c78"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle028.lean",
+      "bytes": 113771,
+      "sha256": "41be467cc3e395d745a9af012b618e521a89fe944799debb742d72cc7c440067"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle029.lean",
+      "bytes": 113577,
+      "sha256": "10ae5d1d8c493bc5170c5760769479753786f0896c50825a0e49148ecf711836"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Arithmetic/TwentyEightLayerValidityBundle030.lean",
+      "bytes": 4919,
+      "sha256": "c9e21e89f6a38e9fdd2df111978be3f9694e42e3c399aa4b2d3d4a6fc9539550"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Construction/ScaledTwentyEightLayerFamily.lean",
+      "bytes": 5791,
+      "sha256": "dc768a3ad066d479c1016d7cdacd45773b7a168b392de4ca25f86bd34643593e"
+    },
+    {
+      "path": "formalization/OddPiPowers/OddPiPowers/L99/Transfer/PiCube.lean",
+      "bytes": 2657,
+      "sha256": "60b9cbecf93a1797a11af121afb51bfc2378303bc5d1d15098e6fc9fa9e4f228"
+    },
+    {
       "path": "formalization/OddPiPowers/OddPiPowers/Transfer/AlgebraicValue.lean",
       "bytes": 4536,
       "sha256": "9296358ff449c6b4fccf30ea18651fb7c0048c17de49877e6e48d1c0e040f9fe"
@@ -1557,8 +2317,8 @@
     },
     {
       "path": "formalization/OddPiPowers/README.md",
-      "bytes": 2370,
-      "sha256": "64cbf23cdf4ab4b43201f444de34fb3017f77d67e4129586cecc6654e60da68d"
+      "bytes": 3171,
+      "sha256": "61700916d03bf75caa87fdbe82abe61553f24e561704e1e87da38169306a6dba"
     },
     {
       "path": "formalization/OddPiPowers/Scratch.lean",
@@ -1744,6 +2504,1796 @@
       "path": "formalization/OddPiPowers/logs/hard-core-p1-build.log",
       "bytes": 157,
       "sha256": "80ef6d5d54ee31cd39e272dac1bb0e99069be340e4cc69fc41e6a6f516c3a316"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-CentralNumericBounds-20261031T003340.job.json",
+      "bytes": 104,
+      "sha256": "03e91ec01ffb58865830713afc6ac1a28666157262db3504cb8518d9229a431c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-CentralNumericBounds-20261031T003340.log",
+      "bytes": 117,
+      "sha256": "ba8598eb62a99479aac6654120d003ffec24cfa9f3de606021b06f5b69cb4ad7"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-CentralNumericBounds-20261031T003409.job.json",
+      "bytes": 104,
+      "sha256": "99d2ae2294e4cfa4af246f23474e80e117f1c04ec11edc2a8f2c16712a392122"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-CentralNumericBounds-20261031T003409.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate00-20261031T003435.job.json",
+      "bytes": 104,
+      "sha256": "92a2887e3c2a6e52c73ee24865affedd3cbbe9c1412244e4f0f49a9b5d0fa357"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate00-20261031T003435.log",
+      "bytes": 1293,
+      "sha256": "628145df98a98f29390b630a12d13951cd839492f79eb0bd4989e15fa17fcfe6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate01-20261031T003446.job.json",
+      "bytes": 104,
+      "sha256": "7f324cf3c67327af59b51a0980c825547658433370e7d88196d011126f6c0dab"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate01-20261031T003446.log",
+      "bytes": 1072,
+      "sha256": "8acc25f763b8ecdd933e9aa5d5bc3ecb9c405ce2e86d93aab4ad3b9c4f8b6156"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate02-20261031T003458.job.json",
+      "bytes": 104,
+      "sha256": "fa9b7a57179cca98b1fa3ffe9eab8d4e5716c0e391181ab0371f16913a0770a4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate02-20261031T003458.log",
+      "bytes": 1072,
+      "sha256": "24627163480b8afed0b34d5a9863add450a27e5fdb8305eb238f3d5de7812039"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate03-20261031T003510.job.json",
+      "bytes": 104,
+      "sha256": "b9973d25e4b933567243deb70d77a72fb75708cb681906e167e0d503d9a8dfe8"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate03-20261031T003510.log",
+      "bytes": 1072,
+      "sha256": "f86bb5ccdb527cb6f66b57822d0eefb67fbaa4e1aeeba05c609af1e476f5986e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate04-20261031T003521.job.json",
+      "bytes": 104,
+      "sha256": "9969a3818389d82e5783babe981af1d6b664177aefe78335bd007390d2b22eed"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate04-20261031T003521.log",
+      "bytes": 1072,
+      "sha256": "d4fcb36cdcf8d326912f65488caefa977bea29b77e4f84a21016f6bc151c9dff"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate05-20261031T003533.job.json",
+      "bytes": 104,
+      "sha256": "808d0cf4354aec02f5593ab3ac0c4e3ff9b544eb7630573200decd5473f815ea"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate05-20261031T003533.log",
+      "bytes": 1072,
+      "sha256": "af36b44533c36eea94730fe55a60082eb1c628643ec88ff236ca15aa7a9a436d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate06-20261031T003545.job.json",
+      "bytes": 104,
+      "sha256": "113382c2e75cd1a77a272258f2052ff1646c2ca7dd7a38ebbd8243b422406549"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate06-20261031T003545.log",
+      "bytes": 1072,
+      "sha256": "d80f6e26864905eef58c8bcbe02dbffe863ca6c2a59b42c4bde50ad927b4aa87"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate07-20261031T003556.job.json",
+      "bytes": 103,
+      "sha256": "fcb9855dfae56f002b64045707e5e1e4dc43ee1e0b3eb70afc4fc0bda7df8cf3"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate07-20261031T003556.log",
+      "bytes": 1072,
+      "sha256": "1b76321c1dd620392906d33a8575928df0f8cfaa22b74cca8f440d47e7a61bf6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate08-20261031T003608.job.json",
+      "bytes": 104,
+      "sha256": "99d2ae2294e4cfa4af246f23474e80e117f1c04ec11edc2a8f2c16712a392122"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate08-20261031T003608.log",
+      "bytes": 1072,
+      "sha256": "d86fce22ffaa4ea0c0241b7811a193eaa1d92f9789aed18976217c7f6e007d0d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate09-20261031T003620.job.json",
+      "bytes": 103,
+      "sha256": "32f6dfc95b4dba3753a842dd20cabdace3341d12eb97a596e9e3bb34ecde5dfb"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate09-20261031T003620.log",
+      "bytes": 1072,
+      "sha256": "670c1d8178567f73368275755cd724263789e15149fc8debf9e941724d3eda58"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate10-20261031T003631.job.json",
+      "bytes": 104,
+      "sha256": "579f716e7f432ab9dd9d03f720878a7c7a599c8c3787f418fbe0f58ee7dd70e6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate10-20261031T003631.log",
+      "bytes": 1072,
+      "sha256": "c3b132a6e9f9d6bba8408d3f2658ecc272f3693454e7e22e33bc7ec1f46a9c5d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate11-20261031T003643.job.json",
+      "bytes": 104,
+      "sha256": "25acfebd178db04bedaefe73c016f9e2f2fd1118272d23de0f6f1411a53c7639"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate11-20261031T003643.log",
+      "bytes": 1072,
+      "sha256": "efe7b1971370f69f26c9054d14e61c890c9cc5b5537d0b23eddbd94bb9087f0d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate12-20261031T003654.job.json",
+      "bytes": 104,
+      "sha256": "d374afd36bf9200f2cac62b900db0a988b869a59df1f4b1ca3af4fd50205b1b9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate12-20261031T003654.log",
+      "bytes": 1072,
+      "sha256": "d2ec945e0233513a7be62a116043c92d7b2179fb320d2c21a039e06d53047bad"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate13-20261031T003706.job.json",
+      "bytes": 104,
+      "sha256": "3065a6b1eec18a623ca9b15f588799cb5491e097e658437188d0d3c20b6ff33e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate13-20261031T003706.log",
+      "bytes": 1072,
+      "sha256": "af2c0ca80e06532c42b9cbbeefb5c48fb8172246980c1e868bd8796fbc4f8aaf"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate14-20261031T003718.job.json",
+      "bytes": 104,
+      "sha256": "ee7f06edf460e9e5bc77a71947841118e25e480b953c4dc555aedf3a0a81aa13"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate14-20261031T003718.log",
+      "bytes": 1072,
+      "sha256": "764b16cfd5f088d4cc90e74c719344190a3983011c466b7a23189b7ea01408d8"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate15-20261031T003729.job.json",
+      "bytes": 104,
+      "sha256": "fa8e70f96abd2822543b2af2657970cabe710963f1b4e0aba2f1c96b341dc41d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate15-20261031T003729.log",
+      "bytes": 1072,
+      "sha256": "38ac8ce519cd211fc760e6bb914cbdf392f082909621984d803ce93d4ac3e21c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate16-20261031T003741.job.json",
+      "bytes": 104,
+      "sha256": "7ca0bf3af3b70dccae6dadab1e38c98a12284a07b66b56c41493568b6f16f5ac"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate16-20261031T003741.log",
+      "bytes": 1072,
+      "sha256": "a6345a9af2818654603d798eb4b9b561abf3056aba793eec008c29bb3fd6bb55"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate17-20261031T003753.job.json",
+      "bytes": 104,
+      "sha256": "12fd522ed5ceac89c6b514ebcfb16fa330e8d2ec7d53a1d8df740aa965cd6ec0"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate17-20261031T003753.log",
+      "bytes": 1072,
+      "sha256": "3b0d3655f02b850d4a0d3cafb07ec4a899ac2e371634b85f015a4a1076babbff"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate18-20261031T003805.job.json",
+      "bytes": 104,
+      "sha256": "d2a0ae2edb7faef0206cad419d67f3d2657a4248c0f39559fb999023c1586d56"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate18-20261031T003805.log",
+      "bytes": 1072,
+      "sha256": "3df88fb21dd122efbcf5377301ced23c7535f83ddbf30445810cc1bd4a8d9d73"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate19-20261031T003816.job.json",
+      "bytes": 104,
+      "sha256": "354a8a31b7d7e84f9d3ef64a4fb881a50f1b4082d5c5028ab0ee124a5a094677"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate19-20261031T003816.log",
+      "bytes": 1072,
+      "sha256": "22ef535a949d5b7e3586e5327027e3f6729a5ad5b4b789d0ac3c072eeccaf797"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate20-20261031T003828.job.json",
+      "bytes": 103,
+      "sha256": "c48d444cf49716e0c762342efdf7961fb5ee078c8f05e5b5382db6f519775f50"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate20-20261031T003828.log",
+      "bytes": 1072,
+      "sha256": "d98d307b758f16af7becc641911b3baf18f99abe8ecc746ca887e6be093d8abc"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate21-20261031T003839.job.json",
+      "bytes": 104,
+      "sha256": "45de6dbbd75db65d9e7e330a9b09f3d364a7b094588250015e08f467f37a6f4a"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate21-20261031T003839.log",
+      "bytes": 1072,
+      "sha256": "cc57467fecd68d419bd856ba5bb765045077bb2267333c5bc93f17af456bac50"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate22-20261031T003851.job.json",
+      "bytes": 104,
+      "sha256": "440c65ccdd484881ea8db6aeb51e9d154b34bfd0551867ca936af7dd52702def"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate22-20261031T003851.log",
+      "bytes": 1072,
+      "sha256": "d1ef3aa9165418ca1271c2841eb105919823c925036e841f4389316183daa49e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate23-20261031T003903.job.json",
+      "bytes": 104,
+      "sha256": "eac2ac60b0ac6db7c06353e6fad8647a3cd6d8e22e1501192f2a025cbeac82b9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate23-20261031T003903.log",
+      "bytes": 1072,
+      "sha256": "4e2a3c93bdf810f9b8056b2fe51bea9d1754d31fb1d966bc391c5737e360f3ed"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate24-20261031T003915.job.json",
+      "bytes": 104,
+      "sha256": "140d1e1586be465b037dabcf10b6ad365904ba0549d25473eb0376094a0baff6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate24-20261031T003915.log",
+      "bytes": 1072,
+      "sha256": "52c2b1816ba353a6f6b90c56461b34ef6382a9cfb0a558d29ffc49150aedd69b"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate25-20261031T003926.job.json",
+      "bytes": 104,
+      "sha256": "e56565fb563cddccdb3dc7f719bbbb50628a1489e9a79a99243f4a0744ed7141"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate25-20261031T003926.log",
+      "bytes": 1072,
+      "sha256": "1bbc381824f350b4535b70502082641c0998f261941c0377c865d6420128783c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate26-20261031T003938.job.json",
+      "bytes": 104,
+      "sha256": "93334a98d0a16b740c78bdc3dfe01f4b1016e26eae03385d7c64129527d3dddd"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate26-20261031T003938.log",
+      "bytes": 1072,
+      "sha256": "888ecb09afd5817a2e0d1500ac58b44fa6fbcc6a2cc074b18d6aac3a1e201387"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate27-20261031T003950.job.json",
+      "bytes": 104,
+      "sha256": "af28659f5b8e94434ed0fe60e47eb2da54924c9e127544baf0afb6bf85867511"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99CentralCertificate27-20261031T003950.log",
+      "bytes": 1072,
+      "sha256": "ae865e01109e4472cd388bc6817b8c862bceedb5cc2c04ae11cf384f063ebed7"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99NumericalRates-20261031T004001.job.json",
+      "bytes": 104,
+      "sha256": "b80a569a93895964a3311b46e8c3957fe712a2c084a9287acf0f6347562b6b63"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-L99NumericalRates-20261031T004001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-TwentyEightLayerActualRates-20261031T003214.job.json",
+      "bytes": 104,
+      "sha256": "93aaa22b5552906fe4eae58b8df1e64b1ef71fcd3fa7188662deadf26d53d4a6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Analysis-TwentyEightLayerActualRates-20261031T003214.log",
+      "bytes": 32270,
+      "sha256": "e13f4c6d31869fbec8725983a9d8e90f81337e80e56847f7e0e989eee697cc88"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-CellPrimeWindows-20261031T013444.job.json",
+      "bytes": 104,
+      "sha256": "7edbea0e2764bd7d53fb333b91a9d52b844567c2c74c23f9f3890f424dad558c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-CellPrimeWindows-20261031T013444.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-CellWindowAggregate-20261031T013552.job.json",
+      "bytes": 104,
+      "sha256": "e20b105f7a72e3c1e972a0827027f27e6ae78ee92feef8cf2efca8e020def748"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-CellWindowAggregate-20261031T013552.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodAggregate-20261031T015155.job.json",
+      "bytes": 104,
+      "sha256": "2aae018fee98de3033dbfe5e7616d07eb6a2932b8a3217247475b5e265d8b3c4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodAggregate-20261031T015155.log",
+      "bytes": 553,
+      "sha256": "24f5637a87b3aa4575f0fde6ab1ff242e5a130842ec3cc10b3b237e32162caff"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodAggregate-20261031T015422.job.json",
+      "bytes": 104,
+      "sha256": "dc8a3370253ff731809e6eedc76b2931d67f40976cea1df9bb6ab857cb780934"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodAggregate-20261031T015422.log",
+      "bytes": 396,
+      "sha256": "b5acf7749d1bdb598f85c8e637e618244b918e258078b8143305688881f1d8a8"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle000-20261031T013639.job.json",
+      "bytes": 104,
+      "sha256": "3af91941365eac3a716b8287a140ddd45b783e2d5df3d746b9c76adfd0b208da"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle000-20261031T013639.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle001-20261031T013653.job.json",
+      "bytes": 104,
+      "sha256": "1ca0e9235373726eafedf9035822c899ab419768dc86d941a8ba3c89efdb5583"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle001-20261031T013653.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle002-20261031T013706.job.json",
+      "bytes": 104,
+      "sha256": "9a9405d4b492fc09bc0c4efd13e3ff124e350968b6da71ed45834a73af7f5bd5"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle002-20261031T013706.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle003-20261031T013719.job.json",
+      "bytes": 104,
+      "sha256": "c1c27d82d929277a1a52b387ed83bb624980f60b44384578803e461050fdbdb8"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle003-20261031T013719.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle004-20261031T013732.job.json",
+      "bytes": 104,
+      "sha256": "709363f011211a5b28c6d06761c469b1ce81b4353ed325503f4148d4338a1b1b"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle004-20261031T013732.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle005-20261031T013746.job.json",
+      "bytes": 103,
+      "sha256": "4ac6141052ed961794e83f42c66dc1cb87c6543ac9cb928a2e19849bfb9a4fb9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle005-20261031T013746.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle006-20261031T013759.job.json",
+      "bytes": 104,
+      "sha256": "5af58ba871306ea70acfe39131413ffbd8487ed40c0eb376269df3b46d3a94c7"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle006-20261031T013759.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle007-20261031T013812.job.json",
+      "bytes": 104,
+      "sha256": "28da858f56d1aeb035cefd323744bfc47c3aa9182c096c79efe2f332d06095fd"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle007-20261031T013812.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle008-20261031T013826.job.json",
+      "bytes": 104,
+      "sha256": "5bcdeab83537ad597da7616760635dbcb871528384c7288f798f43224125e681"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle008-20261031T013826.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle009-20261031T013839.job.json",
+      "bytes": 104,
+      "sha256": "9e5d0aff51b384645f3b1b26dc37cd0bcd24cd416974f24e152ce27127a8d2d6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle009-20261031T013839.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle010-20261031T013852.job.json",
+      "bytes": 104,
+      "sha256": "ba31ac2f428c10e2b1d1a4d6f24cb13477a95104466675555fc33e6a0dfd150a"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle010-20261031T013852.log",
+      "bytes": 75,
+      "sha256": "11dd60067d074368b36afd5ca631d351c1364d09635623274e18711b8be5b4b3"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle011-20261031T013905.job.json",
+      "bytes": 104,
+      "sha256": "98df4c574e35e85202967422d2c532afaa931c7d2e66e104b942acf1169641c1"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle011-20261031T013905.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle012-20261031T013919.job.json",
+      "bytes": 104,
+      "sha256": "ccb448a61af2fc7fa0288d8f6f7fbcd1daf2de09122dee233d1e98e38684012f"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle012-20261031T013919.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle013-20261031T013932.job.json",
+      "bytes": 104,
+      "sha256": "adb19ba3aabc926890ae2d9e46b2d8665123d5edcd0fcfcdec9ef187bd5ec245"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle013-20261031T013932.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle014-20261031T013945.job.json",
+      "bytes": 104,
+      "sha256": "909bce0a3668d93c77ce0862aa8ac9c6b4e4bc4ef312a99ebf7071b796b7a40e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle014-20261031T013945.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle015-20261031T013958.job.json",
+      "bytes": 104,
+      "sha256": "c53bc6a9e5890c4b4ef89e3da5d484080f831b39cf9b7b0298eefb1a86e311ff"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle015-20261031T013958.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle016-20261031T014011.job.json",
+      "bytes": 104,
+      "sha256": "d16808372a8bedffa602abf6a353986cd7e68bceb8ff236594bb334aa9c3a68d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle016-20261031T014011.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle017-20261031T014025.job.json",
+      "bytes": 104,
+      "sha256": "781e209e73bb018fc61a3cced74ec197eac21d135149ed797fda91ae4aa4937e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle017-20261031T014025.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle018-20261031T014037.job.json",
+      "bytes": 104,
+      "sha256": "6f95b6f847baff00c01265f402035f9a899b91fd1e323156659de801bc0845dd"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle018-20261031T014037.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle019-20261031T014051.job.json",
+      "bytes": 104,
+      "sha256": "e59d7c6d39ef1a727ea6c0f647b9370ac24ac9a1ae489371eccefd14c8cb73d3"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle019-20261031T014051.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle020-20261031T014104.job.json",
+      "bytes": 104,
+      "sha256": "c283959db4262241d0e37501ec9825a1b0dbfe3f96fca2693ce92c4118de2dc6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle020-20261031T014104.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle021-20261031T014117.job.json",
+      "bytes": 104,
+      "sha256": "45c0fe7755defadcc93a760c4551ba129d92b4479f40fdc9e993fde83127fc77"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle021-20261031T014117.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle022-20261031T014130.job.json",
+      "bytes": 104,
+      "sha256": "3a5e0cae2b8fd5d34c9c7840888e1b638f4fe59c70c4669cfc186dc077687aa1"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle022-20261031T014130.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle023-20261031T014143.job.json",
+      "bytes": 104,
+      "sha256": "359d59c13b8cd92dd9c217528c3c05b33dcb20958a4b7add3036013c357dcb29"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle023-20261031T014143.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle024-20261031T014156.job.json",
+      "bytes": 104,
+      "sha256": "b58f4e50e9a4bd7c4636b54b55585f80e7d4297b80bcc85fc1a09bea086c7014"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle024-20261031T014156.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle025-20261031T014210.job.json",
+      "bytes": 103,
+      "sha256": "74b80341e5f653646ed04fe62e11c10700dc861ad35f4e4ad618e0aa89c071b5"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle025-20261031T014210.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle026-20261031T014223.job.json",
+      "bytes": 104,
+      "sha256": "a618a100090064e5a9330c38635e00bddc4755e56c9138475d8f9a0fb2b8ee67"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle026-20261031T014223.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle027-20261031T014236.job.json",
+      "bytes": 104,
+      "sha256": "188855716864ca72f0ed336af19d00746f7cbb46bef121026d634089dc10176d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle027-20261031T014236.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle028-20261031T014249.job.json",
+      "bytes": 103,
+      "sha256": "74b80341e5f653646ed04fe62e11c10700dc861ad35f4e4ad618e0aa89c071b5"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle028-20261031T014249.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle029-20261031T014302.job.json",
+      "bytes": 104,
+      "sha256": "4a17560779f72b8cc339cbc98cb6e058ff17e30f75293de44ca81b5332d434f5"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle029-20261031T014302.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle030-20261031T014315.job.json",
+      "bytes": 104,
+      "sha256": "0fbc269da07842210acbf28ad7d39673d9bc2b0720c86f7de1ed17b37e85ec99"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodPrefixBundle030-20261031T014315.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle000-20261031T014327.job.json",
+      "bytes": 104,
+      "sha256": "07897794a768538bdce9fbcb41ca0adeb6f20d514aa5a1290f0831eb1f432d8a"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle000-20261031T014327.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle001-20261031T014338.job.json",
+      "bytes": 104,
+      "sha256": "dc9e9a6166df86476ce3d6c7c44d745fc64847ad9b65689c811bbc3c1221b8bc"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle001-20261031T014338.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle002-20261031T014350.job.json",
+      "bytes": 104,
+      "sha256": "ee52c091e1ca5b3a7011eb05b56db3f3c1ddaf804dfbc444506557b3c7a19547"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle002-20261031T014350.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle003-20261031T014401.job.json",
+      "bytes": 104,
+      "sha256": "4b5542f9014dcac545f9d937cc9754ab46c202eb097303e12ab632c25a2153da"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle003-20261031T014401.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle004-20261031T014413.job.json",
+      "bytes": 104,
+      "sha256": "bcb534231c21ce44036aaf798f600423728abf590e901e9a0edba91a73d133ea"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle004-20261031T014413.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle005-20261031T014424.job.json",
+      "bytes": 104,
+      "sha256": "90678666b22797b3f59ff94310549e8ac0117cfdfbcd0524e3309f59249aac17"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle005-20261031T014424.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle006-20261031T014436.job.json",
+      "bytes": 104,
+      "sha256": "79827b3d20388277d10ec6b004cd1e9bd341855923294d0f2e46684452fbfb8b"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle006-20261031T014436.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle007-20261031T014447.job.json",
+      "bytes": 104,
+      "sha256": "ca03174c64561c55a5520f40c9eb389c9d4a90fa74636a36c95244b921d698ea"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle007-20261031T014447.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle008-20261031T014459.job.json",
+      "bytes": 104,
+      "sha256": "81ee734c2e585693c096f188329e8cc54685e4269a0f572e463f94c56228f7ab"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle008-20261031T014459.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle009-20261031T014510.job.json",
+      "bytes": 104,
+      "sha256": "371848e7abeaec588f121bc46c0f68e88443136f4c8b5541dc7a92241b475eb4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle009-20261031T014510.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle010-20261031T014522.job.json",
+      "bytes": 103,
+      "sha256": "1473fcabadb0c466bb9573ea5b48a06cbee47bd536f429589a76efa847cc18df"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle010-20261031T014522.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle011-20261031T014534.job.json",
+      "bytes": 104,
+      "sha256": "efa282daa0f70209369c6ed551310f8e2edd9e48aed2e9d8f37b3943861c2546"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle011-20261031T014534.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle012-20261031T014545.job.json",
+      "bytes": 104,
+      "sha256": "4b5542f9014dcac545f9d937cc9754ab46c202eb097303e12ab632c25a2153da"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle012-20261031T014545.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle013-20261031T014556.job.json",
+      "bytes": 103,
+      "sha256": "ccffe6d24670865fb0cee4c7485249796d72e15a95160b38e0d0d681ac8789b4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle013-20261031T014556.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle014-20261031T014608.job.json",
+      "bytes": 104,
+      "sha256": "8584e1c0fe2d24083517782c51a95eeba6fb83589f14fa2e9f23fe1f93b5443d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle014-20261031T014608.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle015-20261031T014620.job.json",
+      "bytes": 104,
+      "sha256": "310f6a599fc572d13d94939fb08fd457c57701dd8c33836336274a72110e5dbc"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle015-20261031T014620.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle016-20261031T014639.job.json",
+      "bytes": 104,
+      "sha256": "41cd654267264ddeff1d54e11de56165a49f163eaf6180e2981fb513724a49e8"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle016-20261031T014639.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle017-20261031T014700.job.json",
+      "bytes": 104,
+      "sha256": "6e12e62915a4682e96637743afa3b53dfd8b9ef886613e637f5b43ead36c6ddf"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle017-20261031T014700.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle018-20261031T014726.job.json",
+      "bytes": 104,
+      "sha256": "f54a968dc40ce20e12a27de20f36de74cb9081d3a705413ba67915d65c7d12ae"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle018-20261031T014726.log",
+      "bytes": 554,
+      "sha256": "4944afe0abe28b2c5baeb05d69fbdb652bcf122cf1f80c993d52e63cef8795ab"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle019-20261031T014755.job.json",
+      "bytes": 104,
+      "sha256": "6376777a471ff3999b574cb7e14169852804cd5fdc53b39dddd0df21b962fc8c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle019-20261031T014755.log",
+      "bytes": 246,
+      "sha256": "3c423f11090afb4849b72ae3cd6d90ceee082466689fbda3061c8c92fd193761"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle020-20261031T014826.job.json",
+      "bytes": 103,
+      "sha256": "77228cbccf3550b46af8f5a09309b264b1945b0bd8485b76f543063c242b89c6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle020-20261031T014826.log",
+      "bytes": 687,
+      "sha256": "d997617abff2200eb8a4aea6e02a399fca82e375fb26ce3bdd0eac211a6d35cb"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle020-20261031T014948.job.json",
+      "bytes": 104,
+      "sha256": "5d7eb58c793431411cc8e6d908245604e17b894897722dffbdcc973e9d2ebd47"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle020-20261031T014948.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle021-20261031T015000.job.json",
+      "bytes": 104,
+      "sha256": "58eb2b74689d0b6d71719882310e38b53d752617f9129a0ef205e7cc703a1eab"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle021-20261031T015000.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle022-20261031T015011.job.json",
+      "bytes": 104,
+      "sha256": "62dfa46d1369f77eb4dd02ab56c75c8ab1fa9b8eb6339fe87476b4ee2c2f7f12"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle022-20261031T015011.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle023-20261031T015023.job.json",
+      "bytes": 104,
+      "sha256": "f29e87e67470efd0f8fccf0152d595e4c1cb8e2251343edf731c45c80958ced6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle023-20261031T015023.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle024-20261031T015034.job.json",
+      "bytes": 104,
+      "sha256": "ca880279d8d834ae09ffbf52c0007a2e6d831518de2e26e824bc4c5c601929a9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle024-20261031T015034.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle025-20261031T015046.job.json",
+      "bytes": 104,
+      "sha256": "50d43d2c98c49bb9526cfe8af64369c7c63a44eac01b5f82a6eefae8f7ca4e34"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle025-20261031T015046.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle026-20261031T015057.job.json",
+      "bytes": 104,
+      "sha256": "bdda320ec0df7eca465da25b1f878a804f76cb8fc164ce5318607df2bc8f2233"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle026-20261031T015057.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle027-20261031T015109.job.json",
+      "bytes": 104,
+      "sha256": "b88da9f74cc998fdd11a04bd27bc7370bb45a4846f4d48d1b87f860a2f0da57f"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle027-20261031T015109.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle028-20261031T015120.job.json",
+      "bytes": 104,
+      "sha256": "966eafefb97ca14e2460857760a9484bb56cde10818d3280dcc5a718cd971213"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle028-20261031T015120.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle029-20261031T015132.job.json",
+      "bytes": 104,
+      "sha256": "6e29e97473fa4c523abcb84f3ce4482c70ca2c0383322e184936b4fc9a72d9e7"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle029-20261031T015132.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle030-20261031T015144.job.json",
+      "bytes": 104,
+      "sha256": "917b1d059fd9794e4659c55ee4e902a2e16a1c5740d6db2a54240954cb3f5aeb"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99PeriodTailBundle030-20261031T015144.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99SharpDivisorRate-20261031T015447.job.json",
+      "bytes": 104,
+      "sha256": "51013324c01dd9a3bc9ec575ce0759b5d4dd1661f4d040fd01eece516e667dda"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-L99SharpDivisorRate-20261031T015447.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodFloorBlock-20261031T004028.job.json",
+      "bytes": 104,
+      "sha256": "cac5f00fc400dc6b9cda9b84d6b9372eddcc07f5ebe352d61a3a6df81f7a5571"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodFloorBlock-20261031T004028.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodFloorCertificate-20261031T004019.job.json",
+      "bytes": 104,
+      "sha256": "b934387a3542e27c134763eaf512c5595ec95d4cfe5f6755e2cfc1f219e22a88"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodFloorCertificate-20261031T004019.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodPrefixSum-20261031T013605.job.json",
+      "bytes": 104,
+      "sha256": "88c45bd285a2e610e968529403d3a12128105a074b02eb43c22d9344d6116a7c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodPrefixSum-20261031T013605.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodTailAggregate-20261031T013627.job.json",
+      "bytes": 104,
+      "sha256": "2f66fb1f15e4f6a82077db132f6d4e37ca308d58721994c9f53248e9bfd166b2"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodTailAggregate-20261031T013627.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodTailFloor-20261031T013617.job.json",
+      "bytes": 104,
+      "sha256": "934665dae009a8751d08291a2e04570f24b926a660cd149acd6c188fee500418"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodTailFloor-20261031T013617.log",
+      "bytes": 524,
+      "sha256": "93899f24475b94599c8e24d1acbc2720ae5c180f5124ed23f58cac6cdad4a6d9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodWindowFamily-20261031T013528.job.json",
+      "bytes": 104,
+      "sha256": "f907b241e67ba382bca519e05e74c7bb8aca644f2df35124f26db86d1c5c856d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-PeriodWindowFamily-20261031T013528.log",
+      "bytes": 1478,
+      "sha256": "b29f263e0616fd7f53cdb13b46b4709e6670bf7a8c0a9818fe7447e68a26d87f"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-ScaledPrimeRates-20261031T013453.job.json",
+      "bytes": 104,
+      "sha256": "ce5098c6a8acd30ae7bca0b25de91b33749c404bb1d219142da81019382a8c4f"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-ScaledPrimeRates-20261031T013453.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-ShrunkenCellWindows-20261031T013540.job.json",
+      "bytes": 104,
+      "sha256": "902fb0b6937bcc8a4af2255ad9bbd49b2ccef400c7cb901c591820126e352bed"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-ShrunkenCellWindows-20261031T013540.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellChunks-20261031T002529.job.json",
+      "bytes": 104,
+      "sha256": "a6d4cc2cde166d02419ef466dd891e9551c2a87bcba26f4416a0652666998c45"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellChunks-20261031T002529.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellChunks-20261031T003023.job.json",
+      "bytes": 104,
+      "sha256": "a91c95df77640b9d225e2c741e83b79dc182c315aac3625f331d7a288180db5c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellChunks-20261031T003023.log",
+      "bytes": 116,
+      "sha256": "234d99375a2762070d290e3d0933622e79410944e81970f3b3b0ad2bbfb05ac9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellDefs-20261031T002537.job.json",
+      "bytes": 103,
+      "sha256": "6c6ec8e264809751a76d0c76332009c3677ea8982442c9d6d9aabe1dda85b20b"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellDefs-20261031T002537.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellDefs-20261031T003032.job.json",
+      "bytes": 104,
+      "sha256": "a909fa9d8094f12e0a5fdc234f413ee282299d41001ceee3158ef5e16e0c4704"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellDefs-20261031T003032.log",
+      "bytes": 4444,
+      "sha256": "43fd72d9f0df8c8e5dd70bada2c262254559b83cb05d4678f4670f861fa4d3e3"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellOrder-20261031T013051.job.json",
+      "bytes": 104,
+      "sha256": "ecc335968bc33c8d2c872bb0aff62692bfcb531ed916b502d301153a9705782e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellOrder-20261031T013051.log",
+      "bytes": 170,
+      "sha256": "4e85fd27ed9c555d99b314222e12ca1ff5880004b022382989c204de463fe2e0"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellOrder-20261031T013347.job.json",
+      "bytes": 103,
+      "sha256": "dbb0ed8be0489bc2e70b0f2d008505fd9f0d15804d8d4ed1ebed77b9d518c57a"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellOrder-20261031T013347.log",
+      "bytes": 1127,
+      "sha256": "d7a60d08e8099f939d1823d97b9d2bb77b8f8414ebc66a575956514642002f68"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellOrder-20261031T013425.job.json",
+      "bytes": 103,
+      "sha256": "b7560a98ad2dcc8e842cc03c2b51973fb503e2df3d54c05e6395b6d5a5ba30f2"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellOrder-20261031T013425.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellSoundness-20261031T002755.job.json",
+      "bytes": 104,
+      "sha256": "218eb47d7d7714a9ded9a5e913f9015df498050b671c2c8db1fc8712306cb5d8"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellSoundness-20261031T002755.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012349.job.json",
+      "bytes": 104,
+      "sha256": "df3a79cb0186f9527aa855fc7d23cbc958faaa59a367a3bf6e7ce177f5ffb2c5"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012349.log",
+      "bytes": 567,
+      "sha256": "ac82a385fc1c4dec98a40e662c0591b22fcba07e5930068681f5020299f3d688"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012558.job.json",
+      "bytes": 104,
+      "sha256": "71ae0ea4020b0f6f66dbd2cba4208904be99a0da7c3565fa26f3ac6873a0c770"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012558.log",
+      "bytes": 35684,
+      "sha256": "20e4eece2bec7e626dd6196a90192d2dde96b14e75d3e75c658548b64857fa6e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012627.job.json",
+      "bytes": 104,
+      "sha256": "208d5eb7c96dad49873f27d7d0d37954685b647ed1004f6591fa54fb0997312e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012627.log",
+      "bytes": 567,
+      "sha256": "6a62da1394b64ed4a7e799985c0b99138c43ce31b0883984748d3cc38b73c11d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012802.job.json",
+      "bytes": 104,
+      "sha256": "54d744074ca23cd8759ad7ac4a06dcc72f42a52faa4fcc7d6ddfed88d0ac8248"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T012802.log",
+      "bytes": 37885,
+      "sha256": "2fcd27c12032373c77b3ef9333043311d7ab3c6d3edb246fca649c6e268c46a2"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T013029.job.json",
+      "bytes": 103,
+      "sha256": "1a693de751f51e81d144562e76ad9dc3f41ca7095de31572df2f7826bed4be21"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCellStats-20261031T013029.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCells-20261031T012146.job.json",
+      "bytes": 103,
+      "sha256": "c44cf408936e35abfd61fb06a8e3bde96d84c8074b065ff87b0ce6c0802c16d7"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCells-20261031T012146.log",
+      "bytes": 610,
+      "sha256": "7f6b035b35c0ce6511280b0422b2672700c318b2c6bf49e22886eb2739dfd756"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCells-20261031T013043.job.json",
+      "bytes": 104,
+      "sha256": "8a8561ecdc0864b78f732fc70645b67ffa8ef53feb57c43b58cdec522832f833"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCells-20261031T013043.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCertifiedBound-20261031T013435.job.json",
+      "bytes": 104,
+      "sha256": "5e45e70f8768d1d4a6a5d7633c408398fb9751d4e6b821f968e3f3acab135436"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCertifiedBound-20261031T013435.log",
+      "bytes": 1116,
+      "sha256": "b01189f233df6dfc2dcf8d24af95efdc9fbb66ba5d55567626ef1299d1c1308a"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCost-20261031T002805.job.json",
+      "bytes": 104,
+      "sha256": "5f4f7d1791e4eafba7a0782ea126db2fb844ab534ca306758f21a68cd754e0a3"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerCost-20261031T002805.log",
+      "bytes": 1473,
+      "sha256": "aaacbe5e7fb81c21573f91ee91f5ed8572896a411014368b18cdff8aa9e30cf3"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerDivisorCertificate-20261031T015436.job.json",
+      "bytes": 104,
+      "sha256": "224bab5ff0d433c7ca995e87113f03d80f082944d76a7d86de5255dc555282a3"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerDivisorCertificate-20261031T015436.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity000-20261031T002547.job.json",
+      "bytes": 104,
+      "sha256": "e7318f492f671be36e2de255c763817cbd48c05fe29a5682c6c26ef92337f566"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity000-20261031T002547.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity000-20261031T004037.job.json",
+      "bytes": 104,
+      "sha256": "8daef4e18f417bb4075551edd774b9ec2752437cbda62bdeea9d1f5bec1daa61"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity000-20261031T004037.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity001-20261031T002832.job.json",
+      "bytes": 104,
+      "sha256": "c79a97337024c43e0331e8da4905879c233d5421c747d8351a7d3728988a66a4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity001-20261031T002832.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity002-20261031T004058.job.json",
+      "bytes": 104,
+      "sha256": "61a7e0413f303ed0dbaa932a1c48e371889dc6090e89e3f73fea3ce3e8a60e91"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity002-20261031T004058.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity003-20261031T004119.job.json",
+      "bytes": 104,
+      "sha256": "0727a5b5f81f3f58f006ddfe47fd290c59fe9903f8a1c352a0662e2002235074"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity003-20261031T004119.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity004-20261031T004139.job.json",
+      "bytes": 103,
+      "sha256": "c99318e5ce086a6c32ed6c84895164a31c9ddc1498a75798ff72748ae3eb9240"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity004-20261031T004139.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity005-20261031T004200.job.json",
+      "bytes": 104,
+      "sha256": "8f80cdfa8b97e7e27bb01ef5f289f0b6d2f535a6dfa2470505d37eb6f3f0ec67"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity005-20261031T004200.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity006-20261031T004221.job.json",
+      "bytes": 104,
+      "sha256": "ae12097fb6540b6ad0456105104cdb1a8413c4806a5dd54f91e2eeceda9a34fb"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity006-20261031T004221.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity007-20261031T004242.job.json",
+      "bytes": 104,
+      "sha256": "57339fde38782cb550eccbb37db3266bca804959fa3c6153d9c313e2b023cbb9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity007-20261031T004242.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity008-20261031T004303.job.json",
+      "bytes": 104,
+      "sha256": "b66f6495dbf7dbbe6cb4884e7a4ff6354ce39cdd4783fa32c5e0d020029eec34"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity008-20261031T004303.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity009-20261031T004324.job.json",
+      "bytes": 104,
+      "sha256": "07649c36ec8eff2dca59806512e237b3f8187d215ab0e8eee3779277a05892de"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity009-20261031T004324.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity010-20261031T004345.job.json",
+      "bytes": 104,
+      "sha256": "1c97737517e116d56f237c674c3014ef38e65f3852c5febce49ea5c70db6ab8e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity010-20261031T004345.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity011-20261031T004406.job.json",
+      "bytes": 104,
+      "sha256": "c79a97337024c43e0331e8da4905879c233d5421c747d8351a7d3728988a66a4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidity011-20261031T004406.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle000-20261031T004501.job.json",
+      "bytes": 103,
+      "sha256": "42832ede5d78b16edc580fafb865fbaaef2e5dc4b2535a3569a9ee3ae6ce2a04"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle000-20261031T004501.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle001-20261031T004611.job.json",
+      "bytes": 103,
+      "sha256": "8bf2c240f91c9aea76ce18ad6d90c5325db0a2ed9c0de6b67a88e37e11eceef4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle001-20261031T004611.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle002-20261031T004720.job.json",
+      "bytes": 103,
+      "sha256": "43507c3cfdba38e3de95253193c1fa556ba0d82bd5ee2c5136e22fb02ab6f7ef"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle002-20261031T004720.log",
+      "bytes": 100,
+      "sha256": "ffbe8bdd0be5829416bd0a35c8fa08dcf4885fbfef59e0d30261e32e20e26256"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle002-20261031T004810.job.json",
+      "bytes": 104,
+      "sha256": "f8368086215ea2b880dc1e7766f6ca1a3dda3d00a40e64f2ed676af3d3953d96"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle002-20261031T004810.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle003-20261031T004919.job.json",
+      "bytes": 104,
+      "sha256": "1e3f261a1bcfbe0db7e012222ed1aff6fdaf5e617a2963bbb82a94b3ef3be5c0"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle003-20261031T004919.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle004-20261031T005029.job.json",
+      "bytes": 104,
+      "sha256": "7632977378e779a574ea5e8015e6f7cf9fd8d0f53a8daca055c1d21d3f2d5880"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle004-20261031T005029.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle005-20261031T005139.job.json",
+      "bytes": 104,
+      "sha256": "c427c6af3dea27a4be467969dcce4552c615b742f6a0c80bfdaf5c3267f98047"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle005-20261031T005139.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle006-20261031T005248.job.json",
+      "bytes": 103,
+      "sha256": "42832ede5d78b16edc580fafb865fbaaef2e5dc4b2535a3569a9ee3ae6ce2a04"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle006-20261031T005248.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle007-20261031T005357.job.json",
+      "bytes": 104,
+      "sha256": "df38a0394810be290c23c34d77ecbbdf6d768c6a8bcab6fd1147e512a990b960"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle007-20261031T005357.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle008-20261031T005507.job.json",
+      "bytes": 103,
+      "sha256": "05026b5493c2cab6316627cd77015987f0caee4580970c44d63f803d2aeb615a"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle008-20261031T005507.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle009-20261031T005616.job.json",
+      "bytes": 103,
+      "sha256": "2a13d6044d6ad845b7820756b710b26dd15b91d63ae43bae213615721ce54d97"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle009-20261031T005616.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle010-20261031T005726.job.json",
+      "bytes": 104,
+      "sha256": "54e3d37dab848c599d4622c21bca7e5c1d65aac9edddac7af1988649541d542c"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle010-20261031T005726.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle011-20261031T005835.job.json",
+      "bytes": 103,
+      "sha256": "43a526f0adb2f99b5621d1ef5c7b7e0e042a4d567cc160f5f94d823df8a2c4d1"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle011-20261031T005835.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle012-20261031T005945.job.json",
+      "bytes": 104,
+      "sha256": "ea92867f2a2759b37b435d9cc05b8194085e886bcd00fd956659d336c97e7d72"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle012-20261031T005945.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle013-20261031T010054.job.json",
+      "bytes": 104,
+      "sha256": "4e3a1b945e217a225a7215b0508dab29b77dbcfe491037709c0be422b5f6820e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle013-20261031T010054.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle014-20261031T010203.job.json",
+      "bytes": 104,
+      "sha256": "591a424fd10d1183a61f82ea537f4cce36009e80d02b12973d630c984b17711e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle014-20261031T010203.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle015-20261031T010313.job.json",
+      "bytes": 104,
+      "sha256": "c1047084f54d735f3bdbff67589a2b99ca3a17bfb8e415ea515abd8f32b940b5"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle015-20261031T010313.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle016-20261031T010423.job.json",
+      "bytes": 104,
+      "sha256": "7d31d7edb46f83dce7bfc1f7a87338817c277f49f466a3fd0afb3056d5831660"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle016-20261031T010423.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle017-20261031T010536.job.json",
+      "bytes": 104,
+      "sha256": "ab344fa2dd79a83aae01b2549bd3e40dedef4c076b8b84d3b369f069ff05bcd9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle017-20261031T010536.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle018-20261031T010645.job.json",
+      "bytes": 104,
+      "sha256": "d7609f1c42a2512a2a90b8032edb9d4813460ed46589276fe42e020bcdeb1e94"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle018-20261031T010645.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle019-20261031T010754.job.json",
+      "bytes": 104,
+      "sha256": "b522f7e767e602e75c1a1f96212006c07c0be478430ba596c468375a061935c0"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle019-20261031T010754.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle020-20261031T010904.job.json",
+      "bytes": 103,
+      "sha256": "442cad8ecd9bfea90923f4f6c9eac20ffb6990d4c0bb3813504fdb5d161f3bf4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle020-20261031T010904.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle021-20261031T011013.job.json",
+      "bytes": 104,
+      "sha256": "f3a73d23a44fa356cfbb75d96d3a9fdfe1d3df23f5d894b3e4edb4aab9e328b0"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle021-20261031T011013.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle022-20261031T011125.job.json",
+      "bytes": 104,
+      "sha256": "259b05cf348ee653bd9dd606f87ff26cd3f2b4da64d804052b0ab1e2824253a0"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle022-20261031T011125.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle023-20261031T011236.job.json",
+      "bytes": 104,
+      "sha256": "80f3a078fc2866040986d0e7c26fa590c06c5068983c8c66d4423c4b8f72c617"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle023-20261031T011236.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle024-20261031T011438.job.json",
+      "bytes": 104,
+      "sha256": "653ef9b9884cb693ad36409a0b7750eaba7ad014d92233621ea2275b92c952c4"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle024-20261031T011438.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle025-20261031T011548.job.json",
+      "bytes": 103,
+      "sha256": "3fcb447355101dd88839c7bcf1e97141a281e786d8f7692b3dc14fcb41cefc0b"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle025-20261031T011548.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle026-20261031T011658.job.json",
+      "bytes": 104,
+      "sha256": "43922c83fc4c648acf14fb5f552a6c7c8cf8ace99c8d1bd1b3a1508f578072b7"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle026-20261031T011658.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle027-20261031T011807.job.json",
+      "bytes": 104,
+      "sha256": "2898f97e1326e9b7d18d46bff40bcbe62c51e7e9560b98b4d34b7f6d82cafdbe"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle027-20261031T011807.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle028-20261031T011916.job.json",
+      "bytes": 104,
+      "sha256": "b534bb4c2df1ad4a87ead0bb94a69b9f15c3991635a73d2681c7afdc3f92b898"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle028-20261031T011916.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle029-20261031T012025.job.json",
+      "bytes": 104,
+      "sha256": "bf7491bc09df8104db0066df899f5a3d712d892c861ddb24921e54f11a7f4423"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle029-20261031T012025.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle030-20261031T012135.job.json",
+      "bytes": 103,
+      "sha256": "6279e1ee028ddce2069b0104c30ee66f5f1e6295c8d6562fe69e57a0a4210129"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Arithmetic-TwentyEightLayerValidityBundle030-20261031T012135.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Construction-ScaledTwentyEightLayerFamily-20261031T003117.job.json",
+      "bytes": 104,
+      "sha256": "add1e5400b2e4bd1776e2cf1fe7c5a6a69c34328682ff3bcee258ab18138b2de"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Construction-ScaledTwentyEightLayerFamily-20261031T003117.log",
+      "bytes": 24725,
+      "sha256": "2b3fb5e9e8c37f97165f251377546b1d215605229a3e047b31e6cc81ef345742"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Transfer-PiCube-20261031T015459.job.json",
+      "bytes": 104,
+      "sha256": "eaf48fc434ad0fb6d9ca5cabd37f7e6ff1b6c4f47a86d3cb68d4b3d59871693d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-OddPiPowers-L99-Transfer-PiCube-20261031T015459.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-acceptance-2026-10-31.json",
+      "bytes": 23713,
+      "sha256": "a5e5ee949490faf4fa7ed2441324597ebb3dd7c2c724f483886751d9dec01dc0"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-acceptance-axioms.job.json",
+      "bytes": 104,
+      "sha256": "2167adad67ace61be4a52e73363cf8d88f299778e867a7057421e81595ca9acb"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-acceptance-axioms.log",
+      "bytes": 1677,
+      "sha256": "a70881b37bcbfdfb7cb1f16e818c653ced3b2be354b270f9208925dd07c996f9"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-build-state.json",
+      "bytes": 74747,
+      "sha256": "ad0bfa1f090fc884c7ee6b092ccefcb7b2eec2cb3d93a723c066bcc8a79b6054"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-cell-data.job.json",
+      "bytes": 104,
+      "sha256": "290c5800e3955b76b88272cb36011ae6039c366fb208b876e1d17f34a2698bf6"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-cell-data.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-cell-defs.job.json",
+      "bytes": 104,
+      "sha256": "a31b805c0360fa253ef0d029858e138b746ada9b1d2b7c507b53abf4e5c2c82d"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-cell-defs.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-cell-probe.job.json",
+      "bytes": 103,
+      "sha256": "473a53647a4e5ac13e0e65b40a39ba2ff04f35f2749c5ca5457aef6f4f180c5e"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-cell-probe.log",
+      "bytes": 69,
+      "sha256": "a027526dc9e0aa85ee65869204b478c34e7b753358de5197586c3e2f5165bd22"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-generation-candidate.json",
+      "bytes": 487,
+      "sha256": "4ffa6bd866d11566ddc989323a2d7b398b176a846ad8dc50efb0be844205b378"
+    },
+    {
+      "path": "formalization/OddPiPowers/logs/l99-rate-candidates.json",
+      "bytes": 532,
+      "sha256": "dde86aed5bbcdb734c7069e1f08816b5394a4ad68c2ff87be079178a58788e68"
     },
     {
       "path": "formalization/OddPiPowers/logs/p0-build.log",
@@ -9741,6 +12291,16 @@
       "sha256": "f52e2f1af0a3179c2eecf0d8413899b16d8b9890ee6204451d6a359c3aba168b"
     },
     {
+      "path": "logs/github-private-repository-2026-10-30.json",
+      "bytes": 302,
+      "sha256": "92480b6c56f013c3e900c1f5593f4c710f51b70b17685f9eecec7d275a97b2cd"
+    },
+    {
+      "path": "logs/github-upload-verified-2026-10-30.json",
+      "bytes": 688,
+      "sha256": "6d09d325e34789ac27fad4b86f45c6f891a3f44982c33304bcc6dd9771ae27f1"
+    },
+    {
       "path": "logs/nested_certificate_2026-10-27.log",
       "bytes": 3261,
       "sha256": "2bfb2c2caf369d59684537c15c1cb7ad34aabe1558535764c0429dcb22dfa877"
@@ -9822,8 +12382,8 @@
     },
     {
       "path": "output/pdf/odd_pi_powers_notes/improvement_plan/assessment_and_optimization_plan.md",
-      "bytes": 16840,
-      "sha256": "3570416994e7c93d1589589f1d45ea1380b7d886f27facc6b0a98fe1816c43ad"
+      "bytes": 17564,
+      "sha256": "ab44cce393151a53a68239a86417f3af0d11197076b3ffb403171bac1991eb3b"
     },
     {
       "path": "output/pdf/odd_pi_powers_notes/improvement_plan/experiments/N1_k3_search/cells.py",
@@ -10456,6 +13016,21 @@
       "sha256": "9c8fc81bf5be33a8fc11e40620849a2a27b757402d1c37cf803305f041e30047"
     },
     {
+      "path": "output/pdf/odd_pi_powers_notes/improvement_plan/experiments/p6_review_2026-10-30/L99.job.json",
+      "bytes": 102,
+      "sha256": "66079637e3bbe22ec118a3e7dfb03f6f2c829a1c470b87e66804904134d6487b"
+    },
+    {
+      "path": "output/pdf/odd_pi_powers_notes/improvement_plan/experiments/p6_review_2026-10-30/L99.json",
+      "bytes": 2817,
+      "sha256": "6cd6865188ec94ead729dc6f6698a70cc4d761aac3c8ce12c8945aee8fcfb583"
+    },
+    {
+      "path": "output/pdf/odd_pi_powers_notes/improvement_plan/experiments/p6_review_2026-10-30/L99.log",
+      "bytes": 2838,
+      "sha256": "470d2562dc2b134c4b42238543f9d87b3ee25813d71dc92679697a23f9fd30c3"
+    },
+    {
       "path": "output/pdf/odd_pi_powers_notes/improvement_plan/experiments/p6_review_2026-10-30/archived_interval_audit.json",
       "bytes": 1431,
       "sha256": "dfc8ac045ec37b5974e8650a2de184a0498f1357b3d934e6148b36522f5f947f"
@@ -10846,6 +13421,21 @@
       "sha256": "6be384185907a5ec4dbc0b728d6dfc8fab78378839888da67249c164a0cae9db"
     },
     {
+      "path": "scripts/build_l99.py",
+      "bytes": 4471,
+      "sha256": "117e157a9d05b016936f3c6147c92993cce5d1e469e5f2cbbbb11600d38fb39e"
+    },
+    {
+      "path": "scripts/close_l99_docs.py",
+      "bytes": 13942,
+      "sha256": "9adda03d93bad8da63dc33449c54f310b87632600d0a64f500c376416596e803"
+    },
+    {
+      "path": "scripts/generate_l99_instance.py",
+      "bytes": 38582,
+      "sha256": "b2d7c4738f2db64c1aea98ff1694acb4df6724ed787cbb6a0b6a774afe2cc22e"
+    },
+    {
       "path": "scripts/generate_p4_axiom_audit.py",
       "bytes": 1607,
       "sha256": "84e0ee3702f17dd9288800b928835bb8dbe02d048eefa3612fc69b601eff7cea"
@@ -10937,8 +13527,8 @@
     },
     {
       "path": "scripts/prepare_github_snapshot.py",
-      "bytes": 4323,
-      "sha256": "bf4b2bf4e0d7170b4f9a94be175841d4be14e667ed5df261c34883dc5e74f3be"
+      "bytes": 4608,
+      "sha256": "a96341da12c6307ab390921caaf59509f53209246de58f622b2f0a95fcd21883"
     },
     {
       "path": "scripts/review_improvement_plan.py",
@@ -10954,6 +13544,11 @@
       "path": "scripts/vendor_stirling_log_core.py",
       "bytes": 2044,
       "sha256": "73e97c51c801b94348eee215f10afcb185530f68d0eb84ac2398d9a038dc797a"
+    },
+    {
+      "path": "scripts/verify_l99_acceptance.py",
+      "bytes": 6712,
+      "sha256": "e4f99e018449eeaa655e71f4d4ec77cf116029111fcda053ecaa23fc9efff371"
     },
     {
       "path": "scripts/verify_p4_acceptance.py",

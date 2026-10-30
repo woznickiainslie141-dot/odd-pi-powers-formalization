@@ -1,0 +1,29 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellOrder.lean:37:27: error: Type mismatch: After simplification, term
+  hx
+ has type
+  y = x
+but is expected to have type
+  x = y
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellOrder.lean:44:24: error: unsolved goals
+xs ys : List TwentyEightCellCertificate
+a b c d e f : ℕ
+hy : ChainSummary ys c d e f
+h : xs = []
+hx : ChainSummary [] a b c d
+⊢ False
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellOrder.lean:45:24: error: unsolved goals
+xs ys : List TwentyEightCellCertificate
+a b c d e f : ℕ
+hx : ChainSummary xs a b c d
+hxs : xs ≠ []
+h : ys = []
+hy : ChainSummary [] c d e f
+⊢ False
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\TwentyEightLayerCellOrder.lean:52:36: error: Application type mismatch: The argument
+  hxs
+has type
+  xs ≠ []
+of sort `Prop` but is expected to have type
+  List ?m.113
+of sort `Type ?u.46` in the application
+  @List.head?_append_of_ne_nil ?m.113 hxs

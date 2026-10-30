@@ -4,6 +4,7 @@ Never deletes or changes source files, Git metadata, caches or toolchains.
 The destination must not exist and must be outside the source workspace.
 """
 from pathlib import Path
+from datetime import datetime, timezone, timedelta
 import argparse
 import hashlib
 import json
@@ -27,6 +28,8 @@ TOKEN_PATTERNS = [
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('destination', type=Path)
+    parser.add_argument('--snapshot-date', default=None,
+                        help='Date label; defaults to the current date in Hong Kong.')
     args = parser.parse_args()
     destination = args.destination.resolve()
     if destination.exists() or destination == ROOT or ROOT in destination.parents:
@@ -64,8 +67,8 @@ def main():
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     manifest = {
-        'date': '2026-10-30',
-        'scope': 'Current working-tree research archive; accepted P6 and explicitly marked drafts',
+        'date': args.snapshot_date or datetime.now(timezone(timedelta(hours=8))).date().isoformat(),
+        'scope': 'Current working-tree research archive; dated acceptance reports and README define the proved scope',
         'git_history': 'New snapshot; nested Git metadata and histories excluded',
         'credential_pattern_scan': 'No matches for the implemented high-confidence patterns',
         'included_file_count': len(included),

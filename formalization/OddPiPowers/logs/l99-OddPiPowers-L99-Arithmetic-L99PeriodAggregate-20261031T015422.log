@@ -1,0 +1,7 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\L99\Arithmetic\L99PeriodAggregate.lean:709:51: warning: This simp argument is unused:
+  periodPrefixLabels_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tailFilteredRate, List.filter_append, List.map_append, List.sum_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
