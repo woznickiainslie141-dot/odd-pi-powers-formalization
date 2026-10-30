@@ -1,0 +1,71 @@
+'OddPiPowers.rectangleIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.bottom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegrable_of_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_eq_zero_of_differentiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontal_comp_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.vertical_comp_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_eq_zero_of_boundary_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangle_horizontal_ne_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangle_vertical_ne_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegrable_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.clog_neg_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.clog_neg_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.hasDerivAt_clog_sub_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.hasDerivAt_clog_neg_sub_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_simple_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.hasDerivAt_inversePower_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_higher_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.fun_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_fun_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_congr_nonpole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.entire_dslope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pole_dslope_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.real_pole_circle_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegrable_real_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_entire_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_simple_real_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_higher_real_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_dslope_reduce' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_dslope_reduce' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_real_pole_eq_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.actual_pole_inside_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.principalExponentialTerm_rectangleIntegrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.principalExponentialTerm_rectangle_eq_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_rectangle_eq_finitePoleContour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.horizontalPoint_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontal_affine_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.intervalIntegral_symmetric_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_kernel_horizontal_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_kernel_horizontal_real_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.kernel_rectangle_tendsto_horizontal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.kernel_rectangle_tendsto_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.finitePoleContour_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.lambda_eq_I_mul_pi_div_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_norm_le_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_finitePoleContour_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_actualAuxiliaryAtI_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]

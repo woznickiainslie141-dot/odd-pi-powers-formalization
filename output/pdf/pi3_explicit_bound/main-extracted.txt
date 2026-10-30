@@ -1,0 +1,537 @@
+                              π3
+
+
+
+
+                                             2026       10   26
+
+
+
+
+              Mahler–Mignotte
+
+
+                                         µ(π 3 ) ≤ E289 < 2028.145383,
+
+          E289
+                                   1, β(3)
+
+
+
+
+                     π3                  Hermite–Padé
+
+
+                                         1
+
+                 ξ
+                                                                                           
+                                      p
+           µ(ξ) = sup ν > 0 : 0 < ξ −   < q −ν                                 p/q ∈ Q          .
+                                      q
+
+
+
+
+      π                                                                µ(π)                             π3
+                                                                                         µ(π 3 ) < ∞
+Waldschmidt          3.2[3]                  qX 3 − p
+
+                                       µ(π 3 ) ≤ 1 + 3 · 240 (1 + log 3).                              (1.1)
+
+
+
+      m≥1
+                                                                        
+                                                         π
+                              Dm = −(m + 1) log 2 sin                        − m,                      (1.2)
+                                                      4(m + 1)
+                              Gm = m + (m + 1) log 2.                                                  (1.3)
+
+
+
+
+                                                        1
+π3                                                                                                               2026-10-26
+
+
+           1.1.        Dm > 2Gm
+
+                                                                           m(Dm + Gm )
+                                       µ(π 3 ) ≤ Em ,         Em =                     .                               (1.4)
+                                                                            Dm − 2Gm
+
+                      m = 289
+
+                                      µ(π 3 ) ≤ E289 < 2028.145383 < 2028.146.                                         (1.5)
+
+                                                                                       π3
+iπ/2
+
+
+                                         2
+
+2.1
+
+                  m       n≥1
+
+                                                                                                         Y
+                                                                                                         n
+     M = m + 1,              dn = lcm(1, . . . , n),       Cm,n = m!dm     M
+                                                                     n (n!) ,               Qm,n (z) =         (z + j)M .
+                                                                                                         j=0
+
+                                                  0, −1, . . . , −n                Γ
+                                                   Z
+                                             Cm,n     z h xz+n
+                                  Rh,n (x) =                      dz,            0 ≤ h ≤ m.                            (2.1)
+                                              2πi Γ Qm,n (z)
+
+           Mignotte[1,        122            (1)–(4)]                            (n!)M                                  zh
+
+
+                                                  zh
+                                                              n X
+                                                              X M
+                                                                    ch,ℓ,j
+                                                          =
+                                               Qm,n (z)           (z + ℓ)j
+                                                              ℓ=0 j=1
+
+
+
+
+                                                          X
+                                                          m
+                                             Rh,n (x) =         Ah,k,n (x)(log x)k ,                                   (2.2)
+                                                          k=0
+                                                          Cm,n X
+                                                                     n
+                                          Ah,k,n (x) =           ch,ℓ,k+1 xn−ℓ .                                       (2.3)
+                                                           k!
+                                                                     ℓ=0
+
+           2.1.          Ah,k,n (x)           Z[x]                         n
+
+                              det(Ah,k,n (x))0≤h,k≤m = cm,n (x − 1)nM ,                  cm,n ̸= 0.                    (2.4)
+
+                       (Ah,k,n (i))
+
+       .      z = −ℓ + w
+                                                          Y
+                                              (−ℓ + w)h         (r − ℓ + w)−M .
+                                                          r̸=ℓ
+
+
+
+
+                                                                 2
+π3                                                                                                                          2026-10-26
+
+
+                                (n!)M                                            M                  wa
+dan                       ch,ℓ,k+1           a=m−k
+
+                                                     (n!)M dm−k
+                                                            n   ch,ℓ,k+1 ∈ Z.
+
+              m!/k! ∈ Z              (2.3)
+                                   Fn (x)         h+k > m              Ah,k,n          xn                         h+k = m
+              Cm,n /(k!(n!)M )               Fn
+                                                                   M
+                                                       (−1)mM /2 Cm,n
+                                                             2 Q m      ̸= 0,                                                    (2.5)
+                                                       (n!)M     k=0 k!
+
+                     nM
+                                x=1                   (2.1)                                                                      Rh,n
+                                                                                             Pm               k
+      1                       nM                                                                k=0 (log x)             k
+                                              (Rh,n (x))h         Fn         1                  nM                              (2.5)
+               (2.4)
+
+
+2.2
+
+
+                                                 iπ                                  X
+                                                                                     m
+                                      λ = log i = ,              Uh,n (Y ) =               Ah,k,n (i)Y k .
+                                                  2
+                                                                                     k=0
+
+              Uh,n ∈ Z[i][Y ]         Uh,n (λ) = Rh,n (i)
+
+                                                           X
+                                                           m                  X
+                                                                              k−1
+                                             Th,n (Y ) =         Ah,k,n (i)          λk−1−j Y j .                                (2.6)
+                                                           k=1                j=0
+
+
+
+                                             Uh,n (λ) − Uh,n (Y ) = (λ − Y )Th,n (Y ).                                           (2.7)
+
+
+
+              2.2.            η>0            n                                              h                |Y | ≤ 2
+
+                                                       |Rh,n (i)| ≤ exp(−(Dm − η)n),                                             (2.8)
+                                            |Uh,n (Y )|, |Th,n (Y )| ≤ exp((Gm + η)n).                                           (2.9)
+
+                       m, η                            p, q
+
+          .                          Mignotte[1,        123            (7)                 129–130                I]
+
+                                                                     π
+                                                              c = cot   .
+                                                                    4M
+                       Stirling                            m           Km
+                                                                            π M n
+                                             |Rh,n (i)| ≤ Km nM /2 dm
+                                                                    n 2 sin         .                                           (2.10)
+                                                                            4M
+
+                                                                     3
+π3                                                                                                                                    2026-10-26
+
+
+                                  (7)                   Cm,n                             e−M n                       eM n
+                  (2.10)                                log dn = n + o(n)                        (2.8)
+
+
+                                                                                                                            a≤m
+                                                
+                    |r − ℓ| ≥ 1             n
+                                            ℓ       ≤ 2n
+
+                                                                        ′ m
+                                                        |Ah,k,n (i)| ≤ Km dn (n + 1)2m+1 2M n .
+
+                                                                   nM +a−1
+                                                                                 
+                                        wa                            a                         (−ℓ + w)h
+                        m           |λ| < 2                |Y | ≤ 2                                    (2.6)                      m
+                 log dn = n + o(n)                         (2.9)                         (8)
+
+
+                                                     3
+
+
+
+             3.1.       p/q > 0                                     |p/q − π 3 | < 1
+
+                                                                                         iθ                         ip
+                                        θ = (p/q)1/3 > 0,                        y=         ,      w = y3 = −          .
+                                                                                         2                          8q
+
+     n                      2.2                     h      Uh,n (y) ̸= 0
+
+                                                    |Uh,n (y)| ≥ (8q)−m exp(−2(Gm + η)n).                                                   (3.1)
+
+         .              2.1                          (1, y, . . . , y m )T                                 (Ah,k,n (i))
+             Uh,n (y) ̸= 0         h                                h                U = Uh,n                  |p/q − π 3 | < 1       |y| < 2
+                        p/q                                                  X 3 − p/q             Q                  [Q(θ) : Q] = 3        Q(i)
+                    2               Q(i, θ)/Q(i)                             3            ω = e2πi/3
+
+                                                                                 Y
+                                                                                 2
+                                                            N(U (y)) =                   U (ω j y) ̸= 0.                                    (3.2)
+                                                                                 j=0
+
+
+
+
+                                                    F (W ) = ResY (Y 3 − W, U (Y )) ∈ Z[i][W ]
+
+             W                          m
+                                                                                    
+                                                                              ip
+                                                            (8q) F m
+                                                                            −             ∈ Z[i] \ {0}.
+                                                                              8q
+
+                                            1
+
+                                                        1 ≤ (8q)m |U (y)|, |U (ωy)|, |U (ω 2 y)|.
+
+                                        2                   (2.9)                (3.1)
+
+                                                                                     4
+π3                                                                                                                2026-10-26
+
+
+                        p/q = (a/b)3                 a, b                              q = b3   y = ia/(2b) ∈ Q(i)
+
+                                    (2b)m U (y) ∈ Z[i] \ {0},             |U (y)| ≥ (2b)−m ≥ (8q)−m .
+
+            (3.1)                      Gm + η > 0
+
+     3.2.         U (Y )                   3             B0 (W ) + Y B1 (W ) + Y 2 B2 (W )
+
+                   F (W ) = B0 (W )3 + W B1 (W )3 + W 2 B2 (W )3 − 3W B0 (W )B1 (W )B2 (W ).
+
+     (3.1)
+
+
+
+
+                                                4
+
+       1.1               .                Dm > 2Gm             m             D = Dm        G = Gm                 η>0
+
+                                                        ∆η = D − 2G − 3η > 0.
+
+                         p/q                |p/q − π 3 | < 1
+                                                                               
+                                                               m log(8q) + log 2
+                                          n = max n0 (m, η),                        ,                                   (4.1)
+                                                                      ∆η
+
+        n0                     2.2                  n         q, m, η                  h                p, q, n
+                 3.1          (4.1)
+
+                                          |Rh,n (i)| ≤ e−(D−η)n
+                                                        ≤ 12 (8q)−m e−2(G+η)n ≤ 12 |Uh,n (y)|.
+
+                               (2.7)
+
+                                                                    |Uh,n (y)| − |Rh,n (i)|
+                                                    |λ − y| ≥
+                                                                           |Th,n (y)|
+                                                              ≥ 12 (8q)−m e−3(G+η)n .                                   (4.2)
+
+        Th,n (y) ̸= 0
+             q                         (4.1)                   n0                               n ≤ m log q/∆η + Om,η (1)
+                       p, q            cm,η > 0
+
+                                                                              3m(G + η)     m(D + G)
+                          |λ − y| ≥ cm,η q −Kη ,             Kη = m +                    =             .
+                                                                             D − 2G − 3η   D − 2G − 3η
+
+
+                                                p
+                                         π3 −     = |π − θ|(π 2 + πθ + θ2 ) ≥ 2π 2 |λ − y|.
+                                                q
+                                q                           q −Kη                               1
+
+
+                                                                         5
+π3                                                                                                      2026-10-26
+
+
+             ν > Em         K η → Em                    η     Kη < ν                           q ν−Kη
+                       q                p
+                                                              p
+                                                       π3 −     > q −ν .
+                                                              q
+             µ(π 3 ) ≤ Em
+
+     4.1.
+                                                n
+
+
+
+
+                                            5
+
+             m = 289                  code/certify_bound.py                Python
+
+
+                 1224.30683764214781833358 < D289 < 1224.30683764214781833359,
+                  490.01268236238413973099 < G289 < 490.01268236238413973100,
+                  244.28147291737953887159 < D289 − 2G289 < 244.28147291737953887160,
+                 2028.14538231016824842293 < E289 < 2028.14538231016824842294.
+
+                           D289 > 2G289              (1.5)
+                           Machin
+
+                                      π = 16 arctan(1/5) − 4 arctan(1/239)
+
+                               π                                               2 sin(π/1160)
+             2                              [1, 2]
+                                        X
+                                        L−1
+                                              v 2k+1                                u−1
+                            log u = 2                + EL ,                   v=        ,
+                                              2k + 1                                u+1
+                                        k=0
+                                          2v 2L+1
+                           0 ≤ EL ≤                      ,                     1 ≤ u ≤ 2.
+                                      (2L + 1)(1 − v 2 )
+                 m(D + G)/(D − 2G)              D > 2G > 0             D             G
+E289
+                               code/check_identities.py                               (m, n)
+     (2.4)       x=i                                                                                      2.1
+                               m = 289
+
+
+                                              6
+
+                                                                                               µ(π 3 ) = 2
+                                                              β(3)
+        p/q
+
+                                                               6
+π3                                                                                                    2026-10-26
+
+
+                                                                      Dm              Gm
+                                                         (1.4)
+
+
+
+
+                                 A
+
+
+
+A.1
+
+       (2.1)       (n!)m+1                                                      m = 1, n = 2, h = 0     x2 log x
+          1/8                Z                zh       z −h
+
+
+                                            p=q=1        y = i/2
+
+                                             U (Y ) = 4Y 2 + 2iY − 1.
+
+      U (y) = −3 ̸= 0
+                                            ResY (Y 3 + i/8, U (Y )) = 0.
+
+                                                                                     3.1
+
+
+                (1.2)              m
+
+                                                      2(m + 1)
+                                 Dm = (m + 1) log              − m + O(1/m).
+                                                         π
+          2              4                                       Dm > 2Gm
+                             m = 289
+
+
+A.2
+
+        P (y) ∈ Z[y]                 d
+
+                                                                    X
+                                                                    d−1
+                                         P (y) = P (−1) + (1 + y)         bj y j ,
+                                                                    j=0
+
+
+                         Z 1                                          X   d−1
+                                 P (x2 )         2      P (−1)π 3           bj
+                                       2
+                                         (log x)   dx =           + 2             .                       (A.1)
+                             0   1+x                       16           (2j + 1)3
+                                                                          j=0
+
+                1, π 3                                                P
+
+
+
+
+                                    log lcm(1, 3, . . . , 2d − 1)3 = 6d + o(d),                           (A.2)
+
+                                                         7
+π3                                                                                                            2026-10-26
+
+
+                 2               O(log d)
+                       P (y) = y N (1 − y)N              d = 2N
+
+                     log IN = −N log 4 + o(N ),               log lcm(1, 3, . . . , 4N − 1)3 = 12N + o(N ).
+
+
+
+                                                                                               2N             8−N
+
+
+       Chebyshev                                             ∥P ∥[0,1] /|P (−1)|                                (A.1)
+
+
+
+A.3
+
+
+                                                    Q3
+                                                      j=1 (t − aj N )aj N (t + 2 + N )aj N
+                                                                                1
+                                  RN (t) = 8                                               ,
+                                                               ((t + 21 )N +1 )3
+                                                                           P
+            aj                                                        2N       j aj − 3N − 3        N
+
+
+                 N = a1 = a2 = a3 = 1
+
+                                        (t − 1)3                                            4096
+                          R1 (t) = 8              ,          R1 (1) = 0,        R1 (−3) =        ̸= 0.
+                                       (t + 1/2)3                                           125
+
+
+
+                                                              (t + 1)n (t + 2n + 1)n
+                                           Rn(0) (t) = n!                            .
+                                                                 (t + n + 1/2)3n+1
+
+
+                                          Rn(0) (−t − 3n − 1) = (−1)n+1 Rn(0) (t).
+
+     ck,j               −n − 1/2 − k            j                               cn−k,j = (−1)n+1+j ck,j
+
+                                                      X
+                                                      n
+                                            Cj :=           (−1)k ck,j = (−1)j+1 Cj ,
+                                                      k=0
+
+        C2 = 0                         β(2)
+β(1)                                                                                 π2
+
+
+
+
+                                            B
+
+
+ • code/certify_bound.py
+
+
+                                                                  8
+π3                                                                                  2026-10-26
+
+
+ • data/bound_certificate.json
+ • code/check_identities.py
+ • data/identity_checks.json
+
+
+
+
+[1] M. Mignotte, Approximations rationnelles de π et quelques autres nombres, Mémoires de la
+     Société Mathématique de France 37 (1974), 121–132. doi:10.24033/msmf.139.           122–
+     123                          (7)         129–130
+
+[2] K. Mahler, On the approximation of logarithms of algebraic numbers, Philosophical Trans-
+     actions of the Royal Society of London A 245 (1953), 371–398. doi:10.1098/rsta.1953.0001.
+
+[3] M. Waldschmidt, Transcendence measures for exponentials and logarithms, Journal of the
+     Australian Mathematical Society A 25 (1978), 445–465. doi:10.1017/S1446788700021431.
+                452         3.2
+
+[4] J. B. Rosser and L. Schoenfeld, Approximate formulas for some functions of prime numbers,
+     Illinois Journal of Mathematics 6 (1962), 64–94. doi:10.1215/ijm/1255631807.
+
+[5] W. Zudilin, Two hypergeometric tales and a new irrationality measure of ζ(2), Annales
+     Mathématiques du Québec 38 (2014), 101–117. arXiv:1310.1526.
+
+[6] R. Marcovecchio and W. Zudilin, Hypergeometric rational approximations to ζ(4), 2019.
+     arXiv:1905.12579.
+
+
+
+
+                                               9
+

@@ -1,0 +1,269 @@
+Choosing m=2m=2, n=3n=3, p1=3​h−2​jp\_{1}=3h-2j,\
+p2=2​h−jp\_{2}=2h-j, p3=hp\_{3}=h, q1=0q\_{1}=0, q2=j−hq\_{2}=j-h, q3=2​(j−h)q\_{3}=2(j-h) and\
+z=−a−a⁡(a+1)z=-a-\\sqrt{a(a+1)}, by combining our results with Corollary 2.8\
+of \[ [12](https://arxiv.org/html/2512.12890#bib.bib12 "")\] we may also obtain all the ℚ⁡(1+1/a)\\mathbb{Q}(\\sqrt{1+1/a})–nonquadraticity\
+measures of log⁡(1+1/a)\\log(1+1/a) in Table 1 on p.267 of \[ [12](https://arxiv.org/html/2512.12890#bib.bib12 "")\],\
+without using the ℂ2\\mathbb{C}^{2}–saddle point method.\
+\
+We conclude with three more examples. We set z=−4z=-4, m=3m=3, n=4n=4,\
+p1=6p\_{1}=6, p2=7p\_{2}=7, p3=8p\_{3}=8, p4=9p\_{4}=9, q1=10q\_{1}=10, q2=11q\_{2}=11, q3=12q\_{3}=12, q4=13q\_{4}=13. We obtain\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | P(log(54))≫εH(P)−66.9403256794​⋯−εP\\bigg(\\log\\Big(\\frac{5}{4}\\Big)\\bigg)\\gg\_{\\varepsilon}H(P)^{-66.9403256794\\dots-\\varepsilon} |  |\
+\
+for any ε>0\\varepsilon>0 and any polynomial P⁡(x)P(x) of degree at most 33. If we take\
+z=−5z=-5, m=3m=3, n=4n=4, p1=8p\_{1}=8, p2=9p\_{2}=9, p3=10p\_{3}=10, p4=11p\_{4}=11, q1=12q\_{1}=12, q2=13q\_{2}=13,\
+q3=14q\_{3}=14, q4=15q\_{4}=15, we obtain\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | P(log(65))≫εH(P)−36.9634662932​⋯−ε( Sorokin \[ [18](https://arxiv.org/html/2512.12890#bib.bib18 "")\]: −154−ε)P\\bigg(\\log\\Big(\\frac{6}{5}\\Big)\\bigg)\\gg\_{\\varepsilon}H(P)^{-36.9634662932\\dots-\\varepsilon}\\qquad(\\text{ Sorokin\\penalty\ \\cite\[cite\]{\[\\@@bibref{}{SorokinLogs}{}{}\]}: }-154-\\varepsilon) |  |\
+\
+for any ε>0\\varepsilon>0 and any polynomial P⁡(x)P(x) of degree at most 33. By taking\
+z=−19z=-19, m=4m=4, n=5n=5, p1=14p\_{1}=14, p2=15p\_{2}=15, p3=16p\_{3}=16, p4=17p\_{4}=17, p5=18p\_{5}=18, q1=19q\_{1}=19,\
+q2=20q\_{2}=20, q3=21q\_{3}=21, q4=22q\_{4}=22, q5=23q\_{5}=23 we obtain\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | P(log(2019))≫εH(P)−565.5663269277​⋯−εP\\bigg(\\log\\Big(\\frac{20}{19}\\Big)\\bigg)\\gg\_{\\varepsilon}H(P)^{-565.5663269277\\dots-\\varepsilon} |  |\
+\
+for any ε>0\\varepsilon>0 and any polynomial P⁡(x)P(x) of degree at most 44.\
+\
+## Acknowledgement\
+\
+The author is a Fellow “Ing. Giorgio Schirillo” of the Istituto Nazionale di Alta Matematica.\
+\
+## References\
+\
+- \[1\]\
+F. Amoroso and C. Viola,\
+Approximation measures for logarithms of algebraic numbers.\
+Ann. Scuola Norm. Sup. Pisa (4) 30 (2001), no. 1, 225–249.\
+\
+- \[2\]\
+A. T. Benjamin, D. Gaebler and R. Gaebler,\
+A combinatorial approach to hyperharmonic numbers.\
+Integers 3 (2003), A15, 9 pp.\
+\
+- \[3\]\
+V. I. Buslaev,\
+Relations for the coefficients, and singular points of a function. (Russian)\
+Mat. Sb. (N.S.) 131 (173) (1986), no. 3, 357–384;\
+English translation in Math. USSR-Sb. 59 (1988), no. 2, 349–377.\
+\
+- \[4\]\
+J. H. Conway and R. K. Guy,\
+The book of numbers. Copernicus, New York, 1996.\
+\
+- \[5\]\
+A.Erdélyi et al. (Bateman manuscript project),\
+Higher transcendental functions, McGrow-Hill, New York 1953.\
+\
+- \[6\]\
+M. Hata,\
+Legendre type polynomials and irrationality measures.\
+J. Reine Angew. Math. 407 (1990), 99–125.\
+\
+- \[7\]\
+M. Hata,\
+Rational approximations to π\\pi and some other numbers.\
+Acta Arith. 63 (1993), no. 4, 335–349.\
+\
+- \[8\]\
+M. Hata,\
+ℂ2\\mathbb{C}^{2}-saddle method and Beukers’ integral.\
+Trans. Amer. Math. Soc. 352 (2000), no. 10, 4557–4583.\
+\
+- \[9\]\
+A. Heimonen, T. Matala-Aho and K. Väänänen,\
+On irrationality measures of the values of Gauss hypergeometric function.\
+Manuscripta Math. 81 (1993), no. 1-2, 183–202.\
+\
+- \[10\]\
+L. Lipshitz,\
+The diagonal of a  D-finite power series is D-finite.\
+J. Algebra 113 (1988), no. 2, 373–378.\
+\
+- \[11\]\
+R. Marcovecchio, The Rhin-Viola method for log⁡2\\log 2.\
+Acta Arith. 139 (2009), 147–184.\
+\
+- \[12\]\
+R. Marcovecchio and C.
+---
+The roots of −(y+3)​(y+4)​(y+5)=−2​y​(y−1)​(y−2)-(y+3)(y+4)(y+5)=-2y(y-1)(y-2)\
+are 20.267669670594​…20.267669670594\\dots and −1.133834835297​⋯±i​1.294140012477​…-1.133834835297\\dots\\pm i1.294140012477\\dots.\
+The values of v1,v2,v3v\_{1},v\_{2},v\_{3} in Corollary 4.3 are all distinct,\
+and we have log⁡\|v1\|=22.149699678920​…\\log\|v\_{1}\|=22.149699678920\\dots, log⁡\|v2\|=log⁡\|v3\|=−7.537440405644​…\\log\|v\_{2}\|=\\log\|v\_{3}\|=-7.537440405644\\dots.\
+We have W=\|v2\|W=\|v\_{2}\| because\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | log\|v2\|<4​log​4+15​log​15−3​log​3−10​log​5−7​log​7=13.1543​⋯<log⁡\|v1\|.\\log\|v\_{2}\|<4\\log 4+15\\log 15-3\\log 3-10\\log 5-7\\log 7=13.1543\\dots<\\log\|v\_{1}\|. |  |\
+\
+The function μ⁡(ω)\\mu(\\omega) defined in section 6 takes the value 11 if\
+ω∈\[1/6,3/7)∪\[1/2,5/7)∪\[3/4,6/7)\\omega\\in\[1/6,3/7)\\cup\[1/2,5/7)\\cup\[3/4,6/7) and μ⁡(ω)=0\\mu(\\omega)=0\
+otherwise, whence δ=4.995102335817​…\\delta=4.995102335817.... Thus by Theorem 7.1\
+we have (see Theorem 1.1 in \[ [11](https://arxiv.org/html/2512.12890#bib.bib11 "")\])\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | μ⁡(log⁡2)≤3.574553902525​….\\mu(\\log 2)\\leq 3.574553902525...\ . |  |\
+\
+###### Remark 8.1.\
+\
+Since \|v1\|>1>\|v2\|=\|v3\|\|v\_{1}\|>1>\|v\_{2}\|=\|v\_{3}\|, we may also argue differently. By a theorem of Buslaev\
+(see Theorem 1 in \[ [3](https://arxiv.org/html/2512.12890#bib.bib3 "")\]), and by (3) in \[ [20](https://arxiv.org/html/2512.12890#bib.bib20 "")\],\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | limt→∞1t​log⁡\|ℒ3​(4​t,t,5​t,2​t,3​t,0,−1)\|=log⁡\|v1\|=22.149699​…\\lim\\limits\_{t\\to\\infty}\\frac{1}{t}\\log\|{\\mathcal{L}}\_{3}(4t,t;5t,2t;3t,0;-1)\|=\\log\|v\_{1}\|=22.149699... |  |\
+\
+because ℒ3​(4​t,t,5​t,2​t,3​t,0,−1)≠0{\\mathcal{L}}\_{3}(4t,t;5t,2t;3t,0;-1)\\not=0 is an integer, and\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | lim supt→∞1t​log⁡\|ℐ31​(4​t,t,5​t,2​t,3​t,0,−1)\|=log⁡\|v2\|−4​log⁡2=−10.310029​….\\limsup\\limits\_{t\\to\\infty}\\frac{1}{t}\\log\|{\\mathcal{I}}\_{3}^{1}(4t,t;5t,2t;3t,0;-1)\|=\\log\|v\_{2}\|-4\\log 2=-10.310029...\ . |  |\
+\
+Since log⁡2\\log 2 is irrational, then the sequences\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | {ℒ3∗​(4​t,t,5​t,2​t,3​t,0,−1)}t∈ℕ and {z−t​(1−z)−4​t​ℐ31​(4​t,t,5​t,2​t,3​t,0,−1)}t∈ℕ\\{{\\mathcal{L}}\_{3}^{\*}(4t,t;5t,2t;3t,0;-1)\\}\_{t\\in\\mathbb{N}}\\quad\\text{ and }\\quad\\{z^{-t}(1-z)^{-4t}{\\mathcal{I}}\_{3}^{1}(4t,t;5t,2t;3t,0;-1)\\}\_{t\\in\\mathbb{N}} |  |\
+\
+are linearly independent. Hence may apply Theorem 1 of \[ [20](https://arxiv.org/html/2512.12890#bib.bib20 "")\].\
+\
+The special case m=1m=1 and n=2n=2 of our Theorem 7.1 is a reformulation of Theorem 2\
+of \[ [9](https://arxiv.org/html/2512.12890#bib.bib9 "")\] (here q1=0q\_{1}=0, q2=p2−p1q\_{2}=p\_{2}-p\_{1}, our zz is s/rs/r and p1/p2p\_{1}/p\_{2}\
+is α\\alpha in the notation of \[ [9](https://arxiv.org/html/2512.12890#bib.bib9 "")\]), also proved, with a different method,\
+in \[ [19](https://arxiv.org/html/2512.12890#bib.bib19 "")\] (p1=j−lp\_{1}=j-l, p2=hp\_{2}=h, q1=0q\_{1}=0 and q2=lq\_{2}=l with the notation\
+of \[ [19](https://arxiv.org/html/2512.12890#bib.bib19 "")\]).\
+\
+The results in the previous sections can be combined with Lemma 2.4 of \[ [1](https://arxiv.org/html/2512.12890#bib.bib1 "")\] to\
+obtain, again with m=1m=1 and n=2n=2, another proof of Theorem 2.3 of \[ [1](https://arxiv.org/html/2512.12890#bib.bib1 "")\]\
+(by choosing again p1=j−lp\_{1}=j-l, p2=hp\_{2}=h, q1=0q\_{1}=0q2=lq\_{2}=l, and now w=αw=\\alpha,\
+i.e.
+---
+z=α/(α−1)z=\\alpha/(\\alpha-1) with the notation thereof), , without using the saddle point method.\
+Also, by combining them with Lemma 2.2 of \[ [12](https://arxiv.org/html/2512.12890#bib.bib12 "")\] one may obtain,\
+with m=1m=1, n=3n=3 and p1=4p\_{1}=4, p2=5p\_{2}=5, p3=3p\_{3}=3, q1=1q\_{1}=1, q2=2q\_{2}=2 and q3=0q\_{3}=0,\
+a new proof of all the new ℚ⁡(α)\\mathbb{Q}(\\alpha)–irrationality measures of log⁡α\\log\\alpha in (1.3)\
+of \[ [12](https://arxiv.org/html/2512.12890#bib.bib12 "")\]. We point out that Theorem 2.3 of \[ [1](https://arxiv.org/html/2512.12890#bib.bib1 "")\]\
+with h=j=7h=j=7, l=1l=1 gives\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | μℚ⁡(23)​(log⁡23)<9.583516​….\\mu\_{\\mathbb{Q}\\left(\\sqrt{\\frac{2}{3}}\\right)}\\left(\\log\\frac{2}{3}\\right)<9.583516\\dots\ . |  |\
+\
+We now obtain our new nonquadraticity measure of log⁡2\\log 2. We apply Theorem 7.1\
+with z=−1z=-1, m=2m=2, n=4n=4, p1=5p\_{1}=5, p2=6p\_{2}=6, p3=7p\_{3}=7, p4=4p\_{4}=4,\
+q1=1q\_{1}=1, q2=2q\_{2}=2, q3=3q\_{3}=3, q4=0q\_{4}=0. The roots\
+of −(y+4)​(y+5)​(y+6)​(y+7)=−2​y​(y−1)​(y−2)​(y−3)-(y+4)(y+5)(y+6)(y+7)=-2y(y-1)(y-2)(y-3)\
+are −1.730890645949​…-1.730890645949..., 38.527585178736​…38.527585178736...\
+and −1.398347266393​…±i​3.262020254989​…-1.398347266393...\\pm i3.262020254989...\ . The values of v1v\_{1}, v2v\_{2}, v3v\_{3}\
+and v4v\_{4} in Corollary 4.3 are all distinct, and log⁡\|v1\|=48.947490848559​…\\log\|v\_{1}\|=48.947490848559...,\
+log⁡\|v2\|=log⁡\|v3\|=−9.276132199490​…\\log\|v\_{2}\|=\\log\|v\_{3}\|=-9.276132199490\\dots, log⁡\|v4\|=−18.115257059384​…\\log\|v\_{4}\|=-18.115257059384....\
+We have W=\|v3\|W=\|v\_{3}\| or W=\|v4\|W=\|v\_{4}\|, because\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | log\|v2\|<5​log​5+28​log​28−4​log​4−12​log​6−8​log​8−10​log​10=34.6412​⋯<log⁡\|v1\|.\\log\|v\_{2}\|<5\\log 5+28\\log 28-4\\log 4-12\\log 6-8\\log 8-10\\log 10=34.6412\\dots<\\log\|v\_{1}\|. |  |\
+\
+The values of the function μ⁡(ω)\\mu(\\omega) defined in section 6 are as follows: μ⁡(ω)=2\\mu(\\omega)=2 if\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | ω∈\[1/7,1/6\[∪\[2/9,1/4\[∪\[2/7,3/10\[∪\[3/7,1/2\[∪\[4/7,3/5\[∪\[5/7,3/4\[∪\[6/7,7/8\[;\\omega\\in\[1/7,1/6\[\\cup\[2/9,1/4\[\\cup\[2/7,3/10\[\\cup\[3/7,1/2\[\\cup\[4/7,3/5\[\\cup\[5/7,3/4\[\\cup\[6/7,7/8\[; |  |\
+\
+μ⁡(ω)=1\\mu(\\omega)=1 if\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | ω∈\[1/9,1/7\[∪\[1/6,2/9\[∪\[1/4,2/7\[∪\[3/10,3/7\[∪\[5/9,4/7\[∪\[3/5,5/7\[∪\[3/4,6/7\[∪\[7/8,9/10\[;\\begin{split}\\omega\\in\[1/9,1/7\[\\cup\[1/6,2/9\[\\cup\[1/4,2/7\[\\cup\[3/10,3/7\[\\\<br>\\cup\[5/9,4/7\[\\cup\[3/5,5/7\[\\cup\[3/4,6/7\[\\cup\[7/8,9/10\[;\\end{split} |  |\
+\
+μ⁡(ω)=0\\mu(\\omega)=0 otherwise.\
+Consequently δ=10.792110594854​…\\delta=10.792110594854...\ . By Theorem 7.1 we get\
+\
+|     |     |     |\
+| --- | --- | --- |\
+|  | μ2​(log⁡2)≤12.841618132152​…,\\mu\_{2}(\\log 2)\\leq 12.841618132152..., |  |\
+\
+which improves upon the best known upper bound for μ2​(log⁡2)\\mu\_{2}(\\log 2),\
+namely 15.651420​…15.651420..., proved in \[ [11](https://arxiv.org/html/2512.12890#bib.bib11 "")\].\
+\
+By taking m=2m=2, n=3n=3, p1=3​h−2​jp\_{1}=3h-2j, p2=2​h−jp\_{2}=2h-j, p3=hp\_{3}=h,\
+q1=0q\_{1}=0, q2=j−hq\_{2}=j-h, q3=2​(j−h)q\_{3}=2(j-h) and z=a/(a−b)z=a/(a-b) we obtain\
+all the nonquadraticity measures of log⁡(a/b)\\log(a/b) on p. 151 and 182\
+of \[ [11](https://arxiv.org/html/2512.12890#bib.bib11 "")\].
+---
+[Skip to main content](https://arxiv.org/html/2512.12890#infobox)
+
+Title:
+
+Content selection saved. Describe the issue below:
+
+Description:
+
+![](https://static.arxiv.org/static/design-system/latest/logos/smileybones.svg)Scheduled maintenance: Wednesday, October 28, 7:00 to 12:00 EDT (11:00 to 16:00 UTC).[Read more on our blog](https://blog.arxiv.org/2026/10/21/scheduled-database-maintenance)Dismiss announcement
+
+[License: arXiv.org perpetual non-exclusive license](https://info.arxiv.org/help/license/index.html#licenses-available)
+
+arXiv:2512.12890v1 \[math.NT\] 15 Dec 2025
+
+# Multiple Legendre polynomials   in Diophantine approximation
+
+Raffaele MarcovecchioAddress: Dipartimento di Matematica
+
+Università di Pisa
+
+Largo B. Pontecorvo, 5
+
+56127 Pisa
+
+Italy
+Email address: [marcovec@mail.dm.unipi.it](mailto:marcovec@mail.dm.unipi.it)
+
+###### Abstract.
+We construct a class of multiple Legendre polynomials and prove that they
+satisfy an Apéry-like recurrence. We give new upper bounds of the approximation
+measures of logarithms of rational numbers by algebraic numbers of bounded
+degree. We prove e.g. that the nonquadraticity exponent of log⁡2\\log 2 is bounded
+from above by 12.841618​…12.841618..., thus improving upon a recent result of the author.
+Our construction also yields some other known results.
+###### Key words and phrases:
+
+irrationality measure, nonquadraticity measure, multiple Legendre polynomial, linear recurrence equation, hyperharmonic numbers.
+###### 2010 Mathematics Subject Classification
+
+Primary 11J82; Secondary 11J04, 11J17, 33C45
+
+## 1\. Introduction
+
+Recently, in \[ [11](https://arxiv.org/html/2512.12890#bib.bib11 "")\], the author introduced three sequences
+{Pt​(w)}\\{P\_{t}(w)\\}, {Qt​(w)}\\{Q\_{t}(w)\\}, {Rt​(w)}\\{R\_{t}(w)\\}, (t=0,1,2,…t=0,1,2,\\dots) of polynomials
+depending on five positive integers E1,…,E5E\_{1},\\dots,E\_{5} satisfying suitable inequalities.
+The construction of Pt​(w)P\_{t}(w), Qt​(w)Q\_{t}(w) and Rt​(w)R\_{t}(w) required quite a long computation,
+using an idea of Sorokin (see (1) and (21) in \[ [18](https://arxiv.org/html/2512.12890#bib.bib18 "")\]), essentially consisting
+in applying differentiations and multiplications by powers of ww, namely:
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+| (1) |  | DE5​t∘wE4​t∘DE3​t∘wE2​t∘DE1​t,D\_{E\_{5}t}\\circ w^{E\_{4}t}\\circ D\_{E\_{3}t}\\circ w^{E\_{2}t}\\circ D\_{E\_{1}t}, |  |
+
+to the three functions
+
+|     |     |     |
+| --- | --- | --- |
+|  | 11−w,log⁡(1/w)1−w and 12​log2​(1/w)1−w.\\frac{1}{1-w},\\qquad\\frac{\\log(1/w)}{1-w}\\quad\\text{ and }\\quad\\frac{\\frac{1}{2}\\log^{2}(1/w)}{1-w}. |  |
+
+Throughout the present paper Dm​(f⁡(u))=1m!​(dd​u)m​f​(u)D\_{m}(f(u))=\\frac{1}{m!}(\\frac{{\\rm d}}{{\\rm d}u})^{m}f(u).
+We obtained simultaneous approximations Pt​(w)​log⁡(1/w)−Qt​(w)P\_{t}(w)\\log(1/w)-Q\_{t}(w)
+and Pt​(w)​log2⁡(1/w)−2​Rt​(w)P\_{t}(w)\\log^{2}(1/w)-2R\_{t}(w) to log⁡(1/w)\\log(1/w) and log2⁡(1/w)\\log^{2}(1/w)
+(see (46) and (47) in \[ [11](https://arxiv.org/html/2512.12890#bib.bib11 "")\]). For suitable choices of E1,…,E5E\_{1},\\dots,E\_{5}
+not all equal, by applying the Rhin-Viola method (see \[ [15](https://arxiv.org/html/2512.12890#bib.bib15 "")\] and the
+bibliography therein) we proved that the coefficients of the polynomial Pt​(w)P\_{t}(w) have
+a big common divisor Δt\\Delta\_{t}, and similarly for Qt​(w)Q\_{t}(w) and Rt​(w)R\_{t}(w) (see
+Proposition 3.1 of \[ [11](https://arxiv.org/html/2512.12890#bib.bib11 "")\]). By making w=a/b∈ℚw=a/b\\in\\mathbb{Q} we obtained
+new irrationality and nonquadraticity measures for logarithms of some rational
+numbers. Taking w=1/2w=1/2 we proved

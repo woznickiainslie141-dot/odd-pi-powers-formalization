@@ -1,0 +1,12 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\PoleCircle.lean:71:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  ∮ (z : ℂ) in C(-↑pole, 1 * 4⁻¹), f z * (1 * ((z + ↑pole) ^ (j + 1))⁻¹) =
+    iteratedDeriv j f (-↑pole) * ((↑j.factorial)⁻¹ * (I * (↑Real.pi * 2)))
+but is expected to have type
+  ∮ (z : ℂ) in C(-↑pole, 1 * 4⁻¹), f z * ((z + ↑pole) ^ (j + 1))⁻¹ =
+    iteratedDeriv j f (-↑pole) * ((↑j.factorial)⁻¹ * (I * (↑Real.pi * 2)))
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  mulAux ↦ 44
+  Real.instAdd ↦ 1

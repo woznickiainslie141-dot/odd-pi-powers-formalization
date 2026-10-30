@@ -1,0 +1,7 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodTailFloor.lean:39:2: error: mod_cast has type
+  @Nat.cast ℚ Rat.instNatCast q / ↑scale ≤ periodTailRational T K c
+but is expected to have type
+  @Nat.cast ℝ Real.instNatCast q / ↑scale ≤ ↑(periodTailRational T K c)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 2

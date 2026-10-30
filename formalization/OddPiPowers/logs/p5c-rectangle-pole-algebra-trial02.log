@@ -1,0 +1,32 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:28:33: error: Application type mismatch: The argument
+  fun i hi => (hf i hi).bottom
+has type
+  ∀ i ∈ s, IntervalIntegrable (fun x => f i (↑x + ↑c * Complex.I)) volume a b
+of sort `Prop` but is expected to have type
+  Finset ?m.21
+of sort `Type ?u.27` in the application
+  @IntervalIntegrable.sum ?m.21 ?m.22 ?m.23 ?m.24 ?m.25 ?m.26 ?m.27 ?m.28 fun i hi => (hf i hi).bottom
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:29:33: error: Application type mismatch: The argument
+  fun i hi => (hf i hi).top
+has type
+  ∀ i ∈ s, IntervalIntegrable (fun x => f i (↑x + ↑d * Complex.I)) volume a b
+of sort `Prop` but is expected to have type
+  Finset ?m.37
+of sort `Type ?u.31` in the application
+  @IntervalIntegrable.sum ?m.37 ?m.38 ?m.39 ?m.40 ?m.41 ?m.42 ?m.43 ?m.44 fun i hi => (hf i hi).top
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:30:33: error: Application type mismatch: The argument
+  fun i hi => (hf i hi).right
+has type
+  ∀ i ∈ s, IntervalIntegrable (fun y => f i (↑b + ↑y * Complex.I)) volume c d
+of sort `Prop` but is expected to have type
+  Finset ?m.53
+of sort `Type ?u.35` in the application
+  @IntervalIntegrable.sum ?m.53 ?m.54 ?m.55 ?m.56 ?m.57 ?m.58 ?m.59 ?m.60 fun i hi => (hf i hi).right
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:31:33: error: Application type mismatch: The argument
+  fun i hi => (hf i hi).left
+has type
+  ∀ i ∈ s, IntervalIntegrable (fun y => f i (↑a + ↑y * Complex.I)) volume c d
+of sort `Prop` but is expected to have type
+  Finset ?m.69
+of sort `Type ?u.39` in the application
+  @IntervalIntegrable.sum ?m.69 ?m.70 ?m.71 ?m.72 ?m.73 ?m.74 ?m.75 ?m.76 fun i hi => (hf i hi).left

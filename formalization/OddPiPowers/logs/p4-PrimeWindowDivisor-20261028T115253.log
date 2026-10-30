@@ -1,0 +1,6 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PrimeWindowDivisor.lean:62:6: error: Type mismatch
+  PrimeWindow.primes_subset_large (W i) L N (hcap i hi) (hN i hi)
+has type
+  (W i).primes N ⊆ largePrimeIndices L N
+but is expected to have type
+  p ∈ (W i).primes N → p ∈ largePrimeIndices L N

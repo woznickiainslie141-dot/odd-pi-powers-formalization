@@ -1,0 +1,25 @@
+{
+  "status": "verified",
+  "date": "2026-10-28",
+  "library_targets": 72,
+  "root_jobs": 3156,
+  "source_hashes_match": true,
+  "post_build_audit_declarations": 172,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_axioms": false,
+  "certificate_rows": 1180,
+  "positive_rows": 1166,
+  "uniform_weight_scaling": true,
+  "actual_integer_coefficient_bridge": true,
+  "continuous_41_example": true,
+  "max_library_build_job_MiB": 3272.04,
+  "post_build_audit_job_MiB": 4876.01,
+  "job_cap_MiB": 6144,
+  "lean_memory_MiB": 2048,
+  "build_state": "logs/p3b-guarded-library-build-state.json",
+  "audit_log": "logs/p3b-post-build-axioms.log"
+}

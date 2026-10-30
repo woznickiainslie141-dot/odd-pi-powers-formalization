@@ -1,0 +1,8 @@
+{
+  "status": "exact arithmetic; cofactor theorem NOT yet Lean-formalized",
+  "accepted_P6_bound": "42170551935/35026168",
+  "cofactor_bound_if_new_transfer_proved": "10429276285/8756542",
+  "decimal": 1191.0268100124456,
+  "strict_target": "1191.027",
+  "strict_comparison": true
+}

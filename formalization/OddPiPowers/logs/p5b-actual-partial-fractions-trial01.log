@@ -1,0 +1,63 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:40:31: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∏ x ∈ ?s, if ?a = x then ?b x else 1
+in the target expression
+  ((∏ x ∈ Finset.range (P.n + 1), if x = pole then (X + C ↑x) ^ P.multiplicity x else 1) *
+      ∏ x ∈ Finset.range (P.n + 1), if x = pole then 1 else (X + C ↑x) ^ P.multiplicity x) =
+    ∏ r ∈ Finset.range (P.n + 1), (X + C ↑r) ^ P.multiplicity r
+
+M : ℕ
+P : ActualIntervals M
+pole : ℕ
+hpole : pole ≤ P.n
+hp : pole ∈ Finset.range (P.n + 1)
+hprod :
+  ((∏ x ∈ Finset.range (P.n + 1), if x = pole then (X + C ↑x) ^ P.multiplicity x else 1) *
+      ∏ x ∈ Finset.range (P.n + 1), if x = pole then 1 else (X + C ↑x) ^ P.multiplicity x) =
+    ∏ r ∈ Finset.range (P.n + 1), (X + C ↑r) ^ P.multiplicity r
+⊢ ∏ ell ∈ Finset.range (P.n + 1), (X + C ↑ell) ^ P.multiplicity ell =
+    (X + C ↑pole) ^ P.multiplicity pole *
+      ∏ r ∈ Finset.range (P.n + 1), if r = pole then 1 else (X + C ↑r) ^ P.multiplicity r
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:58:27: error: Application type mismatch: The argument
+  P.localExpansion pole h
+has type
+  PowerSeries ℚ
+but is expected to have type
+  PowerSeries ℂ
+in the application
+  (PowerSeries.coeff q) (P.localExpansion pole h)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:73:55: error(lean.unknownIdentifier): Unknown constant `Rat.castHom_apply`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:59:56: error: unsolved goals
+M : ℕ
+P : ActualIntervals M
+h pole q : ℕ
+hpole : pole ≤ P.n
+hq : q < P.multiplicity pole
+z : ℂ
+hz : z + ↑pole ≠ 0
+hQ : P.denominatorValue z ≠ 0
+he : P.denominatorValue z = (z + ↑pole) ^ P.multiplicity pole * eval₂ (Rat.castHom ℂ) z (P.otherRootProduct pole)
+hother : eval₂ (Rat.castHom ℂ) z (P.otherRootProduct pole) ≠ 0
+hmu : P.multiplicity pole = q + (P.multiplicity pole - q)
+⊢ (Rat.castHom ℂ) ((PowerSeries.coeff q) (P.localExpansion pole h)) *
+      (z + ↑pole) ^ (q + (P.multiplicity pole - q) - q) =
+    (z + ↑pole) ^ (P.multiplicity pole - q) * (PowerSeries.coeff q) sorry
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:82:29: error: Application type mismatch: The argument
+  P.localExpansion pole ↑h
+has type
+  PowerSeries ℚ
+but is expected to have type
+  PowerSeries ℂ
+in the application
+  (PowerSeries.coeff q) (P.localExpansion pole ↑h)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:90:2: error: 'change' tactic failed, pattern
+  eval₂ (Rat.castHom ℂ) z (P.partialFractionNumerator ↑h) = P.intervalFactorialProduct * z ^ ↑h
+is not definitionally equal to target
+  eval₂ (Rat.castHom ℂ) z (P.partialFractionNumerator ↑h) =
+    eval₂ (Rat.castHom ℂ) z (∏ x, ↑(P.length x).factorial) * z ^ ↑h
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:89:4: warning: This simp argument is unused:
+  Polynomial.eval₂_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.eval₂_mul, Polynomial.eval₂_pow, Polynomial.eval₂_X, map_prod, map_natCast] at he
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

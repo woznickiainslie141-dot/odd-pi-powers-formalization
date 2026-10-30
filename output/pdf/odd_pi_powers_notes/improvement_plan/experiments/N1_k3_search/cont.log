@@ -1,0 +1,32 @@
+L=69: Econt=1133.2424 m=172.10 nu0=66.46 support=20 inner=[5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 5.74, 4.97, 4.97, 4.86, 0.0, 0.0, 0.0]
+L=99: Econt=1107.9342 m=170.89 nu0=63.88 support=29 inner=[4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 4.01, 3.99, 3.72, 3.63, 3.63, 2.95, 1.82, 0.0, 0.0, 0.0]
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\cont_opt.py", line 90, in <module>
+    res = run(k, L)
+          ^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\cont_opt.py", line 73, in run
+    res = minimize(fun, x, jac=True, method="L-BFGS-B", bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_minimize.py", line 738, in minimize
+    res = _minimize_lbfgsb(fun, x0, args, jac, bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_lbfgsb_py.py", line 441, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_differentiable_functions.py", line 344, in fun_and_grad
+    self._update_fun()
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_differentiable_functions.py", line 295, in _update_fun
+    fx = self._wrapped_fun(self.x)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_differentiable_functions.py", line 21, in wrapped
+    fx = fun(np.copy(x), *args)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_optimize.py", line 80, in __call__
+    self._compute_if_needed(x, *args)
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_optimize.py", line 74, in _compute_if_needed
+    fg = self.fun(x, *args)
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\cont_opt.py", line 40, in fun
+    dg = (ws[:, None] * R[first]).sum(axis=0)
+          ~~~~~~~~~~~~^~~~~~~~~~
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 1.98 MiB for an array with shape (5101, 51) and data type float64

@@ -1,0 +1,38 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Vendor/PNT/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+    "OddPiPowers/Vendor/PNT/SmoothExistence.lean",
+    "OddPiPowers/Vendor/PNT/Wiener00.lean",
+    "OddPiPowers/Vendor/PNT/Wiener01.lean",
+    "OddPiPowers/Vendor/PNT/Wiener02.lean",
+    "OddPiPowers/Vendor/PNT/Wiener03.lean",
+    "OddPiPowers/Vendor/PNT/Wiener04.lean",
+    "OddPiPowers/Vendor/PNT/Wiener05.lean",
+    "OddPiPowers/Vendor/PNT/Wiener06.lean",
+    "OddPiPowers/Vendor/PNT/Wiener07.lean",
+    "OddPiPowers/Vendor/PNT/Wiener08.lean",
+    "OddPiPowers/Vendor/PNT/Wiener09.lean",
+    "OddPiPowers/Vendor/PNT/Wiener10.lean",
+    "OddPiPowers/Vendor/PNT/Wiener.lean",
+    "OddPiPowers/Vendor/PNT/Consequences.lean",
+    "P4PntAudit.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Vendor/PNT/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "log": "logs/p4-Basic-20261028T115911.log",
+      "sha256": "b5b365d1a41678b3c40f4b60f4097ba83822a907051c6f287742de421680f34d"
+    }
+  ],
+  "current": "OddPiPowers/Vendor/PNT/SmoothExistence.lean",
+  "exit_code": 75,
+  "failed_log": "logs/p4-SmoothExistence-20261028T115911.log"
+}

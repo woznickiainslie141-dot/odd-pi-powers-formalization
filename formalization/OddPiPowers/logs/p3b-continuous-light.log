@@ -1,0 +1,93 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:14:12: error: unknown namespace `BigOperators`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:43:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:56:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:39:31: warning: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [add_assoc, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:92:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:97:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:146:2: error: expected token
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:259:71: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:260:16: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:259:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:260:16: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:271:58: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:271:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:277:8: error(lean.unknownIdentifier): Unknown constant `Finset.sum_congr`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:278:8: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:284:8: error(lean.unknownIdentifier): Unknown constant `Finset.sum_congr`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:285:8: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:295:21: error(lean.invalidField): Invalid field `sum`: The environment does not contain `Finset.sum`, so it is not possible to project the field `sum` from an expression
+  Finset.univ
+of type `Finset ?m.9`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:297:20: error(lean.invalidField): Invalid field `sum`: The environment does not contain `Finset.sum`, so it is not possible to project the field `sum` from an expression
+  Finset.univ
+of type `Finset ?m.12`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:298:6: error(lean.unknownIdentifier): Unknown constant `Finset.mul_sum`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:293:52: error: unsolved goals
+C : CarryShape
+s : ℕ
+z y : ℝ
+⊢ sorry = s * sorry
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:407:10: error: expected token
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:407:9: error: (↥) must have a function type, not
+  Prop
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:501:10: error: expected token
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:501:9: error: (↥) must have a function type, not
+  Prop
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:555:37: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:567:30: error: failed to synthesize
+  Fintype (Fin 7)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:567:30: error: failed to synthesize
+  Fintype (Fin 5)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:566:41: error: unsolved goals
+case left
+k : Fin 7
+⊢ ↑↑k / 12 ≤ (↑↑k + 1) / 14
+
+case right
+k : Fin 5
+⊢ (↑↑k + 7 + 1) / 14 ≤ (↑↑k + 7) / 12
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:592:29: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:595:29: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲

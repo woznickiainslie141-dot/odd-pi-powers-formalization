@@ -1,0 +1,19 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCost.lean:17:25: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCost.lean:17:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCost.lean:25:25: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCost.lean:25:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCost.lean:165:8: warning: This simp argument is unused:
+  twelveEndpointSlope_alpha
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveEndpointReal, twelveAlpha, twelveEndpointSlope, Int.fract]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

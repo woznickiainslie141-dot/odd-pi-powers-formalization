@@ -1,0 +1,10 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodPrefixSum.lean:38:7: error: Function expected at
+  List.nodup_range
+but this term has type
+  (List.range ?m.42).Nodup
+
+Note: Expected a function because this term is being applied to the argument
+  T
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodPrefixSum.lean:81:2: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information

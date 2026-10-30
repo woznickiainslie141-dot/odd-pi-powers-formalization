@@ -1,0 +1,341 @@
+{
+  "finite_data_only": true,
+  "rows": [
+    {
+      "a": 3,
+      "n": 2,
+      "kappa_n": 18.410025029200618,
+      "delta_n": -9.29811368921478,
+      "error_exponent": 0.494942908851737,
+      "primitive_denominator_digits": 16
+    },
+    {
+      "a": 3,
+      "n": 4,
+      "kappa_n": 22.33343025916492,
+      "delta_n": -12.75025936603402,
+      "error_exponent": 0.4290953419123009,
+      "primitive_denominator_digits": 39
+    },
+    {
+      "a": 3,
+      "n": 8,
+      "kappa_n": 24.3880938665744,
+      "delta_n": -14.796971628505244,
+      "error_exponent": 0.39327067914948716,
+      "primitive_denominator_digits": 85
+    },
+    {
+      "a": 3,
+      "n": 12,
+      "kappa_n": 25.150468665721743,
+      "delta_n": -15.434426869482893,
+      "error_exponent": 0.38631653053372744,
+      "primitive_denominator_digits": 132
+    },
+    {
+      "a": 3,
+      "n": 20,
+      "kappa_n": 25.585638313703967,
+      "delta_n": -15.824252195018634,
+      "error_exponent": 0.38151817824521583,
+      "primitive_denominator_digits": 223
+    },
+    {
+      "a": 3,
+      "n": 30,
+      "kappa_n": 26.012123613163393,
+      "delta_n": -16.313309806857234,
+      "error_exponent": 0.37285743949786904,
+      "primitive_denominator_digits": 339
+    },
+    {
+      "a": 3,
+      "n": 40,
+      "kappa_n": 26.428023496662856,
+      "delta_n": -16.726500304610106,
+      "error_exponent": 0.36709227208299516,
+      "primitive_denominator_digits": 460
+    },
+    {
+      "a": 4,
+      "n": 2,
+      "kappa_n": 20.292156160620305,
+      "delta_n": -9.647895319216005,
+      "error_exponent": 0.5245505089331483,
+      "primitive_denominator_digits": 18
+    },
+    {
+      "a": 4,
+      "n": 4,
+      "kappa_n": 28.151828710336112,
+      "delta_n": -17.164917107298983,
+      "error_exponent": 0.3902734602460556,
+      "primitive_denominator_digits": 49
+    },
+    {
+      "a": 4,
+      "n": 8,
+      "kappa_n": 30.11639176295639,
+      "delta_n": -18.51421132430965,
+      "error_exponent": 0.38524470427820623,
+      "primitive_denominator_digits": 105
+    },
+    {
+      "a": 4,
+      "n": 12,
+      "kappa_n": 30.223221924429573,
+      "delta_n": -19.051457441106297,
+      "error_exponent": 0.3696417447238835,
+      "primitive_denominator_digits": 158
+    },
+    {
+      "a": 4,
+      "n": 20,
+      "kappa_n": 31.648551787224733,
+      "delta_n": -20.354506238086316,
+      "error_exponent": 0.3568582102924968,
+      "primitive_denominator_digits": 275
+    },
+    {
+      "a": 4,
+      "n": 30,
+      "kappa_n": 32.11713479990097,
+      "delta_n": -20.843074908266768,
+      "error_exponent": 0.35102944150762055,
+      "primitive_denominator_digits": 419
+    },
+    {
+      "a": 4,
+      "n": 40,
+      "kappa_n": 32.94552354778167,
+      "delta_n": -21.697838844413354,
+      "error_exponent": 0.3414025182224084,
+      "primitive_denominator_digits": 573
+    },
+    {
+      "a": 5,
+      "n": 2,
+      "kappa_n": 30.14013516212323,
+      "delta_n": -18.089805799299306,
+      "error_exponent": 0.3998100638237162,
+      "primitive_denominator_digits": 27
+    },
+    {
+      "a": 5,
+      "n": 4,
+      "kappa_n": 33.29261324437541,
+      "delta_n": -20.95165011615144,
+      "error_exponent": 0.3706817196246649,
+      "primitive_denominator_digits": 58
+    },
+    {
+      "a": 5,
+      "n": 8,
+      "kappa_n": 37.091728517660876,
+      "delta_n": -24.5735520336339,
+      "error_exponent": 0.3374924001739785,
+      "primitive_denominator_digits": 129
+    },
+    {
+      "a": 5,
+      "n": 12,
+      "kappa_n": 37.386746777967616,
+      "delta_n": -24.723895690861468,
+      "error_exponent": 0.3386989288559467,
+      "primitive_denominator_digits": 195
+    },
+    {
+      "a": 5,
+      "n": 20,
+      "kappa_n": 39.463862233215465,
+      "delta_n": -26.88018308593189,
+      "error_exponent": 0.3188658796982191,
+      "primitive_denominator_digits": 343
+    },
+    {
+      "a": 5,
+      "n": 30,
+      "kappa_n": 39.1795165295761,
+      "delta_n": -26.545384993006067,
+      "error_exponent": 0.32246777540076815,
+      "primitive_denominator_digits": 511
+    },
+    {
+      "a": 5,
+      "n": 40,
+      "kappa_n": 39.31140347538559,
+      "delta_n": -26.7017371551765,
+      "error_exponent": 0.3207635750808159,
+      "primitive_denominator_digits": 683
+    },
+    {
+      "a": 6,
+      "n": 2,
+      "kappa_n": 36.36723916614362,
+      "delta_n": -23.000040710096343,
+      "error_exponent": 0.3675615406211968,
+      "primitive_denominator_digits": 32
+    },
+    {
+      "a": 6,
+      "n": 4,
+      "kappa_n": 42.126400082094634,
+      "delta_n": -28.494075561001328,
+      "error_exponent": 0.32360525690605063,
+      "primitive_denominator_digits": 74
+    },
+    {
+      "a": 6,
+      "n": 8,
+      "kappa_n": 41.41235902431327,
+      "delta_n": -27.653425904944047,
+      "error_exponent": 0.3322421963764809,
+      "primitive_denominator_digits": 144
+    },
+    {
+      "a": 6,
+      "n": 12,
+      "kappa_n": 43.80957646017652,
+      "delta_n": -29.997712640236827,
+      "error_exponent": 0.31527042569094144,
+      "primitive_denominator_digits": 229
+    },
+    {
+      "a": 6,
+      "n": 20,
+      "kappa_n": 44.98446760891284,
+      "delta_n": -31.110923311351538,
+      "error_exponent": 0.30840743561034195,
+      "primitive_denominator_digits": 391
+    },
+    {
+      "a": 6,
+      "n": 30,
+      "kappa_n": 44.90796399803662,
+      "delta_n": -30.973479059727588,
+      "error_exponent": 0.31028983943512223,
+      "primitive_denominator_digits": 586
+    },
+    {
+      "a": 6,
+      "n": 40,
+      "kappa_n": 46.06389170820855,
+      "delta_n": -32.179526416150004,
+      "error_exponent": 0.3014153771463553,
+      "primitive_denominator_digits": 801
+    },
+    {
+      "a": 7,
+      "n": 2,
+      "kappa_n": 42.15273739458912,
+      "delta_n": -27.534797108436493,
+      "error_exponent": 0.34678507707138934,
+      "primitive_denominator_digits": 37
+    },
+    {
+      "a": 7,
+      "n": 4,
+      "kappa_n": 46.931841036142195,
+      "delta_n": -32.05708262998313,
+      "error_exponent": 0.31694385043842677,
+      "primitive_denominator_digits": 82
+    },
+    {
+      "a": 7,
+      "n": 8,
+      "kappa_n": 49.23498852590321,
+      "delta_n": -34.253499732380526,
+      "error_exponent": 0.30428541250986013,
+      "primitive_denominator_digits": 172
+    },
+    {
+      "a": 7,
+      "n": 12,
+      "kappa_n": 50.463747699100196,
+      "delta_n": -35.44400984984049,
+      "error_exponent": 0.2976342133528762,
+      "primitive_denominator_digits": 263
+    },
+    {
+      "a": 7,
+      "n": 20,
+      "kappa_n": 51.62591670253421,
+      "delta_n": -36.57481020167129,
+      "error_exponent": 0.29154168026858684,
+      "primitive_denominator_digits": 449
+    },
+    {
+      "a": 7,
+      "n": 30,
+      "kappa_n": 51.37971531547811,
+      "delta_n": -36.31258338938713,
+      "error_exponent": 0.2932505918644515,
+      "primitive_denominator_digits": 670
+    },
+    {
+      "a": 7,
+      "n": 40,
+      "kappa_n": 51.403375187082624,
+      "delta_n": -36.32807681552455,
+      "error_exponent": 0.2932744847335708,
+      "primitive_denominator_digits": 893
+    },
+    {
+      "a": 8,
+      "n": 2,
+      "kappa_n": 52.13230173480649,
+      "delta_n": -36.31426008900171,
+      "error_exponent": 0.30342112508805175,
+      "primitive_denominator_digits": 46
+    },
+    {
+      "a": 8,
+      "n": 4,
+      "kappa_n": 53.48312349362346,
+      "delta_n": -37.39861769258827,
+      "error_exponent": 0.3007398362392367,
+      "primitive_denominator_digits": 93
+    },
+    {
+      "a": 8,
+      "n": 8,
+      "kappa_n": 56.270374383270635,
+      "delta_n": -40.067393466510815,
+      "error_exponent": 0.28794869581633736,
+      "primitive_denominator_digits": 196
+    },
+    {
+      "a": 8,
+      "n": 12,
+      "kappa_n": 56.256769017365926,
+      "delta_n": -39.98301193932919,
+      "error_exponent": 0.2892764259713028,
+      "primitive_denominator_digits": 294
+    },
+    {
+      "a": 8,
+      "n": 20,
+      "kappa_n": 57.664986663894545,
+      "delta_n": -41.41488371345323,
+      "error_exponent": 0.2818019025159318,
+      "primitive_denominator_digits": 501
+    },
+    {
+      "a": 8,
+      "n": 30,
+      "kappa_n": 58.746961935807505,
+      "delta_n": -42.53708515565803,
+      "error_exponent": 0.2759270649240026,
+      "primitive_denominator_digits": 766
+    },
+    {
+      "a": 8,
+      "n": 40,
+      "kappa_n": 57.938150901452595,
+      "delta_n": -41.72863853894448,
+      "error_exponent": 0.27977269053820836,
+      "primitive_denominator_digits": 1007
+    }
+  ]
+}

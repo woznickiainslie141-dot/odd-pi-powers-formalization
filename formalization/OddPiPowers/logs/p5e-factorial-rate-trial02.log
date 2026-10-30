@@ -1,0 +1,56 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\FactorialLogRate.lean:23:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @Tendsto ℕ ℝ ((fun x => Real.log x / x) ∘ Nat.cast) atTop (𝓝 0)
+but is expected to have type
+  @Tendsto ℕ ℝ (fun n => Real.log ↑n / ↑n) atTop (𝓝 0)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\FactorialLogRate.lean:39:4: error: Tactic `apply` failed: could not unify the conclusion of `fun hl => Tendsto.congr' hl ht`
+  Tendsto ?m.165 atTop (𝓝 (0 + Real.log 2 * 0))
+with the goal
+  Tendsto (fun n => Real.log (2 * ↑n) / ↑n) atTop (𝓝 0)
+
+Note: The full type of `fun hl => Tendsto.congr' hl ht` is
+  (fun x => Real.log ↑x / ↑x + Real.log 2 * (↑x)⁻¹) =ᶠ[atTop] ?m.165 → Tendsto ?m.165 atTop (𝓝 (0 + Real.log 2 * 0))
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 1
+
+a : ℝ
+ha : 0 < a
+hseq : Tendsto Stirling.stirlingSeq atTop (𝓝 a)
+hlog : Tendsto (fun x => Real.log (Stirling.stirlingSeq x)) atTop (𝓝 (Real.log a))
+hinv : Tendsto (fun n => (↑n)⁻¹) atTop (𝓝 0)
+hseqzero : Tendsto (fun n => Real.log (Stirling.stirlingSeq n) / ↑n) atTop (𝓝 0)
+ht : Tendsto (fun x => Real.log ↑x / ↑x + Real.log 2 * (↑x)⁻¹) atTop (𝓝 (0 + Real.log 2 * 0))
+⊢ Tendsto (fun n => Real.log (2 * ↑n) / ↑n) atTop (𝓝 0)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\FactorialLogRate.lean:56:4: error: linarith failed to find a contradiction
+case h1
+a : ℝ
+ha : 0 < a
+hseq : Tendsto Stirling.stirlingSeq atTop (𝓝 a)
+hlog : Tendsto (fun x => Real.log (Stirling.stirlingSeq x)) atTop (𝓝 (Real.log a))
+hinv : Tendsto (fun n => (↑n)⁻¹) atTop (𝓝 0)
+hseqzero : Tendsto (fun n => Real.log (Stirling.stirlingSeq n) / ↑n) atTop (𝓝 0)
+htwozero : Tendsto (fun n => Real.log (2 * ↑n) / ↑n) atTop (𝓝 0)
+hlimit :
+  Tendsto (fun x => Real.log (Stirling.stirlingSeq x) / ↑x + 1 / 2 * (Real.log (2 * ↑x) / ↑x) - 1) atTop
+    (𝓝 (0 + 1 / 2 * 0 - 1))
+n : ℕ
+hn : 1 ≤ n
+hn0 : ↑n ≠ 0
+hs : Real.log (Stirling.stirlingSeq n) = Real.log ↑n.factorial - 1 / 2 * Real.log (2 * ↑n) - ↑n * (Real.log ↑n - 1)
+a✝ : (Real.log ↑n.factorial - ↑n * Real.log ↑n) * 2 < Real.log (Stirling.stirlingSeq n) * 2 + Real.log (↑n * 2) - ↑n * 2
+⊢ False
+failed
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\FactorialLogRate.lean:87:21: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\FactorialLogRate.lean:87:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

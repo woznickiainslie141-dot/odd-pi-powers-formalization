@@ -1,0 +1,84 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:44:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:57:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:40:31: warning: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [add_assoc, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:93:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:98:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:260:71: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:261:16: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:260:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:261:16: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:272:58: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:272:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:381:10: warning: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hγ, hfrac14, hγ0, h14not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:385:10: warning: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hz0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:357:27: warning: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:473:10: warning: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfrac14, hγneg, h14lo']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:478:10: warning: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hαleβ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:556:37: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:593:29: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ContinuousCarry.lean:596:29: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲

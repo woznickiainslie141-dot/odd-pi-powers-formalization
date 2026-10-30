@@ -1,0 +1,34 @@
+⚠ [3046/3049] Built OddPiPowers.Construction.LocalDenominators (11s)
+warning: OddPiPowers/Construction/LocalDenominators.lean:126:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [PowerSeries.coeff_C, hn]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/LocalDenominators.lean:165:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/LocalDenominators.lean:176:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✖ [3047/3049] Building OddPiPowers.Construction.ConfluentJets (11s)
+trace: .> LEAN_PATH=C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean c:\Users\hc260\.elan\toolchains\leanprover--lean4---v4.35.0\bin\lean.exe C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\OddPiPowers\Construction\ConfluentJets.lean -o C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.olean -i C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.ilean -c C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.c --setup C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.setup.json --json
+error: OddPiPowers/Construction/ConfluentJets.lean:25:2: Type mismatch: After simplification, term
+  Iff.symm (map_dvd_iff (taylorEquiv a))
+ has type
+  (X - C a) ^ r ∣ p ↔ (taylorEquiv a) ((X - C a) ^ r) ∣ (taylorEquiv a) p
+but is expected to have type
+  (X - C a) ^ r ∣ p ↔ X ^ r ∣ (taylor a) p
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  instAdd ↦ 16
+  instMul ↦ 15
+Some required targets logged failures:
+- OddPiPowers.Construction.ConfluentJets
+error: build failed

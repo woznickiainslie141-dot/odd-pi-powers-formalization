@@ -1,0 +1,41 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Vendor/PNT/Fourier.lean",
+    "OddPiPowers/Vendor/PNT/Mathlib/Algebra/Notation/Support.lean",
+    "OddPiPowers/Vendor/PNT/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+    "OddPiPowers/Vendor/PNT/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+    "OddPiPowers/Vendor/PNT/SmoothExistence.lean",
+    "OddPiPowers/Vendor/PNT/Wiener.lean",
+    "OddPiPowers/Vendor/PNT/Consequences.lean",
+    "OddPiPowers/Arithmetic/FinitePeriodKernel.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Vendor/PNT/Fourier.lean",
+      "log": "logs/p4-Fourier-20261028T113747.log",
+      "sha256": "bb270c823280b54687dfd75c87e1db4f7e209949b57bcced6081b52e8973cae0"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Mathlib/Algebra/Notation/Support.lean",
+      "log": "logs/p4-Support-20261028T113747.log",
+      "sha256": "cc33fef3d67ce90c2e13da79afe9c5554101b50af7eb6124f6437866303168bb"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+      "log": "logs/p4-Asymptotics-20261028T113747.log",
+      "sha256": "2807ad321b2b3ca5188213c601e4d2f7c0149dc18e97909fe2ec67fdc0497eba"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "log": "logs/p4-Basic-20261028T113747.log",
+      "sha256": "67fa31a4ab2d2a468958a439b2e33a855639437e2b6232cc49bfcb36b4df3696"
+    }
+  ],
+  "current": "OddPiPowers/Vendor/PNT/SmoothExistence.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-SmoothExistence-20261028T113747.log"
+}

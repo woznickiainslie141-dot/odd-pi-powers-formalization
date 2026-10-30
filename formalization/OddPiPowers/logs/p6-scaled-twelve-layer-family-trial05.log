@@ -1,0 +1,20 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:82:43: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:137:8: warning: This simp argument is unused:
+  CarryShape.scaleWeights
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerOffset, scaledTwelveLayerIndexToSigma, ha, twelveLayerShape]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:137:33: warning: This simp argument is unused:
+  twelveLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerOffset, scaledTwelveLayerIndexToSigma, ha, CarryShape.scaleWeights]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

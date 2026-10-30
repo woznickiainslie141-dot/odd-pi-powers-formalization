@@ -1,0 +1,15 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\HorizontalProduct.lean:47:2: error: Type mismatch: After simplification, term
+  hh
+ has type
+  (1 + t * t / ((Y * Y + 1 / 4) * (Y * Y + 1 / 4) / (Y * Y - 1 / 4))) *
+        (1 + t * t / ((Y * Y + 1 / 4) * (Y * Y + 1 / 4) / (Y * Y - 1 / 4))) *
+      ((u * u + Y * Y) * (-u * -u + Y * Y)) ≤
+    ((t + u) * (t + u) + Y * Y) * ((t - u) * (t - u) + Y * Y)
+but is expected to have type
+  (1 + t * t / ((Y * Y + 1 / 4) * (Y * Y + 1 / 4) / (Y * Y - 1 / 4))) * (u * u + Y * Y) *
+      ((1 + t * t / ((Y * Y + 1 / 4) * (Y * Y + 1 / 4) / (Y * Y - 1 / 4))) * (u * u + Y * Y)) ≤
+    ((t + u) * (t + u) + Y * Y) * ((t + -u) * (t + -u) + Y * Y)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 4
+  Real.instLE ↦ 4

@@ -1,0 +1,22 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:87:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∏ x ∈ ?m.28, ?m.30 x * ?m.31 x
+in the target expression
+  (∏ x, ↑P.n ^ (P.interval x).card) * ∏ x, ∏ x ∈ P.interval x, (↑(t + P.horizontalOffset x) + Complex.I * ↑Y) =
+    ↑P.n ^ P.totalMultiplicity * P.normalizedHorizontalProduct Y t
+
+M : ℕ
+P : ActualIntervals M
+hn : 0 < P.n
+Y t : ℝ
+⊢ (∏ x, ↑P.n ^ (P.interval x).card) * ∏ x, ∏ x ∈ P.interval x, (↑(t + P.horizontalOffset x) + Complex.I * ↑Y) =
+    ↑P.n ^ P.totalMultiplicity * P.normalizedHorizontalProduct Y t
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:117:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (∏ i ∈ ?m.58, (Polynomial.X + Polynomial.C i)).natDegree
+in the target expression
+  (∏ i ∈ P.interval a, (Polynomial.X + Polynomial.C ↑i)).natDegree = (P.interval a).card
+
+M : ℕ
+P : ActualIntervals M
+a : Fin M
+ha : a ∈ Finset.univ
+⊢ (∏ i ∈ P.interval a, (Polynomial.X + Polynomial.C ↑i)).natDegree = (P.interval a).card

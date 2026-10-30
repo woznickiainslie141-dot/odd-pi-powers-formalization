@@ -1,0 +1,14 @@
+{
+  "source": "Mathlib/Analysis/SpecialFunctions/Stirling.lean",
+  "mathlib_version": "v4.35.0",
+  "source_sha256": "df4364f73fd6052efd25505cf10bd7b13d317961c17169ff0750b65a3ebccf6a",
+  "adapted": "OddPiPowers/Analysis/StirlingLogCore.lean",
+  "adapted_sha256": "0d9a9dbbf8f82465156a29d71be9a1780718cc206b1065d7748d6d0eff5a5521",
+  "license": "Apache-2.0; original copyright header retained",
+  "changes": [
+    "retain Part 1 through positive-limit theorem only",
+    "replace missing Wallis import by its cached Integrals.Basic import",
+    "relocate namespace Stirling to OddPiPowers.StirlingLogCore",
+    "omit deprecated aliases; no proof changes"
+  ]
+}

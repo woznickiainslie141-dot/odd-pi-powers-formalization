@@ -1,0 +1,24 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalKernelBound.lean:30:36: error: Application type mismatch: The argument
+  Nat.cast_nonneg r
+has type
+  @OfNat.ofNat ?m.82 0 (@Zero.toOfNat0 ?m.82 instMulZeroClassOfSemiring.toZero) ≤ ↑r
+but is expected to have type
+  @OfNat.ofNat ?m.77 0 (@Zero.toOfNat0 ?m.77 SubtractionMonoid.toSubNegZeroMonoid.toNegZeroClass.toZero) ≤ ?m.80
+in the application
+  abs_of_nonneg (Nat.cast_nonneg r)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalKernelBound.lean:33:2: error: linarith failed to find a contradiction
+M : ℕ
+P : ActualIntervals M
+R : ℝ
+hR : 0 ≤ R
+hn : 2 * ↑P.n ≤ R
+z : ℂ
+hz : |z.re| = R
+r : ℕ
+hr : r ≤ P.n
+hrR : ↑r ≤ R / 2
+h : R - |↑r| ≤ |z.re + ↑r|
+ha : |z.re + ↑r| ≤ ‖z + ↑r‖
+a✝ : ‖z + ↑r‖ < R / 2
+⊢ False
+failed

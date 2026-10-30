@@ -1,0 +1,10 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\PoleCircle.lean:40:4: error: Type mismatch: After simplification, term
+  integer_pole_norm_gap r pole hne
+ has type
+  1 ≤ ‖↑r - ↑pole‖
+but is expected to have type
+  1 ≤ ‖-↑r - -↑pole‖
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 1
+  Real.instLE ↦ 2

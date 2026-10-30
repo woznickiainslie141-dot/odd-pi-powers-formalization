@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\cert_batch.py", line 11, in <module>
+    row, _ = certify(j["k"], j["L"], offsets, j["nu"], j["upper"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\code\certify.py", line 73, in certify
+    gamma,pieces = divisor_rate(L,offsets,counts)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\code\certify.py", line 52, in divisor_rate
+    for a,b,rows in arc_partition(L,tuple(offsets)):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\code\certify.py", line 41, in arc_partition
+    row = tuple(floor((L-2*t)*z)-floor(y-t*z)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError

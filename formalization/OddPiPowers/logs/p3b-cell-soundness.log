@@ -1,0 +1,12 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCellSoundness.lean:14:31: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_right ?m.111
+of type
+  ∀ (a : ?m.105), a * ?m.106 ≤ a * ?m.107
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCellSoundness.lean:14:26: error: Application type mismatch: The argument
+  hdQ
+has type
+  0 < ↑d
+but is expected to have type
+  ?m.106 ≤ ?m.107
+in the application
+  mul_le_mul_right hdQ

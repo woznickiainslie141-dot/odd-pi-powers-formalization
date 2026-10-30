@@ -1,0 +1,47 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:49:42: error: unsolved goals
+row : PeriodFloorRow
+hA : 0 < row.cell.leftNumerator
+hC : 0 < row.cell.leftDenominator
+hD : 0 < row.cell.rightDenominator
+horder : row.cell.leftNumerator * row.cell.rightDenominator < row.cell.rightNumerator * row.cell.leftDenominator
+hC' : 0 < ↑row.cell.leftDenominator
+hD' : 0 < ↑row.cell.rightDenominator
+hA' : 0 < ↑row.cell.leftNumerator
+hB : 0 < row.cell.rightNumerator
+hB' : 0 < ↑row.cell.rightNumerator
+hleft : 0 < ↑row.cell.left
+hright : ↑row.cell.left ≤ ↑row.cell.right
+hrC : 0 < ↑row.period * ↑row.cell.leftDenominator + ↑row.cell.leftNumerator
+hrD : 0 < ↑row.period * ↑row.cell.rightDenominator + ↑row.cell.rightNumerator
+⊢ ↑row.cell.value * ↑row.cell.rightNumerator * ↑row.cell.leftDenominator -
+      ↑row.cell.value * ↑row.cell.rightDenominator * ↑row.cell.leftNumerator =
+    ↑row.cell.value * ↑(row.cell.rightNumerator * row.cell.leftDenominator) -
+      ↑row.cell.value * ↑(row.cell.leftNumerator * row.cell.rightDenominator)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:131:2: error: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:139:15: error(lean.unknownIdentifier): Unknown constant `Bool.and_eq_true.mp`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:150:52: error: unsolved goals
+scale : ℕ
+xs ys : List PeriodFloorRow
+hx : periodFloorListCheck scale xs = true
+hy : periodFloorListCheck scale ys = true
+⊢ (∀ x ∈ xs, periodFloorCheck scale x = true) ∧ ∀ x ∈ ys, periodFloorCheck scale x = true
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:151:30: warning: This simp argument is unused:
+  hx
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [periodFloorListCheck, hy]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:151:34: warning: This simp argument is unused:
+  hy
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [periodFloorListCheck, hx]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

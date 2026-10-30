@@ -1,0 +1,63 @@
+{
+  "status": "accepted",
+  "date": "2026-10-29",
+  "stage": "P5-E actual central rates and P6-A rational certificate soundness",
+  "library_modules": 151,
+  "executed_build_targets": 3,
+  "verified_cached_modules": 148,
+  "build_run": "20261029T185634",
+  "verified_cache_evidence": {
+    "p5e-guarded-library-build-state-20261029T184736.json": 148
+  },
+  "peak_build_job_MiB": 3295.41,
+  "peak_all_build_evidence_MiB": 3556.75,
+  "audits": [
+    {
+      "log": "p5e-post-build-axioms.log",
+      "count": 50,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 4576.45,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "log": "p5e-post-build-regression-axioms.log",
+      "count": 471,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 5144.55,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "manifest_sha256": "e46b8f7bf97f5d4ee8f0b4f5155b71dbead74f1c2aef1b55c34677ffbd9dbf38",
+  "unchanged_prior_mathematical_modules": 139,
+  "stirling_core_provenance": {
+    "source": "Mathlib/Analysis/SpecialFunctions/Stirling.lean",
+    "mathlib_version": "v4.35.0",
+    "source_sha256": "df4364f73fd6052efd25505cf10bd7b13d317961c17169ff0750b65a3ebccf6a",
+    "adapted": "OddPiPowers/Analysis/StirlingLogCore.lean",
+    "adapted_sha256": "0d9a9dbbf8f82465156a29d71be9a1780718cc206b1065d7748d6d0eff5a5521",
+    "license": "Apache-2.0; original copyright header retained",
+    "changes": [
+      "retain Part 1 through positive-limit theorem only",
+      "replace missing Wallis import by its cached Integrals.Basic import",
+      "relocate namespace Stirling to OddPiPowers.StirlingLogCore",
+      "omit deprecated aliases; no proof changes"
+    ]
+  },
+  "scope": "Actual-grid Riemann limits with endpoints, factorial log rate, actual center and common-scale rates, uniform actual/reduced remainder exponent bounds for all seventeen rows; P6 one-sided rational rate-certificate monotonicity and soundness connected to the existing conditional transfer. Coefficient heights, complete actual AuxFamily, sharp gamma, concrete numerical bounds and general odd-power parameter closure remain open; P6 numerical closure is not claimed."
+}

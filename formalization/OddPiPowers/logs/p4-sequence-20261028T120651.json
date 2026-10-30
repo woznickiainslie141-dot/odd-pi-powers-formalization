@@ -1,0 +1,16 @@
+{
+  "status": "resource_wait",
+  "files": [
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/ScaledPrimeRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [],
+  "current": "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+  "exit_code": 75
+}

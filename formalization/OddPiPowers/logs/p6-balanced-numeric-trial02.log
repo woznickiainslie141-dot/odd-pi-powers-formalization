@@ -1,0 +1,9 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedNumericCertificate.lean:43:2: error: Type mismatch: After simplification, term
+  hmono
+ has type
+  256⁻¹ * 3 / 4 ≤ Real.arctan 256⁻¹
+but is expected to have type
+  3 / 4 * 256⁻¹ ≤ Real.arctan 256⁻¹
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 2

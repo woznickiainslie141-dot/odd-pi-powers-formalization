@@ -1,0 +1,523 @@
+⚠ [2156/2160] Replayed OddPiPowers.Construction.ActualAuxiliary
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:15:0: 'Mathlib.Data.Complex.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Complex.Basic
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:835:10: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Finset.mem_filter]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:896:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:912:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1028:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1036:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1057:22: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_pow, Polynomial.coeToPowerSeries.ringHom_apply, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1064:13: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1101:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1103:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ne.symm hqj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1163:12: This simp argument is unused:
+  principalPartTruncation
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sub_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1218:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1324:26: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coeToPowerSeries.ringHom_apply, map_mul, map_pow, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1326:17: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1385:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1402:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1484:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1676:56: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [factorialBorelShift, div_eq_mul_inv, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1795:44: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1837:5: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2144:28: This simp argument is unused:
+  Polynomial.eval₂_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Polynomial.eval₂_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: OddPiPowers/Construction/ActualAuxiliary.lean:2160:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:34: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵.̵l̵t̵_̵i̵f̵f̵_̵v̵a̵l̵_̵l̵t̵_̵v̵a̵l̵F̲i̲n̲.̲l̲t̲_̲d̲e̲f̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:27: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Fin.lt_iff_val_lt_val, hj0] at hij
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2326:44: This simp argument is unused:
+  auxiliaryJetVector
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [auxiliaryColumnTransform, d, hi0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2446:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [actualAuxiliaryExponentialEval]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2454:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [PowerSeries.C_eq_algebraMap]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3026:4: Unused tactic linter: `change (ell.val ∈ P.interval j) ↔ P.left j ≤ ell.val` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3200:10: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3222:6: This simp argument is unused:
+  Polynomial.taylor_coeff_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [B, Polynomial.coeToPowerSeries.ringHom_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3295:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hcoefFactor]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:10: This simp argument is unused:
+  actualAuxiliaryPolynomialMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryLeadingMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:43: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryPolynomialMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3357:36: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at hIm
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2157/2160] Replayed OddPiPowers.Arithmetic.SignedCarry
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:19:45: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:23:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:40:18: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2158/2160] Replayed OddPiPowers.Arithmetic.ContinuousCarry
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:40:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:53:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:36:31: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [add_assoc, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:89:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:94:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:256:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:257:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:256:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:257:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:268:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:268:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:377:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hγ, hfrac14, hγ0, h14not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:381:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hz0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:353:27: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:469:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfrac14, hγneg, h14lo']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:474:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hαleβ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:552:37: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:589:29: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:592:29: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✖ [2160/2160] Building OddPiPowers.Arithmetic.TwelveLayerCells (11s)
+trace: .> LEAN_PATH=C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean c:\Users\hc260\.elan\toolchains\leanprover--lean4---v4.35.0\bin\lean.exe C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCells.lean -o C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Arithmetic\TwelveLayerCells.olean -i C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Arithmetic\TwelveLayerCells.ilean -c C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Arithmetic\TwelveLayerCells.c --setup C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Arithmetic\TwelveLayerCells.setup.json --json
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:97:23: Type mismatch
+  data.1.1
+has type
+  ℚ
+but is expected to have type
+  ℚ × ℚ
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:97:32: Type mismatch
+  data.1.2
+has type
+  ℚ
+but is expected to have type
+  ℕ × ℕ
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:95:4: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:113:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:112:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:113:8: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:237:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:233:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:237:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:244:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:240:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:244:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:252:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:248:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:252:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:259:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:255:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:259:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:266:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:262:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:266:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:273:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:269:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:273:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:280:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:276:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:280:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:287:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:283:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:287:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:294:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:290:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:294:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:301:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:297:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:301:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:308:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:304:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:308:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:315:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:311:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:315:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:322:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:318:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:322:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:329:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:325:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:329:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:336:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:332:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:336:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:343:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:339:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:343:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:350:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:346:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:350:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:357:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:353:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:357:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:364:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:360:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:364:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:371:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:367:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:371:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:378:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:374:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:378:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:385:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:381:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:385:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:392:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:388:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:392:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:399:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:395:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:399:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:406:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:402:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:406:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:413:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:409:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:413:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:420:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:416:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:420:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:427:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:423:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:427:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:434:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:430:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:434:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:441:2: unknown metavariable '?_uniq.6570'
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:437:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:441:2: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:445:8: (kernel) application type mismatch
+  List.mem_append.mp
+    (Eq.mp (congrArg (fun _a => c ∈ _a) (Eq.symm (List.take_append_drop 40 (List.drop 40 twelveLayerCellTable)))) htmp)
+argument has type
+  c ∈ List.take 40 (List.drop 40 twelveLayerCellTable) ++ List.drop 40 (List.drop 40 twelveLayerCellTable)
+but function has type
+  c ∈ List.take 40 (List.drop 40 twelveLayerCellTable) ++ List.drop 80 twelveLayerCellTable →
+    c ∈ List.take 40 (List.drop 40 twelveLayerCellTable) ∨ c ∈ List.drop 80 twelveLayerCellTable
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:626:33: Invalid `⟨...⟩` notation: The expected type `ℕ` has more than one constructor
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:627:44: Invalid `⟨...⟩` notation: The expected type `ℕ` has more than one constructor
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:629:4: unknown metavariable '?_uniq.6570'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:658:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  twelveOrderEndpoint 1331214537196502869015340298036888 k.castSucc
+in the target expression
+  ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) * twelveFirstCell.left -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) ≤
+    ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.succ)) * twelveFirstCell.left -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.succ))
+
+case refine_5.left
+hfirst :
+  twelveLayerCellTable.getD 0 { left := 0, right := 1, rankCode := 0, floorCode := 0, value := sorry } = twelveFirstCell
+k : Fin 23
+horder : ∀ (r : TwelveEndpoint), twelveOrderEndpoint 1331214537196502869015340298036888 r = r
+hi : twelveOrderEndpoint 1331214537196502869015340298036888 k.castSucc = k.castSucc
+hj : twelveOrderEndpoint 1331214537196502869015340298036888 k.succ = k.succ
+⊢ ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) * twelveFirstCell.left -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) ≤
+    ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.succ)) * twelveFirstCell.left -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.succ))
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:661:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  twelveOrderEndpoint 1331214537196502869015340298036888 k.castSucc
+in the target expression
+  ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) * twelveFirstCell.right -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) ≤
+    ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.succ)) * twelveFirstCell.right -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.succ))
+
+case refine_5.right
+hfirst :
+  twelveLayerCellTable.getD 0 { left := 0, right := 1, rankCode := 0, floorCode := 0, value := sorry } = twelveFirstCell
+k : Fin 23
+horder : ∀ (r : TwelveEndpoint), twelveOrderEndpoint 1331214537196502869015340298036888 r = r
+hi : twelveOrderEndpoint 1331214537196502869015340298036888 k.castSucc = k.castSucc
+hj : twelveOrderEndpoint 1331214537196502869015340298036888 k.succ = k.succ
+⊢ ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) * twelveFirstCell.right -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.castSucc)) ≤
+    ↑(twelveEndpointSlope (twelveOrderEndpoint twelveFirstCell.rankCode k.succ)) * twelveFirstCell.right -
+      ↑(twelveCellFloor twelveFirstCell (twelveOrderEndpoint twelveFirstCell.rankCode k.succ))
+info: OddPiPowers/Arithmetic/TwelveLayerCells.lean:625:0: PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6570
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:507:17: unknown metavariable _uniq.6571
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:629:31: (kernel) declaration has metavariables 'OddPiPowers.twelveLayerCellTable.eq_1'
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:765:39: Invalid field `orderCode`: The environment does not contain `OddPiPowers.TwelveCellCertificate.orderCode`, so it is not possible to project the field `orderCode` from an expression
+  c
+of type `TwelveCellCertificate`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:767:39: Invalid field `orderCode`: The environment does not contain `OddPiPowers.TwelveCellCertificate.orderCode`, so it is not possible to project the field `orderCode` from an expression
+  c
+of type `TwelveCellCertificate`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:770:60: Invalid field `orderCode`: The environment does not contain `OddPiPowers.TwelveCellCertificate.orderCode`, so it is not possible to project the field `orderCode` from an expression
+  c
+of type `TwelveCellCertificate`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:774:60: Invalid field `orderCode`: The environment does not contain `OddPiPowers.TwelveCellCertificate.orderCode`, so it is not possible to project the field `orderCode` from an expression
+  c
+of type `TwelveCellCertificate`
+Some required targets logged failures:
+- OddPiPowers.Arithmetic.TwelveLayerCells
+error: build failed

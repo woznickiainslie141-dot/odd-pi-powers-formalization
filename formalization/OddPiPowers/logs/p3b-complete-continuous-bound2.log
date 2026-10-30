@@ -1,0 +1,50 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:26:15: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:31:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:53:13: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:65:14: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:94:63: error: Application type mismatch: The argument
+  hc0
+has type
+  c ∈ twelveLayerCellChunk0
+but is expected to have type
+  c ∈
+    twelveLayerCellChunk0 ++ twelveLayerCellChunk1 ++ twelveLayerCellChunk2 ++ twelveLayerCellChunk3 ++
+                                                      twelveLayerCellChunk4 ++
+                                                    twelveLayerCellChunk5 ++
+                                                  twelveLayerCellChunk6 ++
+                                                twelveLayerCellChunk7 ++
+                                              twelveLayerCellChunk8 ++
+                                            twelveLayerCellChunk9 ++
+                                          twelveLayerCellChunk10 ++
+                                        twelveLayerCellChunk11 ++
+                                      twelveLayerCellChunk12 ++
+                                    twelveLayerCellChunk13 ++
+                                  twelveLayerCellChunk14 ++
+                                twelveLayerCellChunk15 ++
+                              twelveLayerCellChunk16 ++
+                            twelveLayerCellChunk17 ++
+                          twelveLayerCellChunk18 ++
+                        twelveLayerCellChunk19 ++
+                      twelveLayerCellChunk20 ++
+                    twelveLayerCellChunk21 ++
+                  twelveLayerCellChunk22 ++
+                twelveLayerCellChunk23 ++
+              twelveLayerCellChunk24 ++
+            twelveLayerCellChunk25 ++
+          twelveLayerCellChunk26 ++
+        twelveLayerCellChunk27 ++
+      twelveLayerCellChunk28
+in the application
+  List.mem_append_left twelveLayerCellChunk29 hc0

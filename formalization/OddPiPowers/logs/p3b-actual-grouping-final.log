@@ -1,0 +1,72 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:18:46: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:18:50: warning: Unused tactic linter: `norm_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:18:50: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:20:46: warning: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:63:4: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:63:8: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:69:4: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:69:8: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:80:4: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:80:8: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:63:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:69:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:80:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:107:2: warning: Unused tactic linter: `change
+  (∑ a : Fin M, P.intervalCarryNat a p ell) = ∑ j : Fin C.J, C.weight j * C.carryNat j (N / p) (ell / p)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:147:5: warning: Variable name `G` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _G
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:205:35: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [twoLayerShape]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:199:41: warning: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CertifiedPrimeDivisor.lean:207:35: warning: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -1,0 +1,218 @@
+{
+  "repository": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd",
+  "revision": "127b50e33f6033e2147921167a117af96d9ba4ea",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "file": "Sobolev.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT"
+      ],
+      "source_sha256": "fe06e13fad5b47dbd324307ba246110515c4cb50f4c41d6cb15764fd53b1b8ef",
+      "adapted_sha256": "46bed75863371704a86a06d56b95b413fde4ed0bccebcdd21d8ced2b41a7da0b"
+    },
+    {
+      "file": "Fourier.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT"
+      ],
+      "source_sha256": "44d2c28b251be0296f897e43a75a055f346a6199849b54ab204240fe4099e6c2",
+      "adapted_sha256": "9f6a875fc78dd48f1571d1d0a31f8c4a486f2aa46ac32d76d12845b843b275b5"
+    },
+    {
+      "file": "SmoothExistence.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT"
+      ],
+      "source_sha256": "e689045a2d7f92c71c68fda6aa69a89d4a8692187475ba432ed010f453110ea0",
+      "adapted_sha256": "691fc1effb643d1f49f0f54f99d6c87e424287b4598d97cc09aa53057e09ca4b"
+    },
+    {
+      "file": "Mathlib/Algebra/Notation/Support.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT"
+      ],
+      "source_sha256": "e688bf925c2130b291c536d3b93b72c20e41ae95d530c90915921d75a6f52504",
+      "adapted_sha256": "9a19f3f7e9508a5d7800851a923a8115a99346bf13d69378f7c62e95d8d3b60d"
+    },
+    {
+      "file": "Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "make used Mathlib imports explicit for module visibility"
+      ],
+      "source_sha256": "c1cdb6bb509c6178bf17868c57e5b53721b87fb2774ef8562bc5945ffe5b11ae",
+      "adapted_sha256": "e29ed23c94b7424f0498a53cf9b7dede9f1fdaa62cfa82cce26b92762141245f"
+    },
+    {
+      "file": "Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "make used Mathlib imports explicit for module visibility"
+      ],
+      "source_sha256": "7e3e2b8f84e6c170051a6474272455bed2432e6fddac5660072318b9b4eda7ec",
+      "adapted_sha256": "b5b365d1a41678b3c40f4b60f4097ba83822a907051c6f287742de421680f34d"
+    },
+    {
+      "file": "Wiener00.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "a43eae4e836af6832a04a631e4c59a3c13af07e10891aaa99efe900c0d4442dc"
+    },
+    {
+      "file": "Wiener01.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "93f9e9c37b20de8723a2922f606d353d80befb797d1e3e431fcf66ab208f1cab"
+    },
+    {
+      "file": "Wiener02.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "2bf9f327438e20bb15b76ecdd53123d00c1fc9f1c33dc90006748181180343f2"
+    },
+    {
+      "file": "Wiener03.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "021d51697379f369c1a550e1f9649504b26f32bfffc82e9dd1a888cd65740932"
+    },
+    {
+      "file": "Wiener04.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "c8df8e627b9a5d8d3c4e293de0fce4bb98bba1d83f4acd4779cf2ad3e2aae386"
+    },
+    {
+      "file": "Wiener05.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "e445259f4267293c1d6d0a80289e4c5bffa82b8b13e92d8773a39b1b215c2ff6"
+    },
+    {
+      "file": "Wiener06.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "1a63afc2686d605221ba73d321762dc8d3a4bf7d9fd6e2502967b193e7e7ef76"
+    },
+    {
+      "file": "Wiener07.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "93c5590928f04a73e1adf8bd616f6a207f839873eabd13feb34d933a850bc9a8"
+    },
+    {
+      "file": "Wiener08.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "3b476d0bd5d354be508af5da8e62f86c302f6acda21867ca8c97b9abb59b8055"
+    },
+    {
+      "file": "Wiener09.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "8b56417c8f00468129db4660b936e53bc1e95fb6e43bcdca00b95640f8189554"
+    },
+    {
+      "file": "Wiener10.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "split at complete declaration boundaries; repeat file-local context"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "b4ef3e177a2107f7636894738bdc79b2117bf561e15e6c05270f8aed621a185d"
+    },
+    {
+      "file": "Wiener.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through WeakPNT",
+        "omit unused prelim_decay_2, AbsolutelyContinuous, prelim_decay_3 and decay_alt declarations",
+        "aggregate the sequential memory-bounded proof modules"
+      ],
+      "source_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "adapted_sha256": "ae41d7805ad51a2d6f235ff3d614f4361f5ed3d434b3da8439610a1a468d6113"
+    },
+    {
+      "file": "Consequences.lean",
+      "changes": [
+        "remove documentation-only Architect blueprint metadata",
+        "redirect local imports to OddPiPowers.Vendor.PNT",
+        "retain prefix through chebyshev_asymptotic",
+        "omit unused Defs import"
+      ],
+      "source_sha256": "7b9146a398d01aac583ce4ebfa6d62036f1a3de2d53b9dad827d34f1414d9611",
+      "adapted_sha256": "314fc2b4743fd1ad2f6f7d57a262c60d01e5019d2c24860c7982e1000f720a12"
+    }
+  ]
+}

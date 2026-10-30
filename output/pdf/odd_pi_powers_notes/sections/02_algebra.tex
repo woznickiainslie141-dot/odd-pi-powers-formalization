@@ -1,0 +1,167 @@
+\section{The auxiliary polynomials and their determinant}
+\label{sec:algebra}
+
+\subsection{Intervals, poles, and normalization}
+
+Fix the parameters of Theorem~\ref{thm:main}. Let \(n\) run through
+positive multiples of \(L\). List all \(M=m+1\) intervals, including
+repetitions, in nested order:
+\[
+I_a=[\alpha_a,\beta_a],\quad 0\le a\le m,\qquad
+0=\alpha_0\le\cdots\le\alpha_m<n/2,\quad
+\beta_a=n-\alpha_a.
+\]
+Thus \(I_m\subseteq\cdots\subseteq I_0=[0,n]\).
+Write \(\ell_a=\beta_a-\alpha_a\).
+The grouped description uses endpoints
+\(t_jn/L,(L-t_j)n/L\), with multiplicity \(\nu_j\).
+
+Set
+\begin{equation}\label{eq:QandC}
+\begin{split}
+Q_n(z)&=\prod_{a=0}^{m}\prod_{r=\alpha_a}^{\beta_a}(z+r),\\
+N_n&=\sum_{a=0}^{m}\ell_a,\qquad
+d_n=\lcm(1,\ldots,n),\\
+C_n&=m!\,d_n^m\prod_{a=0}^{m}\ell_a!.
+\end{split}
+\end{equation}
+The degree of \(Q_n\) is \(N_n+M\).
+\emph{The interval factorials are in the numerator of \(C_n\).}
+
+Let \(\Gamma\) positively surround the poles \(0,-1,\ldots,-n\).
+On a local logarithm branch define
+\begin{equation}\label{eq:Rdef}
+R_{h,n}(x)=\frac{C_n}{2\pi\ii}
+\oint_\Gamma \frac{z^h x^{z+n}}{Q_n(z)}\dd z,\qquad 0\le h\le m.
+\end{equation}
+Write
+\[
+\frac{z^h}{Q_n(z)}
+=\sum_{\ell=0}^{n}\sum_{r=1}^{\mu_\ell}
+\frac{b_{h,\ell,r}}{(z+\ell)^r},
+\quad
+\mu_\ell=\#\{a:\ell\in I_a\}.
+\]
+Residues give
+\begin{align}
+R_{h,n}(x)&=\sum_{j=0}^{m}A_{h,j,n}(x)(\log x)^j,\label{eq:Rexpand}\\
+A_{h,j,n}(x)&=\frac{C_n}{j!}
+\sum_{\ell:\mu_\ell\ge j+1}
+b_{h,\ell,j+1}x^{n-\ell}.\label{eq:Adef}
+\end{align}
+
+\subsection{Why all coefficients are integers}
+
+\begin{lemma}[Integrality]\label{lem:integrality}
+For all \(h,j\), one has \(A_{h,j,n}(x)\in\ZZ[x]\).
+\end{lemma}
+\begin{proof}
+Absorb the interval factorials first:
+\[
+H_a(z)=\frac{\ell_a!}{\prod_{r=\alpha_a}^{\beta_a}(z+r)}.
+\]
+If \(\ell\in I_a\), expansion at \(z=-\ell+w\) gives
+\begin{equation}\label{eq:polelocal}
+wH_a(-\ell+w)=
+(-1)^{\ell-\alpha_a}\binom{\ell_a}{\ell-\alpha_a}
+\prod_{\substack{r\in I_a\\r\ne\ell}}
+\left(1+\frac{w}{r-\ell}\right)^{-1}.
+\end{equation}
+The coefficient of \(w^u\) has denominator dividing \(d_n^u\):
+every distance is a nonzero integer of absolute value at most \(n\).
+
+If \(\ell\notin I_a\), use
+\begin{equation}\label{eq:regularpartial}
+H_a(z)=\sum_{r=\alpha_a}^{\beta_a}
+\frac{(-1)^{r-\alpha_a}\binom{\ell_a}{r-\alpha_a}}{z+r}.
+\end{equation}
+Now the coefficient of \(w^u\) has denominator dividing \(d_n^{u+1}\).
+The extra factor matters: a regular factor need not have an integral
+constant term.
+
+There are \(\mu_\ell\) pole factors and \(M-\mu_\ell\) regular factors.
+The coefficient of \((z+\ell)^{-j-1}\) requires total local order
+\(\mu_\ell-1-j\). The polynomial \((-\ell+w)^h\) has integer
+coefficients and can only reduce the order required from the other
+factors. Thus the necessary exponent of \(d_n\) is at most
+\[
+(\mu_\ell-1-j)+(M-\mu_\ell)=m-j.
+\]
+Multiplication by \(m!d_n^m/j!\) clears the denominators.
+\end{proof}
+
+The cancellation of \(\mu_\ell\) is why a variable pole multiplicity
+does not require a larger universal power than \(d_n^m\).
+
+\subsection{Supports and vanishing orders}
+
+Nestedness implies
+\[
+\mu_\ell\ge j+1\quad\Longleftrightarrow\quad
+\ell\in[\alpha_j,\beta_j].
+\]
+Hence \(A_{h,j,n}\) is divisible by \(x^{n-\beta_j}\), and the
+remaining degree is at most \(\ell_j\).
+
+\begin{lemma}[Vanishing at \(1\)]\label{lem:vanishing}
+Every \(R_{h,n}\) has a zero of order at least \(N_n\) at \(x=1\).
+\end{lemma}
+\begin{proof}
+Put \(w=\log x\). The coefficient of \(w^r\) in the integral of
+\(z^h e^{zw}/Q_n(z)\) is zero whenever \(h+r\le\deg Q_n-2\), by the
+residue at infinity. The first possible order is therefore
+\[
+\deg Q_n-h-1=N_n+M-h-1\ge N_n.
+\]
+Multiplication by \(x^n\) does not change this order.
+Also \(\log x=(x-1)+O((x-1)^2)\).
+\end{proof}
+
+\subsection{A nonzero determinant, including its leading term}
+
+\begin{proposition}[Exact determinant]\label{prop:det}
+There exists \(c_n\ne0\) such that
+\begin{equation}\label{eq:detidentity}
+\det(A_{h,j,n}(x))_{0\le h,j\le m}
+=c_n x^{\sum_j(n-\beta_j)}(x-1)^{N_n}.
+\end{equation}
+In particular \(A_n(\ii)\) is invertible.
+\end{proposition}
+\begin{proof}
+The supports give the power of \(x\). After it is removed, the
+determinant has degree at most \(N_n\).
+Replace column zero by the sum of column \(j\) multiplied by
+\((\log x)^j\), for \(0\le j\le m\).
+Its determinant is unchanged; the new column consists of the
+\(R_{h,n}(x)\). Lemma~\ref{lem:vanishing} supplies the factor
+\((x-1)^{N_n}\).
+
+To prove nonvanishing, take a block of repeated left endpoints
+\[
+\alpha_u=\cdots=\alpha_v=\alpha,\qquad r=v-u+1.
+\]
+The pole at \(-\alpha\) has multiplicity \(v+1\). Write
+\[
+\frac1{Q_n(-\alpha+w)}
+=w^{-(v+1)}B_\alpha(w),\qquad B_\alpha(0)\ne0.
+\]
+For \(u\le j\le v\), the coefficient of \(x^{n-\alpha}\) in column
+\(j\) is
+\[
+\frac{C_n}{j!}[w^{v-j}]
+\bigl((-\alpha+w)^hB_\alpha(w)\bigr).
+\]
+The orders \(v-j\) are \(0,\ldots,r-1\), in reverse order.
+Multiplication by \(B_\alpha\) gives an invertible triangular
+change on these functionals.
+
+In all blocks together, the leading-coefficient matrix reduces to
+the divided-derivative evaluations of \(1,z,\ldots,z^m\) at distinct
+points \(-\alpha\). This confluent Vandermonde matrix is invertible:
+a polynomial in its kernel would have zeros of total multiplicity
+\(M=m+1\), exceeding its degree. Thus the leading determinant is
+nonzero, proving the identity.
+\end{proof}
+
+High vanishing order and a degree bound alone would also allow the
+zero determinant. The leading-term argument rules out that possibility.

@@ -1,0 +1,10 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalRepresentation.lean:43:30: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  heq
+has type
+  atTop.1
+    {x |
+      (fun R =>
+          rectangleIntegral (P.meromorphicExponentialKernel (↑h) (Complex.I * ↑theta)) (-R) R (-(↑P.n * Y)) (↑P.n * Y) =
+            P.finitePoleContour (↑h) (Complex.I * ↑theta))
+        x}
+which does not have the necessary form.

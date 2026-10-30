@@ -1,0 +1,49 @@
+{
+  "status": "accepted",
+  "date": "2026-10-29",
+  "stage": "P5-C finite rectangle and full horizontal representation",
+  "library_modules": 132,
+  "executed_build_targets": 11,
+  "verified_cached_modules": 121,
+  "build_run": "20261029T125234",
+  "verified_cache_evidence": {
+    "p5b-guarded-library-build-state.json": 121
+  },
+  "peak_build_job_MiB": 3294.46,
+  "peak_all_build_evidence_MiB": 3556.75,
+  "audits": [
+    {
+      "log": "p5c-post-build-axioms.log",
+      "count": 57,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 4423.83,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "log": "p5c-post-build-regression-axioms.log",
+      "count": 372,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 5135.56,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "manifest_sha256": "e46b8f7bf97f5d4ee8f0b4f5155b71dbead74f1c2aef1b55c34677ffbd9dbf38",
+  "unchanged_prior_mathematical_modules": 121,
+  "scope": "Proved finite rectangle/pole-circle comparison from logarithm primitives and entire divided differences; opened the actual remainder to full lower-minus-upper horizontal integrals with Jacobian n; instantiated all seventeen actual rows. Coefficient heights, central rates, sharp gamma, general odd-power parameter closure and final numerical bounds remain open."
+}

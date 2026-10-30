@@ -1,0 +1,82 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Vendor/PNT/Wiener00.lean",
+    "OddPiPowers/Vendor/PNT/Wiener01.lean",
+    "OddPiPowers/Vendor/PNT/Wiener02.lean",
+    "OddPiPowers/Vendor/PNT/Wiener03.lean",
+    "OddPiPowers/Vendor/PNT/Wiener04.lean",
+    "OddPiPowers/Vendor/PNT/Wiener05.lean",
+    "OddPiPowers/Vendor/PNT/Wiener06.lean",
+    "OddPiPowers/Vendor/PNT/Wiener07.lean",
+    "OddPiPowers/Vendor/PNT/Wiener08.lean",
+    "OddPiPowers/Vendor/PNT/Wiener09.lean",
+    "OddPiPowers/Vendor/PNT/Wiener10.lean",
+    "OddPiPowers/Vendor/PNT/Wiener.lean",
+    "OddPiPowers/Vendor/PNT/Consequences.lean",
+    "OddPiPowers/Arithmetic/FinitePeriodKernel.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener00.lean",
+      "log": "logs/p4-Wiener00-20261028T114126.log",
+      "sha256": "9adfe2c77424066784a8911148225712bb6fd7cbadbcf10db60cac46b8f82db5"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener01.lean",
+      "log": "logs/p4-Wiener01-20261028T114126.log",
+      "sha256": "7e416c6100a8fa5af698ea64a552685576d8153c90c8e6bee1ebe65e51bb7cce"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener02.lean",
+      "log": "logs/p4-Wiener02-20261028T114126.log",
+      "sha256": "5d215c48032ab5268f3e38413222896d6b8dc0e7235231ee089ab81d1bf4f1ff"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener03.lean",
+      "log": "logs/p4-Wiener03-20261028T114126.log",
+      "sha256": "ad6dab1830557f1311b7cf3bec3a11f4a18fdff747dfcded131a1ee67e42399d"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener04.lean",
+      "log": "logs/p4-Wiener04-20261028T114126.log",
+      "sha256": "d759060bb5cf0f9e0ee854b7eb8820b81ae78a1e9642a400e4a7771a37e44d8c"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener05.lean",
+      "log": "logs/p4-Wiener05-20261028T114126.log",
+      "sha256": "d6f38f17b7ebb98e5738ce03a8824ff880d5d34f568ff32c1c2dad3cfe04a2d3"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener06.lean",
+      "log": "logs/p4-Wiener06-20261028T114126.log",
+      "sha256": "fb4dd46dfc75968403b389ae9160a4a19dcfbad81bab8aa5883b46241ba11ffd"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener07.lean",
+      "log": "logs/p4-Wiener07-20261028T114126.log",
+      "sha256": "5d9a58cc72dcd2ff5e5dd4d3fc63f8a76811414616a163c94f68c5d2f8b5067e"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener08.lean",
+      "log": "logs/p4-Wiener08-20261028T114126.log",
+      "sha256": "aa7f855270bf887d0be069909f0cd9fdad8cf2b112c08eb6520a13e252f2b20c"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener09.lean",
+      "log": "logs/p4-Wiener09-20261028T114126.log",
+      "sha256": "d6270e31d18217e7d4cc6de5f4c13231b144e6826727ea1d522172a87cf5c941"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener10.lean",
+      "log": "logs/p4-Wiener10-20261028T114126.log",
+      "sha256": "9fc6ceb9d2d508f14fc08c7c629b7a5c9b05d2baa1767d35fda3861f08451d67"
+    }
+  ],
+  "current": "OddPiPowers/Vendor/PNT/Wiener.lean",
+  "exit_code": 75,
+  "failed_log": "logs/p4-Wiener-20261028T114126.log"
+}

@@ -1,0 +1,37 @@
+⚠ [3072/3079] Built OddPiPowers.Construction.LocalDenominators (23s)
+warning: OddPiPowers/Construction/LocalDenominators.lean:137:24: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: OddPiPowers/Construction/LocalDenominators.lean:179:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [PowerSeries.coeff_C, hn]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/LocalDenominators.lean:218:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/LocalDenominators.lean:229:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3076/3079] Built OddPiPowers.Analysis.HorizontalPair (32s)
+✖ [3077/3079] Building OddPiPowers.Construction.ConfluentJets (14s)
+trace: .> LEAN_PATH=C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean c:\Users\hc260\.elan\toolchains\leanprover--lean4---v4.35.0\bin\lean.exe C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\OddPiPowers\Construction\ConfluentJets.lean -o C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.olean -i C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.ilean -c C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.c --setup C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.setup.json --json
+error: OddPiPowers/Construction/ConfluentJets.lean:94:28: expected token
+error: OddPiPowers/Construction/ConfluentJets.lean:124:18: Unknown identifier `confluentMatrix_mulVec`
+error: OddPiPowers/Construction/ConfluentJets.lean:124:6: Type mismatch: After simplification, term
+  hh
+ has type
+  (confluentMatrix a r e).mulVec v (e ⟨i, ⟨j, hj⟩⟩) = 0
+but is expected to have type
+  ((taylor (a i)) ((ofFn N) v)).coeff j = 0
+Some required targets logged failures:
+- OddPiPowers.Construction.ConfluentJets
+error: build failed

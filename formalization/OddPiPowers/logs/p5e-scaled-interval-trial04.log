@@ -1,0 +1,47 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ScaledIntervalRate.lean:52:2: error: unsolved goals
+case e'_5
+L a : ℕ
+hL : 0 < L
+ha : 2 * a < L
+Y : ℝ
+hY : 0 < Y
+hab : a ≤ L - a
+hk : 0 < L - 2 * a
+hL0 : ↑L ≠ 0
+haL : a ≤ L
+h2aL : 2 * a ≤ L
+heL : ↑a / ↑L + -(1 / 2) = -(↑(L - 2 * a) / ↑L / 2)
+heR : ↑(L - a) / ↑L + -(1 / 2) = ↑(L - 2 * a) / ↑L / 2
+hsum :
+  Tendsto (fun N => (∑ x ∈ Finset.Icc (a * N) ((L - a) * N), centralLogIntegrand Y (↑x / ↑(L * N) - 1 / 2)) / ↑(L * N))
+    atTop (𝓝 (∫ (x : ℝ) in -(↑(L - 2 * a) / ↑L / 2)..↑(L - 2 * a) / ↑L / 2, centralLogIntegrand Y x))
+hf :
+  Tendsto (fun N => (Real.log ↑((L - 2 * a) * N).factorial - ↑((L - 2 * a) * N) * Real.log ↑(L * N)) / ↑(L * N)) atTop
+    (𝓝 (↑(L - 2 * a) / ↑L * Real.log (↑(L - 2 * a) / ↑L) - ↑(L - 2 * a) / ↑L))
+ht :
+  Tendsto
+    (fun x =>
+      (Real.log ↑((L - 2 * a) * x).factorial - ↑((L - 2 * a) * x) * Real.log ↑(L * x)) / ↑(L * x) -
+          Real.log ↑(L * x) / ↑(L * x) -
+        (∑ x_1 ∈ Finset.Icc (a * x) ((L - a) * x), centralLogIntegrand Y (↑x_1 / ↑(L * x) - 1 / 2)) / ↑(L * x))
+    atTop
+    (𝓝
+      (↑(L - 2 * a) / ↑L * Real.log (↑(L - 2 * a) / ↑L) - ↑(L - 2 * a) / ↑L - 0 -
+        ∫ (x : ℝ) in -(↑(L - 2 * a) / ↑L / 2)..↑(L - 2 * a) / ↑L / 2, centralLogIntegrand Y x))
+hc : 0 ≤ ↑(L - 2 * a) / ↑L
+hi :
+  centralIntervalRate (↑(L - 2 * a) / ↑L) Y =
+    (∫ (u : ℝ) in -(↑(L - 2 * a) / ↑L / 2)..↑(L - 2 * a) / ↑L / 2, Real.log √(u ^ 2 + Y ^ 2)) + ↑(L - 2 * a) / ↑L -
+      ↑(L - 2 * a) / ↑L * Real.log (↑(L - 2 * a) / ↑L)
+⊢ 𝓝
+      (-(↑(L - a * 2) * (↑L)⁻¹) + ↑(L - a * 2) * (↑L)⁻¹ * Real.log (↑(L - a * 2) * (↑L)⁻¹) -
+        ∫ (u : ℝ) in ↑(L - a * 2) * (↑L)⁻¹ * (-1 / 2)..↑(L - a * 2) * (↑L)⁻¹ * (1 / 2), Real.log √(u ^ 2 + Y ^ 2)) =
+    𝓝
+      (-(↑(L - a * 2) * (↑L)⁻¹) + ↑(L - a * 2) * (↑L)⁻¹ * Real.log (↑(L - a * 2) * (↑L)⁻¹) -
+        ∫ (x : ℝ) in ↑(L - a * 2) * (↑L)⁻¹ * (-1 / 2)..↑(L - a * 2) * (↑L)⁻¹ * (1 / 2), Real.log √(Y ^ 2 + x ^ 2))

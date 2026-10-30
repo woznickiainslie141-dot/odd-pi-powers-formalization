@@ -1,0 +1,56 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectangleInversePowers.lean:14:41: error: unsolved goals
+case e'_8
+p : ℝ
+j : ℕ
+z : ℂ
+hz : z ≠ ↑p
+hn : z - ↑p ≠ 0
+hk : ↑(j + 1) ≠ 0
+hh :
+  HasDerivAt ((fun x => id x - ↑p) ^ (j + 1))⁻¹
+    (-(↑(j + 1) * (id z - ↑p) ^ (j + 1 - 1) * 1) / ((fun x => id x - ↑p) ^ (j + 1)) z ^ 2) z
+⊢ (fun w => -(w * ↑(1 + j) * (w - ↑p) ^ j - ↑p * ↑(1 + j) * (w - ↑p) ^ j)⁻¹) = fun x =>
+    (-((fun x => -↑p + id x) * (fun x => -↑p + id x) ^ j)⁻¹) x * (↑(1 + j))⁻¹
+
+case e'_9
+p : ℝ
+j : ℕ
+z : ℂ
+hz : z ≠ ↑p
+hn : z - ↑p ≠ 0
+hk : ↑(j + 1) ≠ 0
+hh :
+  HasDerivAt ((fun x => id x - ↑p) ^ (j + 1))⁻¹
+    (-(↑(j + 1) * (id z - ↑p) ^ (j + 1 - 1) * 1) / ((fun x => id x - ↑p) ^ (j + 1)) z ^ 2) z
+⊢ 1 / (z - ↑p) ^ (j + 2) =
+    -(-(↑(j + 1) * (id z - ↑p) ^ (j + 1 - 1) * 1) / ((fun x => id x - ↑p) ^ (j + 1)) z ^ 2) / ↑(j + 1)
+case e'_8
+p : ℝ
+j : ℕ
+z : ℂ
+hz : z ≠ ↑p
+hn : z - ↑p ≠ 0
+hk : ↑(j + 1) ≠ 0
+hh :
+  HasDerivAt ((fun x => id x - ↑p) ^ (j + 1))⁻¹
+    (-(↑(j + 1) * (id z - ↑p) ^ (j + 1 - 1) * 1) / ((fun x => id x - ↑p) ^ (j + 1)) z ^ 2) z
+⊢ (fun w => -((w - ↑p) ^ (j + 1))⁻¹ / ↑(j + 1)) = fun x => (-((fun x => id x - ↑p) ^ (j + 1))⁻¹) x / ↑(j + 1)
+
+case e'_9
+p : ℝ
+j : ℕ
+z : ℂ
+hz : z ≠ ↑p
+hn : z - ↑p ≠ 0
+hk : ↑(j + 1) ≠ 0
+hh :
+  HasDerivAt ((fun x => id x - ↑p) ^ (j + 1))⁻¹
+    (-(↑(j + 1) * (id z - ↑p) ^ (j + 1 - 1) * 1) / ((fun x => id x - ↑p) ^ (j + 1)) z ^ 2) z
+⊢ 1 / (z - ↑p) ^ (j + 2) =
+    -(-(↑(j + 1) * (id z - ↑p) ^ (j + 1 - 1) * 1) / ((fun x => id x - ↑p) ^ (j + 1)) z ^ 2) / ↑(j + 1)

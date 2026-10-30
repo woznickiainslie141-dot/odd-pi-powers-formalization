@@ -1,0 +1,31 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:57:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:57:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:76:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:76:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:83:49: warning: `Polynomial.eval₂_finset_prod` has been deprecated: Use `Polynomial.eval₂_finsetProd` instead
+
+Hint: Replace the deprecated name:
+  Polynomial.eval₂_finset_̵p̵P̲rod
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:85:11: error: `simp` made no progress
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:84:46: warning: This simp argument is unused:
+  Polynomial.eval₂_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [horizontalDenominator, denominator, Polynomial.eval₂_finset_prod, Polynomial.eval₂_add,
+    Polynomial.eval₂_X, map_natCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:100:2: error: Type mismatch: After simplification, term
+  hi
+ has type
+  Y = 0
+but is expected to have type
+  False

@@ -1,0 +1,23 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ScaledPrimeRates.lean:47:42: error: Expected type must not contain free variables
+  0 < (twelveLayerShape.scaleWeights u).L
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ScaledPrimeRates.lean:50:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @Filter.Eventually ℕ
+    (fun N =>
+      Real.exp
+          ((↑u * finiteWindowRate s (fun i => (V i).toWindow) (twelveLayerShape.scaleWeights u).L - η) *
+            ↑((twelveLayerShape.scaleWeights u).L * N)) ≤
+        ↑(P N).actualAuxiliaryPrimeDivisor)
+    Filter.atTop
+but is expected to have type
+  @Filter.Eventually ℕ
+    (fun N =>
+      Real.exp ((↑u * finiteWindowRate s (fun i => (V i).toWindow) 69 - η) * ↑(69 * N)) ≤
+        ↑(P N).actualAuxiliaryPrimeDivisor)
+    Filter.atTop
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 1

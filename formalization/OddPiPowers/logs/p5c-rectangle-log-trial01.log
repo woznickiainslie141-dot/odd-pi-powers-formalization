@@ -1,0 +1,26 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectangleLog.lean:29:2: error: Type mismatch: After simplification, term
+  HasDerivAt.comp z (Complex.hasDerivAt_log hz) (HasDerivAt.sub_const (↑p) (hasDerivAt_id z))
+ has type
+  @HasDerivAt ℂ DenselyNormedField.toNontriviallyNormedField ℂ
+    DenselyNormedField.toNontriviallyNormedField.toDivisionRing.toAddCommGroup (NormedAlgebra.toNormedSpace ℂ).toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (Complex.log ∘ fun x => id x - ↑p) (z - ↑p)⁻¹ z
+but is expected to have type
+  @HasDerivAt ℂ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup Semiring.toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (fun w => Complex.log (w - ↑p)) (z - ↑p)⁻¹ z
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Complex.mulAux ↦ 16
+  Real.instAdd ↦ 6
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectangleLog.lean:35:2: error: Type mismatch: After simplification, term
+  HasDerivAt.comp z (Complex.hasDerivAt_log hz) (HasDerivAt.neg (HasDerivAt.sub_const (↑p) (hasDerivAt_id z)))
+ has type
+  @HasDerivAt ℂ DenselyNormedField.toNontriviallyNormedField ℂ
+    DenselyNormedField.toNontriviallyNormedField.toDivisionRing.toAddCommGroup (NormedAlgebra.toNormedSpace ℂ).toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (Complex.log ∘ (-fun x => id x - ↑p)) (z - ↑p)⁻¹ z
+but is expected to have type
+  @HasDerivAt ℂ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup Semiring.toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (fun w => Complex.log (-(w - ↑p))) (z - ↑p)⁻¹ z
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Complex.mulAux ↦ 16
+  Real.instAdd ↦ 6

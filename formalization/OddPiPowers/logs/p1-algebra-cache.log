@@ -1,0 +1,58 @@
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 575 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/575 = 0%, 14 KB/s][K
+Downloaded: 7 file(s) [attempted 7/575 = 1%, 2 KB/s][K
+Downloaded: 13 file(s) [attempted 13/575 = 2%, 4 KB/s][K
+Downloaded: 25 file(s) [attempted 25/575 = 4%, 17 KB/s][K
+Downloaded: 34 file(s) [attempted 34/575 = 5%, 22 KB/s][K
+Downloaded: 39 file(s) [attempted 39/575 = 6%, 24 KB/s][K
+Downloaded: 49 file(s) [attempted 49/575 = 8%, 24 KB/s][K
+Downloaded: 59 file(s) [attempted 59/575 = 10%, 45 KB/s][K
+Downloaded: 69 file(s) [attempted 69/575 = 12%, 117 KB/s][K
+Downloaded: 78 file(s) [attempted 78/575 = 13%, 82 KB/s][K
+Downloaded: 90 file(s) [attempted 90/575 = 15%, 31 KB/s][K
+Downloaded: 107 file(s) [attempted 107/575 = 18%, 63 KB/s][K
+Downloaded: 114 file(s) [attempted 114/575 = 19%, 136 KB/s][K
+Downloaded: 126 file(s) [attempted 126/575 = 21%, 38 KB/s][K
+Downloaded: 141 file(s) [attempted 141/575 = 24%, 17 KB/s][K
+Downloaded: 155 file(s) [attempted 155/575 = 26%, 98 KB/s][K
+Downloaded: 169 file(s) [attempted 169/575 = 29%, 149 KB/s][K
+Downloaded: 184 file(s) [attempted 184/575 = 32%, 82 KB/s][K
+Downloaded: 198 file(s) [attempted 198/575 = 34%, 77 KB/s][K
+Downloaded: 213 file(s) [attempted 213/575 = 37%, 307 KB/s][K
+Downloaded: 222 file(s) [attempted 222/575 = 38%, 309 KB/s][K
+Downloaded: 225 file(s) [attempted 225/575 = 39%, 206 KB/s][K
+Downloaded: 234 file(s) [attempted 234/575 = 40%, 12 KB/s][K
+Downloaded: 256 file(s) [attempted 256/575 = 44%, 56 KB/s][K
+Downloaded: 270 file(s) [attempted 270/575 = 46%, 116 KB/s][K
+Downloaded: 275 file(s) [attempted 275/575 = 47%, 243 KB/s][K
+Downloaded: 284 file(s) [attempted 284/575 = 49%, 58 KB/s][K
+Downloaded: 294 file(s) [attempted 294/575 = 51%, 56 KB/s][K
+Downloaded: 306 file(s) [attempted 306/575 = 53%, 95 KB/s][K
+Downloaded: 311 file(s) [attempted 311/575 = 54%, 158 KB/s][K
+Downloaded: 320 file(s) [attempted 320/575 = 55%, 176 KB/s][K
+Downloaded: 330 file(s) [attempted 330/575 = 57%, 40 KB/s][K
+Downloaded: 337 file(s) [attempted 337/575 = 58%, 55 KB/s][K
+Downloaded: 340 file(s) [attempted 340/575 = 59%, 218 KB/s][K
+Downloaded: 359 file(s) [attempted 359/575 = 62%, 146 KB/s][K
+Downloaded: 363 file(s) [attempted 363/575 = 63%, 156 KB/s][K
+Downloaded: 380 file(s) [attempted 380/575 = 66%, 72 KB/s][K
+Downloaded: 399 file(s) [attempted 399/575 = 69%, 166 KB/s][K
+Downloaded: 402 file(s) [attempted 402/575 = 69%, 95 KB/s][K
+Downloaded: 417 file(s) [attempted 417/575 = 72%, 23 KB/s][K
+Downloaded: 440 file(s) [attempted 440/575 = 76%, 161 KB/s][K
+Downloaded: 447 file(s) [attempted 447/575 = 77%, 86 KB/s][K
+Downloaded: 452 file(s) [attempted 452/575 = 78%, 65 KB/s][K
+Downloaded: 490 file(s) [attempted 490/575 = 85%, 117 KB/s][K
+Downloaded: 502 file(s) [attempted 502/575 = 87%, 312 KB/s][K
+Downloaded: 512 file(s) [attempted 512/575 = 89%, 20 KB/s][K
+Downloaded: 546 file(s) [attempted 546/575 = 94%, 258 KB/s][K
+Downloaded: 548 file(s) [attempted 548/575 = 95%, 155 KB/s][K
+Downloaded: 557 file(s) [attempted 557/575 = 96%, 27 KB/s][K
+Downloaded: 574 file(s) [attempted 574/575 = 99%, 147 KB/s][K
+Downloaded: 575 file(s) [attempted 575/575 = 100%, 147 KB/s][K
+Still decompressing downloaded files...
+Decompressed 575 file(s)
+Already decompressed 2591 file(s)

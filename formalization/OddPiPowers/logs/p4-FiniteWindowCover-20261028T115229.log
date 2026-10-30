@@ -1,0 +1,21 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\FiniteWindowCover.lean:22:15: error(lean.invalidField): Invalid field `Pairwise`: The environment does not contain `Finset.Pairwise`, so it is not possible to project the field `Pairwise` from an expression
+  s
+of type `Finset ι`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\FiniteWindowCover.lean:26:72: error: unsolved goals
+ι : Type u_1
+s : Finset ι
+W : ι → PrimeWindow
+hdisj : sorry
+i j : ι
+z : ℝ
+hi : i ∈ s
+hj : j ∈ s
+hactivei : (W i).lower ≤ z
+hiupper : z < (W i).upper
+hactivej : (W j).lower ≤ z
+hjupper : z < (W j).upper
+hne : ¬i = j
+⊢ False
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\FiniteWindowCover.lean:38:15: error(lean.invalidField): Invalid field `Pairwise`: The environment does not contain `Finset.Pairwise`, so it is not possible to project the field `Pairwise` from an expression
+  s
+of type `Finset ι`

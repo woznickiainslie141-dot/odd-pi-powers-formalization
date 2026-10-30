@@ -1,0 +1,10 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualRectangleContour.lean:19:44: error: Invalid argument name `R` for function `Nat.cast_nonneg`
+
+Hint: Perhaps you meant one of the following parameter names:
+  • `α`: R̵α̲
+  • `n`: R̵n̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualRectangleContour.lean:19:44: error: Invalid argument name `R` for function `Nat.cast_nonneg`
+
+Hint: Perhaps you meant one of the following parameter names:
+  • `α`: R̵α̲
+  • `n`: R̵n̲

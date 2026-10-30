@@ -1,0 +1,14 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\TwelveLayerCentralRate.lean:77:2: error: Type mismatch: After simplification, term
+  hN h
+ has type
+  ‖∑ j, Polynomial.eval₂ (Rat.castHom ℂ) Complex.I (actualAuxiliary (twelveLayerActualFamily N) h j) * lambda ^ ↑j‖ ≤
+    Real.exp
+      ((↑(17 - 1) + Real.pi / 2 * Y - ∑ a, centralIntervalRate (↑(69 - 2 * twelveLayerCentralOffset a) / ↑69) Y + η) *
+        ↑(69 * N))
+but is expected to have type
+  ‖∑ j, Polynomial.eval₂ (Rat.castHom ℂ) Complex.I (actualAuxiliary (twelveLayerActualFamily N) h j) * lambda ^ ↑j‖ ≤
+    Real.exp ((-twelveLayerCentralDecay Y + η) * ↑(69 * N))
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 2
+  Real.instLE ↦ 2

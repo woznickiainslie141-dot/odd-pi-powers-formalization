@@ -1,0 +1,42 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:44:4: error: Type mismatch
+  Finset.single_le_sum (fun b hb => Nat.zero_le (?m.185 b)) (Finset.mem_univ a)
+has type
+  ?m.185 a ≤ ∑ x, ?m.185 x
+but is expected to have type
+  ((P N).interval a).card ≤ ∑ b, ((P N).interval b).card
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:72:23: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:72:47: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:72:59: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:72:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:72:47: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:72:59: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:97:21: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:97:44: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:97:56: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:97:21: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:97:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedRates.lean:97:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

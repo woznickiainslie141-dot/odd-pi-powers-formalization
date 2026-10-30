@@ -1,0 +1,3 @@
+'OddPiPowers.fixed_slack_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rational_power_value_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exponentUpperBound_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,30 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ShrunkenCellWindows.lean:42:2: error: linarith failed to find a contradiction
+c : TwelveCellCertificate
+hc : c ∈ twelveLayerCellTable
+ε : ℝ
+he : 0 < ε
+he2 : ε < 1 / 2
+hl : 1 / 69 ≤ ↑c.left
+ht : ↑(shrunkenCellWindow c hc ε he he2).cell.left < (shrunkenCellWindow c hc ε he he2).a
+a✝ : 69 * (shrunkenCellWindow c hc ε he he2).a < 1
+⊢ False
+failed
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\ShrunkenCellWindows.lean:73:2: error: linarith failed to find a contradiction
+r : ℕ
+l u ε : ℝ
+hl : 1 / 69 ≤ l
+hu : u ≤ 1
+hlu : l < u
+he : 0 < ε
+he2 : ε < 1 / 2
+hd : 0 ≤ ε * (u - l)
+hde : ε * (u - l) ≤ ε
+hr : 0 ≤ ↑r
+ha : 1 / 69 ≤ ↑r + l
+hb : 1 / 69 ≤ ↑r + (u - ε * (u - l))
+h1 : 1 / (↑r + l) - 1 / (↑r + l + ε * (u - l)) ≤ 69 ^ 2 * ε
+h2 : 1 / (↑r + (u - ε * (u - l))) - 1 / (↑r + u) ≤ 69 ^ 2 * ε
+heq : ↑r + (u - ε * (u - l)) + ε * (u - l) = ↑r + u
+a✝ : 2 * 69 ^ 2 * ε < 1 / (↑r + l) - 1 / (↑r + u) - (1 / (↑r + (l + ε * (u - l))) - 1 / (↑r + (u - ε * (u - l))))
+⊢ False
+failed

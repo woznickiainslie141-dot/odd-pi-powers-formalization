@@ -1,0 +1,9 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalTail.lean:35:15: error: Type mismatch
+  prod_interval_reflect P a ?m.101
+has type
+  ∏ r ∈ P.interval a, ?m.101 (P.n - r) = ∏ r ∈ P.interval a, ?m.101 r
+but is expected to have type
+  ∏ r ∈ P.interval a, horizontalFactor Y (P.horizontalOffset (P.n - r)) t =
+    ∏ i ∈ P.interval a, horizontalFactor Y (P.horizontalOffset i) t
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalTail.lean:60:2: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalTail.lean:92:4: error: not a positivity goal

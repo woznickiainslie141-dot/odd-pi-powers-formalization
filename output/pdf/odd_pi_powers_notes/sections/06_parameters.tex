@@ -1,0 +1,211 @@
+\section{Concrete parameters and every fixed odd power}
+\label{sec:parameters}
+
+\subsection{Recovering the balanced benchmark}
+
+If all \(M\) intervals equal \([0,n]\), the arc minimum used here is
+zero, so \(\gamma=0\) for this particular divisor. This does not
+prove that the entire actual gcd has rate zero.
+The root equation becomes
+\[
+Y=\tfrac12\cot\frac{\pi}{4M}.
+\]
+Substitution gives
+\[
+D_0=-M\log\left(2\sin\frac{\pi}{4M}\right)-m,\qquad
+G_0=m+M\log2.
+\]
+With \(m=289\), the resulting exponent is
+\(2028.145382310168\ldots\).
+This is a useful check of the normalization and contour calculation.
+
+\subsection{Two, seven, and twelve layers}
+
+Three configurations illustrate the improvement:
+\begin{center}
+\begin{tabular}{lrrl}
+\toprule
+Configuration&\(m\)&\(L\)&Offsets and multiplicities\\
+\midrule
+Two layers&255&14&\(t=(0,1),\ \nu=(128,128)\)\\
+Seven layers&199&39&\(t=(0,\ldots,6),\ \nu=(80,20,\ldots,20)\)\\
+Twelve layers&186&69&\(t=(0,\ldots,11),\ \nu=(66,11,\ldots,11)\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+Their rates for \(k=3\), rounded here only for readability, are:
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Configuration&\(D_0\)&\(G_0\)&\(\gamma\)&\(E_3\)\\
+\midrule
+Two layers&955.116623&419.770987&27.777682&1762.608232\\
+Seven layers&664.537005&322.700112&44.701426&1282.033606\\
+Twelve layers&605.861295&301.032295&45.436001&1203.972439\\
+\bottomrule
+\end{tabular}
+\end{center}
+The double-layer result follows also from~\eqref{eq:twogamma}.
+For the twelve-layer case the corrected rates are
+\begin{align*}
+D&=651.2972962706767693926036416599\ldots,\\
+G&=255.5962938344585049378330527898\ldots,\\
+D-2G&=140.1047086017597595169375360801\ldots.
+\end{align*}
+The strict conclusion is \(E_3<1203.973\), not a conclusion inferred
+from the rounded entries of the table.
+
+These examples arose from bounded searches and a limited multiplicity
+refinement. They are not the solution of a globally optimized
+variational problem. In particular, more layers are not known to be
+necessary or optimal.
+
+\subsection{An explicit family for all odd \texorpdfstring{\(k\)}{k}}
+
+For the twelve-layer shape let
+\[
+v_0=6,\quad v_j=1\ (1\le j\le11),\quad
+c_j=1-\frac{2j}{69},\quad \nu_j=sv_j.
+\]
+Then
+\[
+M=17s,\quad m=17s-1,\quad
+S=\sum_jv_jc_j=\frac{347}{23}.
+\]
+The arc partition is unchanged when all weights are multiplied by
+\(s\), so
+\[
+\gamma=s\gamma_*,\qquad
+\gamma_*=4.1305455731413661362664616341\ldots.
+\]
+Introduce the fixed constants
+\begin{align}
+g_*&=17+S\log2-\gamma_*,
+ &g_*&=23.3269358031325913579848229808\ldots,\label{eq:gstar}\\
+A_*&=\sum_jv_jc_j\log c_j,\nonumber\\
+d_*&=S\log(S/\Theta)-A_*-17+\gamma_*.\label{eq:dstar}
+\end{align}
+Since \(f\le17\) for the base weights, the prime number theorem gives
+\(\gamma_*\le17\). Thus \(g_*\ge S\log2>1\), proving
+\(G=sg_*-1>0\) without requiring a decimal estimate.
+The certificate more precisely verifies \(g_*>23\).
+
+\begin{proposition}[A root-free admissibility recipe]\label{prop:allodd}
+For any fixed integer \(k\ge3\), let
+\begin{equation}\label{eq:srecipe}
+s_k=\max\left\{1,\
+\left\lceil\exp\left(
+\frac{(k-1)g_*-d_*}{S}+1\right)\right\rceil\right\}.
+\end{equation}
+This choice satisfies \(D-(k-1)G>0\). More explicitly, put
+\[
+\underline D_s=s(S\log s+d_*)+1-\frac{\Theta^2}{12sS},
+\qquad G_s=sg_*-1.
+\]
+Whenever \(\underline D_s>(k-1)G_s\), the following bound needs no
+numerical root \(Y\):
+\begin{equation}\label{eq:rootfree}
+\mu(\pi^k)\le
+(17s-1)\frac{\underline D_s+G_s}
+ {\underline D_s-(k-1)G_s}.
+\end{equation}
+In particular this is valid at \(s=s_k\).
+\end{proposition}
+\begin{proof}
+Evaluate the decay expression at the trial height \(Y_0=sS/\Theta\);
+the optimized \(D\) is at least this trial value.
+For every \(x\ge0\),
+\(\arctan x\ge x-x^3/3\) and \(\log(1+x^2)\ge0\).
+Consequently
+\[
+F_c(Y_0)\ge c\log(Y_0/c)+c-\frac{c^3}{12Y_0^2}.
+\]
+Since \(0<c_j\le1\), one has \(\sum_jv_jc_j^3\le S\).
+The terms \(sS-\Theta Y_0\) cancel, giving
+\[
+D\ge s(S\log s+d_*)+1-\frac{\Theta^2}{12sS}
+=\underline D_s.
+\]
+At \(s=s_k\),
+\[
+\underline D_s-(k-1)G_s
+\ge sS+k-\frac{\Theta^2}{12sS}>0.
+\]
+Here \(S=347/23\), \(s\ge1\), and \(\Theta<2\), so the last
+positivity is immediate.
+
+For \(G_s\ge0\) the function
+\(m(D+G_s)/(D-(k-1)G_s)\) decreases as \(D\) increases.
+Replacing \(D\) by the lower bound \(\underline D_s\) therefore
+gives~\eqref{eq:rootfree}.
+\end{proof}
+
+This proposition supplies a definite upper-bound recipe for
+\emph{every fixed odd power}, in addition to the optimized examples
+in Corollary~\ref{cor:numerical}. It does not require an unbounded
+parameter search to establish admissibility.
+
+\subsection{Why the higher-power constants still grow rapidly}
+
+Expanding the root equation for large \(s\) gives
+\[
+Y=\frac{sS}{\Theta}+O(s^{-1}),\quad
+D=s(S\log s+d_*)+1+O(s^{-1}),\quad
+G=sg_*-1.
+\]
+Thus the threshold for \(s\) grows exponentially with \(k\).
+The explicit choice~\eqref{eq:srecipe} yields
+\begin{equation}\label{eq:growth}
+E_k=O(k\rho^k),\qquad
+\rho=\exp(g_*/S)=4.69343992780744986545\ldots.
+\end{equation}
+To justify the order estimate directly, that choice has
+\(s_k=O(\rho^k)\), a gap at least \(s_kS+O(1)\), and numerator
+\((17s_k-1)(\underline D_{s_k}+G_{s_k})=O(ks_k^2)\).
+All implied constants are fixed by this twelve-layer shape.
+Equation~\eqref{eq:growth} describes the construction as \(k\)
+varies; it must not be confused with the separate limit
+\(n\to\infty\) used to prove each fixed-\(k\) bound.
+
+For orientation, the certified optimized values before upward
+rounding are
+\[
+\begin{array}{c|l}
+k&E_k\\ \hline
+3&1203.97243920634698117\ldots\\
+5&42460.70466848845471678\ldots\\
+7&1272102.82718073869325320\ldots\\
+9&35398936.33162709355243184\ldots
+\end{array}
+\]
+The number \(s\) was optimized only within one fixed shape.
+
+\subsection{What would be needed to reach 10--100?}
+
+In the present transfer formula, \(G\ge0\) implies
+\[
+E_k=m\left(1+\frac{kG}{D-(k-1)G}\right)\ge m.
+\]
+The best current example has \(m=186\). Hence this particular
+parameter choice cannot possibly give \(E_3<100\).
+This is not an impossibility theorem for all nested shapes.
+
+A more substantial change would keep the \emph{target polynomial
+degree} fixed at three. If
+\[
+|P(\lambda)|\ge c_\varepsilon\Hgt(P)^{-\nu-\varepsilon}
+\quad(P\in\ZZ[\ii][Y],\ \deg P\le3,\ P\ne0),
+\]
+then taking \(P(Y)=8qY^3+\ii p\) gives
+\[
+|P(\lambda)|=q|\pi^3-p/q|,\qquad \mu(\pi^3)\le\nu+1.
+\]
+Only this sparse binomial family is actually needed.
+The thresholds \(\nu\le99\) and \(\nu\le9\) correspond to upper
+bounds \(100\) and \(10\).
+Type II Hermite--Pad\'e and multiple orthogonal polynomial
+constructions are plausible research tools; examples of
+bounded-degree logarithmic approximation appear in
+Marcovecchio~\cite{Marcovecchio}. Their numerical constants at other
+arguments cannot be transplanted to \(\log\ii\) without checking
+the complex endpoint and its arithmetic.

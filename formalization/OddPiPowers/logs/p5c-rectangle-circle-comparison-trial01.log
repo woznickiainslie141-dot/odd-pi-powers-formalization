@@ -1,0 +1,25 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectangleCircleComparison.lean:73:4: error: Type mismatch: After simplification, term
+  circleIntegrable_real_pole (fun x => f ↑p) continuous_const p (j + 1)
+ has type
+  CircleIntegrable (fun z => f ↑p * ((z - ↑p) ^ (j + 1))⁻¹) (↑p) (1 * 4⁻¹)
+but is expected to have type
+  CircleIntegrable (fun z => f ↑p * (1 * ((z - ↑p) ^ (j + 1))⁻¹)) (↑p) (1 * 4⁻¹)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  mulAux ↦ 81
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectangleCircleComparison.lean:90:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  rectangleIntegral (fun z => 1 / (z - ↑p)) a b c d
+in the target expression
+  0 + f ↑p * rectangleIntegral (fun z => 1 / (z - ↑p) ^ (0 + 1)) a b c d =
+    0 + f ↑p * ∮ (z : ℂ) in C(↑p, 1 / 4), 1 / (z - ↑p) ^ (0 + 1)
+
+case zero
+p a b c d : ℝ
+ha : a < p
+hb : p < b
+hc : c < 0
+hd : 0 < d
+f : ℂ → ℂ
+hf : Differentiable ℂ f
+⊢ 0 + f ↑p * rectangleIntegral (fun z => 1 / (z - ↑p) ^ (0 + 1)) a b c d =
+    0 + f ↑p * ∮ (z : ℂ) in C(↑p, 1 / 4), 1 / (z - ↑p) ^ (0 + 1)

@@ -1,0 +1,674 @@
+M ÉMOIRES DE LA S. M. F.
+
+
+
+
+M AURICE M IGNOTTE
+Approximations rationnelles de π et quelques
+autres nombres
+Mémoires de la S. M. F., tome 37 (1974), p. 121-132
+<http://www.numdam.org/item?id=MSMF_1974__37__121_0>
+
+
+
+
+    © Mémoires de la S. M. F., 1974, tous droits réservés.
+    L’accès aux archives de la revue « Mémoires de la S. M. F. » (http://smf.
+    emath.fr/Publications/Memoires/Presentation.html) implique l’accord avec les
+    conditions générales d’utilisation (http://www.numdam.org/conditions). Toute
+    utilisation commerciale ou impression systématique est constitutive d’une
+    infraction pénale. Toute copie ou impression de ce fichier doit contenir
+    la présente mention de copyright.
+
+
+
+
+                     Article numérisé dans le cadre du programme
+                   Numérisation de documents anciens mathématiques
+                                http://www.numdam.org/
+Journées arithmétiques [1973, Grenoble]
+Bull. Soc. math. France,
+Mémoire 37, 1974, p. 121-132
+
+
+
+
+                              APPROXIMATIONS RATIONNELLES DE                      n
+                                 ET QUELQUES AUTRES NOMBRES
+
+                                                    par
+
+                                             M. MIGNOTTE
+
+
+
+
+Résumé                             si    q > 1 /
+          -   ITT-^I >-^o~6                        l112-^! > 4 8         si   q   dssez grand
+                                                                                                -
+                       q /                                     q
+
+INTRODUCTION.
+
+
+         En 1952, Mdhier démontrait le remarquable, résultat suivant : pour tout nom-
+bre rationnel         -^ , q :> 2 , on a l'inégalité
+
+                                             In-^l >-^           .
+                                                        q
+Mdhier indiquait qu'on pouvait démontrer l'inégalité
+
+                                            l £i          1
+                                            h-ql ^        30
+                                            q
+pour     q    assez grand. D'après W. Schmidt [6], Wirsing a démontré (non publié)
+une égalité analogue avec un exposant égal à 21, pour                         q       dssez grand.
+
+       Nous nous proposons de démontrer les minorations
+
+                                        l-n-ql > ~~^Q       si       q s q    (explicite)
+et                                               q
+
+                                        1^1 > ~W~Q si            q
+                                                                     ^ 2 •
+                                               q '
+       Nous démontrerons aussi d'autres résultats concernant l'approximation ration-
+                  2
+nelle de      n       , l'approximation des logarithmes des entiers par des entiers, l'ap-
+proximation simultanée des puissances des nombres algébriques par des nombres
+algébriques.
+
+       On trouvera aussi l'énoncé d'un résultat sur l'approximation rationnelle de
+tg 1 .
+122
+                                                                                                   M. MIGNOTTE
+
+
+I. - PRELIMINAIRES.
+
+          Mahler construit, pour tout                x , une infinité de relations du type
+                                       m
+                                                     T.
+                                      E A (x)(log xF = R,(x)        (h = 0 , 1 , . . . , m )
+                                          nK               h
+                                     k=0
+où les      A^            sont des polynômes à coefficients entiers en x et dont le déter-
+minant n'est nul que pour                x = 1 .11 s'obtient ainsi une infinité d'équations
+algébriques approchées pour le nombre                          log x .
+
+1. De façon précise, soient                      m et n       deux entiers positifs et soit             x   un nom-
+bre complexe non nul. On désigne par                           N     le p . p . c . m .   des entiers       l,2,...,n.
+Posons
+                 (1)        P = m.N^nî)^1 ,
+
+                 (2)        Q(z) = (z(z+l)...(z+n)) m + l ,
+                                                   h z+n
+                 (   3)
+                            V^'iniL^-" 2                             -    h = o
+                                                                                  -1       ,m
+                                           L-»
+
+
+où    C     désigne un cercle de rayon > n                         centré à l'origine.
+
+2. En utilisant la formule des résidus, on obtient les relations
+                                     m
+                                                               V
+                 (4)        R (x) = L A (x)(log x)' ,
+                                    k=0 hK
+où on prend la détermination principale du logarithme.
+
+          On vérifie facilement que les                   A    (x)       sont des polynômes en          x    à coef-
+ficients entiers. Pour calculer le déterminant                            D(x)     des    A     (x) , on remarque
+d'abord, en développant               (Q(z))~        en série de Laurent du voisinage de l'infini,
+que
+               (5)          R   a un zéro d'ordre s (m+l)n                   au point         z = 1 .
+
+      D'autre part, pour tout                    h et k ,1e degré de              A       est $ n , l'inégalité
+étant stricte si h+k > m . Ainsi, on obtient
+                                      pm+1 n(m+l)                                 ,   .
+               (6)         D(x) = ± ——p——^——————^                          (mod x"'"1^-1) .
+                                     l!2.!...m!(n!) (m+l)
+      Grâce à              (4) , on a aussi l'égalité
+                                            R^(x) A                      (X)...AQ^(X)
+                                   D(x) =      :                          .
+                                                   V^          V^-Yn^
+Approximations rationnelles                                                                           123
+
+
+qui, jointe à          (5). , montre que      D(x)        est divisible par           (x-l)^1^ . Ld
+congruence           (6)   permet alors de conclure que                     D   est de la forme
+
+                            D(x) = c (x-1)                 ,       c        constante non nulle.
+                                    o                                  o
+          En particulier,      D(x) ^ 0      si    x i- 1 .
+
+3. En utilisant la représentation intégrale                    (3) , nous démontrerons plus loin
+                                                             101
+(voir dppendice) que, pour           a     réel,       Rfe         )       vérifie la majoration
+                                              ^m            ^^
+
+^     \\^\ -^^)22(m+l)7^ÏnTle6I^————exp^m^log^)-!) ,
+             n          (1+c )
+où c = cot 3
+            \ ' ?fe)l •
+4. Les coefficients des polynômes                  A         peuvent s'écrire comme des intégrales
+du type
+                                     _P__ p                    z^z
+                                      2nikî
+                                                  ^ Q(z)(z.x)^1
+                                                   À.
+ce qui permet à Mahler d'obtenir la majoration
+
+(8)                        IA^TI s ^ N"1^)2^^^1^^11 ,
+
+où    ]    1     désigne la hauteur d'un polynôme, c'est-à-dire le maximum des mo-
+dules des coefficients.
+
+
+II. - APPROXIMATION DU NOMBRE                      rr .
+
+1. Schéma de la démonstration.
+
+          Soit   x     un nombre complexe ^ 1 . Considérons les polynômes
+                                               m
+                                                      k
+                                      U (y) = L A (x)Y1' .
+                                       K          hk
+                                              k=0
+          L'égalité (4) s'écrit
+                                         R^(x) = U^(log x) .
+
+Pour un nombre complexe quelconque                     y , on a donc
+
+                                 U^(log x) - U^(y) = (log x - y) T^(y)
+124                                                                                                   M . MIGNOTTE
+
+
+
+                m      /. vk k
+avec    T,(y) = ^ A^x) (^^-) .
+
+
+        Du fait que      D(x)        est non nul, il existe un indice                         htel que
+                                                                                            o
+U   (y) ^ 0 , Posons, pour simplifier,                         U = U         . . . . . Si, de plus, on d l'iné-
+  o                                                                      o
+galité
+
+(9)                                           |R(x)| < - t | U ( y ) [       ,
+
+on obtient la minoration
+
+(10)                                 l^-l>i^                                     •
+
+        Pour minorer      | log x - y| , on fixera d'abord un entier                              n    tel que
+
+                          |R^(x)| < -I |U^(y)| , pour                        h =0,1,...,m.
+
+On obtient alors une inégalité du type                         (9) , il suffira alors de majorer              T   et
+de minorer       U .
+
+2. Fixons      x = i / d'où          log x = ~ .
+
+        Posons      y = "^ —     /       où     p et q         sont deux entiers positifs. On se limite-
+ra aux valeurs de        p et q qui vérifient                   p < 3,15 q . D'où :
+
+(11)                            max(|log x| , | y | ) < 1,58 .
+
+Choisissons        m = 5 . E n calculant directement les polynômes                                A     , avec de la
+patience on obtient
+
+(12)      |A . (i)| ^ ^N^^n 3 ^-.)                   <.   M
+                                                                N^ 6 ^ 3 , si               n ^ 40 000 .
+            hk        à         K!                         o
+
+        Pour   R     , grâce à (7) , on obtient
+                                                2
+                   |R (i)| <s ISn^exp^Sn log 1^-) ,                                  avec   c = 7,59574l...
+
+      Il existe h   tel que U, (y) = U(y) soit non nul. L'élément                                          (2q) U(y)
+                  o        h          .
+est alors un élément non nul de Z [i] , d'où l'inégalité
+
+(13)                                             | U ( y ) | ^ 2"'5q"5 .
+
+        Si on peut trouver           n    tel que         (9)    soit vérifiée, c'est-à-dire si               R   .vé-
+rifie
+                                                  |R(y)| ^ 2 q '
+Approximations rationnelles                                                                                         125
+
+
+alors        (10)     sera satisfaite. Pour ceci, il suffit d'imposer
+                                                                             2
+(14)                           ISnV exp(-3n log l^c-) ^ 2'" 6 q~ 5                               .
+
+            Remarquons que, si               ^    désigne la fonction de Tchebycheff
+(i|j(x) =       L        log p , p premier) , N                est donné par
+               m
+              p ïsx
+                                                           N = exp4(n)) .
+
+            L'inégalité (14)        sera donc vérifiée si
+                               2
+  ic\
+/(15)                   1+c - 5,- -'—
+               / c ilog ——
+              n(3                        olog_n\
+                                  ù(n) - 3—-—)                          ^        r + 5r log
+                                                                                        i
+                                                                                 6          q .
+
+            Enfin, (11) et (12)             impliquent
+
+(16)                         T(y) <. 25 N^^n 3                  si          n ^ 40 000 .
+
+            En utilisant les estimations de la fonction                                ^   de Rosser et Schoenfeld [5]
+et les inégalités (10), (13) et (16) on obtient les résultats suivants,
+
+                                   ITT-^I >           ^1        si          40 000 <. n <. 10 8
+                                        q
+                                                  q        '
+                                                               si           n s los
+                                   1^1           >-2u-6
+                                                   q
+                                   , £1         1                   .                110
+                                   l ^ q l > ~~20              sl           n > e
+                                              q
+où      n    désigne le plus petit entier qui vérifie                                (15) . On peut remarquer que
+
+                                        log q > 24 500 =^ n ^ 40 000 ,
+et
+                                        ,         110                               110
+                                        log q > e               =» n s e
+
+            On conclut en utilisant le calcul des 21 000 premières réduites du dévelop-
+pement de           TT     en fraction continue [1] , calcul qui montre que
+
+                                   0 < log q ^ 24 500                       =>     ITT-^ > -^-       .
+                                                                                      q
+                                                                                           q
+            On obtient alors le
+
+
+THEOREME 1. - Soit                 •£    un nombre rationnel positif alors
+
+                                   1^1 >-^i ^                           q s 2
+
+et
+
+                                   |n-^| >-io                  ^ ^ exp(e 110 ) .
+126
+                                                                                               M . MIGNOTTE
+
+
+III. - APPROXIMATIONS RATIONNELLES DE                           n2 .
+
+       On considère cette fois la relation (4) dans laquelle on fait                                x = -1 , soit
+                                                            m
+                                                                    k
+                                            R , ( - l ) == E A (-DOnF .
+                                             h                 hk
+                                                           k=0
+       On prend      m = 2m" , m" entier. Le fait que le déterminant des                                A   (-1)
+est non nul implique qu'il existe un mineur du type
+
+                                    A   (-1)            A           ...A               (-1)
+                                     \1                     \3             \2m--l
+
+
+
+                                   A          (-1)      ....... A                (-1)
+                                           2m'-l,l                         Zm'-l^m'-l
+
+non nul. Soit alors un rationnel                   y = J2    fixé ; il existe un indice             j   tel que
+                                           m1 1
+                                             -                ^ 2k
+                                            S A        (-1) (-DV-
+                                           k=0  j,2k+l
+soit non nul. On d de plus
+                            m1 1
+                             "            1< ?k  l
+                             E A     (-IX-DV" = - Im(R(-l)) .
+                            k=0 "k 1            n
+
+
+Ceci permet de refaire un raisonnement analogue du précédent. En prenant
+m = 10 , on obtient le résultat suivant :
+
+THEOREME 2. - Posons
+                       ,-              •       .
+                                                             9 + n loc
+                  c =cotg ^ , a = 4(1 4.                                   ; 2)        fa<17,8) .
+                                                            n            l+c
+                                                                1    /         ^   0
+                                                            Y log(-^—)-9
+
+Alors, pour tout nombre            e > 0 , l'inéquation
+                                             , 2 ^.          _t_
+                                             1"-?!-^
+n'a qu'un nombre fini de solutions.
+
+
+IV. -APPROXIMATION DES LOGARITHMES DES NOMBRES ENTIERS.
+
+       Soit   f   un entier positif dssez grand. Soient a , , . . . , a                        m entiers On
+                     k                                      1                                 m         *
+pose   \^ = (log f)    - a , k = l , . . . , m . Considérons
+Approximations rationnelles                                                                                        127
+
+
+                                                        m
+                                                                   k
+                                               Rjf) = 2 A (f)(log fF
+                                                n          hk
+et
+                                                       k=0
+                                       m                      m
+                                   =
+                               \ ^hk^k V^ - j^^ ;    =
+
+les   b            sont des entiers et l'un d'eux du moins n'est pas nul. Il existe un
+indice         h     tel que, si       R = R         et    A    = A            , on ait
+                                                 o                      o
+                                                      m
+                                           |R(f)| + | E A (f)\ J ^ 1 .
+                                                     k=0 n     K
+                                                                 '
+Si on impose à             R(f)    de vérifier |R(f)| <. -^ , on dura
+                                                       m
+                                                     | S A (fhl ^ ^ .
+                                                             k
+                                                      k=0
+         D'après les majorations de                  R    et de     A        (voir appendice II et III), on
+obtient le résultat suivant.
+
+
+         Pour tout         e > 0 (assez petit), il existe                   n(e)   tel que    n s n(e)      implique
+                                                                         l/(m+l)
+         (i)       |R(f)| <s mtexp(-n(m+l)(log(z^+l)-;L-e)) , où z^+1 = i/(m+i)
+
+      (ii)         |A^(x)| ^ ^u exp((l-ç+e)log f+(m+l)(l-ç log ç -(l-ç)log(l-ç)+e))
+
+                   où    ç =
+                               ^WT) •
+
+         Soit       a, > 0 , on pose
+                                                  I/o.   -1
+      m = [a log f] - ,                p = (log(—————)-1)   ,                 n = [(@+e)log log f] .
+                                                e^-l
+         Pour        f   assez grand, la condition                | R(f) | < 9" est bien remplie. On
+aboutit alors facilement au résultat suivant :
+
+         Soit        M = @((l--ç) + a(l-ç log ç - (l-ç)log(l-ç))) , alors pour tout                             M'>M,
+         on a                              ^
+                           m   (log f) -a,    -.., , ,   -
+                           ^ .           k. .-M' log log f                                -             ,
+                           Z^ ——~———— > f                  / pour                         f   assez grand.
+                                   kî
+                          k=0
+                                                                                                           ]^
+         Si on fixe            a = 4,870       on trouve       M < 17,7 . En prenant             d   = a        , on
+obtient le théorème suivant :
+128                                                                                                M . MIGNOTTE
+
+
+
+THEOREME 3. - Pour                f     entier assez grand, on d
+
+                                      ||log f]| > f - 1 7 - 7 log log f ,
+(où ]]x|| désigne la distance à l'entier le plus proche).
+
+Remarque : En 1952, Mdhier [2]                         avait obtenu le même énoncé, mais avec un
+exposant égal à 40 ; par une autre méthode, en 1967 [4], il diminuait cet expo-
+sant jusqu'à 33. En suivant le travail de Mahler [2], on peut déduire de ce
+théorème l'énoncé ci-dessous :
+
+COROLLAIRE. - Pour               n      assez grand, on a
+                                                  ii e ^i ^ n-18n .
+
+
+V. - APPROXIMATIONS SIMULTANEES DES LOGARITHMES DES NOMBRES ALGE-
+       BRIQUES.
+
+           Ld méthode employée jusqu'à présent permet d'obtenir des résultats concer-
+nant l'approximation des puissances successives des logarithmes des nombres
+algébriques. Par exemple, pour le nombre                         TT / on peut démontrer les résultats
+suivants :
+                                 k        3
+           1)    max        (]|qn ||) > q         si    q > q    (explicite) ;
+                 1^5
+           2)    Soit   m     un entier fixé. Si on désigne par                     e         la borne inférieure des
+c     tels que l'inégalité
+                                                                            c
+                              max    (||qTT ||) ^ q
+                             l^k^m
+n'ait qu'un nombre fini de solutions, alors on a
+
+                                      lim e       log m <s      1 + log 2 .
+                                              m
+Ce second résultat est encore vrai si on remplace                               n       par    n
+
+Remarque : - E n utilisant le principe de, Dirichlet, on peut montrer que                                 e    véri-
+fie    e        ^ — , c'est bien connu.
+           m      m
+           En fait, 2) est un cas particulier du résultat général suivant, dont la dé-
+monstration est analogue à celle du paragraphe précédent :
+Approximations rationnelles                                                                               129
+
+
+
+THEOREME 4 . - Soit              x    un nombre algébrique fixé,                  x -^ 0,1 , dppdrtendnt à
+un corps de nombres              K c Œ       de degré        ô    sur   Q(i) . Soit      e > 0    donné. Alors
+pour     m -2. m ( e , x , ô ) , la propriété suivante d lieu : pour tout m-uples d'éléments
+a ,...,a   de          K   admettant          d   comme dénominateur et de hauteurs majorées
+ i       m
+par h , on a
+                                                                        _l+log 2 + e
+                   max |(log ^-aj                 >     (dV- 1 )" "             log m
+
+                  l^k^m
+si     d^5'1 > B ( e , m ) .
+
+
+APPENDICE.
+
+I. - MAJORATION DE               lUe101) , a réel.
+
+         On suppose        a 6       ]0,n] . On a
+
+
+
+               v-) - ^(^-(^v-' • °" v-) - ^ { ^^,.,^r1'
+                                 P                                               1        uV11011-1 du
+
+
+
+on prendra comme contour                 r   le bord du rectangle de sommets                 2c + -y ± ic ,
+                                              a
+-2c - -j- ± ic , où         c = cotg              v   . Sur le bord de ce rectangle, la fonction
+à indiquer est majorée en module par
+
+                           1 h ^o
+                         (^ I e   1                                                1
+                      ————————————————                   ,       avec   z       = -~-ic .
+                      ^^•••(V1»'1"'1 '                                      °        2
+
+Pour minorer le dénominateur de cette expression, on étudie la quantité
+                                  n
+                                            ,
+                             L = L log(z +-'-) .
+                                 j=0
+D'après la formule d'Euler-Maclaurin,
+
+                L =
+           .          ^ ^(Vi^ + i(log(z,)+log(z^D) . ^^-^) - ^ ,
+
+
+          1 1      1 i"   dt     ,   1
+avec            s
+          1 Pnl
+             nl   ÏT i —————3 " ————
+                   ^^It+1
+                          n z l1   24n 2 c 3
+                                     0
+
+D'où
+          Re(L) . n(^log^(l-.c2)^^ -1) ^ log^l^c2)) -—————^ (1^)                                     .
+                                                     6n c
+On en déduit facilement la majoration
+                                                                                                         M
+]_30                                                                                                         - MIGNOTTE
+
+
+
+
+                                                 r ^m T^^
+       \\^\ -^fe)22^^^^————-P(-(-1)4W^)-1)).
+
+
+Remarctue : On peut montrer, grâce à la méthode du col, que, pour un fixé
+
+                                  log L = -(m+lïnî-l-log^11-)-!) + 0(log n). ,
+
+ce qui montre que la majoration ci-dessous est essentiellement la meilleure pos-
+sible .
+
+
+H. - MAJORATION DE                      R ( x ) , x réel.
+
+          On supposera             x > 1 . O n considère               L.(x)         comme dans le paragraphe
+précédent mais en remplaçant                    r       par le bord du rectangle de sommets
+z^ ± i(z^-l)        et    -z^-l±i(z^l) , avec                     z^ = ^l/(m+l)^                •
+
+          On obtient alors                                                       ^
+                                                                           m
+                                           ^n               (2(l^))             x    °
+                         IR       X)1      2        n(m+l)
+                              ^          ' - n                  |z(z.l)...(z.l)l m+l
+                                                                ' o o n    o    '
+d'où, comme plus haut,
+
+
+                                                     6n
+                                                        -^-zr)
+                        Px^d+z ))'"                 e
+                                                        'o
+           i nR (xM  /______£__                     —————-—                         exp(-n(m+l)(log(z +!)-!)) .
+           I h' x 'l îi      n(m+l)                           m+1                     '              o
+                        ZTT n                                  9
+                                                    (z (z +1)
+                                                        0   0
+
+
+
+
+III. - MAJORATION DE                     A^(x) , x réel.
+
+          On supposera             x > 1 . Il est facile de voir                         (cf. [2]) que       A^   est donné
+
+                                         , ,    mî —m/          vm+1       ^         (\,h) n-X
+                                   V ^ ' i T 1 ^ (nî)                  ^o'-^ 1                      '
+
+            (xth}
+ avec         = -]— r ——2-dz——T                             où    c
+                                                                               désigne le cercle de centre           -X
+           1K    2ni
+                       'C Q(z)(z4.x) K+l                               ^
+                          x
+             1
+ et de rayon ^- . D ' o ù
+Approximations rationnelles                                                                                     131
+
+
+                   , X,h.    /   .m2(n+l)(m+l)m+l                            _ X'O^x)!
+                   ^K   1 ^ (n+l) 2         ^ .                    ' ou    \~ (2x)!(2n-2^)!              •
+Soit
+
+     | ê v ^ x ^ l ^ (n+l)1^2^1"^ £ q^x^ <. (n+l)"1^2^1^1^
+      X=0 K                      X=0 x
+
+où     K = max | q            x          | . Pour chercher K , on peut remarquer que
+
+                                            m+1 n-(\+l)
+                                           \+1 x               _ ^ 2n-2^1 m+l ^ 1 _ m+1
+                                            m+1  n-x             x   2X+1         x^\
+                                            À
+où     cp. = n - 1                est une fonction décroissante de                     X     . Ceci prouve que la
+         X  ^X'-l-
+suite        q"1"1" x"^      est concave. On en déduit facilement
+              A.
+
+                                            n-(ç —)                                    m+1
+                                    ..          n z /., /       e              »n.
+                                    K ^ x              (4(——,—————) )
+                                                            4n^(l-ç)          '
+où     Çn - ~          désigne la solution de l'équation en                   y
+            z
+                                                 l^n^v-l"^1               ,
+                                                                     = 1
+                                                 x(-^-)                            -
+
+soit             . //-.i \——
+            ç = ^l/(m+l)^
+
+            Finalement,
+                                                      n m+1 „ , , , .                             n(m+l) (l-ç)n+-r
+       ,.     , .,          mt/     ..m+l.-m,     - ,n.\    ,,4(m+l)^                      e_____.               2
+                   1                        N           )      2              (—
+       ^hic^
+       ' hk            ^    kT^^
+                            kî                  ^"ye .                            £———^~T)•)>î
+                                                                                  nç'd-çr
+
+
+                                    ^(m+1)       ..      .      n(m+l) (l-ç)n+ 1
+                            m / ...2       .   ^m+l^mf   1____»                 2
+                       <s   ^-'(n+l)
+                            k!             (16e)    N (——————-)       x
+                                                              r(i-ç) '
+Complément.
+
+            Pour une méthode totalement différente, on peut démontrer le résultat sui-
+vant :
+
+                                    £
+THEOREME 5. - Pour                        rationnel,   q s 3 On d
+
+                                           Itgl^l      . l(f5         î^0^                    .
+                                                                      q       log q
+1
+ ^                                                                      M . MIGNOTTE
+
+
+
+                                    BIBLIOGRAPHIE
+
+
+[1]   CHOONG K . Y . ; DAYKIN D . E . ; RATHBORNE C . R . - Rational approximations
+          to TT . Math. Comp. 25 (1971), pp. 387-392.
+
+[2]   MAHLER K. - On thé approximation of logarithms of algebraic numbers. Phil.
+           Trans. Royal Soc. of London, A, 2 4 5 , (1953), pp. 371-398.
+
+[3]   MAHLER K. - On thé approximation of TT . Proc. K. Ned. Akad. Wet. Ams-
+           terdam, A , 56 (== Indag. Math. 15) (1953) pp. 2 9 - 4 2 .
+
+[4]   MAHLER K. - Applications of some formulae by Hermite to thé approximation
+           of exponentials and logarithms. Math. Annales, 168 (1967) pp. 2 0 0 - 2 2 7 .
+
+[5]   ROSSER J . B . and SCHOENFELD L. - Approximate formulas for some fuhctions
+            of prime numbers. Illinois J. Math. 6 (1962) pp. 64-94.
+
+[6]   SCHMIDT W . M . - Approximation to algebraic numbers. Enseign. M a t h . /
+           XVII (1971) pp. 187-253. (= Monographie n°19 de l'Enseignement
+           Mithématique, Genève 1972).
+
+
+
+
+                                       M*. MIGNOTTE
+                                       G . S. P. Département de Mathématiques
+                                       Place du 8 mai 45
+                                       93206 SAINT DENIS
+

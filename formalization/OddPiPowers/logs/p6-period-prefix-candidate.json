@@ -1,0 +1,223 @@
+{
+  "status": "candidate, NOT compiled or accepted",
+  "periods": 32,
+  "scale": 100000000000000,
+  "accepted_data_source": "formalization\\OddPiPowers\\OddPiPowers\\Arithmetic\\TwelveLayerCellChunks.lean",
+  "accepted_data_sha256": "f3f96969ae5dd6170ea95598572d406bc3132edfc3da7282c9e7e37ed7666ade",
+  "chunks": [
+    {
+      "module": "P6PeriodPrefix00",
+      "cells": 37,
+      "floors": 1184,
+      "numerator": 224094434293677,
+      "source_sha256": "6cf3ba8ee2d8ba415c26b75029a75fa33df7c9039abc4bf787eb40a22697c179"
+    },
+    {
+      "module": "P6PeriodPrefix01",
+      "cells": 38,
+      "floors": 1216,
+      "numerator": 86243318709215,
+      "source_sha256": "d4a82432c13e4d390f600e8dcd90aa5b661aae4d71f77cbea88e21a96701273b"
+    },
+    {
+      "module": "P6PeriodPrefix02",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 35569167960394,
+      "source_sha256": "5f9582af21933376856f422071e44b97caaec398d48ef4a741df45083f86f401"
+    },
+    {
+      "module": "P6PeriodPrefix03",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 16604036580503,
+      "source_sha256": "09693e3842e8e5841641ddcb666e540c827142c688120761da64e9ca4bd76445"
+    },
+    {
+      "module": "P6PeriodPrefix04",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 11603679271852,
+      "source_sha256": "9aae9dc90cbaad7d995c738730f6c1daf2b88aef780aaa20846868e2cb42c948"
+    },
+    {
+      "module": "P6PeriodPrefix05",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 7254677673124,
+      "source_sha256": "8de0231b6431a41428473eb3a99f8d74b6d5b4146f58e00cd0a9108e50f65067"
+    },
+    {
+      "module": "P6PeriodPrefix06",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 5175147602627,
+      "source_sha256": "d2d2e3785db4a265396246a2a7d02843d777fdc694eac44fa1e0d43b4f9684ef"
+    },
+    {
+      "module": "P6PeriodPrefix07",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 4098745295691,
+      "source_sha256": "b7ddb34023528b1ca6e901acc45bce89a5f21777ee90b5013406a37904fe43dc"
+    },
+    {
+      "module": "P6PeriodPrefix08",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 3084861912160,
+      "source_sha256": "833f22aa3ad5df9b40c1e1758a032ec8458d2b3a65e1b507e267a3486be05add"
+    },
+    {
+      "module": "P6PeriodPrefix09",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 2628354964162,
+      "source_sha256": "7e0aedad0d9bb79766026c21e72e4b24a17cb87ea58f8cab33a77d89f7e31f83"
+    },
+    {
+      "module": "P6PeriodPrefix10",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 2027470407437,
+      "source_sha256": "619f233014232d5dd1126dde0faa38545694a92fd104765eb8fceb2f3828dbeb"
+    },
+    {
+      "module": "P6PeriodPrefix11",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 1803399240158,
+      "source_sha256": "cd17d139328713ffcb9de7982a660c942a6a2aaaec06fd05401f47242255f8ca"
+    },
+    {
+      "module": "P6PeriodPrefix12",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 1648239183618,
+      "source_sha256": "43e16ff1e0df9fff2556bd988031c979d172765da6c0719f5a55a41db2036ba9"
+    },
+    {
+      "module": "P6PeriodPrefix13",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 1277081131912,
+      "source_sha256": "e4a9b97cd39698bec89a0058c3ef2cc5b258c594fa561718566a5b4d482438df"
+    },
+    {
+      "module": "P6PeriodPrefix14",
+      "cells": 38,
+      "floors": 1216,
+      "numerator": 937960217714,
+      "source_sha256": "fefc2d1d631039d4e920ea2bbceeea5840b09715611e7a207f6c2e6a00c0ffd4"
+    },
+    {
+      "module": "P6PeriodPrefix15",
+      "cells": 39,
+      "floors": 1248,
+      "numerator": 1038295479939,
+      "source_sha256": "45502378d513adb9538447ec901a21cf33b4425a31e8c981127491b8b037ee44"
+    },
+    {
+      "module": "P6PeriodPrefix16",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 980347906893,
+      "source_sha256": "d42fa8148eec887062ff6e6c5a891106f1e0f7107c386ec31d1b286625c60ded"
+    },
+    {
+      "module": "P6PeriodPrefix17",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 896284048570,
+      "source_sha256": "54ac3bfece58823d75598cf3e631e46c8c7e455f179b3cbe2e402ffc92402329"
+    },
+    {
+      "module": "P6PeriodPrefix18",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 783841405359,
+      "source_sha256": "7e39a821d187ae821b5b64374ce4fc3436c53b7813cf9d8a3c0aab2f2c6cb14a"
+    },
+    {
+      "module": "P6PeriodPrefix19",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 711151078441,
+      "source_sha256": "6232d9bc1905007d0693b82a5e233d119660ca17e30440456766c34278b5e7d4"
+    },
+    {
+      "module": "P6PeriodPrefix20",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 662939121375,
+      "source_sha256": "817f15220a1cd0e36007f4ec29ffd2f2ab504f544cf5a49ed55a9011db12d36d"
+    },
+    {
+      "module": "P6PeriodPrefix21",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 593023893608,
+      "source_sha256": "369070c765cb99316a92f6cfb0be8af9029edc2686882c7e00d90935e9b183cc"
+    },
+    {
+      "module": "P6PeriodPrefix22",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 607948924723,
+      "source_sha256": "68c90d68ae66aa3a0488a3bf68f9fcc5ddd93d8a0d1fbf29e50aa9fab605c9f7"
+    },
+    {
+      "module": "P6PeriodPrefix23",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 487786966155,
+      "source_sha256": "1bb0c7252bc9058de27ae40a96ee7b8b37b672b8a3642ab9ca852df505527ccd"
+    },
+    {
+      "module": "P6PeriodPrefix24",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 562160900780,
+      "source_sha256": "a355078fb9146c35b9b7396464d50a1f886eb5c5f109c15aa96b200d5e5a3eda"
+    },
+    {
+      "module": "P6PeriodPrefix25",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 427170537066,
+      "source_sha256": "6c45bccd704bc40a26297bc35d3e1b4358ab724e6024c52838f956839195f4ca"
+    },
+    {
+      "module": "P6PeriodPrefix26",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 425433140036,
+      "source_sha256": "bbb3bf8f9d9fa4bd5a81bb23e167a3f4e72244c8f6baa54f84477013d228cfa9"
+    },
+    {
+      "module": "P6PeriodPrefix27",
+      "cells": 40,
+      "floors": 1280,
+      "numerator": 386711440258,
+      "source_sha256": "0150b0ee149de7df72d136cbf511f5990cd7c8ac43360509e648783475ef1b3f"
+    },
+    {
+      "module": "P6PeriodPrefix28",
+      "cells": 36,
+      "floors": 1152,
+      "numerator": 190357879926,
+      "source_sha256": "25f25140ff0f536e43471fdaadb50c909cbf5773e9083fef53501d7cfd302ecb"
+    },
+    {
+      "module": "P6PeriodPrefix29",
+      "cells": 18,
+      "floors": 576,
+      "numerator": 44870080754,
+      "source_sha256": "10f128cf323aac0e8e21860419538a46d5f1c328e76902b3919629b2794fde91"
+    }
+  ],
+  "total_numerator": 412848897248127,
+  "total_floor_rate": "412848897248127/100000000000000",
+  "tail_numerator": 205621482243,
+  "combined_floor_rate": "41305451873037/10000000000000"
+}

@@ -1,0 +1,79 @@
+'OddPiPowers.horizontalB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalB_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalFactor_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalFactor_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontal_pair_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.symmetric_horizontal_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalOffset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.interval_reflect_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.prod_interval_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalOffset_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalOffset_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalPoint_add_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominator_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct_normSq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.interval_horizontal_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_normSq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_tail_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_norm_neg_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_tail_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_lower_tail_pow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.horizontalMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorantConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_le_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.continuous_horizontalMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.integrable_horizontalMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalPoint_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalPoint_norm_neg_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_norm_neg_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.continuous_horizontalPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.continuous_horizontalDenominator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.continuous_horizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_horizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_horizontalKernel_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalKernel_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalKernel_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_normalizedHorizontalKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_integral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominator_natDegree_ge_n_add_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayer_denominator_degree_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_horizontal_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_horizontal_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_horizontal_uniform_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,728 @@
+⚠ [2156/2160] Replayed OddPiPowers.Construction.ActualAuxiliary
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:15:0: 'Mathlib.Data.Complex.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Complex.Basic
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:835:10: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Finset.mem_filter]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:896:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:912:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1028:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1036:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1057:22: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_pow, Polynomial.coeToPowerSeries.ringHom_apply, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1064:13: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1101:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1103:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ne.symm hqj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1163:12: This simp argument is unused:
+  principalPartTruncation
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sub_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1218:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1324:26: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coeToPowerSeries.ringHom_apply, map_mul, map_pow, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1326:17: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1385:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1402:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1484:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1676:56: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [factorialBorelShift, div_eq_mul_inv, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1795:44: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1837:5: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2144:28: This simp argument is unused:
+  Polynomial.eval₂_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Polynomial.eval₂_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: OddPiPowers/Construction/ActualAuxiliary.lean:2160:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:34: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵.̵l̵t̵_̵i̵f̵f̵_̵v̵a̵l̵_̵l̵t̵_̵v̵a̵l̵F̲i̲n̲.̲l̲t̲_̲d̲e̲f̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:27: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Fin.lt_iff_val_lt_val, hj0] at hij
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2326:44: This simp argument is unused:
+  auxiliaryJetVector
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [auxiliaryColumnTransform, d, hi0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2446:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [actualAuxiliaryExponentialEval]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2454:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [PowerSeries.C_eq_algebraMap]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3026:4: Unused tactic linter: `change (ell.val ∈ P.interval j) ↔ P.left j ≤ ell.val` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3200:10: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3222:6: This simp argument is unused:
+  Polynomial.taylor_coeff_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [B, Polynomial.coeToPowerSeries.ringHom_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3295:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hcoefFactor]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:10: This simp argument is unused:
+  actualAuxiliaryPolynomialMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryLeadingMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:43: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryPolynomialMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3357:36: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at hIm
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [2158/2160] Replayed OddPiPowers.Arithmetic.SignedCarry
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:19:45: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:23:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:40:18: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2159/2160] Replayed OddPiPowers.Arithmetic.ContinuousCarry
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:40:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:53:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:36:31: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [add_assoc, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:89:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:94:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:256:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:257:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:256:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:257:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:268:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:268:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:377:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hγ, hfrac14, hγ0, h14not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:381:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hz0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:353:27: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:469:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfrac14, hγneg, h14lo']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:474:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hαleβ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:552:37: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:589:29: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:592:29: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+✖ [2160/2160] Building OddPiPowers.Arithmetic.TwelveLayerCells (22s)
+trace: .> LEAN_PATH=C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean c:\Users\hc260\.elan\toolchains\leanprover--lean4---v4.35.0\bin\lean.exe C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCells.lean -o C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Arithmetic\TwelveLayerCells.olean -i C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Arithmetic\TwelveLayerCells.ilean -c C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Arithmetic\TwelveLayerCells.c --setup C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Arithmetic\TwelveLayerCells.setup.json --json
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:100:4: Application type mismatch: The argument
+  ((twelveAdjacentBounds.zip twelveRankValueRows).zip twelveOrderCodeRows).zip
+has type
+  List ?m.9 → List ((((ℚ × ℚ) × ℕ × ℕ) × ℕ) × ?m.9)
+but is expected to have type
+  List ?m.1
+in the application
+  List.zipWith (fun x floorCode => ?m.6) ((twelveAdjacentBounds.zip twelveRankValueRows).zip twelveOrderCodeRows).zip
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:119:71: unsolved goals
+⊢ 1180 ≤ (sorry ()).length
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:120:8: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:120:30: This simp argument is unused:
+  twelveAdjacentBounds
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerCellTable, twelveCutValues, List.length_zip, List.length_map, twelveCutWitnessRows_length,
+    twelveRankValueRows_length, twelveOrderCodeRows_length, twelveFloorCodeRows_length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:120:52: This simp argument is unused:
+  twelveCutValues
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerCellTable, twelveAdjacentBounds, List.length_zip, List.length_map,
+    twelveCutWitnessRows_length, twelveRankValueRows_length, twelveOrderCodeRows_length, twelveFloorCodeRows_length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:121:4: This simp argument is unused:
+  List.length_zip
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerCellTable, twelveAdjacentBounds, twelveCutValues, List.length_map,
+    twelveCutWitnessRows_length, twelveRankValueRows_length, twelveOrderCodeRows_length, twelveFloorCodeRows_length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:121:21: This simp argument is unused:
+  List.length_map
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerCellTable, twelveAdjacentBounds, twelveCutValues, List.length_zip,
+    twelveCutWitnessRows_length, twelveRankValueRows_length, twelveOrderCodeRows_length, twelveFloorCodeRows_length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:121:38: This simp argument is unused:
+  twelveCutWitnessRows_length
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerCellTable, twelveAdjacentBounds, twelveCutValues, List.length_zip, List.length_map,
+    twelveRankValueRows_length, twelveOrderCodeRows_length, twelveFloorCodeRows_length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:122:4: This simp argument is unused:
+  twelveRankValueRows_length
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerCellTable, twelveAdjacentBounds, twelveCutValues, List.length_zip, List.length_map,
+    twelveCutWitnessRows_length, twelveOrderCodeRows_length, twelveFloorCodeRows_length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:122:32: This simp argument is unused:
+  twelveOrderCodeRows_length
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerCellTable, twelveAdjacentBounds, twelveCutValues, List.length_zip, List.length_map,
+    twelveCutWitnessRows_length, twelveRankValueRows_length, twelveFloorCodeRows_length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:246:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:246:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:245:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:253:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:253:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:252:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:261:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:261:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:260:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:268:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:268:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:267:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:275:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:275:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:274:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:282:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:282:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:281:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:289:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:289:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:288:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:296:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:296:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:295:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:303:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:303:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:302:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:310:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:310:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:309:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:317:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:317:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:316:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:324:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:324:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:323:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:331:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:331:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:330:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:338:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:338:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:337:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:345:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:345:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:344:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:352:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:352:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:351:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:359:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:359:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:358:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:366:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:366:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:365:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:373:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:373:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:372:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:380:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:380:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:379:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:387:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:387:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:386:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:394:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:394:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:393:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:401:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:401:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:400:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:408:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:408:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:407:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:415:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:415:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:414:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:422:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:422:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:421:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:429:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:429:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:428:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:436:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:436:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:435:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:443:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:443:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:442:2: declaration uses `sorry`
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:450:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:450:2: Tactic `native_decide` failed: Could not evaluate decidable instance. Error: cannot evaluate code because 'sorryAx' uses 'sorry' and/or contains errors
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:449:2: declaration uses `sorry`
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:465:31: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 40 twelveLayerCellTable) ++ List.drop 40 (List.drop 40 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 40 twelveLayerCellTable) ++ List.drop 80 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:471:33: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 80 twelveLayerCellTable) ++ List.drop 40 (List.drop 80 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 80 twelveLayerCellTable) ++ List.drop 120 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:477:35: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 120 twelveLayerCellTable) ++ List.drop 40 (List.drop 120 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 120 twelveLayerCellTable) ++ List.drop 160 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:483:37: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 160 twelveLayerCellTable) ++ List.drop 40 (List.drop 160 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 160 twelveLayerCellTable) ++ List.drop 200 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:489:39: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 200 twelveLayerCellTable) ++ List.drop 40 (List.drop 200 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 200 twelveLayerCellTable) ++ List.drop 240 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:495:41: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 240 twelveLayerCellTable) ++ List.drop 40 (List.drop 240 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 240 twelveLayerCellTable) ++ List.drop 280 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:501:43: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 280 twelveLayerCellTable) ++ List.drop 40 (List.drop 280 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 280 twelveLayerCellTable) ++ List.drop 320 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:507:45: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 320 twelveLayerCellTable) ++ List.drop 40 (List.drop 320 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 320 twelveLayerCellTable) ++ List.drop 360 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:513:47: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 360 twelveLayerCellTable) ++ List.drop 40 (List.drop 360 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 360 twelveLayerCellTable) ++ List.drop 400 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:519:49: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 400 twelveLayerCellTable) ++ List.drop 40 (List.drop 400 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 400 twelveLayerCellTable) ++ List.drop 440 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:525:51: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 440 twelveLayerCellTable) ++ List.drop 40 (List.drop 440 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 440 twelveLayerCellTable) ++ List.drop 480 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:531:53: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 480 twelveLayerCellTable) ++ List.drop 40 (List.drop 480 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 480 twelveLayerCellTable) ++ List.drop 520 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:537:55: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 520 twelveLayerCellTable) ++ List.drop 40 (List.drop 520 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 520 twelveLayerCellTable) ++ List.drop 560 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:543:57: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 560 twelveLayerCellTable) ++ List.drop 40 (List.drop 560 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 560 twelveLayerCellTable) ++ List.drop 600 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:549:59: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 600 twelveLayerCellTable) ++ List.drop 40 (List.drop 600 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 600 twelveLayerCellTable) ++ List.drop 640 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:555:61: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 640 twelveLayerCellTable) ++ List.drop 40 (List.drop 640 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 640 twelveLayerCellTable) ++ List.drop 680 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:561:63: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 680 twelveLayerCellTable) ++ List.drop 40 (List.drop 680 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 680 twelveLayerCellTable) ++ List.drop 720 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:567:65: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 720 twelveLayerCellTable) ++ List.drop 40 (List.drop 720 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 720 twelveLayerCellTable) ++ List.drop 760 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:573:67: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 760 twelveLayerCellTable) ++ List.drop 40 (List.drop 760 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 760 twelveLayerCellTable) ++ List.drop 800 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:579:69: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 800 twelveLayerCellTable) ++ List.drop 40 (List.drop 800 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 800 twelveLayerCellTable) ++ List.drop 840 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:585:71: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 840 twelveLayerCellTable) ++ List.drop 40 (List.drop 840 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 840 twelveLayerCellTable) ++ List.drop 880 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:591:73: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 880 twelveLayerCellTable) ++ List.drop 40 (List.drop 880 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 880 twelveLayerCellTable) ++ List.drop 920 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:597:75: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 920 twelveLayerCellTable) ++ List.drop 40 (List.drop 920 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 920 twelveLayerCellTable) ++ List.drop 960 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:603:77: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 960 twelveLayerCellTable) ++ List.drop 40 (List.drop 960 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 960 twelveLayerCellTable) ++ List.drop 1000 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:609:79: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 1000 twelveLayerCellTable) ++ List.drop 40 (List.drop 1000 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 1000 twelveLayerCellTable) ++ List.drop 1040 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:615:81: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 1040 twelveLayerCellTable) ++ List.drop 40 (List.drop 1040 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 1040 twelveLayerCellTable) ++ List.drop 1080 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:621:83: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 1080 twelveLayerCellTable) ++ List.drop 40 (List.drop 1080 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 1080 twelveLayerCellTable) ++ List.drop 1120 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:627:85: Application type mismatch: The argument
+  htmp
+has type
+  c ∈ List.take 40 (List.drop 1120 twelveLayerCellTable) ++ List.drop 40 (List.drop 1120 twelveLayerCellTable)
+but is expected to have type
+  c ∈ List.take 40 (List.drop 1120 twelveLayerCellTable) ++ List.drop 1160 twelveLayerCellTable
+in the application
+  List.mem_append.mp htmp
+error: OddPiPowers/Arithmetic/TwelveLayerCells.lean:635:84: unsolved goals
+⊢ (List.zipWith (fun x floorCode => twelveCellTableRow x.1.1 x.1.2 x.2 floorCode) (sorry ())
+            [0, 2736874734008091634300000000000000000000000, 2775972944493921514790000000000000000000000,
+              2776531490358004798797000000000000000000000, 2776539469584634559997100000000000000000000,
+              2776539583573586413728530000000000000000000, 2776539585202000011638979000000000000000000,
+              2776539585225263063037699700000000000000000, 2776539585225595392343395710000000000000000,
+              2776539585225600139904905653000000000000000, 2776539585225600207727212937900000000000000,
+              2776539585225600208696103041970000000000000, 2776539585225600208709944329171000000000000,
+              2776539585225600208709944329171000000000000, 2776539585225600208709944329171000000000000,
+              2776539585225600208709944329171000000000000, 2776539585225600208709944329171000000000000,
+              2776539585225600208709944329171000000000000, 2776539585225600208709944329171000000000000,
+              2776539585225600208709944329171000000000000, 2776539585225600208709944329171000000000000,
+              2776539585225600208709944329171000000000000, 2776539585225600208709944329171000000000000,
+              2776539585225600208709944329171000000000000, 5513414319233691843009944329171000000000000,
+              5552512529719521723499944329171000000000000, 5553071075583605007506944329171000000000000,
+              5553079054810234768707044329171000000000000, 5553079168799186622438474329171000000000000,
+              5553079170427600220348923329171000000000000, 5553079170450863271747644029171000000000000,
+              5553079170451195601053340039171000000000000, 5553079170451200348614849982171000000000000,
+              5553079170451200416437157267071000000000000, 5553079170451200417406047371141000000000000,
+              5553079170451200417419888658342000000000000, 5553079170451200417419888658342000000000000,
+              5553079170451200417419888658342000000000000, 5553079170451200417419888658342000000000000,
+              5553079170451200417419888658342000000000000, 5553079170451200417419888658342000000000000,
+              5553079170451200417419888658342000000000000, 5553079170451200417419888658342000000000000,
+              5553079170451200417419888658342000000000000, 5553079170451200417419888658342000000000000,
+              5553079170451200417419888658342000000000000, 5553079170451200417419888658342000000000000, ⋯])[0]?.getD
+      { left := 0, right := 1, rankCode := 0, orderCode := 0, floorCode := 0, value := 0 } =
+    { left := 0, right := 1 / 69, rankCode := 1331214537196502869015340298036888,
+      orderCode := 1331214537196502869015340298036888, floorCode := 0, value := 0 }
+warning: OddPiPowers/Arithmetic/TwelveLayerCells.lean:637:31: declaration uses `sorry`
+Some required targets logged failures:
+- OddPiPowers.Arithmetic.TwelveLayerCells
+error: build failed

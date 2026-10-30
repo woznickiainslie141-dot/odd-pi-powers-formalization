@@ -1,0 +1,16 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectangleContour.lean:34:2: error: Type mismatch: After simplification, term
+  ht
+ has type
+  (((∫ (x : ℝ) in a..b, f (↑x + ↑(0 + c) * Complex.I)) - ∫ (x : ℝ) in a..b, f (↑x + ↑(0 + d) * Complex.I)) +
+        Complex.I * ∫ (y : ℝ) in 0 + c..0 + d, f (↑b + ↑y * Complex.I)) -
+      Complex.I * ∫ (y : ℝ) in 0 + c..0 + d, f (↑a + ↑y * Complex.I) =
+    0
+but is expected to have type
+  (((∫ (x : ℝ) in a..b, f (↑x + ↑c * Complex.I)) - ∫ (x : ℝ) in a..b, f (↑x + ↑d * Complex.I)) +
+        Complex.I * ∫ (y : ℝ) in c..d, f (↑b + ↑y * Complex.I)) -
+      Complex.I * ∫ (y : ℝ) in c..d, f (↑a + ↑y * Complex.I) =
+    0
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Complex.mulAux ↦ 24
+  Real.instAdd ↦ 8

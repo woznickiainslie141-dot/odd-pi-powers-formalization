@@ -1,0 +1,18 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:86:11: error: `simp` made no progress
+M : ℕ
+P : ActualIntervals M
+hn : 0 < P.n
+Y t : ℝ
+⊢ ∏ x, ∏ x ∈ P.interval x, (horizontalPoint P.n Y t + Polynomial.eval₂ (Rat.castHom ℂ) (horizontalPoint P.n Y t) ↑x) =
+    ↑P.n ^ P.totalMultiplicity * P.normalizedHorizontalProduct Y t
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:84:46: warning: This simp argument is unused:
+  Polynomial.eval₂_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [horizontalDenominator, denominator, Polynomial.eval₂_finsetProd, Polynomial.eval₂_add,
+    Polynomial.eval₂_X, map_natCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:98:2: warning: Try this: intro r hr he
+
+Note: This linter can be disabled with `set_option linter.tacticAnalysis.introMerge false`

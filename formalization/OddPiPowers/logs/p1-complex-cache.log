@@ -1,0 +1,40 @@
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 402 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/402 = 0%, 83 KB/s][K
+Downloaded: 7 file(s) [attempted 7/402 = 1%, 6 KB/s][K
+Downloaded: 17 file(s) [attempted 17/402 = 4%, 6 KB/s][K
+Downloaded: 29 file(s) [attempted 29/402 = 7%, 18 KB/s][K
+Downloaded: 44 file(s) [attempted 44/402 = 10%, 45 KB/s][K
+Downloaded: 52 file(s) [attempted 52/402 = 12%, 37 KB/s][K
+Downloaded: 65 file(s) [attempted 65/402 = 16%, 41 KB/s][K
+Downloaded: 78 file(s) [attempted 78/402 = 19%, 57 KB/s][K
+Downloaded: 90 file(s) [attempted 90/402 = 22%, 91 KB/s][K
+Downloaded: 100 file(s) [attempted 100/402 = 24%, 116 KB/s][K
+Downloaded: 110 file(s) [attempted 110/402 = 27%, 95 KB/s][K
+Downloaded: 114 file(s) [attempted 114/402 = 28%, 134 KB/s][K
+Downloaded: 122 file(s) [attempted 122/402 = 30%, 34 KB/s][K
+Downloaded: 136 file(s) [attempted 136/402 = 33%, 31 KB/s][K
+Downloaded: 150 file(s) [attempted 150/402 = 37%, 90 KB/s][K
+Downloaded: 162 file(s) [attempted 162/402 = 40%, 203 KB/s][K
+Downloaded: 174 file(s) [attempted 174/402 = 43%, 89 KB/s][K
+Downloaded: 189 file(s) [attempted 189/402 = 47%, 30 KB/s][K
+Downloaded: 198 file(s) [attempted 198/402 = 49%, 91 KB/s][K
+Downloaded: 210 file(s) [attempted 210/402 = 52%, 318 KB/s][K
+Downloaded: 225 file(s) [attempted 225/402 = 55%, 86 KB/s][K
+Downloaded: 237 file(s) [attempted 237/402 = 58%, 69 KB/s][K
+Downloaded: 244 file(s) [attempted 244/402 = 60%, 115 KB/s][K
+Downloaded: 260 file(s) [attempted 260/402 = 64%, 153 KB/s][K
+Downloaded: 270 file(s) [attempted 270/402 = 67%, 58 KB/s][K
+Downloaded: 277 file(s) [attempted 277/402 = 68%, 141 KB/s][K
+Downloaded: 299 file(s) [attempted 299/402 = 74%, 121 KB/s][K
+Downloaded: 313 file(s) [attempted 313/402 = 77%, 326 KB/s][K
+Downloaded: 335 file(s) [attempted 335/402 = 83%, 47 KB/s][K
+Downloaded: 349 file(s) [attempted 349/402 = 86%, 114 KB/s][K
+Downloaded: 390 file(s) [attempted 390/402 = 97%, 116 KB/s][K
+Downloaded: 399 file(s) [attempted 399/402 = 99%, 286 KB/s][K
+Downloaded: 402 file(s) [attempted 402/402 = 100%, 286 KB/s][K
+Still decompressing downloaded files...
+Decompressed 402 file(s)
+Already decompressed 2977 file(s)

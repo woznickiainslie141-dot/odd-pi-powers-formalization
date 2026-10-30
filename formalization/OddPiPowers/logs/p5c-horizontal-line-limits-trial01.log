@@ -1,0 +1,19 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\HorizontalLineLimits.lean:20:55: error: unsolved goals
+n : ℕ
+hn : 0 < n
+Y x : ℝ
+hn0 : ↑n ≠ 0
+⊢ ↑x * 2 + ↑n * Complex.I * ↑Y * 2 = ↑x * 2 + Complex.I * ↑(↑n * Y) * 2
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\HorizontalLineLimits.lean:49:13: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [g]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

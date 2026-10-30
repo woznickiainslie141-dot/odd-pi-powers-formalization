@@ -1,0 +1,110 @@
+\section{How the constants are computed and certified}
+\label{sec:computation}
+
+\subsection{An exact finite combinatorial calculation}
+
+The common divisor does not require numerical integration over a
+circle. The calculation is finite:
+\begin{enumerate}
+\item Form the integer slopes \(0,t_j,L-t_j\) and all nonzero
+differences.
+\item Form and sort the rational critical points \(a/d\in[0,1]\).
+\item In each open critical cell choose its rational midpoint \(z\).
+Sort all fractional endpoints \(\{t_jz\},\{(L-t_j)z\}\).
+\item Evaluate the integer vector \(W(z,y)\) at each rational
+midpoint between consecutive endpoints. Minimize its weighted sum.
+\item Apply the finite digamma sum~\eqref{eq:gamma}. Adjacent cells
+with the same minimum may be merged.
+\end{enumerate}
+Only the final special-function evaluations use real arithmetic.
+All endpoint orderings and minima use exact fractions and integers.
+
+For the base weights \((6,1,\ldots,1)\) at \(L=69\), the first
+merged nonzero cells are:
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Left endpoint&Right endpoint&\(f\)\\
+\midrule
+\(1/69\)&\(1/67\)&6\\
+\(1/67\)&\(1/65\)&7\\
+\(1/65\)&\(1/62\)&8\\
+\(1/62\)&\(1/60\)&7\\
+\(1/60\)&\(1/58\)&6\\
+\(1/58\)&\(1/56\)&5\\
+\(1/56\)&\(1/54\)&4\\
+\(1/54\)&\(1/52\)&3\\
+\bottomrule
+\end{tabular}
+\end{center}
+These are only the beginning of the partition. Endpoint wraparound
+and changing overlaps make a full computation preferable to
+extrapolating a pattern from the first few cells.
+The complete merged list is supplied in the certificate data.
+
+\subsection{Ball arithmetic, root signs, and strict rounding}
+
+The standalone program \texttt{code/certify.py} requires Python and
+\texttt{python-flint}. It uses Arb~\cite{Arb} at 256-bit precision.
+A ball encloses the exact real value by a midpoint and a rigorously
+propagated error radius.
+
+The saddle equation is strictly decreasing. At \(Y=1/2\) its
+left side minus \(\Theta\) is positive, and at \(Y=2M\) it is
+negative. The program performs 210 rational bisections, accepting
+each sign only if the entire corresponding ball has that sign.
+It then evaluates \(D_0,G_0,\gamma,D,G,\Delta_k,E_k\) on the
+resulting interval and asserts both \(\Delta_k>0\) and the advertised
+strict upper bound.
+
+For example, in the twelve-layer cubic case it encloses
+\[
+E_3=1203.97243920634698117089090450914656\ldots
+\]
+with an error radius below \(6\cdot10^{-59}\).
+The assertion \(E_3<1203.973\) has a wide safety margin relative
+to this radius. The certificate does not assume that a floating-point
+optimizer located a true minimum.
+
+The same program checks the arc bound independently against
+all integer pole positions for \(n=345\): 52 nonexceptional primes
+are checked, and 39 have a positive guaranteed divisor exponent.
+This finite check tests the combinatorial implementation; the
+proof for arbitrary \(n\) is Lemma~\ref{lem:valuation}.
+
+\subsection{Reproduction and the role of each file}
+
+Run the following from the project directory:
+\begin{verbatim}
+python code/certify.py
+python code/finite_checks.py
+xelatex -interaction=nonstopmode -halt-on-error main.tex
+xelatex -interaction=nonstopmode -halt-on-error main.tex
+\end{verbatim}
+The first command regenerates \texttt{data/certificates.json}.
+The second requires SymPy and checks the small exact examples in
+Appendix~\ref{app:examples}.
+Optional experiment programs require the additional packages stated
+in the README. They are not prerequisites for the main proof.
+
+The certificate records the parameters, merged nonzero arc cells,
+root enclosure, all rates, the gap, and the strict comparisons.
+Its purpose is to make the numerical part reproducible.
+The prime number theorem and the asymptotic inequalities are
+mathematical inputs, not claims checked by a finite program.
+
+\subsection{Parameter order and effectivity}
+
+For a chosen odd \(k\), first fix \(L,t_j,\nu_j\), or fix the scale
+\(s\) in the twelve-layer family. Then fix an exponent slack
+\(\varepsilon\), and choose the small \(\eta\) in
+Section~\ref{sec:transfer}. Only after these choices does \(n\)
+tend to infinity, and only then is \(n\) selected as a function of
+the approximation denominator \(q\).
+
+This manuscript gives explicit upper bounds on the irrationality
+\emph{exponent}. It does not tabulate an explicit numerical
+\(q_0(\varepsilon)\) or the constants in~\eqref{eq:measuremeaning}.
+Those would require explicit versions of the prime-counting
+remainder and all finite error terms. They are a separate
+effectivity calculation, not part of the decimal certification.

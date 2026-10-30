@@ -1,0 +1,31 @@
+{
+  "status": "exact checks of ARCHIVED interval records only; no fresh arc/Arb replay",
+  "checks": "parameter admissibility, positive gap, consistency of E with D/G, rational rescaling",
+  "caveat": "Does not independently re-establish gamma, central rates or a Lean theorem.",
+  "cases": [
+    {
+      "case": "L99",
+      "source": "experiments/cert_k3_L99_T27_a64_b4.json",
+      "source_sha256": "33ab27538b823d8a68c81734b58d18247d97fc80e1be81394865e3f5296a58f3",
+      "m": 171,
+      "critical_cell_count": 3004,
+      "archived_original_exponent": "[1107.9267862565697392831881913990904435911599316488078750450178 +/- 4.51e-59]",
+      "strict_original_upper": "1107.93",
+      "proposed_cofactor_exponent_decimal": 1094.9685782301772,
+      "proposed_cofactor_upper": "1094.97",
+      "proposed_cofactor_comparison": true
+    },
+    {
+      "case": "L69",
+      "source": "experiments/N1_k3_search/cert_k3_L69_m173_n20.json",
+      "source_sha256": "1742d419acc06ee3081476bb9169795e83c0700b52a53d1c355fe8147df8cfa7",
+      "m": 173,
+      "critical_cell_count": 1470,
+      "archived_original_exponent": "[1133.64020158227921709839693646098175814116790015750034963485477 +/- 7.40e-60]",
+      "strict_original_upper": "1133.65",
+      "proposed_cofactor_exponent_decimal": 1120.5345345119638,
+      "proposed_cofactor_upper": "1120.54",
+      "proposed_cofactor_comparison": true
+    }
+  ]
+}

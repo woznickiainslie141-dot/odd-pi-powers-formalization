@@ -1,0 +1,4 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:28:10: error(lean.unknownIdentifier): Unknown constant `IntervalIntegrable.fun_sum`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:29:10: error(lean.unknownIdentifier): Unknown constant `IntervalIntegrable.fun_sum`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:30:10: error(lean.unknownIdentifier): Unknown constant `IntervalIntegrable.fun_sum`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePoleAlgebra.lean:31:10: error(lean.unknownIdentifier): Unknown constant `IntervalIntegrable.fun_sum`

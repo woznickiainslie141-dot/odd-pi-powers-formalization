@@ -1,0 +1,914 @@
+                                           Mat. Zapiski, 2, Diophantine approximations, Proceedings of papers dedicated to the memory of Prof.
+
+                                           N.I. Feldman, ed. Yu.V. Nesterenko, Centre for applied research under Mech.-Math. Faculty of MSU,
+
+                                           Moscow (1996), 23­42. In russian:     http://www.math.jussieu.fr/nesteren/
+
+                                           In english:                           http://www.math.jussieu.fr/miw/articles/ps/Nesterenko.ps
+
+arXiv:math/0002047v1 [math.NT] 7 Feb 2000         On the approximation of the values of exponential
+                                                     function and logarithm by algebraic numbers
+
+                                                        Yu. Nesterenko (Moscow), M. Waldschmidt (Paris)
+                                                                                      Dedicated to the memory of Professor N.I. Feldman
+
+                                           §1. Introduction
+
+                                              According to the theorem of Lindemann for any non-zero number  both of numbers 
+                                           and e can not be algebraic. For any algebraic numbers  and  the expression |e -|+|-
+                                           | does not vanish. How small can this expression be? The answer should obviously depend
+                                           on the three following parameters: the heights h(), h() of the algebraic numbers, the
+                                           degree of the number field D = Q(, ). Here, we denote by h() the absolute logarithmic
+                                           Weil height of : when the minimal polynomial of  is P (x) = a0xd + · · · + ad  Z[x], and
+                                           its complex conjugates are 1, . . . , d:
+
+                                                                          a0xd + · · · + ad = a0(x - 1) · · · (x - d),
+
+                                           then the absolute logarithmic Weil height h() of  is defined by
+
+                                                        h()            =      1                      d
+                                                                              d
+                                                                                 log |a0| + log max{1, |i|}
+
+                                                                                 i=1
+
+                                           while                                                                 d
+
+                                                                                 L() = L(P ) = |ai|
+
+                                                                                                               i=0
+
+                                           is the length of the number  and of the polynomial P . It is possible to prove that
+
+                                                                                 h()  d-1 · log L()                             (1.1)
+
+                                           (see [F 1982], Lemma 8.2).
+
+                                              In the next Theorem it will be more convenient to have a parameter E, which will be
+                                           choosen separately in each special situation.
+
+                                           Theorem 1 (Main Theorem). Let   C,  = 0, and ,  be algebraic numbers; define
+
+                                           K = Q(, ) and D = [K : Q]. Let A, B and E be positive real numbers with E  e
+
+                                           satisfying
+
+                                                        log A  max h(), D-1 , log B  h().
+
+                                                                                 1
+2
+
+Then
+
+|e - | + | - |  exp -211D log B + log log A + 4 log D + 2 log(E||+) + 10
+       · D log A + 2E|| + 6 log E · 3.3D log(D + 2) + log E · (log E)-2 ,
+
+where ||+ = max(1, ||).
+
+   From the inequality of our Main Theorem we deduce transcendence measures for several
+numbers: , log 2, e and more generally log  and e (for algebraic numbers  and ,
+ = 1,  = 0). A transcendence measure of a transcendental complex number  is a lower
+bound for |P ()|, when P  Z[x] is a non-zero polynomial, in terms of the degree of P
+and of the length of P . For deducing the estimates of the measure of transcendence we
+need the following assertion, connecting the measure of transcendence and the measure of
+approximation by algebraic numbers.
+
+Lemma 1. Let   C. Assume that for any algebraic number  with deg  = d and
+L() = L, the inequality
+
+                                               | - |  e-d(d,L)
+
+holds, where (x, y) is an increasing function of all arguments. Then for any non-zero
+polynomial P  Z[x] with deg P = N and L(P ) = M , we have
+
+                         |P ()|  e-d(N,2N M) ·        -N .
+                                                4L N
+
+Proof. See, for example, [F 1982], Lemma 3.7.
+Theorem 2. 1) Let  be a real algebraic number, d = deg , L()  L, L  3. Then
+
+                     | - |  exp -1.2 · 106d · (log L + d log d) · (1 + log d) .
+
+2) If P  Z[x], P = 0, deg P  d, L(P )  L, and L  3, then
+                        P ()  exp -2 · 106d · (log L + d log d) · (1 + log d) .
+
+   For the proof of the first assertion we choose  = i,  = -1,  = i, E = e2,
+log A = D-1, log B = h() = h() and note that D  2d. Since
+
+                               6.6d log(2d + 2) + log E < 11.2d(1 + log d),
+                       d h() + 3 log(2d) + 2 log  + 14  17(log L + d log d),
+
+                                          1 + 2E|| + 6 log E  59.5
+
+we derive the assertion 1).
+   The second assertion follows from the first one and Lemma 1.
+   By the same way can be proved
+                                                                                                                                                  3
+
+Theorem 3. 1) Let  be a real algebraic number with d = deg , L()  L and L  3.
+Then
+
+                | log 2 - |  exp -151000 · d2 · (log L + d log d) · (1 + log d)-1 .
+2) If P  Z[x], P = 0, deg P  d, L(P )  L, and L  3, then
+
+                  P (log 2)  exp -2.6 · 105d2 · (log L + d log d) · (1 + log d)-1 .
+
+   For the proof of the first assertion we choose  = log 2,  = 2,  = , E = eD, A = e,
+log B = h(). In this case D = d. We deduce
+
+                              d h() + 4 log d + 12  13(log L + d log d),
+                                3.3d log(d + 2) + log(ed) < 5d(1 + log d),
+                                          d + 2E|| + 6 log E  11d.
+
+Therefore the first inequality of the Theorem 3 holds. The second one follows from the
+first and Lemma 1.
+Theorem 4. 1) Let  be a real algebraic number with d = deg , L()  L, L  3. Then
+
+                                |e - |  exp -76000 · d2 · (log L + d) .
+
+2) If P  Z[x], P = 0, deg P  d, L(P )  L, and L  3, then
+
+                                P (e)  exp -1.3 · 105 · d2 · (log L + d) .
+
+   For the proof of this theorem we take  = 1,  = ,  = 1, log A = 1 + d-1 log L, B = 1,
+E = ed log A, D = d. The desired estimates follow from the inequalities
+
+3 log log A + 6 log d + 12  9(1 + log D + log log A) = 9 log E,
+
+                  3.3d log(d  +  2)  +  log E    10  d  log  E  ,
+                                                 3
+
+                  d log A + 2E|| + 6 log E  12(d + log L).
+
+   Taking  =  or  = log  for any determination of the logarithm of  we can prove a
+lower bound for |e - | and | log  - |.
+Theorem 5. Let  and  be algebraic numbers; define K = Q(, ) and D = [K : Q].
+Let A and E be positive real numbers satisfying E  e and
+
+                               log A  max h() , D-1 log E , D-1||E .
+
+1) If  = 0, then
+
+|e - |  exp -105500 · D2 log A · h() + log+ log A + log D + log E
+                          · D log D + log E · (log E)-2 ,
+4
+
+where log+ x = log max(1, x).
+2) If  = 0, and if log  is any non-zero determination of the logarithm of , then
+
+          | - log |  exp -105500 · D2 log A · h() + log+ log A + log D + log E
+                                      · D log D + log E · (log E)-2 .
+
+1) For the proof of the first assertion we choose  =  and we use the estimates
+
+ h() + log log A + 4 log D + 2 log(E||+) + 10  12 h() + log+ log A + log D + log E ,
+
+                                  D log A + 2E|| + 6 log E  9D log A
+and
+
+                      9 · 12 3.3D log(D + 2) + log E  500(D log D + log E).
+2) The proof of the second assertion is essentially the same, with the choice  = log ,
+using the estimate ||  || + | - |.
+Theorem 6. 1) Let  be an algebraic number,  = 0, 1. Then there exists a constant
+1 > 0, depending only on  and the determination of the logarithm of  such that if
+P  Z[x], P  0, deg P  d, L(P )  L, then
+
+                      P (log )|  exp -1d2 · (log L + d log d) · (1 + log d)-1 .
+
+2) Let  be an algebraic number,  = 0. Then there exists a constant 2, depending only
+on , such that if P  Z[x], P  0, deg P  d, L(P )  L, then
+
+                                    P (e)  exp -2d2 · (log L + d) .
+
+   Theorem 6 follows from Theorem 5 with the help of Lemma 1.
+   There are plenty of results like our Theorems 2­6. The first transcendence measure for
+the number e goes back to Borel in 1899 [Bo 1899]. Early results on this subject, including
+works by Popken (1929) and Mahler (1932), are quoted in [FS 1967]. We point out here
+that, without explicit computation of the constants in the bounds, Theorem 2 was proved
+for the first time by N.I. Feldman, [F 1951, 1960] and Theorem 6 by P.L. Cijsouw [C 1974].
+The main theorem of [D 1993] provides a lower bound for |e - |; the conclusion is that
+either the estimate of our theorem 5 holds with the constant 105500 replaced by 1011, or
+else
+
+                            |e - |  e-1011dDh() with d = [Q() : Q].
+Further references are given in [W 1978] and [D 1993], as well as in Feld'man's papers
+which are listed below.
+
+   For the proof of the Main Theorem we use M. Laurent's method of interpolation de-
+terminants, which enables us to avoid the construction of the auxiliary function and also
+                                                                                                     5
+
+to avoid the extrapolation, to derive good constants in lower bounds. The organization of
+this paper is as follows: in Section 2 we prove a variant of the zero estimate of [LMN 1993];
+Section 3 is devoted to analytic estimates for Laurent's interpolation determinants. An
+important tool in our proof is the use of binomial polynomials §4. Next, in §5, we provide
+an arithmetic lower bound for non-zero algebraic numbers (Liouville's inequality). The
+proof of the Main Theorem is completed in Section 6.
+
+§2. Multiplicity estimate
+
+   The proof of Hermite-Lindemann Theorem involves the complex analytic functions z
+and ez; for P  C[X, Y ], the derivative (d/dz)F of the function
+
+                                            F (z) = P (z, ez)
+
+is a polynomial in z and ez, which we call P :
+                                         (d/dz)P (z, ez) = P (z, ez).
+
+It  is  plain  that    is  the  derivative  operator     + Y     .  Hence   we  can  define      on  K[X, Y ]
+                                                      X       Y
+by
+
+                                              =       + Y     ,
+                                                 X         Y
+
+when K is any field containing . In this paper we work with a field K of zero characteristic.
+
+    Here is our multiplicity estimate.
+
+Lemma 2. Let K be a field of zero characteristic,  a non-zero element of K, and let D0,
+D1, S and M be positive integers satisfying
+
+                                SM > (D0 + M )(D1 + 1).                                              (2.1)
+
+Let (1, 1), . . . , (M , M ) be elements in K × K with 1, . . . , M pairwise distinct. Then
+there is no non-zero polynomial P  K[X, Y ], of degree  D0 in X and of degree  D1 in
+Y which satisfies
+
+                           P (µ, µ) = 0 for 1  µ  M and 0   < S.                                     (2.2)
+
+   The proof is essentially the same as the proof of the zero estimate in [LMN 1995]: we
+shall eliminate Y using D1 + 1 derivatives, and get a polynomial in X which vanishes at
+j with multiplicity at least S - D1.
+
+Proof. Let us suppose that a polynomial P satisfies all the conditions of the lemma,
+equalities (2.2) and P = 0. We assume, as we may without loss of generality, that Y does
+not divide the polynomial P , and also that P has degree  1 with respect to Y . Let us
+define the numbers k0 = 0 < k1 < . . . < kn  D1 by the conditions
+
+                                                                         n  i = 0, . . . , n.
+
+                                         P (X, Y ) = Qi(X)Y ki ,
+
+                                                                       i=0
+
+                       Qi(X) = biXmi + · · ·  K[X], bi = 0,
+6
+
+   For 0    n, we consider the polynomials
+
+                                                           n               (2.3)
+
+                               P (X, Y ) = Qi(X) · Y ki ,
+
+                                                         i=0
+
+where                        
+
+       Qi(X) =                    Qi(-j)(X)(ki)j = bi(ki) · Xmi + · · · .
+                               j
+       j=0
+
+   It follows from this representation that the determinant
+
+       (X) = det Qi(X) 0i,n = det bi(ki) · Xmi + · · · 0i,n
+               = b0 . . . bnn(n+1)/2 · B · X m0+···+mn + · · · ,
+
+where B is a Vandermonde determinant constructed from the numbers k0, . . . , kn, hence
+B = 0. Now from (2.3) we derive
+
+                         n
+
+       (X) = (X, Y ) · P (X, Y ), (X, Y )  K[X, Y ],
+
+                       =0
+
+and for any   Z, 0   < S - n, with some c,j,  K,
+
+                            n+                    j = 1, . . . , M.
+
+       ()(j ) = c,j, · P (j, j ) = 0,
+
+                            =0
+
+   Since n  D1 and deg (X) = m0 + · · · + mn  (n + 1)D0  D0(D1 + 1), we deduce
+
+                                  (S - n)M  deg (X)  D0(D1 + 1),
+
+and SM  D0(D1 + 1) + nM  (D0 + M )(D1 + 1). This contradicts to the condition (2.1)
+and completes the proof of lemma 2.
+
+§3. Analytic upper bound
+   We prove an upper bound for the absolute value of some interpolation determinants;
+
+this estimate is a variant of some of Laurent's results in [L 1989] and [L 1993].
+Lemma 3. Let L be a positive integer, E, M , S, and  be positive real numbers with
+
+                                                  0 <  < E-L.
+
+For 1    L, let b1, . . . , bL be complex numbers, (z) be a complex integral functions
+of one variable; further, for 1  µ  L, let µ be a complex number and µ be a non-
+negative integer, 0  µ  S. Assume that for 1    L and 1  µ  L we have
+
+       log |bµ|  M,               log  max  (µ ) (z µ )        M.
+
+                                       zE
+                                                                                                               7
+
+Then the logarithm of the absolute value of the determinant
+
+                              D = det (µ)(µ) + bµ 1,µL
+
+is bounded by
+
+               L-1    ·  log  |D|    -      L  ·  log   E   +     M  +      S  log  E  +  log(2LE).
+                                            2
+
+Proof. Let us define
+
+       aµ(z) = (µ)(zµ) and D(z) = det aµ(z) + bµ 1,µL.
+
+Then                           D(z) =                          L-|I| · DI (z),                                 (3.1)
+where
+                                               I{1,...,L}
+
+               DI (z) = det cµ(z)                 and cµ(z) =                    aµ(z), if   I,
+
+                                                                                 bµ,         if  / I.
+
+We claim that the function of one variable DI(z) has a zero at the origin of multiplicity
+
+                                   |I |  ·  (|I |  -    1)  -     1   -     ...  -  L.
+                                             2
+
+The determinant DI(z) is a linear combination with constant coefficients of determinants
+DI,J (z) = det aµ(z) I,µJ , where J runs all subsets of {1, . . . , L} with condition
+|J| = |I|. For the proof of our claim it is sufficient to prove the inequality
+
+                      ord DI,J (z)             |I |  ·  (|I |  -  1)  -     1    -  ...  -  L.
+                                                         2
+
+By multilinearity we reduce the proof of this last inequality to the special case (z) = zn
+for some n  N,   I. In this special case
+
+       DI,J (z) = det          n         · µ! · (zµ)n-µ
+                               µ
+                                                                            I,µJ
+
+                 = z I n- µJ µ · det                                  n        · µ! · µn-µ                  ,
+                                                                      µ
+                                                                                                  I,µJ
+
+where the binomial coefficient       n         means 0 if µ > n. If the right hand side is not
+                                     µ
+
+identically zero, then the numbers n,   I, are pairwise distinct, and then the right hand
+
+side has a zero at the origin of multiplicity
+
+                 |I| · (|I| -  1)  -              µ         |I |  ·  (|I |  -  1)   -  1  -  ...  -  L.
+                        2                                             2
+                                         µJ
+8
+
+Our claim on the order of vanishing of DI(z) at the origin easily follows.
+   By means of the Schwarz lemma we conclude
+
+   log |DI(1)|  -         |I |  ·  (|I |  -  1)   -  1     -   ..  .  -  L      log E + log max DI(z)
+                                    2
+                                                                                                     zE
+
+                -         |I |  ·  (|I |  -  1)   -  1     -   ..  .  -  L      log E + L log L + M |I| + M (L - |I|)
+                                    2
+
+                     -  |I |2   ·  log E   +   |I |  log E     +   ML    +      L log L  +  SL  ·  log  E.
+                         2                     2
+
+We derive now from (3.1)
+
+        log |D| = log |D(1)|  L log 2 - L2 log E + M L + L log L + SL · log E
+
+                                           + max                   -  |I |2  ·  log E  +    L  +   1  (log E) · |I|          .
+                                                                       2                           2
+                                               I{1,...,L}
+
+The polynomial                                 log E
+                                                 2
+                                           -            ·  t2  +      L  +   1  (log E) · t
+                                                                             2
+
+is an increasing function in the interval 1  t  L. Then we have
+
+        L-1  ·  log  |D|       -   L  log  E   +     L  +  1       log E + log(2L) - L log E + M + S log E
+                                   2                       2
+
+                          <    -   L  ·   log  E  +  M     +   S   log   E   +  log(2LE).
+                                   2
+
+This completes the proof of Lemma 3.
+
+§4. Binomial polynomials
+
+When N , H be a non-negative integers, and z a complex number, let us define (z, 0, H) =
+
+1, and                                                                          q
+
+             (z, N, H) =                 z(z + 1) · · · (z + H - 1)                ·   z(z  +  1)  ·  · · (z  +  r  -  1) ,     (4.1)
+                                                      H!                                               r!
+
+where
+
+                                               N = qH + r, 1  r  H.
+
+For u a non-negative integer, we write (u)(z, N, H) for the derivative (d/dz)u(z, N, H).
+
+   The first idea of eliminating the factorials from the derivatives of auxiliary functions
+with the help of such polynomials was introduced (in the case H = N ) by Feldman in
+[F 1960, a,b] for the improvement of estimates of the measure of transcendence of  and
+logarithms of algebraic numbers. Later ([F 1968]) this was one of his key tools in order to
+achieve a best possible dependence of the estimate in terms of the heights of the coefficients
+i in lower bounds for linear combinations 0 + 1 log 1 + · · · + n log n; in turn, such an
+estimate has dramatic consequences, especially the first effective improvement to Liouville's
+inequality. The introduction of polynomials of this kind in the case r = H and H < N
+                                                                                                9
+
+into the transcendence theory is due to A. Baker [Ba 1972], who improved in this way the
+dependence of lower bounds for linear forms in logarithms in terms of the heights of the
+i. The polynomials (4.1) were introduced in [M 1994] where a more general assertion
+than the next Lemma 4 is proved.
+
+   For each positive integer k and real number a, we denote by (k) the least common
+multiple of 1, 2, . . . , k and by [a] the integer part of a.
+Lemma 4. Let N  1, H  1,   0 and x be integers. Define d = (H). Then
+
+                                   d · (u)(x, N, H)  Z, 0  u  ,
+
+and
+
+                              log d       <  107  · H,                                     (4.2)
+                                             103                                           (4.3)
+
+                                                                         |x|  N
+                       u                                                 H
+                          · (u)(x, N, H) <  · eN+H            1       +         .
+
+               u=0
+
+Proof. Let p be a prime number and b1  b2  . . .  bN be integers. For any integer
+k > 0 we denote rk the number of bi which are multiple of pk. Then
+
+                              ordp(b1 · · · bN ) = r1 + r2 + · · · .
+
+If we delete any u numbers from b1, . . . , bN and if bj1, . . . , bjN-u denote the remaining N -u
+numbers, we derive
+
+                               ordp(bj1 , . . . , bjN-u)  max(rk - u, 0).
+
+                                                                                        k1
+
+We define now the numbers bj as the N factors in the product
+
+                          x(x + 1) · · · (x + H - 1) q · x(x + 1) · · · (x + r - 1).
+
+In this case                  rk  q   H   +  r    ,  k  1.
+Now from the identity                 pk     pk
+
+       (u)(z, N, H) = u! · (z, N, H) · (z + j1)-1 · · · (z + ju)-1,                        (4.4)
+
+where summation is taken over all sets {j1, . . . , ju} such that the polynomial (z +j1) · · · (z +
+ju) divides (z, N, H), we see that
+
+       ordp d · (u)(x, N, H)          ·      log H   -                q  H    +    r
+                                             log p                       pk        pk
+                                                        pk H
+
++      max  q  H       +  r   - u, 0            max   - u,  - q               H    -   r    0.
+               pk         pk                                                  pk       pk
+   k1                                     pk H
+10
+
+    This proves the assertion d · (u)(x, N, H)  Z, 0  u  , x  Z.
+
+    The  estimate  (4.1)  follows  from  the          inequality       log (k)        107  ·  k  (see  for  instance  [Y  1989]
+                                                                                      103
+Lemma 2.3 p. 127).
+
+    By the identity (4.4) we see
+
+                                                              ·     N  · u! · |x| + H - 1 N-u(H!)-q(r!)-1
+    u=0  u                                            u             u
+             · |(u)(x, N, H)| 
+
+                                                 u=0
+
+                                                  N              N     |x| + H - 1 N-u(H!)-q(r!)-1
+                                                                 u
+                                      ·
+
+                                                      u=0
+
+                                      |x| + H N                        HH      q    Hr
+                                                                       H!           r!
+                                                                                           H -N
+
+                                      · eN+H ·                      1  +  |x|  N
+                                                                          H
+                                                                                 .
+
+This completes the proof of Lemma 4.
+
+§5. Liouville's inequality
+
+   For the next result, we use the notion of length of a polynomial f  C[X1, . . . , Xn] (see
+§1).
+
+Lemma 5 (Liouville's inequality). Let k be a subfield of C which is a finite extension of
+Q of degree D. Further let 1, . . . , n be elements in k. Furthermore let f be a polynomial
+in k[X1, . . . , Xn], with coefficients in Z, of degree at most Ni with respect to Xi, and which
+does not vanish at the point (1, . . . , n). Then
+
+                                                                                                          n
+
+                log f (1, . . . , n)  -(D - 1) · log L(f ) - D Nih(i),
+
+                                                                                                        i=1
+
+where                                    D/2               if k is not a real field,
+                                         D                 if k is a real field.
+                             D =
+
+Proof. See [F 1982], Lemma 9.2.
+
+§6. Proof of the Main Theorem
+   Let us suppose that under the conditions of the Main Theorem the inequality
+
+                             |e - | + | - | < E-211DUV W ,                                                                (6.1)
+
+holds, with
+
+             U  =  3.3D   log(D + 2)     +            log  E  ,     V  =  2E   ||  +  D log A    +     6  log  E  ,
+                               log E                                                    log E
+
+                   W      =  log B  + log log A + 4 log D                 + 2 log(E||+) + 10 .
+                                                       log E
+                                                                                                    11
+
+Note that U  1, V  6, W  2.
+
+   a) Step one: Constuction of a non-zero determinant D.
+
+   The proof of the Main theorem involves complex analytic functions in one variable
+(z, , H)etz, for non negative integers  , H and t; the derivative of order  of this
+function at the point s  Z, s  0, is
+
+ts =  d     (z, , H)etz              =  min(,)       !          · (k)(s,  ,      H) · (t)-k · ets.  (6.2)
+      dz                                   k=0      - k)!k!
+                               z=s               (
+
+We choose parameters T , T1, S, S1 and H:
+
+                          S = [10.5U V ], S1 = [12DW + 0.5],
+
+                     T = [20.2DV W ], T1 = [4.2U + 0.5], H = [1.5W log E]
+and restrict ourselves to the ranges
+
+                            0    T, |t|  T1, 0    S, |s|  S1.
+Replacing the numbers e by  and  by  in (6.2), we find an algebraic number
+
+                 min(,)           !
+
+                          ( - k)!k!     · (k)(s, , H) · (t)-k · ts,
+
+                    k=0
+
+which will be a good approximation to ts. According to Lemma 4 the number
+
+                          min(,)      !
+                                     - k)!k!
+            ats  =  d  ·          (           ·  (k)(s,      ,  H)  ·  (t)-k     ·  ts,             (6.3)
+
+                          k=0
+
+will be an polynomial in , -1,  with integer coefficients.
+
+   We also define L = (T + 1)(2T1 + 1), which is the number of (, t).
+Lemma 6. There exists a set {(µ, sµ); 1  µ  L} of elements in Z × Z with 0  µ  S
+and 0  sµ  S1 with the property that the determinant of the L × L matrix
+
+            D = det       aµ  sµ  ,  0    T,           |t|  T1,        1  µ  L,
+                              t
+
+does not vanish.
+
+Proof. Let C[X, Y, Y -1] be the ring of polynomials in X, Y , Y -1 and let  be the
+derivative operator on C[X, Y, Y -1] defined by
+
+                                        =     + Y         .
+                                           X           Y
+
+Then                           min(,)
+
+       (X, , H)Y t        =                    !       ·  (k)(X,       ,  H)  ·  (t)-k   ·  Y  t
+                                              - k)!k!
+                                  k=0      (
+12
+
+and
+
+                        ats = d (X, , H)Y t                                  .
+
+                                                              (X,Y )=(s,s)
+
+Let us suppose that the rank of the matrix
+
+               ats , 0    T, |t|  T1, 0    S, |s|  S1,
+
+is less than L. Then there exist complex numbers ct, 0    T , |t|  T1, not all zero,
+such that the polynomial
+
+                        R(X, Y ) = ct(X, , H)Y t  C[X, Y, Y -1]
+
+                                             (,t)
+
+is not 0 and satisfies
+
+               R(X, Y )        (X,Y )=(s,s)      = 0, 0    S, |s|  S1.
+
+But this contradicts Lemma 2 with P (X, Y ) = Y T1 R(X, Y ), D0 = T , D1 = 2T1, M =
+2S1 + 1, s = s, s = s and S changed to S + 1: indeed, from the inequalities
+
+         2S1 + 1  24DW, 2T1 + 1  10.4U, S + 1  10.5U V, T  20.2DV W,
+
+V  6 and
+
+     (T  + 2S1 + 1)(2T1 +  1)  =  2T1 + 1    ·      T         +  1  <   10.4      ·     20.2V  +1
+         (S + 1)(2S1 + 1)          S+1           2S1 +                 10.5V              24
+                                                          1
+
+                                                                               104   ·  101    +  1  <1
+                                                                               105      120       6
+
+we derive P = 0. This completes the proof of Lemma 6.
+   b) upper bound for |D|.
+   We plan to use Lemma 3 with  replaced by (, t), for the L functions
+
+               ft(z) = (z, , H) · etz, 0    T, |t|  T1,
+
+with the points µ = sµ, 1  µ  L, with  = E-211DUV W and btµ, instead bµ in
+
+Lemma 3, defined by                          sµ        sµ
+                                             t         t
+                               d- 1  ·  a µ      =  µ      +     ·  b tµ.
+
+The estimates
+
+               T + 1  20.2DV W + 1               20.2  +  1   DV W,        T1  +  1     5.2U,
+                                                          12                      2
+
+means that                 L = (T + 1)(2T1 + 1) < 211DU V W                                          (6.4)
+and  < E-L.
+                                                                                                               13
+
+From Lemma 4 and (6.2) we deduce
+
+       max      f(t )(sz)      max   min(,)        (   !       (k)(sz, , H)           · |t|-ke|zts|
+                                        k=0           - k)!k!
+       |z|E                    |z|E
+
+                             SS · eH+T ·           1  +  E S1  T
+                                                          H
+                                                                 · ||+T1 S · e||ET1S1  eM ,
+
+where
+
+M = S log S + H + T + T log                 1   +  E S1     + S log E||+T1 + E||S1T1 + S1T1.
+                                                    H
+
+It follows from (6.1) that
+
+                              max ||, ||)  ||+(1 + (2S)-1),
+                max ||, ||-1, |e|, |e-|  e|| · 1 + (2S1T1 + 2)-1 ,
+
+and for any integer k and  with 0  k  S and ||  S1T1,
+
+|k - ke|  ||k · | - e| + |e| · |k - k|
+
+                  · ||+k · e(||+1)|| ·             1  +   1    k    1  +       1   +  2    ||+1
+                                                         2S               2S1T1
+                                                                 ·                               · max(||, k)
+
+                 e||S+ · e2S1T1|| · max(S, S1T1).
+
+Now we use the inequalities
+
+                                  eS  eS  ES, eS1T1  eS1T1
+
+and we write  and s in place of µ and sµ. From (6.2), (6.3) and Lemma 4 we derive
+
+ · |btµ| = |d- 1 · ats - ts|
+
+                min(,)          !
+                               - k)!k!
+                           (             ·  (k)(s, , H)        · |t|-k · |-kts - -kets|
+
+                k=0
+
+               SS · eH+T +1 ·     1      +  S1     T
+                                            H
+                                                     · T1S · ||+S e2||T1S1 max(S, S1T1) ·    · eM .
+
+Since  log d    107  SH  we    deduce    from    Lemma      3
+                103
+
+       1  ·   log |D|    -  L  ·  log E  +  107  SH   +  S  log S   +  H  +  T  +  T  log  1  +  E S1
+       L                    2               103                                                   H
+
+                       + S log E||+T1 + ||ES1T1 + S1T1 + S log E + log(2LE).                           (6.5)
+14
+
+    c) lower bound for |D|.
+    Let us define the polynomials
+
+                                 min(,)         !
+                                               - k)!k!
+      qts(X,    Y    )  =  d  ·                           ·  (k)(s,     ,  H)   ·  (tX )-k     ·  Y  ts    Z[X,   Y,  Y  -1],
+
+                                  k=0     (
+
+and                                        sµ
+                                           t
+                R(X, Y ) = det         qµ      (X,  Y  )  ,     0    T,              |t|  T1,        1  µ  L.
+
+It follows from (6.3) that ats = qts(, ) and D = R(, ). From the inequalities
+
+          degX qts(X, Y )  S, degY qts(X, Y )  |t|S1, degY -1 qts(X, Y )  |t|S1
+
+we derive
+
+                                                degX R(X, Y )  LS,
+
+             degY       R(X, Y )       1  LS1(T1  + 0.5),            degY -1  R(X, Y )         1  LS1    (T1  +   0.5).
+                                       4                                                       4
+
+It follows from Lemma 4 that
+
+                        L qts(X, Y )        exp     107   S  H    · SS · eH+T ·         1  +   S1     T
+                                                    103                                        H
+                                                                                                        · T1S
+
+and                                                                                                               L
+
+                L R(X, Y )  LL ·               exp  107   S  H       · SS · eH+T ·       1  +  S1     T            .
+                                                    103                                        H
+                                                                                                        · T1S
+
+Next from Lemma 5 we derive
+
+      1      ·  log  |D|      -(D  -   1)  log  L   +     107  S  H  +  S  log  S  +  H    +   T  +  T   log   1  +  S1
+      L                                                   103                                                        H
+
+                           + S log T1      -  DS  log     B  -    1  DS1(T1   +    0.5)  log   A.                              (6.6)
+                                                                  2
+
+    d) End of the proof of Theorem 1.
+    Let us compare the upper bound (6.5) for |D| and the lower bound (6.6). We derive
+
+   L  log E     1    S1(T1   +   0.5)  D log A + 2E|| + 2               +     DT log        1  +  S1     + DT + T log E
+   2            2                                                                                 H
+
+   +DS log B + log S + log E||+T1                         +  DH      +  DSH     107  +   S  log   E  +   log(2E)     +   D  log  L.
+                                                                                103
+
+Using the definition of all parameters we deduce
+
+1  S1(T1  +  0.5)       D log A + 2E|| + 2           0.5 · 12.25 · 5.2DU V W log E = 31.85DU V W log E,
+2
+
+                                                                                                                               (6.7)
+                                                                                                             15
+
+    log       1  +  S1      log    1  +  12.25    D          log 13.25 + log D  2.6 + log D,
+                    H                           log E
+
+DT log     1  +  S1     + DT + T log E  20.2(D2V W log D + 3.6D2V W + DV W log E)
+                 H
+
+                  20.2DV W log E + 3.3D log(D + 2)  20.2DU V W log E,                                        (6.8)
+
+                U  1 + 3.3D log(D + 2)  4.7D3/2, V  9.8E||+D log A,                                          (6.9)
+
+log ST1E||+  log 50U 2V E||+  log log A + 4 log D + 2 log E||+ + 10,
+ DS log B + log S + log E||+T1  10.5DU V log B + log log A + 4 log D
+
+                           +2 log E||+ + 10  10.5DU V W log E                                          (6.10)
+
+The estimates (6.4) and (6.9) mean that
+
+log L  log(211DU V W )  10 + 3.5 log D + log E||+ + log log A + log W
+        W log E + log W  1.4W log E  0.24U V W log E.
+
+With the help of this estimate and inequalities
+
+                    DSH  15.75DU V W log E, DH  1.5DW log E  0.25DU V W log E,
+
+S log E  10.5U V log E  5.25DU V W log E,                   log(2E)       2 log E       1  DU  V  W  log E,
+                                                                                        6
+
+we derive
+
+DH  +      107   DS  H  +  S  log  E  +  log(2E)   +  D  log   L
+           103
+
+                 15.75  ·  107  +  5.25  +  0.49   +  1  DU V W log E < 22.28DU V W log E.             (6.11)
+                           103                        6
+
+Finally from (6.6)­(6.11) we deduce
+
+           L  log E     (31.85     +  20.2  +  10.5  +   22.28)DU V    W  log E
+           2
+
+                     =  84.83DU V     W     log E  <    (T  +  1)(2T1  +  1)  ·  log E  =  L  log  E.
+                                                                  2                        2
+
+This contradiction means that (6.1) is wrong and completes the proof of the Theorem 1.
+
+References
+
+[Ba 1972] A. Baker. A sharpening of the bounds for linear forms in logarithms; Acta
+Arith., 21 (1972), 117­129.
+16
+
+[Bo 1899] E. Borel, Sur la nature arithm´etique du nombre e; C.R. Acad Sci. Paris, 128
+(1899), 596­599.
+
+[C 1974] P.L. Cijsouw, Transcendence measure of exponentials and logarithms of algebraic
+numbers; Compositio Math., 28 (1974), 163­178.
+
+[D 1993] G. Diaz, Une nouvelle minoration de | log  - |, | - exp |,  et  alg´ebriques;
+Acta Arith., 64 (1993), 43­57; compl´ements: S´eminaire d'Arithm´etique Univ. St. Etienne
+1990­91­92, N4, 49­58.
+
+[F 1949] N.I. Feldman, The approximation of some transcendental numbers; Dokl. Akad.
+Nauk SSSR, 66 (1949), 565­567.
+
+[F 1951] N.I. Feldman, Approximation of certain transcendental numbers, I; Izv. Akad. Na-
+uk SSSR, Ser. Mat., 15 (1951), 53­74; engl. transl.: Amer. Math. Soc. Transl. (2) 59 (1966),
+224­245.
+
+[F 1960a] N.I. Feldman, On the measure of transcendence of ; Izv. Akad. Nauk SSSR,
+Ser. Mat., 24 (1960), 357­368; engl. transl.: Amer. Math. Soc. Transl. (2) 58 (1966),
+110­124.
+
+[F 1960b] N.I. Feldman, Approximation of the logarithms of algebraic numbers by al-
+gebraic numbers; Izv. Akad. Nauk SSSR, Ser. Mat., 24 (1960), 475­492; engl. transl.:
+Amer. Math. Soc. Transl. (2) 58 (1966), 125­142.
+
+[F 1963a] N.I. Feldman, On the problem of the measure of transcendence of e; Usp. Mat. Na-
+uk 18:3 (111) (1963), 207­213.
+
+[F 1963b] N.I. Feldman, On the problem of the transcendence measure of ; Usp. Mat. Nauk
+18 (1963), 207­213.
+
+[F 1968] N.I. Feldman, Improved estimates for a linear form of the logarithms of algebraic
+numbers; Mat. Sb., 77 (1968), 423­436; engl. transl.: Math. USSR Sb., 77 (1968), 393­406.
+
+[F 1977] N.I. Feldman, Approximation of number  by algebraic numbers from special
+fields; J. Number Theory, 9 (1977), 48­60.
+
+[F 1982] N.I. Feldman, The seventh Hilbert's problem; Moscow, Moscow State University,
+1982, pp. 1­311.
+
+[FS 1967] N.I. Feldman and A.B. Shidlovskii, The development and present state of the
+theory of transcendental numbers; Usp. Mat. Nauk, 22 (1967), 3­81; engl. transl.: Russian
+Math. Surveys, 22 (1967), 1­79.
+
+[L 1989] M. Laurent, Sur quelques r´esultats r´ecents de transcendance; Journ´ees arith-
+m´etiques Luminy, 1989, Ast´erisque, 198­200 (1991), 209- -230.
+
+[L 1993] M. Laurent, Linear forms in two logarithms and interpolation determinants; Acta
+Arith. 66 (1994), no. 2, 181­199.
+                                                                                                                                                17
+
+[LMN 1995] M. Laurent, M. Mignotte et Yu. Nesterenko, Formes lin´eaires en deux loga-
+rithmes et d´eterminants d'interpolation; J. Number Theory 55 (1995), no. 2, 285­321.
+
+[M 1993] E.M. Matveev. On the arithmetic properties of the values of generalized binomial
+coefficients; Mat. Zam., 54 (1993), 76­81; Math. Notes, 54 (1993), 1031­1036.
+
+[W 1978] M. Waldschmidt, Transcendence measures for numbers connected with the ex-
+ponential function; J. Austral. Math. Soc., 25 (1978), 445­465.
+
+[Y 1989] Yu Kunrui, Linear forms in p-adic logarithms; Acta Arith., 53 (1989), 107­186;
+(II), Compositio Math., 74 (1990), 15­113.
+
+Yu. V. NESTERENKO                        M. WALDSCHMIDT
+Moscow University                        Universit´e P. et M. Curie
+Department of Mathematics and Mechanics  Institut de Math´ematiques de Jussieu
+119899 MOSCOW                            4, Place Jussieu, Case 247
+RUSSIA                                   75252 PARIS Cedex 05
+                                         FRANCE
+
+NEST@nw.math.msu.su                      miw@math.jussieu.fr
+
+                     http://www.math.jussieu.fr/miw/articles/ps/Nesterenko.mai95.ps
+

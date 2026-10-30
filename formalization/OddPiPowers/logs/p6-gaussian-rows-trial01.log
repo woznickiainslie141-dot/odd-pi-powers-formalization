@@ -1,0 +1,45 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:30:26: error: Application type mismatch: The argument
+  actualAuxiliaryInt P h j
+has type
+  ℤ[X]
+but is expected to have type
+  ℂ →+* ?m.15
+in the application
+  hom_eval₂ ?m.18 GaussianInt.toComplex (actualAuxiliaryInt P h j)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:29:37: error: Application type mismatch: The argument
+  Int.castRingHom GaussianInt
+has type
+  ℤ →+* GaussianInt
+but is expected to have type
+  GaussianInt[X]
+in the application
+  @hom_eval₂ GaussianInt ℂ ?m.15 Zsqrtd.instSemiring (Int.castRingHom GaussianInt)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:50:10: warning: This simp argument is unused:
+  Polynomial.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:55:10: warning: This simp argument is unused:
+  Polynomial.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:93:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?f (Matrix.det ?M)
+in the target expression
+  (GaussianInt.toComplex.mapMatrix (gaussianAuxiliaryCoefficientMatrix P)).det = 0
+
+M : ℕ
+P : ActualIntervals M
+hz : (gaussianAuxiliaryCoefficientMatrix P).det = 0
+⊢ (GaussianInt.toComplex.mapMatrix (gaussianAuxiliaryCoefficientMatrix P)).det = 0
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:101:2: error: Type mismatch: After simplification, term
+  gaussianAuxiliaryCoefficientMatrix_det_ne_zero P
+ has type
+  Not ((gaussianAuxiliaryCoefficientMatrix P).det = 0)
+but is expected to have type
+  Not ((coefficientMatrix m (gaussianAuxiliaryRow P)).det = 0)

@@ -1,0 +1,30 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+      "log": "logs/p4-FiniteWindowCover-20261028T115253.log",
+      "sha256": "4eeae95489ca6b726677929ad0a83d6c1ed35d86a84010fa62c4cd51962b8880"
+    },
+    {
+      "file": "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+      "log": "logs/p4-PrimeWindowSums-20261028T115253.log",
+      "sha256": "76c7285e07900c8d38a45490a3b9ec52f087bb70999c37005db299097c9b9b15"
+    }
+  ],
+  "current": "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-PrimeWindowDivisor-20261028T115253.log"
+}

@@ -1,0 +1,215 @@
+⚠ [2144/2148] Replayed OddPiPowers.Construction.ActualAuxiliary
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:15:0: 'Mathlib.Data.Complex.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Complex.Basic
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:835:10: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Finset.mem_filter]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:896:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:912:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1028:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1036:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1057:22: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_pow, Polynomial.coeToPowerSeries.ringHom_apply, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1064:13: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1101:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1103:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ne.symm hqj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1163:12: This simp argument is unused:
+  principalPartTruncation
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sub_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1218:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1324:26: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coeToPowerSeries.ringHom_apply, map_mul, map_pow, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1326:17: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1385:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1402:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1484:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1676:56: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [factorialBorelShift, div_eq_mul_inv, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1795:44: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1837:5: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2144:28: This simp argument is unused:
+  Polynomial.eval₂_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Polynomial.eval₂_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: OddPiPowers/Construction/ActualAuxiliary.lean:2160:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:34: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵.̵l̵t̵_̵i̵f̵f̵_̵v̵a̵l̵_̵l̵t̵_̵v̵a̵l̵F̲i̲n̲.̲l̲t̲_̲d̲e̲f̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:27: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Fin.lt_iff_val_lt_val, hj0] at hij
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2326:44: This simp argument is unused:
+  auxiliaryJetVector
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [auxiliaryColumnTransform, d, hi0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2446:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [actualAuxiliaryExponentialEval]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2454:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [PowerSeries.C_eq_algebraMap]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3026:4: Unused tactic linter: `change (ell.val ∈ P.interval j) ↔ P.left j ≤ ell.val` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3200:10: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3222:6: This simp argument is unused:
+  Polynomial.taylor_coeff_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [B, Polynomial.coeToPowerSeries.ringHom_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3295:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hcoefFactor]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:10: This simp argument is unused:
+  actualAuxiliaryPolynomialMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryLeadingMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:43: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryPolynomialMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3357:36: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at hIm
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [2148/2148] Built OddPiPowers.Analysis.ActualLocalHeight (8.1s)
+Build completed successfully (2148 jobs).

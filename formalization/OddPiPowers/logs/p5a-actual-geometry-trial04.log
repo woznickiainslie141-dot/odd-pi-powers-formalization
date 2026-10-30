@@ -1,0 +1,13 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:87:33: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a ^ ∑ i ∈ ?s, ?f i
+in the target expression
+  ∏ x, ↑P.n ^ (P.interval x).card * ∏ x ∈ P.interval x, (↑(t + P.horizontalOffset x) + Complex.I * ↑Y) =
+    ↑P.n ^ P.totalMultiplicity * P.normalizedHorizontalProduct Y t
+
+M : ℕ
+P : ActualIntervals M
+hn : 0 < P.n
+Y t : ℝ
+⊢ ∏ x, ↑P.n ^ (P.interval x).card * ∏ x ∈ P.interval x, (↑(t + P.horizontalOffset x) + Complex.I * ↑Y) =
+    ↑P.n ^ P.totalMultiplicity * P.normalizedHorizontalProduct Y t
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:114:11: error: `simp` made no progress

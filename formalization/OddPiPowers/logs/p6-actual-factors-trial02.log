@@ -1,0 +1,5 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualSeriesFactors.lean:162:47: error: unsolved goals
+M : ℕ
+P : ActualIntervals M
+ell h : ℕ
+⊢ (↑P.n + 1) ^ h * ((↑P.n + 1) ^ M * 2 ^ ∑ i, P.length i) = (↑P.n + 1) ^ h * (↑P.n + 1) ^ M * 2 ^ ∑ i, P.length i

@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/ScaledPrimeRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean",
+    "OddPiPowers.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Arithmetic/ScaledPrimeRates.lean",
+      "log": "logs/p4-ScaledPrimeRates-20261028T172928.log",
+      "sha256": "b3ab4aaa4008d33e932c6a219597b1b9dabdf624c9ee5b14563b93b0589b9b84"
+    }
+  ],
+  "current": "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-TwelveLayerPrimeRates-20261028T172928.log"
+}

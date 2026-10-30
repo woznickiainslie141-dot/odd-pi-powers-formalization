@@ -1,0 +1,82 @@
+{
+  "finite_data_only": true,
+  "rows": [
+    {
+      "n": 2,
+      "log_Q_over_n": 10.125216433243525,
+      "minus_log_linear_form_over_n": -5.366473414965783,
+      "approximation_error_exponent": 0.46998926389895646,
+      "denominator_digits": 9
+    },
+    {
+      "n": 4,
+      "log_Q_over_n": 17.577779491339797,
+      "minus_log_linear_form_over_n": -12.527884666630731,
+      "approximation_error_exponent": 0.28728855241340595,
+      "denominator_digits": 31
+    },
+    {
+      "n": 6,
+      "log_Q_over_n": 28.14888100602769,
+      "minus_log_linear_form_over_n": -23.00721573962308,
+      "approximation_error_exponent": 0.1826596682583437,
+      "denominator_digits": 74
+    },
+    {
+      "n": 8,
+      "log_Q_over_n": 37.27322061740189,
+      "minus_log_linear_form_over_n": -32.08177621968835,
+      "approximation_error_exponent": 0.13928081104131332,
+      "denominator_digits": 130
+    },
+    {
+      "n": 10,
+      "log_Q_over_n": 45.604933772106556,
+      "minus_log_linear_form_over_n": -40.35743220168804,
+      "approximation_error_exponent": 0.1150643392366475,
+      "denominator_digits": 199
+    },
+    {
+      "n": 12,
+      "log_Q_over_n": 55.07912845260394,
+      "minus_log_linear_form_over_n": -50.055269733185455,
+      "approximation_error_exponent": 0.09121165967144092,
+      "denominator_digits": 288
+    },
+    {
+      "n": 16,
+      "log_Q_over_n": 75.46617239733547,
+      "minus_log_linear_form_over_n": -70.25323089581772,
+      "approximation_error_exponent": 0.06907653238422087,
+      "denominator_digits": 525
+    },
+    {
+      "n": 20,
+      "log_Q_over_n": 95.60364116523553,
+      "minus_log_linear_form_over_n": -90.3663550393514,
+      "approximation_error_exponent": 0.054781241195953165,
+      "denominator_digits": 831
+    },
+    {
+      "n": 24,
+      "log_Q_over_n": 115.15420960223874,
+      "minus_log_linear_form_over_n": -110.1780410595227,
+      "approximation_error_exponent": 0.04321308408875825,
+      "denominator_digits": 1201
+    },
+    {
+      "n": 28,
+      "log_Q_over_n": 135.21912393172812,
+      "minus_log_linear_form_over_n": -129.98260737844316,
+      "approximation_error_exponent": 0.038726153527875624,
+      "denominator_digits": 1645
+    },
+    {
+      "n": 32,
+      "log_Q_over_n": 155.34974401015626,
+      "minus_log_linear_form_over_n": -150.10091754554173,
+      "approximation_error_exponent": 0.03378715876269079,
+      "denominator_digits": 2159
+    }
+  ]
+}

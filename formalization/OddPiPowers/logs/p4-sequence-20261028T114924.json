@@ -1,0 +1,33 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Vendor/PNT/Wiener.lean",
+    "OddPiPowers/Vendor/PNT/Consequences.lean",
+    "P4PntAudit.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+    "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Vendor/PNT/Wiener.lean",
+      "log": "logs/p4-Wiener-20261028T114924.log",
+      "sha256": "38364e4551c07c44217b3846327f9661eb2a342c701e3ef592a38f42c74306d3"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Consequences.lean",
+      "log": "logs/p4-Consequences-20261028T114924.log",
+      "sha256": "2c8325bf3da62a2fe09a1ee8e8112de4ae60d0b138200fe380f6d6a78b5c50df"
+    },
+    {
+      "file": "P4PntAudit.lean",
+      "log": "logs/p4-P4PntAudit-20261028T114924.log",
+      "sha256": "5f76c91265fd97425d9fa4bf470bfed43b26a2c7e5ab9530570f64d40e806667"
+    }
+  ],
+  "current": "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-PrimeWindowGeometry-20261028T114924.log"
+}

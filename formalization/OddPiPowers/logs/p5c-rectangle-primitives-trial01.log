@@ -1,0 +1,24 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePrimitives.lean:19:2: error: Type mismatch: After simplification, term
+  HasDerivAt.comp_ofReal (HasDerivAt.comp (↑x) hF (HasDerivAt.add_const (↑y * Complex.I) (hasDerivAt_id ↑x)))
+ has type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup NormedSpace.complexToReal.toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (fun y_1 => (F ∘ fun x => id x + ↑y * Complex.I) ↑y_1) v x
+but is expected to have type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℂ Complex.addCommGroup
+    instInnerProductSpaceRealComplex.toModule PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯
+    (fun t => F (↑t + ↑y * Complex.I)) v x
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Complex.mulAux ↦ 6
+  Real.instAdd ↦ 2
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\RectanglePrimitives.lean:25:2: error: Type mismatch: After simplification, term
+  HasDerivAt.comp_ofReal
+    (HasDerivAt.comp (↑y) hF (HasDerivAt.const_add (↑x) (HasDerivAt.mul_const (hasDerivAt_id ↑y) Complex.I)))
+ has type
+  HasDerivAt (fun y => (F ∘ fun x_1 => ↑x + Complex.I * id x_1) ↑y) (v * (Complex.I * 1)) y
+but is expected to have type
+  HasDerivAt (fun t => F (↑x + Complex.I * ↑t)) (v * Complex.I) y
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Complex.mulAux ↦ 84
+  Real.instAdd ↦ 6

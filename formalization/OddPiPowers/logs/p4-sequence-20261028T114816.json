@@ -1,0 +1,15 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/FinitePeriodKernel.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+    "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean"
+  ],
+  "completed": [],
+  "current": "OddPiPowers/Arithmetic/FinitePeriodKernel.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-FinitePeriodKernel-20261028T114816.log"
+}

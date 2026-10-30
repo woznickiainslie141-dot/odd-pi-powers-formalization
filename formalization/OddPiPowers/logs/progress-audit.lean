@@ -1,0 +1,6 @@
+import OddPiPowers.Transfer.FixedSlack
+import OddPiPowers.Foundations.ExponentUpperBound
+
+#print axioms OddPiPowers.fixed_slack_bound
+#print axioms OddPiPowers.rational_power_value_lower_bound
+#print axioms OddPiPowers.exponentUpperBound_iff

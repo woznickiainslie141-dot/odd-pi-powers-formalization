@@ -1,0 +1,63 @@
+{
+  "status": "accepted",
+  "date": "2026-10-29",
+  "stage": "P6-B first unconditional balanced pi-cube instance",
+  "library_modules": 164,
+  "executed_build_targets": 14,
+  "verified_cached_modules": 150,
+  "build_run": "20261029T224504",
+  "verified_cache_evidence": {
+    "p5e-guarded-library-build-state.json": 150
+  },
+  "peak_build_job_MiB": 3296.72,
+  "peak_all_build_evidence_MiB": 3556.75,
+  "audits": [
+    {
+      "log": "p6b-post-build-axioms.log",
+      "count": 81,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 4580.52,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "log": "p6b-post-build-regression-axioms.log",
+      "count": 521,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 5148.82,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "manifest_sha256": "e46b8f7bf97f5d4ee8f0b4f5155b71dbead74f1c2aef1b55c34677ffbd9dbf38",
+  "unchanged_prior_mathematical_modules": 150,
+  "stirling_core_provenance": {
+    "source": "Mathlib/Analysis/SpecialFunctions/Stirling.lean",
+    "mathlib_version": "v4.35.0",
+    "source_sha256": "df4364f73fd6052efd25505cf10bd7b13d317961c17169ff0750b65a3ebccf6a",
+    "adapted": "OddPiPowers/Analysis/StirlingLogCore.lean",
+    "adapted_sha256": "0d9a9dbbf8f82465156a29d71be9a1780718cc206b1065d7748d6d0eff5a5521",
+    "license": "Apache-2.0; original copyright header retained",
+    "changes": [
+      "retain Part 1 through positive-limit theorem only",
+      "replace missing Wallis import by its cached Integrals.Basic import",
+      "relocate namespace Stirling to OddPiPowers.StirlingLogCore",
+      "omit deprecated aliases; no proof changes"
+    ]
+  },
+  "scope": "Actual balanced all-pole height and Gaussian family assembly, uniform disk/difference and remainder estimates, rational-certified M=512,m=511,Y=128 rates D>=2000,G<=900, unconditional ExponentUpperBound(pi^3,14819/2) and strict bound below 7500. This is a coarse milestone. The full P6 target below 1203973/1000 remains active, requiring the scaled twelve-layer construction, general height, sharp divisor rate and numeric certificates."
+}

@@ -1,0 +1,15 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:76:2: error: Tactic `assumption` failed
+
+M : ℕ
+P : ActualIntervals M
+h pole q : ℕ
+hpole : pole ≤ P.n
+hq : q < P.multiplicity pole
+z : ℂ
+hz : z + ↑pole ≠ 0
+hQ : P.denominatorValue z ≠ 0
+he : P.denominatorValue z = (z + ↑pole) ^ P.multiplicity pole * eval₂ (Rat.castHom ℂ) z (P.otherRootProduct pole)
+hother : eval₂ (Rat.castHom ℂ) z (P.otherRootProduct pole) ≠ 0
+hmu : P.multiplicity pole = q + (P.multiplicity pole - q)
+⊢ (Rat.castHom ℂ) ((PowerSeries.coeff q) (P.localExpansion pole h)) * (z + ↑pole) ^ (P.multiplicity pole - q) =
+    (z + ↑pole) ^ (P.multiplicity pole - q) * ↑((PowerSeries.coeff q) (P.localExpansion pole h))

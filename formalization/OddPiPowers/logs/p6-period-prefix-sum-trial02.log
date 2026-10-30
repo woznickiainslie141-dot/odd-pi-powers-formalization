@@ -1,0 +1,32 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodPrefixSum.lean:36:17: error: unsolved goals
+case cons
+T : ℕ
+c : TwelveCellCertificate
+cs : List TwelveCellCertificate
+ih :
+  (List.map periodLabelActual (periodPrefixLabels T cs)).sum =
+    (List.map (fun c => ∑ r ∈ Finset.range T, periodLabelActual (c, r)) cs).sum
+h : ∑ x ∈ Finset.range T, periodLabelActual (c, x) = (List.map (fun x => periodLabelActual (c, x)) (List.range T)).sum
+⊢ (List.map (periodLabelActual ∘ fun r => (c, r)) (List.range T)).sum +
+      (List.map periodLabelActual (List.flatMap (fun c => List.map (fun r => (c, r)) (List.range T)) cs)).sum =
+    ∑ r ∈ Finset.range T, periodLabelActual (c, r) +
+      (List.map (fun c => ∑ r ∈ Finset.range T, periodLabelActual (c, r)) cs).sum
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodPrefixSum.lean:40:61: warning: This simp argument is unused:
+  ← h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [periodPrefixLabels, List.map_append, List.map_map, ih]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodPrefixSum.lean:40:66: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [periodPrefixLabels, List.map_append, List.map_map, ← h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodPrefixSum.lean:81:2: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information

@@ -1,0 +1,16 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PrimeDivisorRates.lean:32:6: error: Application type mismatch: The argument
+  gt_mem_nhds
+    (have this := sub_lt_self A (mul_pos hLR hη);
+    this)
+has type
+  ∀ᶠ (x : ℝ) in 𝓝 (A - ↑L * η), x < A
+but is expected to have type
+  ∀ᶠ (y : ℝ) in 𝓝 (∑ i ∈ s, ↑(W i).weight * (1 / (W i).lower - 1 / (W i).upper)), A - ↑L * η < y
+in the application
+  Tendsto.eventually (finite_window_log_sum_div_tendsto s W)
+    (gt_mem_nhds
+      (have this := sub_lt_self A (mul_pos hLR hη);
+      this))
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  instAdd ↦ 1

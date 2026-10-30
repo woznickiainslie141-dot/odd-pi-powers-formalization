@@ -1,0 +1,138 @@
+\section{From logarithmic polynomials to odd powers}
+\label{sec:transfer}
+
+\subsection{Why a resultant is the right arithmetic object}
+
+The Gaussian integers \(\ZZ[\ii]\) form a unique factorization
+domain. Every nonzero Gaussian integer has complex modulus at least
+one. If \(f\) is a primitive polynomial over this ring and divides a
+polynomial over \(\QQ(\ii)\), Gauss's lemma makes that divisibility
+valid over \(\ZZ[\ii]\) as well.
+
+For polynomials \(f,U\), the resultant vanishes exactly when they
+have a common root. If \(f\) has leading coefficient \(a\) and
+roots \(y_1,\ldots,y_d\), then
+\[
+\Res(f,U)=a^{\deg U}\prod_{\ell=1}^{d}U(y_\ell).
+\]
+Using a \emph{minimal} polynomial, rather than the whole binomial
+that first defines \(y\), guarantees the nonzero product needed below.
+
+\begin{lemma}[Uniform algebraic-value bound]\label{lem:resultant}
+Let \(k\ge2\), let \(p/q>0\) be reduced, and suppose
+\(|p/q-\pi^k|<1\). Put
+\[
+\theta=(p/q)^{1/k}>0,\qquad y=\ii\theta/2.
+\]
+For every \(n\), some \(h\) has \(U_{h,n}(y)\ne0\).
+For each \(\eta>0\) and all sufficiently large \(n\),
+this \(h\) satisfies
+\begin{equation}\label{eq:alglower}
+|U_{h,n}(y)|\ge
+(2^kq)^{-m}\exp(-(k-1)(G+\eta)n).
+\end{equation}
+The threshold is independent of \(p,q\).
+\end{lemma}
+\begin{proof}
+Dividing the matrix by \(\Pi_n\) preserves its invertibility.
+It cannot send the nonzero vector \((1,y,\ldots,y^m)^{\mathsf T}\)
+to zero, so some row \(U\) is nonzero at \(y\).
+
+Let \(f\in\ZZ[\ii][Y]\) be a primitive minimal polynomial of \(y\)
+over \(K=\QQ(\ii)\), of degree \(d\le k\), and let \(a\ne0\)
+be its leading coefficient. It divides
+\[
+(2^kq)Y^k-\ii^k p
+\]
+over \(\ZZ[\ii]\). Thus \(a\mid2^kq\), in particular
+\(|a|\le2^kq\). Every root of \(f\) belongs to
+\(\{y\zeta:\zeta^k=1\}\). The error assumption implies
+\(|y|<2\), so all these roots lie in the disk used in
+Lemma~\ref{lem:height}.
+
+Irreducibility of \(f\) and \(U(y)\ne0\) give
+\(\Res(f,U)\ne0\). Its Gaussian-integrality yields
+\[
+1\le |a|^{\deg U}|U(y)|
+\prod_{\ell=2}^{d}|U(y_\ell)|.
+\]
+Use \(\deg U\le m\), \(d\le k\), and the uniform height bound.
+Since \(G+\eta>0\), replacing \(d-1\) by \(k-1\) only weakens
+the result and gives~\eqref{eq:alglower}.
+\end{proof}
+
+No assumption of irreducibility of \(Y^k-\ii^kp/(2^kq)\)
+has been made. If \(p/q\) is a rational power, or a binomial splits
+over \(K\), the true degree \(d\) is simply smaller. In particular,
+the argument covers every denominator and not just a generic
+subsequence of approximations.
+
+\subsection{The quantitative comparison}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Write \(\Delta_k=D-(k-1)G>0\). Choose \(\eta>0\) small enough that
+\(\Delta_k-k\eta>0\). All estimates can be made simultaneous:
+for \(n\ge n_0\), every row and every \(|Y|\le2\) satisfy
+\[
+|U_{h,n}(\lambda)|\le e^{-(D-\eta)n},\quad
+|U_{h,n}(Y)|,\ |T_{h,n}(Y)|\le e^{(G+\eta)n}.
+\]
+Here \(n\) was required to be a multiple of \(L\). Accordingly choose
+\begin{equation}\label{eq:nchoice}
+n=L\left\lceil
+\frac{m\log(2^kq)+\log2}
+ {L(\Delta_k-k\eta)}
+\right\rceil.
+\end{equation}
+For sufficiently large \(q\), this is at least \(n_0\).
+The extra rounding is at most \(L\), a fixed constant.
+
+Select the row in Lemma~\ref{lem:resultant}. The ratio of the small
+remainder to its nonzero value at \(y\) is at most
+\[
+(2^kq)^m e^{-(\Delta_k-k\eta)n}\le\tfrac12.
+\]
+The divided-difference identity consequently gives
+\[
+|\lambda-y|
+\ge\tfrac12(2^kq)^{-m}e^{-k(G+\eta)n}.
+\]
+If the divided difference were zero, that same identity would
+contradict the preceding factor \(1/2\); hence no division by zero
+is hidden here.
+
+Substitution of~\eqref{eq:nchoice} yields
+\[
+|\lambda-y|\ge c_{k,m,\eta}
+q^{-m(D+G)/(\Delta_k-k\eta)}.
+\]
+Indeed
+\(\Delta_k-k\eta+k(G+\eta)=D+G\), which explains the numerator
+in the final exponent.
+
+Finally,
+\[
+\left|\pi^k-\frac pq\right|
+=|\pi-\theta|\sum_{a=0}^{k-1}\pi^{k-1-a}\theta^a
+\ge2\pi^{k-1}|\lambda-y|.
+\]
+Fractions outside \(|p/q-\pi^k|<1\), or with \(p/q\le0\),
+need no special treatment. Letting \(\eta\) tend to zero proves
+the irrationality-exponent assertion.
+\end{proof}
+
+\subsection{Why a common divisor helps twice}
+
+Before division, the rates are \(D_0,G_0\). Dividing all coefficients
+and remainders by the same \(\Pi_n\) changes them to
+\[
+D=D_0+\gamma,\qquad G=G_0-\gamma.
+\]
+Thus the numerator \(D+G\) is unchanged, while the useful gap grows by
+\(k\gamma\):
+\[
+D-(k-1)G=D_0-(k-1)G_0+k\gamma.
+\]
+This is why a divisor must be applied consistently to the remainder,
+the coefficients, and the divided difference. Reducing only one
+height in the final formula would give an incorrect improvement.

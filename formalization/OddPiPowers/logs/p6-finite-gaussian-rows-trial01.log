@@ -1,0 +1,6 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\FiniteGaussianRows.lean:50:2: error: Type mismatch
+  finiteGaussianRow_coeff (A h) j
+has type
+  (finiteGaussianRow (A h)).coeff ↑j = A h j
+but is expected to have type
+  (coefficientMatrix m (fun h => finiteGaussianRow (A h)) h j).re = (A h j).re

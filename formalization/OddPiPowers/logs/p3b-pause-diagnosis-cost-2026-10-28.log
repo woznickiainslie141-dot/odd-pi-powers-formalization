@@ -1,0 +1,89 @@
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:17:25: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:17:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:25:25: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:25:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:59:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  CarryShape.carryNat ?C ?j ?z ?y
+in the target expression
+  twelveLayerShape.carryNat j z y =
+    ((if Int.fract y < twelveEndpointReal (twelveAlpha j) z then 1 else 0) +
+        if twelveEndpointReal (twelveBeta j) z < Int.fract y then 1 else 0) -
+      if twelveEndpointReal (twelveBeta j) z < twelveEndpointReal (twelveAlpha j) z then 1 else 0
+
+j : Fin 12
+z y : ℝ
+⊢ twelveLayerShape.carryNat j z y =
+    ((if Int.fract y < twelveEndpointReal (twelveAlpha j) z then 1 else 0) +
+        if twelveEndpointReal (twelveBeta j) z < Int.fract y then 1 else 0) -
+      if twelveEndpointReal (twelveBeta j) z < twelveEndpointReal (twelveAlpha j) z then 1 else 0
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    j
+  has type
+    Fin 12
+  but is expected to have type
+    Fin twelveLayerShape.J
+  in the application
+    twelveLayerShape.carryNat j
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:81:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  twelveLayerShape.carryNat ?j ?z ?y
+in the target expression
+  { L := 69, J := 12, offset := fun j => ↑j, weight := fun j => if ↑j = 0 then 6 else 1,
+          twoOffset_lt := twelveLayerShape._proof_2 }.carryNat
+      j z (Int.fract y) =
+    twelvePointLayer c.rankCode q j
+
+case e_a
+c : TwelveCellCertificate
+hc : c.Valid
+z y : ℝ
+hzl : ↑c.left < z
+hzr : z < ↑c.right
+q : TwelveEndpoint
+hyq : Int.fract y = twelveEndpointReal q z
+j : Fin 12
+hj : j ∈ Finset.univ
+⊢ { L := 69, J := 12, offset := fun j => ↑j, weight := fun j => if ↑j = 0 then 6 else 1,
+          twoOffset_lt := twelveLayerShape._proof_2 }.carryNat
+      j z (Int.fract y) =
+    twelvePointLayer c.rankCode q j
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:119:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  twelveLayerShape.carryNat ?j ?z ?y
+in the target expression
+  { L := 69, J := 12, offset := fun j => ↑j, weight := fun j => if ↑j = 0 then 6 else 1,
+          twoOffset_lt := twelveLayerShape._proof_2 }.carryNat
+      j z (Int.fract y) =
+    twelveGapLayer c.rankCode k j
+
+case e_a
+c : TwelveCellCertificate
+hc : c.Valid
+z y : ℝ
+hzl : ↑c.left < z
+hzr : z < ↑c.right
+k : TwelveEndpoint
+hbelow : ∀ (i : TwelveEndpoint), twelveEndpointReal i z < Int.fract y ↔ ↑(twelveRank c.rankCode i) ≤ ↑k
+habove : ∀ (i : TwelveEndpoint), Int.fract y < twelveEndpointReal i z ↔ ↑k < ↑(twelveRank c.rankCode i)
+j : Fin 12
+hj : j ∈ Finset.univ
+⊢ { L := 69, J := 12, offset := fun j => ↑j, weight := fun j => if ↑j = 0 then 6 else 1,
+          twoOffset_lt := twelveLayerShape._proof_2 }.carryNat
+      j z (Int.fract y) =
+    twelveGapLayer c.rankCode k j
+OddPiPowers/Arithmetic/TwelveLayerCost.lean:155:8: warning: This simp argument is unused:
+  twelveEndpointSlope_alpha
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveEndpointReal, twelveAlpha, twelveEndpointSlope, Int.fract]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

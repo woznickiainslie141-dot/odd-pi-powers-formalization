@@ -1,0 +1,15 @@
+⚠ [1028/1090] Replayed OddPiPowers.Arithmetic.FinitePeriodKernel
+warning: OddPiPowers/Arithmetic/FinitePeriodKernel.lean:29:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/FinitePeriodKernel.lean:29:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [1111/1111] Built OddPiPowers.Analysis.PeriodGapTail (7.8s)
+warning: OddPiPowers/Analysis/PeriodGapTail.lean:33:44: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Analysis/PeriodGapTail.lean:33:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (1111 jobs).

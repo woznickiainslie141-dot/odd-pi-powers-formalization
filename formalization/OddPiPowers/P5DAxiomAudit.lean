@@ -1,0 +1,47 @@
+module
+
+import OddPiPowers.Analysis.TwelveLayerCentralBound
+import OddPiPowers.Analysis.CentralLogIntegral
+
+#print axioms OddPiPowers.horizontalMajorantConstant_pos
+#print axioms OddPiPowers.horizontalMajorant_integral_nonneg
+#print axioms OddPiPowers.horizontalMajorant_integral_le
+#print axioms OddPiPowers.ActualIntervals.weightedHorizontalKernel_lower_integral_bound
+#print axioms OddPiPowers.ActualIntervals.intervalFactorialProduct_norm
+#print axioms OddPiPowers.ActualIntervals.intervalFactorialProduct_norm_pos
+#print axioms OddPiPowers.ActualIntervals.centralLineBound
+#print axioms OddPiPowers.ActualIntervals.centralLineBound_nonneg
+#print axioms OddPiPowers.ActualIntervals.meromorphic_horizontal_integral_bound
+#print axioms OddPiPowers.ActualIntervals.meromorphic_horizontal_lower_integral_bound
+#print axioms OddPiPowers.auxiliaryCommonScale_cast_pos
+#print axioms OddPiPowers.auxiliaryCommonScale_contour_norm
+#print axioms OddPiPowers.ActualIntervals.centralRemainderBound
+#print axioms OddPiPowers.ActualIntervals.centralRemainderBound_pos
+#print axioms OddPiPowers.ActualIntervals.centralLineBound_contour_normalization
+#print axioms OddPiPowers.ActualIntervals.centralRemainderBound_mono_row
+#print axioms OddPiPowers.actualExponentialRemainder_norm_le_central
+#print axioms OddPiPowers.actualAuxiliaryAtI_norm_le_central
+#print axioms OddPiPowers.actualAuxiliaryAtI_norm_le_central_all_rows
+#print axioms OddPiPowers.ActualIntervals.reducedAuxiliaryRow
+#print axioms OddPiPowers.ActualIntervals.reducedAuxiliaryRow_mul
+#print axioms OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm
+#print axioms OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm_le_central
+#print axioms OddPiPowers.log_norm_horizontal_factor
+#print axioms OddPiPowers.ActualIntervals.log_intervalFactorialProduct_norm
+#print axioms OddPiPowers.ActualIntervals.log_normalizedHorizontalProduct_norm
+#print axioms OddPiPowers.ActualIntervals.log_horizontalDenominator_center
+#print axioms OddPiPowers.ActualIntervals.centralLogRatio
+#print axioms OddPiPowers.ActualIntervals.centralLogRatio_eq_finite_sum
+#print axioms OddPiPowers.ActualIntervals.exp_centralLogRatio
+#print axioms OddPiPowers.ActualIntervals.log_centralRemainderBound
+#print axioms OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm_le_exp_central
+#print axioms OddPiPowers.twelveLayer_actualAuxiliaryAtI_norm_le_central
+#print axioms OddPiPowers.twelveLayer_reducedAuxiliaryRow_norm_le_central
+#print axioms OddPiPowers.centralLogPrimitive
+#print axioms OddPiPowers.centralIntervalRate
+#print axioms OddPiPowers.centralLogPrimitive_hasDerivAt
+#print axioms OddPiPowers.centralLogIntegral
+#print axioms OddPiPowers.centralIntervalRate_eq_integral
+#print axioms OddPiPowers.centralIntervalRate_zero
+#print axioms OddPiPowers.centralIntervalRate_hasDerivAt
+#print axioms OddPiPowers.centralIntervalRate_derivative_hasDerivAt

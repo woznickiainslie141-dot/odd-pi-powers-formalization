@@ -1,0 +1,23 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\BalancedActualFamily.lean:24:4: error(lean.unknownIdentifier): Unknown constant `Nat.Icc_zero_eq_range`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\BalancedActualFamily.lean:22:68: error: unsolved goals
+M n : ℕ
+a : Fin M
+⊢ Finset.Icc 0 n = Finset.range (n + 1)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\BalancedActualFamily.lean:28:75: warning: This simp argument is unused:
+  Nat.lt_succ_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ActualIntervals.multiplicity, balanced_interval, Finset.mem_range, hell]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\BalancedActualFamily.lean:35:62: warning: This simp argument is unused:
+  balanced_length
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ActualIntervals.binomialWeight, balancedActualFamily, balancedBinomialWeight, ActualIntervals.length]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\BalancedActualFamily.lean:50:29: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲

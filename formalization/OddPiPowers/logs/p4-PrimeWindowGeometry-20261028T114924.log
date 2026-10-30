@@ -1,0 +1,14 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PrimeWindowGeometry.lean:52:4: error: Type mismatch
+  (le_div_iff₀ hpR).mp hlu.left
+has type
+  W.lower * ↑p ≤ ↑N
+but is expected to have type
+  ↑p * W.lower ≤ ↑N
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 4
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PrimeWindowGeometry.lean:59:11: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  MulRightStrictMono ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PrimeWindowGeometry.lean:60:4: error: No goals to be solved

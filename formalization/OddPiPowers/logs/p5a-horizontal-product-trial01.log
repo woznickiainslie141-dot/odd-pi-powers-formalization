@@ -1,0 +1,71 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\HorizontalProduct.lean:49:24: error: Application type mismatch: The argument
+  h
+has type
+  have B := (Y ^ 2 + 1 / 4) ^ 2 / (Y ^ 2 - 1 / 4);
+  (1 + t ^ 2 / B) ^ 2 ≤
+    Complex.normSq (↑(t + u) + Complex.I * ↑Y) * Complex.normSq (↑(t - u) + Complex.I * ↑Y) /
+      (Complex.normSq (↑u + Complex.I * ↑Y) * Complex.normSq (↑(-u) + Complex.I * ↑Y))
+but is expected to have type
+  ?m.174 ≤ ?m.175 / Complex.normSq ((↑u + Complex.I * ↑Y) * (↑(-u) + Complex.I * ↑Y))
+in the application
+  (le_div_iff₀
+        (have this :=
+          Eq.mpr (id (congrArg (fun _a => 0 < _a) (Complex.normSq_mul (↑u + Complex.I * ↑Y) (↑(-u) + Complex.I * ↑Y))))
+            (Eq.mpr
+              (id
+                (congrArg (fun _a => 0 < _a * Complex.normSq (↑(-u) + Complex.I * ↑Y)) (normSq_horizontal_factor u Y)))
+              (Eq.mpr (id (congrArg (fun _a => 0 < (u ^ 2 + Y ^ 2) * _a) (normSq_horizontal_factor (-u) Y)))
+                (mul_pos
+                  (Right.add_pos_of_nonneg_of_pos (Even.pow_nonneg (even_two_mul 1) u)
+                    (pow_pos
+                      (lt_trans
+                        (Mathlib.Meta.Positivity.pos_of_isNNRat
+                          (Mathlib.Meta.NormNum.isNNRat_div
+                            (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one))
+                              (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                  (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2))))
+                              (Eq.refl (Nat.mul 1 1)) (Eq.refl 2)))
+                          (Eq.refl (decide (0 < 1))))
+                        hY)
+                      2))
+                  (Right.add_pos_of_nonneg_of_pos (Even.pow_nonneg (even_two_mul 1) (-u))
+                    (pow_pos
+                      (lt_trans
+                        (Mathlib.Meta.Positivity.pos_of_isNNRat
+                          (Mathlib.Meta.NormNum.isNNRat_div
+                            (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one))
+                              (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                  (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2))))
+                              (Eq.refl (Nat.mul 1 1)) (Eq.refl 2)))
+                          (Eq.refl (decide (0 < 1))))
+                        hY)
+                      2)))));
+        this)).mp
+    h
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instMul ↦ 4
+  Real.instInv ↦ 2
+  Real.instAdd ↦ 2
+  Real.instLE ↦ 4
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\HorizontalProduct.lean:66:16: error: Function expected at
+  Finset.prod_le_prod fun i hi => sq_nonneg ((1 + t ^ 2 / horizontalB Y) * horizontalFactor Y (u i) 0)
+but this term has type
+  ∏ i ∈ ?m.125, 0 ≤ ∏ i ∈ ?m.125, ((1 + t ^ 2 / horizontalB Y) * horizontalFactor Y (u i) 0) ^ 2
+
+Note: Expected a function because this term is being applied to the argument
+  (fun i hi => horizontal_pair_mul Y (u i) t hY (hu i hi))
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\HorizontalProduct.lean:62:45: error: unsolved goals
+ι : Type u_1
+s : Finset ι
+u : ι → ℝ
+Y t : ℝ
+hY : 1 / 2 < Y
+hu : ∀ i ∈ s, |u i| ≤ 1 / 2
+hreflect : ∏ i ∈ s, horizontalFactor Y (-u i) t = ∏ i ∈ s, horizontalFactor Y (u i) t
+hbase : 0 ≤ 1 + t ^ 2 / horizontalB Y
+⊢ (1 + t ^ 2 / horizontalB Y) ^ s.card * ∏ i ∈ s, horizontalFactor Y (u i) 0 ≤ ∏ i ∈ s, horizontalFactor Y (u i) t

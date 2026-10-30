@@ -1,0 +1,11 @@
+⚠ [3837/3837] Built OddPiPowers.Arithmetic.PrimeDivisorRates (8.6s)
+warning: OddPiPowers/Arithmetic/PrimeDivisorRates.lean:43:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/PrimeDivisorRates.lean:43:8: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/PrimeDivisorRates.lean:43:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Build completed successfully (3837 jobs).

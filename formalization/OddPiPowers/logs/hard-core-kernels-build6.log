@@ -1,0 +1,14 @@
+✔ [3076/3079] Built OddPiPowers.Construction.LocalDenominators (22s)
+✖ [3077/3079] Building OddPiPowers.Construction.ConfluentJets (25s)
+trace: .> LEAN_PATH=C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean c:\Users\hc260\.elan\toolchains\leanprover--lean4---v4.35.0\bin\lean.exe C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\OddPiPowers\Construction\ConfluentJets.lean -o C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.olean -i C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.ilean -c C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.c --setup C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.setup.json --json
+error: OddPiPowers/Construction/ConfluentJets.lean:95:8: failed to synthesize instance of type class
+  DecidableEq K
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+warning: OddPiPowers/Construction/ConfluentJets.lean:107:8: declaration uses `sorry`
+warning: OddPiPowers/Construction/ConfluentJets.lean:124:6: Unused tactic linter: `simpa only [confluentMatrix_mulVec, Pi.zero_apply] using hh` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Some required targets logged failures:
+- OddPiPowers.Construction.ConfluentJets
+error: build failed

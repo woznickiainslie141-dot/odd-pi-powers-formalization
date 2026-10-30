@@ -1,0 +1,11 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ReducedCentralBound.lean:26:4: error: Type mismatch: After simplification, term
+  ht
+ has type
+  @Eq ℂ ((↑P.actualAuxiliaryPrimeDivisor • P.reducedAuxiliaryIntMatrixAtI) h j)
+    ((actualAuxiliaryPolynomialMatrix P).map (Polynomial.eval₂ (Rat.castHom ℂ) Complex.I) h j)
+but is expected to have type
+  @Eq ℂ (↑P.actualAuxiliaryPrimeDivisor * P.reducedAuxiliaryIntMatrixAtI h j)
+    (Polynomial.eval₂ (Rat.castHom ℂ) Complex.I (actualAuxiliary P h j))
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Complex.mulAux ↦ 8

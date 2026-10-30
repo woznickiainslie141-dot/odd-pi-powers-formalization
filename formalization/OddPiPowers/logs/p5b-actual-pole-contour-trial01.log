@@ -1,0 +1,41 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:46:2: error: Type mismatch: After simplification, term
+  CircleIntegrable.const_smul hi
+ has type
+  CircleIntegrable
+    (↑((PowerSeries.coeff q) (P.localExpansion r h)) • fun z =>
+      contourExponential lambda P.n z / (z + ↑r) ^ (P.multiplicity r - 1 - q + 1))
+    (-↑pole) (1 / 4)
+but is expected to have type
+  CircleIntegrable (P.principalExponentialTerm h lambda r q) (-↑pole) (1 / 4)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  mulAux ↦ 176
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:63:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:66:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:92:15: error: `simp` made no progress
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:99:34: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:101:4: error: Type mismatch
+  CircleIntegrable.sum (Finset.range (P.multiplicity r)) fun q hq =>
+    principalExponentialTerm_circleIntegrable P (↑h) lambda pole r q (Finset.mem_range.mp hq)
+has type
+  CircleIntegrable (∑ i ∈ Finset.range (P.multiplicity r), P.principalExponentialTerm (↑h) lambda r i) (-↑pole) (1 / 4)
+but is expected to have type
+  CircleIntegrable (fun z => ∑ q ∈ Finset.range (P.multiplicity r), P.principalExponentialTerm (↑h) lambda r q z)
+    (-↑pole) (1 / 4)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:123:47: error: Application type mismatch: The argument
+  Finset.card_univ
+has type
+  Finset.univ.card = Fintype.card ?m.135
+but is expected to have type
+  Finset.univ.card = M
+in the application
+  LE.le.trans_eq (Finset.card_filter_le Finset.univ fun a => pole ∈ P.interval a) Finset.card_univ

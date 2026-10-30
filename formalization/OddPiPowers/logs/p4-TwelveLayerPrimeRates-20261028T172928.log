@@ -1,0 +1,15 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerPrimeRates.lean:31:49: error: unexpected token '('; expected ')', ',' or ':'
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerPrimeRates.lean:28:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  primeCertificate twelveLayerShape.L N ?B
+in the target expression
+  primeCertificate 69 N twelveLayerLowerBound ∣ (twelveLayerActualFamily N).actualAuxiliaryPrimeDivisor
+
+η : ℝ
+hη : 0 < η
+N : ℕ
+hN : Real.exp ((2 / 69 - η) * ↑(69 * N)) ≤ ↑(primeCertificate 69 N twelveLayerLowerBound)
+⊢ primeCertificate 69 N twelveLayerLowerBound ∣ (twelveLayerActualFamily N).actualAuxiliaryPrimeDivisor
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerPrimeRates.lean:31:21: error: mod_cast has type
+  0 < ?m.73 → ?m.72 ∣ ?m.73 → ?m.72 ≤ ?m.73
+but is expected to have type
+  primeCertificate 69 N twelveLayerLowerBound ≤ (twelveLayerActualFamily N).actualAuxiliaryPrimeDivisor

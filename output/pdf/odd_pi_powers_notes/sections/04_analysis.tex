@@ -1,0 +1,165 @@
+\section{Uniform analytic estimates}
+\label{sec:analysis}
+
+\subsection{A coefficient bound valid on a whole disk}
+
+\begin{lemma}[Height and divided difference]\label{lem:height}
+Uniformly for \(0\le h,j\le m\),
+\[
+|A_{h,j,n}(\ii)|\le \exp(G_0n+o(n)).
+\]
+After division by \(\Pi_n\), put
+\[
+U_{h,n}(Y)=\sum_{j=0}^{m}
+\frac{A_{h,j,n}(\ii)}{\Pi_n}Y^j\in\ZZ[\ii][Y],
+\]
+and define the polynomial
+\[
+T_{h,n}(Y)=\sum_{j=1}^{m}\frac{A_{h,j,n}(\ii)}{\Pi_n}
+\sum_{a=0}^{j-1}\lambda^{j-1-a}Y^a.
+\]
+For \(|Y|\le2\), uniformly in \(h,Y\),
+\begin{equation}\label{eq:heightbounds}
+|U_{h,n}(Y)|,\ |T_{h,n}(Y)|
+\le \exp(Gn+o(n)),
+\end{equation}
+and
+\begin{equation}\label{eq:divdiff}
+U_{h,n}(\lambda)-U_{h,n}(Y)
+=(\lambda-Y)T_{h,n}(Y).
+\end{equation}
+\end{lemma}
+\begin{proof}
+In~\eqref{eq:polelocal}, the constant has modulus at most
+\(2^{\ell_a}\). For a regular factor the constant has modulus at most
+one, since it is, up to sign,
+\(\ell_a!(s-1)!/(s+\ell_a)!\) for an integer \(s\ge1\).
+For either type, the remaining reciprocal linear factors have
+nonzero integral distances. A coefficient of fixed order at most
+\(m\) is bounded by the corresponding coefficient of
+\((1-w)^{-(N_n+M)}\), and is therefore polynomial in \(n\).
+The factors \((-\ell+w)^h\), and the sum over \(\ell\), introduce
+only more fixed powers of \(n\).
+Thus
+\[
+|A_{h,j,n}(\ii)|
+\le K\,d_n^m n^B 2^{\sum_a\ell_a}.
+\]
+Since \(\log d_n=n+o(n)\) and
+\(\sum_a\ell_a=n\sum_j\nu_jc_j\), this has rate \(G_0\).
+Division by \(\Pi_n\) subtracts \(\gamma\).
+The degree \(m\) and the bounds \(|Y|\le2,\ |\lambda|<2\) are fixed,
+so evaluation and the displayed finite difference introduce only
+constant factors. The identity follows from
+\(\lambda^j-Y^j=(\lambda-Y)\sum_{a=0}^{j-1}\lambda^{j-1-a}Y^a\).
+\end{proof}
+
+This is a uniform estimate on a disk, not just an asymptotic value
+at a single point. Uniformity will permit a rational approximation
+to select its own nearby algebraic point \(Y=y\).
+
+\subsection{A global horizontal-contour bound}
+
+The main integral estimate can be proved without leaving its tails
+implicit. First observe that the solution of~\eqref{eq:rootpreview}
+is unique: its left side decreases continuously from \(M\pi\) to
+zero. Also
+\begin{equation}\label{eq:Yhalf}
+Y>\frac12.
+\end{equation}
+Indeed the outer type has \(c_0=1,\nu_0\ge1\), and \(M\ge2\);
+at \(Y=1/2\) that type alone contributes at least \(\pi/2\), and
+the remaining multiplicity makes the inequality strict.
+
+\begin{lemma}[A uniform tail inequality]\label{lem:tail}
+For \(Y>1/2\), put
+\[
+B_Y=\frac{(Y^2+1/4)^2}{Y^2-1/4}.
+\]
+If \(d=\deg Q_n=N_n+M\), then for every real \(t\),
+\begin{equation}\label{eq:tailineq}
+\frac{|Q_n(-n/2+nt+\ii nY)|}
+ {|Q_n(-n/2+\ii nY)|}
+\ge (1+t^2/B_Y)^{d/2}.
+\end{equation}
+The same inequality holds on the lower horizontal line.
+\end{lemma}
+\begin{proof}
+The offsets \(u=r/n-1/2\) in each interval occur in pairs \(u,-u\),
+with \(|u|\le1/2\). For a pair, the square of the modulus ratio is
+\[
+1+\frac{2(Y^2-u^2)t^2+t^4}{(Y^2+u^2)^2}.
+\]
+It is at least \((1+t^2/B_Y)^2\): the coefficient of \(t^2\) is
+at least \(2/B_Y\), and that of \(t^4\) is at least \(1/B_Y^2\).
+An unpaired central factor has ratio
+\(\sqrt{1+t^2/Y^2}\ge\sqrt{1+t^2/B_Y}\).
+Multiplication proves the claim, with repetitions included.
+\end{proof}
+
+Open the contour in~\eqref{eq:Rdef} to the lines
+\(\operatorname{Im}z=\pm nY\). For each fixed \(n\) the vertical
+ends vanish as their real parts tend to infinity: the rational
+factor decays faster than \(1/|z|\).
+On these horizontal lines, \(|\ii^{z+n}|\le e^{\Theta nY}\).
+Lemma~\ref{lem:tail} therefore gives
+\begin{equation}\label{eq:Rcenter}
+|R_{h,n}(\ii)|
+\le K_{h,Y}n^{h+1}e^{\Theta nY}
+\frac{C_n}{|Q_n(-n/2+\ii nY)|}.
+\end{equation}
+To justify a constant independent of \(n\), the remaining integral
+is bounded by
+\[
+\int_{\mathbb R}
+\frac{(|t|+Y+1/2)^h}{(1+t^2/B_Y)^{d/2}}\dd t.
+\]
+For sufficiently large \(n\), replace the denominator exponent
+by the fixed value \(h+2\); the resulting integral is finite.
+This controls the entire line, including both infinite tails.
+
+\subsection{Evaluating the central exponential rate}
+
+For one interval of length \(cn\), Stirling's formula and a Riemann
+sum on a smooth integrand give
+\begin{align*}
+\log((cn)!)&=cn\log n+cn\log c-cn+O(\log n),\\
+\sum_{r=\alpha}^{\beta}
+\log|r-n/2+\ii nY|
+&=(cn+1)\log n\\
+&\quad+n\int_{-c/2}^{c/2}\log|u+\ii Y|\dd u+O(1).
+\end{align*}
+The extra endpoint in the product changes only \(O(\log n)\).
+Direct integration shows
+\[
+\int_{-c/2}^{c/2}\log|u+\ii Y|\dd u
+=\frac c2\log(Y^2+c^2/4)-c
++2Y\arctan\frac{c}{2Y}.
+\]
+Subtracting the product logarithm from the factorial logarithm
+thus gives \(-nF_c(Y)+O(\log n)\).
+Equation~\eqref{eq:Rcenter} yields
+\[
+|R_{h,n}(\ii)|\le
+\exp\left\{-n\left(\sum_j\nu_jF_{c_j}(Y)
+-\Theta Y-m\right)+o(n)\right\}.
+\]
+
+\begin{proposition}[Small remainders]\label{prop:small}
+After division by \(\Pi_n\), uniformly in \(0\le h\le m\),
+\begin{equation}\label{eq:small}
+|U_{h,n}(\lambda)|\le\exp(-Dn+o(n)).
+\end{equation}
+\end{proposition}
+
+Finally,
+\[
+\frac{\mathrm d}{\mathrm dY}F_c(Y)
+=2\arctan\frac{c}{2Y},\qquad
+\frac{\mathrm d^2}{\mathrm dY^2}F_c(Y)
+=-\frac{c}{Y^2+c^2/4}.
+\]
+Hence~\eqref{eq:rootpreview} is the unique global maximizer of
+the central decay bound. This optimization needs only a
+one-dimensional monotone root, not a claimed exact asymptotic
+formula for an oscillating complex sum.

@@ -1,0 +1,46 @@
+L=99 Tmax=39 groups=2999 rows=46585 (0.0s)
+ it=0 asymE=37100.587980 exactE(real s)=37025.843821 rho=4.562394 (27.2s)
+ it=1 asymE=37100.587980 exactE(real s)=37025.843820 rho=4.562394 (63.7s)
+ it=2 asymE=37100.587980 exactE(real s)=37025.843820 rho=4.562394 (92.4s)
+ it=3 asymE=37100.587980 exactE(real s)=37025.843820 rho=4.562394 (121.4s)
+ final exactE(real s)=37025.843820 s=3172.512
+  shape: 0:1.00000, 1:0.06250, 2:0.06250, 3:0.06250, 4:0.06250, 5:0.06250, 6:0.06250, 7:0.06250, 8:0.06250, 9:0.06250, 10:0.06250, 11:0.06250, 12:0.06250, 13:0.06250, 14:0.06250, 15:0.06250, 16:0.06250, 17:0.06250, 18:0.06250, 19:0.06250, 20:0.06250, 21:0.06250, 22:0.06250, 23:0.06250, 24:0.06250, 25:0.06250, 26:0.06250, 27:0.06250, 28:0.06250
+ integer E=37026.255082 nu=[1424, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89, 89]
+L=99 Tmax=39 groups=2999 rows=46585 (0.0s)
+ it=0 asymE=1048183.982019 exactE(real s)=1048054.138287 rho=4.562394 (16.9s)
+ it=1 asymE=1048183.982004 exactE(real s)=1048054.138273 rho=4.562394 (48.9s)
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\mm_lp.py", line 82, in <module>
+    v = lp(d, cV, cA)
+        ^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\mm_lp.py", line 40, in lp
+    res = linprog(cost, A_ub=A, b_ub=np.zeros(nr), A_eq=Aeq, b_eq=[1.0],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_linprog.py", line 660, in linprog
+    sol = _linprog_highs(lp, solver=highs_solvers[meth],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_linprog_highs.py", line 355, in _linprog_highs
+    res = _highs_wrapper(c, A.indptr, A.indices, A.data, lhs, rhs,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_highspy\_highs_wrapper.py", line 206, in _highs_wrapper
+    run_status = highs.run()
+                 ^^^^^^^^^^^
+MemoryError: std::bad_alloc
+L=99 Tmax=39 groups=2999 rows=46585 (0.0s)
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\mm_lp.py", line 67, in <module>
+    v = lp(d, 1.0, 0.0)  # start from rho-optimal shape
+        ^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\mm_lp.py", line 40, in lp
+    res = linprog(cost, A_ub=A, b_ub=np.zeros(nr), A_eq=Aeq, b_eq=[1.0],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_linprog.py", line 660, in linprog
+    sol = _linprog_highs(lp, solver=highs_solvers[meth],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_linprog_highs.py", line 355, in _linprog_highs
+    res = _highs_wrapper(c, A.indptr, A.indices, A.data, lhs, rhs,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\optimize\_highspy\_highs_wrapper.py", line 206, in _highs_wrapper
+    run_status = highs.run()
+                 ^^^^^^^^^^^
+MemoryError: std::bad_alloc

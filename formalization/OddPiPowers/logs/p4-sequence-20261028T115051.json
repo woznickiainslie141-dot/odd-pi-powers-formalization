@@ -1,0 +1,31 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/FinitePeriodKernel.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+    "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Arithmetic/FinitePeriodKernel.lean",
+      "log": "logs/p4-FinitePeriodKernel-20261028T115051.log",
+      "sha256": "d7f1e7f395456a97c5254b9ff787085fe3e01cf5e7a3b53cd42d8a7e49ec9d26"
+    },
+    {
+      "file": "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+      "log": "logs/p4-PrimeWindowGeometry-20261028T115051.log",
+      "sha256": "3a2a6554026f19542c9778b29b846ac07666bd4cbb6b4a0b616034ffd979b3bb"
+    }
+  ],
+  "current": "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-FiniteWindowCover-20261028T115051.log"
+}

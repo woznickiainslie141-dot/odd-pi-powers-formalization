@@ -1,0 +1,81 @@
+'WeakPNT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeakPNT'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeakPNT''' depends on axioms: [propext, Classical.choice, Quot.sound]
+'chebyshev_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_eq_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_antitone_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_antitone_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_weighted_sum_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_weighted_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_rational_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.upper_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.reciprocal_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.admissible_of_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.windowWeightSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.active_window_indices_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.windowWeightSum_le_of_pairwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.eventually_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.mem_primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.mem_primes_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.sum_log_primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.largePrimeIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.log_primeCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.primes_subset_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finite_window_log_sum_le_log_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.eventually_finite_windows_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.theta_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.psi_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.log_lcmUpto_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.theta_scaled_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.log_sum_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finite_window_log_sum_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.unit_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.toWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.local_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.rate_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.certifiedCellWindows_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finiteWindowRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.divisor_eventually_exp_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationCell' does not depend on any axioms
+'OddPiPowers.PrimeRates.calibrationCell_mem' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.calibrationWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationWindow_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationWindow_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationWindow_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibration_primeCertificate_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayerActualFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerIndexToSigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerSigmaToIndex' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.twelveLayerIndexEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerActualGrouping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate_eq_grouping_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.actualDivisor_eventually_exp_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.twelveLayer_actualDivisor_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.scaleWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.windowWeightSum_scaleWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finiteWindowRate_scaleWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.twelveLayer_scaled_actualDivisor_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.log_intervalLcm_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.twelveLayerActualFamily_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\mm_lp.py", line 56, in <module>
+    d = load(L, Tmax)
+        ^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\hp.py", line 27, in load
+    d = build(L, tuple(range(Tmax + 1)))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\cells.py", line 106, in build
+    rows = minimal_rows_fast(rows.astype(np.int8))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\cells.py", line 60, in minimal_rows_fast
+    le = np.all(R[:, None, :] <= R[None, :, :], axis=2)  # le[j,i]: R[j]<=R[i]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 264. KiB for an array with shape (65, 65, 64) and data type bool
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\mm_lp.py", line 56, in <module>
+    d = load(L, Tmax)
+        ^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\hp.py", line 27, in load
+    d = build(L, tuple(range(Tmax + 1)))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N2_higher_powers\cells.py", line 121, in build
+    pickle.dump(data, f)
+OSError: [Errno 28] No space left on device

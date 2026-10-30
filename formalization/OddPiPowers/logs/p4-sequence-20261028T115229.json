@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [],
+  "current": "OddPiPowers/Arithmetic/FiniteWindowCover.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-FiniteWindowCover-20261028T115229.log"
+}

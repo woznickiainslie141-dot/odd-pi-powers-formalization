@@ -1,0 +1,42 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedAuxiliaryFamily.lean:42:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  b - 2*d ≤ 3
+  a ≥ 0
+  a - 2*d ≥ 4
+where
+ a := ↑n
+ b := ↑(balancedActualFamily (m + 1) n).denominator.natDegree
+ c := ↑(balancedActualFamily (m + 1) n).n
+ d := ↑(m + 1 - 1)
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedAuxiliaryFamily.lean:47:26: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.one_mul, Nat.sub_zero, Nat.cast_one, div_one, Finset.sum_const, Finset.card_univ,
+    Fintype.card_fin, nsmul_eq_mul, Nat.add_sub_cancel_right] at ht
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedAuxiliaryFamily.lean:47:36: warning: This simp argument is unused:
+  Nat.sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.one_mul, zero_mul, Nat.cast_one, div_one, Finset.sum_const, Finset.card_univ, Fintype.card_fin,
+    nsmul_eq_mul, Nat.add_sub_cancel_right] at ht
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedAuxiliaryFamily.lean:64:4: error: Type mismatch: After simplification, term
+  gaussianAuxiliaryRow_coefficientMatrix_det_ne_zero m (balancedActualFamily (m + 1) r)
+ has type
+  @Ne GaussianInt (coefficientMatrix m (gaussianAuxiliaryRow (balancedActualFamily (m + 1) r))).det 0
+but is expected to have type
+  @Ne GaussianInt (coefficientMatrix m (balancedGaussianRows m r)).det 0

@@ -1,0 +1,77 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:26:8: error: Function expected at
+  pow_le_one₀ ?m.140 ((div_le_one ?m.147).mpr he1)
+but this term has type
+  (1 / |↑e|) ^ ?m.139 ≤ 1
+
+Note: Expected a function because this term is being applied to the argument
+  q
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:33:53: error(lean.unknownIdentifier): Unknown identifier `abs_natCast`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:36:4: error: unsolved goals
+case pos
+n ell : ℕ
+hell : ell ≤ n
+hq0 : ¬1 = 0
+⊢ |-(PowerSeries.coeff 1) ↑ell + 1| ≤ ↑n + 1
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:38:4: error: unsolved goals
+case neg
+n ell q : ℕ
+hell : ell ≤ n
+hq0 : ¬q = 0
+hq1 : ¬q = 1
+⊢ |(PowerSeries.coeff q) ↑ell| ≤ ↑n + 1
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:37:12: warning: This simp argument is unused:
+  PowerSeries.coeff_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [PowerSeries.coeff_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:38:12: warning: This simp argument is unused:
+  PowerSeries.coeff_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [PowerSeries.coeff_X, hq0, hq1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:38:54: warning: This simp argument is unused:
+  hq0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [PowerSeries.coeff_C, PowerSeries.coeff_X, hq1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:51:54: error: unsolved goals
+n ell : ℕ
+⊢ (List.map (Prod.fst ∘ fun r => (normalizedReciprocal (r - ↑ell), 1))
+        (List.flatMap (fun a => [↑a]) ((Finset.range (n + 1)).erase ell).toList)).prod =
+    ∏ r ∈ (Finset.range (n + 1)).erase ell, normalizedReciprocal (↑r - ↑ell)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:63:83: error: unsolved goals
+M n ell h : ℕ
+⊢ (↑n + 1) ^ h *
+      (List.map (Prod.snd ∘ fun r => (normalizedReciprocal (r - ↑ell), 1))
+            (List.flatMap (fun a => [↑a]) ((Finset.range (n + 1)).erase ell).toList)).prod ^
+        M =
+    (↑n + 1) ^ h
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:74:2: error: Type mismatch
+  Nat.add_le_add_left (Nat.mul_le_mul_left M he) h
+has type
+  h + M * ((Finset.range (n + 1)).erase ell).card ≤ h + M * (n + 1)
+but is expected to have type
+  h +
+      ↑M *
+        (do
+            let a ← ((Finset.range (n + 1)).erase ell).toList
+            pure ↑a).length ≤
+    h + M * (n + 1)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:71:48: warning: This simp argument is unused:
+  Finset.length_toList
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [balancedWeightedFactors, List.length_append, List.length_replicate, List.length_flatten,
+    List.map_replicate, List.sum_replicate, nsmul_eq_mul, reciprocalWeightedFactors, List.length_map]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedSeriesFactors.lean:89:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership ℤ (Finset ℕ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

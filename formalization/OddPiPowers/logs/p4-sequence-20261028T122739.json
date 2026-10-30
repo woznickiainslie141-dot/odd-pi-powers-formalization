@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/ScaledPrimeRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+      "log": "logs/p4-CellPrimeWindows-20261028T122739.log",
+      "sha256": "4513c69cff2f6719656cb2ea597d642442ac896a05f48e4516ca54563675c219"
+    }
+  ],
+  "current": "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-PrimeDivisorRates-20261028T122739.log"
+}

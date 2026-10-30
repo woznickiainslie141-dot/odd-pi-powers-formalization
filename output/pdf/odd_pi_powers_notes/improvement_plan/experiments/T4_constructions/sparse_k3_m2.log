@@ -1,0 +1,6 @@
+{"k": 3, "mp": 2, "n": 4, "nullity": 1, "kappa": 3.47652169301474, "delta": -0.4227411475032156, "digits": 6, "sec": 0.0, "E_proxy": null}
+{"k": 3, "mp": 2, "n": 8, "nullity": 1, "kappa": 8.56382665925641, "delta": -4.823013726117529, "digits": 30, "sec": 0.0, "E_proxy": null}
+{"k": 3, "mp": 2, "n": 12, "nullity": 1, "kappa": 14.629413403899468, "delta": -10.714941856418521, "digits": 77, "sec": 0.0, "E_proxy": null}
+{"k": 3, "mp": 2, "n": 16, "nullity": 1, "kappa": 20.893854827671262, "delta": -17.09627364574052, "digits": 146, "sec": 0.0, "E_proxy": null}
+{"k": 3, "mp": 2, "n": 20, "nullity": 1, "kappa": 27.57372595364606, "delta": -23.733370711037164, "digits": 240, "sec": 0.0, "E_proxy": null}
+{"k": 3, "mp": 2, "n": 24, "nullity": 1, "kappa": 34.14677189385979, "delta": -30.266408361521645, "digits": 356, "sec": 0.1, "E_proxy": null}

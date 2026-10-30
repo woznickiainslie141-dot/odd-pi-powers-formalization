@@ -1,0 +1,8 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogLipschitz.lean:16:72: error: unsolved goals
+Y u : ℝ
+⊢ Real.log (u ^ 2 + Y ^ 2) / 2 = 1 / 2 * Real.log (u ^ 2 + Y ^ 2)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogLipschitz.lean:29:2: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogLipschitz.lean:33:70: error(lean.invalidField): Invalid field `continuous`: The environment does not contain `Function.continuous`, so it is not possible to project the field `continuous` from an expression
+  fun u => HasDerivAt.differentiableAt (centralLogIntegrand_hasDerivAt Y u hY)
+of type
+  ∀ (u : ℝ), DifferentiableAt ℝ (centralLogIntegrand Y) u

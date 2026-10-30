@@ -1,0 +1,164 @@
+\section{Purpose, conventions, and main conclusions}
+
+\subsection{What is being bounded?}
+
+For an irrational real number \(\xi\), its irrationality exponent is
+\[
+\mu(\xi)=\sup\left\{u>0:
+0<\left|\xi-\frac pq\right|<q^{-u}
+\text{ for infinitely many reduced }p/q,\ q>0\right\}.
+\]
+Thus \(\mu(\xi)\le E\) means that for every \(\varepsilon>0\) there are
+only finitely many reduced fractions with error below
+\(q^{-E-\varepsilon}\). Equivalently, after changing a positive
+constant, one has
+\begin{equation}\label{eq:measuremeaning}
+\left|\xi-\frac pq\right|\ge c_\varepsilon q^{-E-\varepsilon}
+\end{equation}
+for all \(p,q\) with \(q>0\). This does not assert the same inequality
+with exponent exactly \(E\).
+
+Dirichlet's theorem gives \(\mu(\xi)\ge2\). Obtaining an explicit upper
+bound for a particular transcendental number is a separate problem.
+The finiteness of the exponents of fixed powers of \(\pi\) is already
+accessible through classical quantitative transcendence theory.
+Our objective is to spell out one concrete construction and track
+its constants, not to claim a first finiteness theorem.
+
+All logarithms in estimates are natural logarithms. We use
+\[
+\lambda=\log\ii=\frac{\ii\pi}{2},\qquad \Theta=\frac\pi2.
+\]
+The symbols \(o(n)\) and \(O(\log n)\) refer to \(n\to\infty\)
+with the complete interval configuration and target \(k\) fixed.
+The auxiliary degree \(m\) may be large, but is fixed in this limit.
+
+\subsection{Why odd powers are natural targets}
+
+The Dirichlet beta function is
+\[
+\beta(s)=\sum_{\ell=0}^{\infty}\frac{(-1)^\ell}{(2\ell+1)^s}.
+\]
+For \(r\ge0\),
+\[
+\beta(2r+1)=
+\frac{(-1)^r E_{2r}}{4^{r+1}(2r)!}\pi^{2r+1},
+\]
+where \(\operatorname{sech}z=\sum_{j\ge0}E_jz^j/j!\) defines the
+Euler numbers. In particular,
+\[
+\beta(1)=\frac\pi4,\qquad
+\beta(3)=\frac{\pi^3}{32},\qquad
+\beta(5)=\frac{5\pi^5}{1536}.
+\]
+Multiplication by a nonzero rational number preserves the irrationality
+exponent. For a reduced multiplier \(a/b\), reducing \(ap/(bq)\)
+cancels a gcd dividing \(|ab|\), so its denominator remains comparable
+to \(q\) by constants independent of \(p,q\).
+
+This observation does \emph{not} deduce an upper bound for \(\pi^3\)
+from a rational-approximation bound for \(\pi\). Taking a cube root
+changes the approximation field. The resultant argument below accounts
+for that change.
+
+\subsection{A preview of the construction}
+
+There are three components:
+\begin{enumerate}
+\item Build integer polynomials \(A_{h,j,n}(x)\) such that
+\[
+R_{h,n}(x)=\sum_{j=0}^{m}A_{h,j,n}(x)(\log x)^j
+\]
+has a high-order zero at \(x=1\).
+\item Divide every coefficient by a common integer \(\Pi_n\).
+Its exponential rate \(\gamma=\lim n^{-1}\log\Pi_n\) matters;
+a large constant depending only on \(m\) does not change this rate.
+\item Evaluate at \(x=\ii\), compare \(\lambda\) with a \(k\)-th root
+of a rational approximation to \(\pi^k\), and use a nonzero resultant.
+\end{enumerate}
+Nested intervals change both analytic bounds and arithmetic divisors.
+Their effects must be assessed together.
+
+The classical logarithmic construction appears in
+Mignotte~\cite{Mignotte}. Weighted logarithmic Pad\'e systems and
+normality are discussed in Kawashima~\cite{Kawashima}.
+Here the determinant and estimates for our two-sided nested system
+are proved directly.
+
+\subsection{General parameter theorem}
+
+Choose integers
+\[
+L\ge3,\quad 0=t_0<t_1<\cdots<t_{J-1}<L/2,\quad \nu_j\ge1,
+\]
+and put
+\[
+M=\sum_{j=0}^{J-1}\nu_j,\qquad m=M-1\ge1,\qquad
+c_j=1-\frac{2t_j}{L}.
+\]
+An interval of relative length \(c_j\), centred at \(1/2\), is used
+\(\nu_j\) times. Let \(\gamma\) be the explicit prime-divisor rate
+defined in Section~\ref{sec:arithmetic}. Let \(Y>0\) solve
+\begin{equation}\label{eq:rootpreview}
+2\sum_j\nu_j\arctan\frac{c_j}{2Y}=\Theta.
+\end{equation}
+Define
+\begin{align}
+F_c(Y)&=\frac c2\log\frac{1+(2Y/c)^2}{4}
+             +2Y\arctan\frac{c}{2Y},\label{eq:Fdef}\\
+D_0&=\sum_j\nu_jF_{c_j}(Y)-\Theta Y-m,\label{eq:D0def}\\
+G_0&=m+\left(\sum_j\nu_jc_j\right)\log2,\label{eq:G0def}\\
+D&=D_0+\gamma,\qquad G=G_0-\gamma.\label{eq:DGdef}
+\end{align}
+
+\begin{theorem}[Odd-power bound]\label{thm:main}
+Let \(k\ge3\) be odd. If \(G\ge0\) and
+\(\Delta_k=D-(k-1)G>0\), then
+\begin{equation}\label{eq:mainbound}
+\boxed{\displaystyle
+\mu(\pi^k)\le E_k:=
+\frac{m(D+G)}{D-(k-1)G}
+=\frac{m(D_0+G_0)}
+ {D_0-(k-1)G_0+k\gamma}.}
+\end{equation}
+\end{theorem}
+
+The proof also works for every integer \(k\ge2\). We emphasize odd
+powers because they are the motivating targets; we do not compare
+these bounds with specialized results for even powers.
+
+\begin{corollary}[A twelve-layer family]\label{cor:numerical}
+Use \(L=69\), \(t_j=j\) for \(0\le j\le11\), and
+\[
+\nu_0=6s,\qquad \nu_1=\cdots=\nu_{11}=s,\qquad m=17s-1.
+\]
+The following choices satisfy the hypotheses:
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+\(k\)&\(s\)&\(m\)&Certified strict upper bound\\
+\midrule
+3&11&186&\(1203.973\)\\
+5&259&\(4\,402\)&\(42\,461\)\\
+7&\(5\,871\)&\(99\,806\)&\(1\,272\,103\)\\
+9&\(131\,354\)&\(2\,233\,017\)&\(35\,398\,937\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+For every other fixed odd \(k\), some sufficiently large integer \(s\)
+also satisfies the hypotheses.
+\end{corollary}
+
+The last assertion is an existence statement within an explicit
+family, not a uniform small bound as \(k\to\infty\).
+Section~\ref{sec:parameters} explains the growth.
+
+\subsection{A guide to the evidence}
+
+The algebraic and analytic lemmas prove Theorem~\ref{thm:main}.
+Ball-arithmetic certificates prove the decimal comparisons once the
+lemmas hold. Exact finite examples check identities and implementation,
+but do not prove asymptotic rates. Floating-point searches select
+parameters; they neither certify rounding nor prove global optimality.
+The appendices retain unsuccessful experiments because they explain
+the arithmetic difficulties that remain.

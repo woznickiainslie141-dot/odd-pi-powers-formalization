@@ -1,0 +1,49 @@
+{
+  "status": "accepted",
+  "date": "2026-10-29",
+  "stage": "P5-A actual horizontal products and integrable tails",
+  "library_modules": 111,
+  "executed_build_targets": 8,
+  "verified_cached_modules": 103,
+  "build_run": "20261029T023347",
+  "verified_cache_evidence": {
+    "p4-guarded-library-build-state.json": 103
+  },
+  "peak_build_job_MiB": 3288.35,
+  "peak_all_build_evidence_MiB": 3556.75,
+  "audits": [
+    {
+      "log": "p5a-post-build-axioms.log",
+      "count": 55,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 4396.68,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "log": "p5a-post-build-regression-axioms.log",
+      "count": 239,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 5126.0,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "manifest_sha256": "e46b8f7bf97f5d4ee8f0b4f5155b71dbead74f1c2aef1b55c34677ffbd9dbf38",
+  "unchanged_prior_mathematical_modules": 103,
+  "scope": "Actual denominator reflection/product bound, nonvanishing on both horizontal lines, explicit whole-line integrable majorant and row/scale-uniform normalized actual kernels. Contour deformation, height and central asymptotics, sharp gamma and final pi-power bounds remain open."
+}

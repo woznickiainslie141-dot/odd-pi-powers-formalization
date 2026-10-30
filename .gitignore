@@ -1,0 +1,21 @@
+# Reconstructible dependencies, caches and local Git metadata.
+**/.lake/
+**/.git/
+**/__pycache__/
+**/node_modules/
+**/.venv/
+**/venv/
+*.pyc
+*.olean
+*.ilean
+*.trace
+*.ltar
+/tmp/p4-mathlib-cache/
+/tmp/lean-4.35.0-windows.tar.zst
+
+# Credentials are never part of the research archive.
+.env
+.env.*
+*.pem
+*.key
+*.pfx

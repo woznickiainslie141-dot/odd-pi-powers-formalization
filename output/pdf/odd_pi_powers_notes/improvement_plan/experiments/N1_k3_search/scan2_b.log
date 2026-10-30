@@ -1,0 +1,20 @@
+L=45: E=1178.9550 a=72 b=9 T=12 m=179 (38720 cols, 10s) []
+L=54: E=1156.3940 a=70 b=7 T=15 m=174 (37026 cols, 8s) []
+L=75: E=1126.2638 a=65 b=5 T=21 m=169 (31944 cols, 16s) []
+L=89: E=1116.4707 a=61 b=5 T=22 m=170 (35937 cols, 29s) []
+L=100: E=1107.7940 a=64 b=4 T=28 m=175 (30492 cols, 34s) []
+L=115: E=1100.8310 a=60 b=4 T=28 m=171 (31944 cols, 36s) []
+L=135: E=1092.9853 a=63 b=3 T=37 m=173 (31339 cols, 46s) []
+L=150: E=1088.0522 a=57 b=3 T=36 m=164 (29040 cols, 81s) []
+L=165: E=1083.9320 a=54 b=3 T=37 m=164 (32670 cols, 124s) []
+L=175: E=1082.6242 a=54 b=3 T=39 m=170 (33396 cols, 167s) []
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\scan2.py", line 53, in <module>
+    res = scan(k, L)
+          ^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\scan2.py", line 16, in scan
+    data = build(L, offs)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\cells.py", line 120, in build
+    pickle.dump(data, f)
+OSError: [Errno 28] No space left on device

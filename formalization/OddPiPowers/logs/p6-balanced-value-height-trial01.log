@@ -1,0 +1,13 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedValueHeight.lean:19:55: error(lean.unknownIdentifier): Unknown constant `Nat.one_le_factorial`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedValueHeight.lean:54:10: error(lean.unknownIdentifier): Unknown identifier `norm_mul`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedValueHeight.lean:51:57: error: unsolved goals
+M n : ℕ
+h j : Fin M
+hlocal :
+  ∀ ell ≤ n,
+    |auxiliaryScale M n ↑j * (balancedActualFamily M n).localCoefficient ell ↑h ↑j| ≤
+      ↑(M - 1).factorial * ↑(intervalLcm n) ^ (M - 1) * balancedLocalMajorant M (M - 1) n
+ell : ℕ
+hell : ell ∈ Finset.range (n + 1)
+⊢ ‖↑(auxiliaryScale M n ↑j * (balancedActualFamily M n).localCoefficient ell ↑h ↑j) * Complex.I ^ (n - ell)‖ ≤
+    ↑(↑(M - 1).factorial * ↑(intervalLcm n) ^ (M - 1) * balancedLocalMajorant M (M - 1) n)

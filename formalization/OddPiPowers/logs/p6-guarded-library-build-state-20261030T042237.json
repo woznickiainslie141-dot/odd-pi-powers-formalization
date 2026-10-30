@@ -1,0 +1,1534 @@
+{
+  "run": "20261030T042237",
+  "plan": [
+    "OddPiPowers.Transfer.DividedDifference",
+    "OddPiPowers.Foundations.GaussianArithmetic",
+    "OddPiPowers.Foundations.GaussianFraction",
+    "OddPiPowers.Transfer.NonzeroRow",
+    "OddPiPowers.Transfer.PrimitiveNormalization",
+    "OddPiPowers.Transfer.MinimalPolynomial",
+    "OddPiPowers.Transfer.MinimalResultant",
+    "OddPiPowers.Transfer.RootProduct",
+    "OddPiPowers.Transfer.ResultantBound",
+    "OddPiPowers.Transfer.AlgebraicValue",
+    "OddPiPowers.Transfer.Binomial",
+    "OddPiPowers.Transfer.RationalPower",
+    "OddPiPowers.Transfer.Selection",
+    "OddPiPowers.Transfer.AuxiliaryFamily",
+    "OddPiPowers.Transfer.Comparison",
+    "OddPiPowers.Foundations.ExponentUpperBound",
+    "OddPiPowers.Transfer.RootDistance",
+    "OddPiPowers.Transfer.RoundedIndex",
+    "OddPiPowers.Transfer.RateComparison",
+    "OddPiPowers.Transfer.OneScale",
+    "OddPiPowers.Transfer.FixedSlack",
+    "OddPiPowers.Transfer.IrrationalityTransfer",
+    "OddPiPowers.Construction.ConfluentJets",
+    "OddPiPowers.Construction.LocalDenominators",
+    "OddPiPowers.Construction.ActualAuxiliary",
+    "OddPiPowers.Analysis.HorizontalPair",
+    "OddPiPowers.Arithmetic.SignedCarry",
+    "OddPiPowers.Arithmetic.LocalPrimeValuation",
+    "OddPiPowers.Arithmetic.ActualCoefficientDivisor",
+    "OddPiPowers.Arithmetic.ReducedAuxiliary",
+    "OddPiPowers.Arithmetic.PrimeDivisorExample",
+    "OddPiPowers.Arithmetic.ContinuousCarry",
+    "OddPiPowers.Arithmetic.CertifiedPrimeDivisor",
+    "OddPiPowers.Arithmetic.TwelveLayerCellChunks",
+    "OddPiPowers.Arithmetic.TwelveLayerCellDefs",
+    "OddPiPowers.Arithmetic.TwelveLayerCellSoundness",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity00",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity01",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity02",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity03",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity04",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity05",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity06",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity07",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity08",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity09",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity10",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity11",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity12",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity13",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity14",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity15",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity16",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity17",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity18",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity19",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity20",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity21",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity22",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity23",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity24",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity25",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity26",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity27",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity28",
+    "OddPiPowers.Arithmetic.TwelveLayerValidity29",
+    "OddPiPowers.Arithmetic.TwelveLayerCells",
+    "OddPiPowers.Arithmetic.TwelveLayerCellOrder",
+    "OddPiPowers.Arithmetic.TwelveLayerCost",
+    "OddPiPowers.Arithmetic.TwelveLayerCertifiedBound",
+    "OddPiPowers.Arithmetic.TwelveLayerActualDivisor",
+    "OddPiPowers.Vendor.PNT.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+    "OddPiPowers.Vendor.PNT.Mathlib.Analysis.Asymptotics.Asymptotics",
+    "OddPiPowers.Vendor.PNT.Sobolev",
+    "OddPiPowers.Vendor.PNT.Fourier",
+    "OddPiPowers.Vendor.PNT.Mathlib.Algebra.Notation.Support",
+    "OddPiPowers.Vendor.PNT.SmoothExistence",
+    "OddPiPowers.Vendor.PNT.Wiener00",
+    "OddPiPowers.Vendor.PNT.Wiener01",
+    "OddPiPowers.Vendor.PNT.Wiener02",
+    "OddPiPowers.Vendor.PNT.Wiener03",
+    "OddPiPowers.Vendor.PNT.Wiener04",
+    "OddPiPowers.Vendor.PNT.Wiener05",
+    "OddPiPowers.Vendor.PNT.Wiener06",
+    "OddPiPowers.Vendor.PNT.Wiener07",
+    "OddPiPowers.Vendor.PNT.Wiener08",
+    "OddPiPowers.Vendor.PNT.Wiener09",
+    "OddPiPowers.Vendor.PNT.Wiener10",
+    "OddPiPowers.Vendor.PNT.Wiener",
+    "OddPiPowers.Vendor.PNT.Consequences",
+    "OddPiPowers.Arithmetic.PrimeWindowGeometry",
+    "OddPiPowers.Arithmetic.PrimeWindowSums",
+    "OddPiPowers.Arithmetic.PrimeNumberRates",
+    "OddPiPowers.Arithmetic.FiniteWindowCover",
+    "OddPiPowers.Arithmetic.PrimeWindowDivisor",
+    "OddPiPowers.Arithmetic.PrimeDivisorRates",
+    "OddPiPowers.Arithmetic.FinitePeriodKernel",
+    "OddPiPowers.Arithmetic.CellPrimeWindows",
+    "OddPiPowers.Arithmetic.ActualPrimeDivisorRates",
+    "OddPiPowers.Arithmetic.PrimeRateCalibration",
+    "OddPiPowers.Arithmetic.TwelveLayerFamily",
+    "OddPiPowers.Arithmetic.ScaledPrimeRates",
+    "OddPiPowers.Arithmetic.TwelveLayerPrimeRates",
+    "OddPiPowers.Analysis.HorizontalProduct",
+    "OddPiPowers.Analysis.ActualHorizontalGeometry",
+    "OddPiPowers.Analysis.ActualHorizontalTail",
+    "OddPiPowers.Analysis.HorizontalMajorant",
+    "OddPiPowers.Analysis.HorizontalKernelBound",
+    "OddPiPowers.Analysis.HorizontalKernelIntegrable",
+    "OddPiPowers.Analysis.TwelveLayerHorizontal",
+    "OddPiPowers.Analysis.ActualPartialFractions",
+    "OddPiPowers.Analysis.PoleCircle",
+    "OddPiPowers.Analysis.ContourExponential",
+    "OddPiPowers.Analysis.ActualRemainderAlgebra",
+    "OddPiPowers.Analysis.ActualPoleContour",
+    "OddPiPowers.Analysis.ActualContourRemainder",
+    "OddPiPowers.Analysis.WeightedHorizontal",
+    "OddPiPowers.Analysis.VerticalKernelBound",
+    "OddPiPowers.Analysis.VerticalSideTail",
+    "OddPiPowers.Analysis.ActualContourBounds",
+    "OddPiPowers.Analysis.TwelveLayerContour",
+    "OddPiPowers.Analysis.RectangleContour",
+    "OddPiPowers.Analysis.RectanglePrimitives",
+    "OddPiPowers.Analysis.RectanglePoleAlgebra",
+    "OddPiPowers.Analysis.RectangleLog",
+    "OddPiPowers.Analysis.RectangleInversePowers",
+    "OddPiPowers.Analysis.RectangleCircleComparison",
+    "OddPiPowers.Analysis.ActualRectangleContour",
+    "OddPiPowers.Analysis.HorizontalLineLimits",
+    "OddPiPowers.Analysis.ActualHorizontalRepresentation",
+    "OddPiPowers.Analysis.TwelveLayerHorizontalRepresentation",
+    "OddPiPowers.Analysis.HorizontalMajorantIntegral",
+    "OddPiPowers.Analysis.WeightedHorizontalIntegral",
+    "OddPiPowers.Analysis.ActualCentralBound",
+    "OddPiPowers.Analysis.ReducedCentralBound",
+    "OddPiPowers.Analysis.CentralLogProducts",
+    "OddPiPowers.Analysis.ReducedCentralLogBound",
+    "OddPiPowers.Analysis.TwelveLayerCentralBound",
+    "OddPiPowers.Analysis.CentralLogIntegral",
+    "OddPiPowers.Analysis.StirlingLogCore",
+    "OddPiPowers.Analysis.FactorialLogRate",
+    "OddPiPowers.Analysis.GridIntegralBound",
+    "OddPiPowers.Analysis.CentralLogLipschitz",
+    "OddPiPowers.Analysis.ScaledGridLimit",
+    "OddPiPowers.Analysis.ScaledIntervalRate",
+    "OddPiPowers.Analysis.ActualCentralRate",
+    "OddPiPowers.Analysis.CommonScaleRate",
+    "OddPiPowers.Analysis.CentralRemainderRate",
+    "OddPiPowers.Analysis.TwelveLayerCentralRate",
+    "OddPiPowers.Transfer.RationalRateCertificate",
+    "OddPiPowers.Analysis.PolynomialDiskHeight",
+    "OddPiPowers.Analysis.SeriesCoefficientMajorant",
+    "OddPiPowers.Construction.BalancedActualFamily",
+    "OddPiPowers.Analysis.BalancedSeriesFactors",
+    "OddPiPowers.Analysis.BalancedLocalHeight",
+    "OddPiPowers.Analysis.BalancedValueHeight",
+    "OddPiPowers.Analysis.BalancedHeightRate",
+    "OddPiPowers.Construction.GaussianAuxiliaryRows",
+    "OddPiPowers.Analysis.BalancedDiskHeight",
+    "OddPiPowers.Analysis.BalancedAuxiliaryFamily",
+    "OddPiPowers.Analysis.BalancedNumericCertificate",
+    "OddPiPowers.Transfer.AuxiliaryFamilyRates",
+    "OddPiPowers.Transfer.BalancedPiCube",
+    "OddPiPowers.Analysis.ActualSeriesFactors",
+    "OddPiPowers.Analysis.ActualLocalHeight",
+    "OddPiPowers.Analysis.ActualValueHeight",
+    "OddPiPowers.Analysis.ActualHeightRate",
+    "OddPiPowers.Construction.FiniteGaussianRows",
+    "OddPiPowers.Construction.ReducedGaussianRows",
+    "OddPiPowers.Analysis.ActualReducedDiskHeight",
+    "OddPiPowers.Analysis.ActualReducedRates",
+    "OddPiPowers.Analysis.ActualReducedFamily",
+    "OddPiPowers.Construction.ScaledTwelveLayerFamily",
+    "OddPiPowers.Analysis.TwelveLayerActualRates",
+    "OddPiPowers.Analysis.LogRationalBounds",
+    "OddPiPowers.Analysis.ArctanRationalBounds",
+    "OddPiPowers.Analysis.CentralNumericBounds",
+    "OddPiPowers.Analysis.P6CentralCertificate00",
+    "OddPiPowers.Analysis.P6CentralCertificate01",
+    "OddPiPowers.Analysis.P6CentralCertificate02",
+    "OddPiPowers.Analysis.P6CentralCertificate03",
+    "OddPiPowers.Analysis.P6CentralCertificate04",
+    "OddPiPowers.Analysis.P6CentralCertificate05",
+    "OddPiPowers.Analysis.P6CentralCertificate06",
+    "OddPiPowers.Analysis.P6CentralCertificate07",
+    "OddPiPowers.Analysis.P6CentralCertificate08",
+    "OddPiPowers.Analysis.P6CentralCertificate09",
+    "OddPiPowers.Analysis.P6CentralCertificate10",
+    "OddPiPowers.Analysis.P6CentralCertificate11",
+    "OddPiPowers.Analysis.P6NumericalRates",
+    "OddPiPowers.Arithmetic.PeriodFloorCertificate",
+    "OddPiPowers.Arithmetic.PeriodFloorBlock",
+    "OddPiPowers.Arithmetic.PeriodWindowFamily",
+    "OddPiPowers.Arithmetic.ShrunkenCellWindows",
+    "OddPiPowers.Arithmetic.CellWindowAggregate",
+    "OddPiPowers.Arithmetic.PeriodPrefixSum",
+    "OddPiPowers.Analysis.PeriodGapTail",
+    "OddPiPowers.Arithmetic.PeriodTailFloor",
+    "OddPiPowers.Arithmetic.PeriodTailAggregate",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix00",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix01",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix02",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix03",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix04",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix05",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix06",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix07",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix08",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix09",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix10",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix11",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix12",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix13",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix14",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix15",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix16",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix17",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix18",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix19",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix20",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix21",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix22",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix23",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix24",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix25",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix26",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix27",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix28",
+    "OddPiPowers.Arithmetic.P6PeriodPrefix29",
+    "OddPiPowers.Arithmetic.P6PeriodTail00",
+    "OddPiPowers.Arithmetic.P6PeriodTail01",
+    "OddPiPowers.Arithmetic.P6PeriodTail02",
+    "OddPiPowers.Arithmetic.P6PeriodTail03",
+    "OddPiPowers.Arithmetic.P6PeriodTail04",
+    "OddPiPowers.Arithmetic.P6PeriodTail05",
+    "OddPiPowers.Arithmetic.P6PeriodTail06",
+    "OddPiPowers.Arithmetic.P6PeriodTail07",
+    "OddPiPowers.Arithmetic.P6PeriodTail08",
+    "OddPiPowers.Arithmetic.P6PeriodTail09",
+    "OddPiPowers.Arithmetic.P6PeriodTail10",
+    "OddPiPowers.Arithmetic.P6PeriodTail11",
+    "OddPiPowers.Arithmetic.P6PeriodTail12",
+    "OddPiPowers.Arithmetic.P6PeriodTail13",
+    "OddPiPowers.Arithmetic.P6PeriodTail14",
+    "OddPiPowers.Arithmetic.P6PeriodTail15",
+    "OddPiPowers.Arithmetic.P6PeriodTail16",
+    "OddPiPowers.Arithmetic.P6PeriodTail17",
+    "OddPiPowers.Arithmetic.P6PeriodTail18",
+    "OddPiPowers.Arithmetic.P6PeriodTail19",
+    "OddPiPowers.Arithmetic.P6PeriodTail20",
+    "OddPiPowers.Arithmetic.P6PeriodTail21",
+    "OddPiPowers.Arithmetic.P6PeriodTail22",
+    "OddPiPowers.Arithmetic.P6PeriodTail23",
+    "OddPiPowers.Arithmetic.P6PeriodTail24",
+    "OddPiPowers.Arithmetic.P6PeriodTail25",
+    "OddPiPowers.Arithmetic.P6PeriodTail26",
+    "OddPiPowers.Arithmetic.P6PeriodTail27",
+    "OddPiPowers.Arithmetic.P6PeriodTail28",
+    "OddPiPowers.Arithmetic.P6PeriodTail29",
+    "OddPiPowers.Arithmetic.P6PeriodAggregate",
+    "OddPiPowers.Arithmetic.TwelveLayerDivisorCertificate",
+    "OddPiPowers.Arithmetic.P6SharpDivisorRate",
+    "OddPiPowers.Transfer.TwelveLayerPiCube",
+    "OddPiPowers"
+  ],
+  "completed": [
+    {
+      "module": "OddPiPowers.Transfer.DividedDifference",
+      "source_sha256": "edd703dd82625b4e1cec423ce965525f89444fb1f2772fe61dfb93d5d0dce56f",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-DividedDifference-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Foundations.GaussianArithmetic",
+      "source_sha256": "49e8511286f37d7e06a3a7d64995c933b6d2ec8e18c21d80e225a8e723b9060d",
+      "log": "logs/p4-lake-OddPiPowers-Foundations-GaussianArithmetic-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Foundations.GaussianFraction",
+      "source_sha256": "64ff25032a18fd20ecb65bfa79343543e835180f043099fe8e4dd63b38587449",
+      "log": "logs/p4-lake-OddPiPowers-Foundations-GaussianFraction-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.NonzeroRow",
+      "source_sha256": "642355f51e1a67b6f4b8835be659619b152dd1a20412fc001aa783227d7da873",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-NonzeroRow-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.PrimitiveNormalization",
+      "source_sha256": "5400a9d9c73ddded5a2c2f6f8f0ed1dd5696c3254743595cb2dc1dca90afadd4",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-PrimitiveNormalization-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.MinimalPolynomial",
+      "source_sha256": "ad3da8f82e3379c4e2a0a7176d043db14265c4c450d10a10cf5864122dfd4d0a",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-MinimalPolynomial-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.MinimalResultant",
+      "source_sha256": "72fcbc805d0a5281e686eb9ec9a45e67db6720a8069125b011a105ef9b0c1000",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-MinimalResultant-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.RootProduct",
+      "source_sha256": "642c43bbdb089eed1efb8ac6ee195aab962d4e7e372c989f0934077cc5848ca6",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-RootProduct-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.ResultantBound",
+      "source_sha256": "8574c5c8d93568138d204144e378ff7069a263bb949eae13442daed92c7c771b",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-ResultantBound-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.AlgebraicValue",
+      "source_sha256": "9296358ff449c6b4fccf30ea18651fb7c0048c17de49877e6e48d1c0e040f9fe",
+      "log": "logs/p4-lake-OddPiPowers-Transfer-AlgebraicValue-20261028T173221.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.Binomial",
+      "source_sha256": "f5c8ab8dfb04d88ff86cd29d2f78921fb1a1f772eebdac42389c754cc9fc7a97",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-Binomial-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.RationalPower",
+      "source_sha256": "f1a465801d3f24284d778523d3a779d0247319fcfff6bfd8f4f4c26141f632fc",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-RationalPower-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.Selection",
+      "source_sha256": "816d291859782ada9daa0e00ad7530be144b46e862261b062f01421f9d04fcdf",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-Selection-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.AuxiliaryFamily",
+      "source_sha256": "c242a7317d66db5e00a941fc6f4d9f588cdb5e2df88ba9c9685807c885526ea3",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-AuxiliaryFamily-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.Comparison",
+      "source_sha256": "0547ecd2beac710b438ad6f78e833ebb1da8d9a4a48b4dcf89c204fc742eabe0",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-Comparison-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Foundations.ExponentUpperBound",
+      "source_sha256": "3544e53645e17a5e0b07fc0e69989baed92ec7e8cc02cf2d97bf1006fb161bcf",
+      "log": "logs/p3b-lake-OddPiPowers-Foundations-ExponentUpperBound-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.RootDistance",
+      "source_sha256": "00082147b573b48e7d0fafe5eb4edc8992a287bc3d734a01bc168075702d669d",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-RootDistance-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.RoundedIndex",
+      "source_sha256": "2b690ba6829f059878534b4a5b77f09994104d4d1160b219943c50b7acc67e61",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-RoundedIndex-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.RateComparison",
+      "source_sha256": "74b496e7cbc7948aed731e326c0a521d3a7ce4ce7ca7afdb0de2c69f2890f438",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-RateComparison-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.OneScale",
+      "source_sha256": "5c293a0051be367b66e70c36e85628aa7ad0f9ac0b9ba0c2ade8e3d37d5ec7bd",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-OneScale-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.FixedSlack",
+      "source_sha256": "bfa984889920b9eb400d75a757b157af65da502dd8948688987b9218ea787056",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-FixedSlack-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.IrrationalityTransfer",
+      "source_sha256": "020f05e7a264546c38e8a7e993a5f394905f9a25b67b55b4d1e8fe9e7d7baa05",
+      "log": "logs/p3b-lake-OddPiPowers-Transfer-IrrationalityTransfer-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Construction.ConfluentJets",
+      "source_sha256": "857491be9bedd283b96155edaf6edb273badf6e55f151d11775ac2ba95b3a73f",
+      "log": "logs/p3b-lake-OddPiPowers-Construction-ConfluentJets-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Construction.LocalDenominators",
+      "source_sha256": "2abaae6ed443348537e169c2e3e688a94b6bb3a4be19caefcbfa66d7ca0d5e5c",
+      "log": "logs/p3b-lake-OddPiPowers-Construction-LocalDenominators-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Construction.ActualAuxiliary",
+      "source_sha256": "e615e684e1f619387b46f443fd75dba58fe10a7c365f98573ec8d92ac5662435",
+      "log": "logs/p3b-lake-OddPiPowers-Construction-ActualAuxiliary-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.HorizontalPair",
+      "source_sha256": "bc55f478aa9986fd596f3a629f4cef034cb46a5e1dec94b91bd2a223d9ca5869",
+      "log": "logs/p3b-lake-OddPiPowers-Analysis-HorizontalPair-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.SignedCarry",
+      "source_sha256": "1091a2f340c10d3da69ec77850a0a187d47da3840c21b663feea1eaa345481fa",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-SignedCarry-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.LocalPrimeValuation",
+      "source_sha256": "58ce2c8a4fea51f28108b398bc793eb9f8bf40a65ff8436fceea6c65aac42053",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-LocalPrimeValuation-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.ActualCoefficientDivisor",
+      "source_sha256": "bb8b905455dcb8eb945d3f633953e99f490113cb55e0fe4725b89eb23ceddfb6",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-ActualCoefficientDivisor-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.ReducedAuxiliary",
+      "source_sha256": "d91c51f7b11557af452d27805c0cf6a1eeed03c6a95adb75cfdcb3e67d0a0c6c",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-ReducedAuxiliary-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.PrimeDivisorExample",
+      "source_sha256": "3a5941af58f4f1241a9b40e14b39fe0026045bc0507d695fa9583b41e82b4fee",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-PrimeDivisorExample-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.ContinuousCarry",
+      "source_sha256": "ee872b6b9d5f5df4eb742c429fdce4bfd7163f2bb5d368514d3c5005a0a79301",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-ContinuousCarry-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.CertifiedPrimeDivisor",
+      "source_sha256": "75a5e2c853a991aba19c4d6c22a8019ffaf46ef451b8a314c684f79047eb27a0",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-CertifiedPrimeDivisor-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerCellChunks",
+      "source_sha256": "f3f96969ae5dd6170ea95598572d406bc3132edfc3da7282c9e7e37ed7666ade",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerCellChunks-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerCellDefs",
+      "source_sha256": "85e671166245e91b70ada533b9d9055c24de2ee1b2bd1e126104745c94b5613f",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerCellDefs-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerCellSoundness",
+      "source_sha256": "c60a04fa27e3ba2271fc4c6c779b038294306e6b9d0c02ed791ef2b1afbffec2",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerCellSoundness-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity00",
+      "source_sha256": "7b8e107f9356a2c1746cd8650522ad7e2a743434728066bd10f35a37881b4484",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity00-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity01",
+      "source_sha256": "b6d14b42d31de10fd5622334d380ec1c355b6210290878abc708ecac4818334b",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity01-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity02",
+      "source_sha256": "06bcf428c680e82cb541a1de0824d9ee5f6bb7efbfabc1e1b6f7aef6c8c78a8a",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity02-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity03",
+      "source_sha256": "670f981989613af155ec8a9ee3e6e71121cac01dada73e92c5e871f2dd70ee4b",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity03-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity04",
+      "source_sha256": "00dcba2778ec2a1d4ab8c3c0d0b56e2bd4d0f2361bc594186e7bb2bc6777cdbf",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity04-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity05",
+      "source_sha256": "7e41434a62b078122f3d3df73f93abb1d1674051427b6c07b6a437730b80f688",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity05-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity06",
+      "source_sha256": "9e8bd953dbadb5d2f60f2b2388f51108b747c24136e725fcba513b1b79207fa3",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity06-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity07",
+      "source_sha256": "58e44c722c006949a385f8391d43310f75a23e0840794755e4c52154cfae22b7",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity07-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity08",
+      "source_sha256": "788f81bb2b795c086fed78fb7c259988b2d2287822a48e6a7f6d0018b3638140",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity08-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity09",
+      "source_sha256": "1c3ac30be8b87d39cf2354293fb4a75c3331e957821b5b96eb7dff8e1711aa32",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity09-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity10",
+      "source_sha256": "1af680ee966ae8ef18e20c463558cac8073e2ea90c92ce68a8bc76896352d1f1",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity10-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity11",
+      "source_sha256": "2127a43369692e3d5146b3cb3b686c2b63c08042fc234cfbcde2a014801d94c9",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity11-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity12",
+      "source_sha256": "016b84e82035241f82b831120729bfafe3e6789a56b3b6ba35449ac37ad8e118",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity12-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity13",
+      "source_sha256": "610f3420ad66d0eb16d411d8c0f3130db262b8bf750dca40497245619217efc4",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity13-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity14",
+      "source_sha256": "ac1035ad10575cce55da29650675e84fa5db0abc0b4f3e9b03af1b600bb8c2fc",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity14-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity15",
+      "source_sha256": "a14d96d5b0a885ab3509722c5ee8cec3497e780661039d03dfb52ee5f492ac9d",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity15-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity16",
+      "source_sha256": "0db6314a283b27f27e085e0ef3330c359529637270246c044f46c76619a34ab4",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity16-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity17",
+      "source_sha256": "0d8b77a1a6591b135e43478761e15a3eb16b4c851c3e6f809e5fd17a8d8e1b07",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity17-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity18",
+      "source_sha256": "b78b6e7af62cbed5c6ac1a076e5ba6466dec2ad90ac15cd1bb8d2c0f799ffe53",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity18-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity19",
+      "source_sha256": "f34c9b4fd14a9ac1bb20afcfdace268c765841a273b6982a7f46b9089bfbcd0d",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity19-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity20",
+      "source_sha256": "5f478f716c398f5680d582f6d35838ae24c88738258ec85459900e8896b1fc32",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity20-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity21",
+      "source_sha256": "4ac736746ce6dce1ccd39393652d9d0ef071d07984234ff7776a7770414e591d",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity21-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity22",
+      "source_sha256": "90bb2153d0b92bab0744e3f7029676f74cfaf6e60f03227746051cbacecfecc0",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity22-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity23",
+      "source_sha256": "76a2f7988465848ac4215057e46b853604aae83ecc89521c464c1d2fd592ba5a",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity23-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity24",
+      "source_sha256": "70eeb2e34155a5126329c0b2314a7580eaff6cab7fb453a19f2b584ea8fab8f9",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity24-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity25",
+      "source_sha256": "f137bcc8422f626a8f4e5d5419e60cc2cb51d9e762b4f1bb432ee2459a6d8e56",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity25-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity26",
+      "source_sha256": "04d13cd68bda5986285d2f6d00daa12f51b24e5e03aa1b424d6813c94d15eea2",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity26-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity27",
+      "source_sha256": "399e4ff1ecee3da56e4962e6ca66ee916a554e2f7c234bc3b1b39bfd56bf34d7",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity27-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity28",
+      "source_sha256": "6f98e0f4f28e77ee45f87a97a29062f952f6df32f3caf94fa4be75d518481542",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity28-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerValidity29",
+      "source_sha256": "42a8e023a20f70aaf1e8da4f7cdad2784adfe8f5ac5c8a45a027e2cc8707628b",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerValidity29-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerCells",
+      "source_sha256": "d9fa5440217ef2b9a23a137358dfab17988e303fe216de82c3a8d2d2ce33e27f",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerCells-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerCellOrder",
+      "source_sha256": "9c4f1fe525df955f23726e8296a72d0de6a0c163233ee6927569d3b9d27f0600",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerCellOrder-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerCost",
+      "source_sha256": "d2f17b9b1362b3a64b562a7e9b03e31999d9950ed703c2390d0e25b9172cabaa",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerCost-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerCertifiedBound",
+      "source_sha256": "bd79f06053f50bb730c988f20389301d711eeb896421852e563be989ee3fedcf",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerCertifiedBound-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerActualDivisor",
+      "source_sha256": "65e8c5147098f0c5546442c7f97080fb320f8e8081dfe508a9636a0ab4a84a73",
+      "log": "logs/p3b-lake-OddPiPowers-Arithmetic-TwelveLayerActualDivisor-20261028T023320.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+      "source_sha256": "b5b365d1a41678b3c40f4b60f4097ba83822a907051c6f287742de421680f34d",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Mathlib-Analysis-SpecialFunctions-Log-Basic-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Mathlib.Analysis.Asymptotics.Asymptotics",
+      "source_sha256": "e29ed23c94b7424f0498a53cf9b7dede9f1fdaa62cfa82cce26b92762141245f",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Mathlib-Analysis-Asymptotics-Asymptotics-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Sobolev",
+      "source_sha256": "46bed75863371704a86a06d56b95b413fde4ed0bccebcdd21d8ced2b41a7da0b",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Sobolev-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Fourier",
+      "source_sha256": "9f6a875fc78dd48f1571d1d0a31f8c4a486f2aa46ac32d76d12845b843b275b5",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Fourier-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Mathlib.Algebra.Notation.Support",
+      "source_sha256": "9a19f3f7e9508a5d7800851a923a8115a99346bf13d69378f7c62e95d8d3b60d",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Mathlib-Algebra-Notation-Support-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.SmoothExistence",
+      "source_sha256": "691fc1effb643d1f49f0f54f99d6c87e424287b4598d97cc09aa53057e09ca4b",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-SmoothExistence-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener00",
+      "source_sha256": "a43eae4e836af6832a04a631e4c59a3c13af07e10891aaa99efe900c0d4442dc",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener00-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener01",
+      "source_sha256": "93f9e9c37b20de8723a2922f606d353d80befb797d1e3e431fcf66ab208f1cab",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener01-20261028T173900.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener02",
+      "source_sha256": "2bf9f327438e20bb15b76ecdd53123d00c1fc9f1c33dc90006748181180343f2",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener02-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener03",
+      "source_sha256": "021d51697379f369c1a550e1f9649504b26f32bfffc82e9dd1a888cd65740932",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener03-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener04",
+      "source_sha256": "c8df8e627b9a5d8d3c4e293de0fce4bb98bba1d83f4acd4779cf2ad3e2aae386",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener04-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener05",
+      "source_sha256": "e445259f4267293c1d6d0a80289e4c5bffa82b8b13e92d8773a39b1b215c2ff6",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener05-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener06",
+      "source_sha256": "1a63afc2686d605221ba73d321762dc8d3a4bf7d9fd6e2502967b193e7e7ef76",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener06-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener07",
+      "source_sha256": "93c5590928f04a73e1adf8bd616f6a207f839873eabd13feb34d933a850bc9a8",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener07-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener08",
+      "source_sha256": "3b476d0bd5d354be508af5da8e62f86c302f6acda21867ca8c97b9abb59b8055",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener08-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener09",
+      "source_sha256": "8b56417c8f00468129db4660b936e53bc1e95fb6e43bcdca00b95640f8189554",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener09-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener10",
+      "source_sha256": "b4ef3e177a2107f7636894738bdc79b2117bf561e15e6c05270f8aed621a185d",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener10-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Wiener",
+      "source_sha256": "ae41d7805ad51a2d6f235ff3d614f4361f5ed3d434b3da8439610a1a468d6113",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Wiener-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Vendor.PNT.Consequences",
+      "source_sha256": "314fc2b4743fd1ad2f6f7d57a262c60d01e5019d2c24860c7982e1000f720a12",
+      "log": "logs/p4-lake-OddPiPowers-Vendor-PNT-Consequences-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.PrimeWindowGeometry",
+      "source_sha256": "3a2a6554026f19542c9778b29b846ac07666bd4cbb6b4a0b616034ffd979b3bb",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-PrimeWindowGeometry-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.PrimeWindowSums",
+      "source_sha256": "76c7285e07900c8d38a45490a3b9ec52f087bb70999c37005db299097c9b9b15",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-PrimeWindowSums-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.PrimeNumberRates",
+      "source_sha256": "f42c7f2cd8cd1b66b58a47a801cca0e68f686e48d8da47d7ac7d24ec24237c0c",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-PrimeNumberRates-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.FiniteWindowCover",
+      "source_sha256": "4eeae95489ca6b726677929ad0a83d6c1ed35d86a84010fa62c4cd51962b8880",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-FiniteWindowCover-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.PrimeWindowDivisor",
+      "source_sha256": "e9dfdd63f9163c062d5f3694370f99987865998b79add1a84460600afac6f5d7",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-PrimeWindowDivisor-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.PrimeDivisorRates",
+      "source_sha256": "4ecf3b210d534212a05ed38aeb9f417e68afee3add452f9a4ef2ea1710d334c9",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-PrimeDivisorRates-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.FinitePeriodKernel",
+      "source_sha256": "d7f1e7f395456a97c5254b9ff787085fe3e01cf5e7a3b53cd42d8a7e49ec9d26",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-FinitePeriodKernel-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.CellPrimeWindows",
+      "source_sha256": "4513c69cff2f6719656cb2ea597d642442ac896a05f48e4516ca54563675c219",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-CellPrimeWindows-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.ActualPrimeDivisorRates",
+      "source_sha256": "036061fe723a5091fc898e1346804a5ecf59a676ad35dfcbc2ef93506a5acaa3",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-ActualPrimeDivisorRates-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.PrimeRateCalibration",
+      "source_sha256": "4390d09a2035455fb6be11dde9528cc1d379f1dc8e5f7f31f66534e59337b302",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-PrimeRateCalibration-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerFamily",
+      "source_sha256": "7b8800a76157565c22907c285c6326685beadae77d5fa25c1967f646da35c261",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-TwelveLayerFamily-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.ScaledPrimeRates",
+      "source_sha256": "b3ab4aaa4008d33e932c6a219597b1b9dabdf624c9ee5b14563b93b0589b9b84",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-ScaledPrimeRates-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Arithmetic.TwelveLayerPrimeRates",
+      "source_sha256": "fbb1e39d9e7794a3bd0ec72fc79d5cfb75fd7e2edddc39f79e3d49832d8c23c4",
+      "log": "logs/p4-lake-OddPiPowers-Arithmetic-TwelveLayerPrimeRates-20261028T174533.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.HorizontalProduct",
+      "source_sha256": "4e6c546ec8056c51a383fd930b4b35fac7a9feaecbc93a0e37a02563a6d940aa",
+      "log": "logs/p5a-lake-OddPiPowers-Analysis-HorizontalProduct-20261029T023347.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualHorizontalGeometry",
+      "source_sha256": "636b5bf50543b9ea622858e2a0ada60c4206f9f7ef516581e7b86ae8603a4233",
+      "log": "logs/p5a-lake-OddPiPowers-Analysis-ActualHorizontalGeometry-20261029T023347.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualHorizontalTail",
+      "source_sha256": "88265dd4f3fbbcb09772b8e79316dd835d60d92127d2bf56ed608654f1ba7146",
+      "log": "logs/p5a-lake-OddPiPowers-Analysis-ActualHorizontalTail-20261029T023347.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.HorizontalMajorant",
+      "source_sha256": "e74783f16fb88ce8fabb7e90b6eb98748531d4b7b49e129d89f5240824c3405a",
+      "log": "logs/p5a-lake-OddPiPowers-Analysis-HorizontalMajorant-20261029T023347.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.HorizontalKernelBound",
+      "source_sha256": "87ad536d2a1c9bc2c5d94c8d6afd1edcd7b0c6dc2f704b1696d0e1495a3c1016",
+      "log": "logs/p5a-lake-OddPiPowers-Analysis-HorizontalKernelBound-20261029T023347.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.HorizontalKernelIntegrable",
+      "source_sha256": "65349145c44739be5f7f52a94e1187dde424ddeb89b9e779d3f38d5d3352e8c0",
+      "log": "logs/p5a-lake-OddPiPowers-Analysis-HorizontalKernelIntegrable-20261029T023347.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.TwelveLayerHorizontal",
+      "source_sha256": "f5b732244bacb4e99f7b36788e56d444794289055af8d79682af7d306a82f9f5",
+      "log": "logs/p5a-lake-OddPiPowers-Analysis-TwelveLayerHorizontal-20261029T023347.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualPartialFractions",
+      "source_sha256": "c7f4e380a9eae334e2510c6af7b95ebb5b6da9a5539e21e2e4e9d0c9209bdc54",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-ActualPartialFractions-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.PoleCircle",
+      "source_sha256": "1eab2d304b017255f26c4f839cb7afcd4c966fda7fc165e041e7fe9b52f62e99",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-PoleCircle-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ContourExponential",
+      "source_sha256": "f536c8b410667429117559251ea1e73eed6b607c5714568de363dbb1f12a5cf3",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-ContourExponential-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualRemainderAlgebra",
+      "source_sha256": "25ab89a55640898c2568b64e255bd4d72d39b754d80fe6cb071f79df34ec991d",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-ActualRemainderAlgebra-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualPoleContour",
+      "source_sha256": "b276f0d409234412dbee4e0039ccfd2f24fdad015b216070eddd52248f6c93dc",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-ActualPoleContour-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualContourRemainder",
+      "source_sha256": "5c89699667c015024422e48463186f3bbc3f65deb6fc6229c160b1b84d4a9a88",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-ActualContourRemainder-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.WeightedHorizontal",
+      "source_sha256": "69761de7122e45c68de8082b81ef35eaa038bd86687f0d3047bf58a060e0a91c",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-WeightedHorizontal-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.VerticalKernelBound",
+      "source_sha256": "de10cf0bb1477fdefe165fb7efe485bc87d893eaee9d754b40befa155bdf174f",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-VerticalKernelBound-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.VerticalSideTail",
+      "source_sha256": "f13a3b2c292c4de4323b4fd4af2c40d82400828df7abdafbb21e2f3d377718e4",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-VerticalSideTail-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualContourBounds",
+      "source_sha256": "a9f197374d07f8c6f01ae9dd64ae0bb7cfb660880cbfef64b5b002e9f1e9914e",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-ActualContourBounds-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.TwelveLayerContour",
+      "source_sha256": "5e97da5af7f6e5159e0446f05686ed4abf95401b44eab2f36b5bf6d9453af633",
+      "log": "logs/p5b-lake-OddPiPowers-Analysis-TwelveLayerContour-20261029T121018.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.RectangleContour",
+      "source_sha256": "fde050f2d1d7048df2091d38f823e2ec163247d7c387b8efbc441cd568f92f3a",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-RectangleContour-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.RectanglePrimitives",
+      "source_sha256": "2bdea952d3af84a184f3d72c40ed98277d4b509696a45b1d043b3dee062e9ffc",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-RectanglePrimitives-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.RectanglePoleAlgebra",
+      "source_sha256": "5bfecaf5c6b5db5837cbb0f5a7e31582ac734d369463b124ce6ac75b01da835e",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-RectanglePoleAlgebra-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.RectangleLog",
+      "source_sha256": "a1eceb135c68ba15c45da3e6b396322814414fc9d11529308ec7cb683319943c",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-RectangleLog-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.RectangleInversePowers",
+      "source_sha256": "e11048b9689e92120ba72caa8de7489021841db485c484e289dca741845fda65",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-RectangleInversePowers-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.RectangleCircleComparison",
+      "source_sha256": "4e87e72e1a728c2121bec39ce49abee48365a217f99cd046f3a03668460c5de5",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-RectangleCircleComparison-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualRectangleContour",
+      "source_sha256": "0a650f67788640aedd29d8e0ab41252337d668ca02bcb455374aa1fe6eb72c9a",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-ActualRectangleContour-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.HorizontalLineLimits",
+      "source_sha256": "4fa256560b3c6be829c80f23a20e09e44ea28f76ddb0a71bd8f04a914eb5b429",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-HorizontalLineLimits-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualHorizontalRepresentation",
+      "source_sha256": "679b1c58289df00a881707aa97f62f99f6ebdd19aa2f824e468467f15ee68f5d",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-ActualHorizontalRepresentation-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.TwelveLayerHorizontalRepresentation",
+      "source_sha256": "945f94f87c70877cc2e24e1868e8b4b8e2e7bd14d16272be09bb235c3f3665e6",
+      "log": "logs/p5c-lake-OddPiPowers-Analysis-TwelveLayerHorizontalRepresentation-20261029T125234.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.HorizontalMajorantIntegral",
+      "source_sha256": "70116780c8fcb06e53aa35badd06b9d79cd345f249b7d66ef4f64750535bfc69",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-HorizontalMajorantIntegral-20261029T181210.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.WeightedHorizontalIntegral",
+      "source_sha256": "e247bc1ef8c409e45e12744d60b334cf1e127d8e935ae3c26f36296ab7685fb1",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-WeightedHorizontalIntegral-20261029T181503.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualCentralBound",
+      "source_sha256": "f1365f611c461882534a405d8f78602ef982bc0840b7c713a97c5d44bf55bad6",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-ActualCentralBound-20261029T181503.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ReducedCentralBound",
+      "source_sha256": "c4c62149c15618d173dfa337aa315b259a557e6eb29ab458707abcf33270d1cf",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-ReducedCentralBound-20261029T181503.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.CentralLogProducts",
+      "source_sha256": "70f7293c8034ec9db45eeb20cb3aa401d83540328a5b977075e73a986b99197d",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-CentralLogProducts-20261029T181503.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ReducedCentralLogBound",
+      "source_sha256": "0b72889af85a2b159c37a9d03d312e097e127afc9f89a02e755330efbfe2fbc3",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-ReducedCentralLogBound-20261029T181503.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.TwelveLayerCentralBound",
+      "source_sha256": "9a0505b23ed5c03c305a22b3cf2c67f3be735e49eec6f028846cae76adcda993",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-TwelveLayerCentralBound-20261029T181503.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.CentralLogIntegral",
+      "source_sha256": "f90e95f8875adf6fe019412e1af3e9b195959808ea78a8f7d119e477af517caa",
+      "log": "logs/p5d-lake-OddPiPowers-Analysis-CentralLogIntegral-20261029T181503.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.StirlingLogCore",
+      "source_sha256": "0d9a9dbbf8f82465156a29d71be9a1780718cc206b1065d7748d6d0eff5a5521",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-StirlingLogCore-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.FactorialLogRate",
+      "source_sha256": "57f5852f0fa6ed11d2ec50223b5bcb990d22889480f0603125949a697c09b688",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-FactorialLogRate-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.GridIntegralBound",
+      "source_sha256": "98d94774dc396c2c226ce5ac13ad92981365dd2934e4156072f6db339b82f34b",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-GridIntegralBound-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.CentralLogLipschitz",
+      "source_sha256": "2aa3a13c64b906cdf34072d363fb9b9be4e64434b8467c6335dd5a753d9f1692",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-CentralLogLipschitz-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ScaledGridLimit",
+      "source_sha256": "802d18d9ce504ae37eac587713c2ea04409aa89a4d5816e20114587c7880e6a2",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-ScaledGridLimit-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ScaledIntervalRate",
+      "source_sha256": "4798aaa1bc6f96a09509802112a0f787fe1745b77e5007de3ff5334367423b96",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-ScaledIntervalRate-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualCentralRate",
+      "source_sha256": "002e3b76676bcabde5dc430df795a2f2b59e463ede194b8d76edfb9d232cb202",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-ActualCentralRate-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.CommonScaleRate",
+      "source_sha256": "e407522773afa818944c63b13cc3f191f13a9876b6e2179a113beb2dafce93ea",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-CommonScaleRate-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.CentralRemainderRate",
+      "source_sha256": "ef6bb4dda6e3b7e8464ddfb744a8f66601a1798aecfa9a93ea5c5076f1798dee",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-CentralRemainderRate-20261029T184736.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.TwelveLayerCentralRate",
+      "source_sha256": "dd58b962dbf95ccb5bf947fc7cb9e7d18ac9bcf4a85f3dc38ae6ab5836b30dbf",
+      "log": "logs/p5e-lake-OddPiPowers-Analysis-TwelveLayerCentralRate-20261029T185634.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.RationalRateCertificate",
+      "source_sha256": "36966e4020eb903761559b49b2fda17d2f2a733487dbbcee4f1bc7f8a7ace834",
+      "log": "logs/p5e-lake-OddPiPowers-Transfer-RationalRateCertificate-20261029T185634.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.PolynomialDiskHeight",
+      "source_sha256": "735788390e4cc3d824a1cbf9f2cf2f2a08450e2d1e65740e07baba41fac1b7cc",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-PolynomialDiskHeight-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.SeriesCoefficientMajorant",
+      "source_sha256": "a6f5c8b80479163f1cbb39bde36173c29dc5dc07d1856fb6ad3a376154c65b6b",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-SeriesCoefficientMajorant-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Construction.BalancedActualFamily",
+      "source_sha256": "8c7832222f9c51a0bfeca201676200c7547900e799b44acdfd7d180d8ed3dbe9",
+      "log": "logs/p6b-lake-OddPiPowers-Construction-BalancedActualFamily-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.BalancedSeriesFactors",
+      "source_sha256": "e6d532de84c25f7b00d64eae43fb0feecaf76b761b4f4b7da1f9054c1327b6a3",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-BalancedSeriesFactors-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.BalancedLocalHeight",
+      "source_sha256": "b6176a2cdd3e5b72513ddb1ea34a5ffa311269a3d7fa2a7ad65182a94d2f5b56",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-BalancedLocalHeight-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.BalancedValueHeight",
+      "source_sha256": "f5404a04577b469035be5b9662b88f2752d4fba381f7f45c3f33814a02c44953",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-BalancedValueHeight-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.BalancedHeightRate",
+      "source_sha256": "38674f5a8f4ff43006e6ffcb2c63d1a45cf2e2f22be0bdc95c9906a19a8bf2b9",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-BalancedHeightRate-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Construction.GaussianAuxiliaryRows",
+      "source_sha256": "59c2f408aaa8382ad3b7e291ed72b21a4ff70855b45d6d0cc3fdb660cea01a77",
+      "log": "logs/p6b-lake-OddPiPowers-Construction-GaussianAuxiliaryRows-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.BalancedDiskHeight",
+      "source_sha256": "51a6784189a189cc06c74ff7830657a7e0fcc3fb4da42c4c404748ddfa536cef",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-BalancedDiskHeight-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.BalancedAuxiliaryFamily",
+      "source_sha256": "dc5b82ba5e3d290f435f595ae8825cc3cb3fa99829f223000c632b5d01d2945a",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-BalancedAuxiliaryFamily-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.BalancedNumericCertificate",
+      "source_sha256": "fc3bafe00aec05ebd0efae7ab75c541d1437d568d146ce4a49359b88bc4b1ea1",
+      "log": "logs/p6b-lake-OddPiPowers-Analysis-BalancedNumericCertificate-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.AuxiliaryFamilyRates",
+      "source_sha256": "1b767c7e40c27f4fd2cea69feab9d919f20d7e553bd33f9774fd0b87e5341a1e",
+      "log": "logs/p6b-lake-OddPiPowers-Transfer-AuxiliaryFamilyRates-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Transfer.BalancedPiCube",
+      "source_sha256": "c0dae4de748d38d4bf423ff51a041ad6e90ff288ae407fce509c0fcb3dde9484",
+      "log": "logs/p6b-lake-OddPiPowers-Transfer-BalancedPiCube-20261029T224504.log",
+      "validation": "source-identical verified cache; final root revalidates graph",
+      "evidence_ledger": "logs\\p6b-guarded-library-build-state.json"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualSeriesFactors",
+      "source_sha256": "94cad878aef4bd9fddd92c4c324bab75927908e17abb69f160a7ad69ea09cf09",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ActualSeriesFactors-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualLocalHeight",
+      "source_sha256": "ccbd057ba28618852a29842c4cd038874de84df101172227a8cc5aadd3a0132a",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ActualLocalHeight-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualValueHeight",
+      "source_sha256": "deee255d279a34e965436f3a43a7e81fd89f43daa4ef9259b7c225db3c27d486",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ActualValueHeight-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualHeightRate",
+      "source_sha256": "dbace5f083a424911e422a7a050b3bcd229ff87951d96846494b6158d7bad27b",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ActualHeightRate-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Construction.FiniteGaussianRows",
+      "source_sha256": "f8965d061894a157be120eeec0f421ff1ad96ebf7a3454af9752fc4888743fb0",
+      "log": "logs/p6-lake-OddPiPowers-Construction-FiniteGaussianRows-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Construction.ReducedGaussianRows",
+      "source_sha256": "3f878ede72d65bc7cd429c61dc2074ceebf91a2777afbece43625edc3a77fcf1",
+      "log": "logs/p6-lake-OddPiPowers-Construction-ReducedGaussianRows-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualReducedDiskHeight",
+      "source_sha256": "d08f46b1c022e2477a0185cc5b5310d5a149120013c3126004c45b26d86edf91",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ActualReducedDiskHeight-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualReducedRates",
+      "source_sha256": "cde974d5f97f2f7df5e6f3c775b85abf78c3d62d0361edfe9057ede0ade43237",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ActualReducedRates-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ActualReducedFamily",
+      "source_sha256": "a7b2698808e41ca0ab8d43f79a619b40594da97f102394ed88c78e93dd0945bc",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ActualReducedFamily-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Construction.ScaledTwelveLayerFamily",
+      "source_sha256": "de2fdcbdb10d8a217e02a168b04fa46418da7fe1ecef35698bcd8f470e63bfc6",
+      "log": "logs/p6-lake-OddPiPowers-Construction-ScaledTwelveLayerFamily-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.TwelveLayerActualRates",
+      "source_sha256": "29ecb726002ffce903764df6d0d0e27bc7ed633198e489eb6b7a110606e00978",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-TwelveLayerActualRates-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.LogRationalBounds",
+      "source_sha256": "1b33048e51cf0f6b36b21087022f39527ac5eaf8344a5ea1c0e2fa6e2bffc329",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-LogRationalBounds-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.ArctanRationalBounds",
+      "source_sha256": "c288349b3fc820fdd3da62b1c1e59cdbcddcba2223483b5ed49c5813d66f9e5d",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-ArctanRationalBounds-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.CentralNumericBounds",
+      "source_sha256": "1de717a43934e2056f8280dc32e8ccc933889c13726ebeac29c25c97cb795e1a",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-CentralNumericBounds-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate00",
+      "source_sha256": "40c9677cc5612e96810b870a98ee5d83946014a90c7558f7d94f914470addbf2",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate00-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate01",
+      "source_sha256": "95e18581d7f3064fe36031d4a6f237a5edfc86d1e2e7f09947e3dbeb7ee1c586",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate01-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate02",
+      "source_sha256": "929a596d77e2d1b2f27db8d47e56b7edf297f3168bb69910da4b5d856c4ba98f",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate02-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate03",
+      "source_sha256": "48d5ca6f9cacb0deac8af471589f0605d5387f0498a5d578fd106844c0555dbc",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate03-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate04",
+      "source_sha256": "b216b194ccc00cead360c98255090ef15144819f96fb7784aa0354917f5a7f4e",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate04-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate05",
+      "source_sha256": "3c8bb71bb2a816c9ce3f7d20c716351cce94f19063969d9beadc382a48d88f19",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate05-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate06",
+      "source_sha256": "86cef15662936838a41e891f85652694d6274c21abc49fff68685deee1aebfee",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate06-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate07",
+      "source_sha256": "e1726d4fda8fd6cccf6066723590dbc8ffca4df607e55dbd046201e6fc4176e5",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate07-20261030T042237.log"
+    },
+    {
+      "module": "OddPiPowers.Analysis.P6CentralCertificate08",
+      "source_sha256": "16ed0553c2f0545c77c35f64217a3658db21da2a4f0fa92ffc389a3e9a390705",
+      "log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate08-20261030T042237.log"
+    }
+  ],
+  "status": "failed",
+  "current": "OddPiPowers.Analysis.P6CentralCertificate09",
+  "reused_count": 163,
+  "executed_count": 23,
+  "final_root_validated": false,
+  "exit_code": 75,
+  "failed_log": "logs/p6-lake-OddPiPowers-Analysis-P6CentralCertificate09-20261030T042237.log"
+}

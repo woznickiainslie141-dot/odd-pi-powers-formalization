@@ -1,0 +1,62 @@
+'OddPiPowers.horizontalMajorantConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_integral_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_integral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.weightedHorizontalKernel_lower_integral_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.intervalFactorialProduct_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.intervalFactorialProduct_norm_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.centralLineBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLineBound_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphic_horizontal_integral_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphic_horizontal_lower_integral_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.auxiliaryCommonScale_cast_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.auxiliaryCommonScale_contour_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralRemainderBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralRemainderBound_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLineBound_contour_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.centralRemainderBound_mono_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_norm_le_central_all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm_le_central' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.log_norm_horizontal_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.log_intervalFactorialProduct_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.log_normalizedHorizontalProduct_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.log_horizontalDenominator_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.centralLogRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLogRatio_eq_finite_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.exp_centralLogRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.log_centralRemainderBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm_le_exp_central' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayer_actualAuxiliaryAtI_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_reducedAuxiliaryRow_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogPrimitive_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]

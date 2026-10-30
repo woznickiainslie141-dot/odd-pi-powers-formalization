@@ -1,0 +1,54 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:33:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:28:4: warning: Unused tactic linter: `change 2 * (if a.val < 6 then 0 else (a.val - 5) * N) ≤ 69 * N` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:72:4: error: unsolved goals
+case pos
+a : Fin 17
+ha : ↑a < 6
+⊢ ↑(if ha : ↑a < 6 then ⟨0, ⟨↑a, ⋯⟩⟩ else ⟨⟨↑a - 5, ⋯⟩, 0⟩).snd = ↑a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:93:4: error: unsolved goals
+case pos
+N : ℕ
+a : Fin 17
+ha : ↑a < 6
+⊢ ({ toFun := twelveLayerIndexToSigma, invFun := twelveLayerSigmaToIndex, left_inv := twelveLayerIndexEquiv._proof_4,
+            right_inv := twelveLayerIndexEquiv._proof_5 }
+          a).fst =
+      0 ∨
+    N = 0
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:95:4: error: unsolved goals
+case neg
+N : ℕ
+a : Fin 17
+ha : ¬↑a < 6
+hne : ↑a - 5 ≠ 0
+⊢ ↑a - 5 =
+      ↑({ toFun := twelveLayerIndexToSigma, invFun := twelveLayerSigmaToIndex,
+              left_inv := twelveLayerIndexEquiv._proof_4, right_inv := twelveLayerIndexEquiv._proof_5 }
+            a).fst ∨
+    N = 0
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:94:8: warning: This simp argument is unused:
+  twelveLayerIndexToSigma
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerActualFamily, twelveLayerIndexEquiv, twelveLayerShape, ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:97:8: warning: This simp argument is unused:
+  twelveLayerIndexToSigma
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerActualFamily, twelveLayerIndexEquiv, twelveLayerShape, ha, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:97:55: warning: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveLayerActualFamily, twelveLayerIndexEquiv, twelveLayerIndexToSigma, twelveLayerShape, ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

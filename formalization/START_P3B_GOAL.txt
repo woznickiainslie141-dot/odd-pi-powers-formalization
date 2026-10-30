@@ -1,0 +1,1 @@
+/goal 继续完成 P3-B。先读 formalization/P3B_RESUME_GOAL.md，再按 P3B_CELL_CERTIFICATE_GOAL.md 执行。保留已有 ContinuousCarry.lean 与 CertifiedPrimeDivisor.lean；先闭合编译及两层连续整除桥，再完成 L=69、基本权重 (6,1,...,1) 的完整十二层有理单元证书、统一权重缩放及实际公因子连接。检查器须对全部实数 z,y 正确，处理端点、回绕、重合分支及临界点安全零值。最后接入根库，完整构建并执行新增声明的传递公理审计，更新交接后停止。当前用户明确授权恢复 P3-B，历史 P2-only 目标已经完成，不要再次仅复核 P2；131 项旧审计不代表 P3-B 通过。本轮不推进 P4–P7，不指定新 token 预算或模型设置。

@@ -1,0 +1,11 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualReducedDiskHeight.lean:50:65: error: unsolved goals
+case ha
+m : ℕ
+P : ActualIntervals (m + 1)
+h : Fin (m + 1)
+z : ℂ
+hz : ‖z‖ ≤ 2
+ht : ‖eval z (complexPolynomial (reducedGaussianRow P h))‖ ≤ ↑(m + 1) * actualReducedHeight P * 2 ^ m
+hM : 1 ≤ ↑(m + 1)
+hsq : ↑(m + 1) ≤ ↑(m + 1) ^ 2
+⊢ 0 ≤ actualReducedHeight P

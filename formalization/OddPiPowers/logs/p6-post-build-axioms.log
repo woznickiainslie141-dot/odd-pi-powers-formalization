@@ -1,0 +1,445 @@
+'OddPiPowers.actualFactorWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.binomialWeight_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.regularReciprocal_coeff_abs_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.regularLocalFactor_coeff_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualLocalWeightedFactors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualLocalWeightedFactors_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualLocalWeightedFactors_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualLocalWeightedFactors_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualLocalWeightedFactors_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualWeightedFactors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualWeightedFactors_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualWeightedFactors_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualWeightedFactors_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualWeightedFactors_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actual_multiplicity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualLocalMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualLocalMajorant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actual_localExpansion_coeff_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actual_localCoefficient_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualValueMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualValueMajorant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliary_evalI_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualValueMajorant_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualHeightConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualHeightConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.log_actualValueMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.shapeRelativeLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.sum_scaled_lengths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualValueMajorant_log_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualConstantHeight_eventually_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.finiteGaussianRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.finiteGaussianRow_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.finiteGaussianRow_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.finiteGaussianRow_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.finiteGaussianRow_coefficientMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianIntegerPolynomial_eval_toComplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianCoefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianCoefficient_complex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianMatrix_complex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianMatrix_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianRow_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianCoefficient_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianRow_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reducedGaussianRow_matrix_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualReducedHeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualReducedHeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reduced_complexPolynomial_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reduced_complexPolynomial_coeff_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reduced_row_disk_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reduced_difference_disk_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.quotient_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualGrowth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualDecay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaled_denominator_degree_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reduced_disk_heights_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.reduced_remainders_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualReducedRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualReducedRows_at_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actual_reduced_auxiliaryFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayerOffset' does not depend on any axioms
+'OddPiPowers.scaledTwelveLayerOffset_le_eleven' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.scaledTwelveLayerOffset_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayerActualFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayerActualFamily_n_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayerActualFamily_left_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayerIndexToSigma' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.scaledTwelveLayerSigmaToIndex' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.scaledTwelveLayer_leftInverse' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.scaledTwelveLayerIndexEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayerActualGrouping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayerIndexEquiv_offset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayer_sum_offset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayer_shapeRelativeLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaledTwelveLayer_central_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.logSeries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.logSeriesError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.logSeries_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.arctan_cubic_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralRationalLower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_from_logs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval00_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval01_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval02_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval03_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval04_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval05_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval06_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval07_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval08_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval09_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval10_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6CentralInterval11_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6_scaled_central_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6_actualDecay_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6_actualGrowth_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PeriodFloorRow' does not depend on any axioms
+'OddPiPowers.PrimeRates.periodFloorNumerator' does not depend on any axioms
+'OddPiPowers.PrimeRates.periodFloorDenominator' does not depend on any axioms
+'OddPiPowers.PrimeRates.periodFloorCheck' does not depend on any axioms
+'OddPiPowers.PrimeRates.periodFloorActual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodFloorActual_eq_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodFloorDenominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodFloor_cross_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodFloorCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodFloorListCheck' does not depend on any axioms
+'OddPiPowers.PrimeRates.periodFloorListNumerator' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.periodFloorListCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodFloorListCheck_append' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.PeriodLabel' does not depend on any axioms
+'OddPiPowers.PrimeRates.periodLabelActual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodBlockCheck' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.periodBlockCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodPrefixLabels' does not depend on any axioms
+'OddPiPowers.PrimeRates.CertifiedCellWindow.atPeriod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodWindowIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodWindowFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodWindowFamily_labels_inj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodWindowFamily_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodWindowRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodWindowFamily_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodWindowFamily_scaled_actualDivisor_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.shrunkenCellWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.shrunkenCellWindow_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.reciprocal_shift_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_shrink_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellPredicate' does not depend on any axioms
+'OddPiPowers.PrimeRates.selectedCells' does not depend on any axioms
+'OddPiPowers.PrimeRates.selectedCell_mem_table' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.selectedCell_predicate' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.twelveLayerCellTable_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCells_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCells_length_le' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.SelectedCell' does not depend on any axioms
+'OddPiPowers.PrimeRates.selectedCellSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellSet_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.cellShrinkEpsilon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.cellShrinkEpsilon_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.cellShrinkEpsilon_lt_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellTemplate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellTemplate_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellTemplate_cell_inj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCell_left_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellTemplate_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedUnshrunkRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCell_gap_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellTemplate_rate_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodPrefixLabels_append' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.periodPrefixLabels_actual_sum_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodPrefixLabels_actual_sum_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodPrefixLabels_actual_sum_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedCellSet_sum_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selected_periodPrefixLabels_actual_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.periodTailPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.rational_tail_step_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodTailPrimitive_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodTailPrimitive_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_finite_rational_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.rationalPeriodGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodTailRational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodTailRational_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodTailDenominator' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.periodTailNumerator' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.periodTail_eq_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.tailFloorCheck' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.tailFloorCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.tailBlockCheck' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.tailBlockCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedTailRationalSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedTailRationalSum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedUnshrunkRate_add_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.selectedTemplateRate_ge_prefix_add_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.selectedTemplateRate_ge_label_prefix_add_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix00Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix00_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix00_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix00_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix01Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix01_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix01_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix01_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix02Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix02_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix02_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix02_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix03Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix03_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix03_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix03_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix04Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix04_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix04_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix04_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix05Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix05_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix05_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix05_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix06Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix06_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix06_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix06_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix07Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix07_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix07_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix07_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix08Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix08_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix08_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix08_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix09Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix09_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix09_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix09_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix10Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix10_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix10_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix10_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix11Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix11_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix11_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix11_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix12Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix12_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix12_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix12_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix13Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix13_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix13_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix13_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix14Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix14_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix14_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix14_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix15Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix15_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix15_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix15_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix16Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix16_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix16_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix16_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix17Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix17_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix17_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix17_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix18Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix18_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix18_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix18_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix19Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix19_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix19_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix19_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix20Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix20_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix20_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix20_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix21Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix21_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix21_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix21_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix22Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix22_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix22_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix22_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix23Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix23_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix23_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix23_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix24Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix24_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix24_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix24_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix25Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix25_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix25_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix25_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix26Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix26_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix26_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix26_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix27Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix27_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix27_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix27_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix28Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix28_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix28_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix28_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodPrefix29Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodPrefix29_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix29_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodPrefix29_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail00Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail00_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail00_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail00_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail01Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail01_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail01_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail01_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail02Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail02_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail02_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail02_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail03Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail03_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail03_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail03_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail04Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail04_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail04_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail04_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail05Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail05_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail05_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail05_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail06Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail06_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail06_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail06_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail07Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail07_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail07_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail07_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail08Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail08_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail08_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail08_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail09Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail09_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail09_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail09_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail10Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail10_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail10_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail10_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail11Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail11_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail11_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail11_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail12Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail12_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail12_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail12_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail13Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail13_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail13_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail13_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail14Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail14_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail14_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail14_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail15Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail15_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail15_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail15_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail16Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail16_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail16_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail16_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail17Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail17_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail17_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail17_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail18Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail18_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail18_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail18_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail19Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail19_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail19_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail19_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail20Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail20_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail20_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail20_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail21Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail21_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail21_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail21_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail22Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail22_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail22_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail22_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail23Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail23_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail23_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail23_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail24Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail24_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail24_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail24_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail25Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail25_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail25_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail25_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail26Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail26_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail26_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail26_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail27Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail27_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail27_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail27_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail28Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail28_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail28_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail28_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6PeriodTail29Floors' does not depend on any axioms
+'OddPiPowers.PrimeRates.p6PeriodTail29_checked' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail29_sum' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.p6PeriodTail29_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6_prefix_floor_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6_tail_floor_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.twelveLayer_actualDivisor_of_finite_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.p6_finite_window_rate_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.p6_actualDivisor_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.p6TwelveLayerRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.p6TwelveLayer_actualFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pi_cube_exponentUpperBound_42170551935_div_35026168' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.pi_cube_exponentUpperBound_lt_1203973_div_1000' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pi_cube_not_liouvilleWith_1203973_div_1000' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddPiPowers.p6TwelveLayer_actualFamily :
+  OddPiPowers.AuxiliaryFamily 186 69 (651297284 / 1000000) (255596306 / 1000000) OddPiPowers.p6TwelveLayerRows
+OddPiPowers.pi_cube_exponentUpperBound_42170551935_div_35026168 :
+  OddPiPowers.ExponentUpperBound (Real.pi ^ 3) (42170551935 / 35026168)
+OddPiPowers.pi_cube_exponentUpperBound_lt_1203973_div_1000 :
+  ∃ B < 1203973 / 1000, OddPiPowers.ExponentUpperBound (Real.pi ^ 3) B
+OddPiPowers.pi_cube_not_liouvilleWith_1203973_div_1000 : ¬LiouvilleWith (1203973 / 1000) (Real.pi ^ 3)

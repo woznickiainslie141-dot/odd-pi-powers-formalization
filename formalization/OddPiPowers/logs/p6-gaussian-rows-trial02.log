@@ -1,0 +1,16 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:36:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [gaussianAuxiliaryCoefficient, ActualIntervals.actualAuxiliaryIntEvalI]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:94:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ((RingHom.mapMatrix ?f) ?M).det
+in the target expression
+  ((gaussianAuxiliaryCoefficientMatrix P).map ⇑GaussianInt.toComplex).det = 0
+
+M : ℕ
+P : ActualIntervals M
+hz : (gaussianAuxiliaryCoefficientMatrix P).det = 0
+⊢ ((gaussianAuxiliaryCoefficientMatrix P).map ⇑GaussianInt.toComplex).det = 0
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\GaussianAuxiliaryRows.lean:98:76: error: unexpected token 'set_option'; expected 'lemma'

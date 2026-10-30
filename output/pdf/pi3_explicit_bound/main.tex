@@ -1,0 +1,593 @@
+\documentclass[UTF8,fontset=fandol,a4paper,11pt]{ctexart}
+\usepackage[margin=25mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array}
+\usepackage{enumitem,fancyhdr,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,
+  urlcolor=blue!45!black,bookmarksnumbered=true]{hyperref}
+\hypersetup{pdftitle={π³的一个显式无理测度上界},
+  pdfauthor={研究笔记},pdfsubject={Mahler-Mignotte 对数幂逼近与三次范数转移}}
+\setlength{\emergencystretch}{2em}
+\setlength{\parskip}{0.25em}
+\setlist{nosep,topsep=4pt,leftmargin=2em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small $\pi^3$ 的显式无理测度上界}
+\fancyhead[R]{\small 研究稿 · 2026-10-26}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{corollary}[theorem]{推论}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{注}
+\renewcommand{\proofname}{证明}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\ii}{\mathrm i}
+\newcommand{\Norm}{\operatorname{N}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\dd}{\,\mathrm d}
+\DeclareMathOperator{\degp}{deg}
+\numberwithin{equation}{section}
+
+\title{\bfseries $\pi^3$ 的一个显式无理测度上界\\[0.35em]
+  \large 经典对数幂逼近的三次范数转移}
+\author{数学研究笔记}
+\date{2026年10月26日}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+利用 Mahler--Mignotte 的整系数对数幂同时逼近系统，在高斯整环上
+对一个三次代数逼近值取相对范数，得到
+\[
+  \mu(\pi^3)\le E_{289}<2028.145383,
+\]
+其中 $E_{289}$ 由初等函数的一个明确表达式定义。
+论证只需经典系统的整数性、非退化性和余项上界，不需要构造
+关于 $1,\beta(3)$ 的纯二元逼近序列。
+对有理立方的逼近值另用高斯整数的离散性处理，避免错误地假定
+三个形式共轭之积总是非零。数值取整由仅使用有理数运算的证书验证。
+文末审计几类初步积分和超几何方案，说明其中尚不能成立的一般不可行性结论。
+\end{abstract}
+\noindent\textbf{关键词：}无理测度；$\pi^3$；对数幂；Hermite--Padé 逼近；高斯整数；代数范数。
+
+\section{问题与主要结果}
+
+对无理实数 $\xi$，采用普通无理测度的定义
+\[
+\mu(\xi)=\sup\left\{\nu>0:
+0<\left|\xi-\frac pq\right|<q^{-\nu}
+\text{ 对无穷多个既约 }p/q\in\Q\text{ 成立}\right\}.
+\]
+本文的目标是一个\emph{显式指数上界}：对任意大于该上界的指数，
+相应逼近不等式仅有有限多个解。这里不列出逐个小分母的检验，
+也不打印一个数值化的分母阈值。
+
+由 $\pi$ 的超越性，每个非零整数次幂均无理。
+另一方面，$\mu(\pi)$ 的上界本身不能直接传给 $\pi^3$；
+将有理逼近立方只控制一个受限的有理数集合。
+一般多项式超越测度已给出 $\mu(\pi^3)<\infty$。
+例如 Waldschmidt 的推论 3.2\cite{Waldschmidt1978}，应用于
+$qX^3-p$，给出很粗的基线
+\begin{equation}\label{eq:baseline}
+\mu(\pi^3)\le 1+3\cdot2^{40}(1+\log3).
+\end{equation}
+本文给出的较小常数是经典构造的一个具体推论，不作首次性或最佳纪录的主张。
+作为背景，$\pi^2$ 与 $\pi^4$ 的专门超几何构造分别见
+\cite{Zudilin2014,MarcovecchioZudilin2019}。
+Dirichlet 值 $\beta(3)=\sum_{j\ge0}(-1)^j/(2j+1)^3=\pi^3/32$
+与 $\pi^3$ 有相同的无理测度。
+
+所有对数均为自然对数。设 $m\ge1$ 为整数，定义
+\begin{align}
+D_m&=-(m+1)\log\left(2\sin\frac{\pi}{4(m+1)}\right)-m,
+  \label{eq:D}\\
+G_m&=m+(m+1)\log2.\label{eq:G}
+\end{align}
+\begin{theorem}\label{thm:main}
+若 $D_m>2G_m$，则
+\begin{equation}\label{eq:Em}
+ \mu(\pi^3)\le E_m,
+ \qquad E_m=\frac{m(D_m+G_m)}{D_m-2G_m}.
+\end{equation}
+特别地，取 $m=289$ 得
+\begin{equation}\label{eq:numerical-main}
+\boxed{\ \mu(\pi^3)\le E_{289}<2028.145383<2028.146.\ }
+\end{equation}
+\end{theorem}
+
+证明的关键不是产生一个收敛的二元整数线性型，而是把
+$\pi^3$ 的任意良好有理逼近提升为 $\ii\pi/2$ 的三次代数逼近，
+再用同一组辅助多项式给出一个不可能过小的非零值。
+
+\section{整系数对数幂同时逼近}
+
+\subsection{准确的归一化}
+
+固定 $m$，令 $n\ge1$，并记
+\[
+M=m+1,\qquad d_n=\lcm(1,\ldots,n),\qquad
+C_{m,n}=m!d_n^m(n!)^{M},\qquad
+Q_{m,n}(z)=\prod_{j=0}^{n}(z+j)^M.
+\]
+在选定的对数分支上，取一个正向包围 $0,-1,\ldots,-n$ 的圆周 $\Gamma$，定义
+\begin{equation}\label{eq:pade-integral}
+R_{h,n}(x)=\frac{C_{m,n}}{2\pi\ii}
+ \int_\Gamma\frac{z^h x^{z+n}}{Q_{m,n}(z)}\dd z,
+ \qquad 0\le h\le m.
+\end{equation}
+这是源自 Mahler\cite{Mahler1953}、并由
+Mignotte\cite[第122页，式(1)--(4)]{Mignotte1974} 使用的系统。
+注意 $(n!)^M$ 在\emph{分子}中，且被积式使用 $z^h$。
+
+将
+\[
+\frac{z^h}{Q_{m,n}(z)}
+=\sum_{\ell=0}^{n}\sum_{j=1}^{M}
+\frac{c_{h,\ell,j}}{(z+\ell)^j}
+\]
+作部分分式分解。留数公式给出
+\begin{align}
+R_{h,n}(x)&=\sum_{k=0}^{m}A_{h,k,n}(x)(\log x)^k,
+ \label{eq:pade-system}\\
+A_{h,k,n}(x)&=\frac{C_{m,n}}{k!}
+\sum_{\ell=0}^{n}c_{h,\ell,k+1}x^{n-\ell}.
+ \label{eq:coefficients}
+\end{align}
+
+\begin{lemma}\label{lem:integer-det}
+所有 $A_{h,k,n}(x)$ 均属于 $\Z[x]$，次数不超过 $n$，且
+\begin{equation}\label{eq:det}
+\det(A_{h,k,n}(x))_{0\le h,k\le m}
+ =c_{m,n}(x-1)^{nM},\qquad c_{m,n}\ne0.
+\end{equation}
+特别地，矩阵 $(A_{h,k,n}(\ii))$ 可逆。
+\end{lemma}
+
+\begin{proof}
+在 $z=-\ell+w$ 处，除去极点后的解析因子为
+\[
+(-\ell+w)^h\prod_{r\ne\ell}(r-\ell+w)^{-M}.
+\]
+其常数分母在乘上 $(n!)^M$ 后成为整数二项式系数的 $M$ 次幂；
+其 $w^a$ 系数额外出现的分母可由 $d_n^a$ 清除。
+因为 $c_{h,\ell,k+1}$ 对应 $a=m-k$，所以
+\[
+(n!)^M d_n^{m-k}c_{h,\ell,k+1}\in\Z.
+\]
+结合 $m!/k!\in\Z$ 即得式\eqref{eq:coefficients}的整数性。
+
+记左侧行列式为 $F_n(x)$。当 $h+k>m$ 时，
+$A_{h,k,n}$ 的 $x^n$ 系数为零；当 $h+k=m$ 时，该系数为
+$C_{m,n}/(k!(n!)^M)$。因此 $F_n$ 的最高次系数为
+\begin{equation}\label{eq:leading}
+\frac{(-1)^{mM/2}C_{m,n}^{M}}
+ {(n!)^{M^2}\prod_{k=0}^{m}k!}\ne0,
+\end{equation}
+且次数为 $nM$。
+
+另一方面，在 $x=1$ 附近展开式\eqref{eq:pade-integral}，
+由被积有理函数在无穷远处的阶数可知，每个 $R_{h,n}$
+在 $1$ 处均有至少 $nM$ 阶零点。
+在行列式中，将第零列替换为
+$\sum_{k=0}^{m}(\log x)^k$ 乘第 $k$ 列之和，行列式不变；
+替换后的第零列就是 $(R_{h,n}(x))_h$。
+故 $F_n$ 在 $1$ 处有至少 $nM$ 阶零点。
+配合次数与式\eqref{eq:leading}，得到式\eqref{eq:det}。
+\end{proof}
+
+\subsection{余项与高度的指数估计}
+
+此后固定
+\[
+\lambda=\log\ii=\frac{\ii\pi}{2},\qquad
+U_{h,n}(Y)=\sum_{k=0}^{m}A_{h,k,n}(\ii)Y^k.
+\]
+于是 $U_{h,n}\in\Z[\ii][Y]$，且
+$U_{h,n}(\lambda)=R_{h,n}(\ii)$。
+定义精确差商多项式
+\begin{equation}\label{eq:T}
+T_{h,n}(Y)=\sum_{k=1}^{m}A_{h,k,n}(\ii)
+                 \sum_{j=0}^{k-1}\lambda^{k-1-j}Y^j.
+\end{equation}
+它满足恒等式
+\begin{equation}\label{eq:difference}
+U_{h,n}(\lambda)-U_{h,n}(Y)
+  =(\lambda-Y)T_{h,n}(Y).
+\end{equation}
+这里不使用复函数上的实中值定理。
+
+\begin{lemma}\label{lem:rates}
+对任意 $\eta>0$，当 $n$ 充分大时，下列估计对所有 $h$ 以及所有 $|Y|\le2$
+同时成立：
+\begin{align}
+|R_{h,n}(\ii)|&\le \exp(-(D_m-\eta)n),\label{eq:Rrate}\\
+|U_{h,n}(Y)|, |T_{h,n}(Y)|&\le \exp((G_m+\eta)n).
+ \label{eq:Grate}
+\end{align}
+阈值仅依赖 $m,\eta$，不依赖以后出现的 $p,q$。
+\end{lemma}
+
+\begin{proof}
+经典余项估计是 Mignotte\cite[第123页式(7)，及第129--130页附录I]{Mignotte1974}
+的结论。为说明这里使用的速率，设
+\[
+c=\cot\frac{\pi}{4M}.
+\]
+该估计配合 Stirling 公式给出一个只依赖 $m$ 的常数 $K_m$，使
+\begin{equation}\label{eq:classicalR}
+|R_{h,n}(\ii)|
+ \le K_m n^{M/2} d_n^m
+      \left(2\sin\frac{\pi}{4M}\right)^{Mn}.
+\end{equation}
+事实上，在原文式(7)中代入 $C_{m,n}$，阶乘贡献的 $e^{-Mn}$
+与另一因子的 $e^{Mn}$ 相消，剩下的指数因子正是式\eqref{eq:classicalR}。
+由素数定理 $\log d_n=n+o(n)$（相关显式估计见\cite{RosserSchoenfeld1962}），
+得到式\eqref{eq:Rrate}。
+这里只用\emph{上界}，不声称余项一定具有相同速率的双边渐近。
+
+高度估计也可直接由部分分式展开得到。在每个极点处，
+对固定阶数 $a\le m$ 的系数取绝对值，使用
+$|r-\ell|\ge1$ 和 $\binom n\ell\le2^n$，得到
+\[
+|A_{h,k,n}(\ii)|
+ \le K'_m d_n^m(n+1)^{2m+2}2^{Mn}.
+\]
+例如，解析因子乘积的 $w^a$ 系数可用
+$\binom{nM+a-1}{a}$ 控制，$(-\ell+w)^h$ 再贡献一个固定次数的多项式因子。
+由于 $m$ 固定、$|\lambda|<2$，在 $|Y|\le2$ 上求值以及形成式\eqref{eq:T}
+只额外乘上依赖 $m$ 的常数。再次使用 $\log d_n=n+o(n)$ 即得
+式\eqref{eq:Grate}，与原文式(8)给出的指数一致。
+\end{proof}
+
+\section{三次范数下界及分裂情形}
+
+以下引理把所有有理逼近放在同一估计中。
+
+\begin{lemma}\label{lem:norm}
+设 $p/q>0$ 是既约分数，且 $|p/q-\pi^3|<1$。
+令
+\[
+\theta=(p/q)^{1/3}>0,\qquad y=\frac{\ii\theta}{2},
+\qquad w=y^3=-\frac{\ii p}{8q}.
+\]
+若 $n$ 满足引理\ref{lem:rates}，则存在 $h$ 使 $U_{h,n}(y)\ne0$，并有
+\begin{equation}\label{eq:normlower}
+|U_{h,n}(y)|\ge(8q)^{-m}\exp(-2(G_m+\eta)n).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+由引理\ref{lem:integer-det}，非零向量 $(1,y,\ldots,y^m)^\mathsf{T}$
+不可能被可逆矩阵 $(A_{h,k,n}(\ii))$ 映为零。故可选一个满足
+$U_{h,n}(y)\ne0$ 的 $h$。下文固定这个 $h$，简记 $U=U_{h,n}$。
+条件 $|p/q-\pi^3|<1$ 保证 $|y|<2$。
+
+\emph{情形一：$p/q$ 不是有理数的立方。}
+此时 $X^3-p/q$ 在 $\Q$ 上不可约，$[\Q(\theta):\Q]=3$。
+因 $\Q(\ii)$ 的次数为 $2$，域扩张 $\Q(\ii,\theta)/\Q(\ii)$ 的次数为 $3$。
+取 $\omega=e^{2\pi\ii/3}$，其相对范数为
+\begin{equation}\label{eq:normproduct}
+\Norm(U(y))=\prod_{j=0}^{2}U(\omega^j y)\ne0.
+\end{equation}
+非零性在这里来自\emph{域范数}，而不是仅由一个因子非零来推断。
+
+多项式结果式
+\[
+F(W)=\Res_Y(Y^3-W,U(Y))\in\Z[\ii][W]
+\]
+关于 $W$ 的次数至多为 $m$。因此
+\[
+(8q)^m F\left(-\frac{\ii p}{8q}\right)
+\in\Z[\ii]\setminus\{0\}.
+\]
+非零高斯整数的模至少为 $1$，所以
+\[
+1\le(8q)^m |U(y)|\cdot|U(\omega y)|\cdot|U(\omega^2y)|.
+\]
+三个自变量的模都小于 $2$，应用式\eqref{eq:Grate}得到式\eqref{eq:normlower}。
+
+\emph{情形二：$p/q=(a/b)^3$，其中 $a,b$ 是互素正整数。}
+此时 $q=b^3$，$y=\ii a/(2b)\in\Q(\ii)$，从而
+\[
+(2b)^m U(y)\in\Z[\ii]\setminus\{0\},\qquad
+|U(y)|\ge(2b)^{-m}\ge(8q)^{-m}.
+\]
+这比式\eqref{eq:normlower}更强，因为 $G_m+\eta>0$。
+两种情形都覆盖，证明完成。
+\end{proof}
+
+\begin{remark}
+将 $U(Y)$ 按指数模 $3$ 分组为
+$B_0(W)+YB_1(W)+Y^2B_2(W)$，可把结果式写成
+\[
+F(W)=B_0(W)^3+WB_1(W)^3+W^2B_2(W)^3
+      -3WB_0(W)B_1(W)B_2(W).
+\]
+式\eqref{eq:normlower}利用这个低次数代数关系，避免用大量余子式消元。
+但在情形二中，这个三因子乘积可能为零，不能代替上面的单独证明。
+\end{remark}
+
+\section{从范数估计到无理测度}
+
+\begin{proof}[定理\ref{thm:main}的证明]
+固定满足 $D_m>2G_m$ 的 $m$。简记 $D=D_m$，$G=G_m$。
+取充分小的 $\eta>0$，使
+\[
+\Delta_\eta=D-2G-3\eta>0.
+\]
+对给定的既约 $p/q$，先考虑 $|p/q-\pi^3|<1$。
+取
+\begin{equation}\label{eq:index}
+n=\max\left\{n_0(m,\eta),\,
+\left\lceil\frac{m\log(8q)+\log2}{\Delta_\eta}\right\rceil\right\},
+\end{equation}
+其中 $n_0$ 保证引理\ref{lem:rates}成立。
+这个 $n$ 只由 $q,m,\eta$ 决定；所选 $h$ 可以随后依赖 $p,q,n$。
+
+引理\ref{lem:norm}与式\eqref{eq:index}给出
+\begin{align*}
+|R_{h,n}(\ii)|
+ &\le e^{-(D-\eta)n}\\
+ &\le\tfrac12(8q)^{-m}e^{-2(G+\eta)n}
+ \le\tfrac12|U_{h,n}(y)|.
+\end{align*}
+由精确差商恒等式\eqref{eq:difference}，
+\begin{align}
+|\lambda-y|
+&\ge\frac{|U_{h,n}(y)|-|R_{h,n}(\ii)|}{|T_{h,n}(y)|}\notag\\
+&\ge\tfrac12(8q)^{-m}e^{-3(G+\eta)n}.
+\label{eq:lambdalower}
+\end{align}
+这里 $T_{h,n}(y)\ne0$，否则差商恒等式将与上一严格大小关系矛盾。
+
+当 $q$ 充分大时，式\eqref{eq:index}中的取整与 $n_0$ 仅贡献固定常数，
+并且 $n\le m\log q/\Delta_\eta+O_{m,\eta}(1)$。
+因此存在与 $p,q$ 无关的 $c_{m,\eta}>0$，使
+\[
+|\lambda-y|\ge c_{m,\eta}q^{-K_\eta},\qquad
+K_\eta=m+\frac{3m(G+\eta)}{D-2G-3\eta}
+       =\frac{m(D+G)}{D-2G-3\eta}.
+\]
+同时
+\[
+\left|\pi^3-\frac pq\right|
+=|\pi-\theta|(\pi^2+\pi\theta+\theta^2)
+\ge2\pi^2|\lambda-y|.
+\]
+故在充分大的所有 $q$ 上，得到统一的 $q^{-K_\eta}$ 型下界。
+对误差不小于 $1$ 的逼近，下界自然成立。
+
+令 $\nu>E_m$。因 $K_\eta\to E_m$，可先选 $\eta$ 使 $K_\eta<\nu$，
+再把固定正常数吸收到 $q^{\nu-K_\eta}$ 中。
+于是对所有充分大的 $q$ 和所有整数 $p$，
+\[
+\left|\pi^3-\frac pq\right|>q^{-\nu}.
+\]
+这正是 $\mu(\pi^3)\le E_m$。数值部分在下一节证明。
+\end{proof}
+
+\begin{remark}
+整个论证只用余项上界，不需要证明相邻逼近的行列式非零，
+也不需要假定某一固定行的余项总非零。
+真正需要的是每个 $n$ 的\emph{整个系数矩阵}非退化，
+从而能为每个代数逼近值选出一个非零多项式值。
+\end{remark}
+
+\section{常数的有理数证书}
+
+取 $m=289$。附带程序 \texttt{code/certify\_bound.py} 仅用 Python 标准库中的
+整数和有理数，证明下列向外取整的区间：
+\begin{align*}
+1224.30683764214781833358
+ &<D_{289}<1224.30683764214781833359,\\
+490.01268236238413973099
+ &<G_{289}<490.01268236238413973100,\\
+244.28147291737953887159
+ &<D_{289}-2G_{289}<244.28147291737953887160,\\
+2028.14538231016824842293
+ &<E_{289}<2028.14538231016824842294.
+\end{align*}
+这些区间特别证明 $D_{289}>2G_{289}$ 及式\eqref{eq:numerical-main}。
+
+证书首先使用 Machin 恒等式
+\[
+\pi=16\arctan(1/5)-4\arctan(1/239)
+\]
+及交错级数余项，得到 $\pi$ 的有理区间；随后用正弦交错级数控制
+$2\sin(\pi/1160)$。
+将对数的自变量乘以 $2$ 的适当整数次幂，移入 $[1,2]$ 后，使用
+\begin{align*}
+\log u&=2\sum_{k=0}^{L-1}\frac{v^{2k+1}}{2k+1}+\mathcal E_L,
+ &v&=\frac{u-1}{u+1},\\
+0\le\mathcal E_L&\le
+\frac{2v^{2L+1}}{(2L+1)(1-v^2)}, &&1\le u\le2.
+\end{align*}
+最后利用 $m(D+G)/(D-2G)$ 在 $D>2G>0$ 时对 $D$ 单调递减、
+对 $G$ 单调递增，直接包住 $E_{289}$。
+所以小数取整并非浮点近似或对有限项趋势的外推。
+
+小参数的辅助程序 \texttt{code/check\_identities.py} 还精确验证了
+八组 $(m,n)$ 的系数整数性及式\eqref{eq:det}在 $x=\ii$ 处的值。
+这些检验用于发现归一化和符号错误；一般结论的证明仍是引理\ref{lem:integer-det}。
+本文仅选用一个有效参数 $m=289$，不需要也不声称它是所有构造中的全局最优值。
+
+\section{结果的适用范围}
+
+这个显式上界是经典对数幂估计与一个三次域论步骤的组合。
+它没有解决 $\mu(\pi^3)=2$，也没有产出一个已证明具有优良算术性质的
+纯二元 $\beta(3)$ 逼近族。事实上，直接从辅助多项式得到对任意
+$p/q$ 的排斥估计，已经足以证明无理测度上界。
+
+若希望继续降低常数，需要在\emph{同一归一化}下同时改进
+$D_m$ 和 $G_m$。只减去一个公因子会同时缩小余项与系数，
+其净收益必须重新代入式\eqref{eq:Em}核算。
+非平衡次数和高斯整数处的实际系数约消是可研究方向，
+本文没有为其预先承诺一个改进后的数值上界。
+
+\appendix
+\section{初步方案中需要修正的陈述}
+
+本附录记录必要的数学修正，避免把尚无依据的实验描述写成定理。
+
+\subsection{归一化、分支和范数}
+
+式\eqref{eq:pade-integral}中的 $(n!)^{m+1}$ 不能移到分母。
+例如按错误归一化取 $m=1,n=2,h=0$ 时，
+$x^2\log x$ 的系数为 $1/8$，不属于 $\Z$。
+同样，把 $z^h$ 换成 $z^{-h}$ 会提高零点处的极点阶数，
+不能继续使用这里的对数次数和行列式公式。
+
+有理立方情形也不能略过。以 $p=q=1$、$y=\ii/2$ 为例，取
+\[
+U(Y)=4Y^2+2\ii Y-1.
+\]
+虽然 $U(y)=-3\ne0$，但
+\[
+\Res_Y(Y^3+\ii/8,U(Y))=0.
+\]
+因此，在分裂情形下，三个形式根对应的乘积不一定非零。
+引理\ref{lem:norm}通过两种情形分别处理，补齐这一点。
+
+另外，式\eqref{eq:D}的正确大 $m$ 展开是
+\[
+D_m=(m+1)\log\frac{2(m+1)}{\pi}-m+O(1/m).
+\]
+括号中的 $2$ 不能写成 $4$。在此速率公式中，最早满足
+$D_m>2G_m$ 的整数也不宜仅凭粗渐近给出；主定理只使用已认证的 $m=289$。
+
+\subsection{单重积分的严格结论及局限}
+
+设 $P(y)\in\Z[y]$ 的次数为 $d$。写成
+\[
+P(y)=P(-1)+(1+y)\sum_{j=0}^{d-1}b_jy^j,
+\]
+则有精确恒等式
+\begin{equation}\label{eq:single-general}
+\int_0^1\frac{P(x^2)}{1+x^2}(\log x)^2\dd x
+=\frac{P(-1)\pi^3}{16}+2\sum_{j=0}^{d-1}\frac{b_j}{(2j+1)^3}.
+\end{equation}
+这确实只涉及 $1,\pi^3$。但右侧有理部分的\emph{分母上界}
+不是所有 $P$ 都必须达到的下界。
+特别地，若相关系数有预先设计的整除性，某些大素数完全可能被消去。
+
+还须注意，对于奇数的最小公倍数，正确的指数为
+\begin{equation}\label{eq:odd-lcm}
+\log\lcm(1,3,\ldots,2d-1)^3=6d+o(d),
+\end{equation}
+因为排除 $2$ 的幂只改变 $O(\log d)$，并不会将素数定理的主项减半。
+
+对原试探 $P(y)=y^N(1-y)^N$，有 $d=2N$，并且
+\[
+\log I_N=-N\log4+o(N),\qquad
+\log\lcm(1,3,\ldots,4N-1)^3=12N+o(N).
+\]
+因此\emph{采用这个朴素清分母数}所得的整数线性型增长，不能给出有用测度。
+这不是对真实最简分母的一般下界，也不是所有单重积分构造的不可行定理。
+将误差除以 $2^N$ 后确实约以 $8^{-N}$ 衰减，但必须同步追踪逼近系数的分母。
+
+Chebyshev 的区间外极值不等式控制
+$\|P\|_{[0,1]}/|P(-1)|$；它本身不提供有符号积分
+式\eqref{eq:single-general}的模的下界。
+因而只凭该极值不等式不能排除积分中的抵消。
+
+\subsection{两个超几何核的具体问题}
+
+对初步提出的核
+\[
+\mathcal R_N(t)=8\,
+\frac{\prod_{j=1}^{3}(t-a_jN)_{a_jN}
+ (t+\tfrac12+N)_{a_jN}}
+ {((t+\tfrac12)_{N+1})^3},
+\]
+若三个 $a_j$ 均为正整数，则分子与分母的次数差为
+$2N\sum_j a_j-3N-3$，随 $N$ 增长为正。
+故无论是否交错求和，原始项都不趋于零；给定形式不能直接用于无限级数。
+声称的反演对称性也不成立。例如 $N=a_1=a_2=a_3=1$ 时，
+\[
+\mathcal R_1(t)=8\frac{(t-1)^3}{(t+1/2)^3},\qquad
+\mathcal R_1(1)=0,\qquad \mathcal R_1(-3)=\frac{4096}{125}\ne0.
+\]
+
+另一个确为真分式的去权核为
+\[
+R_n^{(0)}(t)=n!\,
+\frac{(t+1)_n(t+2n+1)_n}{(t+n+1/2)_{n+1}^3}.
+\]
+其准确反演关系是
+\[
+R_n^{(0)}(-t-3n-1)=(-1)^{n+1}R_n^{(0)}(t).
+\]
+若 $c_{k,j}$ 是极点 $-n-1/2-k$ 处的 $j$ 阶部分分式系数，
+则
+$c_{n-k,j}=(-1)^{n+1+j}c_{k,j}$。
+所以
+\[
+C_j:=\sum_{k=0}^{n}(-1)^k c_{k,j}
+ =(-1)^{j+1}C_j,
+\]
+从而 $C_2=0$：交错求和中 $\beta(2)$ 的系数确实消失。
+但这只证明一个消去恒等式，没有证明消去 $\beta(1)$ 后仍有足够的净衰减。
+该核的某些有限项比值接近一个含 $\pi^2$ 的极限，也不能单独证明
+所有变形族的“留数锁死”。本文不将这些更强说法作为定理使用。
+
+\clearpage
+\section{复算材料与证据边界}
+
+本稿配套文件包括：
+\begin{itemize}
+\item \texttt{code/certify\_bound.py}：纯有理数的数值常数证书；
+\item \texttt{data/bound\_certificate.json}：带向外取整端点的运行结果；
+\item \texttt{code/check\_identities.py}：小参数整数性、行列式及本附录反例的精确验证；
+\item \texttt{data/identity\_checks.json}：相应运行记录。
+\end{itemize}
+主定理的数学输入明确限于经典余项估计和素数定理，
+其余的整数性、行列式、范数非零性、参数顺序及指数转移均已在正文证明。
+有限项计算没有被用来替代任何渐近命题。
+
+\begin{thebibliography}{9}
+\bibitem{Mignotte1974}
+M. Mignotte,
+\emph{Approximations rationnelles de $\pi$ et quelques autres nombres},
+Mémoires de la Société Mathématique de France \textbf{37} (1974), 121--132.
+\href{https://doi.org/10.24033/msmf.139}{doi:10.24033/msmf.139}.
+使用第122--123页的定义、行列式及式(7)，并核对第129--130页附录。
+
+\bibitem{Mahler1953}
+K. Mahler,
+\emph{On the approximation of logarithms of algebraic numbers},
+Philosophical Transactions of the Royal Society of London A
+\textbf{245} (1953), 371--398.
+\href{https://doi.org/10.1098/rsta.1953.0001}{doi:10.1098/rsta.1953.0001}.
+
+\bibitem{Waldschmidt1978}
+M. Waldschmidt,
+\emph{Transcendence measures for exponentials and logarithms},
+Journal of the Australian Mathematical Society A
+\textbf{25} (1978), 445--465.
+\href{https://doi.org/10.1017/S1446788700021431}{doi:10.1017/S1446788700021431}.
+粗基线使用第452页推论3.2。
+
+\bibitem{RosserSchoenfeld1962}
+J. B. Rosser and L. Schoenfeld,
+\emph{Approximate formulas for some functions of prime numbers},
+Illinois Journal of Mathematics \textbf{6} (1962), 64--94.
+\href{https://doi.org/10.1215/ijm/1255631807}{doi:10.1215/ijm/1255631807}.
+
+\bibitem{Zudilin2014}
+W. Zudilin,
+\emph{Two hypergeometric tales and a new irrationality measure of $\zeta(2)$},
+Annales Mathématiques du Québec \textbf{38} (2014), 101--117.
+\href{https://arxiv.org/abs/1310.1526}{arXiv:1310.1526}.
+
+\bibitem{MarcovecchioZudilin2019}
+R. Marcovecchio and W. Zudilin,
+\emph{Hypergeometric rational approximations to $\zeta(4)$},
+2019.
+\href{https://arxiv.org/abs/1905.12579}{arXiv:1905.12579}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,27 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ScaledIntervalRate.lean:42:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑a / ↑L + -(1 / 2)
+in the target expression
+  Tendsto (fun N => (∑ r ∈ Finset.Icc (a * N) ((L - a) * N), centralLogIntegrand Y (↑r / ↑(L * N) + -1 / 2)) / ↑(L * N))
+    atTop (𝓝 (∫ (x : ℝ) in ↑a / ↑L + -1 / 2..↑(L - a) / ↑L + -1 / 2, centralLogIntegrand Y x))
+
+L a : ℕ
+hL : 0 < L
+ha : 2 * a < L
+Y : ℝ
+hY : 0 < Y
+hab : a ≤ L - a
+hk : 0 < L - 2 * a
+hL0 : ↑L ≠ 0
+haL : a ≤ L
+h2aL : 2 * a ≤ L
+hsum :
+  Tendsto (fun N => (∑ r ∈ Finset.Icc (a * N) ((L - a) * N), centralLogIntegrand Y (↑r / ↑(L * N) + -1 / 2)) / ↑(L * N))
+    atTop (𝓝 (∫ (x : ℝ) in ↑a / ↑L + -1 / 2..↑(L - a) / ↑L + -1 / 2, centralLogIntegrand Y x))
+heL : ↑a / ↑L + -(1 / 2) = -(↑(L - 2 * a) / ↑L / 2)
+heR : ↑(L - a) / ↑L + -(1 / 2) = ↑(L - 2 * a) / ↑L / 2
+⊢ Tendsto
+    (fun N =>
+      (Real.log ↑((L - 2 * a) * N).factorial - ↑((L - 2 * a) * N + 1) * Real.log ↑(L * N) -
+          ∑ r ∈ Finset.Icc (a * N) ((L - a) * N), centralLogIntegrand Y (↑r / ↑(L * N) - 1 / 2)) /
+        ↑(L * N))
+    atTop (𝓝 (-centralIntervalRate (↑(L - 2 * a) / ↑L) Y))

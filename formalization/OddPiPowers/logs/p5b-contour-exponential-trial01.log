@@ -1,0 +1,13 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ContourExponential.lean:27:5: warning: Variable name `hH` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hH
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ContourExponential.lean:91:13: warning: This simp argument is unused:
+  hfun
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

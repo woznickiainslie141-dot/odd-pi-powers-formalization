@@ -1,0 +1,26 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/ScaledPrimeRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+      "log": "logs/p4-PrimeDivisorRates-20261028T172617.log",
+      "sha256": "4ecf3b210d534212a05ed38aeb9f417e68afee3add452f9a4ef2ea1710d334c9"
+    },
+    {
+      "file": "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+      "log": "logs/p4-PrimeRateCalibration-20261028T172617.log",
+      "sha256": "4390d09a2035455fb6be11dde9528cc1d379f1dc8e5f7f31f66534e59337b302"
+    }
+  ],
+  "current": "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-TwelveLayerFamily-20261028T172617.log"
+}

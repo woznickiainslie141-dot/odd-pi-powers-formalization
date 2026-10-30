@@ -1,0 +1,9 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\SeriesCoefficientMajorant.lean:30:11: error: `simp` made no progress
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\SeriesCoefficientMajorant.lean:49:46: error(lean.unknownIdentifier): Unknown constant `List.prod_nonneg`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\SeriesCoefficientMajorant.lean:69:56: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\SeriesCoefficientMajorant.lean:74:45: error: Type mismatch
+  Nat.pow_le_pow_left ?m.68
+has type
+  ∀ (i : ℕ), ?m.66 ^ i ≤ ?m.67 ^ i
+but is expected to have type
+  (T + q) ^ q ≤ (T + m + 1) ^ q

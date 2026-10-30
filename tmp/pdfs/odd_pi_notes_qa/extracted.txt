@@ -1,0 +1,1476 @@
+Explicit irrationality bounds
+for odd powers of π
+Nested logarithmic Hermite–Padé constructions,
+prime divisors, and algebraic-approximation transfer
+Expository research notes
+27 October 2026
+Abstract
+We develop a nested-interval version of a classical logarithmic Hermite–Padé construc￾tion and give explicit upper bounds for the irrationality exponents of odd powers of π.
+The construction uses Gaussian-integer polynomials in log i = iπ/2, rather than a direct
+sequence of binary linear forms in 1, πk
+. We prove integrality, an exact nonvanishing de￾terminant identity, a prime-divisor estimate described by weighted arcs on a circle, and
+uniform analytic bounds. A minimal-polynomial resultant argument handles every ratio￾nal approximation, including reducible-binomial and rational-power cases. A twelve-layer
+choice gives
+µ(π
+3
+) < 1203.973, µ(π
+5
+) < 42461, µ(π
+7
+) < 1272103, µ(π
+9
+) < 35398937.
+The numerical inequalities are certified by ball arithmetic. Detailed background, worked
+examples, the order of parameter choices, and unsuccessful finite experiments are included
+for further investigation.
+Status and scope. This is an expanded working manuscript, not a journal submission or
+an independently refereed paper. It makes no priority, record, or global optimality claim.
+The displayed upper bounds follow from the arguments given here; finite tests and numerical
+certificates have more limited roles, which are stated explicitly. No upper bound below 100
+for µ(π
+3
+) is established.
+
+Odd powers of π Expository research notes
+Contents
+1 Purpose, conventions, and main conclusions 2
+1.1 What is being bounded? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.2 Why odd powers are natural targets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.3 A preview of the construction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.4 General parameter theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.5 A guide to the evidence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2 The auxiliary polynomials and their determinant 4
+2.1 Intervals, poles, and normalization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 Why all coefficients are integers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+2.3 Supports and vanishing orders . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2.4 A nonzero determinant, including its leading term . . . . . . . . . . . . . . . . . . . . . 6
+3 Prime divisors and weighted zero arcs 7
+3.1 A local valuation inequality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3.2 Replacing pole locations by a circle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3.3 The common divisor and its exact exponential rate . . . . . . . . . . . . . . . . . . . . . 8
+3.4 A transparent two-layer special case . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4 Uniform analytic estimates 9
+4.1 A coefficient bound valid on a whole disk . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+4.2 A global horizontal-contour bound . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+4.3 Evaluating the central exponential rate . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+5 From logarithmic polynomials to odd powers 12
+5.1 Why a resultant is the right arithmetic object . . . . . . . . . . . . . . . . . . . . . . . . 12
+5.2 The quantitative comparison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+5.3 Why a common divisor helps twice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+6 Concrete parameters and every fixed odd power 13
+6.1 Recovering the balanced benchmark . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+6.2 Two, seven, and twelve layers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.3 An explicit family for all odd k . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+6.4 Why the higher-power constants still grow rapidly . . . . . . . . . . . . . . . . . . . . . 15
+6.5 What would be needed to reach 10–100? . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+7 How the constants are computed and certified 16
+7.1 An exact finite combinatorial calculation . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+7.2 Ball arithmetic, root signs, and strict rounding . . . . . . . . . . . . . . . . . . . . . . . 17
+7.3 Reproduction and the role of each file . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+7.4 Parameter order and effectivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+A Small examples and useful background 18
+A.1 A complete two-by-two system . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+A.2 Why the minimal polynomial cannot be skipped . . . . . . . . . . . . . . . . . . . . . . 18
+A.3 Divisibility before and after evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+A.4 The least common multiple as an arithmetic cost . . . . . . . . . . . . . . . . . . . . . . 19
+A.5 A two-layer arc calculation by hand . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+B Finite experiments and further directions 19
+B.1 Scalar Padé approximation to a pure cubic target . . . . . . . . . . . . . . . . . . . . . . 19
+B.2 A derivative kernel isolating β(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+B.3 What a successful binary family would have to prove . . . . . . . . . . . . . . . . . . . . 20
+B.4 Corrections that should not become unproved claims . . . . . . . . . . . . . . . . . . . . 21
+1
+
+Odd powers of π Expository research notes
+1 Purpose, conventions, and main conclusions
+1.1 What is being bounded?
+For an irrational real number ξ, its irrationality exponent is
+µ(ξ) = sup 
+u > 0 : 0 <
+
+
+
+
+ξ −
+p
+q
+
+
+
+
+< q−u
+for infinitely many reduced p/q, q > 0
+
+.
+Thus µ(ξ) ≤ E means that for every ε > 0 there are only finitely many reduced fractions with
+error below q
+−E−ε
+. Equivalently, after changing a positive constant, one has
+
+
+
+
+ξ −
+p
+q
+
+
+
+
+≥ cεq
+−E−ε
+(1.1)
+for all p, q with q > 0. This does not assert the same inequality with exponent exactly E.
+Dirichlet’s theorem gives µ(ξ) ≥ 2. Obtaining an explicit upper bound for a particular
+transcendental number is a separate problem. The finiteness of the exponents of fixed powers
+of π is already accessible through classical quantitative transcendence theory. Our objective
+is to spell out one concrete construction and track its constants, not to claim a first finiteness
+theorem.
+All logarithms in estimates are natural logarithms. We use
+λ = log i = iπ
+2
+, Θ = π
+2
+.
+The symbols o(n) and O(log n) refer to n → ∞ with the complete interval configuration and
+target k fixed. The auxiliary degree m may be large, but is fixed in this limit.
+1.2 Why odd powers are natural targets
+The Dirichlet beta function is
+β(s) = X∞
+ℓ=0
+(−1)ℓ
+(2ℓ + 1)s
+.
+For r ≥ 0,
+β(2r + 1) = (−1)rE2r
+4
+r+1(2r)! π
+2r+1
+,
+where sech z =
+P
+j≥0 Ejz
+j/j! defines the Euler numbers. In particular,
+β(1) = π
+4
+, β(3) = π
+3
+32
+, β(5) = 5π
+5
+1536
+.
+Multiplication by a nonzero rational number preserves the irrationality exponent. For a
+reduced multiplier a/b, reducing ap/(bq) cancels a gcd dividing |ab|, so its denominator remains
+comparable to q by constants independent of p, q.
+This observation does not deduce an upper bound for π
+3
+from a rational-approximation
+bound for π. Taking a cube root changes the approximation field. The resultant argument
+below accounts for that change.
+2
+
+Odd powers of π Expository research notes
+1.3 A preview of the construction
+There are three components:
+1. Build integer polynomials Ah,j,n(x) such that
+Rh,n(x) = Xm
+j=0
+Ah,j,n(x)(log x)
+j
+has a high-order zero at x = 1.
+2. Divide every coefficient by a common integer Πn. Its exponential rate γ = lim n
+−1
+log Πn
+matters; a large constant depending only on m does not change this rate.
+3. Evaluate at x = i, compare λ with a k-th root of a rational approximation to π
+k
+, and
+use a nonzero resultant.
+Nested intervals change both analytic bounds and arithmetic divisors. Their effects must be
+assessed together.
+The classical logarithmic construction appears in Mignotte [1]. Weighted logarithmic Padé
+systems and normality are discussed in Kawashima [2]. Here the determinant and estimates
+for our two-sided nested system are proved directly.
+1.4 General parameter theorem
+Choose integers
+L ≥ 3, 0 = t0 < t1 < · · · < tJ−1 < L/2, νj ≥ 1,
+and put
+M =
+J
+X−1
+j=0
+νj , m = M − 1 ≥ 1, cj = 1 −
+2tj
+L
+.
+An interval of relative length cj , centred at 1/2, is used νj times. Let γ be the explicit
+prime-divisor rate defined in Section 3. Let Y > 0 solve
+2
+X
+j
+νj arctan
+cj
+2Y
+= Θ. (1.2)
+Define
+Fc(Y ) = c
+2
+log 1 + (2Y /c)
+2
+4
++ 2Y arctan
+c
+2Y
+, (1.3)
+D0 =
+X
+j
+νjFcj
+(Y ) − ΘY − m, (1.4)
+G0 = m +
+
+
+X
+j
+νjcj
+
+ log 2, (1.5)
+D = D0 + γ, G = G0 − γ. (1.6)
+Theorem 1.1 (Odd-power bound). Let k ≥ 3 be odd. If G ≥ 0 and ∆k = D − (k − 1)G > 0,
+then
+µ(π
+k
+) ≤ Ek :=
+m(D + G)
+D − (k − 1)G
+=
+m(D0 + G0)
+D0 − (k − 1)G0 + kγ . (1.7)
+3
+
+Odd powers of π Expository research notes
+The proof also works for every integer k ≥ 2. We emphasize odd powers because they
+are the motivating targets; we do not compare these bounds with specialized results for even
+powers.
+Corollary 1.2 (A twelve-layer family). Use L = 69, tj = j for 0 ≤ j ≤ 11, and
+ν0 = 6s, ν1 = · · · = ν11 = s, m = 17s − 1.
+The following choices satisfy the hypotheses:
+k s m Certified strict upper bound
+3 11 186 1203.973
+5 259 4 402 42 461
+7 5 871 99 806 1 272 103
+9 131 354 2 233 017 35 398 937
+For every other fixed odd k, some sufficiently large integer s also satisfies the hypotheses.
+The last assertion is an existence statement within an explicit family, not a uniform small
+bound as k → ∞. Section 6 explains the growth.
+1.5 A guide to the evidence
+The algebraic and analytic lemmas prove Theorem 1.1. Ball-arithmetic certificates prove
+the decimal comparisons once the lemmas hold. Exact finite examples check identities and
+implementation, but do not prove asymptotic rates. Floating-point searches select parameters;
+they neither certify rounding nor prove global optimality. The appendices retain unsuccessful
+experiments because they explain the arithmetic difficulties that remain.
+2 The auxiliary polynomials and their determinant
+2.1 Intervals, poles, and normalization
+Fix the parameters of Theorem 1.1. Let n run through positive multiples of L. List all
+M = m + 1 intervals, including repetitions, in nested order:
+Ia = [αa, βa], 0 ≤ a ≤ m, 0 = α0 ≤ · · · ≤ αm < n/2, βa = n − αa.
+Thus Im ⊆ · · · ⊆ I0 = [0, n]. Write ℓa = βa − αa. The grouped description uses endpoints
+tjn/L,(L − tj )n/L, with multiplicity νj .
+Set
+Qn(z) = Ym
+a=0
+Y
+βa
+r=αa
+(z + r),
+Nn =
+Xm
+a=0
+ℓa, dn = lcm(1, . . . , n),
+Cn = m! d
+m
+n
+Ym
+a=0
+ℓa!.
+(2.1)
+The degree of Qn is Nn + M. The interval factorials are in the numerator of Cn.
+4
+
+Odd powers of π Expository research notes
+Let Γ positively surround the poles 0, −1, . . . , −n. On a local logarithm branch define
+Rh,n(x) = Cn
+2πi
+I
+Γ
+z
+hx
+z+n
+Qn(z)
+dz, 0 ≤ h ≤ m. (2.2)
+Write
+z
+h
+Qn(z)
+=
+Xn
+ℓ=0
+X
+µℓ
+r=1
+bh,ℓ,r
+(z + ℓ)
+r
+, µℓ = #{a : ℓ ∈ Ia}.
+Residues give
+Rh,n(x) = Xm
+j=0
+Ah,j,n(x)(log x)
+j
+, (2.3)
+Ah,j,n(x) = Cn
+j!
+X
+ℓ:µℓ≥j+1
+bh,ℓ,j+1x
+n−ℓ
+. (2.4)
+2.2 Why all coefficients are integers
+Lemma 2.1 (Integrality). For all h, j, one has Ah,j,n(x) ∈ Z[x].
+Proof. Absorb the interval factorials first:
+Ha(z) = ℓa!
+Qβa
+r=αa
+(z + r)
+.
+If ℓ ∈ Ia, expansion at z = −ℓ + w gives
+wHa(−ℓ + w) = (−1)ℓ−αa
+ 
+ℓa
+ℓ − αa
+! Y
+r∈Ia
+r̸=ℓ
+
+1 +
+w
+r − ℓ
+−1
+. (2.5)
+The coefficient of w
+u has denominator dividing d
+u
+n
+: every distance is a nonzero integer of
+absolute value at most n.
+If ℓ /∈ Ia, use
+Ha(z) = X
+βa
+r=αa
+(−1)r−αa
+
+ℓa
+r−αa
+
+z + r
+. (2.6)
+Now the coefficient of w
+u has denominator dividing d
+u+1
+n
+. The extra factor matters: a regular
+factor need not have an integral constant term.
+There are µℓ pole factors and M −µℓ regular factors. The coefficient of (z +ℓ)
+−j−1
+requires
+total local order µℓ − 1 − j. The polynomial (−ℓ + w)
+h has integer coefficients and can only
+reduce the order required from the other factors. Thus the necessary exponent of dn is at
+most
+(µℓ − 1 − j) + (M − µℓ) = m − j.
+Multiplication by m!d
+m
+n /j! clears the denominators.
+The cancellation of µℓ
+is why a variable pole multiplicity does not require a larger universal
+power than d
+m
+n
+.
+5
+
+Odd powers of π Expository research notes
+2.3 Supports and vanishing orders
+Nestedness implies
+µℓ ≥ j + 1 ⇐⇒ ℓ ∈ [αj , βj ].
+Hence Ah,j,n is divisible by x
+n−βj
+, and the remaining degree is at most ℓj .
+Lemma 2.2 (Vanishing at 1). Every Rh,n has a zero of order at least Nn at x = 1.
+Proof. Put w = log x. The coefficient of w
+r
+in the integral of z
+h
+e
+zw/Qn(z) is zero whenever
+h + r ≤ deg Qn − 2, by the residue at infinity. The first possible order is therefore
+deg Qn − h − 1 = Nn + M − h − 1 ≥ Nn.
+Multiplication by x
+n does not change this order. Also log x = (x − 1) + O((x − 1)2
+).
+2.4 A nonzero determinant, including its leading term
+Proposition 2.3 (Exact determinant). There exists cn ̸= 0 such that
+det(Ah,j,n(x))0≤h,j≤m = cnx
+P
+j
+(n−βj )
+(x − 1)Nn
+. (2.7)
+In particular An(i) is invertible.
+Proof. The supports give the power of x. After it is removed, the determinant has degree at
+most Nn. Replace column zero by the sum of column j multiplied by (log x)
+j
+, for 0 ≤ j ≤ m.
+Its determinant is unchanged; the new column consists of the Rh,n(x). Lemma 2.2 supplies
+the factor (x − 1)Nn .
+To prove nonvanishing, take a block of repeated left endpoints
+αu = · · · = αv = α, r = v − u + 1.
+The pole at −α has multiplicity v + 1. Write
+1
+Qn(−α + w)
+= w
+−(v+1)Bα(w), Bα(0) ̸= 0.
+For u ≤ j ≤ v, the coefficient of x
+n−α in column j is
+Cn
+j!
+[w
+v−j
+]
+
+(−α + w)
+hBα(w)
+
+.
+The orders v − j are 0, . . . , r − 1, in reverse order. Multiplication by Bα gives an invertible
+triangular change on these functionals.
+In all blocks together, the leading-coefficient matrix reduces to the divided-derivative evalu￾ations of 1, z, . . . , zm at distinct points −α. This confluent Vandermonde matrix is invertible:
+a polynomial in its kernel would have zeros of total multiplicity M = m + 1, exceeding its
+degree. Thus the leading determinant is nonzero, proving the identity.
+High vanishing order and a degree bound alone would also allow the zero determinant. The
+leading-term argument rules out that possibility.
+6
+
+Odd powers of π Expository research notes
+3 Prime divisors and weighted zero arcs
+3.1 A local valuation inequality
+For a rational number u ̸= 0, let ordp(u) be its usual p-adic valuation, and put ordp(0) = +∞.
+We only use primes √
+n < p ≤ n, so a nonzero distance of absolute value at most n has
+valuation at most one.
+Lemma 3.1 (A coefficientwise divisor). For such a prime and an integer 0 ≤ ℓ ≤ n, put
+wa(p, ℓ) = 
+ℓa
+p
+
+−
+
+ℓ − αa
+p
+
+−
+
+βa − ℓ
+p
+
+.
+Each wa is 0 or 1. Every coefficient of x
+n−ℓ
+in Ah,j,n has valuation at least
+Xm
+a=0
+wa(p, ℓ) + j. (3.1)
+Proof. The assertion wa ∈ {0, 1} follows from ⌊u+v⌋− ⌊u⌋− ⌊v⌋ ∈ {0, 1}, with u = (ℓ−αa)/p
+and v = (βa − ℓ)/p.
+For a pole factor, the constant in (2.5) is a binomial coefficient of valuation exactly wa, by
+the factorial valuation formula and p
+2 > n. Its coefficient of order u has valuation at least
+wa − u.
+For a regular factor the constant term has valuation wa − 1. For example, if ℓ < αa and
+s = αa − ℓ, it equals
+Ha(−ℓ) = ℓa!(s − 1)!
+(s + ℓa)! .
+Use ⌊(s−1)/p⌋ = −⌊−s/p⌋−1; the other side of the interval is identical up to sign. Expansion
+of the reciprocal linear factors loses at most one valuation per order, so order u has valuation
+at least wa − 1 − u.
+The needed total order is at most µℓ − 1 − j, and there are M − µℓ regular factors. Since
+ordp(dn) = 1, the lower bound after multiplication by d
+m
+n
+is
+m +
+X
+a
+wa − (M − µℓ) − (µℓ − 1 − j) = X
+a
+wa + j.
+The factor m!/j! and coefficients of (−ℓ+w)
+h are integers and cannot lower this bound. Sums
+of terms preserve the lower bound.
+This estimate is stronger than needed. We discard the extra j and minimize over the pole
+location in order to obtain a divisor common to all entries of the matrix.
+3.2 Replacing pole locations by a circle
+Write n = LN0. For the grouped intervals define
+Wj (z, y) = ⌊(L − 2tj )z⌋ − ⌊y − tjz⌋ − ⌊(L − tj )z − y⌋. (3.2)
+It is periodic in z and y with period one and takes values in {0, 1}. At z = N0/p, y = ℓ/p, it
+is precisely the local wa for an interval of type j.
+7
+
+Odd powers of π Expository research notes
+For generic z, the set on which Wj (z, y) = 0 is the closed counterclockwise arc from {tjz}
+to {(L − tj )z}. Its length is {(L − 2tj )z}, where braces denote fractional part. Thus
+f(z) = min
+0≤y<1
+X
+j
+νjWj (z, y) = M − max
+y
+{total weight of zero arcs containing y}. (3.3)
+The weights are the interval multiplicities νj .
+y
+0 1
+outer zero arc: [0, 0.05]
+inner zero arc: [0.075, 0.975]
+Figure 1: For L = 14, t0 = 0, t1 = 1, z = 3/40, the zero arcs are disjoint. With equal weights
+r, their common-complement cost is f(z) = r: at least one type contributes r at every y.
+All endpoints are affine integer multiples of z, modulo one. Their cyclic order changes only
+at the following finite rational set. Let
+S = {0} ∪ {tj , L − tj : 0 ≤ j < J}, D = {|u − v| : u, v ∈ S, u ̸= v}.
+Take all fractions a/d ∈ [0, 1] with d ∈ D, remove duplicates, and list them as
+0 = u0 < u1 < · · · < uR = 1.
+On each open interval (ur, ur+1), the integer f(z) is constant. At a fixed rational midpoint
+z, it can be calculated exactly by checking midpoints between consecutive arc endpoints. Off
+this exceptional set no distinct endpoints coincide, so an endpoint cannot have a smaller value
+than both adjacent open arcs.
+To avoid endpoint conventions entirely, define f = 0 at every breakpoint and extend it
+periodically. This only weakens the local divisor estimate and does not change any integral
+below.
+3.3 The common divisor and its exact exponential rate
+Define
+Πn =
+Y
+√
+n<p≤n
+p
+f(N0/p)
+. (3.4)
+By Lemma 3.1, Πn divides every integer coefficient of every Ah,j,n(x). It is a rational integer;
+we do not need factorization into Gaussian primes.
+Proposition 3.2 (Digamma formula). The limit γ = lim n
+−1
+log Πn exists and is
+γ =
+1
+L
+X
+0≤r<R
+ur>0
+f
+
+ur + ur+1
+2
+
+
+ψ(ur+1) − ψ(ur)
+
+, (3.5)
+where ψ = Γ′/Γ.
+Proof. For all sufficiently small z > 0, none of the endpoints wraps around the circle and the
+zero arcs are nested about Lz/2. They have a common point, so f(z) = 0. Thus the apparent
+singularity at u0 = 0 contributes nothing.
+8
+
+Odd powers of π Expository research notes
+For an interval (a, b) ⊂ (0, 1) on which f = v, periodicity selects primes satisfying
+N0/(r + b) < p < N0/(r + a), r = 0, 1, . . . .
+For each fixed r, the prime number theorem ϑ(X) = P
+p≤X log p = X + o(X) makes their
+contribution to n
+−1
+log Πn tend to
+v
+L
+
+1
+r + a
+−
+1
+r + b
+
+.
+The sum over r ≥ T is bounded, uniformly in large n, by a constant times M/(LT), using
+the elementary Chebyshev bound ϑ(X) = O(X). Primes below √
+n contribute o(n). These
+observations justify passage from finitely many periods to all periods.
+Breakpoint exclusions also cost only O(log n). Indeed, {N0/p} = a/d implies that p divides
+dN0; the denominators d belong to a fixed finite set. Finally,
+X∞
+r=0
+
+1
+r + a
+−
+1
+r + b
+
+= ψ(b) − ψ(a).
+Summing over the finite partition proves the formula.
+The formula is a lower bound on the content available for division, not a formula for the
+entire actual gcd of a row after evaluation at x = i. Additional cancellations at i could give
+more divisibility.
+3.4 A transparent two-layer special case
+For t0 = 0, t1 = 1 with weights r, M − r, put
+aℓ = max 
+ℓ
+L
+,
+ℓ − 1
+L − 2
+
+, bℓ =
+ℓ
+L − 1
+, 1 ≤ ℓ ≤ L − 2.
+On these intervals the two zero arcs are disjoint, and f = min(r, M − r). They are precisely
+the disjointness intervals away from endpoints. Hence
+γ =
+min(r, M − r)
+L
+L
+X−2
+ℓ=1
+
+ψ(bℓ) − ψ(aℓ)
+
+. (3.6)
+This is a useful small test of the general partition algorithm. For many layers, the weighted
+maximum-overlap calculation is more effective than checking pairwise disjointness alone.
+4 Uniform analytic estimates
+4.1 A coefficient bound valid on a whole disk
+Lemma 4.1 (Height and divided difference). Uniformly for 0 ≤ h, j ≤ m,
+|Ah,j,n(i)| ≤ exp(G0n + o(n)).
+After division by Πn, put
+Uh,n(Y ) = Xm
+j=0
+Ah,j,n(i)
+Πn
+Y
+j ∈ Z[i][Y ],
+9
+
+Odd powers of π Expository research notes
+and define the polynomial
+Th,n(Y ) = Xm
+j=1
+Ah,j,n(i)
+Πn
+j
+X−1
+a=0
+λ
+j−1−aY
+a
+.
+For |Y | ≤ 2, uniformly in h, Y ,
+|Uh,n(Y )|, |Th,n(Y )| ≤ exp(Gn + o(n)), (4.1)
+and
+Uh,n(λ) − Uh,n(Y ) = (λ − Y )Th,n(Y ). (4.2)
+Proof. In (2.5), the constant has modulus at most 2
+ℓa. For a regular factor the constant has
+modulus at most one, since it is, up to sign, ℓa!(s−1)!/(s+ℓa)! for an integer s ≥ 1. For either
+type, the remaining reciprocal linear factors have nonzero integral distances. A coefficient of
+fixed order at most m is bounded by the corresponding coefficient of (1 − w)
+−(Nn+M)
+, and is
+therefore polynomial in n. The factors (−ℓ + w)
+h
+, and the sum over ℓ, introduce only more
+fixed powers of n. Thus
+|Ah,j,n(i)| ≤ K dm
+n n
+B2
+P
+a
+ℓa
+.
+Since log dn = n + o(n) and P
+a
+ℓa = n
+P
+j
+νjcj , this has rate G0. Division by Πn subtracts
+γ. The degree m and the bounds |Y | ≤ 2, |λ| < 2 are fixed, so evaluation and the displayed
+finite difference introduce only constant factors. The identity follows from λ
+j − Y
+j = (λ −
+Y )
+Pj−1
+a=0 λ
+j−1−aY
+a
+.
+This is a uniform estimate on a disk, not just an asymptotic value at a single point. Uni￾formity will permit a rational approximation to select its own nearby algebraic point Y = y.
+4.2 A global horizontal-contour bound
+The main integral estimate can be proved without leaving its tails implicit. First observe that
+the solution of (1.2) is unique: its left side decreases continuously from Mπ to zero. Also
+Y > 1
+2
+. (4.3)
+Indeed the outer type has c0 = 1, ν0 ≥ 1, and M ≥ 2; at Y = 1/2 that type alone contributes
+at least π/2, and the remaining multiplicity makes the inequality strict.
+Lemma 4.2 (A uniform tail inequality). For Y > 1/2, put
+BY =
+(Y
+2 + 1/4)2
+Y 2 − 1/4
+.
+If d = deg Qn = Nn + M, then for every real t,
+|Qn(−n/2 + nt + inY )|
+|Qn(−n/2 + inY )|
+≥ (1 + t
+2
+/BY )
+d/2
+. (4.4)
+The same inequality holds on the lower horizontal line.
+Proof. The offsets u = r/n − 1/2 in each interval occur in pairs u, −u, with |u| ≤ 1/2. For a
+pair, the square of the modulus ratio is
+1 +
+2(Y
+2 − u
+2
+)t
+2 + t
+4
+(Y 2 + u
+2)
+2
+.
+10
+
+Odd powers of π Expository research notes
+It is at least (1+t
+2/BY )
+2
+: the coefficient of t
+2
+is at least 2/BY , and that of t
+4
+is at least 1/B2
+Y
+.
+An unpaired central factor has ratio p
+1 + t
+2/Y 2 ≥
+p
+1 + t
+2/BY . Multiplication proves the
+claim, with repetitions included.
+Open the contour in (2.2) to the lines Im z = ±nY . For each fixed n the vertical ends
+vanish as their real parts tend to infinity: the rational factor decays faster than 1/|z|. On
+these horizontal lines, |i
+z+n
+| ≤ e
+ΘnY . Lemma 4.2 therefore gives
+|Rh,n(i)| ≤ Kh,Y n
+h+1e
+ΘnY Cn
+|Qn(−n/2 + inY )|
+. (4.5)
+To justify a constant independent of n, the remaining integral is bounded by
+Z
+R
+(|t| + Y + 1/2)h
+(1 + t
+2/BY )
+d/2
+dt.
+For sufficiently large n, replace the denominator exponent by the fixed value h+2; the resulting
+integral is finite. This controls the entire line, including both infinite tails.
+4.3 Evaluating the central exponential rate
+For one interval of length cn, Stirling’s formula and a Riemann sum on a smooth integrand
+give
+log((cn)!) = cn log n + cn log c − cn + O(log n),
+X
+β
+r=α
+log |r − n/2 + inY | = (cn + 1) log n
++ n
+Z c/2
+−c/2
+log |u + iY | du + O(1).
+The extra endpoint in the product changes only O(log n). Direct integration shows
+Z c/2
+−c/2
+log |u + iY | du =
+c
+2
+log(Y
+2 + c
+2
+/4) − c + 2Y arctan
+c
+2Y
+.
+Subtracting the product logarithm from the factorial logarithm thus gives −nFc(Y )+O(log n).
+Equation (4.5) yields
+|Rh,n(i)| ≤ exp
+
+
+
+−n
+
+
+X
+j
+νjFcj
+(Y ) − ΘY − m
+
+ + o(n)
+
+
+
+.
+Proposition 4.3 (Small remainders). After division by Πn, uniformly in 0 ≤ h ≤ m,
+|Uh,n(λ)| ≤ exp(−Dn + o(n)). (4.6)
+Finally,
+d
+dY
+Fc(Y ) = 2 arctan c
+2Y
+,
+d
+2
+dY 2
+Fc(Y ) = −
+c
+Y 2 + c
+2/4
+.
+Hence (1.2) is the unique global maximizer of the central decay bound. This optimization
+needs only a one-dimensional monotone root, not a claimed exact asymptotic formula for an
+oscillating complex sum.
+11
+
+Odd powers of π Expository research notes
+5 From logarithmic polynomials to odd powers
+5.1 Why a resultant is the right arithmetic object
+The Gaussian integers Z[i] form a unique factorization domain. Every nonzero Gaussian
+integer has complex modulus at least one. If f is a primitive polynomial over this ring and
+divides a polynomial over Q(i), Gauss’s lemma makes that divisibility valid over Z[i] as well.
+For polynomials f, U, the resultant vanishes exactly when they have a common root. If f
+has leading coefficient a and roots y1, . . . , yd, then
+Res(f, U) = a
+deg U Y
+d
+ℓ=1
+U(yℓ).
+Using a minimal polynomial, rather than the whole binomial that first defines y, guarantees
+the nonzero product needed below.
+Lemma 5.1 (Uniform algebraic-value bound). Let k ≥ 2, let p/q > 0 be reduced, and suppose
+|p/q − π
+k
+| < 1. Put
+θ = (p/q)
+1/k > 0, y = iθ/2.
+For every n, some h has Uh,n(y) ̸= 0. For each η > 0 and all sufficiently large n, this h
+satisfies
+|Uh,n(y)| ≥ (2k
+q)
+−m exp(−(k − 1)(G + η)n). (5.1)
+The threshold is independent of p, q.
+Proof. Dividing the matrix by Πn preserves its invertibility. It cannot send the nonzero vector
+(1, y, . . . , ym)
+T to zero, so some row U is nonzero at y.
+Let f ∈ Z[i][Y ] be a primitive minimal polynomial of y over K = Q(i), of degree d ≤ k,
+and let a ̸= 0 be its leading coefficient. It divides
+(2k
+q)Y
+k − i
+k
+p
+over Z[i]. Thus a | 2
+k
+q, in particular |a| ≤ 2
+k
+q. Every root of f belongs to {yζ : ζ
+k = 1}. The
+error assumption implies |y| < 2, so all these roots lie in the disk used in Lemma 4.1.
+Irreducibility of f and U(y) ̸= 0 give Res(f, U) ̸= 0. Its Gaussian-integrality yields
+1 ≤ |a|
+deg U
+|U(y)|
+Y
+d
+ℓ=2
+|U(yℓ)|.
+Use deg U ≤ m, d ≤ k, and the uniform height bound. Since G + η > 0, replacing d − 1 by
+k − 1 only weakens the result and gives (5.1).
+No assumption of irreducibility of Y
+k −i
+kp/(2k
+q) has been made. If p/q is a rational power,
+or a binomial splits over K, the true degree d is simply smaller. In particular, the argument
+covers every denominator and not just a generic subsequence of approximations.
+5.2 The quantitative comparison
+Proof of Theorem 1.1. Write ∆k = D − (k − 1)G > 0. Choose η > 0 small enough that
+∆k − kη > 0. All estimates can be made simultaneous: for n ≥ n0, every row and every
+|Y | ≤ 2 satisfy
+|Uh,n(λ)| ≤ e
+−(D−η)n
+, |Uh,n(Y )|, |Th,n(Y )| ≤ e
+(G+η)n
+.
+12
+
+Odd powers of π Expository research notes
+Here n was required to be a multiple of L. Accordingly choose
+n = L
+&
+m log(2k
+q) + log 2
+L(∆k − kη)
+'
+. (5.2)
+For sufficiently large q, this is at least n0. The extra rounding is at most L, a fixed constant.
+Select the row in Lemma 5.1. The ratio of the small remainder to its nonzero value at y is
+at most
+(2k
+q)
+me
+−(∆k−kη)n ≤
+1
+2
+.
+The divided-difference identity consequently gives
+|λ − y| ≥ 1
+2
+(2k
+q)
+−me
+−k(G+η)n
+.
+If the divided difference were zero, that same identity would contradict the preceding factor
+1/2; hence no division by zero is hidden here.
+Substitution of (5.2) yields
+|λ − y| ≥ ck,m,ηq
+−m(D+G)/(∆k−kη)
+.
+Indeed ∆k − kη + k(G + η) = D + G, which explains the numerator in the final exponent.
+Finally,
+
+
+
+
+π
+k −
+p
+q
+
+
+
+ = |π − θ|
+k
+X−1
+a=0
+π
+k−1−a
+θ
+a ≥ 2π
+k−1
+|λ − y|.
+Fractions outside |p/q − π
+k
+| < 1, or with p/q ≤ 0, need no special treatment. Letting η tend
+to zero proves the irrationality-exponent assertion.
+5.3 Why a common divisor helps twice
+Before division, the rates are D0, G0. Dividing all coefficients and remainders by the same Πn
+changes them to
+D = D0 + γ, G = G0 − γ.
+Thus the numerator D + G is unchanged, while the useful gap grows by kγ:
+D − (k − 1)G = D0 − (k − 1)G0 + kγ.
+This is why a divisor must be applied consistently to the remainder, the coefficients, and
+the divided difference. Reducing only one height in the final formula would give an incorrect
+improvement.
+6 Concrete parameters and every fixed odd power
+6.1 Recovering the balanced benchmark
+If all M intervals equal [0, n], the arc minimum used here is zero, so γ = 0 for this particular
+divisor. This does not prove that the entire actual gcd has rate zero. The root equation
+becomes
+Y =
+1
+2
+cot
+π
+4M
+.
+Substitution gives
+D0 = −M log 
+2 sin
+π
+4M
+
+− m, G0 = m + M log 2.
+With m = 289, the resulting exponent is 2028.145382310168 . . .. This is a useful check of the
+normalization and contour calculation.
+13
+
+Odd powers of π Expository research notes
+6.2 Two, seven, and twelve layers
+Three configurations illustrate the improvement:
+Configuration m L Offsets and multiplicities
+Two layers 255 14 t = (0, 1), ν = (128, 128)
+Seven layers 199 39 t = (0, . . . , 6), ν = (80, 20, . . . , 20)
+Twelve layers 186 69 t = (0, . . . , 11), ν = (66, 11, . . . , 11)
+Their rates for k = 3, rounded here only for readability, are:
+Configuration D0 G0 γ E3
+Two layers 955.116623 419.770987 27.777682 1762.608232
+Seven layers 664.537005 322.700112 44.701426 1282.033606
+Twelve layers 605.861295 301.032295 45.436001 1203.972439
+The double-layer result follows also from (3.6). For the twelve-layer case the corrected rates
+are
+D = 651.2972962706767693926036416599 . . . ,
+G = 255.5962938344585049378330527898 . . . ,
+D − 2G = 140.1047086017597595169375360801 . . . .
+The strict conclusion is E3 < 1203.973, not a conclusion inferred from the rounded entries of
+the table.
+These examples arose from bounded searches and a limited multiplicity refinement. They
+are not the solution of a globally optimized variational problem. In particular, more layers
+are not known to be necessary or optimal.
+6.3 An explicit family for all odd k
+For the twelve-layer shape let
+v0 = 6, vj = 1 (1 ≤ j ≤ 11), cj = 1 −
+2j
+69
+, νj = svj .
+Then
+M = 17s, m = 17s − 1, S =
+X
+j
+vjcj =
+347
+23
+.
+The arc partition is unchanged when all weights are multiplied by s, so
+γ = sγ∗, γ∗ = 4.1305455731413661362664616341 . . . .
+Introduce the fixed constants
+g∗ = 17 + S log 2 − γ∗, g∗ = 23.3269358031325913579848229808 . . . , (6.1)
+A∗ =
+X
+j
+vjcj log cj ,
+d∗ = S log(S/Θ) − A∗ − 17 + γ∗. (6.2)
+Since f ≤ 17 for the base weights, the prime number theorem gives γ∗ ≤ 17. Thus g∗ ≥
+S log 2 > 1, proving G = sg∗ − 1 > 0 without requiring a decimal estimate. The certificate
+more precisely verifies g∗ > 23.
+14
+
+Odd powers of π Expository research notes
+Proposition 6.1 (A root-free admissibility recipe). For any fixed integer k ≥ 3, let
+sk = max 
+1,
+
+exp 
+(k − 1)g∗ − d∗
+S
++ 1 . (6.3)
+This choice satisfies D − (k − 1)G > 0. More explicitly, put
+Ds = s(S log s + d∗) + 1 −
+Θ2
+12sS , Gs = sg∗ − 1.
+Whenever Ds > (k − 1)Gs, the following bound needs no numerical root Y :
+µ(π
+k
+) ≤ (17s − 1) Ds + Gs
+Ds − (k − 1)Gs
+. (6.4)
+In particular this is valid at s = sk.
+Proof. Evaluate the decay expression at the trial height Y0 = sS/Θ; the optimized D is at
+least this trial value. For every x ≥ 0, arctan x ≥ x − x
+3/3 and log(1 + x
+2
+) ≥ 0. Consequently
+Fc(Y0) ≥ c log(Y0/c) + c −
+c
+3
+12Y
+2
+0
+.
+Since 0 < cj ≤ 1, one has P
+j
+vjc
+3
+j ≤ S. The terms sS − ΘY0 cancel, giving
+D ≥ s(S log s + d∗) + 1 −
+Θ2
+12sS = Ds
+.
+At s = sk,
+Ds − (k − 1)Gs ≥ sS + k −
+Θ2
+12sS > 0.
+Here S = 347/23, s ≥ 1, and Θ < 2, so the last positivity is immediate.
+For Gs ≥ 0 the function m(D + Gs)/(D − (k − 1)Gs) decreases as D increases. Replacing
+D by the lower bound Ds
+therefore gives (6.4).
+This proposition supplies a definite upper-bound recipe for every fixed odd power, in addi￾tion to the optimized examples in Corollary 1.2. It does not require an unbounded parameter
+search to establish admissibility.
+6.4 Why the higher-power constants still grow rapidly
+Expanding the root equation for large s gives
+Y =
+sS
+Θ
++ O(s
+−1
+), D = s(S log s + d∗) + 1 + O(s
+−1
+), G = sg∗ − 1.
+Thus the threshold for s grows exponentially with k. The explicit choice (6.3) yields
+Ek = O(kρk
+), ρ = exp(g∗/S) = 4.69343992780744986545 . . . . (6.5)
+To justify the order estimate directly, that choice has sk = O(ρ
+k
+), a gap at least skS + O(1),
+and numerator (17sk −1)(Dsk +Gsk
+) = O(ks2
+k
+). All implied constants are fixed by this twelve￾layer shape. Equation (6.5) describes the construction as k varies; it must not be confused
+with the separate limit n → ∞ used to prove each fixed-k bound.
+15
+
+Odd powers of π Expository research notes
+For orientation, the certified optimized values before upward rounding are
+k Ek
+3 1203.97243920634698117 . . .
+5 42460.70466848845471678 . . .
+7 1272102.82718073869325320 . . .
+9 35398936.33162709355243184 . . .
+The number s was optimized only within one fixed shape.
+6.5 What would be needed to reach 10–100?
+In the present transfer formula, G ≥ 0 implies
+Ek = m
+
+1 +
+kG
+D − (k − 1)G
+
+≥ m.
+The best current example has m = 186. Hence this particular parameter choice cannot
+possibly give E3 < 100. This is not an impossibility theorem for all nested shapes.
+A more substantial change would keep the target polynomial degree fixed at three. If
+|P(λ)| ≥ cεH(P)
+−ν−ε
+(P ∈ Z[i][Y ], deg P ≤ 3, P ̸= 0),
+then taking P(Y ) = 8qY 3 + ip gives
+|P(λ)| = q|π
+3 − p/q|, µ(π
+3
+) ≤ ν + 1.
+Only this sparse binomial family is actually needed. The thresholds ν ≤ 99 and ν ≤ 9
+correspond to upper bounds 100 and 10. Type II Hermite–Padé and multiple orthogonal
+polynomial constructions are plausible research tools; examples of bounded-degree logarithmic
+approximation appear in Marcovecchio [3]. Their numerical constants at other arguments
+cannot be transplanted to log i without checking the complex endpoint and its arithmetic.
+7 How the constants are computed and certified
+7.1 An exact finite combinatorial calculation
+The common divisor does not require numerical integration over a circle. The calculation is
+finite:
+1. Form the integer slopes 0, tj , L − tj and all nonzero differences.
+2. Form and sort the rational critical points a/d ∈ [0, 1].
+3. In each open critical cell choose its rational midpoint z. Sort all fractional endpoints
+{tjz}, {(L − tj )z}.
+4. Evaluate the integer vector W(z, y) at each rational midpoint between consecutive end￾points. Minimize its weighted sum.
+5. Apply the finite digamma sum (3.5). Adjacent cells with the same minimum may be
+merged.
+16
+
+Odd powers of π Expository research notes
+Only the final special-function evaluations use real arithmetic. All endpoint orderings and
+minima use exact fractions and integers.
+For the base weights (6, 1, . . . , 1) at L = 69, the first merged nonzero cells are:
+Left endpoint Right endpoint f
+1/69 1/67 6
+1/67 1/65 7
+1/65 1/62 8
+1/62 1/60 7
+1/60 1/58 6
+1/58 1/56 5
+1/56 1/54 4
+1/54 1/52 3
+These are only the beginning of the partition. Endpoint wraparound and changing overlaps
+make a full computation preferable to extrapolating a pattern from the first few cells. The
+complete merged list is supplied in the certificate data.
+7.2 Ball arithmetic, root signs, and strict rounding
+The standalone program code/certify.py requires Python and python-flint. It uses
+Arb [4] at 256-bit precision. A ball encloses the exact real value by a midpoint and a rig￾orously propagated error radius.
+The saddle equation is strictly decreasing. At Y = 1/2 its left side minus Θ is positive, and
+at Y = 2M it is negative. The program performs 210 rational bisections, accepting each sign
+only if the entire corresponding ball has that sign. It then evaluates D0, G0, γ, D, G, ∆k, Ek
+on the resulting interval and asserts both ∆k > 0 and the advertised strict upper bound.
+For example, in the twelve-layer cubic case it encloses
+E3 = 1203.97243920634698117089090450914656 . . .
+with an error radius below 6 · 10−59. The assertion E3 < 1203.973 has a wide safety margin
+relative to this radius. The certificate does not assume that a floating-point optimizer located
+a true minimum.
+The same program checks the arc bound independently against all integer pole positions
+for n = 345: 52 nonexceptional primes are checked, and 39 have a positive guaranteed divisor
+exponent. This finite check tests the combinatorial implementation; the proof for arbitrary n
+is Lemma 3.1.
+7.3 Reproduction and the role of each file
+Run the following from the project directory:
+python code/certify.py
+python code/finite_checks.py
+xelatex -interaction=nonstopmode -halt-on-error main.tex
+xelatex -interaction=nonstopmode -halt-on-error main.tex
+The first command regenerates data/certificates.json. The second requires SymPy and
+checks the small exact examples in Appendix A. Optional experiment programs require the
+additional packages stated in the README. They are not prerequisites for the main proof.
+17
+
+Odd powers of π Expository research notes
+The certificate records the parameters, merged nonzero arc cells, root enclosure, all rates,
+the gap, and the strict comparisons. Its purpose is to make the numerical part reproducible.
+The prime number theorem and the asymptotic inequalities are mathematical inputs, not
+claims checked by a finite program.
+7.4 Parameter order and effectivity
+For a chosen odd k, first fix L, tj , νj , or fix the scale s in the twelve-layer family. Then fix an
+exponent slack ε, and choose the small η in Section 5. Only after these choices does n tend
+to infinity, and only then is n selected as a function of the approximation denominator q.
+This manuscript gives explicit upper bounds on the irrationality exponent. It does not
+tabulate an explicit numerical q0(ε) or the constants in (1.1). Those would require explicit
+versions of the prime-counting remainder and all finite error terms. They are a separate
+effectivity calculation, not part of the decimal certification.
+A Small examples and useful background
+A.1 A complete two-by-two system
+Take m = 1, n = 4, with intervals [0, 4] and [1, 3]. Here d4 = 12, the interval lengths are 4, 2,
+and
+Cn = 1! · 12 · 4! · 2! = 576.
+The exact coefficient matrix is
+A1,4(x) = 
+4x
+4 + 112x
+3 − 112x − 4 −48x
+3 − 144x
+2 − 48x
+−160x
+3 − 144x
+2 + 288x + 16 48x
+3 + 288x
+2 + 144x
+
+.
+Its determinant is
+det A1,4(x) = 192x(x − 1)6
+.
+The exponent 6 = 4 + 2 is Nn, while the factor x is x
+(4−4)+(4−3). The two remainders are
+R0,4(x) = A0,0,4(x) + A0,1,4(x) log x, R1,4(x) = A1,0,4(x) + A1,1,4(x) log x.
+Their first possible orders at x = 1 are respectively seven and six, in agreement with the
+residue-at-infinity calculation. At x = i the determinant is nonzero.
+This example detects a normalization error immediately. Using d4/(4!2!) = 1/4 instead of
+576 would divide the whole matrix by 2304. Its x
+4
+coefficient in the upper-left entry would
+be 1/576, rather than the integer 4.
+A.2 Why the minimal polynomial cannot be skipped
+Consider y = i and U(Y ) = Y
+2 + iY − 1. Then U(i) = −3 ̸= 0, but
+Y
+3 + i = (Y − i)(Y
+2 + iY − 1).
+The product of U over all three roots of Y
+3 + i is zero. Nonvanishing at one root alone
+would not justify a nonzero full-binomial norm. The minimal polynomial of y over Q(i) is
+Y − i; its resultant with U is −3. The same logical issue arises for perfect-power rational
+approximations. Lemma 5.1 handles it uniformly.
+18
+
+Odd powers of π Expository research notes
+A.3 Divisibility before and after evaluation
+A prime dividing every coefficient of a polynomial also divides its value at i in Z[i]. The
+converse fails. Evaluation can create cancellations, and an individual p-adic unit coefficient
+need not remain visible in the sum. For example, P(x) = 1 + x
+2 has unit coefficients at every
+odd prime, but P(i) = 0. Less extreme cancellations can raise valuations without making the
+value zero. Thus boundary coefficient calculations alone cannot bound the gcd of an evaluated
+row from above.
+Our balanced arc minimum f = 0 likewise proves only that the particular coefficientwise
+divisor has γ = 0. It is not a proof that every possible evaluated-row divisor has rate zero.
+A.4 The least common multiple as an arithmetic cost
+Prime factorization gives
+log dn =
+X
+p
+a≤n
+log p = n + o(n).
+The last equality uses the prime number theorem. Thus d
+m
+n has exponential cost m, although
+it is much smaller than (n!)m. The interval factorials in Cn, by contrast, cancel the factorial
+scale of the contour denominator. Their position is crucial before Stirling’s formula is applied.
+Factors such as m! can be enormous but are fixed as n grows. Their logarithms divided
+by n vanish. For large m, small-n regressions may confuse these constants with exponential
+improvement. Exact identities avoid this ambiguity.
+A.5 A two-layer arc calculation by hand
+For L = 14, z = 3/40, the outer zero arc is [0, {14z}] = [0, 1/20], and the inner one is
+[{z}, {13z}] = [3/40, 39/40]. They are disjoint, as drawn in Figure 1. With weights 128, 128,
+at least one type contributes 128 at every pole location. Formula (3.6) collects all such intervals
+and every periodic prime range.
+B Finite experiments and further directions
+These computations distinguish analytic convergence from arithmetic usefulness. None proves
+impossibility for its entire method family.
+B.1 Scalar Padé approximation to a pure cubic target
+The rational-coefficient function
+F(z) = arcsin √
+z
+√
+z
+=
+X
+j≥0
+
+2j
+j
+
+4
+j (2j + 1)z
+j
+satisfies F(1/4)3 = π
+3/27. An exact diagonal [n/n] Padé approximant to F
+3
+, evaluated at
+1/4 and multiplied by 27, yields a pure π
+3 approximation. After complete rational reduction:
+n log Qn/n − log |Qnπ
+3 − Pn|/n
+8 37.2732 −32.0818
+16 75.4662 −70.2532
+32 155.3497 −150.1009
+19
+
+Odd powers of π Expository research notes
+The denominator growth in these samples overwhelms the analytic error reduction, so they
+do not give shrinking integer linear forms. An approximate quadratic trend in log Qn is only
+an observation.
+B.2 A derivative kernel isolating β(3)
+For integers a ≥ 3, n ≥ 1, define
+Rn(t) = (−1)n
+(an)! 43n
+(n!)3
+Qn−1
+j=0 (t − j)
+3
+Qan
+k=0(t + k + 1/2).
+It is proper with simple poles, and
+Rn(t) = Xan
+k=0
+(−1)k
+bk
+t + k + 1/2
+, bk =
+ 
+an
+k
+! 
+(2k + 2n)! k!
+(2k)! (k + n)! n!
+3
+.
+The factorial ratio is integral: it is 4
+n
+(k + 1/2)n/n!, the coefficient of z
+n
+in
+(1 − 4z)
+−k−1/2 = (1 − 4z)
+−k
+(1 − 4z)
+−1/2
+,
+whose two factors have integral coefficients.
+Two derivatives leave only cubic poles. Hence
+Sn =
+1
+2
+X∞
+t=0
+(−1)tR′′
+n
+(t) = qnβ(3) − pn,
+qn = 8Xan
+k=0
+bk, pn =
+Xan
+k=0
+bk
+k
+X−1
+ℓ=0
+8(−1)ℓ
+(2ℓ + 1)3
+.
+The series is absolutely convergent, since R′′
+n
+(t) = O(t
+−3
+) even at a = 3. The triple zeros
+make the summands at 0, . . . , n − 1 zero. No β(1) or β(2) term occurs.
+Nevertheless, clearing the actual denominator of pn and cancelling the complete integer
+gcd does not make the tested forms small. For a = 3:
+n log Qn/n − log |Qnβ(3) − Pn|/n
+8 24.3881 −14.7970
+20 25.5856 −15.8243
+40 26.4280 −16.7265
+The sampled indices up to 40, for a = 3, . . . , 8, all have negative decay indicators. This rejects
+the initial parameter choices as presently tested, not every related kernel.
+B.3 What a successful binary family would have to prove
+Suppose a new construction supplies nonzero integer linear forms
+Ln = Qnβ(3) − Pn, |Ln| = e
+−δn+o(n)
+, |Qn| ≤ e
+κn+o(n)
+, δ > 0.
+With nonproportionality allowing a determinant comparison at every denominator scale, one
+obtains µ(β(3)) ≤ 1 +κ/δ. Targets 100 and 10 correspond to δ/κ ≥ 1/99 and δ/κ ≥ 1/9. The
+derivative experiment isolates the target correctly but has not reached δ > 0.
+A next kernel should preserve isolation while improving factorial-ratio divisibility, possibly
+through related hypergeometric representations. A second route is the fixed-degree polynomial
+lower bound in Section 6. Both require new arithmetic estimates: a small residual before
+denominator clearing does not suffice.
+20
+
+Odd powers of π Expository research notes
+B.4 Corrections that should not become unproved claims
+A pointwise local-product limit is not a global steepest-descent proof. For example, replacing
+the balanced G0 by
+G0 + M log cos π
+4M
+at m = 289, M = 290 changes it by only −0.001063536257139 . . .. Even if justified, direct
+substitution gives 2028.126464240039 . . ., not roughly 2018. No such sharpened oscillatory
+estimate is used here.
+Finite gcd samples also do not prove that an exponential divisor is present or absent.
+Our main prime-divisor lower bound is proved coefficientwise and does not depend on a gcd
+regression.
+References
+[1] M. Mignotte, Approximations rationnelles de π et quelques autres nombres, Journées arith￾métiques (Grenoble, 1973), Mémoires de la Société Mathématique de France 37 (1974),
+121–132. doi:10.24033/msmf.139.
+[2] M. Kawashima, Linear independence of values of logarithms revisited, arXiv:1904.01737
+(2019). https://arxiv.org/abs/1904.01737.
+[3] R. Marcovecchio, Multiple Legendre polynomials in Diophantine approximation,
+arXiv:2512.12890. https://arxiv.org/abs/2512.12890.
+[4] F. Johansson, Arb: Efficient Arbitrary-Precision Midpoint-Radius Interval Arithmetic,
+arXiv:1611.02831. https://arxiv.org/abs/1611.02831.
+21

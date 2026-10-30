@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Arithmetic/PrimeWindowDivisor.lean",
+      "log": "logs/p4-PrimeWindowDivisor-20261028T115339.log",
+      "sha256": "e9dfdd63f9163c062d5f3694370f99987865998b79add1a84460600afac6f5d7"
+    }
+  ],
+  "current": "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-PrimeNumberRates-20261028T115339.log"
+}

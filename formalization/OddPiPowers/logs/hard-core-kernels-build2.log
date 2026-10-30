@@ -1,0 +1,51 @@
+✔ [3043/3049] Built Mathlib.Tactic.MoveAdd (6.9s)
+✔ [3044/3049] Built Mathlib.RingTheory.MvPowerSeries.Basic (28s)
+✖ [3045/3049] Building OddPiPowers.Construction.ConfluentJets (28s)
+trace: .> LEAN_PATH=C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean c:\Users\hc260\.elan\toolchains\leanprover--lean4---v4.35.0\bin\lean.exe C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\OddPiPowers\Construction\ConfluentJets.lean -o C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.olean -i C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\ConfluentJets.ilean -c C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.c --setup C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\ConfluentJets.setup.json --json
+error: OddPiPowers/Construction/ConfluentJets.lean:22:68: unsolved goals
+K : Type u_1
+inst✝ : Field K
+p : K[X]
+a : K
+r : ℕ
+⊢ ((taylorEquiv a) X - (taylorEquiv a) (C a)) ^ r = X ^ r
+error: OddPiPowers/Construction/ConfluentJets.lean:27:4: Type mismatch: After simplification, term
+  MonoidHom.map_dvd (↑(taylorEquiv a).toRingEquiv.toRingHom) h
+ has type
+  ↑(taylorEquiv a).toRingEquiv.toRingHom ((X - C a) ^ r) ∣ ↑(taylorEquiv a).toRingEquiv.toRingHom p
+but is expected to have type
+  X ^ r ∣ (taylor a) p
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  instAdd ↦ 16
+  instMul ↦ 15
+error: OddPiPowers/Construction/ConfluentJets.lean:32:4: Type mismatch: After simplification, term
+  hq
+ has type
+  @Eq K[X] ((taylor a) p) (X ^ r * q)
+but is expected to have type
+  @Eq K[X] ((taylorEquiv a) p) (X ^ r * q)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  instAdd ↦ 16
+  instMul ↦ 17
+warning: OddPiPowers/Construction/ConfluentJets.lean:23:10: This simp argument is unused:
+  Polynomial.taylor_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3046/3049] Built Mathlib.RingTheory.PowerSeries.Basic (13s)
+✖ [3047/3049] Building OddPiPowers.Construction.LocalDenominators (9.7s)
+trace: .> LEAN_PATH=C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean c:\Users\hc260\.elan\toolchains\leanprover--lean4---v4.35.0\bin\lean.exe C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\OddPiPowers\Construction\LocalDenominators.lean -o C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\LocalDenominators.olean -i C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\lib\lean\OddPiPowers\Construction\LocalDenominators.ilean -c C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\LocalDenominators.c --setup C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\formalization\OddPiPowers\.lake\build\ir\OddPiPowers\Construction\LocalDenominators.setup.json --json
+error: OddPiPowers/Construction/LocalDenominators.lean:114:2: Type mismatch: After simplification, term
+  intCast_mem_integerRationals ((-z) ^ n)
+ has type
+  ↑((-z) ^ n) ∈ integerRationals
+but is expected to have type
+  ↑(d ^ n) * (-1 / ↑e) ^ n ∈ integerRationals
+Some required targets logged failures:
+- OddPiPowers.Construction.ConfluentJets
+- OddPiPowers.Construction.LocalDenominators
+error: build failed

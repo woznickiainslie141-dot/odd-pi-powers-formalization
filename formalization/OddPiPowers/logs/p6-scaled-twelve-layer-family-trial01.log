@@ -1,0 +1,159 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:36:23: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:75:51: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 1
+  6*b - c ≤ 0
+  17*b - c ≥ 1
+where
+ b := ↑s
+ c := ↑↑a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:79:43: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:103:4: error: unsolved goals
+case pos
+s : ℕ
+hs : 0 < s
+a : Fin (17 * s)
+ha : ↑a < 6 * s
+⊢ ↑(if ha : ↑a < 6 * s then ⟨0, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).snd = ↑a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:107:52: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:108:17: error(lean.unknownIdentifier): Unknown constant `Nat.add_ne_zero`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:109:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  c - d ≤ 0
+  b ≥ 1
+  6*b + d ≥ 0
+  6*b + d - e ≥ 1
+  11*b - d ≥ 1
+  17*b - e ≥ 1
+where
+ b := ↑s
+ c := ↑(↑a - 6 * s) % ↑s
+ d := ↑(↑a - 6 * s)
+ e := ↑↑(if h : (↑a - 6 * s) / s + 1 = 0 then
+      ⟨↑(if ha : ↑a < 6 * s then ⟨⟨0, ⋯⟩, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).snd, ⋯⟩
+    else
+      ⟨6 * s + (↑a - 6 * s) / s * s +
+          ↑(if ha : ↑a < 6 * s then ⟨⟨0, ⋯⟩, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).snd,
+        ⋯⟩)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:116:6: error: Tactic `subst` failed: did not find equation for eliminating 'j'
+
+case pos
+s : ℕ
+hs : 0 < s
+j : Fin 12
+k : Fin ((twelveLayerShape.scaleWeights s).weight j)
+hj : ↑j = 0
+hk : ↑k < 6 * s
+hj0 : j = ⟨0, ⋯⟩
+⊢ scaledTwelveLayerIndexToSigma s hs (scaledTwelveLayerSigmaToIndex s hs ⟨j, k⟩) = ⟨j, k⟩
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:122:12: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (?m.196 * ?x + ?y) / ?m.196
+in the target expression
+  ((↑j - 1) * s + ↑k) / s = ↑j - 1
+
+s : ℕ
+hs : 0 < s
+j : Fin 12
+k : Fin ((twelveLayerShape.scaleWeights s).weight j)
+hj : ¬↑j = 0
+hk : ↑k < s
+hjb : 1 ≤ ↑j
+⊢ ((↑j - 1) * s + ↑k) / s = ↑j - 1
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    j
+  has type
+    Fin 12
+  but is expected to have type
+    Fin (twelveLayerShape.scaleWeights s).J
+  in the application
+    (twelveLayerShape.scaleWeights s).weight j
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:118:4: error: unsolved goals
+case neg
+s : ℕ
+hs : 0 < s
+j : Fin 12
+k : Fin ((twelveLayerShape.scaleWeights s).weight j)
+hj : ¬↑j = 0
+hk : ↑k < s
+hjb : 1 ≤ ↑j
+hdiv : ((↑j - 1) * s + ↑k) / s = ↑j - 1
+hmod : ((↑j - 1) * s + ↑k) % s = ↑k
+⊢ (if h : 6 * s + (↑j - 1) * s + ↑k < 6 * s then ⟨0, ⟨6 * s + (↑j - 1) * s + ↑k, ⋯⟩⟩
+    else
+      ⟨⟨(↑(if hx : ↑j = 0 then ⟨↑k, ⋯⟩ else ⟨6 * s + (↑j - 1) * s + ↑k, ⋯⟩) - 6 * s) / s + 1, ⋯⟩,
+        ⟨(6 * s + (↑j - 1) * s + ↑k - 6 * s) % s, ⋯⟩⟩) =
+    ⟨j, k⟩
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:107:52: warning: This simp argument is unused:
+  dif_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [scaledTwelveLayerIndexToSigma, ha, scaledTwelveLayerSigmaToIndex]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:108:34: warning: This simp argument is unused:
+  one_ne_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.add_ne_zero, or_true, ↓reduceDIte, Nat.add_sub_cancel]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:108:47: warning: This simp argument is unused:
+  or_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.add_ne_zero, one_ne_zero, ↓reduceDIte, Nat.add_sub_cancel]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:127:12: warning: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerIndexToSigma, scaledTwelveLayerSigmaToIndex, hj, hdiv, hmod, hk, hjb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:127:16: warning: This simp argument is unused:
+  hdiv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerIndexToSigma, scaledTwelveLayerSigmaToIndex, hj, hs, hmod, hk, hjb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:127:22: warning: This simp argument is unused:
+  hmod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerIndexToSigma, scaledTwelveLayerSigmaToIndex, hj, hs, hdiv, hk, hjb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:127:28: warning: This simp argument is unused:
+  hk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerIndexToSigma, scaledTwelveLayerSigmaToIndex, hj, hs, hdiv, hmod, hjb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:127:32: warning: This simp argument is unused:
+  hjb
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerIndexToSigma, scaledTwelveLayerSigmaToIndex, hj, hs, hdiv, hmod, hk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

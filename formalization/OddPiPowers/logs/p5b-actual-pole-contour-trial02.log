@@ -1,0 +1,24 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:48:2: error: Type mismatch: After simplification, term
+  CircleIntegrable.const_smul hi
+ has type
+  @CircleIntegrable ℂ NonUnitalNormedRing.toNormedAddCommGroup
+    (↑((PowerSeries.coeff q) (P.localExpansion r h)) • fun z =>
+      contourExponential lambda P.n z / (z + ↑r) ^ (P.multiplicity r - 1 - q + 1))
+    (-↑pole) (1 / 4)
+but is expected to have type
+  @CircleIntegrable ℂ instNormedAddCommGroup
+    (fun z =>
+      ↑((PowerSeries.coeff q) (P.localExpansion r h)) *
+        (contourExponential lambda P.n z / (z + ↑r) ^ (P.multiplicity r - 1 - q + 1)))
+    (-↑pole) (1 / 4)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  mulAux ↦ 9
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPoleContour.lean:105:4: error: Type mismatch: After simplification, term
+  CircleIntegrable.sum (Finset.range (P.multiplicity r)) fun q hq =>
+    principalExponentialTerm_circleIntegrable P (↑h) lambda pole r q (Finset.mem_range.mp hq)
+ has type
+  CircleIntegrable (∑ i ∈ Finset.range (P.multiplicity r), P.principalExponentialTerm (↑h) lambda r i) (-↑pole) (1 / 4)
+but is expected to have type
+  CircleIntegrable (fun z => ∑ q ∈ Finset.range (P.multiplicity r), P.principalExponentialTerm (↑h) lambda r q z)
+    (-↑pole) (1 / 4)

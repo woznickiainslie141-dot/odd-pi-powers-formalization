@@ -1,0 +1,22 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\P6PeriodTail00.lean:18:91: error: Tactic `decide` failed to reduce
+  @decide
+    (tailBlockCheck 100000000000000 32 1000000 (List.filter selectedCellPredicate twelveLayerCellChunk0)
+        p6PeriodTail00Floors =
+      true)
+    (instDecidableEqBool
+      (tailBlockCheck 100000000000000 32 1000000 (List.filter selectedCellPredicate twelveLayerCellChunk0)
+        p6PeriodTail00Floors)
+      true)
+to `true` or `false`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, `Nat.decLe`, `Nat.decLt`, and `Rat.instDecidableLe`, reduction got stuck at
+  match
+    0 -
+      ((periodTailRational 32 1000000
+            (twelveCellCertificateOfRaw
+              { leftNumerator := 1, leftDenominator := 69, rightNumerator := 1, rightDenominator := 68,
+                rankCode := 111039596418616124727684240453360, orderCode := 1273226025159533994039293277479016,
+                floorCode := 2736874734008091634300000000000000000000000, value := 6 })).num +
+        1) with
+  | Int.ofNat m => isTrue ⋯
+  | Int.negSucc i => isFalse ⋯

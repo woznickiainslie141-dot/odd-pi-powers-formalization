@@ -1,0 +1,2697 @@
+
+
+
+Multiple Legendre polynomialsin Diophantine approximation
+
+
+
+ 
+
+
+  // Restore the saved color scheme preference, or
+  // enact the browser preference if "automatic", 
+  // without expecting DOM load to have completed.
+  //
+  // Also restore any saved readingmode and ToC display preferences.
+  function initializeReadingPreferences() {
+    let saved_theme = localStorage.getItem("ar5iv_theme") || "automatic";
+    if (saved_theme === "automatic") {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        saved_theme = "dark";
+      }
+    }
+    if (saved_theme == "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+
+    const tocDisplay = localStorage.getItem('arxiv_html_paper_toc_display');
+    if (tocDisplay) {
+      document.documentElement.setAttribute("data-toc-display", tocDisplay);
+    }
+    const readingMode = localStorage.getItem('arxiv_html_paper_reading_mode');
+    if (readingMode) {
+      document.documentElement.setAttribute("data-reading-mode", readingMode);
+    }
+  }
+  // Run as soon as JS starts, to minimize repainting
+  initializeReadingPreferences();
+
+
+
+
+
+
+
+
+  /* Reading mode hides the chrome and the empty .arxiv-html-header marker: the pinned JS reads
+     the marker's display to know which way to toggle. The marker draws no box. */
+  .arxiv-html-header { display: contents; }
+  html[data-reading-mode="enabled"] :is(.arxiv-html-site-chrome, .arxiv-html-header, .ds-site-footer) { display: none; }
+  /* The paper controls' icons are blocks, so they sit centred (the pinned JS shows the theme
+     icon by making its span a block). */
+  .arxiv-html-site-chrome .ds-site-header-tools svg { display: block; width: 18px; height: 18px; flex-shrink: 0; fill: currentColor; }
+  /* ar5iv dims every image in dark mode and puts it on a white wash, for paper figures;
+     arXiv's own render as they are (the logo on the bar, the funder logos on their white
+     chips). Important: ar5iv's dark rules are unlayered, as specific as
+     :root:not([data-theme]) img:not(.ltx_no_dark_filter). */
+  :is(.ds-site-header, .ds-site-footer) img { filter: none !important; }
+  .ds-site-header img { background-color: transparent !important; }
+
+  /* Wide (the theme's 1280px): the theme lays the body out as a grid whose full-width top rows
+     were the band's and its sticky reader bar's. The band takes the first and scrolls away; the
+     header, the paper's bar (no site navigation, the paper's controls), takes the second and
+     stays in view, the one sticky bar, with the anchor clearance that requires (DESIGN-POLICIES).
+     The controls show their names. */
+  @media (min-width: 1280px) {
+    html { scroll-padding-top: 80px; }
+    .arxiv-html-site-chrome { display: contents; }
+    .arxiv-html-site-chrome > #ds-announcement { grid-area: announce; }
+    .arxiv-html-site-chrome > .ds-site-header { grid-area: header; position: sticky; top: 0; z-index: 3; }
+    .arxiv-html-site-chrome .tool-icon { display: none; }
+  }
+  /* Narrow: the header scrolls away, and the controls show icons (names kept for screen
+     readers; Why HTML? goes). The theme's contents panel is fixed below where its old sticky
+     bar was, and hidden only once the reader has closed it, so until then it is an invisible box
+     over the header and the paper: it shows only while open, under the chrome, in its place in
+     the page. The paper's footer (build logs, reporting instructions) keeps the text's side
+     inset; the theme gives it none, so it met the screen edges. */
+  @media (max-width: 1279px) {
+    .arxiv-html-site-chrome .tool-wide { display: none; }
+    .arxiv-html-site-chrome .tool-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    html:not([data-toc-display="block"]) .ltx_page_navbar { display: none; }
+    .ltx_page_navbar { position: absolute; top: auto; }
+    .arxiv-html-footer { padding-inline: 1rem; }
+  }
+
+
+Skip to main content
+
+  
+    
+      Report GitHub Issue
+      ×
+    
+
+    
+      Title:
+      
+
+      Content selection saved. Describe the issue below:
+
+      Description:
+      
+    
+
+    
+      Submit without GitHub
+      Submit in GitHub
+    
+  
+
+
+
+
+
+  
+  
+    
+  
+  
+    
+      
+    
+  
+    Why HTML?
+    
+      Report Issue
+        
+      Back to Abstract
+    
+    
+      Download PDF
+        
+      Contents
+    
+    
+      Reading mode
+    
+    
+      Colour theme
+    
+
+
+
+
+Abstract.
+1 Introduction
+2 Multiple Legendre polynomials and functions
+3 Summation identities
+4 Linear recurrence relations
+5 Roots of the characteristic polynomial
+6 Arithmetical properties
+7 The main result
+8 Numerical examples
+References
+
+
+
+
+  
+    License: arXiv.org perpetual non-exclusive license
+  
+  
+arXiv:2512.12890v1 [math.NT] 15 Dec 2025
+
+
+Multiple Legendre polynomials
+in Diophantine approximation
+
+
+Raffaele Marcovecchio
+
+Address: Dipartimento di Matematica
+Università di Pisa 
+Largo B. Pontecorvo, 5
+56127 Pisa
+Italy
+
+Email address: marcovec@mail.dm.unipi.it
+
+
+Abstract.
+    
+We construct a class of multiple Legendre polynomials and prove that they
+satisfy an Apéry-like recurrence. We give new upper bounds of the approximation
+measures of logarithms of rational numbers by algebraic numbers of bounded
+degree. We prove e.g. that the nonquadraticity exponent of log⁡2\log 2 is bounded
+from above by 12.841618​…12.841618..., thus improving upon a recent result of the author.
+Our construction also yields some other known results.
+  
+
+
+Key words and phrases: irrationality measure, nonquadraticity measure, multiple Legendre polynomial, linear recurrence equation, hyperharmonic numbers.
+
+2010 Mathematics Subject ClassificationPrimary 11J82; Secondary 11J04, 11J17, 33C45
+
+
+1. Introduction
+
+
+Recently, in [11], the author introduced three sequences
+{Pt​(w)}\{P_{t}(w)\}, {Qt​(w)}\{Q_{t}(w)\}, {Rt​(w)}\{R_{t}(w)\}, (t=0,1,2,…t=0,1,2,\dots) of polynomials
+depending on five positive integers E1,…,E5E_{1},\dots,E_{5} satisfying suitable inequalities.
+The construction of Pt​(w)P_{t}(w), Qt​(w)Q_{t}(w) and Rt​(w)R_{t}(w) required quite a long computation,
+using an idea of Sorokin (see (1) and (21) in [18]), essentially consisting
+in applying differentiations and multiplications by powers of ww, namely:
+
+
+
+(1)
+
+DE5​t∘wE4​t∘DE3​t∘wE2​t∘DE1​t,D_{E_{5}t}\circ w^{E_{4}t}\circ D_{E_{3}t}\circ w^{E_{2}t}\circ D_{E_{1}t},
+
+
+to the three functions
+
+
+
+
+11−w,log⁡(1/w)1−w and 12​log2​(1/w)1−w.\frac{1}{1-w},\qquad\frac{\log(1/w)}{1-w}\quad\text{ and }\quad\frac{\frac{1}{2}\log^{2}(1/w)}{1-w}.
+
+
+Throughout the present paper Dm​(f⁡(u))=1m!​(dd​u)m​f​(u)D_{m}(f(u))=\frac{1}{m!}(\frac{{\rm d}}{{\rm d}u})^{m}f(u).
+We obtained simultaneous approximations Pt​(w)​log⁡(1/w)−Qt​(w)P_{t}(w)\log(1/w)-Q_{t}(w)
+and Pt​(w)​log2⁡(1/w)−2​Rt​(w)P_{t}(w)\log^{2}(1/w)-2R_{t}(w) to log⁡(1/w)\log(1/w) and log2⁡(1/w)\log^{2}(1/w)
+(see (46) and (47) in [11]). For suitable choices of E1,…,E5E_{1},\dots,E_{5}
+not all equal, by applying the Rhin-Viola method (see [15] and the
+bibliography therein) we proved that the coefficients of the polynomial Pt​(w)P_{t}(w) have
+a big common divisor Δt\Delta_{t}, and similarly for Qt​(w)Q_{t}(w) and Rt​(w)R_{t}(w) (see
+Proposition 3.1 of [11]). By making w=a/b∈ℚw=a/b\in\mathbb{Q} we obtained
+new irrationality and nonquadraticity measures for logarithms of some rational
+numbers. Taking w=1/2w=1/2 we proved
+
+
+
+(2)
+
+μ⁡(log⁡2)<3.5745539​… and μ2​(log⁡2)<15.6514202​….\mu(\log 2)<3.5745539\dots\quad\text{ and }\quad\mu_{2}(\log 2)<15.6514202\dots\,.
+
+
+As usual (see e.g. [1] and [12]) for any complex
+number ξ\xi, for any number field 𝕂\mathbb{K} and any integer d≥1d\geq 1 we denote by
+μd,𝕂​(ξ)\mu_{d,\mathbb{K}}(\xi) the supremum of the exponents μ>0\mu>0 such that
+
+
+
+
+0<|ξ−α|<H(α)−μ​d[ℚ(α):ℚ]0<|\xi-\alpha|<H(\alpha)^{-\frac{\mu d}{[\mathbb{Q}(\alpha):\mathbb{Q}]}}
+
+
+has infinitely many solutions α\alpha of the degree at most dd over 𝕂\mathbb{K}.
+We abbreviate μ1,𝕂​(ξ)=μ𝕂​(ξ)\mu_{1,\mathbb{K}}(\xi)=\mu_{\mathbb{K}}(\xi), μd,ℚ​(ξ)=μd​(ξ)\mu_{d,\mathbb{Q}}(\xi)=\mu_{d}(\xi)
+and μ1,ℚ​(ξ)=μ​(ξ)\mu_{1,\mathbb{Q}}(\xi)=\mu(\xi). By H⁡(α)H(\alpha) we mean the naïve height of α\alpha,
+i.e. the maximum of the absolute values of the coefficients of its minimal polynomial over ℤ\mathbb{Z}.
+An upper bound for μ⁡(ξ)\mu(\xi) (resp. for μ2​(ξ)\mu_{2}(\xi)) is said to be an irrationality
+measure (resp. a nonquadraticity measure) of the irrational (resp. nonquadratic) number ξ\xi.
+An upper bound for μ𝕂​(ξ)\mu_{\mathbb{K}}(\xi) (resp. for μ2,𝕂\mu_{2,\mathbb{K}}) is said to be a 𝕂\mathbb{K}–irrationality
+(resp. 𝕂\mathbb{K}–nonquadraticity) measure of the number ξ∉𝕂\xi\notin\mathbb{K} (resp. [𝕂(ξ):𝕂]>2[\mathbb{K}(\xi):\mathbb{K}]>2).
+
+
+The aim of the present paper is to extend the results of [11])
+to obtain a lower bound of μd​(log⁡w)\mu_{d}(\log w) for classes of rational numbers ww
+depending on dd, for any d≥1d\geq 1. Our Theorem 7.1 represents an improvement
+of Theorem 3 of [18], in that for any d≥1d\geq 1 it applies to a wider
+class of rational numbers ww, and gives better bounds. We achieve this by producing
+bounds from below of the values in log⁡w\log w of polynomials PP of degree at most dd,
+in terms of the naïve height H⁡(P)H(P). As a byproduct, we obtain a new nonquadraticity
+measure of log⁡2\log 2, and a new proof of all the (𝕂\mathbb{K}–)irrationality and
+(𝕂\mathbb{K}–)nonquadraticity measures proved in [11]
+and [12], without using the saddle point method,
+not even in its simplest form.
+
+
+As to the proof, we extend Rukhadze’s method (see [16]) relying on
+Legendre-type polynomials, which yields the inequality μ⁡(log⁡2)<3.891399​…\mu(\log 2)<3.891399\dots (see
+the references in [11] for other proofs of her result, and the references
+in [13] for accounts of earlier results). Rukhadze introduced the integrals
+
+
+
+
+∫01D6​t​(y7​t​(1−y)7​t)​d​y1+y=∫01y7​t​(1−y)7​t(1+y)6​t+1​𝑑y=st​log⁡2−rt,st∈ℤ,rt∈ℚ,\int_{0}^{1}D_{6t}\big(y^{7t}(1-y)^{7t}\big)\frac{dy}{1+y}=\int_{0}^{1}\frac{y^{7t}(1-y)^{7t}}{(1+y)^{6t+1}}\ dy=s_{t}\log 2-r_{t},\;s_{t}\in\mathbb{Z},r_{t}\in\mathbb{Q},
+
+
+and proved that the coefficients of D6​t​(y7​t​(1−y)7​t)D_{6t}\big(y^{7t}(1-y)^{7t}\big) have a non-trivial
+common divisor Δt\Delta_{t} such that limt→∞Δt1/t\lim_{t\to\infty}\Delta_{t}^{1/t} such that can be
+determined via the Prime Number Theorem. In order to unify Rukhadze’s and Sorokin’s
+approaches, we take advantage of a fundamental remark of Nesterenko
+(see [13], Lemma 1). Indeed, if we make the substitution z=w/(w−1)z=w/(w-1)
+in the Sorokin-type rational functions
+
+
+
+
+∑k≥0(k+p1p1+q1)⋯(k+pnpn+qn)wk\sum_{k\geq 0}\binom{k+p_{1}}{p_{1}+q_{1}}\cdots\binom{k+p_{n}}{p_{n}+q_{n}}w^{k}
+
+
+we obtain polynomials in zz (see (7) below), and this leads us to a
+new class of multiple Legendre polynomials. We also combine two formulas for the so-called
+hyperharmonic numbers (see (13) below). This allows us to reduce
+all the necessary analytic estimates of the relevant polynomials to the estimate of simple
+real integrals, as in Rukhadze’s paper.
+
+
+With the choice z=−1z=-1 (and hence w=1/2w=1/2) such polynomials yield the new bound
+
+
+
+(3)
+
+μ2​(log⁡2)<12.841618​….\mu_{2}(\log 2)<12.841618\dots\ .
+
+
+We use the approximations
+
+
+
+
+∫01D5​t​(y6​t​(1−y)6​t​D7​t​(y5​t​(1−y)5​t))​d​y1+y=s~t​log⁡2−r~t\int_{0}^{1}D_{5t}\Big(y^{6t}(1-y)^{6t}D_{7t}\big(y^{5t}(1-y)^{5t}\big)\Big)\frac{dy}{1+y}=\tilde{s}_{t}\log 2-\tilde{r}_{t}
+
+
+to obtain the same irrationality measure of log⁡2\log 2 as in (2).
+As to (3), we employ the polynomials
+
+
+
+
+D6​t​(z7​t​(1−z)7​t​D8​t​(z9​t​(1−z)9​t​D10​t​(z7​t​(1−z)7​t)))D_{6t}\bigg(z^{7t}(1-z)^{7t}D_{8t}\Big(z^{9t}(1-z)^{9t}D_{10t}\big(z^{7t}(1-z)^{7t}\big)\Big)\bigg)
+
+
+to construct simultaneous approximations to log⁡zz−1\log\frac{z}{z-1} and log2⁡zz−1\log^{2}\frac{z}{z-1}.
+It is conceivable to obtain (3) through the Meyer GG-function method
+of Nesterenko.
+
+
+This paper is organized as follows. In section 2 we introduce a class of multiple Legendre
+polynomials and functions, whose symmetry properties are the counterpart of the integral
+identities obtained in [11] as an application of the Rhin-Viola
+method. In section 3 we obtain analytic and arithmetic properties of these polynomials
+and functions by means of a combinatorial identity involving hyperharmonic numbers.
+In section 4 we prove that under suitable hypotheses our polynomials and functions
+satisfy an Apéry-like recurrence. In section 5 we find the roots of the characteristic
+equation associated with the recurrence found in section 4. As a result, in the applications
+given in sections 7 and 8 we do not need to compute the actual coefficients of the recurrence.
+In all our numerical examples in section 8 some of the moduli of the roots of the characteristic
+polynomial coincide. Hence we need to apply to our recurrence a suitable extension of
+Poincaré’s theorem, due to Pituk [14] (see however Remark 8.1). In section 6 we
+prove the crucial arithmetical properties of the coefficients of our polynomials. In section 7
+we obtain our main result. To this end we need to generalize a Lemma due to Hata [7].
+In section 8 we obtain (3), and indicate how to recover the nonquadraticity
+measures of logarithms proved by Hata [8], the author [11],
+and Viola and the author [12]. We also indicate briefly how to recover results of
+Heimonen, Matala-Aho and Väänänen [9], Viola [19],
+Amoroso and Viola [1] and of Viola and the author [12].
+We also give three more examples of our result:
+
+
+
+
+μ3​(log⁡(5/4))<67.9403​…,μ3​(log⁡(6/5))<37.963​…,μ4​(log⁡(20/19))<565.5663​…\mu_{3}\big(\log(5/4)\big)<67.9403\dots,\quad\mu_{3}\big(\log(6/5)\big)<37.963\dots,\quad\mu_{4}\big(\log(20/19)\big)<565.5663\dots
+
+
+(compare with μ3​(log⁡(6/5))<155\mu_{3}\big(\log(6/5)\big)<155 in [18]).
+
+
+
+2. Multiple Legendre polynomials and functions
+
+
+Throughout this paper, the bijection
+
+
+
+
+ℂ∖{1}∋z↦w=zz−1∈ℂ∖{1}\mathbb{C}\setminus\{1\}\ni z\mapsto w=\frac{z}{z-1}\in\mathbb{C}\setminus\{1\}
+
+
+plays an important role. We remark that:
+
+(1) 
+
+(1−w)​(1−z)=1(1-w)(1-z)=1;
+
+(2) 
+
+z↦wz\mapsto w is an involution;
+
+(3) 
+
+ℜ⁡z<1/2\Re z<1/2 if and only if |w|<1|w|<1;
+
+(4) 
+
+0≤z<10\leq z<1 if and only if w≤0w\leq 0.
+
+
+The idea of using this bijection comes from Lemma 1 of [13],
+
+
+For any n≥1n\geq 1, let p1,…,pn;q1,…,qn≥0p_{1},\dots,p_{n};q_{1},\dots,q_{n}\geq 0 be integers, and let
+
+
+
+
+ℒn​(p1,q1,…,pn,qn,z)∈ℤ⁡[z]{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\in\mathbb{Z}[z]
+
+
+be the polynomials recursively defined for by
+
+
+
+
+ℒn​(p1,q1,…,pn,qn,z)=zqn​(1−z)pn​Dpn+qn​(zpn​(1−z)qn​ℒn−1​(p1,q1,…,pn−1,qn−1,z)),{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)=z^{q_{n}}(1-z)^{p_{n}}D_{p_{n}+q_{n}}\big(z^{p_{n}}(1-z)^{q_{n}}{\mathcal{L}}_{n-1}(p_{1},q_{1};\dots;p_{n-1},q_{n-1};z)\big),
+
+
+where by agreement ℒ0​(z)≡1{\mathcal{L}}_{0}(z)\equiv 1. Here and in the sequel
+Dm​(f⁡(u))=1m!​(dd​u)m​f​(u)D_{m}(f(u))=\frac{1}{m!}(\frac{{\rm d}}{{\rm d}u})^{m}f(u). For example
+
+
+
+
+ℒ1​(p1,q1,z)=(−z)q1​(1−z)p1,{\mathcal{L}}_{1}(p_{1},q_{1};z)=(-z)^{q_{1}}(1-z)^{p_{1}},
+
+
+
+
+
+
+ℒ2​(p1,q1,p2,q2,z)=(−1)q1​zq2​(1−z)p2​Dp2+q2​(zp2+q1​(1−z)p1+q2),{\mathcal{L}}_{2}(p_{1},q_{1};p_{2},q_{2};z)=(-1)^{q_{1}}z^{q_{2}}(1-z)^{p_{2}}D_{p_{2}+q_{2}}\big(z^{p_{2}+q_{1}}(1-z)^{p_{1}+q_{2}}\big),
+
+
+
+
+
+
+ℒ3​(p1,q1,p2,q2,p3,q3,z)=(−1)q1​zq3​(1−z)p3​Dp3+q3​(zp3+q2​(1−z)p2+q3​Dp2+q2​(zp2+q1​(1−z)p1+q2)),{\mathcal{L}}_{3}(p_{1},q_{1};p_{2},q_{2};p_{3},q_{3};z)\\
+=(-1)^{q_{1}}z^{q_{3}}(1-z)^{p_{3}}D_{p_{3}+q_{3}}\Big(z^{p_{3}+q_{2}}(1-z)^{p_{2}+q_{3}}D_{p_{2}+q_{2}}\big(z^{p_{2}+q_{1}}(1-z)^{p_{1}+q_{2}}\big)\Big),
+
+
+and so on. Let MM be the degree of ℒn​(p1,q1,…,pn,qn,z){\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n};q_{n};z):
+
+
+
+
+M=∑l=1n(pl+ql).M=\sum_{l=1}^{n}(p_{l}+q_{l}).
+
+
+
+
+Besides the multiple Legendre polynomials ℒn​(p1,q1,…,pn,qn,z){\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z),
+we shall need the multiple Legendre functions ℐnm​(p1,q1,…,pn,qn,z){\mathcal{I}}_{n}^{m}(p_{1},q_{1};\dots;p_{n},q_{n};z),
+with m=1,…,n−1m=1,\dots,n-1. They are defined, for z≠0,1z\not=0,1, by
+
+
+
+(4)
+
+ℐnm​(p1,q1,…,pn,qn,z):=ℒn​(p1,q1,…,pn,qn,z)​logm​zz−1−𝐓m​(ℒn​(p1,q1,…,pn,qn,z)),{\mathcal{I}}_{n}^{m}(p_{1},q_{1};\dots;p_{n},q_{n};z):\\
+={\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\log^{m}\frac{z}{z-1}-{\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big),
+
+
+where 𝐓{\bf T} is the linear mapping
+
+
+
+
+𝐓:ℂ⁡[z]↦ℂ⁡[z],𝐓⁡(P)​(z):=∫01P⁡(z)−P⁡(y)z−y,{\bf T}:\mathbb{C}[z]\mapsto\mathbb{C}[z],\quad{\bf T}(P)(z):=\int\limits_{0}^{1}\frac{P(z)-P(y)}{z-y},
+
+
+𝐓m{\bf T}^{m} is the mm-fold compositum 𝐓∘⋯∘𝐓{\bf T}\circ\cdots\circ{\bf T},
+and log⁡w=log⁡zz−1\log w=\log\frac{z}{z-1} is the principal value of the logarithm:
+log⁡w=log⁡|w|+i​arg⁡w\log w=\log|w|+i\arg w, with −π<arg⁡w≤π-\pi<\arg w\leq\pi. Our definition
+(4) naturally extends the classical notion of Legendre
+functions of the second kind, while our definition of
+𝐓⁡(ℒn​(p1,q1,…,pn,qn,z)){\bf T}({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)) extends the well-known
+notion of Christoffel’s polynomials (see [5], vol. I, p.153, formula (26)).
+
+
+Any polynomial P⁡(z)∈ℂ⁡[z]P(z)\in\mathbb{C}[z] equals a rational function in the new
+variable w=zz−1w=\frac{z}{z-1}, and our multiple Legendre polynomials
+ℒn​(p1,q1,…,pn,qn,z){\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z) are closely related
+to the Sorokin-type rational functions 𝒮n​(p1,q1,…,pn,qn,w){\mathcal{S}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};w)
+recursively defined by
+
+
+
+
+𝒮n​(p1,q1,…,pn,qn,w):=wqn​Dpn+qn​(wpn​𝒮n−1​(p1,q1,…,pn−1,qn−1,w)),{\mathcal{S}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};w):=w^{q_{n}}D_{p_{n}+q_{n}}\big(w^{p_{n}}{\mathcal{S}}_{n-1}(p_{1},q_{1};\dots;p_{n-1},q_{n-1};w)\big),
+
+
+where 𝒮0​(w)=11−w{\mathcal{S}}_{0}(w)=\frac{1}{1-w}.
+
+
+Lemma 2.1.
+
+Let a,b,c,d≥0a,b,c,d\geq 0 be integers such that b+c=a+db+c=a+d. Then
+
+
+
+(5)
+
+Da​(zb​(1−z)c)=(−1)a+b​(1−w)a+1​Da​(wb(1−w)d+1).D_{a}\big(z^{b}(1-z)^{c}\big)=(-1)^{a+b}(1-w)^{a+1}D_{a}\bigg(\frac{w^{b}}{(1-w)^{d+1}}\bigg).
+
+
+
+
+
+Proof.
+
+Writing zb=(1−(1−z))bz^{b}=\big(1-(1-z)\big)^{b} and applying the binomial theorem,
+
+
+
+
+Da​(zb​(1−z)c)=∑l=max⁡{0,a−c}b(−1)a+l​(bl)​(c+la)​(1−z)c+l−a.D_{a}\big(z^{b}(1-z)^{c}\big)=\sum_{l=\max\{0,a-c\}}^{b}(-1)^{a+l}\binom{b}{l}\binom{c+l}{a}(1-z)^{c+l-a}.
+
+
+Similarly, from wb=(1−(1−w))bw^{b}=\big(1-(1-w)\big)^{b} we have
+
+
+
+
+Da​(wb(1−w)d+1)=∑l=max⁡{0,b−d}b(−1)b+l​(bl)​(c+la)​1(1−w)c+l+1.∎D_{a}\Big(\frac{w^{b}}{(1-w)^{d+1}}\Big)=\sum_{l=\max\{0,b-d\}}^{b}(-1)^{b+l}\binom{b}{l}\binom{c+l}{a}\frac{1}{(1-w)^{c+l+1}}.\qed
+
+
+Comparing the two summations we get (5).
+
+
+
+Lemma 2.2.
+
+Let P⁡(z)∈ℂ⁡[z]P(z)\in\mathbb{C}[z], and let R⁡(w)R(w) be the rational function satisfying
+
+
+
+
+(1−z)​P​(z)=R⁡(w).(1-z)P(z)=R(w).
+
+
+Let p,q≥0p,q\geq 0 be integers. Then
+
+
+
+(6)
+
+zq​(1−z)p+1​Dp+q​(zp​(1−z)q​P​(z))=wq​Dp+q​(wp​R​(w)).z^{q}(1-z)^{p+1}D_{p+q}\big(z^{p}(1-z)^{q}P(z)\big)=w^{q}D_{p+q}\big(w^{p}R(w)\big).
+
+
+
+
+
+Proof.
+
+By linearity, we may suppose P⁡(z)=(1−z)kP(z)=(1-z)^{k}, so that R⁡(w)=1(1−w)k+1R(w)=\frac{1}{(1-w)^{k+1}}.
+In this particular case (6) is simply (5)
+with a=p+qa=p+q, b=pb=p, c=k+qc=k+q and d=kd=k.
+∎
+
+
+
+We have by (6)
+
+
+
+(7)
+
+(1−z)​ℒn​(p1,q1,…,pn,qn,z)=𝒮n​(p1,q1,…,pn,qn,w).(1-z){\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\\
+={\mathcal{S}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};w).
+
+
+Since for any integer j≥0j\geq 0
+
+
+
+
+(1−z)​(1−z)j=1(1−w)j+1=∑k=0∞(k+jj)​wk,(1-z)(1-z)^{j}=\frac{1}{(1-w)^{j+1}}=\sum\limits_{k=0}^{\infty}\binom{k+j}{j}w^{k},
+
+
+and (k+jj)\binom{k+j}{j} is a polynomial in kk of degree jj, then for any polynomial P⁡(z)∈ℂ⁡[z]P(z)\in\mathbb{C}[z]
+there exists a polynomial Q⁡(k)∈ℂ⁡[k]Q(k)\in\mathbb{C}[k], with deg⁡P=deg⁡Q\deg P=\deg Q, such that
+
+
+
+
+(1−z)​P​(z)=∑k=0∞Q⁡(k)​wk,(1-z)P(z)=\sum\limits_{k=0}^{\infty}Q(k)w^{k},
+
+
+and the mapping P↦QP\mapsto Q is bijective.
+
+
+Lemma 2.3.
+
+Let P⁡(z)∈ℂ⁡[z]P(z)\in\mathbb{C}[z] and Q⁡(k)∈ℂ⁡[k]Q(k)\in\mathbb{C}[k] as above. Let p,q≥0p,q\geq 0 be integers. Then
+
+
+
+(8)
+
+zq​(1−z)p+1​Dp+q​(zp​(1−z)q​P​(z))=∑k=0∞(k+pp+q)​Q​(k)​wk.z^{q}(1-z)^{p+1}D_{p+q}\big(z^{p}(1-z)^{q}P(z)\big)=\sum\limits_{k=0}^{\infty}\binom{k+p}{p+q}Q(k)w^{k}.
+
+
+
+
+
+Proof.
+
+This is a simple application of (6).
+∎
+
+
+
+By induction on nn we easily get
+
+
+
+(9)
+
+𝒮n(p1,q1;…;pn,qn;w):=∑k≥0(k+p1p1+q1)⋯(k+pnpn+qn)wk.{\mathcal{S}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};w):=\sum_{k\geq 0}\binom{k+p_{1}}{p_{1}+q_{1}}\cdots\binom{k+p_{n}}{p_{n}+q_{n}}w^{k}.
+
+
+In particular,
+
+
+
+
+(p1+q1)!⋯(pn+qn)!𝒮n(p1,q1;…;pn,qn;w)(p_{1}+q_{1})!\cdots(p_{n}+q_{n})!{\mathcal{S}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};w)
+
+
+is a bisymmetric function of p1,…,pnp_{1},\dots,p_{n} and q1,…,qnq_{1},\dots,q_{n}. Therefore
+
+
+
+
+(p1+q1)!⋯(pn+qn)!ℒn(p1,q1;…;pn,qn;z)(p_{1}+q_{1})!\cdots(p_{n}+q_{n})!{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)
+
+
+is also a bisymmetric function of p1,…,pnp_{1},\dots,p_{n} and q1,…,qnq_{1},\dots,q_{n}. As a consequence
+
+
+
+
+ordz=0​ℒn​(p1,q1,…,pn,qn,z)=maxl=1,…,n⁡ql,ordz=1​ℒn​(p1,q1,…,pn,qn,z)=maxl=1,…,n⁡pl.{\rm ord}_{z=0}{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)=\max_{l=1,\dots,n}q_{l},\qquad{\rm ord}_{z=1}{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)=\max_{l=1,\dots,n}p_{l}.
+
+
+Moreover the polynomial
+
+
+
+
+ℒn​(p1,q1,…,pn,qn,z){\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)
+
+
+is a symmetric function of (p1,q1),…,(p_{1},q_{1}),\dots, (pn,qn)(p_{n},q_{n}), and we have
+
+
+
+
+ℒn​(p1,q1,…,pn,qn,z)=zq1​(1−z)p1​Dp1+q1​(zp1​(1−z)q1​ℒn−1​(p2,q2,…,pn,qn,z)),{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)=z^{q_{1}}(1-z)^{p_{1}}D_{p_{1}+q_{1}}\big(z^{p_{1}}(1-z)^{q_{1}}{\mathcal{L}}_{n-1}(p_{2},q_{2};\dots;p_{n},q_{n};z)\big),
+
+
+which from now on we define to be the standard recursive formula. From
+the definition (4) it also follows that the normalized multiple
+Legendre functions
+
+
+
+
+(p1+q1)!⋯(pn+qn)!ℐnm(p1,q1;…;pn,qn;z)(p_{1}+q_{1})!\cdots(p_{n}+q_{n})!\,{\mathcal{I}}_{n}^{m}(p_{1},q_{1};\dots;p_{n},q_{n};z)
+
+
+are bisymmetric functions of p1,…,pnp_{1},\dots,p_{n} and q1,…,qnq_{1},\dots,q_{n}
+as well. Let us notice that the equality
+
+
+
+
+(p1+q1)!​(p2+q2)!​ℒ2​(p1,q1,p2,q2,z)=(p1+q2)!​(p2+q1)!​ℒ2​(p1,q2,p2,q1,z)(p_{1}+q_{1})!(p_{2}+q_{2})!{\mathcal{L}}_{2}(p_{1},q_{1};p_{2},q_{2};z)=(p_{1}+q_{2})!(p_{2}+q_{1})!{\mathcal{L}}_{2}(p_{1},q_{2};p_{2},q_{1};z)
+
+
+is the content of (1.3) of [6], and of Lemma 3.1 of [15].
+
+
+The polynomials ℒn​(p1,q1,…,pn,qn,z){\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n};q_{n};z) also satisfy
+
+
+
+(10)
+
+ℒn​(p1,q1,…,pn,qn,z)=(−1)M​ℒn​(q1,p1,…,qn,pn,1−z),{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)=(-1)^{M}{\mathcal{L}}_{n}(q_{1},p_{1};\dots;q_{n},p_{n};1-z),
+
+
+which plainly follows by repeated applications of
+
+
+
+(11)
+
+dd​z​f​(z)=−dd​y​(f⁡(1−y))y=1−z.\frac{{\rm d}}{{\rm d}z}f(z)=-\frac{{\rm d}}{{\rm d}y}\big(f(1-y)\big)_{y=1-z}.
+
+
+The lemma below provides us with an upper bound of the polynomials
+ℒn​(p1,q1,…,pn,qn,z){\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z) in the unit interval.
+
+
+Lemma 2.4.
+
+Let p1,q1;…,pn,qn≥0p_{1},q_{1};\dots,p_{n},q_{n}\geq 0 be integers. Then
+
+
+
+(12)
+
+maxz∈[0,1]⁡z−q1​(1−z)−p1​|ℒn​(p1,q1,…,pn,qn,z)|≤M!(p1+q1)!⋯(pn+qn)!.\max_{z\in[0,1]}z^{-q_{1}}(1-z)^{-p_{1}}|{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)|\leq\frac{M!}{(p_{1}+q_{1})!\cdots(p_{n}+q_{n})!}.
+
+
+
+
+
+Proof.
+
+For any p,q≥0p,q\geq 0 and any z∈[0,1]z\in[0,1] we have |ℒ1​(p,q,z)|=zq​(1−z)p|{\mathcal{L}}_{1}(p,q;z)|=z^{q}(1-z)^{p},
+whence (12) holds for n=1n=1. Arguing by induction, let n>1n>1 and
+suppose that (12) is valid for n−1n-1. Let p=pn−1p=p_{n-1}, q=qn−1q=q_{n-1},
+p′=pnp^{\prime}=p_{n} and q′=qnq^{\prime}=q_{n}. By Leibnitz’s formula
+
+
+
+
+Dp+q​(zp+q′​(1−z)p′+q)=∑k=0p+qDp+q−k​(zp+q′)​Dk​((1−z)p′+q),D_{p+q}\big(z^{p+q^{\prime}}(1-z)^{p^{\prime}+q}\big)=\sum_{k=0}^{p+q}D_{p+q-k}(z^{p+q^{\prime}})D_{k}\big((1-z)^{p^{\prime}+q}\big),
+
+
+whence
+
+
+
+
+ℒn​(p1,q1,…,pn,qn,z)=∑k=0p+q(p+q′p+q−k)​(p′+qk)​ℒn−1​(p1,q1,…,pn−2,qn−2,p+q+p′−k,q′+k,z).{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\\
+=\sum_{k=0}^{p+q}\binom{p+q^{\prime}}{p+q-k}\binom{p^{\prime}+q}{k}{\mathcal{L}}_{n-1}(p_{1},q_{1};\dots;p_{n-2},q_{n-2};p+q+p^{\prime}-k,q^{\prime}+k;z).
+
+
+By the triangle inequality and the inductive hypothesis
+
+
+
+
+z−q1​(1−z)−p1​|ℒn​(p1,q1,…,pn,qn,z)|≤M!(p1+q1)!⋯(pn−2+qn−2)!(p+q+p′+q′)!​L,z^{-q_{1}}(1-z)^{-p_{1}}|{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)|\leq\frac{M!}{(p_{1}+q_{1})!\cdots(p_{n-2}+q_{n-2})!(p+q+p^{\prime}+q^{\prime})!}\ L,
+
+
+where by the Chu-Vandermonde formula
+
+
+
+
+L=∑k=0p+q(p+q′p+q−k)​(p′+qk)=(p+p′+q+q′p+q).∎L=\sum_{k=0}^{p+q}\binom{p+q^{\prime}}{p+q-k}\binom{p^{\prime}+q}{k}=\binom{p+p^{\prime}+q+q^{\prime}}{p+q}.\qed
+
+
+
+
+
+
+3. Summation identities
+
+
+The following lemma will be useful.
+
+
+Lemma 3.1.
+
+For any nonnegative integers j,kj,k
+
+
+
+(13)
+
+(k+jj)​∑i=1j1k+i=∑i=1j(k+j−ij−i)​1i.\binom{k+j}{j}\sum\limits_{i=1}^{j}\frac{1}{k+i}=\sum\limits_{i=1}^{j}\binom{k+j-i}{j-i}\frac{1}{i}.
+
+
+
+
+
+Proof.
+
+This follows from two formulas for the hyperharmonic numbers
+
+
+
+
+Hj(k+1)=(k+jj)⁡(Hk+j(1)−Hk(1))=∑i=1j(k+j−ij−i)​Hi(0),H_{j}^{(k+1)}=\binom{k+j}{j}\big(H_{k+j}^{(1)}-H_{k}^{(1)}\big)=\sum\limits_{i=1}^{j}\binom{k+j-i}{j-i}H_{i}^{(0)},
+
+
+where Hj(0)=1jH_{j}^{(0)}=\frac{1}{j}, and recursively
+Hj(k+1)=H1(k)+⋯+Hj(k)H_{j}^{(k+1)}=H_{1}^{(k)}+\cdots+H_{j}^{(k)}
+(see [4], p.258, and formulas (3) and (7) in [2]).
+∎
+
+
+
+As in the previous section, let P⁡(z)∈ℂ⁡[z]P(z)\in\mathbb{C}[z] and Q⁡(k)∈ℂ⁡[k]Q(k)\in\mathbb{C}[k] be such that
+
+
+
+
+(1−z)​P​(z)=∑k=0∞Q⁡(k)​wk(1-z)P(z)=\sum\limits_{k=0}^{\infty}Q(k)w^{k}
+
+
+for any w,z∈ℂw,z\in\mathbb{C} satisfying (1−z)​(1−w)=1(1-z)(1-w)=1. We claim that
+
+
+
+(14)
+
+(1−z)​𝐓​(P)​(z)=∑k=0∞Q′​(k)​wk,(1-z){\bf T}(P)(z)=\sum\limits_{k=0}^{\infty}Q^{\prime}(k)w^{k},
+
+
+where Q′​(k)=dd​k​Q​(k)Q^{\prime}(k)=\frac{d}{dk}Q(k). Indeed, by linearity we may suppose that
+P⁡(z)=Pj​(z)=(1−z)jP(z)=P_{j}(z)=(1-z)^{j} for some integer j≥0j\geq 0, whence Q⁡(k)=Qj​(k)=(k+jj)Q(k)=Q_{j}(k)=\binom{k+j}{j} and
+
+
+
+
+(1−z)​𝐓​(Pj)​(z)=(1−z)​∑i=1j(1−z)j−ii=∑i=1j1i​∑k=0∞(k+j−ij−i)​wk.(1-z){\bf T}(P_{j})(z)=(1-z)\sum\limits_{i=1}^{j}\frac{(1-z)^{j-i}}{i}=\sum\limits_{i=1}^{j}\frac{1}{i}\sum_{k=0}^{\infty}\binom{k+j-i}{j-i}w^{k}.
+
+
+By (13), the last summation equals
+
+
+
+
+∑k=0∞(k+jj)​∑i=1j1k+i​wk=∑k=0∞Qj′​(k)​wk,\sum_{k=0}^{\infty}\binom{k+j}{j}\sum\limits_{i=1}^{j}\frac{1}{k+i}w^{k}=\sum\limits_{k=0}^{\infty}Q_{j}^{\prime}(k)w^{k},
+
+
+as we claimed. By induction on mm we also have by (14)
+
+
+
+
+(1−z)​𝐓m​(P)​(z)=∑k=0∞Q(m)​(k)​wk,(1-z){\bf T}^{m}(P)(z)=\sum\limits_{k=0}^{\infty}Q^{(m)}(k)w^{k},
+
+
+where Q(m)​(k)=dmd​km​Q​(k)Q^{(m)}(k)=\frac{d^{m}}{dk^{m}}Q(k).
+
+
+Suppose now that Q⁡(−1)=0Q(-1)=0. Then
+
+
+
+
+P⁡(z)=(1−w)​∑k=0∞Q⁡(k)​wk=∑k=0∞(Q⁡(k)−Q⁡(k−1))​wk=(1−z)​P~​(z)P(z)=(1-w)\sum\limits_{k=0}^{\infty}Q(k)w^{k}=\sum\limits_{k=0}^{\infty}\big(Q(k)-Q(k-1)\big)w^{k}=(1-z)\tilde{P}(z)
+
+
+for some P~​(z)∈ℂ​[z]\tilde{P}(z)\in\mathbb{C}[z]. If in addition Q(m)​(−1)=0Q^{(m)}(-1)=0 then
+
+
+
+
+𝐓m​(P)​(z)=(1−w)​∑k=0∞Q(m)​(k)​wk=∑k=0∞(Q(m)​(k)−Q(m)​(k−1))​wk=(1−z)​𝐓m​(P~)​(z),{\bf T}^{m}(P)(z)=(1-w)\sum\limits_{k=0}^{\infty}Q^{(m)}(k)w^{k}=\sum\limits_{k=0}^{\infty}\big(Q^{(m)}(k)-Q^{(m)}(k-1)\big)w^{k}=(1-z){\bf T}^{m}(\tilde{P})(z),
+
+
+and by linearity 𝐓m​((a​z+b)​P~​(z))=(a​z+b)​𝐓m​(P~)​(z){\bf T}^{m}\big((az+b)\tilde{P}(z)\big)=(az+b){\bf T}^{m}(\tilde{P})(z)
+for any a,b∈ℂa,b\in\mathbb{C}.
+
+
+We may put Q~​(k)=Q⁡(k)−Q⁡(k−1)\tilde{Q}(k)=Q(k)-Q(k-1) and repeat the previous argument. Suppose
+that Q⁡(−1)=⋯=Q⁡(−l)=0Q(-1)=\cdots=Q(-l)=0. Then P⁡(z)=(1−z)l​P^​(z)P(z)=(1-z)^{l}\hat{P}(z) for some P^​(z)∈ℂ​[z]\hat{P}(z)\in\mathbb{C}[z].
+If also Q(m)​(−1)=⋯=Q(m)​(−l)=0Q^{(m)}(-1)=\cdots=Q^{(m)}(-l)=0
+then 𝐓m​(P)​(z)=(1−z)l−j​𝐓m​((1−z)j​P^​(z)){\bf T}^{m}(P)(z)=(1-z)^{l-j}{\bf T}^{m}\big((1-z)^{j}\hat{P}(z)\big)
+for j=0,…,lj=0,\dots,l. Equivalently,
+
+
+
+(15)
+
+𝐓m​((al​zl+⋯+a0)​P~​(z))=(al​zl+⋯+a0)​𝐓m​(P~)​(z){\bf T}^{m}\big((a_{l}z^{l}+\cdots+a_{0})\tilde{P}(z)\big)=(a_{l}z^{l}+\cdots+a_{0}){\bf T}^{m}(\tilde{P})(z)
+
+
+for any a0,…,al∈ℂa_{0},\dots,a_{l}\in\mathbb{C}.
+
+
+We now apply (15) to our multiple Legendre functions
+ℐnm​(p1,q1,…,pn,qn,z){\mathcal{I}}_{n}^{m}(p_{1},q_{1};\dots;p_{n},q_{n};z). Let
+
+
+
+
+ℒn∗​(p1,q1,…,pn,qn,z):=(−1)q1​z−q1​(1−z)−p1​ℒn​(p1,q1,…,pn,qn,z)∈ℤ⁡[z].{\mathcal{L}}_{n}^{*}(p_{1},q_{1};\dots;p_{n},q_{n};z):=(-1)^{q_{1}}z^{-q_{1}}(1-z)^{-p_{1}}{\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\in\mathbb{Z}[z].
+
+
+We now set
+
+
+
+
+P⁡(z)=(1−z)p1+q1​ℒn∗​(p1,q1,…,pn,qn,z).P(z)=(1-z)^{p_{1}+q_{1}}{\mathcal{L}}_{n}^{*}(p_{1},q_{1};\dots;p_{n},q_{n};z).
+
+
+Taking into account that (k+p1p1+q1)=0\binom{k+p_{1}}{p_{1}+q_{1}}=0 for k=0,…,q1−1k=0,\dots,q_{1}-1,
+by combining (7) and (9) we get
+
+
+
+
+Q⁡(k)=∏j=1n(k+pj+q1pj+qj)=∏j=1nBj​(k),Q(k)=\prod_{j=1}^{n}\binom{k+p_{j}+q_{1}}{p_{j}+q_{j}}=\prod_{j=1}^{n}B_{j}(k),
+
+
+say. Moreover Q⁡(−1)=⋯=Q⁡(−p1−q1)=0Q(-1)=\cdots=Q(-p_{1}-q_{1})=0, because B1​(k)B_{1}(k) vanishes at
+−1,…,−p1−q1-1,\dots,-p_{1}-q_{1}.
+
+
+Let n≥2n\geq 2. If
+
+
+
+
+p1≤max⁡{p2,…,pn}​ and ​q1≤max⁡{q2,…,qn}p_{1}\leq\max\{p_{2},\dots,p_{n}\}\text{ and }q_{1}\leq\max\{q_{2},\dots,q_{n}\}
+
+
+then Q′​(−1)=⋯=Q′​(−p1−q1)=0Q^{\prime}(-1)=\cdots=Q^{\prime}(-p_{1}-q_{1})=0, because at least one among B2,…,BnB_{2},\dots,B_{n}
+vanishes. Hence
+
+
+
+
+𝐓⁡(W⁡(z)​ℒn∗​(p1,q1,…,pn,qn,z))=W⁡(z)​𝐓​(ℒn∗​(p1,q1,…,pn,qn,z)){\bf T}\big(W(z){\mathcal{L}}_{n}^{*}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)=W(z){\bf T}\big({\mathcal{L}}_{n}^{*}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)
+
+
+for any W⁡(z)∈ℂW(z)\in\mathbb{C} with deg⁡W≤p1+q1\deg W\leq p_{1}+q_{1}. More generally, if
+
+
+
+
+p1≤p2≤⋯≤pm+1​ and ​q1≤q2≤⋯≤qm+1,p_{1}\leq p_{2}\leq\cdots\leq p_{m+1}\text{ and }q_{1}\leq q_{2}\leq\cdots\leq q_{m+1},
+
+
+for some m∈{1,…,n−1}m\in\{1,\dots,n-1\}, then Q(m)​(−1)=⋯=Q(m)​(−p1−q1)=0Q^{(m)}(-1)=\cdots=Q^{(m)}(-p_{1}-q_{1})=0, whence
+
+
+
+(16)
+
+𝐓m​(W⁡(z)​ℒn∗​(p1,q1,…,pn,qn,z))=W⁡(z)​𝐓m​(ℒn∗​(p1,q1,…,pn,qn,z)){\bf T}^{m}\big(W(z){\mathcal{L}}_{n}^{*}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)=W(z){\bf T}^{m}\big({\mathcal{L}}_{n}^{*}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)
+
+
+for any W⁡(z)∈ℂW(z)\in\mathbb{C} with deg⁡W≤p1+q1\deg W\leq p_{1}+q_{1}. In particular
+
+
+
+
+𝐓m​(ℒn​(p1,q1,…,pn,qn,z))=(−1)q1​z−q1​(1−z)−p1​𝐓m​(ℒn∗​(p1,q1,…,pn,qn,z)).{\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)=(-1)^{q_{1}}z^{-q_{1}}(1-z)^{-p_{1}}{\bf T}^{m}\big({\mathcal{L}}_{n}^{*}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big).
+
+
+
+
+Since
+
+
+
+
+ℒ1​(p,q,z)−ℒ1​(p,q,y)=(−z)q​(1−z)p−(−z)q​(1−y)p+(−z)q​(1−y)p−(−y)q​(1−y)p{\mathcal{L}}_{1}(p,q;z)-{\mathcal{L}}_{1}(p,q;y)=(-z)^{q}(1-z)^{p}-(-z)^{q}(1-y)^{p}+(-z)^{q}(1-y)^{p}-(-y)^{q}(1-y)^{p}
+
+
+then
+
+
+
+
+𝐓⁡(ℒ1​(p,q,z))=∑i=1p1i​ℒ1​(p−i,q,z)+∑i=1qℒ1​(0,q−i,z)​∫01(−y)i−1​(1−y)p​𝑑y,{\bf T}\big({\mathcal{L}}_{1}(p,q;z)\big)=\sum\limits_{i=1}^{p}\frac{1}{i}{\mathcal{L}}_{1}(p-i,q;z)+\sum\limits_{i=1}^{q}{\mathcal{L}}_{1}(0,q-i;z)\int\limits_{0}^{1}(-y)^{i-1}(1-y)^{p}\ dy,
+
+
+where
+
+
+
+
+dp+i​∫01(−y)i−1​(1−y)p​𝑑y∈ℤ and ∫01yi−1​(1−y)p​𝑑y<1.d_{p+i}\int\limits_{0}^{1}(-y)^{i-1}(1-y)^{p}\ dy\in\mathbb{Z}\quad\text{ and }\quad\int\limits_{0}^{1}y^{i-1}(1-y)^{p}\ dy<1.
+
+
+Here and in the sequel, for any positive integer ll we denote by dld_{l}
+the least common multiple of 1,…,l1,\dots,l, and we put d0=1d_{0}=1.
+
+
+On the other hand
+
+
+
+
+(1−z)​𝐓​(ℒ1​(p,q,z))=∑k=0∞dd​k​((k+pp+q))​wk.(1-z){\bf T}\big({\mathcal{L}}_{1}(p,q;z)\big)=\sum\limits_{k=0}^{\infty}\frac{{\rm d}}{{\rm d}k}\Bigg(\binom{k+p}{p+q}\Bigg)w^{k}.
+
+
+By (9), (14) and Lebnitz’s formula,
+
+
+
+
+(1−z)​𝐓​(ℒ2​(p1,q1,p2,q2,z))=∑k=0∞dd​k​((k+p1p1+q1))​(k+p2p2+q2)​wk+∑k=0∞(k+p1p1+q1)​dd​k​((k+p2p2+q2))​wk.(1-z){\bf T}\big({\mathcal{L}}_{2}(p_{1},q_{1};p_{2},q_{2};z)\big)\\
+=\sum_{k=0}^{\infty}\frac{{\rm d}}{{\rm d}k}\Bigg(\binom{k+p_{1}}{p_{1}+q_{1}}\Bigg)\binom{k+p_{2}}{p_{2}+q_{2}}w^{k}+\sum_{k=0}^{\infty}\binom{k+p_{1}}{p_{1}+q_{1}}\frac{{\rm d}}{{\rm d}k}\Bigg(\binom{k+p_{2}}{p_{2}+q_{2}}\Bigg)w^{k}.
+
+
+Thus, by (8)
+
+
+
+
+𝐓⁡(ℒ2​(p1,q1,p2,q2,z))=∑i=1p1ℒ2​(p1−i,q1,p2,q2,z)​1i+∑i=1q1ℒ2​(0,q1−i,p2,q2,z)​∫01(−y)i−1​(1−y)p1​𝑑y+∑i=1p2ℒ2(p1,q1;p2−i,q2;z)1i+∑i=1q2ℒ2(p1,q1;0,q2−i;z)∫01(−y)i−1(1−y)p2dy.{\bf T}\big({\mathcal{L}}_{2}(p_{1},q_{1};p_{2},q_{2};z)\big)=\\
+\sum\limits_{i=1}^{p_{1}}{\mathcal{L}}_{2}(p_{1}-i,q_{1};p_{2},q_{2};z)\frac{1}{i}+\sum\limits_{i=1}^{q_{1}}{\mathcal{L}}_{2}(0,q_{1}-i;p_{2},q_{2};z)\int\limits_{0}^{1}(-y)^{i-1}(1-y)^{p_{1}}\ dy\\
++\sum\limits_{i=1}^{p_{2}}{\mathcal{L}}_{2}(p_{1},q_{1};p_{2}-i,q_{2};z)\frac{1}{i}+\sum\limits_{i=1}^{q_{2}}{\mathcal{L}}_{2}(p_{1},q_{1};0,q_{2}-i;z)\int\limits_{0}^{1}(-y)^{i-1}(1-y)^{p_{2}}\ dy.
+
+
+Similarly, for any n≥1n\geq 1 the Legendre function
+𝐓⁡(ℒn​(p1,q1,…,pn,qn,z)){\bf T}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big) is a finite sum of terms of the form
+1r​ℒn​(p1′,q1′,…,pn′,qn′,z)\frac{1}{r}{\mathcal{L}}_{n}(p_{1}^{\prime},q_{1}^{\prime};\dots;p_{n}^{\prime},q_{n}^{\prime};z),
+with pj′≤pjp_{j}^{\prime}\leq p_{j} and qj′≤qjq_{j}^{\prime}\leq q_{j} (j=1,…,nj=1,\dots,n), and
+r+ps′+qs′≤ps+qsr+p_{s}^{\prime}+q_{s}^{\prime}\leq p_{s}+q_{s} for some s=1,…,ns=1,\dots,n. Hence
+dmax⁡{p1+q1,…,pn+qn}​𝐓​(ℒn​(p1,q1,…,pn,qn,z)CLOSEd_{\max\{p_{1}+q_{1},\dots,p_{n}+q_{n}\}}{\bf T}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)
+has integer coefficient.
+
+
+Clearly, for any m=1,…,n−1m=1,\dots,n-1 we may iterate the above decomposition mm times.
+Hence 𝐓m​(ℒn​(p1,q1,…,pn,qn,z)){\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big) is a finite sum
+of terms of the type 1r1⋯rm​ℒn​(p1′,q1′,…,pn′,qn′,z)\frac{1}{r_{1}\cdots r_{m}}{\mathcal{L}}_{n}(p_{1}^{\prime},q_{1}^{\prime};\dots;p_{n}^{\prime},q_{n}^{\prime};z), and the set
+{r1,…,rm}\{r_{1},\dots,r_{m}\} is the disjoint union of subsets {r1′,…,rj′}\{r_{1}^{\prime},\dots,r_{j}^{\prime}\}, each
+of which satisfies r1′+⋯+rj′≤ps+qsr_{1}^{\prime}+\cdots+r_{j}^{\prime}\leq p_{s}+q_{s}, for distinct s=1,…,ns=1,\dots,n.
+Let H1,…,HnH_{1},\dots,H_{n} be a reordering of
+
+
+
+
+p1+q1,…,pn+qnp_{1}+q_{1},\dots,p_{n}+q_{n}
+
+
+such that
+
+
+
+
+H1≥⋯≥Hn.H_{1}\geq\cdots\geq H_{n}.
+
+
+We have
+
+
+
+(17)
+
+dH1dmax⁡{H2,[H12]}⋯dmax⁡{Hm,[H1m]}𝐓m(ℒn(p1,q1;…;pn,qn;z))∈ℤ[z]d_{H_{1}}d_{\max\{H_{2},[\frac{H_{1}}{2}]\}}\cdots d_{\max\{H_{m},[\frac{H_{1}}{m}]\}}{\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)\in\mathbb{Z}[z]
+
+
+because the product r1′⋯rj′r_{1}^{\prime}\cdots r_{j}^{\prime}
+divides the product dp+q⋯d[p+qj]d_{p+q}\cdots d_{[\frac{p+q}{j}]}
+whenever r1′+⋯+rj′≤p+qr_{1}^{\prime}+\cdots+r_{j}^{\prime}\leq p+q.
+
+
+In addition, if p1≤p2≤⋯≤pmp_{1}\leq p_{2}\leq\cdots\leq p_{m} and q1≤q2≤⋯≤qmq_{1}\leq q_{2}\leq\cdots\leq q_{m},
+by (12) and the triangle inequality
+
+
+
+
+maxz∈[0,1]⁡z−q1​(1−z)−p1​|𝐓i−1​(ℒn​(p1,q1,…,pn,qn,z))|≤Mi−1​M!(p1+q1)!⋯(pn+qn)!\max_{z\in[0,1]}z^{-q_{1}}(1-z)^{-p_{1}}|{\bf T}^{i-1}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)|\leq M^{i-1}\,\frac{M!}{(p_{1}+q_{1})!\cdots(p_{n}+q_{n})!}
+
+
+for any i=1,…,mi=1,\dots,m. If z∈ℂ∖[0,1]z\in\mathbb{C}\setminus[0,1] then
+
+
+
+
+ℐnm​(p1,q1,…,pn,qn,z)=∑i=1mlogm−i⁡zz−1​(𝐓i−1​(ℒn​(p1,q1,…,pn,qn,z))​log⁡zz−1−𝐓i​(ℒn​(p1,q1,…,pn,qn,z)))=∑i=1mlogm−i⁡zz−1​∫01𝐓i−1​(ℒn​(p1,q1,…,pn,qn,y))z−y.{\mathcal{I}}_{n}^{m}(p_{1},q_{1};\dots;p_{n},q_{n};z)\\
+=\sum_{i=1}^{m}\log^{m-i}\frac{z}{z-1}\Big({\bf T}^{i-1}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)\log\frac{z}{z-1}-{\bf T}^{i}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};z)\big)\Big)\\
+=\sum_{i=1}^{m}\log^{m-i}\frac{z}{z-1}\int\limits_{0}^{1}\frac{{\bf T}^{i-1}\big({\mathcal{L}}_{n}(p_{1},q_{1};\dots;p_{n},q_{n};y)\big)}{z-y}.
+
+
+It follows that
+
+
+
+
+|ℐnm​(p1,q1,…,pn,qn,z)|≤C⁡(m,z)​Mm−1​M!(p1+q1)!⋯(pn+qn)!​maxy∈[0,1]​yq1​(1−y)p1,|{\mathcal{I}}_{n}^{m}(p_{1},q_{1};\dots;p_{n},q_{n};z)|\leq C(m,z)M^{m-1}\,\frac{M!}{(p_{1}+q_{1})!\cdots(p_{n}+q_{n})!}\max\limits_{y\in[0,1]}y^{q_{1}}(1-y)^{p_{1}},
+
+
+where C⁡(m,z)C(m,z) is a constant depending only on mm and zz. Since
+
+
+
+
+maxy∈[0,1]⁡yq1​(1−y)p1=p1p1​q1q1(p1+q1)p1+q1,\max\limits_{y\in[0,1]}y^{q_{1}}(1-y)^{p_{1}}=\frac{p_{1}^{p_{1}}q_{1}^{q_{1}}}{(p_{1}+q_{1})^{p_{1}+q_{1}}},
+
+
+we obtain
+
+
+
+(18)
+
+|ℐnm​(p1,q1,…,pn,qn,z)|≤C⁡(m,z)​Mm−1​M!(p1+q1)!⋯(pn+qn)!​p1p1​q1q1(p1+q1)p1+q1,|{\mathcal{I}}_{n}^{m}(p_{1},q_{1};\dots;p_{n},q_{n};z)|\leq C(m,z)M^{m-1}\,\frac{M!}{(p_{1}+q_{1})!\cdots(p_{n}+q_{n})!}\frac{p_{1}^{p_{1}}q_{1}^{q_{1}}}{(p_{1}+q_{1})^{p_{1}+q_{1}}},
+
+
+The above upper bound is far from being sharp, nevertheless it is useful in the applications of
+Pituk’s theorem in section 5.
+
+
+
+4. Linear recurrence relations
+
+
+For any p,q≥0p,q\geq 0 integers, let 𝒟p,q{\mathcal{D}}_{p,q} be the differential operator defined by
+
+
+
+
+𝒟p,q​(P⁡(z))=zq​(1−z)p​Dp+q​(zp​(1−z)q​P​(z)){\mathcal{D}}_{p,q}\big(P(z)\big)=z^{q}(1-z)^{p}D_{p+q}\big(z^{p}(1-z)^{q}P(z)\big)
+
+
+for any polynomial P⁡(z)∈ℂ⁡[z]P(z)\in\mathbb{C}[z]. For p1,p2,q1,q2≥0p_{1},p_{2},q_{1},q_{2}\geq 0 integers,
+𝒟p1,q1{\mathcal{D}}_{p_{1},q_{1}} and 𝒟p2,q2{\mathcal{D}}_{p_{2},q_{2}} commute,
+as is clear for P⁡(z)=zq3P(z)=z^{q_{3}} from the symmetry properties
+of ℒ3​(p1,q1,p2,q2,0,q3,z){\mathcal{L}}_{3}(p_{1},q_{1};p_{2},q_{2};0,q_{3};z), and hence for any P⁡(z)P(z) by linearity.
+
+
+Lemma 4.1.
+
+Let k,p,q≥0k,p,q\geq 0 be integers. Then for any P⁡(z)∈ℂ⁡[z]P(z)\in\mathbb{C}[z]
+
+
+
+(19)
+
+zk​(1−z)−k​𝒟p+k,q​(P⁡(z))=𝒟p,q+k​(zk​(1−z)−k​P​(z)).z^{k}(1-z)^{-k}{\mathcal{D}}_{p+k,q}\big(P(z)\big)={\mathcal{D}}_{p,q+k}\big(z^{k}(1-z)^{-k}P(z)\big).
+
+
+
+
+
+Proof.
+
+This is just a formal application of the definition of 𝒟p,q{\mathcal{D}}_{p,q}.
+∎
+
+
+
+Lemma 4.2.
+
+Let p,p′,q,q′p,p^{\prime},q,q^{\prime} be integers such that p≥p′≥0p\geq p^{\prime}\geq 0, q≥q′≥0q\geq q^{\prime}\geq 0.
+Then for any polynomial P⁡(z)∈ℚ⁡[z]P(z)\in\mathbb{Q}[z] there exists a polynomial R⁡(z)∈ℚ⁡[z]R(z)\in\mathbb{Q}[z] such that
+
+
+
+(20)
+
+𝒟p,q​(P⁡(z))=𝒟p′,q′​(R⁡(z)).{\mathcal{D}}_{p,q}\big(P(z)\big)={\mathcal{D}}_{p^{\prime},q^{\prime}}\big(R(z)\big).
+
+
+
+
+
+Proof.
+
+This plainly follows from (8).
+∎
+
+
+
+Now we are ready to prove the following
+
+
+Theorem 4.1.
+
+Let p1,…,pn;q1,…,qnp_{1},\dots,p_{n};q_{1},\dots,q_{n} be integers such that
+p1,…,pn>0p_{1},\dots,p_{n}>0 and q1,…,qn≥0q_{1},\dots,q_{n}\geq 0. Then there exist
+n+1n+1 polynomials G0​(t,z),…,Gn​(t,z)∈ℤ⁡[t,z]G_{0}(t,z),\dots,G_{n}(t,z)\in\mathbb{Z}[t,z] such that
+
+
+
+(21)
+
+(G0​(t,ζ),…,Gn​(t,ζ))∈(ℂ⁡[t])n+1∖{(0,…,0)} for any ​ζ∈ℂ\big(G_{0}(t,\zeta),\dots,G_{n}(t,\zeta)\big)\in\big(\mathbb{C}[t]\big)^{n+1}\setminus\{(0,\dots,0)\}\quad\text{ for any }\zeta\in\mathbb{C}
+
+
+and
+
+
+
+(22)
+
+∑l=0nGl​(t,z)​ℒn​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),z)=0.\sum_{l=0}^{n}G_{l}(t,z){\mathcal{L}}_{n}\big(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);z\big)=0.
+
+
+Furthermore, if n≥2n\geq 2 and if
+
+
+
+(23)
+
+p1≤p2≤⋯≤pm+1​ and ​q1≤q2≤⋯≤qm+1,p_{1}\leq p_{2}\leq\cdots\leq p_{m+1}\text{ and }q_{1}\leq q_{2}\leq\cdots\leq q_{m+1},
+
+
+where 1≤m<n1\leq m<n, then
+
+
+
+(24)
+
+∑l=0nGl​(t,z)​𝐓m​(ℒn​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),z))=0.\sum_{l=0}^{n}G_{l}(t,z){\bf T}^{m}\Big({\mathcal{L}}_{n}\big(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);z\big)\Big)=0.
+
+
+
+
+
+Proof.
+
+Let
+
+
+
+
+ℋt(z):=ℒn(p1t,q1t;…;pnt,qnt;z)=𝒟p1​t,q1​t∘⋯∘𝒟pn​t,qn​t(1).{\mathcal{H}}_{t}(z):={\mathcal{L}}_{n}\big(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;z\big)={\mathcal{D}}_{p_{1}t,q_{1}t}\circ\cdots\circ{\mathcal{D}}_{p_{n}t,q_{n}t}(1).
+
+
+We claim that for any mm independent of tt the coefficient of zM​t−mz^{Mt-m} in
+ℋt​(z){\mathcal{H}}_{t}(z) is
+
+
+
+
+(M​t)!((p1+q1)t)!⋯((pn+qn)t)!​R​(t),\frac{(Mt)!}{\big((p_{1}+q_{1})t\big)!\cdots\big((p_{n}+q_{n})t\big)!}\,R(t),
+
+
+where R⁡(t)R(t) is a rational function in ℚ⁡(t)\mathbb{Q}(t). Indeed, by (7),
+(9) and (11), and using the bijection P↦QP\mapsto Q
+described in section 3, this follows from the fact that for any m′=0,…,mm^{\prime}=0,\dots,m
+the coefficient of kM​t−m′k^{Mt-m^{\prime}} in
+
+
+
+
+(k+p1​t(p1+q1)​t)⋯(k+pn​t(pn+qn)​t)((p1+q1)t)!⋯((pn+qn)t)!\binom{k+p_{1}t}{(p_{1}+q_{1})t}\cdots\binom{k+p_{n}t}{(p_{n}+q_{n})t}\big((p_{1}+q_{1})t\big)!\cdots\big((p_{n}+q_{n})t\big)!
+
+
+is a polynomial in tt, and the coefficient of kM​t−m′k^{Mt-m^{\prime}} in
+
+
+
+
+(k+M​t−m′M​t−m′)⁡(M​t)!\binom{k+Mt-m^{\prime}}{Mt-m^{\prime}}(Mt)!
+
+
+is a rational function in tt.
+
+
+Let LL and t0t_{0} be integers satisfying
+
+
+
+(25)
+
+L>M​n​(n−1)2−nL>\frac{Mn(n-1)}{2}-n
+
+
+and
+
+
+
+(26)
+
+t0>L+M​nmin⁡{p1,…,pn}.t_{0}>\frac{L+Mn}{\min\{p_{1},\dots,p_{n}\}}.
+
+
+Let A0​(z),…,An​(z)∈ℤ⁡[z]A_{0}(z),\dots,A_{n}(z)\in\mathbb{Z}[z] satisfy deg⁡Al​(z)≤L+M⁡(n−l)(l=0,…,n)\deg A_{l}(z)\leq L+M(n-l)\quad(l=0,\dots,n).
+Then for any integer t≥0t\geq 0 the degree of the polynomial Al​(z)​ℋt+l​(z)A_{l}(z){\mathcal{H}}_{t+l}(z)
+does not exceed L+M⁡(t+n)L+M(t+n) (l=0,…,n)(l=0,\dots,n). By solving in ℚ⁡(t)\mathbb{Q}(t) a system of
+homogeneous linear equations we can find A0​(z)=G0​(t,z),…,An​(z)=Gn​(t,z)∈ℤ⁡[t,z]A_{0}(z)=G_{0}(t;z),\dots,A_{n}(z)=G_{n}(t;z)\in\mathbb{Z}[t,z]
+not all zero such that for any integer t≥0t\geq 0 the polynomial
+
+
+
+(27)
+
+G0​(t,z)​ℋt​(z)+G1​(t,z)​ℋt+1​(z)+⋯+Gn​(t,z)​ℋt+n​(z)G_{0}(t;z){\mathcal{H}}_{t}(z)+G_{1}(t;z){\mathcal{H}}_{t+1}(z)+\cdots+G_{n}(t;z){\mathcal{H}}_{t+n}(z)
+
+
+has degree not exceeding
+
+
+
+(28)
+
+L+M⁡(t+n)−∑l=0n(L+M​l+1)+1L+M(t+n)-\sum_{l=0}^{n}(L+Ml+1)+1
+
+
+(by agreement the degree of 00 is −∞-\infty).
+Since maxl=0,…,n⁡degz​Fl​(t,z)≤L+M​n\max\limits_{l=0,\dots,n}\deg_{z}F_{l}(t,z)\leq L+Mn, and using the binomial
+theorem in the form
+
+
+
+(29)
+
+zA=∑j=AB(B−Aj−A)​zj​(1−z)B−j,0≤A≤B,z^{A}=\sum_{j=A}^{B}\binom{B-A}{j-A}z^{j}(1-z)^{B-j},\quad 0\leq A\leq B,
+
+
+there exist αj,l​(t)∈ℤ​[t]\alpha_{j,l}(t)\in\mathbb{Z}[t] (OPENl=0,…,n;j=0,…,L+M​n)l=0,\dots,n;j=0,\dots,L+Mn) such that
+
+
+
+
+Gl​(t,z)=∑j=0L+M​nαj,l​(t)​zj​(1−z)L+M​n−j(l=0,…,n).G_{l}(t,z)=\sum_{j=0}^{L+Mn}\ \alpha_{j,l}(t)z^{j}(1-z)^{L+Mn-j}\quad(l=0,\dots,n).
+
+
+For any t≥t0t\geq t_{0}, with t0t_{0} as in (26), by nn applications of (19)
+
+
+
+
+zj(1−z)−jℋt+l(z)=𝒟p1​(t+l)−j,q1​(t+l)+j∘⋯∘𝒟pn​(t+l)−j,qn​(t+l)+j(zj(1−z)−j).z^{j}(1-z)^{-j}{\mathcal{H}}_{t+l}(z)={\mathcal{D}}_{p_{1}(t+l)-j,q_{1}(t+l)+j}\circ\cdots\circ{\mathcal{D}}_{p_{n}(t+l)-j,q_{n}(t+l)+j}\big(z^{j}(1-z)^{-j}\big).
+
+
+We remark that
+
+
+
+
+𝒟pn​(t+l)−j,qn​(t+l)+j​(zj​(1−z)−j)=(−1)j​𝒟pn​(t+l)−j,qn​(t+l)+j​(1).{\mathcal{D}}_{p_{n}(t+l)-j,q_{n}(t+l)+j}\big(z^{j}(1-z)^{-j}\big)=(-1)^{j}{\mathcal{D}}_{p_{n}(t+l)-j,q_{n}(t+l)+j}\big(1\big).
+
+
+By repeated applications of (20),
+for any t≥t0t\geq t_{0} there exists Rj,l,t​(z)∈ℚ​[z]R_{j,l,t}(z)\in\mathbb{Q}[z] such that
+
+
+
+
+𝒟p1​(t+l)−j,q1​(t+l)+j∘⋯∘𝒟pn​(t+l)−j,qn​(t+l)+j(1)=𝒟p1​t−L−M​n,q1​t∘⋯∘𝒟pn​t−L−M​n,qn​t(Rj,l,t(z)).{\mathcal{D}}_{p_{1}(t+l)-j,q_{1}(t+l)+j}\circ\cdots\circ{\mathcal{D}}_{p_{n}(t+l)-j,q_{n}(t+l)+j}(1)={\mathcal{D}}_{p_{1}t-L-Mn,q_{1}t}\circ\cdots\circ{\mathcal{D}}_{p_{n}t-L-Mn,q_{n}t}\big(R_{j,l,t}(z)\big).
+
+
+It follows that the sum in (27) equals
+
+
+
+(30)
+
+(1−z)L+M​n𝒟p1​t−L−M​n,q1​t∘⋯∘𝒟pn​t−L−M​n,qn​t(Nt(z)),(1-z)^{L+Mn}{\mathcal{D}}_{p_{1}t-L-Mn,q_{1}t}\circ\cdots\circ{\mathcal{D}}_{p_{n}t-L-Mn,q_{n}t}\big(N_{t}(z)\big),
+
+
+with
+
+
+
+
+Nt​(z)=∑l=0n∑j=0L+M​n(−1)j​αj,l​(t)​Rj,l,t​(z).N_{t}(z)=\sum_{l=0}^{n}\sum_{j=0}^{L+Mn}\ (-1)^{j}\alpha_{j,l}(t)R_{j,l,t}(z).
+
+
+If (27) (i.e. (30)) was non-zero, then Nt​(z)N_{t}(z) would be also
+non-zero, whence the degree of the polynomial (30) would be not
+exceeding (28) but at least
+
+
+
+(31)
+
+L+M​n+∑l=1n(pl​t+ql​t−L−M​n).L+Mn+\sum_{l=1}^{n}(p_{l}t+q_{l}t-L-Mn).
+
+
+This is impossible, because by (25) the integer (28) is strictly lower
+than (31) for any tt. Hence (27) vanishes at least for any t≥t0t\geq t_{0}.
+For m=0,…,m0=L+M⁡(t0+n)m=0,\dots,m_{0}=L+M(t_{0}+n) the coefficient of zL+M⁡(t+n)−mz^{L+M(t+n)-m}
+in (27) is a rational function in ℚ⁡(t)\mathbb{Q}(t), vanishing at infinitely many tt’s,
+therefore it vanishes identically. It follows that (27) vanishes for any t≥0t\geq 0.
+
+
+If
+G0​(t,ζ),…,Gn​(t,ζ)G_{0}(t,\zeta),\dots,G_{n}(t,\zeta) are all zero for some ζ∈ℂ\zeta\in\mathbb{C}, putting
+
+
+
+
+G^0​(t,z)=G0​(t,z)z−ζ,…,G^n​(t,z)=Gn​(t,z)z−ζ,\hat{G}_{0}(t,z)=\frac{G_{0}(t,z)}{z-\zeta},\dots,\hat{G}_{n}(t,z)=\frac{G_{n}(t,z)}{z-\zeta},
+
+
+we have that G^0​(t,z),…,G^n​(t,z)\hat{G}_{0}(t,z),\dots,\hat{G}_{n}(t,z) are not all zero, and
+
+
+
+
+∑l=0nG^l​(t,z)​ℒn​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),z)=0.\sum_{l=0}^{n}\hat{G}_{l}(t,z){\mathcal{L}}_{n}\big(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);z\big)=0.
+
+
+By repeating this argument finitely many times we eventually find n+1n+1
+polynomials G0​(t,z)G_{0}(t,z), …,Gn​(t,z)\dots,G_{n}(t,z) satisfying (21)
+and (22).
+
+
+The equality (22) is plainly equivalent to
+
+
+
+
+∑l=0nGl​(t,z)​zq1​l​(1−z)p1​l​ℒn∗​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),z)=0,\sum_{l=0}^{n}G_{l}(t,z)z^{q_{1}l}(1-z)^{p_{1}l}{\mathcal{L}}_{n}^{*}\big(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);z\big)=0,
+
+
+which implies
+
+
+
+
+∑l=0n𝐓m​(Gl​(t,z)​zq1​l​(1−z)p1​l​ℒn∗​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),z))=0,\sum_{l=0}^{n}{\bf T}^{m}\Big(G_{l}(t,z)z^{q_{1}l}(1-z)^{p_{1}l}{\mathcal{L}}_{n}^{*}\big(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);z\big)\Big)=0,
+
+
+by linearity. If (23) holds, then by (16)
+
+
+
+
+∑l=0nGl​(t,z)​zq1​l​(1−z)p1​l​𝐓m​(ℒn∗​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),z))=0\sum_{l=0}^{n}G_{l}(t,z)z^{q_{1}l}(1-z)^{p_{1}l}{\bf T}^{m}\Big({\mathcal{L}}_{n}^{*}\big(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);z\big)\Big)=0
+
+
+for any (sufficiently large) tt. Again by (16) we get (24).
+∎
+
+
+
+Remark 4.1.
+
+There is no essential restriction in supposing that p1,…,pnp_{1},\dots,p_{n}
+are strictly positive. Indeed, since ℒ1​(0,0,z)=1{\mathcal{L}}_{1}(0,0;z)=1 and
+
+
+
+
+ℒ2​(0,q,p,0,z)=(p+qp)​ℒ1​(p,q,z),{\mathcal{L}}_{2}(0,q;p,0;z)=\binom{p+q}{p}{\mathcal{L}}_{1}(p,q;z),
+
+
+by Theorem 2.1 one may suppose pj+ql>0p_{j}+q_{l}>0 for j,l=1,…,nj,l=1,\dots,n,
+i.e. either p1,…,pn>0p_{1},\dots,p_{n}>0 or q1,…,qn>0q_{1},\dots,q_{n}>0. By (10),
+up to changing zz into 1−z1-z one may suppose p1,…,pn>0p_{1},\dots,p_{n}>0.
+
+
+Moreover, if (23) holds, then by (4), (22)
+and (24) we also have
+
+
+
+(32)
+
+∑l=0nGl​(t,z)​ℐnm​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),z)=0.\sum_{l=0}^{n}G_{l}(t,z){\mathcal{I}}_{n}^{m}\big(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);z\big)=0.
+
+
+
+
+
+
+5. Roots of the characteristic polynomial
+
+
+We now prove that (22) is a Poincaré recurrence, and find its characteristic
+equation. Let G0​(t,z),…,Gn​(t,z)G_{0}(t,z),\dots,G_{n}(t,z) be polynomials in ℤ⁡[t,z]\mathbb{Z}[t,z] satisfying (21)
+and (22). For ζ∈ℂ\zeta\in\mathbb{C} the degree of Gi​(t,ζ)G_{i}(t,\zeta) with respect to tt may
+depend on ζ\zeta. Let
+
+
+
+
+δζ=max⁡{degt⁡G0​(t,ζ),…,degt⁡Gn​(t,ζ)}.\delta_{\zeta}=\max\{\deg_{t}G_{0}(t,\zeta),\dots,\deg_{t}G_{n}(t,\zeta)\}.
+
+
+By (21) δζ≥0\delta_{\zeta}\geq 0 (let us recall that the degree of 00 is −∞-\infty).
+Let
+
+
+
+(33)
+
+gl​(ζ)=limt→∞Gl​(t,ζ)tδζ(l=0,…,n).g_{l}(\zeta)=\lim_{t\to\infty}\frac{G_{l}(t,\zeta)}{t^{\delta_{\zeta}}}\quad(l=0,\dots,n).
+
+
+Then δζ=degt⁡Gl​(t,ζ)\delta_{\zeta}=\deg_{t}G_{l}(t,\zeta) and gl​(ζ)≠0g_{l}(\zeta)\not=0 for some l=0,…,nl=0,\dots,n.
+
+
+Theorem 5.1.
+
+Let p1,…,pn>0p_{1},\dots,p_{n}>0 and q1,…,qn≥0q_{1},\dots,q_{n}\geq 0 be integers. Let v,y∈ℂv,y\in\mathbb{C}
+and ζ∈ℂ∖{0,1}\zeta\in\mathbb{C}\setminus\{0,1\} such that
+
+
+
+
+ζ​∏j=1n(y+pj)=(ζ−1)​∏j=1n(y−qj)≠0 and v=∏j=1n(y−qj)qj​(y+pj)pj(pj+qj)pj+qj,\zeta\prod_{j=1}^{n}(y+p_{j})=(\zeta-1)\prod_{j=1}^{n}(y-q_{j})\not=0\quad\text{ and }\quad v=\prod_{j=1}^{n}\frac{(y-q_{j})^{q_{j}}(y+p_{j})^{p_{j}}}{(p_{j}+q_{j})^{p_{j}+q_{j}}},
+
+
+and let g0​(ζ),g1​(ζ),…,gn​(ζ)g_{0}(\zeta),g_{1}(\zeta),\dots,g_{n}(\zeta) be as in (33).
+
+
+Then
+
+
+
+(34)
+
+gn​(ζ)​vn+gn−1​(ζ)​vn−1+⋯+g0​(ζ)=0.g_{n}(\zeta)v^{n}+g_{n-1}(\zeta)v^{n-1}+\cdots+g_{0}(\zeta)=0.
+
+
+
+
+
+Proof.
+
+By (29) we have
+
+
+
+
+Gl(t,z)=∑r=0sβl,r(t)zr(1−z)s−r,l=0,…,n,G_{l}(t,z)=\sum_{r=0}^{s}\beta_{l,r}(t)z^{r}(1-z)^{s-r},\quad l=0,\dots,n,
+
+
+for suitable βl,r​(t)∈ℤ​[t]\beta_{l,r}(t)\in\mathbb{Z}[t]. We put
+
+
+
+
+Gl∗(t,w):=∑r=0s(−1)s−rβl,r(t)wr,l=0,…,n.G_{l}^{*}(t,w):=\sum_{r=0}^{s}(-1)^{s-r}\beta_{l,r}(t)w^{r},\quad l=0,\dots,n.
+
+
+For any z,w∈ℂz,w\in\mathbb{C} with (1−z)​(1−w)=1(1-z)(1-w)=1 we have Gl​(t,z)=(1−z)s​Gl∗​(t,w)G_{l}(t,z)=(1-z)^{s}G_{l}^{*}(t,w).
+Also, if ℜ⁡z<12\Re z<\frac{1}{2} (or equivalently |w|<1|w|<1),
+by (9), (7) and (22)
+
+
+
+(35)
+
+∑l=0nGl∗​(t,w)​∑k≥q¯​(t+l)wk​∏j=1n(k+pj​(t+l)(pj+qj)​(t+l))=0.\sum_{l=0}^{n}G_{l}^{*}(t,w)\sum_{k\geq\overline{q}(t+l)}w^{k}\prod_{j=1}^{n}\binom{k+p_{j}(t+l)}{(p_{j}+q_{j})(t+l)}=0.
+
+
+Thus the coefficients of all powers of ww in (35) vanish, i.e.
+
+
+
+
+∑l=0n∑r=0sβl,r∗​(t)​∏j=1n(k−r+pj​(t+l)(pj+qj)​(t+l))=0\sum_{l=0}^{n}\sum_{r=0}^{s}\beta_{l,r}^{*}(t)\prod_{j=1}^{n}\binom{k-r+p_{j}(t+l)}{(p_{j}+q_{j})(t+l)}=0
+
+
+for all integers k≥0k\geq 0 and t≥0t\geq 0,
+with βl,r∗​(t)=(−1)s−r​βl,r​(t)\beta_{l,r}^{*}(t)=(-1)^{s-r}\beta_{l,r}(t). For convenience
+we change kk into k+sk+s, and interchange rr and s−rs-r, so that
+
+
+
+(36)
+
+∑l=0n∑r=0sβl,s−r∗​(t)​∏j=1n(k+r+pj​(t+l)(pj+qj)​(t+l))=0.\sum_{l=0}^{n}\sum_{r=0}^{s}\beta_{l,s-r}^{*}(t)\prod_{j=1}^{n}\binom{k+r+p_{j}(t+l)}{(p_{j}+q_{j})(t+l)}=0.
+
+
+For any fixed t≥0t\geq 0, the sum in (36) is a polynomial in kk
+having infinitely many roots, and therefore it must be identically zero. It follows
+that (36) holds for any k∈ℂk\in\mathbb{C} and any integer t≥0t\geq 0. In addition,
+
+
+
+
+(k+r+p⁡(t+l)(p+q)​(t+l))=(k+p​t(p+q)​t)​(k−q⁡(t+l)+1)q​l​(k+p​t+1)r+p​l(k−q⁡(t+i)+1)r​((p+q)​t+1)(p+q)​i.\binom{k+r+p(t+l)}{(p+q)(t+l)}=\binom{k+pt}{(p+q)t}\frac{(k-q(t+l)+1)_{ql}(k+pt+1)_{r+pl}}{(k-q(t+i)+1)_{r}((p+q)t+1)_{(p+q)i}}.
+
+
+As usual, the Pochhammer symbol is defined by (ξ)0=1(\xi)_{0}=1 and
+(ξ)m=ξ(ξ+1)⋯(ξ+m−1)(\xi)_{m}=\xi(\xi+1)\cdots(\xi+m-1) for any integer m>0m>0. From (36)
+we also have
+
+
+
+
+∑l=0n∑r=0sβl,s−r∗​(t)​∏j=1n(k−qj​(t+l)+1)qj​l​(k+pj​t+1)r+pj​l(k−qj​(t+l)+1)r​((pj+qj)​t+1)(pj+qj)​l=0\sum_{l=0}^{n}\sum_{r=0}^{s}\beta_{l,s-r}^{*}(t)\prod_{j=1}^{n}\frac{(k-q_{j}(t+l)+1)_{q_{j}l}(k+p_{j}t+1)_{r+p_{j}l}}{(k-q_{j}(t+l)+1)_{r}((p_{j}+q_{j})t+1)_{(p_{j}+q_{j})l}}=0
+
+
+for any k∈ℂk\in\mathbb{C}, provided that (k−qj​t+1)s−qj​l(k-q_{j}t+1)_{s-q_{j}l} is non-zero for j,l=0,…,nj,l=0,\dots,n.
+Taking k=y​tk=yt, this implies
+
+
+
+
+∑l=0n∑r=0sβl,s−r∗​(t)​∏j=1n((y−qj)​t−qj​l+1)qj​l​((y+pj)​t+1)r+pj​l((y−qj)​t−qj​l+1)r​((pj+qj)​t+1)(pj+qj)​l=0\sum_{l=0}^{n}\sum_{r=0}^{s}\beta_{l,s-r}^{*}(t)\prod_{j=1}^{n}\frac{((y-q_{j})t-q_{j}l+1)_{q_{j}l}((y+p_{j})t+1)_{r+p_{j}l}}{((y-q_{j})t-q_{j}l+1)_{r}((p_{j}+q_{j})t+1)_{(p_{j}+q_{j})l}}=0
+
+
+for any t∈ℂt\in\mathbb{C}, provided that ((y−qj)​t+1)s−qj​l((y-q_{j})t+1)_{s-q_{j}l} is non-zero for j,l=0,…,nj,l=0,\dots,n.
+On multiplying by t−δζt^{-\delta_{\zeta}} and making |t|→∞|t|\to\infty
+
+
+
+
+∑l=0n∑r=0sβl,s−r∗⁣∗​∏j=1n(y−qj)qj​l−r​(y+pj)r+pj​l(pj+qj)(pj+qj)​l=0,\sum_{l=0}^{n}\sum_{r=0}^{s}\beta_{l,s-r}^{**}\prod_{j=1}^{n}\frac{(y-q_{j})^{q_{j}l-r}(y+p_{j})^{r+p_{j}l}}{(p_{j}+q_{j})^{(p_{j}+q_{j})l}}=0,
+
+
+where βl,s−r∗⁣∗=[tδζ]​βl,s−r∗​(t)\beta_{l,s-r}^{**}=[t^{\delta_{\zeta}}]\beta_{l,s-r}^{*}(t) is the coefficient
+of tδζt^{\delta_{\zeta}} in βl,s−r∗​(t)\beta_{l,s-r}^{*}(t). This is just the same as
+
+
+
+
+∑l=0n∑r=0sβl,r∗⁣∗​ξr​vl=0,\sum_{l=0}^{n}\sum_{r=0}^{s}\beta_{l,r}^{**}\xi^{r}v^{l}=0,
+
+
+where ξ=ζ/(ζ−1)\xi=\zeta/(\zeta-1). We conclude the proof by noticing that
+
+
+
+
+gl​(ζ)=∑r=0sβl,r∗⁣∗​ζr​(ζ−1)s−rg_{l}(\zeta)=\sum_{r=0}^{s}\beta_{l,r}^{**}\zeta^{r}(\zeta-1)^{s-r}
+
+
+because βl,r∗⁣∗=(−1)s−r​limt→∞t−δζ​βl,r​(t)\beta_{l,r}^{**}=(-1)^{s-r}\lim_{t\to\infty}t^{-\delta_{\zeta}}\beta_{l,r}(t).
+∎
+
+
+
+Before discussing the applications of the above theorems,
+let us state some open questions. The generating function
+
+
+
+
+Φ1​(p,q,v,w)=∑t=0∞𝒮1​(p​t,q​t,w)​vt=(1−w)p+q−1(1−w)p+q−v​wq\Phi_{1}(p,q;v,w)=\sum_{t=0}^{\infty}{\mathcal{S}}_{1}(pt,qt;w)v^{t}=\frac{(1-w)^{p+q-1}}{(1-w)^{p+q}-vw^{q}}
+
+
+satisfies the differential equations
+
+
+
+
+∂∂v​Φ1​(p,q,v,w)Φ1​(p,q,v,w)=∂∂v​log⁡Φ1​(p,q,v,w)=wq(1−w)p+q−v​wq\frac{\frac{\partial}{\partial v}\Phi_{1}(p,q;v,w)}{\Phi_{1}(p,q;v,w)}=\frac{\partial}{\partial v}\log\Phi_{1}(p,q;v,w)=\frac{w^{q}}{(1-w)^{p+q}-vw^{q}}
+
+
+and
+
+
+
+
+∂∂w​Φ1​(p,q,v,w)Φ1​(p,q,v,w)=−p+q−11−w+(p+q)​(1−w)p+q−1−q​v​wq−1(1−w)p+q−v​wq.\frac{\frac{\partial}{\partial w}\Phi_{1}(p,q;v,w)}{\Phi_{1}(p,q;v,w)}=-\frac{p+q-1}{1-w}+\frac{(p+q)(1-w)^{p+q-1}-qvw^{q-1}}{(1-w)^{p+q}-vw^{q}}.
+
+
+Hence by a theorem of Lipshitz (see Remark (2) on page 377 in [10])
+for any positive integer nn the series
+
+
+
+
+Φn(p1,q1;…;pn,qn;v,w):=∑t=0∞∑k=0∞(k+p1​t(p1+q1)​t)⋯(k+pn​t(pn+qn)​t)vtwk\Phi_{n}(p_{1},q_{1};\dots;p_{n},q_{n};v,w):=\sum_{t=0}^{\infty}\sum_{k=0}^{\infty}\binom{k+p_{1}t}{(p_{1}+q_{1})t}\cdots\binom{k+p_{n}t}{(p_{n}+q_{n})t}v^{t}\,w^{k}\\
+
+
+
+satisfies a linear differential equation, with polynomial coefficients, containing only
+powers of ∂∂v\frac{\partial}{\partial v} (and another one containing only powers of
+∂∂w\frac{\partial}{\partial w}, but we do not need the last one). Equivalently, the
+series 𝒮n​(p1​t,q1​t,…,pn​t,qn​t,w){\mathcal{S}}_{n}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;w) satisfies a linear recurrence
+relation with coefficients in ℤ⁡[t,w]\mathbb{Z}[t,w]. However, it is unclear to us whether the order
+of the recurrence obtained by this method would be nn or larger (see Corollary 4.4
+below for the minimality of the order of the recurrence (22).
+Moreover, by a theorem of Sharif and Woodcock [17] the series
+Φ2​(p1,q1,p2,q2,v,w)\Phi_{2}(p_{1},q_{1};p_{2},q_{2};v,w) is algebraic, and we know its explicit formula in
+the classical case p1=p2=1p_{1}=p_{2}=1 and q1=q2=0q_{1}=q_{2}=0:
+
+
+
+
+Φ2​(1,0,1,0,v,w)=∑t=0∞∑k=0∞(k+tt)2​vt​wk=1(1−v−w)2−4​v​w\Phi_{2}(1,0;1,0;v,w)=\sum_{t=0}^{\infty}\sum_{k=0}^{\infty}\binom{k+t}{t}^{2}v^{t}\,w^{k}=\frac{1}{\sqrt{(1-v-w)^{2}-4vw}}\\
+
+
+
+(see e.g. Remark 5.2 on page 527 in [17]). It would be interesting to
+obtain a general expression for Φ2​(p1,q1,p2,q2,v,w)\Phi_{2}(p_{1},q_{1};p_{2},q_{2};v,w) and to establish whether
+Φn​(p1,q1,…,pn,qn,v,w)\Phi_{n}(p_{1},q_{1};\dots;p_{n},q_{n};v,w) is algebraic or not, for n≥3n\geq 3 (here we assume
+that the ground field has characteristic zero). Finally, it would be interesting to find an
+explicit version of (36), beyond the special case n=2n=2, p1=p2=1p_{1}=p_{2}=1
+and q1=q2=0q_{1}=q_{2}=0 considered above, and here it is perhaps useful to remark that
+
+
+
+
+(Φ2​(1,0,1,0,v2,w2))2=Φ1​(1,0,v,w)​Φ1​(1,0,v,−w)​Φ1​(1,0,−v,w)​Φ1​(1,0,−v,−w).\big(\Phi_{2}(1,0;1,0;v^{2},w^{2})\big)^{2}=\Phi_{1}(1,0;v,w)\,\Phi_{1}(1,0;v,-w)\,\Phi_{1}(1,0;-v,w)\,\Phi_{1}(1,0;-v,-w).
+
+
+
+
+We shall apply a theorem of Pituk (see (2.1) and (3.32) in [14]):
+
+
+Theorem 5.2 (Pituk).
+
+Let n≥1n\geq 1 be a integers, and let f,A1,…,An:ℕ→ℂf,A_{1},\dots,A_{n}:\mathbb{N}\to\mathbb{C} be
+sequences of complex numbers such that for any sufficiently large tt
+
+
+
+
+f⁡(t+n)+A1​(t)​f​(t+n−1)+⋯+An​(t)​f​(t)=0,f(t+n)+A_{1}(t)f(t+n-1)+\cdots+A_{n}(t)f(t)=0,
+
+
+and
+
+
+
+
+limt→∞Al​(t)=al∈ℂ(l=1,…,n).\lim_{t\to\infty}A_{l}(t)=a_{l}\in\mathbb{C}\quad(l=1,\dots,n).
+
+
+Then either f⁡(t)=0f(t)=0 for any sufficiently large tt, or
+
+
+
+(37)
+
+limt→∞max⁡{|f⁡(t)|,…,|f⁡(t+n−1)|}t=|λ|,\lim_{t\to\infty}\sqrt[t]{\max\{|f(t)|,\dots,|f(t+n-1)|\}}=|\lambda|,
+
+
+where λ∈ℂ\lambda\in\mathbb{C} satisfies
+
+
+
+
+λn+a1​λn−1+⋯+an=0.\lambda^{n}+a_{1}\lambda^{n-1}+\cdots+a_{n}=0.
+
+
+
+
+
+We get the following
+
+
+Corollary 5.1.
+
+Let p1,…,pn>0p_{1},\dots,p_{n}>0 and q1,…,qn≥0q_{1},\dots,q_{n}\geq 0 be integers, and
+let ζ∈ℂ∖[0,1]\zeta\in\mathbb{C}\setminus[0,1]. Let y1,…,yny_{1},\dots,y_{n} be the roots of
+
+
+
+(38)
+
+ζ​∏j=1n(y+pj)=(ζ−1)​∏j=1n(y−qj).\zeta\prod_{j=1}^{n}(y+p_{j})=(\zeta-1)\prod_{j=1}^{n}(y-q_{j}).
+
+
+If
+
+
+
+(39)
+
+vh=∏j=1n(yh−qj)qj​(yh+pj)pj(pj+qj)pj+qjv_{h}=\prod_{j=1}^{n}\frac{(y_{h}-q_{j})^{q_{j}}(y_{h}+p_{j})^{p_{j}}}{(p_{j}+q_{j})^{p_{j}+q_{j}}}
+
+
+are all distinct for h=1,…,nh=1,\dots,n, then the recurrence (22) has minimal order, and
+
+
+
+(40)
+
+limt→∞maxl=0,…,n−1⁡|ℒn​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),ζ)|1/t=|vh|\lim_{t\to\infty}\max_{l=0,\dots,n-1}|{\mathcal{L}}_{n}(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);\zeta)|^{1/t}=|v_{h}|
+
+
+for some h=1,…,nh=1,\dots,n.
+
+
+Furthermore, if ζ\zeta is algebraic, n≥2n\geq 2, p1≤p2≤⋯≤pm+1p_{1}\leq p_{2}\leq\cdots\leq p_{m+1}
+and q1≤q2≤⋯≤qm+1q_{1}\leq q_{2}\leq\cdots\leq q_{m+1}, where 1≤m<n1\leq m<n, then
+
+
+
+(41)
+
+limt→∞maxl=0,…,n−1⁡|ℐnm​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),ζ)|1/t=|vk|\lim_{t\to\infty}\max_{l=0,\dots,n-1}|{\mathcal{I}}_{n}^{m}(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);\zeta)|^{1/t}=|v_{k}|
+
+
+for some vkv_{k} satisfying
+
+
+
+
+|vk|≤p1p1​q1q1​MM(p1+q1)2​(p1+q1)(p2+q2)p2+q2⋯(pn+qn)pn+qn.|v_{k}|\leq\frac{p_{1}^{p_{1}}q_{1}^{q_{1}}M^{M}}{(p_{1}+q_{1})^{2(p_{1}+q_{1})}(p_{2}+q_{2})^{p_{2}+q_{2}}\cdots(p_{n}+q_{n})^{p_{n}+q_{n}}}.
+
+
+
+
+
+Proof.
+
+Let g0​(ζ),…,gn​(ζ)g_{0}(\zeta),\dots,g_{n}(\zeta) be as in (33). By (34) the non-zero polynomial
+
+
+
+
+gn​(ζ)​vn+gn−1​vn−1+⋯+g0​(ζ)∈ℂ⁡[v]g_{n}(\zeta)v^{n}+g_{n-1}v^{n-1}+\cdots+g_{0}(\zeta)\in\mathbb{C}[v]
+
+
+has the nn distinct roots v1,…,vnv_{1},\dots,v_{n} defined in (39), therefore
+it has degree nn. This proves that (22) has minimal order.
+
+
+Furthermore gn​(ζ)≠0g_{n}(\zeta)\not=0, whence Gn​(t,ζ)≠0G_{n}(t,\zeta)\not=0 for any sufficiently
+large t∈ℕt\in\mathbb{N}. Let us divide (22) by Gn​(t,ζ)G_{n}(t,\zeta). By repeated
+applications of the mean value theorem, all the roots of
+ℒn​(p1​t,q1​t,…,pn​t,qn​t,z){\mathcal{L}}_{n}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;z)
+belong to [0,1][0,1]. Since ζ∉[0,1]\zeta\notin[0,1] we may apply (37) with
+
+
+
+
+f⁡(t)=ℒn​(p1​t,q1​t,…,pn​t,qn​t,ζ)≠0,f(t)={\mathcal{L}}_{n}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;\zeta)\not=0,
+
+
+and obtain (40),
+
+
+As to (41), by Stirling’s formula
+
+
+
+
+limt→∞((M​t)!((p1+q1)t)!⋯((pn+qn)t)!)1/t=MM(p1+q1)p1+q1⋯(pn+qn)pn+qn.\lim_{t\to\infty}\left(\frac{(Mt)!}{((p_{1}+q_{1})t)!\cdots((p_{n}+q_{n})t)!}\right)^{1/t}=\frac{M^{M}}{(p_{1}+q_{1})^{p_{1}+q_{1}}\cdots(p_{n}+q_{n})^{p_{n}+q_{n}}}.
+
+
+Moreover ℐnm​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),ζ)≠0{\mathcal{I}}_{n}^{m}(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);\zeta)\not=0
+for all tt, because log⁡ζζ−1\log\frac{\zeta}{\zeta-1} is trascendental and
+ℒn​(p1​(t+l),q1​(t+l),…,pn​(t+l),qn​(t+l),ζ){\mathcal{L}}_{n}(p_{1}(t+l),q_{1}(t+l);\dots;p_{n}(t+l),q_{n}(t+l);\zeta) is non-zero. As above
+we may divide (32) by Gn​(t,ζ)G_{n}(t,\zeta) and apply (37) with
+
+
+
+
+f⁡(t)=ℐnm​(p1​t,q1​t,…,pn​t,qn​t,ζ)≠0.f(t)={\mathcal{I}}_{n}^{m}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;\zeta)\not=0.
+
+
+By (18) we get (41).
+∎
+
+
+
+
+6. Arithmetical properties
+
+
+Let K1,…,Kn2K_{1},\dots,K_{n^{2}} be a reordering of
+
+
+
+
+p1+q1,…,p1+qn,…,pn+q1,…,pn+qnp_{1}+q_{1},\dots,p_{1}+q_{n},\dots,p_{n}+q_{1},\dots,p_{n}+q_{n}
+
+
+such that
+
+
+
+
+K1≥⋯≥Kn2.K_{1}\geq\cdots\geq K_{n^{2}}.
+
+
+Let N1,…,NnN_{1},\dots,N_{n} be defined by
+
+
+
+
+N1=K1,,N2=max{K2,K12},…,Nn=max{Kn,K1n}.N_{1}=K_{1},\quad,N_{2}=\max\bigg\{K_{2},\frac{K_{1}}{2}\bigg\},\dots,N_{n}=\max\bigg\{K_{n},\frac{K_{1}}{n}\bigg\}.
+
+
+For any prime number s≥2s\geq 2 and any positive integer mm we shall
+denote by νs​(m)\nu_{s}(m) the largest power aa such that sas^{a} divides mm.
+
+
+For any real number xx we shall denote by [x][x] the largest
+integer mm satisfying m≤xm\leq x. Let also {x}=x−[x]\{x\}=x-[x].
+
+
+For any σ∈𝔖n:={τ:{1,…,n}→{1,…,n}​ bijective}\sigma\in\mathfrak{S}_{n}:=\{\tau:\{1,\dots,n\}\to\{1,\dots,n\}\text{ bijective}\}
+we shall write for brevity
+
+
+
+
+qjσ:=qσ⁡(j)(j=1,…,n).q_{j}^{\sigma}:=q_{\sigma(j)}\quad(j=1,\dots,n).
+
+
+For any ω∈[0,1)\omega\in[0,1) let
+
+
+
+
+μ⁡(ω):=max⁡∑j=1nσ∈𝔖n⁡([(pj+qjσ)​ω]−[(pj+qj)​ω])≥0.\mu(\omega):=\max_{\sigma\in\mathfrak{S}_{n}}\sum_{j=1}^{n}\big([(p_{j}+q_{j}^{\sigma})\omega]-[(p_{j}+q_{j})\omega]\big)\geq 0.
+
+
+For any integer t≥0t\geq 0 and any prime number s>N1​ts>\sqrt{N_{1}t}, let
+
+
+
+
+Δt:=∏s>N1​ts​ primesμ⁡(ω)∈ℤ, where ​ω={t/s}:=t/s−[t/s].\Delta_{t}:=\prod_{\begin{subarray}{c}s>\sqrt{N_{1}t}\\
+s\text{ prime}\end{subarray}}s^{\mu(\omega)}\in\mathbb{Z},\quad\text{ where }\omega=\{t/s\}:=t/s-[t/s].
+
+
+
+
+Theorem 6.1.
+
+Let n≥2n\geq 2 be an integer, and let m∈{1,…,n−1}m\in\{1,\dots,n-1\}. With the above notation we have
+
+
+
+(42)
+
+Δt−1dN1​t⋯dNm​t𝐓m(ℒn(p1t,q1t;…;pnt,qnt;z))∈ℤ[z].\Delta_{t}^{-1}d_{N_{1}t}\cdots d_{N_{m}t}{\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;z)\big)\in\mathbb{Z}[z].
+
+
+
+
+
+Proof.
+
+For any σ∈𝔖n\sigma\in\mathfrak{S}_{n}
+
+
+
+
+𝐓m​(ℒn​(p1​t,q1​t,…,pn​t,qn​t,z))=𝐓m​(ℒn​(p1​t,q1σ​t,…,pn​t,qnσ​t,z))​∏j=1n((pj+qj)​t)!((pj+qjσ)​t)!.{\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;z)\big)={\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1}t,q_{1}^{\sigma}t;\dots;p_{n}t,q_{n}^{\sigma}t;z)\big)\prod_{j=1}^{n}\frac{\big((p_{j}+q_{j})t\big)!}{\big((p_{j}+q_{j}^{\sigma})t\big)!}.
+
+
+By (17), for any prime number s>N1​ts>\sqrt{N_{1}t} such that
+
+
+
+
+μσ​(ω)=∑j=1n([(pj+qjσ)​ω]−[(pj+qj)​ω])>0,\mu^{\sigma}(\omega)=\sum_{j=1}^{n}\big([(p_{j}+q_{j}^{\sigma})\omega]-[(p_{j}+q_{j})\omega]\big)>0,
+
+
+where ω={t/s}\omega=\{t/s\}, we have
+
+
+
+
+s−μσ​(ω)dN1​t⋯dNm​t𝐓m(ℒn(p1t,q1t;…;pnt,qnt;z))∈ℤ[z].s^{-\mu^{\sigma}(\omega)}d_{N_{1}t}\cdots d_{N_{m}t}{\bf T}^{m}\big({\mathcal{L}}_{n}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;z)\big)\in\mathbb{Z}[z].
+
+
+The Lemma follows.
+∎
+
+
+
+We notice that by the Prime Number Theorem
+
+
+
+(43)
+
+limt→∞1t​log⁡dNj​t=Nj(j=1,…,n).\lim_{t\to\infty}\frac{1}{t}\log d_{N_{j}t}=N_{j}\quad(j=1,\dots,n).
+
+
+Also, [0,1)=∪i=1m[ui,ui+1)[0,1)=\cup_{i=1}^{m}[u_{i},u_{i+1}) for some rational numbers
+0=u1<u2<⋯<um+1=10=u_{1}<u_{2}<\cdots<u_{m+1}=1 such that μ⁡(ω)\mu(\omega) is constant on each interval
+[ui,ui+1)[u_{i},u_{i+1}), and by a standard lemma (see e.g. [13, Lemma 6])
+
+
+
+(44)
+
+δ:=limt→∞1t​log⁡Δt=∑h=1mμ⁡(uh)​(ψ⁡(uh+1)−ψ⁡(uh)),\delta:=\lim_{t\to\infty}\frac{1}{t}\log\Delta_{t}=\sum_{h=1}^{m}\mu(u_{h})\big(\psi(u_{h+1})-\psi(u_{h})\big),
+
+
+where ψ⁡(x)=Γ′​(x)/Γ⁡(x)\psi(x)=\Gamma^{\prime}(x)/\Gamma(x) is the logarithmic derivative of Euler’s
+gamma function.
+
+
+
+7. The main result
+
+
+Lemma 7.1.
+
+Let h<0h<0 be an integer. Let γ1,…,γl\gamma_{1},\dots,\gamma_{l} be real numbers
+such that 1,γ1,…,γl1,\gamma_{1},\dots,\gamma_{l} are linearly independent over ℚ\mathbb{Q}.
+Let {r1,t}t∈ℕ,…,{rl,t}t∈ℕ,{st}t∈ℕ\{r_{1,t}\}_{t\in\mathbb{N}},\dots,\{r_{l,t}\}_{t\in\mathbb{N}},\{s_{t}\}_{t\in\mathbb{N}} be
+sequences of elements in ℤ+h​ℤ\mathbb{Z}+\sqrt{h}\,\mathbb{Z}, and
+let σ,τ>0\sigma,\tau>0 such that
+
+
+
+
+limt→∞1t​log⁡|st|=σ,lim supt→∞1t​log⁡|st​γj−rj,t|≤−τ⁡(j=1,…,l).\lim\limits_{t\to\infty}\frac{1}{t}\log|s_{t}|=\sigma,\qquad\limsup\limits_{t\to\infty}\frac{1}{t}\log|s_{t}\gamma_{j}-r_{j,t}|\leq-\tau\ (j=1,\dots,l).
+
+
+Then for any a1,…,al,b∈ℤa_{1},\dots,a_{l},b\in\mathbb{Z} and any ε>0\varepsilon>0
+
+
+
+
+|a1γ1+⋯+alγl−b|≫ε(max{|a1|,…,|al|})−στ−ε.|a_{1}\gamma_{1}+\cdots+a_{l}\gamma_{l}-b|\gg_{\varepsilon}(\max\{|a_{1}|,\dots,|a_{l}|\})^{-\frac{\sigma}{\tau}-\varepsilon}.
+
+
+
+
+
+Proof.
+
+We shall use the following notation:
+
+
+
+
+Λ=a1​γ1+⋯+al​γl−b,\Lambda=a_{1}\gamma_{1}+\cdots+a_{l}\gamma_{l}-b,
+
+
+
+
+
+
+εj,t=st​γj−pj,t(j=1,…,l),\varepsilon_{j,t}=s_{t}\gamma_{j}-p_{j,t}\quad(j=1,\dots,l),
+
+
+
+
+
+
+At=a1​r1,t+⋯+al​rl,t+b​st,A_{t}=a_{1}r_{1,t}+\cdots+a_{l}r_{l,t}+bs_{t},
+
+
+
+
+
+
+𝐚=(a1,…,al),‖𝐚‖=max⁡{|a1|,…,|al|}.{\bf a}=(a_{1},\dots,a_{l}),\quad\|{\bf a}\|=\max\{|a_{1}|,\dots,|a_{l}|\}.
+
+
+Throughout this proof bb is the integer closest to a1​γ1+⋯+al​γla_{1}\gamma_{1}+\cdots+a_{l}\gamma_{l}.
+Arguing by contradiction, suppose that there exists η>σ/τ\eta>\sigma/\tau such that
+|Λ|≤‖𝐚‖−η|\Lambda|\leq\|{\bf a}\|^{-\eta} for infinitely many vectors 𝐚∈ℤl{\bf a}\in\mathbb{Z}^{l}.
+
+
+For any ϱ>0\varrho>0 there exist two constants c1​(ϱ),c2​(ϱ)>0c_{1}(\varrho),c_{2}(\varrho)>0
+such that for any t≥0t\geq 0
+
+
+
+
+c1​(ϱ)​e(σ−ϱ)​t≤|st|≤c2​(ϱ)​e(σ+ϱ)​t,|εj,t|≤c2​(ϱ)​e−(τ−ϱ)​t​(j=1,…,l).c_{1}(\varrho)e^{(\sigma-\varrho)t}\leq|s_{t}|\leq c_{2}(\varrho)e^{(\sigma+\varrho)t},\qquad|\varepsilon_{j,t}|\leq c_{2}(\varrho)e^{-(\tau-\varrho)t}\ (j=1,\dots,l).
+
+
+For any 𝐚∈ℤl{\bf a}\in\mathbb{Z}^{l} satisfying |Λ|≤‖𝐚‖−η|\Lambda|\leq\|{\bf a}\|^{-\eta}, and for any
+ϱ∈(0,τ)\varrho\in(0,\tau), let t⁡(𝐚)t({\bf a}) be the smallest integer tt such that
+c2​(ϱ)​e−(τ−ϱ)​t​‖𝐚‖​l<1/2c_{2}(\varrho)e^{-(\tau-\varrho)t}\|{\bf a}\|l<1/2, i.e.
+
+
+
+
+2​l​c2​(ϱ)<e(τ−ϱ)​t​(𝐚)‖𝐚‖≤2​l​c2​(ϱ)​eτ−ϱ.2lc_{2}(\varrho)<\frac{e^{(\tau-\varrho)t({\bf a})}}{\|{\bf a}\|}\leq 2lc_{2}(\varrho)e^{\tau-\varrho}.
+
+
+In particular t⁡(𝐚)→∞t({\bf a})\to\infty for ‖𝐚‖→∞\|{\bf a}\|\to\infty. For any t≥t⁡(𝐚)t\geq t({\bf a})
+
+
+
+
+|a1​ε1,t+⋯+al​εl,t|≤l​‖𝐚‖​c2​(ϱ)​e−(τ−ϱ)​t<12.|a_{1}\varepsilon_{1,t}+\cdots+a_{l}\varepsilon_{l,t}|\leq l\|{\bf a}\|c_{2}(\varrho)e^{-(\tau-\varrho)t}<\frac{1}{2}.
+
+
+On the other hand, since σ−η​τ<0\sigma-\eta\tau<0 then (σ+ϱ)−η⁡(τ−ϱ)<0(\sigma+\varrho)-\eta(\tau-\varrho)<0
+for any sufficiently small ϱ>0\varrho>0, hence
+
+
+
+
+|st⁡(𝐚)​Λ|≤|st⁡(𝐚)|​‖𝐚‖−η≤c2​(ϱ)​e(σ+ϱ)​t​(𝐚)​(e(τ−ϱ)​(t​(𝐚)−1)2​l​c2​(ϱ))−η<12|s_{t({\bf a})}\Lambda|\leq|s_{t({\bf a})}|\|{\bf a}\|^{-\eta}\leq c_{2}(\varrho)e^{(\sigma+\varrho)t({\bf a})}\Bigg(\frac{e^{(\tau-\varrho)(t({\bf a})-1)}}{2lc_{2}(\varrho)}\Bigg)^{-\eta}<\frac{1}{2}
+
+
+for any sufficiently large ‖𝐚‖\|{\bf a}\|. Since
+
+
+
+
+st​Λ=At+a1​ε1,t+⋯+al​εl,t,s_{t}\Lambda=A_{t}+a_{1}\varepsilon_{1,t}+\cdots+a_{l}\varepsilon_{l,t},
+
+
+we have |At⁡(𝐚)|<1|A_{t(\bf a)}|<1, hence At⁡(𝐚)=0A_{t(\bf a)}=0, for infinitely many
+𝐚\bf a’s. For any fixed 𝐚\bf a we have At≠0A_{t}\not=0 for infinitely many tt,
+because εj,t/st→0\varepsilon_{j,t}/s_{t}\to 0 for t→∞t\to\infty (j=1,…,lj=1,\dots,l) and Λ≠0\Lambda\not=0.
+Hence for any 𝐚\bf a there exists t^​(𝐚)>t​(𝐚)\hat{t}({\bf a})>t({\bf a}) such that
+
+
+
+
+At⁡(𝐚)=⋯=At^​(𝐚)−𝟏=0≠At^​(𝐚).A_{t(\bf a)}=\cdots=A_{\hat{t}(\bf a)-1}=0\not=A_{\hat{t}(\bf a)}.
+
+
+We may suppose
+
+
+
+
+e(τ−ϱ)​t^​(𝐚)‖𝐚‖→∞(‖𝐚‖→∞),\frac{e^{(\tau-\varrho)\hat{t}({\bf a})}}{\|{\bf a}\|}\to\infty\quad(\|{\bf a}\|\to\infty),
+
+
+otherwise At^​(𝐚)A_{\hat{t}(\bf a)} would vanish for any
+sufficiently large ‖𝐚‖\|{\bf a}\|, just as above. Then
+
+
+
+
+st^​(𝐚)−1​Λ=a1​ε1,t^​(𝐚)−1+⋯+al​εl,t^​(𝐚)−1→0(‖𝐚‖→∞).s_{\hat{t}({\bf a})-1}\Lambda=a_{1}\varepsilon_{1,\hat{t}({\bf a})-1}+\cdots+a_{l}\varepsilon_{l,\hat{t}({\bf a})-1}\to 0\quad(\|{\bf a}\|\to\infty).
+
+
+Then also st^​(𝐚)​Λ→0s_{\hat{t}({\bf a})}\Lambda\to 0 for ‖𝐚‖→∞\|{\bf a}\|\to\infty, whence
+At^​(𝐚)=0A_{\hat{t}(\bf a)}=0 for any sufficiently large ‖𝐚‖\|{\bf a}\|, which gives a contradiction.
+∎
+
+
+
+Remark 7.1.
+
+For l=1,2l=1,2 the above Lemma is due to Hata (see Lemma 2.1 and Remark 2.1
+in [7], and Lemma 2.3 and Remark 1 in [8]).
+Also, in the Lemma above and in the Corollary below one may replace
+max⁡{|a1|,…,|al|}\max\{|a_{1}|,\dots,|a_{l}|\} by max⁡{|a1|,…,|al|,|b|}\max\{|a_{1}|,\dots,|a_{l}|,|b|\} (see
+e.g. Remark 2.5 in [12]).
+
+
+
+Corollary 7.1.
+
+Let h<0h<0 and n≥1n\geq 1 be integers. Let γ1,…,γl\gamma_{1},\dots,\gamma_{l} be real
+numbers such that 1,γ1,…,γl1,\gamma_{1},\dots,\gamma_{l} are linearly independent over ℚ\mathbb{Q}.
+Let {r1,t}t∈ℕ,…,{rl,t}t∈ℕ,{st}t∈ℕ\{r_{1,t}\}_{t\in\mathbb{N}},\dots,\{r_{l,t}\}_{t\in\mathbb{N}},\{s_{t}\}_{t\in\mathbb{N}} be sequences of
+elements in ℤ+h​ℤ\mathbb{Z}+\sqrt{h}\,\mathbb{Z}, and let σ,τ>0\sigma,\tau>0 such that
+
+
+
+
+limt→∞1t​log⁡maxi=0,…,n−1​|st+i|=σ,limt→∞1t​log⁡maxi=0,…,n−1​|st​γj−rj,t+i|=−τ⁡(j=1,…,l).\lim\limits_{t\to\infty}\frac{1}{t}\log\max\limits_{i=0,\dots,n-1}|s_{t+i}|=\sigma,\qquad\lim\limits_{t\to\infty}\frac{1}{t}\log\max\limits_{i=0,\dots,n-1}|s_{t}\gamma_{j}-r_{j,t+i}|=-\tau\ (j=1,\dots,l).
+
+
+Then for any a1,…,al,b∈ℤa_{1},\dots,a_{l},b\in\mathbb{Z} and any ε>0\varepsilon>0
+
+
+
+
+|a1γ1+⋯+alγl−b|≫ε(max{|a1|,…,|al|})−στ−ε.|a_{1}\gamma_{1}+\cdots+a_{l}\gamma_{l}-b|\gg_{\varepsilon}(\max\{|a_{1}|,\dots,|a_{l}|\})^{-\frac{\sigma}{\tau}-\varepsilon}.
+
+
+
+
+
+Proof.
+
+There exists a sequence {mt}t∈ℕ\{m_{t}\}_{t\in\mathbb{N}} of integers such that t≤mt<t+nt\leq m_{t}<t+n and
+
+
+
+
+|smt|=maxi=0,…,n−1⁡|st+i|.|s_{m_{t}}|=\max\limits_{i=0,\dots,n-1}|s_{t+i}|.
+
+
+Let st′=smts_{t}^{\prime}=s_{m_{t}} and rj,t′=rj,mtr_{j,t}^{\prime}=r_{j,m_{t}} (j=1,…,lj=1,\dots,l). We have
+
+
+
+
+limt→∞1t​log⁡|st′|=σ,lim supt→∞1t​log⁡|st′​γj−rj,t′|≤−τ⁡(j=1,…,l).\lim\limits_{t\to\infty}\frac{1}{t}\log|s_{t}^{\prime}|=\sigma,\qquad\limsup\limits_{t\to\infty}\frac{1}{t}\log|s_{t}^{\prime}\gamma_{j}-r_{j,t}^{\prime}|\leq-\tau\ (j=1,\dots,l).
+
+
+We now are in the same situation as in the above Lemma.
+∎
+
+
+
+Remark 7.2.
+
+If γi=γi\gamma_{i}=\gamma^{i} (i=1,…,li=1,\dots,l), where γ\gamma is a transcendental number, then
+we may write the conclusion of the above corollary in the following way: for every polynomial
+PP with integer coefficients and degree not exceeding ll, and any ε>0\varepsilon>0
+
+
+
+(45)
+
+|P(γ)|≫εH(P)−στ−ε,|P(\gamma)|\gg_{\varepsilon}H(P)^{-\frac{\sigma}{\tau}-\varepsilon},
+
+
+where H⁡(P)H(P) is the naïve height of PP. By standard arguments this implies
+
+
+
+(46)
+
+|γ−β|≫εH(β)−στ−1−ε|\gamma-\beta|\gg_{\varepsilon}H(\beta)^{-\frac{\sigma}{\tau}-1-\varepsilon}
+
+
+for any algebraic number β\beta of degree at most ll. Here H⁡(β)H(\beta)
+is the naïve height of the minimal polynomial of β\beta over ℤ\mathbb{Z}.
+
+
+
+We now are ready to state our main result. Let z=ζ=a/bz=\zeta=a/b be a negative
+rational number, with a<0<ba<0<b and |a|,b|a|,b coprime. Let n≥2n\geq 2, and let
+p1,…,pn>0p_{1},\dots,p_{n}>0 and q1,…,qn≥0q_{1},\dots,q_{n}\geq 0 be integers. Let mm be an integer
+such that 1≤m<n1\leq m<n, and suppose that (23) holds.
+Let v1,…,vnv_{1},\dots,v_{n} be defined by (38) and (39). Let
+
+
+
+
+V=max⁡{|v1|,…,|vn|},V=\max\{|v_{1}|,\dots,|v_{n}|\},
+
+
+and let
+
+
+
+
+W=max⁡{|vi|:i∈{1,…,n}​ and ​|vi|≤p1p1​q1q1​MM(p1+q1)2​(p1+q1)(p2+q2)p2+q2⋯(pn+qn)pn+qn}.W=\max\Bigg\{|v_{i}|:i\in\{1,\dots,n\}\text{ and }|v_{i}|\leq\frac{p_{1}^{p_{1}}q_{1}^{q_{1}}M^{M}}{(p_{1}+q_{1})^{2(p_{1}+q_{1})}(p_{2}+q_{2})^{p_{2}+q_{2}}\cdots(p_{n}+q_{n})^{p_{n}+q_{n}}}\Bigg\}.
+
+
+Let δ\delta be as in (44). Let
+
+
+
+
+−τ:=log⁡W−q1​log|z​|−p1​log|​1−z|+N1+⋯+Nm−δ+(M−p1−q1)​log⁡b-\tau:=\log W-q_{1}\log|z|-p_{1}\log|1-z|+N_{1}+\cdots+N_{m}-\delta+(M-p_{1}-q_{1})\log b
+
+
+and
+
+
+
+
+σ:=log⁡V−q1​log|z​|−p1​log|​1−z|+N1+⋯+Nm−δ+(M−p1−q1)​log⁡b\sigma:=\log V-q_{1}\log|z|-p_{1}\log|1-z|+N_{1}+\cdots+N_{m}-\delta+(M-p_{1}-q_{1})\log b
+
+
+
+
+Theorem 7.1.
+
+With the above notation, if τ,σ>0\tau,\sigma>0 then for any polynomial
+P⁡(x)∈ℤ⁡[x]P(x)\in\mathbb{Z}[x] of degree at most mm and any ε>0\varepsilon>0
+
+
+
+
+P(logzz−1)≫εH(P)−στ−ε.P\Big(\log\frac{z}{z-1}\Big)\gg_{\varepsilon}H(P)^{-\frac{\sigma}{\tau}-\varepsilon}.
+
+
+In particular, for any algebraic number β\beta of degree at most mm
+
+
+
+
+|logzz−1−β|≫εH(β)−στ−1−ε.\Big|\log\frac{z}{z-1}-\beta\Big|\gg_{\varepsilon}H(\beta)^{-\frac{\sigma}{\tau}-1-\varepsilon}.
+
+
+
+
+
+Proof.
+
+We apply our Corollary 7.1 to
+
+
+
+
+st=b(M−p1−q1)​tΔt−1dN1​t⋯dNm​tℒn∗(p1t,q1t;…;pnt,qnt;z),s_{t}=b^{(M-p_{1}-q_{1})t}\Delta_{t}^{-1}d_{N_{1}t}\cdots d_{N_{m}t}\ {\mathcal{L}}_{n}^{*}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;z),
+
+
+
+
+
+
+rj,t=b(M−p1−q1)​tΔt−1dN1​t⋯dNm​tz−q1​t(1−z)−p1​tℐnj(p1t,q1t;…;pnt,qnt;z)(j=1,…,m),r_{j,t}=b^{(M-p_{1}-q_{1})t}\Delta_{t}^{-1}d_{N_{1}t}\cdots d_{N_{m}t}z^{-q_{1}t}(1-z)^{-p_{1}t}\ {\mathcal{I}}_{n}^{j}(p_{1}t,q_{1}t;\dots;p_{n}t,q_{n}t;z)\quad(j=1,\dots,m),
+
+
+and use (40), (41), (42),
+(43) and (44).
+∎
+
+
+
+We may also apply our Corollary 7.1 with z′=1−z=a′/bz^{\prime}=1-z=a^{\prime}/b, with a′=b−aa^{\prime}=b-a,
+so that 0<a′<b0<a^{\prime}<b, and by (10) we obtain the same bound as in Theorem 7.1.
+
+
+The above Theorem improves Theorem 3 of [18].
+
+
+
+8. Numerical examples
+
+
+We recover the upper bound for μ⁡(log⁡2)\mu(\log 2) we obtained in [11].
+Let z=−1z=-1, n=3n=3, p1=4p_{1}=4, p2=5p_{2}=5, p3=3p_{3}=3, q1=1q_{1}=1,
+q2=2q_{2}=2, q3=0q_{3}=0. The roots of −(y+3)​(y+4)​(y+5)=−2​y​(y−1)​(y−2)-(y+3)(y+4)(y+5)=-2y(y-1)(y-2)
+are 20.267669670594​…20.267669670594\dots and −1.133834835297​⋯±i​1.294140012477​…-1.133834835297\dots\pm i1.294140012477\dots.
+The values of v1,v2,v3v_{1},v_{2},v_{3} in Corollary 4.3 are all distinct,
+and we have log⁡|v1|=22.149699678920​…\log|v_{1}|=22.149699678920\dots, log⁡|v2|=log⁡|v3|=−7.537440405644​…\log|v_{2}|=\log|v_{3}|=-7.537440405644\dots.
+We have W=|v2|W=|v_{2}| because
+
+
+
+
+log|v2|<4​log​4+15​log​15−3​log​3−10​log​5−7​log​7=13.1543​⋯<log⁡|v1|.\log|v_{2}|<4\log 4+15\log 15-3\log 3-10\log 5-7\log 7=13.1543\dots<\log|v_{1}|.
+
+
+The function μ⁡(ω)\mu(\omega) defined in section 6 takes the value 11 if
+ω∈[1/6,3/7)∪[1/2,5/7)∪[3/4,6/7)\omega\in[1/6,3/7)\cup[1/2,5/7)\cup[3/4,6/7) and μ⁡(ω)=0\mu(\omega)=0
+otherwise, whence δ=4.995102335817​…\delta=4.995102335817.... Thus by Theorem 7.1
+we have (see Theorem 1.1 in [11])
+
+
+
+
+μ⁡(log⁡2)≤3.574553902525​….\mu(\log 2)\leq 3.574553902525...\ .
+
+
+
+
+Remark 8.1.
+
+Since |v1|>1>|v2|=|v3||v_{1}|>1>|v_{2}|=|v_{3}|, we may also argue differently. By a theorem of Buslaev
+(see Theorem 1 in [3]), and by (3) in [20],
+
+
+
+
+limt→∞1t​log⁡|ℒ3​(4​t,t,5​t,2​t,3​t,0,−1)|=log⁡|v1|=22.149699​…\lim\limits_{t\to\infty}\frac{1}{t}\log|{\mathcal{L}}_{3}(4t,t;5t,2t;3t,0;-1)|=\log|v_{1}|=22.149699...
+
+
+because ℒ3​(4​t,t,5​t,2​t,3​t,0,−1)≠0{\mathcal{L}}_{3}(4t,t;5t,2t;3t,0;-1)\not=0 is an integer, and
+
+
+
+
+lim supt→∞1t​log⁡|ℐ31​(4​t,t,5​t,2​t,3​t,0,−1)|=log⁡|v2|−4​log⁡2=−10.310029​….\limsup\limits_{t\to\infty}\frac{1}{t}\log|{\mathcal{I}}_{3}^{1}(4t,t;5t,2t;3t,0;-1)|=\log|v_{2}|-4\log 2=-10.310029...\ .
+
+
+Since log⁡2\log 2 is irrational, then the sequences
+
+
+
+
+{ℒ3∗​(4​t,t,5​t,2​t,3​t,0,−1)}t∈ℕ and {z−t​(1−z)−4​t​ℐ31​(4​t,t,5​t,2​t,3​t,0,−1)}t∈ℕ\{{\mathcal{L}}_{3}^{*}(4t,t;5t,2t;3t,0;-1)\}_{t\in\mathbb{N}}\quad\text{ and }\quad\{z^{-t}(1-z)^{-4t}{\mathcal{I}}_{3}^{1}(4t,t;5t,2t;3t,0;-1)\}_{t\in\mathbb{N}}
+
+
+are linearly independent. Hence may apply Theorem 1 of [20].
+
+
+
+The special case m=1m=1 and n=2n=2 of our Theorem 7.1 is a reformulation of Theorem 2
+of [9] (here q1=0q_{1}=0, q2=p2−p1q_{2}=p_{2}-p_{1}, our zz is s/rs/r and p1/p2p_{1}/p_{2}
+is α\alpha in the notation of [9]), also proved, with a different method,
+in [19] (p1=j−lp_{1}=j-l, p2=hp_{2}=h, q1=0q_{1}=0 and q2=lq_{2}=l with the notation
+of [19]).
+
+
+The results in the previous sections can be combined with Lemma 2.4 of [1] to
+obtain, again with m=1m=1 and n=2n=2, another proof of Theorem 2.3 of [1]
+(by choosing again p1=j−lp_{1}=j-l, p2=hp_{2}=h, q1=0q_{1}=0 q2=lq_{2}=l, and now w=αw=\alpha,
+i.e. z=α/(α−1)z=\alpha/(\alpha-1) with the notation thereof), , without using the saddle point method.
+Also, by combining them with Lemma 2.2 of [12] one may obtain,
+with m=1m=1, n=3n=3 and p1=4p_{1}=4, p2=5p_{2}=5, p3=3p_{3}=3, q1=1q_{1}=1, q2=2q_{2}=2 and q3=0q_{3}=0,
+a new proof of all the new ℚ⁡(α)\mathbb{Q}(\alpha)–irrationality measures of log⁡α\log\alpha in (1.3)
+of [12]. We point out that Theorem 2.3 of [1]
+with h=j=7h=j=7, l=1l=1 gives
+
+
+
+
+μℚ⁡(23)​(log⁡23)<9.583516​….\mu_{\mathbb{Q}\left(\sqrt{\frac{2}{3}}\right)}\left(\log\frac{2}{3}\right)<9.583516\dots\ .
+
+
+
+
+We now obtain our new nonquadraticity measure of log⁡2\log 2. We apply Theorem 7.1
+with z=−1z=-1, m=2m=2, n=4n=4, p1=5p_{1}=5, p2=6p_{2}=6, p3=7p_{3}=7, p4=4p_{4}=4,
+q1=1q_{1}=1, q2=2q_{2}=2, q3=3q_{3}=3, q4=0q_{4}=0. The roots
+of −(y+4)​(y+5)​(y+6)​(y+7)=−2​y​(y−1)​(y−2)​(y−3)-(y+4)(y+5)(y+6)(y+7)=-2y(y-1)(y-2)(y-3)
+are −1.730890645949​…-1.730890645949..., 38.527585178736​…38.527585178736...
+and −1.398347266393​…±i​3.262020254989​…-1.398347266393...\pm i3.262020254989...\ . The values of v1v_{1}, v2v_{2}, v3v_{3}
+and v4v_{4} in Corollary 4.3 are all distinct, and log⁡|v1|=48.947490848559​…\log|v_{1}|=48.947490848559...,
+log⁡|v2|=log⁡|v3|=−9.276132199490​…\log|v_{2}|=\log|v_{3}|=-9.276132199490\dots, log⁡|v4|=−18.115257059384​…\log|v_{4}|=-18.115257059384....
+We have W=|v3|W=|v_{3}| or W=|v4|W=|v_{4}|, because
+
+
+
+
+log|v2|<5​log​5+28​log​28−4​log​4−12​log​6−8​log​8−10​log​10=34.6412​⋯<log⁡|v1|.\log|v_{2}|<5\log 5+28\log 28-4\log 4-12\log 6-8\log 8-10\log 10=34.6412\dots<\log|v_{1}|.
+
+
+The values of the function μ⁡(ω)\mu(\omega) defined in section 6 are as follows: μ⁡(ω)=2\mu(\omega)=2 if
+
+
+
+
+ω∈[1/7,1/6[∪[2/9,1/4[∪[2/7,3/10[∪[3/7,1/2[∪[4/7,3/5[∪[5/7,3/4[∪[6/7,7/8[;\omega\in[1/7,1/6[\cup[2/9,1/4[\cup[2/7,3/10[\cup[3/7,1/2[\cup[4/7,3/5[\cup[5/7,3/4[\cup[6/7,7/8[;
+
+
+μ⁡(ω)=1\mu(\omega)=1 if
+
+
+
+
+ω∈[1/9,1/7[∪[1/6,2/9[∪[1/4,2/7[∪[3/10,3/7[∪[5/9,4/7[∪[3/5,5/7[∪[3/4,6/7[∪[7/8,9/10[;\begin{split}\omega\in[1/9,1/7[\cup[1/6,2/9[\cup[1/4,2/7[\cup[3/10,3/7[\\
+\cup[5/9,4/7[\cup[3/5,5/7[\cup[3/4,6/7[\cup[7/8,9/10[;\end{split}
+
+
+μ⁡(ω)=0\mu(\omega)=0 otherwise.
+Consequently δ=10.792110594854​…\delta=10.792110594854...\ . By Theorem 7.1 we get
+
+
+
+
+μ2​(log⁡2)≤12.841618132152​…,\mu_{2}(\log 2)\leq 12.841618132152...,
+
+
+which improves upon the best known upper bound for μ2​(log⁡2)\mu_{2}(\log 2),
+namely 15.651420​…15.651420..., proved in [11].
+
+
+By taking m=2m=2, n=3n=3, p1=3​h−2​jp_{1}=3h-2j, p2=2​h−jp_{2}=2h-j, p3=hp_{3}=h,
+q1=0q_{1}=0, q2=j−hq_{2}=j-h, q3=2​(j−h)q_{3}=2(j-h) and z=a/(a−b)z=a/(a-b) we obtain
+all the nonquadraticity measures of log⁡(a/b)\log(a/b) on p. 151 and 182
+of [11]. Choosing m=2m=2, n=3n=3, p1=3​h−2​jp_{1}=3h-2j,
+p2=2​h−jp_{2}=2h-j, p3=hp_{3}=h, q1=0q_{1}=0, q2=j−hq_{2}=j-h, q3=2​(j−h)q_{3}=2(j-h) and
+z=−a−a⁡(a+1)z=-a-\sqrt{a(a+1)}, by combining our results with Corollary 2.8
+of [12] we may also obtain all the ℚ⁡(1+1/a)\mathbb{Q}(\sqrt{1+1/a})–nonquadraticity
+measures of log⁡(1+1/a)\log(1+1/a) in Table 1 on p.267 of [12],
+without using the ℂ2\mathbb{C}^{2}–saddle point method.
+
+
+We conclude with three more examples. We set z=−4z=-4, m=3m=3, n=4n=4,
+p1=6p_{1}=6, p2=7p_{2}=7, p3=8p_{3}=8, p4=9p_{4}=9, q1=10q_{1}=10, q2=11q_{2}=11, q3=12q_{3}=12, q4=13q_{4}=13. We obtain
+
+
+
+
+P(log(54))≫εH(P)−66.9403256794​⋯−εP\bigg(\log\Big(\frac{5}{4}\Big)\bigg)\gg_{\varepsilon}H(P)^{-66.9403256794\dots-\varepsilon}
+
+
+for any ε>0\varepsilon>0 and any polynomial P⁡(x)P(x) of degree at most 33. If we take
+z=−5z=-5, m=3m=3, n=4n=4, p1=8p_{1}=8, p2=9p_{2}=9, p3=10p_{3}=10, p4=11p_{4}=11, q1=12q_{1}=12, q2=13q_{2}=13,
+q3=14q_{3}=14, q4=15q_{4}=15, we obtain
+
+
+
+
+P(log(65))≫εH(P)−36.9634662932​⋯−ε( Sorokin [18]: −154−ε)P\bigg(\log\Big(\frac{6}{5}\Big)\bigg)\gg_{\varepsilon}H(P)^{-36.9634662932\dots-\varepsilon}\qquad(\text{ Sorokin\penalty\ \cite[cite]{[\@@bibref{}{SorokinLogs}{}{}]}: }-154-\varepsilon)
+
+
+for any ε>0\varepsilon>0 and any polynomial P⁡(x)P(x) of degree at most 33. By taking
+z=−19z=-19, m=4m=4, n=5n=5, p1=14p_{1}=14, p2=15p_{2}=15, p3=16p_{3}=16, p4=17p_{4}=17, p5=18p_{5}=18, q1=19q_{1}=19,
+q2=20q_{2}=20, q3=21q_{3}=21, q4=22q_{4}=22, q5=23q_{5}=23 we obtain
+
+
+
+
+P(log(2019))≫εH(P)−565.5663269277​⋯−εP\bigg(\log\Big(\frac{20}{19}\Big)\bigg)\gg_{\varepsilon}H(P)^{-565.5663269277\dots-\varepsilon}
+
+
+for any ε>0\varepsilon>0 and any polynomial P⁡(x)P(x) of degree at most 44.
+
+
+
+Acknowledgement
+
+
+The author is a Fellow “Ing. Giorgio Schirillo” of the Istituto Nazionale di Alta Matematica.
+
+
+
+References
+
+
+      
+[1]
+
+F. Amoroso and C. Viola,
+Approximation measures for logarithms of algebraic numbers.
+Ann. Scuola Norm. Sup. Pisa (4) 30 (2001), no. 1, 225–249.
+
+
+      
+[2]
+
+A. T. Benjamin, D. Gaebler and R. Gaebler,
+A combinatorial approach to hyperharmonic numbers.
+Integers 3 (2003), A15, 9 pp.
+
+
+      
+[3]
+
+V. I. Buslaev,
+Relations for the coefficients, and singular points of a function. (Russian)
+Mat. Sb. (N.S.) 131 (173) (1986), no. 3, 357–384;
+English translation in Math. USSR-Sb. 59 (1988), no. 2, 349–377.
+
+
+      
+[4]
+
+J. H. Conway and R. K. Guy,
+The book of numbers. Copernicus, New York, 1996.
+
+
+      
+[5]
+
+A.Erdélyi et al. (Bateman manuscript project),
+Higher transcendental functions, McGrow-Hill, New York 1953.
+
+
+      
+[6]
+
+M. Hata,
+Legendre type polynomials and irrationality measures.
+J. Reine Angew. Math. 407 (1990), 99–125.
+
+
+      
+[7]
+
+M. Hata,
+Rational approximations to π\pi and some other numbers.
+Acta Arith. 63 (1993), no. 4, 335–349.
+
+
+      
+[8]
+
+M. Hata,
+ℂ2\mathbb{C}^{2}-saddle method and Beukers’ integral.
+Trans. Amer. Math. Soc. 352 (2000), no. 10, 4557–4583.
+
+
+      
+[9]
+
+A. Heimonen, T. Matala-Aho and K. Väänänen,
+On irrationality measures of the values of Gauss hypergeometric function.
+Manuscripta Math. 81 (1993), no. 1-2, 183–202.
+
+
+      
+[10]
+
+L. Lipshitz,
+The diagonal of a  D-finite power series is D-finite.
+J. Algebra 113 (1988), no. 2, 373–378.
+
+
+      
+[11]
+
+R. Marcovecchio, The Rhin-Viola method for log⁡2\log 2.
+Acta Arith. 139 (2009), 147–184.
+
+
+      
+[12]
+
+R. Marcovecchio and C. Viola,
+Irrationality and nonquadraticity measures for logarithms of algebraic numbers.
+J. Aust. Math. Soc. 92 (2012), 237–267.
+
+
+      
+[13]
+
+Yu. V. Nesterenko,
+On the irrationality exponent of the number  ln​ 2{\rm ln}\,2. (Russian)
+Mat. Zametki 88 (2010), 549–564;
+English translation in Math. Notes 88 (2010), 530–543.
+
+
+      
+[14]
+
+M. Pituk,
+More on Poincaré’s and Perron’s theorems for difference equations.
+J. Difference Eq. Appl. 8 (2002), no. 3, 201–216.
+
+
+      
+[15]
+
+G. Rhin and C. Viola,
+The permutation group method for the dilogarithm.
+Ann. Scuola Norm. Sup. Pisa Cl. Sci. (5) 4 (2005), 389–437.
+
+
+      
+[16]
+
+E. A. Rukhadze,
+Lower estimate for rational approximations of ln​2{\rm ln}2. (Russian)
+Vestnik Moskov. Univ. Ser. I Mat. Mekh. 42 (1987), no.6, 25–29;
+English translation in Mosc. Univ. Math. Bull. 42 (1987), 30–35.
+
+
+      
+[17]
+
+H. Sharif and C. Woodcock,
+Hadamard products of rational formal power series.
+J. Algebra 128 (1990), no. 2, 517–527.
+
+
+      
+[18]
+
+V. N. Sorokin,
+The Hermite-Padé approximations for sequential logarithm degrees
+with number-theoretical applications. (Russian)
+Izv. Vyssh. Uchebn. Zaved. Mat. 1991 (1992), no.11, 66–74;
+English translation in: Soviet Math. (Iz. VUZ) 35 (1991), no. 11, 67–74.
+
+
+      
+[19]
+
+C. Viola,
+Hypergeometric functions and irrationality measures.
+Analytic number theory (Kyoto, 1996).
+London Math. Soc. Lecture Note Ser. 247, 353–360,
+Cambridge Univ. Press, Cambridge, 1997.
+
+
+      
+[20]
+
+V. V. Zudilin,
+Difference equations and the irrationality measure of numbers. (Russian)
+Tr. Mat. Inst. Steklova 218 (1997), Anal. Teor. Chisel i Prilozh., 165–178;
+English translation in Proc. Steklov Inst. Math. 218 (1997), 160–174.
+
+
+    
+
+
+
+
+
+
+  
+    Experimental support, please
+    view the build logs
+    for errors. Generated by
+    
+      
+        L
+        A
+        T
+        E
+      
+      xml
+      
+    .
+  
+  
+    Instructions for reporting errors
+    We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile
+      support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the
+      methods listed below:
+    
+      Click the "Report Issue" (
+            
+          ) button, located in the page header.
+    
+    Tip: You can select the relevant text first, to include it in your report.
+    Our team has already identified the following issues. We appreciate your time reviewing and reporting rendering errors we
+      may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability
+      should not be a barrier to accessing research. Thank you for your continued support in championing open access for
+      all.
+    Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a list of packages that need conversion, and welcome developer contributions.
+  
+
+  
+    
+      
+        We gratefully acknowledge support from our major funders,
+        member institutions, ,
+        and all contributors.
+      
+      
+        About ·
+        Help ·
+        Contact ·
+        Subscribe ·
+        Copyright ·
+        Privacy ·
+        Accessibility ·
+        Operational Status (opens in new tab)
+      
+    
+  
+
+  
+    
+      
+    
+  
+

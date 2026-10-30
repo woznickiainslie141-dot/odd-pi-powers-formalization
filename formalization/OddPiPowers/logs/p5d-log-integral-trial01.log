@@ -1,0 +1,78 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:39:2: error: unsolved goals
+case e'_9
+Y u : ℝ
+hY : 0 < Y
+hy : Y ≠ 0
+hq : u ^ 2 + Y ^ 2 ≠ 0
+har : 1 + (u / Y) ^ 2 ≠ 0
+hp :
+  HasDerivAt (((fun x => id x / 2) * fun y => Real.log ((id ^ 2) y + Y ^ 2)) - id + fun y => Y * Real.arctan (id y / Y))
+    (1 / 2 * Real.log ((id ^ 2) u + Y ^ 2) + id u / 2 * (↑2 * id u ^ (2 - 1) * 1 / ((id ^ 2) u + Y ^ 2)) - 1 +
+      Y * (1 / (1 + (id u / Y) ^ 2) * (1 / Y)))
+    u
+⊢ Y ^ 2 * Real.log (u ^ 2 + Y ^ 2) * (id ^ 2) u + Y ^ 2 * Real.log (u ^ 2 + Y ^ 2) * id u ^ 2 +
+        Y ^ 4 * Real.log (u ^ 2 + Y ^ 2) +
+      Real.log (u ^ 2 + Y ^ 2) * (id ^ 2) u * id u ^ 2 =
+    Y ^ 2 * (id ^ 2) u * Real.log (Y ^ 2 + (id ^ 2) u) + Y ^ 2 * id u ^ 2 * Real.log (Y ^ 2 + (id ^ 2) u) +
+            Y ^ 4 * Real.log (Y ^ 2 + (id ^ 2) u) -
+          (id ^ 2) u * id u ^ 2 * 2 +
+        (id ^ 2) u * id u ^ 2 * Real.log (Y ^ 2 + (id ^ 2) u) +
+      id u ^ 4 * 2
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:48:4: error: `fun_prop` was unable to prove `Continuous fun u => Real.log √(u ^ 2 + Y ^ 2)`
+
+Issues:
+  Failed to prove necessary assumption `∀ (x : ℝ), x ≠ 0` when applying theorem `Continuous.log`.
+  Failed to prove necessary assumption `∀ (x : ℝ), √(x ^ 2 + Y ^ 2) ≠ 0` when applying theorem `Continuous.log`.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:81:2: error: unsolved goals
+case e'_9
+c Y : ℝ
+hY : 0 < Y
+hy : Y ≠ 0
+hq : Y ^ 2 + c ^ 2 / 4 ≠ 0
+htwo : 2 * Y ≠ 0
+har : 1 + (c / (2 * Y)) ^ 2 ≠ 0
+hp :
+  HasDerivAt
+    (((fun y => c / 2 * Real.log ((id ^ 2) y + c ^ 2 / 4)) - fun x => c * Real.log c) +
+      (fun y => 2 * id y) * fun x => Real.arctan (((fun x => c) / fun y => 2 * id y) x))
+    (c / 2 * (↑2 * id Y ^ (2 - 1) * 1 / ((id ^ 2) Y + c ^ 2 / 4)) - 0 +
+      (2 * 1 * Real.arctan (((fun x => c) / fun y => 2 * id y) Y) +
+        2 * id Y *
+          (1 / (1 + ((fun x => c) / fun y => 2 * id y) Y ^ 2) * ((0 * (2 * id Y) - c * (2 * 1)) / (2 * id Y) ^ 2))))
+    Y
+⊢ Real.arctan (c * Y⁻¹ * (1 / 2)) * id Y * 4 +
+      Real.arctan (c * Y⁻¹ * (1 / 2)) * id Y * ((fun x => c) / fun y => id y * 2) Y ^ 2 * 4 =
+    -(c * 2) + c * id Y ^ 2 * ((fun x => c) / fun y => id y * 2) Y ^ 2 * (c ^ 2 + (id ^ 2) Y * 4)⁻¹ * 8 +
+          c * id Y ^ 2 * (c ^ 2 + (id ^ 2) Y * 4)⁻¹ * 8 +
+        id Y * ((fun x => c) / fun y => id y * 2) Y ^ 2 * Real.arctan (((fun x => c) / fun y => id y * 2) Y) * 4 +
+      id Y * Real.arctan (((fun x => c) / fun y => id y * 2) Y) * 4
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:94:2: error: unsolved goals
+case e'_9
+c Y : ℝ
+hY : 0 < Y
+hy : Y ≠ 0
+hq : Y ^ 2 + c ^ 2 / 4 ≠ 0
+htwo : 2 * Y ≠ 0
+har : 1 + (c / (2 * Y)) ^ 2 ≠ 0
+hp :
+  HasDerivAt (fun y => 2 * Real.arctan (((fun x => c) / fun y => 2 * id y) y))
+    (2 * (1 / (1 + ((fun x => c) / fun y => 2 * id y) Y ^ 2) * ((0 * (2 * id Y) - c * (2 * 1)) / (2 * id Y) ^ 2))) Y
+⊢ -(c * ((fun x => c) / fun y => id y * 2) Y ^ 2 * id Y ^ 2 * 4) - c * id Y ^ 2 * 4 = -(c * Y ^ 2 * 4) - c ^ 3

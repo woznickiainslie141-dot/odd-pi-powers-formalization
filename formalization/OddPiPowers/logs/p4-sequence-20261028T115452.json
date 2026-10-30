@@ -1,0 +1,52 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Vendor/PNT/Sobolev.lean",
+    "OddPiPowers/Vendor/PNT/Fourier.lean",
+    "OddPiPowers/Vendor/PNT/Mathlib/Algebra/Notation/Support.lean",
+    "OddPiPowers/Vendor/PNT/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+    "OddPiPowers/Vendor/PNT/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+    "OddPiPowers/Vendor/PNT/SmoothExistence.lean",
+    "OddPiPowers/Vendor/PNT/Wiener00.lean",
+    "OddPiPowers/Vendor/PNT/Wiener01.lean",
+    "OddPiPowers/Vendor/PNT/Wiener02.lean",
+    "OddPiPowers/Vendor/PNT/Wiener03.lean",
+    "OddPiPowers/Vendor/PNT/Wiener04.lean",
+    "OddPiPowers/Vendor/PNT/Wiener05.lean",
+    "OddPiPowers/Vendor/PNT/Wiener06.lean",
+    "OddPiPowers/Vendor/PNT/Wiener07.lean",
+    "OddPiPowers/Vendor/PNT/Wiener08.lean",
+    "OddPiPowers/Vendor/PNT/Wiener09.lean",
+    "OddPiPowers/Vendor/PNT/Wiener10.lean",
+    "OddPiPowers/Vendor/PNT/Wiener.lean",
+    "OddPiPowers/Vendor/PNT/Consequences.lean",
+    "P4PntAudit.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean",
+    "OddPiPowers/Arithmetic/CellPrimeWindows.lean",
+    "OddPiPowers/Arithmetic/PrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/PrimeRateCalibration.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerFamily.lean",
+    "OddPiPowers/Arithmetic/ActualPrimeDivisorRates.lean",
+    "OddPiPowers/Arithmetic/TwelveLayerPrimeRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Vendor/PNT/Sobolev.lean",
+      "log": "logs/p4-Sobolev-20261028T115452.log",
+      "sha256": "46bed75863371704a86a06d56b95b413fde4ed0bccebcdd21d8ced2b41a7da0b"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Fourier.lean",
+      "log": "logs/p4-Fourier-20261028T115452.log",
+      "sha256": "9f6a875fc78dd48f1571d1d0a31f8c4a486f2aa46ac32d76d12845b843b275b5"
+    },
+    {
+      "file": "OddPiPowers/Vendor/PNT/Mathlib/Algebra/Notation/Support.lean",
+      "log": "logs/p4-Support-20261028T115452.log",
+      "sha256": "9a19f3f7e9508a5d7800851a923a8115a99346bf13d69378f7c62e95d8d3b60d"
+    }
+  ],
+  "current": "OddPiPowers/Vendor/PNT/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+  "exit_code": 1,
+  "failed_log": "logs/p4-Asymptotics-20261028T115452.log"
+}

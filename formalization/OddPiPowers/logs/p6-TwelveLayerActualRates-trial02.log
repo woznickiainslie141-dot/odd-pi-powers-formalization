@@ -1,0 +1,7 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\TwelveLayerActualRates.lean:42:2: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\TwelveLayerActualRates.lean:48:80: error: unsolved goals
+s : ℕ
+hs : 0 < s
+Y : ℝ
+⊢ ↑s * (6 * centralIntervalRate (↑(69 - 2 * 0) / 69) Y + ∑ j, centralIntervalRate (↑(69 - 2 * (↑j + 1)) / 69) Y) =
+    ↑s * (6 * centralIntervalRate 1 Y + ∑ j, centralIntervalRate (↑(67 - 2 * ↑j) / 69) Y)

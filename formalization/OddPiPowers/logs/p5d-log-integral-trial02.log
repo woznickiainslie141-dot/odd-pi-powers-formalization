@@ -1,0 +1,129 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:37:13: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.sub_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:37:27: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:37:41: warning: This simp argument is unused:
+  Pi.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:37:55: warning: This simp argument is unused:
+  Pi.div_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.mul_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:82:13: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.sub_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:82:27: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:82:41: warning: This simp argument is unused:
+  Pi.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:100:4: error: Tactic `rfl` failed: The left-hand side
+  -c / (Y ^ 2 + c ^ 2 / 4)
+is not definitionally equal to the right-hand side
+  2 * (1 / (1 + (c / (2 * Y)) ^ 2) * ((0 * (2 * Y) - c * 2) / (2 * Y) ^ 2))
+
+case e'_9
+c Y : ℝ
+hY : 0 < Y
+hy : Y ≠ 0
+hq : Y ^ 2 + c ^ 2 / 4 ≠ 0
+htwo : 2 * Y ≠ 0
+har : 1 + (c / (2 * Y)) ^ 2 ≠ 0
+hp :
+  HasDerivAt (fun y => 2 * Real.arctan (c / (2 * y)))
+    (2 * (1 / (1 + (c / (2 * Y)) ^ 2) * ((0 * (2 * Y) - c * 2) / (2 * Y) ^ 2))) Y
+⊢ -c / (Y ^ 2 + c ^ 2 / 4) = 2 * (1 / (1 + (c / (2 * Y)) ^ 2) * ((0 * (2 * Y) - c * 2) / (2 * Y) ^ 2))
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:101:2: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:97:13: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.sub_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:97:27: warning: This simp argument is unused:
+  Pi.sub_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:97:41: warning: This simp argument is unused:
+  Pi.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:97:69: warning: This simp argument is unused:
+  Pi.pow_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.mul_apply, Pi.div_apply, id_eq, Nat.cast_ofNat, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:98:11: warning: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.reduceSub,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:98:27: warning: This simp argument is unused:
+  Nat.reduceSub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat,
+    pow_one, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralLogIntegral.lean:98:42: warning: This simp argument is unused:
+  pow_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.sub_apply, Pi.mul_apply, Pi.div_apply, Pi.pow_apply, id_eq, Nat.cast_ofNat,
+    Nat.reduceSub, mul_one] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

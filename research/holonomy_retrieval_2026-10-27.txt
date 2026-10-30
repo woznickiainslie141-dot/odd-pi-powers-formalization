@@ -1,0 +1,130 @@
+The uniform dependence on the height h​(a)h(a)\
+is traced back to the dependence of the constant CC in [Remark˜2.7](https://arxiv.org/html/2510.04156v1#S2.Thmtheorem7 "Remark 2.7. ‣ 2.2 Irrationality measures. ‣ 2 Arithmetic holonomy bounds: a quantitative theory. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72").\
+\
+Report issue for preceding element\
+\
+In the nonarchimedean case we have a closely similar bound, now based on an Archimedean multivalence in [Lemma˜3.2](https://arxiv.org/html/2510.04156v1#S3.Thmtheorem2 "Lemma 3.2. ‣ 3.1 Multivalence. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") together with the special circumstance of Teichmüller representatives: limn→∞apn∈μp∞​(Kv)\\lim\_{n\\to\\infty}a^{p^{n}}\\in\\mu\_{p^{\\infty}}(K\_{v}), if\
+pp is the residual characteristic of KvK\_{v}.\
+\
+Report issue for preceding element\
+\
+###### Proposition 3.4 (Nonarchimedean case).\
+\
+Report issue for preceding element\
+\
+Let p=pvp=p\_{v} be the residual characteristic of vv and h∈\[1,r/e\]h\\in\[1,r/e\] a parameter. Consider r=l​sr=ls with l≡1modpl\\equiv 1\\mod{p}, where s≍r/hs\\asymp\\sqrt{r/h} and l≍r​hl\\asymp\\sqrt{rh}. Then, for all a∈Ka\\in K\
+with h​(a)≤hh(a)\\leq h, and at every place u∣vu\\mid v of K​(ar)K(\\sqrt\[r\]{a}),\
+\
+Report issue for preceding element\
+\
+|     |     |     |     |\
+| --- | --- | --- | --- |\
+| (3.10) |  | μeff,K,u​(ar)≪v,dh​(r/h)2​d−12​d​log2⁡(r/h).\\mu\_{\\mathrm{eff},K,u}(\\sqrt\[r\]{a})\\ll\_{v,d}h\\left(r/h\\right)^{\\frac{2d-1}{2d}}\\log^{2}(r/h). |  |\
+\
+More precisely, for all b∈Kb\\in K, the condition r≥c5​hr\\geq c\_{5}h implies\
+\
+Report issue for preceding element\
+\
+|     |     |     |     |\
+| --- | --- | --- | --- |\
+| (3.11) |  | log⁡\|ar−b\|u≫v,d−(1+h​(ar)+h​(b))​h​(r/h)2​d−12​d​log2⁡(r/h).\\log{\|\\sqrt\[r\]{a}-b\|\_{u}}\\gg\_{v,d}-\\left(1+h(\\sqrt\[r\]{a})+h(b)\\right)\\,h\\left(r/h\\right)^{\\frac{2d-1}{2d}}\\log^{2}(r/h). |  |\
+\
+Report issue for preceding element\
+\
+###### Proof 3.\
+\
+Report issue for preceding element\
+\
+We indicate only a brief guideline. A standard reduction allows us to assume that (1−a)/p(1-a)/p is an algebraic pp-integer. Write q:=pnq:=p^{n} with nn a parameter, and apply [Proposition˜3.1](https://arxiv.org/html/2510.04156v1#S3.Thmtheorem1 "Proposition 3.1. ‣ 3.1 Multivalence. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") to the exponent ν:=1/(q​s)\\nu:=1/(qs)\
+and the specialization x:=1−aq/lx:=1-a^{q/l}, with \|x\|w≤\|q\|w\|x\|\_{w}\\leq\|q\|\_{w} for all w∣pw\\mid p, and of height q​h​(a)/l+O​(1)qh(a)/l+O(1). As\
+in [subsection˜5.2](https://arxiv.org/html/2510.04156v1#S5.SS2 "5.2 The irrationality of 𝜁₂⁢(5)∈𝐐₂. ‣ 5 Irrationality measures: Examples. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") below, the multivalence input will be Archimedean with a choice of radius RR, this time applied to a\
+map from [Lemma˜3.2](https://arxiv.org/html/2510.04156v1#S3.Thmtheorem2 "Lemma 3.2. ‣ 3.1 Multivalence. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") (1) at all Archimedean places.
+---
+Moreover, the monodromy of h∗​fh^{\*}f is once again of type (2,2,∙)(2,2,\\bullet).\
+One can now successively iterate these quadratic maps, and the limit converges—in some neighborhood of z=0z=0—to φα,β\\varphi\_{\\alpha,\\beta} (where the choice of γ\\gamma determines uu).\
+\
+Report issue for preceding element\
+\
+### 3.2 An effective irrationality type for high order roots.\
+\
+Report issue for preceding element\
+\
+Whereas the x=−1/nx=-1/n specialization to 1−xr\\sqrt\[r\]{1-x} in LABEL:hyper\_poly directly constructs a sequence of rational approximations to 1+1/nr\\sqrt\[r\]{1+1/n}\
+which converge fast enough to supply an effective irrationality measure μ→2\\mu\\to 2 in the limit n≫r1n\\gg\_{r}1, historically it was not easy to obtain\
+any nontrivial effective irrationality measure for 2r\\sqrt\[r\]{2} for large rr. This had to wait until 1971 with the first of Baker’s Sharpening series of papers \[ [5](https://arxiv.org/html/2510.04156v1#bib.bib5 "")\]. The asymptotic bound μeff​(2r)≪log⁡r\\mu\_{\\mathrm{eff}}(\\sqrt\[r\]{2})\\ll\\log{r} in \[ [6](https://arxiv.org/html/2510.04156v1#bib.bib6 "")\] is, up to the absolute constant, still the state-of-art today.\
+But [Theorem˜2.6](https://arxiv.org/html/2510.04156v1#S2.Thmtheorem6 "Theorem 2.6. ‣ 2.2 Irrationality measures. ‣ 2 Arithmetic holonomy bounds: a quantitative theory. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") with the dihedral algebraic construction work together to directly supply a sub-Liouville effective bound μeff​(2r)≪r​(log⁡r)3\\mu\_{\\mathrm{eff}}(\\sqrt\[r\]{2})\\ll\\sqrt{r(\\log{r})^{3}}.\
+This irrationality measure is essentially of Siegel’s strength, but it is effective, and applies just as well to any binomial algebraic number a/br\\sqrt\[r\]{a/b}.\
+In a way, our argument effectivizes Mahler’s explicit Hermite–Padé treatment \[ [53](https://arxiv.org/html/2510.04156v1#bib.bib53 "")\]\
+of Siegel’s \[ [56](https://arxiv.org/html/2510.04156v1#bib.bib56 "")\] ineffective exponent 2​r2\\sqrt{r} for the particular\
+case of binomial numbers a/br\\sqrt\[r\]{a/b} with 0<a<b0<a<b. Thue, Siegel, and Mahler worked with the explicit type I Hermite–Padé form directly for the extended binomial system {1,(1−x)1/r,…,(1−x)k/r}\\{1,(1-x)^{1/r},\\ldots,(1-x)^{k/r}\\} and, with an optimal choice of k<rk<r, specialized x:=1−a​q0r/b​p0r≈0x:=1-aq\_{0}^{r}/bp\_{0}^{r}\\approx 0 for a hypothetical exceptionally good “anchoring” approximation\
+p0/q0≈a/brp\_{0}/q\_{0}\\approx\\sqrt\[r\]{a/b}. By Baker’s theorem, such a “Thue ghost lever” p0/q0p\_{0}/q\_{0}\
+is known to _not_ exist, and this is the ultimate source of the ineffectivity in the whole Thue paradigm.\
+In contrast, we work with the\
+“dual” system {1,H,…,Hk}\\{1,H,\\ldots,H^{k}\\} where HH is the dihedral algebraic generating function of the Hermite–Padé forms of {1,(1−x)1/r}\\{1,(1-x)^{1/r}\\}, specialized\
+directly at the requisite point x=1−a/b∈(0,1)∩𝐐x=1-a/b\\in(0,1)\\cap\\mathbf{Q}. The growth properties of the entire multivalent maps of [Lemma˜3.2](https://arxiv.org/html/2510.04156v1#S3.Thmtheorem2 "Lemma 3.2. ‣ 3.1 Multivalence. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") (2) are restricted to a suitable choice of radius,\
+and input into [Proposition˜2.4](https://arxiv.org/html/2510.04156v1#S2.Thmtheorem4 "Proposition 2.4. ‣ 2.2 Irrationality measures. ‣ 2 Arithmetic holonomy bounds: a quantitative theory. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72").
+---
+In contrast, the x=2x=2 specialization considered\
+above does\
+not even directly give a sequence of rational numbers converging to π\\pi, but yet\
+still leads to\
+the transcendence of π\\pi, and even to explicit (if not impressive) irrationality measures such as μ​(π)≤15.086\\mu(\\pi)\\leq 15.086.\
+\
+Report issue for preceding element\
+\
+## 4 Conclusion of the new proof of [Theorem˜1.1](https://arxiv.org/html/2510.04156v1\#S1.Thmtheorem1 "Theorem 1.1. ‣ 1 Effective Diophantine approximation on 𝐆_𝑚. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72").\
+\
+Report issue for preceding element\
+\
+In [Propositions˜3.3](https://arxiv.org/html/2510.04156v1#S3.Thmtheorem3 "Proposition 3.3 (Archimedean case). ‣ 3.2 An effective irrationality type for high order roots. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") and [3.4](https://arxiv.org/html/2510.04156v1#S3.Thmtheorem4 "Proposition 3.4 (Nonarchimedean case). ‣ 3.2 An effective irrationality type for high order roots. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") we constructed a monotonic function g=gK,v:𝐑≥0→𝐑>1g=g\_{K,v}:\\mathbf{R}\_{\\geq 0}\\to\\mathbf{R}\_{>1} which can be made fully explicit,\
+depending only on KK and vv and having limx→∞g​(x)=∞\\lim\_{x\\to\\infty}g(x)=\\infty, such that, for all r∈𝐍r\\in\\mathbf{N} possessing a factor l≍1+h​(a)l\\asymp 1+h(a), resp. a factor l≍r​(1+h​(a))l\\asymp\\sqrt{r(1+h(a))} congruent to 1modp1\\mod{p}, the following lower bound in two logarithms holds uniformly for all places u∣vu\\mid v of K​(ar)K(\\sqrt\[r\]{a}) and all elements a,η∈Ka,\\eta\\in K:\
+\
+Report issue for preceding element\
+\
+|     |     |     |     |\
+| --- | --- | --- | --- |\
+| (4.1) |  | log⁡\|1−a1/r​η\|u≥−(log⁡2+h​(a1/r)+h​(η))​r/g​(r/h​(a)).\\log{\|1-a^{1/r}\\eta\|\_{u}}\\geq-\\left(\\log{2}+h(a^{1/r})+h(\\eta)\\right)r\\big/g(r/h(a)). |  |\
+\
+Construct c8​(K,v,ε)∈𝐑≥1c\_{8}(K,v,\\varepsilon)\\in\\mathbf{R}\_{\\geq 1}\
+so that gK,v​(x)≥2/εg\_{K,v}(x)\\geq 2/\\varepsilon for all x≥c8​(K,v,ε)x\\geq c\_{8}(K,v,\\varepsilon). Then, for all exponents rr that meet our _ad hoc_ factorizability condition for ( [4.1](https://arxiv.org/html/2510.04156v1#S4.E1 "Equation 4.1 ‣ 4 Conclusion of the new proof of Theorem˜1.1. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72")), we derive:\
+\
+Report issue for preceding element\
+\
+|     |     |     |     |\
+| --- | --- | --- | --- |\
+| (4.2) |  | a,η∈K​ with ​r≥c8​(K,v,ε)​h​(a)⟹\|1−a1/r​η\|u≥H​(a)−ε/2​(2​H​(η))−ε​r/2.a,\\eta\\in K\\textrm{ with }r\\geq c\_{8}(K,v,\\varepsilon)h(a)\\quad\\Longrightarrow\\quad\|1-a^{1/r}\\eta\|\_{u}\\geq H(a)^{-\\varepsilon/2}(2H(\\eta))^{-\\varepsilon r/2}. |  |\
+\
+The next type of argument to conclude [Theorem˜1.1](https://arxiv.org/html/2510.04156v1#S1.Thmtheorem1 "Theorem 1.1. ‣ 1 Effective Diophantine approximation on 𝐆_𝑚. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") is due to Bombieri \[ [17](https://arxiv.org/html/2510.04156v1#bib.bib17 ""), § 8\] and is now standard. The simplest form of \[ [17](https://arxiv.org/html/2510.04156v1#bib.bib17 ""), Lemma 4\] is:\
+\
+Report issue for preceding element\
+\
+###### Lemma 4.1.\
+\
+Report issue for preceding element\
+\
+Consider n1,…,nt∈𝐙n\_{1},\\ldots,n\_{t}\\in\\mathbf{Z} and two\
+integer parameters Q,N∈𝐍Q,N\\in\\mathbf{N}.
+---
+Now the holonomy quotient reads (upon a positive denominator):\
+\
+Report issue for preceding element\
+\
+|     |     |     |     |\
+| --- | --- | --- | --- |\
+| (3.12) |  | k+1≪v,dR+d−1​log⁡qlog⁡R+d−1​log⁡q−log⁡(s​log⁡s)−c6−q​h​(a)/l−(c6​k​l/μeff,K,u​(ar))​log⁡q.k+1\\ll\_{v,d}\\frac{R+d^{-1}\\log{q}}{\\log{R}+d^{-1}\\log{q}-\\log{(s\\log{s})}-c\_{6}-qh(a)/l-(c\_{6}\\,kl/\\mu\_{\\mathrm{eff},K,u}(\\sqrt\[r\]{a}))\\log{q}}. |  |\
+\
+Select q≍ps≍r/hq\\asymp\_{p}s\\asymp\\sqrt{{r/h}}, so that q​h​(a)/l≪1qh(a)/l\\ll 1, and R≍c6(s​log⁡s)/q1/d≍s1−1/d​log⁡sR\\asymp\_{c\_{6}}(s\\log{s})/q^{1/d}\\asymp s^{1-1/d}\\log{s}. With k:=⌊c7​s1−1/d​log⁡s⌋k:=\\lfloor c\_{7}\\,s^{1-1/d}\\log{s}\\rfloor the holonomy bound [Eq.˜3.12](https://arxiv.org/html/2510.04156v1#S3.E12 "In Proof 3. ‣ 3.2 An effective irrationality type for high order roots. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72") amounts to [Eq.˜3.10](https://arxiv.org/html/2510.04156v1#S3.E10 "In Proposition 3.4 (Nonarchimedean case). ‣ 3.2 An effective irrationality type for high order roots. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72"). The refinement to ( [3.11](https://arxiv.org/html/2510.04156v1#S3.E11 "Equation 3.11 ‣ Proposition 3.4 (Nonarchimedean case). ‣ 3.2 An effective irrationality type for high order roots. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72")) is once again\
+routine from tracking the constant CC in [Remark˜2.7](https://arxiv.org/html/2510.04156v1#S2.Thmtheorem7 "Remark 2.7. ‣ 2.2 Irrationality measures. ‣ 2 Arithmetic holonomy bounds: a quantitative theory. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72"), as we will do in proper detail in a subsequent paper.\
+\
+Report issue for preceding element\
+\
+### 3.3 A new proof of the transcendence of π\\pi and other logarithms.\
+\
+Report issue for preceding element\
+\
+If we take the ν→0\\nu\\to 0 limit of [Eq.˜3.3](https://arxiv.org/html/2510.04156v1#S3.E3 "In Proposition 3.1. ‣ 3.1 Multivalence. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification. 11J68, 11J72"), we obtain an ODE\
+whose solutions are given by A​(x,y):=(1−4​y+2​x​y+x2​y2)−1/2A(x,y):=\\left(1-4y+2xy+x^{2}y^{2}\\right)^{-1/2}\
+and\
+B​(x,y):=2​A​(x,y)​log⁡(1−x​(1+x​y−1−4​y+2​x​y+x2​y2)/2)B(x,y):=2A(x,y)\\log{\\left(1-x\\left(1+xy-\\sqrt{1-4y+2xy+x^{2}y^{2}}\\right)/2\\right)}, and\
+such that H:=B​(x,y)−log⁡(1−x)​A​(x,y)H:=B(x,y)-\\log(1-x)A(x,y) is the yy-generating series of the diagonal Hermite–Padé approximants of the logarithm function \[ [34](https://arxiv.org/html/2510.04156v1#bib.bib34 ""), § 3.3.7\].\
+The domain y∈𝐏1∖{((1±1−x)/x),∞}y\\in\\mathbf{P}^{1}\\smallsetminus\\{((1\\pm\\sqrt{1-x})/x),\\infty\\} and overconvergence property of HH are exactly the same as in the discussion with the algebraic dihedral functions in [subsection˜3.1](https://arxiv.org/html/2510.04156v1#S3.SS1 "3.1 Multivalence. ‣ 3 A dihedral method. ‣ Arithmetic holonomy bounds and effective Diophantine approximation2020 Mathematics Subject Classification.

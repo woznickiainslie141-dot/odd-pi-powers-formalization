@@ -1,0 +1,110 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:81:43: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:106:48: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:105:4: error: unsolved goals
+case pos
+s : ℕ
+hs : 0 < s
+a : Fin (17 * s)
+ha : ↑a < 6 * s
+⊢ ↑(if ha : ↑a < 6 * s then ⟨0, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).snd = ↑a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:111:48: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:112:8: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:113:10: error: Tactic `rewrite` failed: motive is not type correct:
+  fun _a =>
+    _a + (↑a - _a) / s * s +
+        ↑(if ha : ↑a < _a then ⟨⟨0, ⋯⟩, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - _a) / s + 1, ⋯⟩, ⟨(↑a - _a) % s, ⋯⟩⟩).snd =
+      ↑a
+Error: Application type mismatch: The argument
+  ha
+has type
+  ↑a < _a
+but is expected to have type
+  ↑a < 6 * s
+in the application
+  scaledTwelveLayerIndexToSigma._proof_4 s a ha
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+case neg
+s : ℕ
+hs : 0 < s
+a : Fin (17 * s)
+ha : ¬↑a < 6 * s
+hdiv : s * ((↑a - 6 * s) / s) + (↑a - 6 * s) % s = ↑a - 6 * s
+hz : (↑a - 6 * s) / s + 1 ≠ 0
+⊢ 6 * s + (↑a - 6 * s) / s * s +
+      ↑(if ha : ↑a < 6 * s then ⟨⟨0, ⋯⟩, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).snd =
+    ↑a
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    j
+  has type
+    Fin 12
+  but is expected to have type
+    Fin (twelveLayerShape.scaleWeights s).J
+  in the application
+    (twelveLayerShape.scaleWeights s).weight j
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:121:6: error: Dependent elimination failed: Failed to solve equation
+  ⟨0, ⋯⟩ = j
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:126:63: error: unsolved goals
+case m_pos
+s : ℕ
+hs : 0 < s
+j : Fin 12
+k : Fin ((twelveLayerShape.scaleWeights s).weight j)
+hj : ¬↑j = 0
+hk : ↑k < s
+hjb : 1 ≤ ↑j
+⊢ s > 0
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:134:48: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:135:8: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:137:6: error: `simp` made no progress
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    j
+  has type
+    Fin 12
+  but is expected to have type
+    Fin (twelveLayerShape.scaleWeights s).J
+  in the application
+    (twelveLayerShape.scaleWeights s).weight j
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:128:35: warning: This simp argument is unused:
+  hs.ne'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.div_eq_of_lt hk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:135:26: warning: This simp argument is unused:
+  hdiv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [scaledTwelveLayerSigmaToIndex, dif_neg hj, scaledTwelveLayerIndexToSigma, dif_neg hn, hsub, hmod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

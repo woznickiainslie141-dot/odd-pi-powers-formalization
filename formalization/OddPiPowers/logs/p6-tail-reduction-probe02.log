@@ -1,0 +1,15 @@
+def OddPiPowers.PrimeRates.periodTailRational : ℕ → ℕ → TwelveCellCertificate → ℚ :=
+fun T K c =>
+  have x := (c.right - c.left) / (↑T + c.left);
+  have y := (c.right - c.left) / (↑K + c.left);
+  ↑c.value / 69 * (x - x ^ 2 / 2 - y + (rationalPeriodGap T c.left c.right - rationalPeriodGap K c.left c.right) / 2)
+def OddPiPowers.PrimeRates.rationalPeriodGap : ℕ → ℚ → ℚ → ℚ :=
+fun r a b => 1 / (↑r + a) - 1 / (↑r + b)
+D:\codex\pi-irrationality\formalization\OddPiPowers\P6TailReductionProbe.lean:9:32: error: Tactic `decide` failed to reduce
+  @decide (0 < 1 / 2) (Rat.instDecidableLt 0 (1 / 2))
+to `true` or `false`.
+
+After unfolding the instances `decEq`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `isFalse`, `isTrue`, `Int.decEq`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, and `Rat.instDecidableLt`, reduction got stuck at
+  match (1 / 2).num - (0 + 1) with
+  | Int.ofNat m => isTrue ⋯
+  | Int.negSucc i => isFalse ⋯

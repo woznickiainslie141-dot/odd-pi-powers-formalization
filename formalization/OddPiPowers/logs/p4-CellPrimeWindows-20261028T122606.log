@@ -1,0 +1,55 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:38:20: error: Type mismatch
+  add_lt_add_left V.a_lt_b ?m.28
+has type
+  V.a + ?m.28 < V.b + ?m.28
+but is expected to have type
+  ↑V.period + V.a < ↑V.period + V.b
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLT ↦ 2
+  Real.instAdd ↦ 2
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:44:4: error: 'change' tactic failed, pattern
+  ↑V.period + V.a ≤ z
+is not definitionally equal to target
+  V.toWindow.lower ≤ z
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:52:2: error: Tactic `apply` failed: could not unify the conclusion of `twelveLayerCell_value_le_lowerBound V.cell V.mem_table`
+  V.cell.value ≤ twelveLayerLowerBound ?m.106
+with the goal
+  V.toWindow.weight ≤ twelveLayerLowerBound z
+
+Note: The full type of `twelveLayerCell_value_le_lowerBound V.cell V.mem_table` is
+  ↑V.cell.left < Int.fract ?m.106 → Int.fract ?m.106 < ↑V.cell.right → V.cell.value ≤ twelveLayerLowerBound ?m.106
+
+V : CertifiedCellWindow
+z : ℝ
+hlo : V.toWindow.lower ≤ z
+hhi : z < V.toWindow.upper
+hunit : 0 ≤ z - ↑V.period ∧ z - ↑V.period < 1
+hfract : Int.fract z = z - ↑V.period
+⊢ V.toWindow.weight ≤ twelveLayerLowerBound z
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:60:0: error: Not a definitional equality: the left-hand side
+  ↑V.toWindow.weight * (1 / V.toWindow.lower - 1 / V.toWindow.upper)
+is not definitionally equal to the right-hand side
+  ↑V.cell.value * periodGap V.period V.a V.b
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:62:51: error: Type mismatch
+  rfl
+has type
+  ?m.27 = ?m.27
+but is expected to have type
+  ↑V.toWindow.weight * (1 / V.toWindow.lower - 1 / V.toWindow.upper) = ↑V.cell.value * periodGap V.period V.a V.b
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:77:6: error: 'change' tactic failed, pattern
+  ↑V.period + V.b ≤ ↑U.period + U.a
+is not definitionally equal to target
+  V.toWindow.upper ≤ U.toWindow.lower
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:82:6: error: 'change' tactic failed, pattern
+  ↑U.period + U.b ≤ ↑V.period + V.a
+is not definitionally equal to target
+  U.toWindow.upper ≤ V.toWindow.lower
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:89:6: error: 'change' tactic failed, pattern
+  ↑V.period + V.b ≤ ↑U.period + U.a
+is not definitionally equal to target
+  V.toWindow.upper ≤ U.toWindow.lower
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellPrimeWindows.lean:94:6: error: 'change' tactic failed, pattern
+  ↑U.period + U.b ≤ ↑V.period + V.a
+is not definitionally equal to target
+  U.toWindow.upper ≤ V.toWindow.lower

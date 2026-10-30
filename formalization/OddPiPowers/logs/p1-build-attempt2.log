@@ -1,0 +1,14 @@
+⚠ [2034/2038] Built OddPiPowers.Transfer.DividedDifference (7.3s)
+warning: OddPiPowers\Transfer\DividedDifference.lean: imports `Mathlib.Algebra.Ring.GeomSum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: OddPiPowers\Transfer\DividedDifference.lean: imports `Mathlib.Algebra.Polynomial.Eval.Defs` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: OddPiPowers\Transfer\DividedDifference.lean: imports `Mathlib.Algebra.Polynomial.Degree.Support` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: OddPiPowers\Transfer\DividedDifference.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2035/2038] Built OddPiPowers.Foundations.GaussianArithmetic (8.0s)
+warning: OddPiPowers\Foundations\GaussianArithmetic.lean: imports `Mathlib.NumberTheory.Zsqrtd.GaussianInt` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: OddPiPowers\Foundations\GaussianArithmetic.lean: imports `Mathlib.Analysis.Complex.Norm` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: OddPiPowers\Foundations\GaussianArithmetic.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2036/2038] Built OddPiPowers.Transfer.NonzeroRow (8.2s)
+warning: OddPiPowers\Transfer\NonzeroRow.lean: imports `Mathlib.LinearAlgebra.Matrix.Nondegenerate` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: OddPiPowers\Transfer\NonzeroRow.lean: imports `Mathlib.Analysis.Complex.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [2037/2038] Built OddPiPowers (7.5s)
+Build completed successfully (2038 jobs).

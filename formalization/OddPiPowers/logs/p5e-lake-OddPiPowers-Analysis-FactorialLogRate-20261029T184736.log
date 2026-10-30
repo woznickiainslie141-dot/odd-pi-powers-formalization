@@ -1,0 +1,8 @@
+ℹ [2833/2833] Built OddPiPowers.Analysis.FactorialLogRate (14s)
+info: OddPiPowers/Analysis/FactorialLogRate.lean:90:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Build completed successfully (2833 jobs).

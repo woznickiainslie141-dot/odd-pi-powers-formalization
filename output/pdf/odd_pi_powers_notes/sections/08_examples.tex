@@ -1,0 +1,91 @@
+\section{Small examples and useful background}
+\label{app:examples}
+
+\subsection{A complete two-by-two system}
+
+Take \(m=1,n=4\), with intervals \([0,4]\) and \([1,3]\).
+Here \(d_4=12\), the interval lengths are \(4,2\), and
+\[
+C_n=1!\cdot12\cdot4!\cdot2!=576.
+\]
+The exact coefficient matrix is
+\begingroup
+\small
+\setlength{\arraycolsep}{9pt}
+\input{data/toy_matrix}
+\endgroup
+Its determinant is
+\[
+\det A_{1,4}(x)=192x(x-1)^6.
+\]
+The exponent \(6=4+2\) is \(N_n\), while the factor \(x\) is
+\(x^{(4-4)+(4-3)}\). The two remainders are
+\[
+R_{0,4}(x)=A_{0,0,4}(x)+A_{0,1,4}(x)\log x,\quad
+R_{1,4}(x)=A_{1,0,4}(x)+A_{1,1,4}(x)\log x.
+\]
+Their first possible orders at \(x=1\) are respectively seven and
+six, in agreement with the residue-at-infinity calculation.
+At \(x=\ii\) the determinant is nonzero.
+
+This example detects a normalization error immediately.
+Using \(d_4/(4!2!)=1/4\) instead of \(576\) would divide the whole
+matrix by \(2304\). Its \(x^4\) coefficient in the upper-left entry
+would be \(1/576\), rather than the integer \(4\).
+
+\subsection{Why the minimal polynomial cannot be skipped}
+
+Consider \(y=\ii\) and \(U(Y)=Y^2+\ii Y-1\).
+Then \(U(\ii)=-3\ne0\), but
+\[
+Y^3+\ii=(Y-\ii)(Y^2+\ii Y-1).
+\]
+The product of \(U\) over all three roots of \(Y^3+\ii\) is zero.
+Nonvanishing at one root alone would not justify a nonzero
+full-binomial norm. The minimal polynomial of \(y\) over
+\(\QQ(\ii)\) is \(Y-\ii\); its resultant with \(U\) is \(-3\).
+The same logical issue arises for perfect-power rational
+approximations. Lemma~\ref{lem:resultant} handles it uniformly.
+
+\subsection{Divisibility before and after evaluation}
+
+A prime dividing every coefficient of a polynomial also divides its
+value at \(\ii\) in \(\ZZ[\ii]\). The converse fails. Evaluation can
+create cancellations, and an individual \(p\)-adic unit coefficient
+need not remain visible in the sum.
+For example, \(P(x)=1+x^2\) has unit coefficients at every odd prime,
+but \(P(\ii)=0\). Less extreme cancellations can raise valuations
+without making the value zero.
+Thus boundary coefficient calculations alone cannot bound the gcd
+of an evaluated row from above.
+
+Our balanced arc minimum \(f=0\) likewise proves only that the
+particular coefficientwise divisor has \(\gamma=0\). It is not a
+proof that every possible evaluated-row divisor has rate zero.
+
+\subsection{The least common multiple as an arithmetic cost}
+
+Prime factorization gives
+\[
+\log d_n=\sum_{p^a\le n}\log p=n+o(n).
+\]
+The last equality uses the prime number theorem. Thus \(d_n^m\)
+has exponential cost \(m\), although it is much smaller than
+\((n!)^m\). The interval factorials in \(C_n\), by contrast,
+cancel the factorial scale of the contour denominator.
+Their position is crucial before Stirling's formula is applied.
+
+Factors such as \(m!\) can be enormous but are fixed as \(n\)
+grows. Their logarithms divided by \(n\) vanish.
+For large \(m\), small-\(n\) regressions may confuse these constants
+with exponential improvement. Exact identities avoid this ambiguity.
+
+\subsection{A two-layer arc calculation by hand}
+
+For \(L=14,z=3/40\), the outer zero arc is
+\([0,\{14z\}]=[0,1/20]\), and the inner one is
+\([\{z\},\{13z\}]=[3/40,39/40]\).
+They are disjoint, as drawn in Figure~\ref{fig:arcs}.
+With weights \(128,128\), at least one type contributes \(128\)
+at every pole location. Formula~\eqref{eq:twogamma} collects
+all such intervals and every periodic prime range.

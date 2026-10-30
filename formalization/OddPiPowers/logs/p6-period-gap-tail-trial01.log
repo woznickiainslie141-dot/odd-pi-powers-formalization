@@ -1,0 +1,49 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\PeriodGapTail.lean:32:44: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\PeriodGapTail.lean:32:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\PeriodGapTail.lean:51:14: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑r + a + 1 + (b - a)
+in the target expression
+  0 ≤
+    (b - a) / ((↑r + a) * (↑r + b)) -
+      ((b - a) / (↑r + a) - ((b - a) / (↑r + a)) ^ 2 / 2 + (b - a) / ((↑r + a) * (↑r + b)) / 2 -
+        ((b - a) / (↑r + 1 + a) - ((b - a) / (↑r + 1 + a)) ^ 2 / 2 +
+          (b - a) / ((↑r + 1 + a) * (↑r + 1 + a + (b - a))) / 2))
+
+r : ℕ
+a b : ℝ
+ha : 0 < a
+hab : a < b
+ht : 0 < ↑r + a
+hd : 0 < b - a
+he :
+  (b - a) / ((↑r + a) * (↑r + a + (b - a))) -
+      ((b - a) / (↑r + a) - ((b - a) / (↑r + a)) ^ 2 / 2 + (b - a) / ((↑r + a) * (↑r + a + (b - a))) / 2 -
+        ((b - a) / (↑r + a + 1) - ((b - a) / (↑r + a + 1)) ^ 2 / 2 +
+          (b - a) / ((↑r + a + 1) * (↑r + a + 1 + (b - a))) / 2)) =
+    (b - a) *
+        ((↑r + a) * (↑r + a + 1) + (2 * (↑r + a) ^ 2 + 2 * (↑r + a) + 1) * (b - a) ^ 2 +
+          (2 * (↑r + a) + 1) * (b - a) ^ 3) /
+      (2 * (↑r + a) ^ 2 * (↑r + a + 1) ^ 2 * (↑r + a + (b - a)) * (↑r + a + (b - a) + 1))
+hp :
+  0 ≤
+    (b - a) *
+        ((↑r + a) * (↑r + a + 1) + (2 * (↑r + a) ^ 2 + 2 * (↑r + a) + 1) * (b - a) ^ 2 +
+          (2 * (↑r + a) + 1) * (b - a) ^ 3) /
+      (2 * (↑r + a) ^ 2 * (↑r + a + 1) ^ 2 * (↑r + a + (b - a)) * (↑r + a + (b - a) + 1))
+hn :
+  0 ≤
+    (b - a) / ((↑r + a) * (↑r + b)) -
+      ((b - a) / (↑r + a) - ((b - a) / (↑r + a)) ^ 2 / 2 + (b - a) / ((↑r + a) * (↑r + b)) / 2 -
+        ((b - a) / (↑r + 1 + a) - ((b - a) / (↑r + 1 + a)) ^ 2 / 2 +
+          (b - a) / ((↑r + 1 + a) * (↑r + 1 + a + (b - a))) / 2))
+h1 : ↑r + a + (b - a) = ↑r + b
+h2 : ↑r + a + 1 = ↑r + 1 + a
+h3 : ↑r + a + 1 + (b - a) = ↑r + 1 + b
+⊢ (b - a) / (↑r + a) - ((b - a) / (↑r + a)) ^ 2 / 2 + (b - a) / ((↑r + a) * (↑r + b)) / 2 -
+      ((b - a) / (↑r + 1 + a) - ((b - a) / (↑r + 1 + a)) ^ 2 / 2 + (b - a) / ((↑r + 1 + a) * (↑r + 1 + b)) / 2) ≤
+    (b - a) / ((↑r + a) * (↑r + b))
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\PeriodGapTail.lean:62:8: error(lean.unknownIdentifier): Unknown constant `Finset.sum_Ico_succ_top`

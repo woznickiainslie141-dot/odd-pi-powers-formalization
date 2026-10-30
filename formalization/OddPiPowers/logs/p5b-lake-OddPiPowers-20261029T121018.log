@@ -1,0 +1,527 @@
+⚠ [3107/3157] Replayed OddPiPowers.Construction.ActualAuxiliary
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:15:0: 'Mathlib.Data.Complex.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Complex.Basic
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:835:10: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Finset.mem_filter]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:896:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:912:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1028:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1036:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1057:22: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_pow, Polynomial.coeToPowerSeries.ringHom_apply, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1064:13: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1101:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1103:10: This simp argument is unused:
+  PowerSeries.coeff_C_mul_X_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ne.symm hqj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1163:12: This simp argument is unused:
+  principalPartTruncation
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sub_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1218:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1324:26: This simp argument is unused:
+  Polynomial.coe_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coeToPowerSeries.ringHom_apply, map_mul, map_pow, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1326:17: This simp argument is unused:
+  Polynomial.coe_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.coe_add, Polynomial.coe_X, Polynomial.coe_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1385:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1402:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1391:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1484:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1676:56: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [factorialBorelShift, div_eq_mul_inv, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1706:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1795:44: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1837:5: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:1946:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2144:28: This simp argument is unused:
+  Polynomial.eval₂_X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Polynomial.eval₂_C]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: OddPiPowers/Construction/ActualAuxiliary.lean:2160:10: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:34: `Fin.lt_iff_val_lt_val` has been deprecated: Use `Fin.lt_def` instead
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵.̵l̵t̵_̵i̵f̵f̵_̵v̵a̵l̵_̵l̵t̵_̵v̵a̵l̵F̲i̲n̲.̲l̲t̲_̲d̲e̲f̲
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2275:27: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [Fin.lt_iff_val_lt_val, hj0] at hij
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2326:44: This simp argument is unused:
+  auxiliaryJetVector
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [auxiliaryColumnTransform, d, hi0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2446:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [actualAuxiliaryExponentialEval]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:2454:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [PowerSeries.C_eq_algebraMap]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3026:4: Unused tactic linter: `change (ell.val ∈ P.interval j) ↔ P.left j ≤ ell.val` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3200:10: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3222:6: This simp argument is unused:
+  Polynomial.taylor_coeff_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [B, Polynomial.coeToPowerSeries.ringHom_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3295:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hcoefFactor]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:10: This simp argument is unused:
+  actualAuxiliaryPolynomialMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryLeadingMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3323:43: This simp argument is unused:
+  actualAuxiliaryLeadingMatrix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualAuxiliaryPolynomialMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Construction/ActualAuxiliary.lean:3357:36: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at hIm
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3108/3157] Replayed OddPiPowers.Arithmetic.SignedCarry
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:19:45: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:23:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/SignedCarry.lean:40:18: Variable name `hell` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hell
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3110/3157] Replayed OddPiPowers.Arithmetic.ContinuousCarry
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:44:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:57:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:40:31: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [add_assoc, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:93:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:98:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:260:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:261:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:260:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:261:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:272:58: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:272:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:381:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hγ, hfrac14, hγ0, h14not]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:385:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hz0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:357:27: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:473:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfrac14, hγneg, h14lo']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:478:10: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [γ, hfracz, hfrac13, hαleβ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:556:37: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:593:29: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ContinuousCarry.lean:596:29: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3146/3160] Replayed OddPiPowers.Arithmetic.LocalPrimeValuation
+warning: OddPiPowers/Arithmetic/LocalPrimeValuation.lean:113:14: This simp argument is unused:
+  PrimeValuationLowerBound
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/LocalPrimeValuation.lean:128:29: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/LocalPrimeValuation.lean:154:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/LocalPrimeValuation.lean:316:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [ActualIntervals.length]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Arithmetic/LocalPrimeValuation.lean:516:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/LocalPrimeValuation.lean:516:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/LocalPrimeValuation.lean:802:21: Variable name `hr` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hr
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3147/3160] Replayed OddPiPowers.Arithmetic.ActualCoefficientDivisor
+warning: OddPiPowers/Arithmetic/ActualCoefficientDivisor.lean:181:24: Variable name `hp_le` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp_le
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: OddPiPowers/Arithmetic/ActualCoefficientDivisor.lean:326:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3148/3160] Replayed OddPiPowers.Arithmetic.ReducedAuxiliary
+warning: OddPiPowers/Arithmetic/ReducedAuxiliary.lean:32:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/ReducedAuxiliary.lean:32:17: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/ReducedAuxiliary.lean:32:29: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [if_pos rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3151/3160] Replayed OddPiPowers.Arithmetic.TwelveLayerCost
+warning: OddPiPowers/Arithmetic/TwelveLayerCost.lean:17:25: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCost.lean:17:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCost.lean:25:25: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCost.lean:25:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: OddPiPowers/Arithmetic/TwelveLayerCost.lean:165:8: This simp argument is unused:
+  twelveEndpointSlope_alpha
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [twelveEndpointReal, twelveAlpha, twelveEndpointSlope, Int.fract]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3155/3191] Replayed OddPiPowers.Arithmetic.PrimeDivisorExample
+warning: OddPiPowers/Arithmetic/PrimeDivisorExample.lean:38:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3156/3191] Replayed OddPiPowers.Arithmetic.CertifiedPrimeDivisor
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:18:46: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:18:50: Unused tactic linter: `norm_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:18:50: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:20:46: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:63:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:63:8: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:69:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:69:8: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:80:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:80:8: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:63:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:69:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:80:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:107:2: Unused tactic linter: `change
+  (∑ a : Fin M, P.intervalCarryNat a p ell) = ∑ j : Fin C.J, C.weight j * C.carryNat j (N / p) (ell / p)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:147:5: Variable name `G` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _G
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:205:35: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [twoLayerShape]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:199:41: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: OddPiPowers/Arithmetic/CertifiedPrimeDivisor.lean:207:35: This simp argument is unused:
+  twoLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3157/3191] Replayed OddPiPowers.Arithmetic.TwelveLayerCertifiedBound
+warning: OddPiPowers/Arithmetic/TwelveLayerCertifiedBound.lean:26:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: OddPiPowers/Arithmetic/TwelveLayerCertifiedBound.lean:31:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/TwelveLayerCertifiedBound.lean:53:13: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/TwelveLayerCertifiedBound.lean:65:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [3931/3981] Replayed OddPiPowers.Arithmetic.FinitePeriodKernel
+warning: OddPiPowers/Arithmetic/FinitePeriodKernel.lean:29:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/FinitePeriodKernel.lean:29:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3932/3981] Replayed OddPiPowers.Arithmetic.TwelveLayerFamily
+warning: OddPiPowers/Arithmetic/TwelveLayerFamily.lean:33:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: OddPiPowers/Arithmetic/TwelveLayerFamily.lean:28:4: Unused tactic linter: `change 2 * (if a.val < 6 then 0 else (a.val - 5) * N) ≤ 69 * N` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3975/3981] Replayed OddPiPowers.Arithmetic.PrimeDivisorRates
+warning: OddPiPowers/Arithmetic/PrimeDivisorRates.lean:43:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/PrimeDivisorRates.lean:43:8: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Arithmetic/PrimeDivisorRates.lean:43:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3980/3981] Built OddPiPowers (9.2s)
+Build completed successfully (3981 jobs).

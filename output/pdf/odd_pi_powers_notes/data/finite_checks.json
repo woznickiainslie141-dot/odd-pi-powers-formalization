@@ -1,0 +1,68 @@
+{
+  "scope": "Finite exact consistency checks only",
+  "examples": [
+    {
+      "m": 1,
+      "n": 4,
+      "intervals": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "integer_coefficients": true,
+      "determinant_constant": "192",
+      "floor_divisibility_including_column_slack": true
+    },
+    {
+      "m": 2,
+      "n": 6,
+      "intervals": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "integer_coefficients": true,
+      "determinant_constant": "-268738560000",
+      "floor_divisibility_including_column_slack": true
+    },
+    {
+      "m": 3,
+      "n": 8,
+      "intervals": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "integer_coefficients": true,
+      "determinant_constant": "46793803452530065320406155264000000000",
+      "floor_divisibility_including_column_slack": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\P6PeriodPrefix00.lean:100:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LE.le ℝ Real.instLE (↑224094434293677 / ↑100000000000000)
+    (List.map periodLabelActual (periodPrefixLabels 32 (List.filter selectedCellPredicate twelveLayerCellChunk0))).sum
+but is expected to have type
+  @LE.le ℝ Real.instLE (224094434293677 / 100000000000000)
+    (List.map periodLabelActual (periodPrefixLabels 32 (List.filter selectedCellPredicate twelveLayerCellChunk0))).sum
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 2

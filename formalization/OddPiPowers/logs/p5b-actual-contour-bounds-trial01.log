@@ -1,0 +1,13 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualContourBounds.lean:68:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  P.meromorphicExponentialKernel ?h (Complex.I * ↑?theta) ?z
+in the target expression
+  (fun x_1 => Complex.I * P.meromorphicExponentialKernel h (Complex.I * ↑theta) (verticalPoint x x_1)) y =
+    (fun x_1 => P.intervalFactorialProduct * (Complex.I * P.verticalExponentialKernel h theta (verticalPoint x x_1))) y
+
+M : ℕ
+P : ActualIntervals M
+h : ℕ
+theta x H y : ℝ
+hy : y ∈ Set.uIcc (-H) H
+⊢ (fun x_1 => Complex.I * P.meromorphicExponentialKernel h (Complex.I * ↑theta) (verticalPoint x x_1)) y =
+    (fun x_1 => P.intervalFactorialProduct * (Complex.I * P.verticalExponentialKernel h theta (verticalPoint x x_1))) y

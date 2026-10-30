@@ -1,0 +1,33 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodWindowFamily.lean:29:0: warning: automatically included section variable(s) unused in theorem `OddPiPowers.PrimeRates.periodWindowFamily_labels_inj`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodWindowFamily.lean:44:0: warning: automatically included section variable(s) unused in theorem `OddPiPowers.PrimeRates.periodWindowFamily_cap`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodWindowFamily.lean:67:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ x ∈ ?s ×ˢ ?t, ?f x
+in the target expression
+  (∑ i ∈ (Finset.range K).product s,
+        ↑((fun p => (periodWindowFamily V p).toWindow) i).weight *
+          (1 / ((fun p => (periodWindowFamily V p).toWindow) i).lower -
+            1 / ((fun p => (periodWindowFamily V p).toWindow) i).upper)) /
+      ↑69 =
+    1 / 69 * ∑ r ∈ Finset.range K, ∑ i ∈ s, ↑(V i).cell.value * periodGap r (V i).a (V i).b
+
+ι : Type u_1
+inst✝ : DecidableEq ι
+K : ℕ
+s : Finset ι
+V : ι → CertifiedCellWindow
+⊢ (∑ i ∈ (Finset.range K).product s,
+        ↑((fun p => (periodWindowFamily V p).toWindow) i).weight *
+          (1 / ((fun p => (periodWindowFamily V p).toWindow) i).lower -
+            1 / ((fun p => (periodWindowFamily V p).toWindow) i).upper)) /
+      ↑69 =
+    1 / 69 * ∑ r ∈ Finset.range K, ∑ i ∈ s, ↑(V i).cell.value * periodGap r (V i).a (V i).b

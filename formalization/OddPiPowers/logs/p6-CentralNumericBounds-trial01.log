@@ -1,0 +1,18 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralNumericBounds.lean:31:4: error: Type mismatch: After simplification, term
+  hb
+ has type
+  ↑b ≤ Real.log ↑c⁻¹
+but is expected to have type
+  ↑b ≤ -Real.log ↑c
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 2
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\CentralNumericBounds.lean:32:60: error: Type mismatch
+  LT.lt.le Real.log_two_gt_d9
+has type
+  0.6931471803 ≤ Real.log 2
+but is expected to have type
+  6931471803 / 10000000000 ≤ Real.log 2
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 4

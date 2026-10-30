@@ -1,0 +1,49 @@
+{
+  "status": "accepted",
+  "date": "2026-10-29",
+  "stage": "P5-B actual finite pole contours and weighted side estimates",
+  "library_modules": 122,
+  "executed_build_targets": 12,
+  "verified_cached_modules": 110,
+  "build_run": "20261029T121018",
+  "verified_cache_evidence": {
+    "p5a-guarded-library-build-state.json": 110
+  },
+  "peak_build_job_MiB": 3292.19,
+  "peak_all_build_evidence_MiB": 3556.75,
+  "audits": [
+    {
+      "log": "p5b-post-build-axioms.log",
+      "count": 78,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 4421.72,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "log": "p5b-post-build-regression-axioms.log",
+      "count": 294,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 5130.09,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "manifest_sha256": "e46b8f7bf97f5d4ee8f0b4f5155b71dbead74f1c2aef1b55c34677ffbd9dbf38",
+  "unchanged_prior_mathematical_modules": 110,
+  "scope": "Actual remainder equals a normalized finite sum of pole-circle integrals, with exp(lambda)=I; full-factorial exponential horizontal kernels are integrable and both fixed-scale vertical sides vanish. The actual seventeen-row family is instantiated. Rectangle/circle deformation, height and central rates, sharp gamma and final numerical pi-power bounds remain open."
+}

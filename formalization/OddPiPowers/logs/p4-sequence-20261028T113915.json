@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "files": [
+    "OddPiPowers/Vendor/PNT/SmoothExistence.lean",
+    "OddPiPowers/Vendor/PNT/Wiener.lean",
+    "OddPiPowers/Vendor/PNT/Consequences.lean",
+    "OddPiPowers/Arithmetic/FinitePeriodKernel.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowGeometry.lean",
+    "OddPiPowers/Arithmetic/PrimeWindowSums.lean",
+    "OddPiPowers/Arithmetic/PrimeNumberRates.lean"
+  ],
+  "completed": [
+    {
+      "file": "OddPiPowers/Vendor/PNT/SmoothExistence.lean",
+      "log": "logs/p4-SmoothExistence-20261028T113915.log",
+      "sha256": "2ae5ad49ec9314164433d29152cf8e99d154448c162e11d68cf030bc07903da4"
+    }
+  ],
+  "current": "OddPiPowers/Vendor/PNT/Wiener.lean",
+  "exit_code": 4294967295,
+  "failed_log": "logs/p4-Wiener-20261028T113915.log"
+}

@@ -1,0 +1,26 @@
+L=39: E=1196.4076 a=70 b=10 T=11 m=179 (43560 cols, 8s) []
+L=50: E=1166.2438 a=72 b=8 T=14 m=183 (34848 cols, 5s) []
+L=60: E=1148.0113 a=70 b=7 T=16 m=181 (34485 cols, 10s) []
+L=80: E=1122.2171 a=65 b=5 T=22 m=174 (34848 cols, 21s) []
+L=110: E=1103.3283 a=60 b=4 T=27 m=167 (33759 cols, 35s) []
+L=120: E=1098.3429 a=58 b=4 T=28 m=169 (32912 cols, 38s) []
+L=129: E=1093.5807 a=63 b=3 T=36 m=170 (30492 cols, 42s) []
+L=140: E=1091.8616 a=60 b=3 T=36 m=167 (33033 cols, 73s) []
+L=159: E=1085.1038 a=57 b=3 T=37 m=167 (31218 cols, 101s) []
+Traceback (most recent call last):
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\scan2.py", line 53, in <module>
+    res = scan(k, L)
+          ^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\scan2.py", line 29, in scan
+    r = eval_many(k, data, cols)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\common.py", line 19, in eval_many
+    r = E_batch(k, data, cols[s:s + chunk].T)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\cells.py", line 170, in E_batch
+    g = gamma_batch(data, NU)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hc260\OneDrive\文档\ChatGPT\pi无理测度记录突破\output\pdf\odd_pi_powers_notes\improvement_plan\experiments\N1_k3_search\cells.py", line 134, in gamma_batch
+    return data["ws"] @ mins.astype(np.float64)
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 18.0 MiB for an array with shape (8823, 267) and data type float64

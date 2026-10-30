@@ -1,0 +1,25 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:85:11: error: `simp` made no progress
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:84:46: warning: This simp argument is unused:
+  Polynomial.eval₂_natCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [horizontalDenominator, denominator, Polynomial.eval₂_finsetProd, Polynomial.eval₂_add,
+    Polynomial.eval₂_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:111:41: error: Application type mismatch: The argument
+  fun a ha =>
+    Polynomial.monic_prod_of_monic (?m.30 a ha) (fun r => Polynomial.X + Polynomial.C (?m.31 a ha r)) fun r hr =>
+      Polynomial.monic_X_add_C (?m.31 a ha r)
+has type
+  ∀ (a : ?m.11) (ha : ?m.26 a), (∏ i ∈ ?m.30 a ha, (Polynomial.X + Polynomial.C (?m.31 a ha i))).Monic
+of sort `Prop` but is expected to have type
+  Finset ?m.10
+of sort `Type ?u.6` in the application
+  @Polynomial.natDegree_prod_of_monic ?m.9 ?m.10 fun a ha =>
+    Polynomial.monic_prod_of_monic (?m.30 a ha) (fun r => Polynomial.X + Polynomial.C (?m.31 a ha r)) fun r hr =>
+      Polynomial.monic_X_add_C (?m.31 a ha r)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualHorizontalGeometry.lean:108:81: error: unsolved goals
+M : ℕ
+P : ActualIntervals M
+⊢ (∏ a, ∏ r ∈ P.interval a, (Polynomial.X + Polynomial.C ↑r)).natDegree = P.totalMultiplicity

@@ -1,0 +1,9 @@
+⚠ [3015/3017] Built OddPiPowers.Transfer.RationalPower (7.9s)
+warning: OddPiPowers/Transfer/RationalPower.lean:27:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: OddPiPowers/Transfer/RationalPower.lean:27:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3016/3017] Built OddPiPowers (7.5s)
+Build completed successfully (3017 jobs).

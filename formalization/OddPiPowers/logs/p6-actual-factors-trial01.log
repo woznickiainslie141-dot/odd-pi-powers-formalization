@@ -1,0 +1,46 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualSeriesFactors.lean:123:6: error: unsolved goals
+case pos
+M : ℕ
+P : ActualIntervals M
+a : Fin M
+ell : ℕ
+he : ell ∈ P.interval a
+q : ℕ
+hw : |P.binomialWeight a ell| ≤ 2 ^ P.length a
+hbig : 2 ^ P.length a ≤ actualFactorWeight P a
+h✝ : q = 0
+⊢ |P.binomialWeight a ell| ≤ actualFactorWeight P a
+
+case neg
+M : ℕ
+P : ActualIntervals M
+a : Fin M
+ell : ℕ
+he : ell ∈ P.interval a
+q : ℕ
+hw : |P.binomialWeight a ell| ≤ 2 ^ P.length a
+hbig : 2 ^ P.length a ≤ actualFactorWeight P a
+h✝ : ¬q = 0
+⊢ 0 ≤ actualFactorWeight P a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualSeriesFactors.lean:158:47: error: unsolved goals
+M : ℕ
+P : ActualIntervals M
+ell h : ℕ
+⊢ (↑P.n + 1) ^ h * Finset.univ.prod (List.prod ∘ List.map Prod.snd ∘ fun a => actualLocalWeightedFactors P a ell) =
+    (↑P.n + 1) ^ h * (↑P.n + 1) ^ M * 2 ^ ∑ a, P.length a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualSeriesFactors.lean:161:59: warning: This simp argument is unused:
+  Finset.prod_mul_distrib
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualWeightedFactors, List.map_flatten, List.prod_flatten, List.map_map,
+    actualLocalWeightedFactors_weight, actualFactorWeight, Finset.prod_pow_eq_pow_sum, pow_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualSeriesFactors.lean:162:4: warning: This simp argument is unused:
+  Finset.prod_pow_eq_pow_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [actualWeightedFactors, List.map_flatten, List.prod_flatten, List.map_map,
+    actualLocalWeightedFactors_weight, actualFactorWeight, Finset.prod_mul_distrib, pow_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -1,0 +1,3 @@
+info: stderr:
+error launching git:
+error: external command 'git' exited with code 1

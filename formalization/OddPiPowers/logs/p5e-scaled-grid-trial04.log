@@ -1,0 +1,26 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ScaledGridLimit.lean:56:64: error: unsolved goals
+f : ℝ → ℝ
+hf : Continuous f
+K : ℝ
+hK : 0 ≤ K
+hLip : ∀ (x y : ℝ), ‖f x - f y‖ ≤ K * |x - y|
+L a b : ℕ
+hL : 0 < L
+hab : a ≤ b
+s : ℝ
+hscale : Tendsto (fun N => L * N) atTop atTop
+hz : Tendsto ((fun n => f (↑b / ↑L + s) / ↑n) ∘ fun N => L * N) atTop (𝓝 0)
+ht :
+  Tendsto
+    (fun x =>
+      (∑ r ∈ Finset.Ico (a * x) (b * x), f (↑r / ↑(L * x) + s)) / ↑(L * x) +
+        ((fun n => f (↑b / ↑L + s) / ↑n) ∘ fun N => L * N) x)
+    atTop (𝓝 (∫ (x : ℝ) in ↑a / ↑L + s..↑b / ↑L + s, f x))
+N : ℕ
+hN : 0 < N
+hN0 : ↑N ≠ 0
+hL0 : ↑L ≠ 0
+hpoint : ↑(b * N) / ↑(L * N) = ↑b / ↑L
+⊢ (∑ r ∈ Finset.Ico (a * N) (b * N), f (↑r / ↑(L * N) + s)) / ↑(L * N) +
+      ((fun n => f (↑b / ↑L + s) / ↑n) ∘ fun N => L * N) N =
+    (∑ x ∈ Finset.Ico (a * N) (b * N), f (↑x / ↑(L * N) + s)) / ↑(L * N) + f (↑b / ↑L + s) / ↑(L * N)

@@ -1,0 +1,18 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\LogRationalBounds.lean:48:18: error: linarith failed to find a contradiction
+case right
+x : ℚ
+hx : 1 ≤ x
+n : ℕ
+hxR : 1 ≤ ↑x
+r : ℝ := (↑x - 1) / (↑x + 1)
+hden : 0 < ↑x + 1
+hr0 : 0 ≤ r
+hr1 : r < 1
+heq : (1 + r) / (1 - r) = ↑x
+hl : ∑ i ∈ Finset.range n, r ^ (2 * i + 1) / (2 * ↑i + 1) ≤ 1 / 2 * Real.log ↑x
+hu : 1 / 2 * Real.log ↑x ≤ ∑ i ∈ Finset.range n, r ^ (2 * i + 1) / (2 * ↑i + 1) + r ^ (2 * n + 1) / (1 - r ^ 2)
+hs : ↑(logSeries x n) = 2 * ∑ i ∈ Finset.range n, r ^ (2 * i + 1) / (2 * ↑i + 1)
+herr : ↑(logSeriesError x n) = 2 * r ^ (2 * n + 1) / (1 - r ^ 2)
+a✝ : 2 * ∑ i ∈ Finset.range n, r ^ (2 * i + 1) / (2 * ↑i + 1) + 2 * r ^ (2 * n + 1) / (1 - r ^ 2) < Real.log ↑x
+⊢ False
+failed

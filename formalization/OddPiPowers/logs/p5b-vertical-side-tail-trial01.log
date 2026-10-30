@@ -1,0 +1,21 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalSideTail.lean:37:46: error: Invalid field notation: Function `verticalTailConstant` does not have a usable parameter of type `ActualIntervals ...` for which to substitute `P`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalSideTail.lean:71:15: error: Invalid field notation: Function `verticalTailConstant` does not have a usable parameter of type `ActualIntervals ...` for which to substitute `P`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalSideTail.lean:74:8: error: Invalid field notation: Function `verticalTailConstant` does not have a usable parameter of type `ActualIntervals ...` for which to substitute `P`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalSideTail.lean:95:43: error: Invalid field notation: Function `verticalTailConstant` does not have a usable parameter of type `ActualIntervals ...` for which to substitute `P`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalSideTail.lean:99:28: error: Invalid field notation: Function `verticalTailConstant` does not have a usable parameter of type `ActualIntervals ...` for which to substitute `P`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalSideTail.lean:109:43: error: Invalid field notation: Function `verticalTailConstant` does not have a usable parameter of type `ActualIntervals ...` for which to substitute `P`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\VerticalSideTail.lean:113:28: error: Invalid field notation: Function `verticalTailConstant` does not have a usable parameter of type `ActualIntervals ...` for which to substitute `P`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation

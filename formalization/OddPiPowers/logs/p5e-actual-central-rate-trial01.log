@@ -1,0 +1,47 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualCentralRate.lean:30:2: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualCentralRate.lean:66:2: error: Tactic `rfl` failed: The left-hand side
+  (Real.log ↑((L - 2 * A a) * N).factorial - ↑((L - 2 * A a) * N + 1) * Real.log ↑(L * N) -
+      ∑ r ∈ Finset.Icc (A a * N) ((L - A a) * N), centralLogIntegrand Y (↑r / ↑(L * N) - 1 / 2)) /
+    ↑(L * N)
+is not definitionally equal to the right-hand side
+  (Real.log ↑((L - 2 * A a) * N).factorial - ↑((L - 2 * A a) * N + 1) * Real.log ↑(L * N) -
+      ∑ r ∈ Finset.Icc (A a * N) ((L - A a) * N), centralLogIntegrand Y ((P N).horizontalOffset r)) /
+    ↑(L * N)
+
+M : ℕ
+P : ℕ → ActualIntervals M
+L : ℕ
+hL : 0 < L
+A : Fin M → ℕ
+hA : ∀ (a : Fin M), 2 * A a < L
+hn : ∀ (N : ℕ), (P N).n = L * N
+hl : ∀ (N : ℕ) (a : Fin M), (P N).left a = A a * N
+Y : ℝ
+hY : 0 < Y
+ht :
+  Tendsto
+    (fun b =>
+      ∑ c,
+        (Real.log ↑((L - 2 * A c) * b).factorial - ↑((L - 2 * A c) * b + 1) * Real.log ↑(L * b) -
+            ∑ r ∈ Finset.Icc (A c * b) ((L - A c) * b), centralLogIntegrand Y (↑r / ↑(L * b) - 1 / 2)) /
+          ↑(L * b))
+    atTop (𝓝 (∑ c, -centralIntervalRate (↑(L - 2 * A c) / ↑L) Y))
+ht' :
+  Tendsto
+    (fun N =>
+      ∑ a,
+        (Real.log ↑((L - 2 * A a) * N).factorial - ↑((L - 2 * A a) * N + 1) * Real.log ↑(L * N) -
+            ∑ r ∈ Finset.Icc (A a * N) ((L - A a) * N), centralLogIntegrand Y (↑r / ↑(L * N) - 1 / 2)) /
+          ↑(L * N))
+    atTop (𝓝 (-∑ a, centralIntervalRate (↑(L - 2 * A a) / ↑L) Y))
+N : ℕ
+hN : 0 < N
+hnP : 0 < (P N).n
+a : Fin M
+ha : a ∈ Finset.univ
+⊢ (Real.log ↑((L - 2 * A a) * N).factorial - ↑((L - 2 * A a) * N + 1) * Real.log ↑(L * N) -
+        ∑ r ∈ Finset.Icc (A a * N) ((L - A a) * N), centralLogIntegrand Y (↑r / ↑(L * N) - 1 / 2)) /
+      ↑(L * N) =
+    (Real.log ↑((L - 2 * A a) * N).factorial - ↑((L - 2 * A a) * N + 1) * Real.log ↑(L * N) -
+        ∑ r ∈ Finset.Icc (A a * N) ((L - A a) * N), centralLogIntegrand Y ((P N).horizontalOffset r)) /
+      ↑(L * N)

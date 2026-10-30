@@ -1,0 +1,49 @@
+{
+  "status": "accepted",
+  "date": "2026-10-29",
+  "stage": "P5-D explicit actual central majorants and finite logarithms",
+  "library_modules": 140,
+  "executed_build_targets": 8,
+  "verified_cached_modules": 132,
+  "build_run": "20261029T181503",
+  "verified_cache_evidence": {
+    "p5d-guarded-library-build-state-20261029T181210.json": 132
+  },
+  "peak_build_job_MiB": 3296.5,
+  "peak_all_build_evidence_MiB": 3556.75,
+  "audits": [
+    {
+      "log": "p5d-post-build-axioms.log",
+      "count": 42,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 4425.35,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "log": "p5d-post-build-regression-axioms.log",
+      "count": 429,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 5139.93,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "manifest_sha256": "e46b8f7bf97f5d4ee8f0b4f5155b71dbead74f1c2aef1b55c34677ffbd9dbf38",
+  "unchanged_prior_mathematical_modules": 131,
+  "scope": "Explicit scale-independent complete-line majorant, normalized actual central remainder bound uniform over rows, actual common-divisor quotient and all seventeen base rows; exact finite center logarithm, single-interval central integral and height derivative identities. Coefficient heights, central Stirling/Riemann rates, optimal-height theorem, sharp gamma, general odd-power parameter closure and final numerical bounds remain open."
+}

@@ -1,0 +1,29 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\TwelveLayerActualRates.lean:22:59: error: unsolved goals
+s : ℕ
+hs : 0 < s
+f : ℕ → ℝ
+he : ∑ x, f (scaledTwelveLayerOffset s x) = ∑ i, f ↑i.fst
+⊢ ↑s * f 0 * 6 + ∑ x, ↑s * f (1 + ↑x) = ↑s * f 0 * 6 + ↑s * ∑ x, f (1 + ↑x)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\TwelveLayerActualRates.lean:31:46: warning: This simp argument is unused:
+  Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Fin.val_zero, ite_true, Nat.cast_mul, Nat.cast_ofNat, Fin.val_succ, Nat.succ_ne_zero, ite_false,
+    Nat.mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\TwelveLayerActualRates.lean:37:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ a, ↑(69 - 2 * scaledTwelveLayerOffset s a) / 69
+in the target expression
+  ∑ a, ↑(69 - 2 * scaledTwelveLayerOffset s a) / ↑69 = ↑s * (347 / 23)
+
+s : ℕ
+hs : 0 < s
+⊢ ∑ a, ↑(69 - 2 * scaledTwelveLayerOffset s a) / ↑69 = ↑s * (347 / 23)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\TwelveLayerActualRates.lean:51:2: error: No goals to be solved

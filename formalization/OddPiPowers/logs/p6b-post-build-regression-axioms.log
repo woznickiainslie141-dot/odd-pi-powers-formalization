@@ -1,0 +1,711 @@
+'OddPiPowers.coefficientPolynomial_eval_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.polynomial_eval_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussian_norm_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianI_toComplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussian_nnnorm_le_of_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exists_nonzero_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.eval₂_eq_coeff_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exists_polynomial_nonzero_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianFractionEmbedding_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianFractionEmbedding_algebraMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianFractionEmbedding_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitiveNormalization_isPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitiveNormalization_map_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitiveNormalization_dvd_of_fraction_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitiveNormalization_eval₂_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitive_minpoly_eval₂_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitive_minpoly_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitive_minpoly_associated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitive_minpoly_irreducible_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primitive_minpoly_resultant_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.root_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.inverse_product_le_of_one_le_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussian_resultant_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussian_algebraic_value_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussian_algebraic_value_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianBinomial_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianBinomial_leadingCoeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianBinomial_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussianBinomial_roots_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.gaussian_binomial_value_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rationalPowerBinomial_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rational_power_value_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exists_row_rational_value_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.complexPolynomial_eval_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.small_value_forces_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.irrational_of_exponentUpperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.not_liouvilleWith_of_exponentUpperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exponentUpperBound_of_not_liouvilleWith' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exponentUpperBound_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exists_positive_nth_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.lambda_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pi_power_cutoff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.root_in_disk_of_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pi_power_distance_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.roundedIndex_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.roundedIndex_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.roundedIndex_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.roundedIndex_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exp_neg_log_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exp_small_of_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.one_scale_factor_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rounded_rate_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exp_lower_of_index_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.auxiliary_distance_at_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.fixed_slack_close_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.fixed_slack_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exists_positive_rate_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.transfer_exponent_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.irrationality_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pow_X_sub_C_dvd_iff_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.eq_zero_of_confluent_jets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.unit_mul_jets_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.eq_zero_of_unit_weighted_jets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.confluentMatrix_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.confluentMatrix_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.boundedDistance_dvd_intervalLcm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.intervalLcm_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.denominatorCleared_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.denominatorCleared_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.denominatorCleared_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.normalizedReciprocal_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.regularReciprocal_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.normalizedReciprocal_intervalLcm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.regularReciprocal_intervalLcm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.regularLocalSum_cleared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.poleLocalProduct_cleared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.polynomialNumerator_cleared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.DenominatorCleared.coeff_with_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pole_regular_order_budget' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.mixedLocalProduct_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.interval_distance_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.binomialWeight_mul_distance_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.clearedPartialFractionPolynomial_eq_factorial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.regularLocalFactor_mul_localDenominator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.poleLocalFactor_mul_localDenominator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.poleLocalFactor_constantCoeff_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.regularLocalFactor_constantCoeff_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.localUnit_constantCoeff_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.localExpansion_cleared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliary_localCoefficient_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliary_integerRationalPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.map_actualAuxiliaryInt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliary_support_divisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliary_natDegree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliary_topCoeff_eq_localJet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pair_ratio_of_coefficient_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.paired_horizontal_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontal_pair_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.normSq_horizontal_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.paired_normSq_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryLeftBlockSize_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.localExpansion_coeff_sum_eq_unit_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryLeftBlock_jet_orders' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryLeadingMatrix_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryNormalizedMatrix_det_X_sub_one_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.actualAuxiliaryNormalizedMatrix_det_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.actualAuxiliaryPolynomialDet_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryPolynomialMatrixAtI_det_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryPolynomialMatrixAtI_det_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.signedCarry_eq_zero_or_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.intervalCarry_zero_or_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.intervalCarryNat_eq_zero_or_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primeValuationLowerBound_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primeValuationLowerBound_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.primeValuationLowerBound_coeff_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.padicValNat_factorial_eq_div_of_lt_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.padicValNat_intervalLcm_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.binomialWeight_padicVal_eq_intervalCarry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.regularLocalFactor_eq_scalar_mul_normalizedProduct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.regularLocalScalar_padicVal_eq_carry_sub_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.poleLocalFactor_coeff_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.regularLocalFactor_coeff_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.localExpansion_coeff_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.actualAuxiliaryInt_coeff_primePower_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.actualAuxiliaryInt_coeff_primePower_dvd_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.actualAuxiliaryPrimeDivisor_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.actualAuxiliaryPrimeDivisor_dvd_intCoeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryInt_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryIntMatrixAtI_det_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.example42_carryWeight_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.example42_coeff_divisible_41' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.floorCarry_zero_or_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.floorCarry_eq_ite_frac_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.CarryShape.carry_eq_boundaryIndicators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.CarryShape.cost_scaleWeights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.CarryShape.cost_fract_z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.CarryShape.cost_fract_y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twoLayer_cost_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twoLayer_cost_ge_one_of_fineCell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twoLayerCompleteSparseBound_le_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twoLayerCompleteSparseBound_at_three_over_fortyOne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.intervalCarry_eq_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.carryWeight_eq_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.lowerBound_le_carryWeightMinimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.piCertificate_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.piCertificate_dvd_actualDivisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.piCertificate_dvd_integerCoefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.example42_carryWeight_ge_one_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.example42_coeff_divisible_41_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.TwelveCellCertificate.floor_bounds_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.TwelveCellCertificate.adjacent_bounds_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.TwelveCellCertificate.floor_eq_of_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.TwelveCellCertificate.endpoint_lt_iff_rank_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerCellTable_length' does not depend on any axioms
+'OddPiPowers.twelveLayerCellTable_positive_count' does not depend on any axioms
+'OddPiPowers.twelveLayerCellTable_all_valid' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.twelveLayerCellTable_next' does not depend on any axioms
+'OddPiPowers.twelveLayerCellTable_pairwise_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerCell_cost_ge_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerLowerBound_le_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerLowerBound_add_int' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerLowerBound_scale_le_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerLowerBound_eq_zero_of_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerLowerBound_nontrivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayer_lowerBound_le_minimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayerDivisor_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayerDivisor_dvd_actualDivisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayerDivisor_dvd_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayer_scaled_lowerBound_le_minimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayerScaledDivisor_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayerScaledDivisor_dvd_actualDivisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.ActualCarryGrouping.twelveLayerScaledDivisor_dvd_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'WeakPNT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeakPNT'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeakPNT''' depends on axioms: [propext, Classical.choice, Quot.sound]
+'chebyshev_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_eq_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_antitone_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_antitone_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_weighted_sum_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_weighted_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.periodGap_rational_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.upper_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.reciprocal_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.admissible_of_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.windowWeightSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.active_window_indices_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.windowWeightSum_le_of_pairwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.eventually_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.mem_primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.mem_primes_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.sum_log_primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.largePrimeIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.log_primeCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.primes_subset_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finite_window_log_sum_le_log_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.eventually_finite_windows_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.theta_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.psi_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.log_lcmUpto_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.theta_scaled_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.log_sum_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finite_window_log_sum_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.unit_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.toWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.local_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.rate_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.CertifiedCellWindow.separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.certifiedCellWindows_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finiteWindowRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.divisor_eventually_exp_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationCell' does not depend on any axioms
+'OddPiPowers.PrimeRates.calibrationCell_mem' depends on axioms: [propext]
+'OddPiPowers.PrimeRates.calibrationWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationWindow_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationWindow_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibrationWindow_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.calibration_primeCertificate_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayerActualFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerIndexToSigma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerSigmaToIndex' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.twelveLayerIndexEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerActualGrouping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.primeCertificate_eq_grouping_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.actualDivisor_eventually_exp_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.twelveLayer_actualDivisor_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.PrimeWindow.scaleWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.windowWeightSum_scaleWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.finiteWindowRate_scaleWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.twelveLayer_scaled_actualDivisor_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.PrimeRates.log_intervalLcm_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.PrimeRates.twelveLayerActualFamily_eventually_exp_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.horizontalB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalB_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalFactor_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalFactor_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontal_pair_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.symmetric_horizontal_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalOffset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.interval_reflect_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.prod_interval_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalOffset_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalOffset_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalPoint_add_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominator_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct_normSq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.interval_horizontal_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalProduct_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_normSq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_tail_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_norm_neg_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_tail_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalDenominator_lower_tail_pow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.horizontalMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorantConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_le_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.continuous_horizontalMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.integrable_horizontalMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalPoint_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalPoint_norm_neg_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_norm_neg_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.continuous_horizontalPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.continuous_horizontalDenominator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.continuous_horizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_horizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_horizontalKernel_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalKernel_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.normalizedHorizontalKernel_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_normalizedHorizontalKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.horizontalKernel_integral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominator_natDegree_ge_n_add_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayer_denominator_degree_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_horizontal_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_horizontal_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_horizontal_uniform_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominatorValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.intervalFactorialProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.factorialRationalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominator_factor_at_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominatorValue_ne_zero_of_nonpoles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.partialFractionTerm_div_denominator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.factorialRationalKernel_partialFractions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.integer_pole_norm_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.integer_pole_closedBalls_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pole_factor_ne_zero_on_other_closedBall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pole_factor_ne_zero_on_own_sphere' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.all_pole_factors_ne_zero_on_sphere' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.poleTerm_circleIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.poleTerm_circleIntegral_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.poleTerm_circleIntegral_other' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_norm_imaginary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_norm_le_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalPoint_im' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_norm_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_norm_horizontal_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_norm_horizontal_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_norm_horizontal_neg_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_differentiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.contourExponential_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.iteratedDeriv_contourExponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliary_eval_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.localCoefficient_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.principalExponentialTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_principalSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.principalExponentialTerm_circleIntegrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.principalExponentialTerm_circleIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_circleIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.finitePoleContour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.finitePoleContour_eq_derivativeSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.contourExponential_at_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder_commonScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder_eq_finitePoleContour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.exp_lambda_eq_I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_eq_finitePoleContour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.denominatorValue_norm_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.vertical_pole_factor_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.vertical_denominator_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.vertical_rationalKernel_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.continuous_denominatorValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.verticalPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.continuous_verticalPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.verticalExponentialKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.verticalTailConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.verticalExponentialKernel_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.continuous_verticalExponentialKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.verticalSideIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.verticalSide_intervalIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.verticalSideIntegral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.verticalSideIntegral_tendsto_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.verticalSideIntegral_tendsto_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.weightedHorizontalKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.weightedHorizontalKernel_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.weightedHorizontalKernel_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.continuous_weightedHorizontalKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_weightedHorizontalKernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_weightedHorizontalKernel_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.weightedHorizontalKernel_integral_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_circleIntegrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_horizontal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_vertical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_meromorphicExponentialKernel_horizontal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_meromorphicExponentialKernel_horizontal_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_vertical_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_vertical_tendsto_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_vertical_tendsto_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayer_finitePoleContour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_meromorphic_horizontal_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_meromorphic_vertical_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.bottom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegrable_of_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_eq_zero_of_differentiable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontal_comp_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.vertical_comp_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_eq_zero_of_boundary_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangle_horizontal_ne_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangle_vertical_ne_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegrable_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.clog_neg_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.clog_neg_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.hasDerivAt_clog_sub_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.hasDerivAt_clog_neg_sub_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_simple_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.hasDerivAt_inversePower_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_higher_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.RectangleIntegrable.fun_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_fun_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_congr_nonpole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.entire_dslope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.pole_dslope_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.real_pole_circle_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegrable_real_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_entire_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_simple_real_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_higher_real_pole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_dslope_reduce' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.circleIntegral_dslope_reduce' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rectangleIntegral_real_pole_eq_circle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.actual_pole_inside_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.principalExponentialTerm_rectangleIntegrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.principalExponentialTerm_rectangle_eq_circle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphicExponentialKernel_rectangle_eq_finitePoleContour' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.horizontalPoint_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontal_affine_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.intervalIntegral_symmetric_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_kernel_horizontal_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.integrable_kernel_horizontal_real_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.kernel_rectangle_tendsto_horizontal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.kernel_rectangle_tendsto_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.finitePoleContour_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.lambda_eq_I_mul_pi_div_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_norm_le_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_finitePoleContour_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_actualAuxiliaryAtI_eq_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorantConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_integral_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.horizontalMajorant_integral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.weightedHorizontalKernel_lower_integral_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.intervalFactorialProduct_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.intervalFactorialProduct_norm_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.centralLineBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLineBound_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphic_horizontal_integral_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.meromorphic_horizontal_lower_integral_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.auxiliaryCommonScale_cast_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.auxiliaryCommonScale_contour_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralRemainderBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralRemainderBound_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLineBound_contour_normalization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.centralRemainderBound_mono_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualExponentialRemainder_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.actualAuxiliaryAtI_norm_le_central_all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm_le_central' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.log_norm_horizontal_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.log_intervalFactorialProduct_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.log_normalizedHorizontalProduct_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.log_horizontalDenominator_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.ActualIntervals.centralLogRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLogRatio_eq_finite_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.exp_centralLogRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.log_centralRemainderBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.reducedAuxiliaryRow_norm_le_exp_central' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayer_actualAuxiliaryAtI_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_reducedAuxiliaryRow_norm_le_central' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogPrimitive_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralIntervalRate_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.grid_cell_integral_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.grid_integral_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegrand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegrand_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegrand_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegrand_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegrand_derivative_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.centralLogIntegrand_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaled_grid_Ico_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaled_grid_Icc_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.stirlingSeq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.stirlingSeq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.stirlingSeq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.log_stirlingSeq_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.log_stirlingSeq_sdiff_hasSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.log_stirlingSeq'_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.log_stirlingSeq_sdiff_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.log_stirlingSeq_bounded_aux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.log_stirlingSeq_bounded_by_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.StirlingLogCore.stirlingSeq'_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.stirlingSeq'_bounded_by_pos_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.StirlingLogCore.stirlingSeq'_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.StirlingLogCore.stirlingSeq_has_pos_limit_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.log_nat_div_nat_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.log_factorial_sub_self_log_div_self_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaled_log_factorial_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaled_log_div_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.scaled_interval_log_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLogRatio_eq_interval_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.scaled_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.scaled_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralLogRatio_scaled_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.log_auxiliaryCommonScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.log_auxiliaryCommonScale_div_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.centralRemainderBound_log_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.ActualIntervals.actualRows_eventually_exp_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerCentralOffset' does not depend on any axioms
+'OddPiPowers.twelveLayerCentralOffset_bound' depends on axioms: [propext, Quot.sound]
+'OddPiPowers.twelveLayerActualFamily_left_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerCentralSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayerCentralDecay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_centralLogRatio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_centralRemainderBound_log_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_actualRows_eventually_exp_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.twelveLayer_reducedRows_eventually_exp_upper_of_divisor_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddPiPowers.twelveLayer_reducedRows_eventually_exp_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rate_gap_pos_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rate_ratio_le_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.rational_rate_certificate_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPiPowers.irrationality_transfer_of_rational_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]

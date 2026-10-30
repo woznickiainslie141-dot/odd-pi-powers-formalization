@@ -1,0 +1,7 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellWindowAggregate.lean:36:2: error: Unnecessary `generalizing` argument: Variable `hv` is generalized automatically
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellWindowAggregate.lean:36:2: error: Unnecessary `generalizing` argument: Variable `ho` is generalized automatically
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellWindowAggregate.lean:70:40: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellWindowAggregate.lean:129:59: error: failed to prove positivity/nonnegativity/nonzeroness
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\CellWindowAggregate.lean:148:68: error: failed to prove positivity/nonnegativity/nonzeroness

@@ -1,0 +1,15 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedNumericCertificate.lean:35:5: error: typeclass instance problem is stuck
+  IsLocallyFiniteMeasure ?m.190
+
+Note: Lean will not try to resolve this typeclass instance problem because the fourth type argument to `IsLocallyFiniteMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedNumericCertificate.lean:55:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedNumericCertificate.lean:60:2: warning: Unused tactic linter: `norm_num at hatan hlog ⊢` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

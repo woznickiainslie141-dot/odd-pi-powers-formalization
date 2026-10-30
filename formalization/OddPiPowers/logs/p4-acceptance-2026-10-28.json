@@ -1,0 +1,49 @@
+{
+  "status": "accepted",
+  "date": "2026-10-28",
+  "stage": "P4 finite-window divisor rates",
+  "library_modules": 104,
+  "build_run": "20261028T174533",
+  "executed_build_targets": 25,
+  "verified_cached_modules": 79,
+  "verified_cache_evidence": {
+    "p4-guarded-library-build-state-20261028T173900.json": 79
+  },
+  "peak_build_job_MiB": 3556.75,
+  "audits": [
+    {
+      "log": "p4-post-build-axioms.log",
+      "count": 67,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 5105.83,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    },
+    {
+      "log": "p4-post-build-regression-axioms.log",
+      "count": 172,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "job": {
+        "job_cap_MiB": 6144,
+        "peak_job_MiB": 4565.15,
+        "process_completed": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "manifest_sha256": "e46b8f7bf97f5d4ee8f0b4f5155b71dbead74f1c2aef1b55c34677ffbd9dbf38",
+  "vendor_revision": "127b50e33f6033e2147921167a117af96d9ba4ea",
+  "vendor_modules": 19,
+  "scope": "Unconditional PNT/psi/lcm interfaces, general finite windows/periods and scaled actual-divisor exponent rates, with concrete rate 2/69. Sharp gamma arithmetic, P5 analytic estimates and final numerical pi-power bounds remain open."
+}

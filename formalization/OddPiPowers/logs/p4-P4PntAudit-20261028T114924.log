@@ -1,0 +1,4 @@
+'WeakPNT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeakPNT'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeakPNT''' depends on axioms: [propext, Classical.choice, Quot.sound]
+'chebyshev_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]

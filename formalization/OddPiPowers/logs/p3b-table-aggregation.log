@@ -1,0 +1,6 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCells.lean:74:2: error: Type mismatch
+  List.all_eq_true.mp hall
+has type
+  ∀ x ∈ twelveLayerCellTable, decide x.Valid = true
+but is expected to have type
+  ∀ c ∈ twelveLayerCellTable, c.Valid

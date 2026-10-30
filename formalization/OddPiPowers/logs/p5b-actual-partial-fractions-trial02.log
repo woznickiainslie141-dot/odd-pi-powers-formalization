@@ -1,0 +1,56 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:40:52: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:59:56: error: unsolved goals
+M : ℕ
+P : ActualIntervals M
+h pole q : ℕ
+hpole : pole ≤ P.n
+hq : q < P.multiplicity pole
+z : ℂ
+hz : z + ↑pole ≠ 0
+hQ : P.denominatorValue z ≠ 0
+he : P.denominatorValue z = (z + ↑pole) ^ P.multiplicity pole * eval₂ (Rat.castHom ℂ) z (P.otherRootProduct pole)
+hother : eval₂ (Rat.castHom ℂ) z (P.otherRootProduct pole) ≠ 0
+hmu : P.multiplicity pole = q + (P.multiplicity pole - q)
+⊢ (Rat.castHom ℂ) ((PowerSeries.coeff q) (P.localExpansion pole h)) *
+      (z + ↑pole) ^ (q + (P.multiplicity pole - q) - q) =
+    ↑((PowerSeries.coeff q) (P.localExpansion pole h)) * (z + ↑pole) ^ (P.multiplicity pole - q)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:95:67: error(lean.unknownIdentifier): Unknown constant `Finset.sum_div`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\ActualPartialFractions.lean:96:2: error: Tactic `apply` failed: could not unify the conclusion of `Finset.sum_congr rfl`
+  Finset.sum ?m.127 ?m.124 = Finset.sum ?m.127 ?m.125
+with the goal
+  (∑ x ∈ Finset.range (P.n + 1),
+        ∑ i ∈ Finset.range (P.multiplicity x), eval₂ (Rat.castHom ℂ) z (P.partialFractionTerm (↑h) x i)) /
+      P.denominatorValue z =
+    ∑ pole ∈ Finset.range (P.n + 1),
+      ∑ q ∈ Finset.range (P.multiplicity pole),
+        ↑((PowerSeries.coeff q) (P.localExpansion pole ↑h)) / (z + ↑pole) ^ (P.multiplicity pole - q)
+
+Note: The full type of `Finset.sum_congr rfl` is
+  (∀ x ∈ ?m.127, ?m.124 x = ?m.125 x) → Finset.sum ?m.127 ?m.124 = Finset.sum ?m.127 ?m.125
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Complex.mulAux ↦ 3
+
+M : ℕ
+P : ActualIntervals M
+h : Fin M
+hM : 0 < M
+z : ℂ
+hz : ∀ r ≤ P.n, z + ↑r ≠ 0
+hQ : P.denominatorValue z ≠ 0
+he : eval₂ (Rat.castHom ℂ) z (P.partialFractionNumerator ↑h) = P.intervalFactorialProduct * z ^ ↑h
+⊢ (∑ x ∈ Finset.range (P.n + 1),
+        ∑ i ∈ Finset.range (P.multiplicity x), eval₂ (Rat.castHom ℂ) z (P.partialFractionTerm (↑h) x i)) /
+      P.denominatorValue z =
+    ∑ pole ∈ Finset.range (P.n + 1),
+      ∑ q ∈ Finset.range (P.multiplicity pole),
+        ↑((PowerSeries.coeff q) (P.localExpansion pole ↑h)) / (z + ↑pole) ^ (P.multiplicity pole - q)

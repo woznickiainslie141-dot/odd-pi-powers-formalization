@@ -1,0 +1,25 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:26:15: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:31:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:53:13: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:64:14: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:64:21: error: Invalid `⟨...⟩` notation: The expected type of this term could not be determined
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerCertifiedBound.lean:64:2: error: Type mismatch: After simplification, term
+  hs
+ has type
+  (if ↑c.left < Int.fract z ∧ Int.fract z < ↑c.right then c.value else 0) ≤
+    twelveLayerCellTable.toFinset.sup fun d => if ↑d.left < Int.fract z ∧ Int.fract z < ↑d.right then d.value else 0
+but is expected to have type
+  c.value ≤
+    twelveLayerCellTable.toFinset.sup fun c => if ↑c.left < Int.fract z ∧ Int.fract z < ↑c.right then c.value else 0

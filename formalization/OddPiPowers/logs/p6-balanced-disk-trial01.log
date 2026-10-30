@@ -1,0 +1,6 @@
+warning: plausible: repository has local changes:
+  D:\codex\pi-irrationality\formalization\OddPiPowers\.lake/packages\plausible
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Analysis\BalancedDiskHeight.lean:36:2: error: 'change' tactic failed, pattern
+  ‖GaussianInt.toComplex ((gaussianAuxiliaryRow (balancedActualFamily (m + 1) n) h).coeff ↑k)‖ ≤ ?m.54
+is not definitionally equal to target
+  ‖(complexPolynomial (balancedGaussianRows m n h)).coeff j‖ ≤ ↑(balancedValueMajorant (m + 1) n)

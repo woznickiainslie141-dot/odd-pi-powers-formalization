@@ -1,0 +1,56 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:82:43: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:104:4: error: unsolved goals
+case pos
+s : ℕ
+hs : 0 < s
+a : Fin (17 * s)
+ha : ↑a < 6 * s
+⊢ ↑(if ha : ↑a < 6 * s then ⟨⟨0, ⋯⟩, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).snd = ↑a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:112:6: error: `simp` made no progress
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    instDecidableEqNat (↑(scaledTwelveLayerIndexToSigma s hs a).fst) 0
+  has type
+    Decidable (↑(scaledTwelveLayerIndexToSigma s hs a).fst = 0)
+  but is expected to have type
+    Decidable
+      (↑(if ha : ↑a < 6 * s then ⟨⟨0, ⋯⟩, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).fst = 0)
+  in the application
+    @ite ℕ
+      (↑(if ha : ↑a < 6 * s then ⟨⟨0, ⋯⟩, ⟨↑a, ⋯⟩⟩ else ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩).fst = 0)
+      (instDecidableEqNat (↑(scaledTwelveLayerIndexToSigma s hs a).fst) 0)
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:106:17: warning: This simp argument is unused:
+  scaledTwelveLayerIndexToSigma
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [dite_eq_left ha, dite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:106:48: warning: This simp argument is unused:
+  dite_eq_left ha
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [scaledTwelveLayerIndexToSigma, dite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:136:8: warning: This simp argument is unused:
+  CarryShape.scaleWeights
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerOffset, scaledTwelveLayerIndexToSigma, ha, twelveLayerShape]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:136:33: warning: This simp argument is unused:
+  twelveLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerOffset, scaledTwelveLayerIndexToSigma, ha, CarryShape.scaleWeights]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -1,0 +1,7 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:75:2: error: No goals to be solved
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PeriodFloorCertificate.lean:156:2: error: Type mismatch: After simplification, term
+  ⟨hx, hy⟩
+ has type
+  And (periodFloorListCheck scale xs = true) (periodFloorListCheck scale ys = true)
+but is expected to have type
+  And (xs.all (periodFloorCheck scale) = true) (ys.all (periodFloorCheck scale) = true)

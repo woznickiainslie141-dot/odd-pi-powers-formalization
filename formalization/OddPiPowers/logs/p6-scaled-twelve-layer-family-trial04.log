@@ -1,0 +1,67 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:82:43: warning: Variable name `hs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:113:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  1 ≤ f ≤ 11
+  e ≤ -2
+  d ≥ 0
+  c ≥ 0
+  c - d ≥ 1
+  b ≥ 1
+  6*b - c ≥ 1
+  17*b - c ≥ 1
+  17*b - d ≥ 1
+where
+ b := ↑s
+ c := ↑↑a
+ d := ↑↑(if h : True then ⟨↑a, ⋯⟩ else ⟨6 * s + (0 - 1) * s + ↑a, ⋯⟩)
+ e := ↑(↑a - 6 * s) / ↑s
+ f := ↑↑⟨0, ⋯⟩
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:101:46: error: unsolved goals
+case pos
+s : ℕ
+hs : 0 < s
+a : Fin (17 * s)
+ha : ¬↑a < 6 * s
+h✝ : ↑⟨(↑a - 6 * s) / s + 1, ⋯⟩ = 0
+⊢ scaledTwelveLayerSigmaToIndex s hs ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩ = a
+
+case neg
+s : ℕ
+hs : 0 < s
+a : Fin (17 * s)
+ha : ¬↑a < 6 * s
+h✝ : ¬↑⟨(↑a - 6 * s) / s + 1, ⋯⟩ = 0
+⊢ scaledTwelveLayerSigmaToIndex s hs ⟨⟨(↑a - 6 * s) / s + 1, ⋯⟩, ⟨(↑a - 6 * s) % s, ⋯⟩⟩ = a
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:111:8: warning: This simp argument is unused:
+  dite_eq_right hz
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [scaledTwelveLayerSigmaToIndex, Nat.add_sub_cancel]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:111:26: warning: This simp argument is unused:
+  Nat.add_sub_cancel
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [scaledTwelveLayerSigmaToIndex, dite_eq_right hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:135:8: warning: This simp argument is unused:
+  CarryShape.scaleWeights
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerOffset, scaledTwelveLayerIndexToSigma, ha, twelveLayerShape]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Construction\ScaledTwelveLayerFamily.lean:135:33: warning: This simp argument is unused:
+  twelveLayerShape
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scaledTwelveLayerOffset, scaledTwelveLayerIndexToSigma, ha, CarryShape.scaleWeights]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

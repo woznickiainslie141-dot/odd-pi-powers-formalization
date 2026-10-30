@@ -1,0 +1,46 @@
+\contentsline {section}{\numberline {1}Purpose, conventions, and main conclusions}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}What is being bounded?}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Why odd powers are natural targets}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}A preview of the construction}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}General parameter theorem}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}A guide to the evidence}{4}{subsection.1.5}%
+\contentsline {section}{\numberline {2}The auxiliary polynomials and their determinant}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Intervals, poles, and normalization}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Why all coefficients are integers}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Supports and vanishing orders}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}A nonzero determinant, including its leading term}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Prime divisors and weighted zero arcs}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}A local valuation inequality}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Replacing pole locations by a circle}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}The common divisor and its exact exponential rate}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}A transparent two-layer special case}{9}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Uniform analytic estimates}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}A coefficient bound valid on a whole disk}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}A global horizontal-contour bound}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Evaluating the central exponential rate}{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5}From logarithmic polynomials to odd powers}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Why a resultant is the right arithmetic object}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}The quantitative comparison}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Why a common divisor helps twice}{13}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Concrete parameters and every fixed odd power}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Recovering the balanced benchmark}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Two, seven, and twelve layers}{14}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}An explicit family for all odd \(k\)}{14}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Why the higher-power constants still grow rapidly}{15}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}What would be needed to reach 10--100?}{16}{subsection.6.5}%
+\contentsline {section}{\numberline {7}How the constants are computed and certified}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}An exact finite combinatorial calculation}{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Ball arithmetic, root signs, and strict rounding}{17}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Reproduction and the role of each file}{17}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Parameter order and effectivity}{18}{subsection.7.4}%
+\contentsline {section}{\numberline {A}Small examples and useful background}{18}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}A complete two-by-two system}{18}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Why the minimal polynomial cannot be skipped}{18}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Divisibility before and after evaluation}{19}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}The least common multiple as an arithmetic cost}{19}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}A two-layer arc calculation by hand}{19}{subsection.A.5}%
+\contentsline {section}{\numberline {B}Finite experiments and further directions}{19}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Scalar Pad\'e approximation to a pure cubic target}{19}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}A derivative kernel isolating \(\beta (3)\)}{20}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}What a successful binary family would have to prove}{20}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}Corrections that should not become unproved claims}{21}{subsection.B.4}%

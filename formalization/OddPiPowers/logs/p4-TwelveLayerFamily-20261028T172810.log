@@ -1,0 +1,7 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:33:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\TwelveLayerFamily.lean:28:4: warning: Unused tactic linter: `change 2 * (if a.val < 6 then 0 else (a.val - 5) * N) ≤ 69 * N` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

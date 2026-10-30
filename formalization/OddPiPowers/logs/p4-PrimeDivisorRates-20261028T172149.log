@@ -1,0 +1,15 @@
+D:\codex\pi-irrationality\formalization\OddPiPowers\OddPiPowers\Arithmetic\PrimeDivisorRates.lean:32:23: error: linarith failed to find a contradiction
+ι : Type u_1
+s : Finset ι
+W : ι → PrimeWindow
+L : ℕ
+hL : 0 < L
+B : ℝ → ℕ
+hcap : ∀ i ∈ s, 1 ≤ ↑L * (W i).lower
+hB : ∀ (z : ℝ), windowWeightSum s W z ≤ B z
+η : ℝ
+hη : 0 < η
+hLR : 0 < ↑L
+A : ℝ := ∑ i ∈ s, ↑(W i).weight * (1 / (W i).lower - 1 / (W i).upper)
+⊢ False
+failed
