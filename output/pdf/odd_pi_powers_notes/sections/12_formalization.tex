@@ -1,0 +1,193 @@
+\section{What has been formalized, and how the proof is organized}
+\label{sec:formalization}
+
+\subsection{The exact accepted statement}
+
+The latest fixed theorem is named
+\begin{quote}\ttfamily\small
+OddPiPowers.L99.\allowbreak pi\_cube\_exponentUpperBound\_l99\_exact.
+\end{quote}
+Its conclusion is
+\begin{verbatim}
+ExponentUpperBound (Real.pi ^ 3) (12970477737 / 11706979)
+\end{verbatim}
+The predicate used by the project expands to
+\begin{equation}\label{eq:leanmeaning}
+\begin{split}
+\forall\varepsilon>0\ \exists c>0\ \exists Q\in\NN\ 
+\forall p\in\ZZ\ \forall q\in\NN,\qquad\qquad\\
+q>0,\ q\ge Q\quad\Longrightarrow\quad
+cq^{-(E+\varepsilon)}\le|\xi-p/q|.
+\end{split}
+\end{equation}
+Every integer numerator and every sufficiently large positive
+denominator are included; reduced fractions are not required.
+For an irrational \(\xi\), this implies the usual
+\(\mu(\xi)\le E\). The project also connects the predicate to
+Mathlib's infinitely-often approximation predicate
+\texttt{LiouvilleWith} and proves the corresponding strict-bound
+corollary at \(110793/100\).
+
+The all-fractions formulation is useful for more than convenience.
+If \(\xi=a/b\) were rational, the same value would be represented
+by \(p=ta\), \(q=tb\) for arbitrarily large \(t\). The right
+side of \eqref{eq:leanmeaning} would then be zero while its left
+side is positive. Thus this interface itself proves irrationality.
+There is no loophole in which equal fractions are silently omitted.
+
+\subsection{From an abstract transfer to the actual family}
+
+A transfer theorem with hypotheses about small polynomials is only
+one part of the task. It must be supplied with the specific
+polynomials obtained from the integral construction. For the
+accepted instance the dependency chain contains the following
+mathematical interfaces:
+\begin{enumerate}
+\item The integral and local coefficient formulas define integer
+polynomials, with the required support and high-order vanishing.
+\item The exact determinant gives an invertible coefficient matrix
+after evaluation at \(\ii\), and after division by a nonzero
+common integer divisor.
+\item Coefficientwise prime valuations show that the chosen integer
+really divides every coefficient. The reduced Gaussian rows are
+therefore integral objects, rather than formal quotients over a field.
+\item Analytic bounds supply uniform height, divided-difference,
+and remainder estimates for these actual rows.
+\item The finite-window prime estimate gives the required
+asymptotic lower bound for their actual divisor.
+\item One-sided rational numerical estimates assemble an
+\texttt{AuxiliaryFamily} with \(m=171,L=99\) and the displayed
+rational rates. The accepted general transfer is then applied
+at \(k=3\).
+\end{enumerate}
+The distinction between a named hypothetical family and the actual
+integral family was a substantial part of the formalization work.
+The final accepted statement closes that connection.
+
+\subsection{Why a midpoint table needs a real-variable proof}
+
+The exact combinatorial program finds cells by sorting rational
+crossings of affine endpoint functions. A finite midpoint
+calculation identifies a candidate order and cost in each cell.
+By itself this is a test at one point. To turn it into a theorem
+for all real \(z\) in the cell, the formal certificate records
+floor values, endpoint rank and inverse-rank codes, and the
+candidate minimum.
+
+The proof checks adjacent endpoint inequalities and permutation
+consistency. No order change is possible without an endpoint
+crossing, and all crossing positions are among the cell boundaries.
+The cost is checked on each gap and at the endpoints of the inner
+minimization variable \(y\). This last clause prevents an open-gap
+argument from overlooking a smaller cost exactly at an endpoint.
+The result is a lower bound valid for every relevant \(y\) and
+every real \(z\) in each open cell. The L99 table has 3004 cells
+and 56 labeled endpoints before multiplicities are expanded.
+
+This explains the difference between the very short search code
+and the larger proof data. The code proposes a finite answer; the
+checked certificate supplies the order and cost facts needed to
+justify that answer on a continuum. The breakpoint convention
+still assigns zero to the finitely many outer exceptional points,
+as in Section~\ref{sec:arithmetic}.
+
+\subsection{How finite windows prove an infinite asymptotic estimate}
+
+The paper formula for \(\gamma\) uses a digamma difference, hence
+all prime periods. The accepted fixed proof needs only a lower
+rate, so it uses finitely many periods and drops the rest. For a
+cell \((a,b)\), an inward shrink by a positive rational fraction
+avoids endpoint ambiguities. For each retained period \(r\), the
+prime number theorem gives the contribution of
+\[
+\frac{N_0}{r+b'}<p<\frac{N_0}{r+a'},
+\qquad a<a'<b'<b.
+\]
+The limit of its normalized logarithmic prime product is
+\(L^{-1}((r+a')^{-1}-(r+b')^{-1})\), multiplied by the
+certified cell cost. Summing a fixed finite set of such estimates
+preserves their eventual validity.
+
+For L99 the relative shrink is \(\epsilon=10^{-56}\). The
+symbolic loss allowance is
+\[
+\frac{2\cdot99^2\epsilon\cdot1000000\cdot43\cdot3004}{99}.
+\]
+The 32 short prefix periods are checked explicitly; the remaining
+finite range up to one million periods is bounded by a rational
+telescoping estimate. The compiler does not enumerate a product
+over all primes or over a million periods. The prime number
+theorem is used as a proved asymptotic input, and the retained
+rational sum is enough to exceed the chosen lower rate.
+
+\subsection{Why the numerical proof does not trust floating point}
+
+The fixed height \(1801/20\) reduces the analytic comparisons to
+inequalities involving logarithms and arctangents at explicit
+rational arguments. A useful logarithm identity is
+\[
+\log x=2\sum_{r=0}^{\infty}
+\frac{1}{2r+1}\left(\frac{x-1}{x+1}\right)^{2r+1},
+\qquad x\ge1.
+\]
+Every term is nonnegative, so truncation gives a rational lower
+bound. Range reduction by a known power of two keeps the series
+argument small. The L99 certificates use \(4096=2^{12}\) for
+the central logarithms. For the arctangent contribution, the
+elementary bound \(\arctan u\ge u-u^3/3\), \(u\ge0\), is
+enough at this large height.
+
+Consequently the analytic lemma reduces to short rational
+inequalities for the 28 interval types, together with proved
+monotonicity and series bounds. Ordinary kernel-checked arithmetic
+then proves the advertised one-sided rates. The earlier Arb
+calculation remains useful for selecting parameters and checking
+the size of margins, but is not an assumption of the accepted
+Lean theorem.
+
+\subsection{Acceptance evidence and its limits}
+
+The executed acceptance report is
+\begin{quote}\small\ttfamily
+formalization/OddPiPowers/logs/\allowbreak
+l99-acceptance-2026-10-31.json.
+\end{quote}
+It records 147 new dependency modules, four final signature checks,
+and 15 selected transitive axiom reports, including the actual
+family and final numerical theorem. The reported logical
+dependencies are \texttt{propext}, \texttt{Classical.choice}, and
+\texttt{Quot.sound}. No project mathematical axiom, \texttt{sorryAx},
+or native-evaluation axiom occurs in the accepted audited closure.
+These are local executed verification records, not a claim of
+independent specialist review.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{72mm}>{\raggedright\arraybackslash}p{65mm}}
+\toprule
+Assertion&Status in this revision\\
+\midrule
+General transfer for integer \(k\ge2\)&Accepted Lean theorem\\
+L99 cubic bound \(\LNNbound\)&Accepted fixed Lean application\\
+Earlier P6 cubic bound \(42170551935/35026168\)&Accepted fixed Lean application\\
+Twelve-layer numerical cases \(k=5,7,9\)&Manuscript argument and Arb certificates\\
+L99 fourth-power comparison at scale 19&Manuscript specialization and Arb comparison\\
+Uniform bound \(301\cdot8^k\)&Paper-level proof; generic Lean assembly remains\\
+Classical consequence \(B(k)\)&Derived here from a cited external theorem\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The earlier P6 exact value is approximately
+\(1203.97275360\), slightly above its optimizing Arb value
+\(1203.97243921\). The same distinction between conservative formal
+rates and an optimized analytic expression applies to L99. Both
+earlier sources and their accepted evidence are retained.
+
+Proof trials were serialized under the project's fixed memory
+contract. Large table reductions were split into small modules
+and structural append arguments; the numerical and cell bounds
+were not weakened to make the checker finish. This organization
+matters for reproducibility on a machine with limited memory, but
+it does not change the mathematical statement or the toolchain.
+This editorial revision does not modify the accepted Lean sources
+or claim new compiler acceptance for the additional exposition.

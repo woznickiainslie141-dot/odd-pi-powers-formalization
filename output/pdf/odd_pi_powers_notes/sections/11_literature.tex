@@ -1,0 +1,156 @@
+\section{Prior explicit bounds and the even-power comparison}
+\label{sec:literature}
+
+\subsection{An older theorem already gives a number for every power}
+
+The distinction between an explicitly tabulated bound and a bound
+that follows by substitution into a general theorem matters here.
+Nesterenko--Waldschmidt~\cite{NesterenkoWaldschmidt}, Theorem~2(1),
+prove that if \(\xi\) is real algebraic of degree \(d\) and
+coefficient length at most \(\mathcal L\ge3\), then
+\begin{equation}\label{eq:NW}
+|\pi-\xi|\ge
+\exp\{-1200000d(\log\mathcal L+d\log d)(1+\log d)\}.
+\end{equation}
+The coefficient length of an integral polynomial is the sum of the
+absolute values of its coefficients; for an algebraic number it is
+the length of its primitive integral minimal polynomial. The
+following specialization is derived here from their theorem.
+
+\begin{proposition}[A classical all-power consequence]\label{prop:NWpowers}
+For every integer \(k\ge1\), put
+\[
+B(k)=1200000k(1+\log k).
+\]
+Then \(\mu(\pi^k)\le B(k)\). In particular, explicit exponent
+upper bounds for all fixed powers were already available from
+classical quantitative transcendence theory.
+\end{proposition}
+\begin{proof}
+It suffices first to consider \(q\ge1\) and
+\(|\pi^k-p/q|<1\). This implies \(p/q>0\). Set
+\(\theta=(p/q)^{1/k}\), and let \(f\) be its primitive integral
+minimal polynomial, of degree \(d\le k\) and positive leading
+coefficient \(a\). Gauss's lemma gives
+\(f\mid qX^k-p\) in \(\ZZ[X]\), after removing the content of
+the latter polynomial if necessary. In particular \(a\le q\).
+Every conjugate of \(\theta\) is a root of this binomial, hence
+has modulus \(\theta\). Also \(\theta<\pi+1\). The elementary
+bound for the coefficients of a product gives
+\[
+\mathcal L(f)\le a(1+\theta)^d<6^kq.
+\]
+This step uses the minimal polynomial and remains valid when the
+binomial is reducible.
+
+Use \(\mathcal L=6^kq\) in \eqref{eq:NW}. Monotonicity in
+\(1\le d\le k\) yields
+\[
+|\pi-\theta|\ge
+\exp\{-B(k)(\log q+k\log6+k\log k)\}
+=(6k)^{-kB(k)}q^{-B(k)}.
+\]
+Finally,
+\[
+|\pi^k-p/q|=|\pi-\theta|
+ \sum_{a=0}^{k-1}\pi^{k-1-a}\theta^a
+\ge\pi^{k-1}|\pi-\theta|.
+\]
+For the fractions excluded at the start the error is at least one.
+Thus the smaller prefactor \((6k)^{-kB(k)}\) gives a lower bound
+for all integer \(p\) and \(q\ge1\), proving the exponent claim.
+\end{proof}
+
+This consequence is not a claim that the original paper prints a
+table of \(\pi^k\) exponents. It shows why absence of such a table
+would not establish priority for an explicit number. It also gives
+an independent comparison whose growth is only \(O(k\log k)\).
+
+\begin{center}
+\begin{tabular}{rrr}
+\toprule
+\(k\)&Classical consequence \(B(k)\), approximately
+ &Bound displayed in these notes\\
+\midrule
+3&\(7\,555\,004.24\)&\(1107.93\)\\
+5&\(15\,656\,627.47\)&\(42\,461\)\\
+7&\(24\,745\,645.25\)&\(1\,272\,103\)\\
+9&\(34\,530\,025.44\)&\(35\,398\,937\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The first three entries show a substantial improvement over this
+particular classical consequence. The fourth does not: the old
+general theorem already beats the displayed twelve-layer \(k=9\)
+number. None of these comparisons is an exhaustive literature
+search for the best bound at the indicated power. They delimit the
+contribution that can safely be claimed.
+
+\subsection{Even zeta values give an identification, not an approximation theorem}
+
+Euler's formula, with \(B_{2r}\) the Bernoulli numbers, reads
+\[
+\zeta(2r)=\frac{(-1)^{r+1}B_{2r}(2\pi)^{2r}}{2(2r)!}
+\in\QQ^\times\pi^{2r}.
+\]
+Therefore \(\mu(\zeta(2r))=\mu(\pi^{2r})\). For example,
+\[
+\zeta(2)=\pi^2/6,\qquad \zeta(4)=\pi^4/90.
+\]
+This equality transfers an existing irrationality-exponent estimate
+between two names for the same rationally scaled constant. It does
+not turn evaluation of the zeta value into a proof of a sharp
+irrationality measure. Nor does an upper bound for \(\mu(\pi^2)\)
+automatically give the corresponding upper bound for \(\mu(\pi^4)\).
+Approximating \((\pi^2)^2\) and approximating \(\pi^2\) by rational
+numbers are different approximation problems.
+
+Marcovecchio--Zudilin~\cite{MarcovecchioZudilin} establish the
+unconditional specialized estimate
+\begin{equation}\label{eq:zeta4benchmark}
+\mu(\pi^4)=\mu(\zeta(4))\le12.51085940\ldots.
+\end{equation}
+Their 2019 preprint, published in 2020, uses a different
+hypergeometric representation to control the arithmetic of
+approximations to \(\zeta(4)\). The bound does not assume the older
+denominator conjecture discussed in their introduction. It is the
+specialized benchmark verified for this revision; the present notes
+do not claim a complete current classification of all later work.
+
+\subsection{What the same L99 shape would do for the fourth power}
+
+For the accepted cubic rates, direct substitution gives
+\[
+D-3G=544.69491-3(213.81256)=-96.74277.
+\]
+Thus the fixed accepted cubic instance is inadmissible for \(k=4\).
+This is a failed hypothesis, rather than a failure of the general
+transfer theorem. Increasing the common multiplicity scale changes
+both the degree and the decay-to-height ratio.
+
+For orientation, keep the base L99 shape
+\((16,1,\ldots,1)\), and use the root-free lower rate of
+Section~\ref{subsec:l99uniform} with scale \(s=19\). Then
+\[
+\begin{split}
+m&=816,\qquad \underline D_s\approx3630.47940,\\
+G_s&\approx1019.35966,\qquad
+\underline D_s-3G_s\approx572.40043.
+\end{split}
+\]
+The associated expression is approximately \(6628.69640\).
+The accompanying numerical check certifies that it is below
+\(6628.70\), using the already proved rational divisor lower rate.
+This is a manuscript-level specialization and an Arb comparison,
+not an accepted fixed Lean theorem for \(\pi^4\). Its size is
+already sufficient to explain the comparison: the uniform method
+is far from \eqref{eq:zeta4benchmark}.
+
+Consequently there are two different useful projects. Completing
+general-power applications tests and documents a reusable proof
+framework. Improving the specialized fourth-power bound requires
+competing below \(12.51085940\ldots\), most naturally by sharpening
+the arithmetic of direct \(\zeta(4)\) approximations. Extending the
+range of a theorem and improving the best numerical constant are
+distinct achievements.

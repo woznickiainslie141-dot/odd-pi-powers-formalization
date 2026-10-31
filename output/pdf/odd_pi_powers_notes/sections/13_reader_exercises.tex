@@ -1,0 +1,122 @@
+\section{Notation, intermediate checks, and reading exercises}
+\label{app:reader}
+
+\subsection{A notation sheet}
+
+\begin{longtable}{p{25mm}p{112mm}}
+\toprule
+Symbol&Meaning\\
+\midrule
+\endhead
+\(k\)&Fixed target exponent in \(\pi^k\).\\
+\(L,t_j\)&Denominator of the interval shape and its distinct offsets.\\
+\(\nu_j\)&Multiplicity of interval type \(j\).\\
+\(M,m\)&Total multiplicity \(M=\sum_j\nu_j\); logarithmic degree \(m=M-1\).\\
+\(n=LN_0\)&Unbounded approximation index; \(N_0\) is a positive integer.\\
+\(c_j\)&Relative interval length \(1-2t_j/L\).\\
+\(Q_n,C_n\)&Rational-kernel denominator and the integer normalization factor.\\
+\(d_n\)&Least common multiple of \(1,\ldots,n\).\\
+\(\Pi_n,\gamma\)&Available common divisor and its exponential rate, or a certified lower rate when specified.\\
+\(\lambda,\Theta\)&\(\lambda=\log\ii=\ii\pi/2\), \(\Theta=\pi/2\).\\
+\(Y\)&Positive contour height after rescaling by \(n\); not the polynomial indeterminate in a particular formula.\\
+\(D_0,G_0\)&Decay and growth rates before division by the common divisor.\\
+\(D,G\)&Usable rates after division, possibly weakened to conservative rational bounds.\\
+\(\Delta_k\)&Effective gap \(D-(k-1)G\), required to be positive.\\
+\(s,v_j\)&Common scale and fixed base weights, so \(\nu_j=sv_j\).\\
+\(V,S\)&Base multiplicity \(\sum_jv_j\) and weighted base length \(\sum_jv_jc_j\).\\
+\(p,q\)&Arbitrary rational-approximation numerator and positive denominator.\\
+\(\theta,y\)&Nearby algebraic numbers \((p/q)^{1/k}\) and \(\ii\theta/2\).\\
+\bottomrule
+\end{longtable}
+
+The notation \(Y\) is conventional both for a contour height and a
+polynomial variable. In a computation it is safer to use different
+names. Similarly, the small finite field-independent degree \(k\)
+of a defining binomial must not be confused with the possibly
+large auxiliary degree \(m\).
+
+\subsection{Deriving the exponent without suppressing the index choice}
+
+Let \(\eta>0\) be the common slack in the three asymptotic
+estimates, and set \(\Delta_\eta=D-(k-1)G-k\eta>0\).
+The resultant lower bound has the form
+\[
+|U(y)|\ge(2^kq)^{-m}e^{-(k-1)(G+\eta)n}.
+\]
+Choose a multiple of \(L\) so that
+\(n\ge(m\log(2^kq)+\log2)/\Delta_\eta\). The remainder
+\(e^{-(D-\eta)n}\) is then at most half this lower bound.
+The divided difference contributes one more growth factor,
+giving
+\[
+|\lambda-y|\ge\tfrac12(2^kq)^{-m}e^{-k(G+\eta)n}.
+\]
+Since rounding increases \(n\) by less than \(L\), its effect is
+a positive constant independent of \(q\). The power of \(q\) is
+\[
+m+\frac{mk(G+\eta)}{\Delta_\eta}
+=\frac{m(D+G)}{\Delta_\eta}.
+\]
+This calculation explains both the denominator and the numerator
+of the final bound. It also shows why omitting the divided
+difference, or forgetting a conjugate in the resultant, changes
+the exponent rather than merely the prefactor.
+
+\subsection{Short exercises with solutions or hints}
+
+\paragraph{1. Rational rescaling.}
+Show that \(\mu(a\xi/b)=\mu(\xi)\) for nonzero integers
+\(a,b\). A rational approximation to one side gives one to the
+other after multiplying numerator and denominator by fixed
+integers. After reduction, the denominator changes by a factor
+bounded above and below independently of the approximation.
+Apply this to \(\beta(3)=\pi^3/32\) and
+\(\zeta(4)=\pi^4/90\). Notice that taking powers does not have
+this bounded-denominator property in both directions.
+
+\paragraph{2. The elementary arctangent inequality.}
+Differentiate \(\arctan u-u+u^3/3\). Its derivative is
+\(u^4/(1+u^2)\ge0\), and the value at zero is zero.
+This proves the inequality used in the root-free estimate without
+any alternating-series restriction such as \(u\le1\).
+
+\paragraph{3. Why the exact saddle is not necessary.}
+For fixed multiplicities, differentiate
+\(\Phi(Y)=\sum_j\nu_jF_{c_j}(Y)-\Theta Y-m\).
+The second derivative is negative. Thus the unique critical
+point is a global maximum, but every \(Y>1/2\) still provides
+a valid lower decay rate. A rational trial height trades a small
+amount of sharpness for shorter numerical certificates.
+
+\paragraph{4. The degree obstruction.}
+Rewrite \(E_k=m(D+G)/(D-(k-1)G)\) as
+\(m(1+kG/\Delta_k)\). If \(G\ge0\), then \(E_k\ge m\).
+In particular, no refinement of these same rates at fixed
+\(m=171\) can yield an exponent below 100 through this formula.
+A new transfer argument or a smaller auxiliary degree would be
+needed. This does not rule out a different construction.
+
+\paragraph{5. A smaller true algebraic degree.}
+Take \(p/q=(a/b)^k\) with \(a,b>0\). Then
+\(y=\ii a/(2b)\) already belongs to \(\QQ(\ii)\).
+Its minimal polynomial over that field has degree one, even
+though the defining binomial has degree \(k\). Explain why the
+minimal-polynomial resultant remains nonzero for a selected row,
+and why a product over all roots of the binomial need not be.
+
+\paragraph{6. A common divisor and the gap.}
+Keeping \(D_0,G_0\) fixed, increase the usable divisor rate by
+\(h>0\). The new pair is \((D+h,G-h)\), so the gap increases
+by \(kh\) while \(D+G\) is unchanged. This is the precise
+reason the same divisor has to be used in both the analytic
+remainder and the coefficient height.
+
+\paragraph{7. What a finite numerical test can establish.}
+Suppose \(-n^{-1}\log|Q_n\beta(3)-P_n|\) is positive at
+each of the first one hundred indices. This does not prove that
+the integer linear forms tend to zero, that their asymptotic
+rate is positive, or that the nonproportionality condition needed
+for every denominator holds. State the additional asymptotic and
+determinant hypotheses before extracting an irrationality bound.
+The failed experiments in Appendix~\ref{app:experiments} should
+be read with exactly this distinction in mind.

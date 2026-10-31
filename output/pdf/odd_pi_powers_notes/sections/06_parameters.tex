@@ -1,4 +1,4 @@
-\section{Concrete parameters and every fixed odd power}
+\section{Concrete parameters and every fixed integer power}
 \label{sec:parameters}
 
 \subsection{Recovering the balanced benchmark}
@@ -60,7 +60,94 @@ refinement. They are not the solution of a globally optimized
 variational problem. In particular, more layers are not known to be
 necessary or optimal.
 
-\subsection{An explicit family for all odd \texorpdfstring{\(k\)}{k}}
+\subsection{The accepted L99 instance, step by step}
+\label{subsec:l99}
+
+Use \(L=99\), offsets \(t_j=j\), and base multiplicities
+\[
+v_0=16,\qquad v_j=1\ (1\le j\le27),\qquad
+c_j=\frac{99-2j}{99}.
+\]
+The total base multiplicity and length are
+\[
+V=16+27=43,\qquad
+S=\sum_{j=0}^{27}v_jc_j
+ =16+27-\frac{2}{99}\frac{27\cdot28}{2}
+ =\frac{389}{11}.
+\]
+At scale \(s=4\), this gives \(M=172\), \(m=171\), and total
+relative interval length \(4S=1556/11\). There are twenty-eight
+distinct interval types, rather than twenty-eight rows: repeated
+types account for the much larger matrix dimension \(172\).
+
+The formal proof uses the fixed rational height
+\[
+Y=\frac{1801}{20}=90.05.
+\]
+This is close to the maximizing height, but need not be the exact
+root of \eqref{eq:rootpreview}. The contour proof is valid at any
+fixed \(Y>1/2\); a lower bound on the decay at a convenient height
+is enough. The one-sided certified estimates are
+\begin{align*}
+D_0(Y)&\ge\frac{9789173}{20000}=489.45865,\\
+G_0&\le\frac{13452441}{50000}=269.04882,\\
+\gamma&\ge\frac{2761813}{50000}=55.23626.
+\end{align*}
+Here the last line denotes an available divisor rate: for every
+positive slack the actual divisor eventually has at least this
+exponential rate minus the slack. Equality with the exact digamma
+sum is not needed.
+
+Adding the lower divisor rate to the decay bound and subtracting
+it from the growth bound gives the usable rational pair
+\[
+D=\frac{54469491}{100000},\qquad
+G=\frac{2672657}{12500}.
+\]
+These are deliberately conservative rates, not decimal truncations
+asserted to equal the exact analytic optimum. Their final use can
+be checked entirely with integer arithmetic:
+\begin{align*}
+D+G&=\frac{75850747}{100000},\\
+D-2G&=\frac{54469491-2\cdot21381256}{100000}
+      =\frac{11706979}{100000},\\
+171\frac{D+G}{D-2G}
+ &=\frac{171\cdot75850747}{11706979}
+  =\frac{12970477737}{11706979}.
+\end{align*}
+For the stated upward rounding, cross multiplication gives
+\[
+110793\cdot11706979-100\cdot12970477737=3550647>0.
+\]
+This proves the strict comparison with \(110793/100=1107.93\)
+without relying on a printed decimal expansion.
+
+\paragraph{Where the divisor number comes from.}
+For the base weights the accepted finite-window calculation gives
+\(\gamma_0=2761813/200000=13.809065\). Its exact endpoint table
+has 3004 open cells, of which 3000 carry a positive certified lower
+cost. The prime-period prefix covers \(r=0,\ldots,31\); the finite
+tail covers \(r=32,\ldots,999999\). Their lower bounds are
+\[
+\text{prefix}\ge\frac{1380525198339888}{10^{14}},\qquad
+\text{tail}\ge\frac{381339545481}{10^{14}}.
+\]
+The sum is \(13.80906537885369\), leaving positive room above
+\(13.809065\) for the interval-shrinking loss. Nonnegative periods
+outside this finite window can be discarded. Scaling all weights
+by four scales the certified divisor rate by four as well.
+Section~\ref{sec:formalization} explains how the finite inequalities
+are connected to the actual asymptotic divisor.
+
+\paragraph{Why the Arb and Lean decimals differ slightly.}
+The earlier Arb calculation at the optimizing height gives an
+expression near \(1107.9267863\). The accepted exact rational
+expression is \(1107.9269670681\ldots\). The small increase comes
+from a rational trial height, finite divisor windows, and one-sided
+analytic estimates. The theorem claims the latter number. A sharper
+experimental decimal is not substituted into an accepted theorem.
+
+\subsection{An explicit scale recipe for every fixed power}
 
 For the twelve-layer shape let
 \[
@@ -91,7 +178,7 @@ Since \(f\le17\) for the base weights, the prime number theorem gives
 The certificate more precisely verifies \(g_*>23\).
 
 \begin{proposition}[A root-free admissibility recipe]\label{prop:allodd}
-For any fixed integer \(k\ge3\), let
+For any fixed integer \(k\ge2\), let
 \begin{equation}\label{eq:srecipe}
 s_k=\max\left\{1,\
 \left\lceil\exp\left(
@@ -141,7 +228,7 @@ gives~\eqref{eq:rootfree}.
 \end{proof}
 
 This proposition supplies a definite upper-bound recipe for
-\emph{every fixed odd power}, in addition to the optimized examples
+\emph{every fixed integer power \(k\ge2\)}, in addition to the optimized examples
 in Corollary~\ref{cor:numerical}. It does not require an unbounded
 parameter search to establish admissibility.
 
@@ -180,13 +267,109 @@ k&E_k\\ \hline
 \]
 The number \(s\) was optimized only within one fixed shape.
 
+\subsection{A simple all-power bound from the L99 shape}
+\label{subsec:l99uniform}
+
+The same root-free calculation can use the rational lower divisor
+rate already accepted for the L99 base shape. Put
+\[
+V=43,\quad S=\frac{389}{11},\quad
+\gamma_0=\frac{2761813}{200000},\quad
+A=\sum_{j=0}^{27}v_jc_j\log c_j,
+\]
+and define
+\[
+g=V+S\log2-\gamma_0,\qquad
+d=S\log(S/\Theta)-A-V+\gamma_0.
+\]
+For every positive integer scale \(s\), the available growth rate
+and trial-height decay lower bound are
+\begin{equation}\label{eq:l99rootfree}
+G_s=sg-1,\qquad
+\underline D_s=s(S\log s+d)+1-\frac{\Theta^2}{12sS}.
+\end{equation}
+To obtain these formulas, repeat the preceding proof with
+\(V=43\) in place of \(17\), and use the lower divisor rate
+\(s\gamma_0\) consistently on both sides. No new arc partition is
+needed when only the common scale changes.
+
+\begin{proposition}[A coarse uniform paper-level bound]\label{prop:uniformL99}
+For every integer \(k\ge3\), the L99 shape with \(s=8^k\) gives
+\[
+\mu(\pi^k)<301\cdot8^k.
+\]
+This is a consequence of the written estimates and the available
+scaled-family interface; it is not an accepted all-\(k\) Lean theorem.
+\end{proposition}
+\begin{proof}
+The elementary inequalities
+\(2/3<\log2<3/4\), \(35<S<36\), and
+\(13<\gamma_0<43\) imply
+\[
+1<g<43+36(3/4)-13<60.
+\]
+Since \(c_j\le1\), one has \(A\le0\). Also
+\(S/\Theta>e\), using \(\Theta<2\) and \(e<3\), and
+\(S-43+\gamma_0>0\). Hence \(d>0\).
+
+For \(s=8^k\), \(\log s=3k\log2\), so
+\(S\log s>70k\). Write \(e_s=\Theta^2/(12sS)\), with
+\(0<e_s<1\). Equation~\eqref{eq:l99rootfree} gives
+\begin{align*}
+\Delta_s&=\underline D_s-(k-1)G_s\\
+ &=s\{S\log s+d-(k-1)g\}+k-e_s
+ >10ks.
+\end{align*}
+Moreover \(0<G_s<60s\), and \(m=43s-1<43s\). Therefore
+\[
+m\frac{\underline D_s+G_s}{\Delta_s}
+=m\left(1+\frac{kG_s}{\Delta_s}\right)
+<43s(1+6)=301\cdot8^k.
+\]
+The trial height \(sS/\Theta\) is greater than \(1/2\), so the
+contour estimate applies. The transfer theorem completes the proof.
+\end{proof}
+
+This simple formula avoids an open-ended search to establish the
+all-power quantifier. It is intentionally loose: even at \(k=3\)
+it is much larger than the accepted optimized value. Its exponential
+growth is also worse than the classical \(B(k)=O(k\log k)\) in
+Proposition~\ref{prop:NWpowers}. Its value is a transparent route
+from one certified interval shape to a uniform statement, rather
+than a new asymptotic record.
+
+\subsection{Sensitivity of the bound and safe numerical substitution}
+
+Fix \(m,k\) and write \(\Delta=D-(k-1)G>0\). Direct
+differentiation gives
+\[
+\frac{\partial E_k}{\partial D}=-\frac{mkG}{\Delta^2},\qquad
+\frac{\partial E_k}{\partial G}=\frac{mkD}{\Delta^2}.
+\]
+When \(G\ge0\), a lower bound for \(D\) and an upper bound for
+\(G\) therefore give a safe upper bound for \(E_k\), provided the
+conservative gap stays positive. Close to a zero gap the same
+formulas show why a small rate error can produce a large exponent
+error. Displaying many decimal places does not repair an
+unjustified estimate on the wrong side.
+
+If only the available divisor rate changes, with \(D_0,G_0\)
+fixed, then
+\[
+\frac{\mathrm dE_k}{\mathrm d\gamma}
+=-\frac{km(D_0+G_0)}{(D_0-(k-1)G_0+k\gamma)^2}.
+\]
+This makes the arithmetic gain quantitative. By contrast, adding
+layers also changes \(m,D_0,G_0\), so its net effect has to be
+recomputed. More divisibility alone is not an optimization criterion.
+
 \subsection{What would be needed to reach 10--100?}
 
 In the present transfer formula, \(G\ge0\) implies
 \[
 E_k=m\left(1+\frac{kG}{D-(k-1)G}\right)\ge m.
 \]
-The best current example has \(m=186\). Hence this particular
+The accepted L99 example has \(m=171\). Hence this particular
 parameter choice cannot possibly give \(E_3<100\).
 This is not an impossibility theorem for all nested shapes.
 

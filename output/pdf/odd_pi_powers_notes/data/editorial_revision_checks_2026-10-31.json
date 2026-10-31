@@ -1,0 +1,18 @@
+{
+  "pdf_pages": 36,
+  "rendered_pages": 36,
+  "bbox_word_count": 16845,
+  "text_outside_safe_page_rectangle": [],
+  "undefined_reference_markers": 0,
+  "replacement_characters": 0,
+  "pdftex_layout_warnings": 0,
+  "bbox_xml_control_tokens_ignored_for_geometry": 41,
+  "visual_review": "All pages reviewed through contact sheets; key numerical page and Chinese notice also viewed separately",
+  "math_checks": "code/check_current_results.py passed",
+  "lean_compiler_run_for_editorial_revision": false,
+  "accepted_source_hashes_compared": {
+    "l99-acceptance-2026-10-31.json": 147,
+    "p6-acceptance-2026-10-30.json": 100
+  },
+  "pdf_sha256": "450fa0c97843eac3374cd371ecc8008c650d826738127c306d4d4155d3be8656"
+}

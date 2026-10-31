@@ -111,8 +111,8 @@ G_0&=m+\left(\sum_j\nu_jc_j\right)\log2,\label{eq:G0def}\\
 D&=D_0+\gamma,\qquad G=G_0-\gamma.\label{eq:DGdef}
 \end{align}
 
-\begin{theorem}[Odd-power bound]\label{thm:main}
-Let \(k\ge3\) be odd. If \(G\ge0\) and
+\begin{theorem}[Integer-power transfer bound]\label{thm:main}
+Let \(k\ge2\) be an integer. If \(G\ge0\) and
 \(\Delta_k=D-(k-1)G>0\), then
 \begin{equation}\label{eq:mainbound}
 \boxed{\displaystyle
@@ -123,9 +123,31 @@ Let \(k\ge3\) be odd. If \(G\ge0\) and
 \end{equation}
 \end{theorem}
 
-The proof also works for every integer \(k\ge2\). We emphasize odd
-powers because they are the motivating targets; we do not compare
-these bounds with specialized results for even powers.
+Odd powers are the motivating targets, but no parity hypothesis is
+needed in the theorem or its accepted general Lean transfer. The
+specialized even-power literature is discussed in
+Section~\ref{sec:literature}. An instance needs its own positive gap;
+the cubic parameters cannot simply be reused for every \(k\).
+
+\begin{corollary}[Accepted L99 cubic instance]\label{cor:l99}
+Take \(L=99\), \(t_j=j\) for \(0\le j\le27\), and
+\[
+\nu_0=64,\qquad \nu_j=4\ (1\le j\le27),\qquad m=171.
+\]
+The actual family admits the conservative rational rates
+\[
+D=\frac{54469491}{100000},\qquad
+G=\frac{2672657}{12500},\qquad D-2G=\frac{11706979}{100000}>0.
+\]
+Consequently
+\[
+\mu(\pi^3)\le\LNNbound<1107.93.
+\]
+The fixed assertion, with these exact rational constants, is accepted
+in Lean. Its construction and arithmetic ledger are given in
+Section~\ref{subsec:l99}; the meaning and boundaries of formal
+acceptance are explained in Section~\ref{sec:formalization}.
+\end{corollary}
 
 \begin{corollary}[A twelve-layer family]\label{cor:numerical}
 Use \(L=69\), \(t_j=j\) for \(0\le j\le11\), and
@@ -145,13 +167,18 @@ The following choices satisfy the hypotheses:
 \bottomrule
 \end{tabular}
 \end{center}
-For every other fixed odd \(k\), some sufficiently large integer \(s\)
+For every fixed integer \(k\ge2\), some sufficiently large integer \(s\)
 also satisfies the hypotheses.
 \end{corollary}
 
-The last assertion is an existence statement within an explicit
-family, not a uniform small bound as \(k\to\infty\).
-Section~\ref{sec:parameters} explains the growth.
+The cubic entry is retained as a historical twelve-layer comparison;
+Corollary~\ref{cor:l99} is now the stronger accepted cubic result.
+The other table entries have manuscript proofs and Arb certificates,
+but are not accepted fixed Lean applications. A definite scale recipe
+and a deliberately coarse bound \(301\cdot8^k\) are proved on paper
+in Section~\ref{sec:parameters}. Neither replaces the specialized
+even-power literature nor improves the classical all-power estimate
+for large \(k\).
 
 \subsection{A guide to the evidence}
 
@@ -162,3 +189,11 @@ but do not prove asymptotic rates. Floating-point searches select
 parameters; they neither certify rounding nor prove global optimality.
 The appendices retain unsuccessful experiments because they explain
 the arithmetic difficulties that remain.
+
+There are three different objects to keep in view: a mathematical
+argument for a family of estimates, finite certificates for specified
+real-number comparisons, and a checked Lean theorem with an exact
+dependency closure. For the accepted L99 instance these fit together.
+For the higher-power examples only the first two have been assembled.
+This distinction is part of the statement of the results, rather than
+an implementation detail to be suppressed.

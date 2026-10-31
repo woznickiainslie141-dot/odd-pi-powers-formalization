@@ -93,9 +93,28 @@ Its purpose is to make the numerical part reproducible.
 The prime number theorem and the asymptotic inequalities are
 mathematical inputs, not claims checked by a finite program.
 
+For the revised L99 ledger and fourth-power comparison, additionally run
+\begin{verbatim}
+python code/check_current_results.py
+\end{verbatim}
+This short program checks the exact rational exponent and its upward
+rounding, encloses the analytic expressions at the fixed rational
+height, and checks the root-free fourth-power expression with Arb.
+It uses the bundled copy of the executed L99 acceptance report to
+identify the accepted constants. It neither reruns Lean nor treats
+that report as a new proof. The finite divisor table and the
+asymptotic interface are justified by the accepted source closure,
+not by this numerical replay. Its output is
+\texttt{data/current\_results\_2026-10-31.json}.
+
+The original \texttt{certify.py} is retained as the reproducible
+certificate for the earlier odd-power table. Its odd-\(k\) input
+restriction reflects the scope of those historical examples, not a
+parity restriction on Theorem~\ref{thm:main}.
+
 \subsection{Parameter order and effectivity}
 
-For a chosen odd \(k\), first fix \(L,t_j,\nu_j\), or fix the scale
+For a chosen integer \(k\ge2\), first fix \(L,t_j,\nu_j\), or fix the scale
 \(s\) in the twelve-layer family. Then fix an exponent slack
 \(\varepsilon\), and choose the small \(\eta\) in
 Section~\ref{sec:transfer}. Only after these choices does \(n\)

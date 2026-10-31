@@ -6,8 +6,9 @@ Read formalization/L99_CURRENT_CHECKPOINT.md and its executed acceptance
 report before continuing. All147 new modules, final signatures and fresh
 axiom audit passed. Preserve the accepted L99 and P1–P6 sources. No L99
 proof obligation remains; cofactor and higher-power applications need a new
-assignment. The authorized backup is the existing private GitHub repository
-woznickiainslie141-dot/odd-pi-powers-formalization.
+assignment. The authorized backup is the existing GitHub repository
+woznickiainslie141-dot/odd-pi-powers-formalization. The owner intentionally
+made it public and confirmed this on31 October2026; retain that visibility.
 
 Read formalization/P3B_MEMORY_BOUNDED_GOAL.md first, including after context
 compaction. P1 through P6 are accepted. The full P6 target is achieved:

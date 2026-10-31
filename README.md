@@ -1,6 +1,7 @@
 # Odd powers of pi: research notes and Lean formalization
 
-Private research archive, updated on **31 October 2026**. It contains Lean
+Research archive, updated on **31 October 2026**. The owner made the GitHub
+repository public and confirmed that choice on this date. It contains Lean
 sources, manuscripts and PDFs, experiments, data, and executed verification
 records. Historical drafts retain their own proof and certification status.
 
@@ -73,12 +74,20 @@ review or a best bound in the current literature is made.
 | `formalization/L99_*.md` | Current accepted application, mathematical explanation and development history |
 | `formalization/P*_REVIEW_*.md` | Earlier stage reviews and their accepted scope |
 | `output/pdf/odd_pi_powers_notes/` | English TeX notes, computational certificates and improvement plan |
-| `output/pdf/odd_pi_powers_notes.pdf` | Earlier compiled notes; current formalization status is given above |
+| `output/pdf/odd_pi_powers_notes.pdf` | Revised 31 October English notes: accepted L99 bound, detailed calculations, prior all-power bounds, even-power comparison and exact formalization scope |
 | `output/pdf/pi3_explicit_bound/` | Earlier manuscript and supporting material |
 | `research/` | Research computations and notes |
 | `scripts/` | Bounded compiler runners, generators, verifiers and snapshot utilities |
 | `logs/` and project `logs/` | Execution evidence, including historical and failed trials |
 | `tmp/` | Retained exploratory material, literature and upstream PNT audit sources |
+
+The manuscript source and PDF were synchronized with L99 on 31 October.
+The expanded notes explain the construction for readers, include the
+classical Nesterenko--Waldschmidt comparison and the specialized pi^4
+benchmark, and distinguish accepted Lean results from manuscript-only
+extensions. The earlier Chinese manuscript is labeled as a historical
+balanced-construction note. No accepted Lean mathematical source was changed
+by this editorial update.
 
 ## Toolchain and reproduction
 
@@ -122,4 +131,4 @@ hashes and identifies exclusions: nested Git metadata, `.lake` and Python
 caches, compiled Lean artifacts, downloaded Mathlib cache archives and the
 temporary Lean installer archive. Excluded local files remain on disk.
 Third-party sources and literature retain their original notices; no new
-blanket license is granted by this private archive.
+blanket license is granted by this archive.

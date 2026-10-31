@@ -27,9 +27,13 @@ def package():
     shutil.copy2(PROJECT/"main.pdf",pdf)
     paths=[PROJECT/"main.tex",PROJECT/"main.pdf",PROJECT/"README.md",
            PROJECT/"requirements.txt"]
+    revision=PROJECT/"REVISION_2026-10-31.md"
+    if revision.exists():
+        paths.append(revision)
     for directory,pattern in [("sections","*.tex"),("code","*.py"),
                               ("data","*.json"),("data","*.tex")]:
-        paths.extend(sorted((PROJECT/directory).glob(pattern)))
+        paths.extend(p for p in sorted((PROJECT/directory).glob(pattern))
+                     if p.name != "source_manifest.json")
     manifest={str(p.relative_to(PROJECT)).replace("\\","/"):
               hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
     (PROJECT/"data/source_manifest.json").write_text(

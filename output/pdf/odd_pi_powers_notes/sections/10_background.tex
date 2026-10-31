@@ -1,0 +1,161 @@
+\section{Background and a reading guide}
+\label{sec:background}
+
+\subsection{Irrationality, transcendence, and approximation are different questions}
+
+An irrationality proof rules out an equality \(\xi=p/q\).
+An irrationality-exponent bound rules out an unlimited supply of
+exceptionally accurate near-equalities. Transcendence rules out all
+polynomial equalities with integer coefficients, but by itself does
+not quantify how small a nonzero polynomial value may be. The last
+distinction is essential here: the transcendence of \(\pi\) already
+implies that \(\pi^k\) is irrational for every positive integer \(k\),
+yet it does not supply the numerical exponent in
+\eqref{eq:measuremeaning}.
+
+For example, the statement \(\mu(\xi)\le E\) controls infinitely many
+denominator scales. A long continued-fraction computation supplies
+finitely many very good approximations, and may reveal useful
+patterns, but cannot exclude a new pattern at larger denominators.
+The present proof therefore constructs auxiliary objects for every
+sufficiently large index \(n\), and relates that index to an arbitrary
+denominator \(q\). This is the reason for the uniformity requirements
+in Sections~\ref{sec:analysis} and~\ref{sec:transfer}.
+
+It is also useful to separate three quantities often called a
+``measure.'' A numerical exponent \(E\) specifies the power of \(q\).
+A positive prefactor \(c_\varepsilon\) specifies the scale of the lower
+bound. A denominator threshold \(q_0(\varepsilon)\) specifies where
+that lower bound starts. These notes make \(E\) explicit, but do not
+tabulate numerical values for the other two quantities in the nested
+construction. Allowing an arbitrary positive exponent slack is part
+of the theorem, not a rounding convention.
+
+\subsection{What Pad\'e approximation contributes}
+
+For a power series \(f(x)\), ordinary Pad\'e approximation seeks
+polynomials \(P,Q\) for which \(Q(x)f(x)-P(x)\) has a prescribed
+high-order zero. Hermite--Pad\'e approximation replaces a single
+function by several functions. In our setting these are
+\[
+1,\log x,(\log x)^2,\ldots,(\log x)^m.
+\]
+For each row \(h\), the expression
+\[
+R_{h,n}(x)=A_{h,0,n}(x)+A_{h,1,n}(x)\log x
+ +\cdots+A_{h,m,n}(x)(\log x)^m
+\]
+vanishes to high order at \(x=1\). At a fixed evaluation point this
+can make its value small even though its coefficients are large.
+The integral representation is an efficient way to impose many
+vanishing conditions simultaneously.
+
+The vanishing conditions are linear equations, but solving a large
+rational linear system independently at every \(n\) would conceal
+the denominators and make nonvanishing difficult to track. The
+explicit rational kernel instead exposes its poles, factorials,
+and local expansions. These are exactly the objects needed later
+for integrality and prime-divisor estimates.
+
+There are \(m+1\) rows because a single small polynomial may vanish
+at the algebraic number selected by a rational approximation.
+An invertible coefficient matrix ensures that the entire family
+cannot vanish there. The exact determinant is therefore an
+arithmetic selection tool: it supplies at least one useful row at
+every denominator scale.
+
+\subsection{Why evaluate at a complex point?}
+
+The principal logarithm at \(\ii\) is
+\(\lambda=\ii\pi/2\), so powers of the logarithm encode powers of
+\(\pi\). An integer polynomial evaluated at \(\ii\) has coefficients
+in \(\ZZ[\ii]\), a ring whose nonzero elements have modulus at
+least one. This discreteness replaces the familiar lower bound
+\(|a|\ge1\) for a nonzero ordinary integer.
+
+No irrationality conclusion follows merely from making
+\(U_{h,n}(\lambda)\) small: its degree is usually much larger than
+the target power \(k\). The next step is to compare it with
+\(U_{h,n}(y)\), where
+\[
+y=\frac{\ii}{2}(p/q)^{1/k}
+\]
+is algebraic. The comparison is useful because an algebraic value
+has a nonzero integral resultant, while the logarithmic value is
+small by analysis. The divided difference controls the cost of
+moving from \(\lambda\) to \(y\).
+
+For odd powers, an alternative motivation comes from the rational
+multiple \(\beta(2r+1)/\pi^{2r+1}\). That identity suggests trying
+binary linear forms in \(1,\beta(3)\), but it does not require us
+to find them. The present method uses a higher-dimensional system
+and a resultant instead. The unsuccessful binary experiments in
+Appendix~\ref{app:experiments} explain why this detour was useful.
+
+\subsection{The two parameters that must not be interchanged}
+
+The interval configuration, its multiplicities, and \(m\) are fixed
+before the limit \(n\to\infty\). The index \(n\), taken through
+multiples of \(L\), determines the number of poles in the rational
+kernel. The degree \(m\) determines the number of logarithmic powers
+and rows. They have different roles even when both are large.
+
+For instance, in the accepted L99 application \(m=171\), whereas
+\(n\) is unbounded. A factor \(171!\) is a constant with respect
+to \(n\), so its logarithm divided by \(n\) tends to zero. A
+factor \(d_n^{171}\) is not a constant: its exponential rate is
+\(171\). Treating these two factors alike can easily reverse the
+apparent success of a construction.
+
+When the target power \(k\) changes, we may select another fixed
+scale \(s\), hence another fixed \(m\). The all-power theorem means
+that this can be done for each \(k\), followed by the separate
+limit in \(n\). It does not authorize a simultaneous limit
+\(k=k(n)\) in the estimates already proved.
+
+\subsection{A map of the proof}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+ box/.style={draw,rounded corners=2pt,align=center,text width=64mm,
+ minimum height=12mm,inner sep=4pt,font=\small},
+ >={Latex[length=2mm]},node distance=7mm and 8mm]
+\node[box] (a) {Nested intervals and a rational kernel\\
+integral coefficients; exact determinant};
+\node[box,right=of a] (b) {Prime valuations and arc cells\\
+a common divisor with rate \(\gamma\)};
+\node[box,below=of a] (c) {Contour and height estimates\\
+smallness \(D\); growth \(G\)};
+\node[box,below=of b] (d) {Minimal polynomial and resultant\\
+nonzero value at a nearby algebraic point};
+\node[box,below=11mm of c,text width=64mm] (e)
+ {Choose \(n\) from \(q\)\\
+positive gap \(D-(k-1)G\)};
+\node[box,right=of e] (f) {Irrationality-exponent bound\\
+\(m(D+G)/(D-(k-1)G)\)};
+\draw[->] (a)--(b);
+\draw[->] (a)--(c);
+\draw[->] (b)--(d);
+\draw[->] (c)--(d);
+\draw[->] (c)--(e);
+\draw[->] (d)--(f);
+\draw[->] (e)--(f);
+\end{tikzpicture}
+\caption{The proof separates construction, arithmetic, analysis, and
+transfer. A numerical improvement must respect all four parts.}
+\label{fig:proofmap}
+\end{figure}
+
+A first reading can follow the overview, the L99 ledger in
+Section~\ref{subsec:l99}, and the transfer proof. A second reading
+can fill in the local coefficient expansion and the contour tails.
+The arc partition and the formalization guide are best read after
+the purpose of a common divisor is clear. Appendix~\ref{app:reader}
+collects notation and short checks that can be carried out by hand.
+
+The main prerequisites are elementary complex analysis, polynomial
+algebra over \(\QQ\) and \(\QQ(\ii)\), prime valuations, and
+asymptotic estimates. Resultants, confluent Vandermonde matrices,
+and interval arithmetic are introduced where they enter the proof.
+Knowledge of Lean is not required to read the mathematical argument.

@@ -1,0 +1,17 @@
+{
+  "status": "uploaded and remotely verified",
+  "date": "2026-10-31",
+  "account": "woznickiainslie141-dot",
+  "repository": "https://github.com/woznickiainslie141-dot/odd-pi-powers-formalization",
+  "private": true,
+  "visibility": "private",
+  "branch": "main",
+  "commit": "962c5e4194351b51dd663a5f3fa23447e5206479",
+  "uploaded_files": 3046,
+  "remote_tree": "exact match with local committed tree",
+  "bound": "12970477737/11706979",
+  "strict_target": "1107.93",
+  "accepted_new_closure_modules": 147,
+  "acceptance_report_sha256": "a5e5ee949490faf4fa7ed2441324597ebb3dd7c2c724f483886751d9dec01dc0",
+  "snapshot_manifest_sha256": "c8620f84d2b6e98ed2df395d29c74ae31587eb964df4fb68e217347e2d8af1ca"
+}

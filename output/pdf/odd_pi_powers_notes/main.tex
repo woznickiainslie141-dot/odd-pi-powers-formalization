@@ -5,11 +5,13 @@
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{booktabs,array,longtable}
 \usepackage{xcolor,tikz,microtype,enumitem,fancyhdr,hyperref}
+\usetikzlibrary{arrows.meta,positioning}
 \hypersetup{colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,
  urlcolor=blue!45!black,pdftitle={Explicit irrationality bounds for odd powers of pi},
  pdfauthor={Expository research notes}}
 \setlength{\parskip}{4pt}
 \setlength{\parindent}{1.2em}
+\setlength{\emergencystretch}{2em}
 \setlist{itemsep=3pt,topsep=5pt}
 \allowdisplaybreaks[2]
 \numberwithin{equation}{section}
@@ -29,6 +31,7 @@
 \newcommand{\CC}{\mathbb C}
 \newcommand{\dd}{\,\mathrm{d}}
 \newcommand{\Hgt}{\mathrm H}
+\newcommand{\LNNbound}{\frac{12970477737}{11706979}}
 \DeclareMathOperator{\lcm}{lcm}
 \DeclareMathOperator{\Res}{Res}
 \DeclareMathOperator{\ord}{ord}
@@ -48,7 +51,7 @@ for odd powers of \(\boldsymbol{\pi}\)}\\[9mm]
 {\large Nested logarithmic Hermite--Pad\'e constructions,\\
 prime divisors, and algebraic-approximation transfer}\\[12mm]
 {\large Expository research notes}\\[3mm]
-27 October 2026
+Revised 31 October 2026
 \end{center}
 \vspace{9mm}
 \begin{abstract}
@@ -61,16 +64,19 @@ We prove integrality, an exact nonvanishing determinant identity, a
 prime-divisor estimate described by weighted arcs on a circle, and
 uniform analytic bounds. A minimal-polynomial resultant argument
 handles every rational approximation, including reducible-binomial
-and rational-power cases. A twelve-layer choice gives
+and rational-power cases. The latest twenty-eight-layer choice gives
 \[
- \mu(\pi^3)<1203.973,\quad
- \mu(\pi^5)<42461,\quad
- \mu(\pi^7)<1272103,\quad
- \mu(\pi^9)<35398937.
+ \boxed{\mu(\pi^3)\le\LNNbound
+ =1107.9269670681\ldots<1107.93.}
 \]
-The numerical inequalities are certified by ball arithmetic. Detailed
-background, worked examples, the order of parameter choices, and
-unsuccessful finite experiments are included for further investigation.
+This fixed result, including the actual auxiliary family and the required
+arithmetic and analytic bounds, has an accepted Lean formalization.
+The general transfer applies to every integer power \(k\ge2\); further
+numerical instances and an explicit all-power recipe are explained with
+their separate verification status. We also derive an older all-power
+bound from Nesterenko--Waldschmidt and compare the even case with the
+specialized bound for \(\zeta(4)\). Background, intermediate calculations,
+worked examples, and a guide to the formal proof are included.
 \end{abstract}
 \vfill
 \noindent\textbf{Status and scope.}
@@ -80,6 +86,8 @@ optimality claim. The displayed upper bounds follow from the arguments
 given here; finite tests and numerical certificates have more limited
 roles, which are stated explicitly. No upper bound below \(100\) for
 \(\mu(\pi^3)\) is established.
+The exact L99 theorem is accepted locally; the entire expanded exposition
+and every additional example are not thereby claimed to be formalized.
 \end{titlepage}
 \begingroup
 \small
@@ -88,15 +96,22 @@ roles, which are stated explicitly. No upper bound below \(100\) for
 \endgroup
 \clearpage
 \input{sections/01_overview}
+\input{sections/10_background}
+\input{sections/11_literature}
 \input{sections/02_algebra}
 \input{sections/03_arithmetic}
 \input{sections/04_analysis}
 \input{sections/05_transfer}
 \input{sections/06_parameters}
 \input{sections/07_computation}
+\clearpage
+\input{sections/12_formalization}
 \appendix
 \input{sections/08_examples}
 \input{sections/09_experiments}
+\clearpage
+\input{sections/13_reader_exercises}
+\clearpage
 \begin{thebibliography}{9}
 \bibitem{Mignotte}
 M. Mignotte,
@@ -113,8 +128,22 @@ arXiv:1904.01737 (2019).
 \bibitem{Marcovecchio}
 R. Marcovecchio,
 \emph{Multiple Legendre polynomials in Diophantine approximation},
-arXiv:2512.12890.
+International Journal of Number Theory \textbf{10} (2014), 1829--1855;
+arXiv version 2512.12890.
 \url{https://arxiv.org/abs/2512.12890}.
+\bibitem{NesterenkoWaldschmidt}
+Yu. Nesterenko and M. Waldschmidt,
+\emph{On the approximation of the values of exponential function and
+logarithm by algebraic numbers},
+Mat. Zapiski \textbf{2} (1996), 23--42;
+English preprint arXiv:math/0002047 (2000).
+\url{https://arxiv.org/abs/math/0002047}.
+\bibitem{MarcovecchioZudilin}
+R. Marcovecchio and W. Zudilin,
+\emph{Hypergeometric rational approximations to \(\zeta(4)\)},
+Proceedings of the Edinburgh Mathematical Society \textbf{63} (2020),
+374--397; preprint arXiv:1905.12579 (2019).
+\href{https://doi.org/10.1017/S0013091519000427}{doi:10.1017/S0013091519000427}.
 \bibitem{Arb}
 F. Johansson,
 \emph{Arb: Efficient Arbitrary-Precision Midpoint-Radius Interval Arithmetic},
